@@ -5,99 +5,259 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CZ 1｜openit.ml, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, skip-cert-verify: true, udp: true}
-  - {name: CZ 2｜openit.ml, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
-  - {name: UA 1｜openit.ml, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: true, udp: true}
-  - {name: UA 2｜openit.ml, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
-  - {name: UA 3｜openit.ml, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
-  - {name: UA 4｜openit.ml, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: UA 5｜openit.ml, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, skip-cert-verify: true, udp: true}
+  - {name: CZ 1｜openit.ml, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
+  - {name: UA 1｜openit.ml, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, skip-cert-verify: true, udp: true}
+  - {name: UA 2｜openit.ml, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, skip-cert-verify: true, udp: true}
+  - {name: UA 3｜openit.ml, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, skip-cert-verify: true, udp: true}
+  - {name: UA 4｜openit.ml, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, skip-cert-verify: true, udp: true}
+  - {name: UA 5｜openit.ml, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 AU 1｜openit.ml, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇺 AU 2｜openit.ml, server: kk.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 CA 1｜openit.ml, server: 67tw01.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 67tw01.fans8.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 10｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 11｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 12｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 13｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 14｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 15｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 16｜openit.ml, server: cu-cs.okvpn.xyz, port: 20000, type: trojan, password: b2683eab-1572-43fd-976a-fe48543bf1f3, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 1｜openit.ml, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 2｜openit.ml, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 CN 3｜openit.ml, server: 120.233.186.250, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 4｜openit.ml, server: 120.233.186.250, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 5｜openit.ml, server: 120.233.186.71, port: 3383, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 6｜openit.ml, server: 120.233.186.250, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 7｜openit.ml, server: 103.56.62.145, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 8｜openit.ml, server: 103.56.60.235, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 CN 9｜openit.ml, server: 14.29.124.168, port: 24046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇦 CA 2｜openit.ml, server: t03.tgfaka.com, port: 18443, type: trojan, password: 77b1781d-9998-4457-bec3-6362e0537afa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 3｜openit.ml, server: t05.tgfaka.com, port: 18443, type: trojan, password: 77b1781d-9998-4457-bec3-6362e0537afa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 4｜openit.ml, server: t01.tgfaka.com, port: 18443, type: trojan, password: 77b1781d-9998-4457-bec3-6362e0537afa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 5｜openit.ml, server: t02.tgfaka.com, port: 18443, type: trojan, password: 77b1781d-9998-4457-bec3-6362e0537afa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 6｜openit.ml, server: t04.tgfaka.com, port: 18443, type: trojan, password: 77b1781d-9998-4457-bec3-6362e0537afa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 CA 7｜openit.ml, server: t07.tgfaka.com, port: 18443, type: trojan, password: 77b1781d-9998-4457-bec3-6362e0537afa, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 100｜openit.ml, server: 120.233.185.115, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 101｜openit.ml, server: 120.233.185.113, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 102｜openit.ml, server: 120.233.185.115, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 103｜openit.ml, server: 116.129.253.102, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 104｜openit.ml, server: 120.233.185.119, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 105｜openit.ml, server: 120.233.185.115, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 106｜openit.ml, server: 116.129.253.102, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 107｜openit.ml, server: 120.233.185.119, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 108｜openit.ml, server: 120.233.185.113, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 109｜openit.ml, server: 120.233.185.115, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 10｜openit.ml, server: trojan.linkdns.xyz, port: 40208, type: trojan, password: 379105df-ad74-3c8a-ace3-5832de8f973a, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 110｜openit.ml, server: 116.129.253.102, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 111｜openit.ml, server: 116.129.253.103, port: 44000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 112｜openit.ml, server: 116.129.253.103, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 113｜openit.ml, server: 116.129.253.103, port: 45000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 114｜openit.ml, server: 116.129.253.103, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 115｜openit.ml, server: 116.129.253.101, port: 32200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 116｜openit.ml, server: 116.129.253.104, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 117｜openit.ml, server: 120.233.185.119, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 118｜openit.ml, server: 116.129.253.103, port: 51000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 119｜openit.ml, server: 116.129.253.103, port: 53000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 11｜openit.ml, server: 103.56.62.145, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 120｜openit.ml, server: 116.129.253.101, port: 33200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 121｜openit.ml, server: 116.129.253.103, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 122｜openit.ml, server: 116.129.253.107, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 123｜openit.ml, server: 116.129.253.106, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 124｜openit.ml, server: 116.129.253.106, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 125｜openit.ml, server: 116.129.253.106, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 126｜openit.ml, server: 116.129.253.101, port: 33300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 127｜openit.ml, server: 116.129.253.103, port: 52000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 128｜openit.ml, server: 120.233.185.115, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 129｜openit.ml, server: 14.29.124.168, port: 24026, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇨🇳 CN 12｜openit.ml, server: 120.233.185.113, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 130｜openit.ml, server: 116.129.253.107, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 131｜openit.ml, server: 116.129.253.107, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 132｜openit.ml, server: 116.129.253.107, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 133｜openit.ml, server: 116.129.253.102, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 134｜openit.ml, server: 116.129.253.107, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 135｜openit.ml, server: 116.129.253.102, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 136｜openit.ml, server: 116.129.253.102, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 137｜openit.ml, server: 116.129.253.102, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 138｜openit.ml, server: 116.129.253.107, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 139｜openit.ml, server: 116.129.253.102, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 13｜openit.ml, server: 120.233.185.116, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 140｜openit.ml, server: 116.129.253.102, port: 29000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 141｜openit.ml, server: 116.129.253.107, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 142｜openit.ml, server: 116.129.253.101, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 143｜openit.ml, server: 116.129.253.102, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 144｜openit.ml, server: 116.129.253.102, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 145｜openit.ml, server: 116.129.253.106, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 146｜openit.ml, server: 116.129.253.106, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 147｜openit.ml, server: 116.129.253.102, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 148｜openit.ml, server: 116.129.253.102, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 149｜openit.ml, server: 116.129.253.101, port: 31100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 14｜openit.ml, server: 120.233.185.116, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 150｜openit.ml, server: 120.233.185.112, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: DanHuang.Jiang, udp: true}
+  - {name: 🇨🇳 CN 151｜openit.ml, server: 116.129.253.102, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: DanHuang.Jiang, udp: true}
+  - {name: 🇨🇳 CN 152｜openit.ml, server: 116.129.253.134, port: 3383, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 153｜openit.ml, server: 116.129.253.101, port: 40000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: DanHuang.Jiang, udp: true}
+  - {name: 🇨🇳 CN 154｜openit.ml, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 155｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 156｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 157｜openit.ml, server: cu-cs.okvpn.xyz, port: 20000, type: trojan, password: b2683eab-1572-43fd-976a-fe48543bf1f3, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 158｜openit.ml, server: gz-cm-kl.hinetwork.tw, port: 11225, type: trojan, password: d46abf38-3a4c-3dfc-91e0-d8d3f1616c73, sni: gz-cm-kl.hinetwork.tw, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 159｜openit.ml, server: gz-cm-kl.hinetwork.tw, port: 11127, type: trojan, password: d46abf38-3a4c-3dfc-91e0-d8d3f1616c73, sni: gz-cm-kl.hinetwork.tw, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 15｜openit.ml, server: 120.233.185.118, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 160｜openit.ml, server: gz-cm-kl.hinetwork.tw, port: 11177, type: trojan, password: d46abf38-3a4c-3dfc-91e0-d8d3f1616c73, sni: gz-cm-kl.hinetwork.tw, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 161｜openit.ml, server: gz-cm1-kl.hinetwork.tw, port: 11178, type: trojan, password: d46abf38-3a4c-3dfc-91e0-d8d3f1616c73, sni: gz-cm1-kl.hinetwork.tw, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 162｜openit.ml, server: gz-cm-kl.hinetwork.tw, port: 11266, type: trojan, password: d46abf38-3a4c-3dfc-91e0-d8d3f1616c73, sni: gz-cm-kl.hinetwork.tw, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 163｜openit.ml, server: gz-cm-kl.hinetwork.tw, port: 11125, type: trojan, password: d46abf38-3a4c-3dfc-91e0-d8d3f1616c73, sni: gz-cm-kl.hinetwork.tw, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 16｜openit.ml, server: 120.233.185.116, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 17｜openit.ml, server: 120.233.185.115, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 18｜openit.ml, server: 116.129.253.103, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 19｜openit.ml, server: 116.129.253.103, port: 38000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 1｜openit.ml, server: 103.56.62.145, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 20｜openit.ml, server: 120.233.185.118, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 21｜openit.ml, server: 116.129.253.103, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 22｜openit.ml, server: 116.129.253.103, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 23｜openit.ml, server: 116.129.253.103, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 24｜openit.ml, server: 120.233.185.116, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 25｜openit.ml, server: 116.129.253.102, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 26｜openit.ml, server: 116.129.253.103, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 27｜openit.ml, server: 120.233.185.116, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 28｜openit.ml, server: 116.129.253.103, port: 39900, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 29｜openit.ml, server: 120.233.185.115, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 2｜openit.ml, server: 120.233.186.250, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 30｜openit.ml, server: 116.129.253.103, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 31｜openit.ml, server: 116.129.253.102, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 32｜openit.ml, server: 116.129.253.103, port: 39800, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 33｜openit.ml, server: 116.129.253.102, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 34｜openit.ml, server: 116.129.253.103, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 35｜openit.ml, server: 116.129.253.102, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 36｜openit.ml, server: 116.129.253.103, port: 39400, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 37｜openit.ml, server: 116.129.253.102, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 38｜openit.ml, server: 116.129.253.103, port: 39700, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 39｜openit.ml, server: 116.129.253.103, port: 39200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 3｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 40｜openit.ml, server: 116.129.253.103, port: 39500, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 41｜openit.ml, server: 116.129.253.103, port: 39300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 42｜openit.ml, server: 116.129.253.103, port: 39600, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 43｜openit.ml, server: 116.129.253.103, port: 39000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 44｜openit.ml, server: 116.129.253.103, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 45｜openit.ml, server: 116.129.253.103, port: 38100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 46｜openit.ml, server: 116.129.253.103, port: 39100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 47｜openit.ml, server: 120.233.185.115, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 48｜openit.ml, server: 120.233.185.114, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 49｜openit.ml, server: 120.233.185.114, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 4｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 50｜openit.ml, server: 120.233.185.117, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 51｜openit.ml, server: 116.129.253.104, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 52｜openit.ml, server: 120.233.185.112, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 53｜openit.ml, server: 120.233.185.118, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 54｜openit.ml, server: 120.233.185.116, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 55｜openit.ml, server: 120.233.185.112, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 56｜openit.ml, server: 116.129.253.102, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 57｜openit.ml, server: 120.233.185.115, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 58｜openit.ml, server: 120.233.185.115, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 59｜openit.ml, server: 120.233.185.114, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 5｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 60｜openit.ml, server: 120.233.185.114, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 61｜openit.ml, server: 120.233.185.114, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 62｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 63｜openit.ml, server: 120.233.185.114, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 64｜openit.ml, server: 120.233.185.114, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 65｜openit.ml, server: 116.129.253.101, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 66｜openit.ml, server: 116.129.253.103, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 67｜openit.ml, server: 116.129.253.101, port: 46000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 68｜openit.ml, server: 116.129.253.101, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 69｜openit.ml, server: 120.233.185.114, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 6｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 70｜openit.ml, server: 116.129.253.101, port: 44001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 71｜openit.ml, server: 116.129.253.103, port: 49000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 72｜openit.ml, server: 116.129.253.101, port: 42001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 73｜openit.ml, server: 116.129.253.101, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 74｜openit.ml, server: 120.233.185.119, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 75｜openit.ml, server: 116.129.253.103, port: 48000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 76｜openit.ml, server: 120.233.185.113, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 77｜openit.ml, server: 120.233.185.115, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 78｜openit.ml, server: 120.233.185.113, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 79｜openit.ml, server: 120.233.185.114, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 7｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 80｜openit.ml, server: 116.129.253.103, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 81｜openit.ml, server: 116.129.253.103, port: 42000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 82｜openit.ml, server: 120.233.185.116, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 83｜openit.ml, server: 116.129.253.103, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 84｜openit.ml, server: 120.233.185.115, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 85｜openit.ml, server: 120.233.185.113, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 86｜openit.ml, server: 116.129.253.102, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 87｜openit.ml, server: 120.233.185.119, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 88｜openit.ml, server: 116.129.253.102, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 89｜openit.ml, server: 120.233.185.119, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 8｜openit.ml, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 CN 90｜openit.ml, server: 120.233.185.113, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 91｜openit.ml, server: 120.233.185.119, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 92｜openit.ml, server: 120.233.185.119, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 93｜openit.ml, server: 120.233.185.119, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 94｜openit.ml, server: 116.129.253.102, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 95｜openit.ml, server: 120.233.185.117, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 96｜openit.ml, server: 120.233.185.119, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 97｜openit.ml, server: 120.233.185.119, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 98｜openit.ml, server: 116.129.253.104, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 99｜openit.ml, server: 120.233.185.119, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 307823:6G0Pay, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 9｜openit.ml, server: 103.56.60.235, port: 3383, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 TW 1｜openit.ml, server: 211.72.35.153, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE 1｜openit.ml, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB 1｜openit.ml, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB 2｜openit.ml, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB 3｜openit.ml, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 10｜openit.ml, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 11｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 12｜openit.ml, server: tj-hk02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 10｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 11｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 12｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 13｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20715, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 1｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 2｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 14｜openit.ml, server: scloud57.jafiyun.life, port: 22057, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud57.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 1｜openit.ml, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 2｜openit.ml, server: tj-hk02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 3｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20722, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 4｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20726, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 4｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20718, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK 5｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20721, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 6｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20727, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 7｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 8｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20724, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK 9｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20720, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU 1｜openit.ml, server: hkbgp2.jiantian.xyz, port: 34532, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU 2｜openit.ml, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU 3｜openit.ml, server: t03.ssrsub.com, port: 18443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU 4｜openit.ml, server: us1.nodegz.top, port: 443, type: trojan, password: f95cb9be-5e12-3c17-be05-d4881fed87ae, sni: us1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 1｜openit.ml, server: trojan1.udpgw.com, port: 443, type: trojan, password: affae2e0-e84b-11ec-b09f-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 2｜openit.ml, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 3｜openit.ml, server: 613hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 613hk.fans8.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 4｜openit.ml, server: w13.udpgw.com, port: 443, type: trojan, password: 16877c70-e7b8-11ec-99f2-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 5｜openit.ml, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 10｜openit.ml, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 11｜openit.ml, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 12｜openit.ml, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 13｜openit.ml, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 14｜openit.ml, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 15｜openit.ml, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 16｜openit.ml, server: 198.200.51.219, port: 26969, type: trojan, password: 151dada5-c12e-4eb3-940e-d93f365f8a4a, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 17｜openit.ml, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 18｜openit.ml, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 19｜openit.ml, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 1｜openit.ml, server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 20｜openit.ml, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 21｜openit.ml, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 22｜openit.ml, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 23｜openit.ml, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 24｜openit.ml, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 25｜openit.ml, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 26｜openit.ml, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 27｜openit.ml, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 28｜openit.ml, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 29｜openit.ml, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2｜openit.ml, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 30｜openit.ml, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 31｜openit.ml, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 32｜openit.ml, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 33｜openit.ml, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 34｜openit.ml, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 35｜openit.ml, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 36｜openit.ml, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 37｜openit.ml, server: tor.alinkrelay.com, port: 12001, type: trojan, password: 5d32a739-7796-445e-83ac-e1fb2fcdb044, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 38｜openit.ml, server: x.uhwh.ga, port: 443, type: trojan, password: xianba2, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 39｜openit.ml, server: blr.alinkrelay.com, port: 12001, type: trojan, password: 5d32a739-7796-445e-83ac-e1fb2fcdb044, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 3｜openit.ml, server: rn.tianxie.jp.eu.org, port: 443, type: trojan, password: c06bb8e0-7989-4885-9560-df320b7ce1d3, sni: rn.tianxie.jp.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 40｜openit.ml, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 4｜openit.ml, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 5｜openit.ml, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 6｜openit.ml, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 7｜openit.ml, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 8｜openit.ml, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 9｜openit.ml, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 6｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20725, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 7｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20719, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 8｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20723, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK 9｜openit.ml, server: AZHJ001.xiba1.xyz, port: 20726, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 1｜openit.ml, server: 618hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 618hk.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP 2｜openit.ml, server: 8kr.pronetworklink.net, port: 443, type: trojan, password: 0e1160dd-3271-48c2-a8c3-6532eabd3e9e, sni: 8kr.pronetworklink.net, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL 1｜openit.ml, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 1｜openit.ml, server: hkbgp1.jiantian.xyz, port: 14326, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 2｜openit.ml, server: hkbgp2.jiantian.xyz, port: 34532, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU 3｜openit.ml, server: sg1.crunode.top, port: 443, type: trojan, password: f95cb9be-5e12-3c17-be05-d4881fed87ae, sni: sg1.crunode.top, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 1｜openit.ml, server: sg.sharecentrepro.tk, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 2｜openit.ml, server: trojan1.udpgw.com, port: 443, type: trojan, password: affae2e0-e84b-11ec-b09f-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 3｜openit.ml, server: w13.udpgw.com, port: 443, type: trojan, password: 16877c70-e7b8-11ec-99f2-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 4｜openit.ml, server: 613hk.fans8.xyz, port: 443, type: trojan, password: 6f5e02bd-9b8f-44bc-b681-55150c102911, sni: 613hk.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 5｜openit.ml, server: w11.udpgw.com, port: 443, type: trojan, password: f64e69c0-e7b7-11ec-ab81-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 6｜openit.ml, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG 7｜openit.ml, server: sg1.nodegz.top, port: 443, type: trojan, password: f95cb9be-5e12-3c17-be05-d4881fed87ae, sni: sg1.nodegz.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 10｜openit.ml, server: 198.200.51.219, port: 26969, type: trojan, password: 151dada5-c12e-4eb3-940e-d93f365f8a4a, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 11｜openit.ml, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 12｜openit.ml, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 13｜openit.ml, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 14｜openit.ml, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 15｜openit.ml, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 16｜openit.ml, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 17｜openit.ml, server: AZQT001.xiba1.xyz, port: 20729, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 18｜openit.ml, server: AZQT001.xiba1.xyz, port: 20731, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 19｜openit.ml, server: us2.nodegz.top, port: 443, type: trojan, password: f95cb9be-5e12-3c17-be05-d4881fed87ae, sni: us2.nodegz.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1｜openit.ml, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 20｜openit.ml, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 21｜openit.ml, server: AZQT001.xiba1.xyz, port: 20732, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 22｜openit.ml, server: AZQT001.xiba1.xyz, port: 20739, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 23｜openit.ml, server: AZQT001.xiba1.xyz, port: 20742, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 24｜openit.ml, server: AZQT001.xiba1.xyz, port: 20728, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 25｜openit.ml, server: AZQT001.xiba1.xyz, port: 20734, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 26｜openit.ml, server: 16us.pronetworklink.net, port: 443, type: trojan, password: 0e1160dd-3271-48c2-a8c3-6532eabd3e9e, sni: 16us.pronetworklink.net, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 27｜openit.ml, server: AZQT001.xiba1.xyz, port: 20740, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 28｜openit.ml, server: AZQT001.xiba1.xyz, port: 20736, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 29｜openit.ml, server: AZQT001.xiba1.xyz, port: 20741, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2｜openit.ml, server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 30｜openit.ml, server: AZQT001.xiba1.xyz, port: 20733, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 31｜openit.ml, server: AZQT001.xiba1.xyz, port: 20735, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 32｜openit.ml, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 33｜openit.ml, server: AZQT001.xiba1.xyz, port: 20730, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 34｜openit.ml, server: gnailiad.ga, port: 39208, type: trojan, password: swXgcgRW7p, sni: gnailiad.ga, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 35｜openit.ml, server: AZQT001.xiba1.xyz, port: 20743, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 36｜openit.ml, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 37｜openit.ml, server: AZQT001.xiba1.xyz, port: 20748, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 38｜openit.ml, server: AZQT001.xiba1.xyz, port: 20746, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 39｜openit.ml, server: AZQT001.xiba1.xyz, port: 20747, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 3｜openit.ml, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 40｜openit.ml, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 41｜openit.ml, server: HJ001.xiba1.xyz, port: 20762, type: trojan, password: e20f1565-2d2c-37fb-9d39-93d6861a9746, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 42｜openit.ml, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 43｜openit.ml, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 44｜openit.ml, server: gnailiad.gq, port: 11823, type: trojan, password: eVH5bAf8mx, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 4｜openit.ml, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 5｜openit.ml, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 6｜openit.ml, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 7｜openit.ml, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 8｜openit.ml, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 9｜openit.ml, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🌐 节点选择
     type: select
@@ -105,30 +265,181 @@ proxy-groups:
       - 💡 自动选择
       - ☁️ 全球直连
       - CZ 1｜openit.ml
-      - CZ 2｜openit.ml
       - UA 1｜openit.ml
       - UA 2｜openit.ml
       - UA 3｜openit.ml
       - UA 4｜openit.ml
       - UA 5｜openit.ml
       - 🇦🇺 AU 1｜openit.ml
-      - 🇦🇺 AU 2｜openit.ml
       - 🇨🇦 CA 1｜openit.ml
+      - 🇨🇦 CA 2｜openit.ml
+      - 🇨🇦 CA 3｜openit.ml
+      - 🇨🇦 CA 4｜openit.ml
+      - 🇨🇦 CA 5｜openit.ml
+      - 🇨🇦 CA 6｜openit.ml
+      - 🇨🇦 CA 7｜openit.ml
+      - 🇨🇳 CN 100｜openit.ml
+      - 🇨🇳 CN 101｜openit.ml
+      - 🇨🇳 CN 102｜openit.ml
+      - 🇨🇳 CN 103｜openit.ml
+      - 🇨🇳 CN 104｜openit.ml
+      - 🇨🇳 CN 105｜openit.ml
+      - 🇨🇳 CN 106｜openit.ml
+      - 🇨🇳 CN 107｜openit.ml
+      - 🇨🇳 CN 108｜openit.ml
+      - 🇨🇳 CN 109｜openit.ml
       - 🇨🇳 CN 10｜openit.ml
+      - 🇨🇳 CN 110｜openit.ml
+      - 🇨🇳 CN 111｜openit.ml
+      - 🇨🇳 CN 112｜openit.ml
+      - 🇨🇳 CN 113｜openit.ml
+      - 🇨🇳 CN 114｜openit.ml
+      - 🇨🇳 CN 115｜openit.ml
+      - 🇨🇳 CN 116｜openit.ml
+      - 🇨🇳 CN 117｜openit.ml
+      - 🇨🇳 CN 118｜openit.ml
+      - 🇨🇳 CN 119｜openit.ml
       - 🇨🇳 CN 11｜openit.ml
+      - 🇨🇳 CN 120｜openit.ml
+      - 🇨🇳 CN 121｜openit.ml
+      - 🇨🇳 CN 122｜openit.ml
+      - 🇨🇳 CN 123｜openit.ml
+      - 🇨🇳 CN 124｜openit.ml
+      - 🇨🇳 CN 125｜openit.ml
+      - 🇨🇳 CN 126｜openit.ml
+      - 🇨🇳 CN 127｜openit.ml
+      - 🇨🇳 CN 128｜openit.ml
+      - 🇨🇳 CN 129｜openit.ml
       - 🇨🇳 CN 12｜openit.ml
+      - 🇨🇳 CN 130｜openit.ml
+      - 🇨🇳 CN 131｜openit.ml
+      - 🇨🇳 CN 132｜openit.ml
+      - 🇨🇳 CN 133｜openit.ml
+      - 🇨🇳 CN 134｜openit.ml
+      - 🇨🇳 CN 135｜openit.ml
+      - 🇨🇳 CN 136｜openit.ml
+      - 🇨🇳 CN 137｜openit.ml
+      - 🇨🇳 CN 138｜openit.ml
+      - 🇨🇳 CN 139｜openit.ml
       - 🇨🇳 CN 13｜openit.ml
+      - 🇨🇳 CN 140｜openit.ml
+      - 🇨🇳 CN 141｜openit.ml
+      - 🇨🇳 CN 142｜openit.ml
+      - 🇨🇳 CN 143｜openit.ml
+      - 🇨🇳 CN 144｜openit.ml
+      - 🇨🇳 CN 145｜openit.ml
+      - 🇨🇳 CN 146｜openit.ml
+      - 🇨🇳 CN 147｜openit.ml
+      - 🇨🇳 CN 148｜openit.ml
+      - 🇨🇳 CN 149｜openit.ml
       - 🇨🇳 CN 14｜openit.ml
+      - 🇨🇳 CN 150｜openit.ml
+      - 🇨🇳 CN 151｜openit.ml
+      - 🇨🇳 CN 152｜openit.ml
+      - 🇨🇳 CN 153｜openit.ml
+      - 🇨🇳 CN 154｜openit.ml
+      - 🇨🇳 CN 155｜openit.ml
+      - 🇨🇳 CN 156｜openit.ml
+      - 🇨🇳 CN 157｜openit.ml
+      - 🇨🇳 CN 158｜openit.ml
+      - 🇨🇳 CN 159｜openit.ml
       - 🇨🇳 CN 15｜openit.ml
+      - 🇨🇳 CN 160｜openit.ml
+      - 🇨🇳 CN 161｜openit.ml
+      - 🇨🇳 CN 162｜openit.ml
+      - 🇨🇳 CN 163｜openit.ml
       - 🇨🇳 CN 16｜openit.ml
+      - 🇨🇳 CN 17｜openit.ml
+      - 🇨🇳 CN 18｜openit.ml
+      - 🇨🇳 CN 19｜openit.ml
       - 🇨🇳 CN 1｜openit.ml
+      - 🇨🇳 CN 20｜openit.ml
+      - 🇨🇳 CN 21｜openit.ml
+      - 🇨🇳 CN 22｜openit.ml
+      - 🇨🇳 CN 23｜openit.ml
+      - 🇨🇳 CN 24｜openit.ml
+      - 🇨🇳 CN 25｜openit.ml
+      - 🇨🇳 CN 26｜openit.ml
+      - 🇨🇳 CN 27｜openit.ml
+      - 🇨🇳 CN 28｜openit.ml
+      - 🇨🇳 CN 29｜openit.ml
       - 🇨🇳 CN 2｜openit.ml
+      - 🇨🇳 CN 30｜openit.ml
+      - 🇨🇳 CN 31｜openit.ml
+      - 🇨🇳 CN 32｜openit.ml
+      - 🇨🇳 CN 33｜openit.ml
+      - 🇨🇳 CN 34｜openit.ml
+      - 🇨🇳 CN 35｜openit.ml
+      - 🇨🇳 CN 36｜openit.ml
+      - 🇨🇳 CN 37｜openit.ml
+      - 🇨🇳 CN 38｜openit.ml
+      - 🇨🇳 CN 39｜openit.ml
       - 🇨🇳 CN 3｜openit.ml
+      - 🇨🇳 CN 40｜openit.ml
+      - 🇨🇳 CN 41｜openit.ml
+      - 🇨🇳 CN 42｜openit.ml
+      - 🇨🇳 CN 43｜openit.ml
+      - 🇨🇳 CN 44｜openit.ml
+      - 🇨🇳 CN 45｜openit.ml
+      - 🇨🇳 CN 46｜openit.ml
+      - 🇨🇳 CN 47｜openit.ml
+      - 🇨🇳 CN 48｜openit.ml
+      - 🇨🇳 CN 49｜openit.ml
       - 🇨🇳 CN 4｜openit.ml
+      - 🇨🇳 CN 50｜openit.ml
+      - 🇨🇳 CN 51｜openit.ml
+      - 🇨🇳 CN 52｜openit.ml
+      - 🇨🇳 CN 53｜openit.ml
+      - 🇨🇳 CN 54｜openit.ml
+      - 🇨🇳 CN 55｜openit.ml
+      - 🇨🇳 CN 56｜openit.ml
+      - 🇨🇳 CN 57｜openit.ml
+      - 🇨🇳 CN 58｜openit.ml
+      - 🇨🇳 CN 59｜openit.ml
       - 🇨🇳 CN 5｜openit.ml
+      - 🇨🇳 CN 60｜openit.ml
+      - 🇨🇳 CN 61｜openit.ml
+      - 🇨🇳 CN 62｜openit.ml
+      - 🇨🇳 CN 63｜openit.ml
+      - 🇨🇳 CN 64｜openit.ml
+      - 🇨🇳 CN 65｜openit.ml
+      - 🇨🇳 CN 66｜openit.ml
+      - 🇨🇳 CN 67｜openit.ml
+      - 🇨🇳 CN 68｜openit.ml
+      - 🇨🇳 CN 69｜openit.ml
       - 🇨🇳 CN 6｜openit.ml
+      - 🇨🇳 CN 70｜openit.ml
+      - 🇨🇳 CN 71｜openit.ml
+      - 🇨🇳 CN 72｜openit.ml
+      - 🇨🇳 CN 73｜openit.ml
+      - 🇨🇳 CN 74｜openit.ml
+      - 🇨🇳 CN 75｜openit.ml
+      - 🇨🇳 CN 76｜openit.ml
+      - 🇨🇳 CN 77｜openit.ml
+      - 🇨🇳 CN 78｜openit.ml
+      - 🇨🇳 CN 79｜openit.ml
       - 🇨🇳 CN 7｜openit.ml
+      - 🇨🇳 CN 80｜openit.ml
+      - 🇨🇳 CN 81｜openit.ml
+      - 🇨🇳 CN 82｜openit.ml
+      - 🇨🇳 CN 83｜openit.ml
+      - 🇨🇳 CN 84｜openit.ml
+      - 🇨🇳 CN 85｜openit.ml
+      - 🇨🇳 CN 86｜openit.ml
+      - 🇨🇳 CN 87｜openit.ml
+      - 🇨🇳 CN 88｜openit.ml
+      - 🇨🇳 CN 89｜openit.ml
       - 🇨🇳 CN 8｜openit.ml
+      - 🇨🇳 CN 90｜openit.ml
+      - 🇨🇳 CN 91｜openit.ml
+      - 🇨🇳 CN 92｜openit.ml
+      - 🇨🇳 CN 93｜openit.ml
+      - 🇨🇳 CN 94｜openit.ml
+      - 🇨🇳 CN 95｜openit.ml
+      - 🇨🇳 CN 96｜openit.ml
+      - 🇨🇳 CN 97｜openit.ml
+      - 🇨🇳 CN 98｜openit.ml
+      - 🇨🇳 CN 99｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇨🇳 TW 1｜openit.ml
       - 🇩🇪 DE 1｜openit.ml
@@ -139,6 +450,7 @@ proxy-groups:
       - 🇭🇰 HK 11｜openit.ml
       - 🇭🇰 HK 12｜openit.ml
       - 🇭🇰 HK 13｜openit.ml
+      - 🇭🇰 HK 14｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
       - 🇭🇰 HK 2｜openit.ml
       - 🇭🇰 HK 3｜openit.ml
@@ -148,15 +460,19 @@ proxy-groups:
       - 🇭🇰 HK 7｜openit.ml
       - 🇭🇰 HK 8｜openit.ml
       - 🇭🇰 HK 9｜openit.ml
+      - 🇯🇵 JP 1｜openit.ml
+      - 🇯🇵 JP 2｜openit.ml
+      - 🇳🇱 NL 1｜openit.ml
       - 🇷🇺 RU 1｜openit.ml
       - 🇷🇺 RU 2｜openit.ml
       - 🇷🇺 RU 3｜openit.ml
-      - 🇷🇺 RU 4｜openit.ml
       - 🇸🇬 SG 1｜openit.ml
       - 🇸🇬 SG 2｜openit.ml
       - 🇸🇬 SG 3｜openit.ml
       - 🇸🇬 SG 4｜openit.ml
       - 🇸🇬 SG 5｜openit.ml
+      - 🇸🇬 SG 6｜openit.ml
+      - 🇸🇬 SG 7｜openit.ml
       - 🇺🇸 US 10｜openit.ml
       - 🇺🇸 US 11｜openit.ml
       - 🇺🇸 US 12｜openit.ml
@@ -191,6 +507,10 @@ proxy-groups:
       - 🇺🇸 US 39｜openit.ml
       - 🇺🇸 US 3｜openit.ml
       - 🇺🇸 US 40｜openit.ml
+      - 🇺🇸 US 41｜openit.ml
+      - 🇺🇸 US 42｜openit.ml
+      - 🇺🇸 US 43｜openit.ml
+      - 🇺🇸 US 44｜openit.ml
       - 🇺🇸 US 4｜openit.ml
       - 🇺🇸 US 5｜openit.ml
       - 🇺🇸 US 6｜openit.ml
@@ -204,30 +524,181 @@ proxy-groups:
     tolerance: 50
     proxies:
       - CZ 1｜openit.ml
-      - CZ 2｜openit.ml
       - UA 1｜openit.ml
       - UA 2｜openit.ml
       - UA 3｜openit.ml
       - UA 4｜openit.ml
       - UA 5｜openit.ml
       - 🇦🇺 AU 1｜openit.ml
-      - 🇦🇺 AU 2｜openit.ml
       - 🇨🇦 CA 1｜openit.ml
+      - 🇨🇦 CA 2｜openit.ml
+      - 🇨🇦 CA 3｜openit.ml
+      - 🇨🇦 CA 4｜openit.ml
+      - 🇨🇦 CA 5｜openit.ml
+      - 🇨🇦 CA 6｜openit.ml
+      - 🇨🇦 CA 7｜openit.ml
+      - 🇨🇳 CN 100｜openit.ml
+      - 🇨🇳 CN 101｜openit.ml
+      - 🇨🇳 CN 102｜openit.ml
+      - 🇨🇳 CN 103｜openit.ml
+      - 🇨🇳 CN 104｜openit.ml
+      - 🇨🇳 CN 105｜openit.ml
+      - 🇨🇳 CN 106｜openit.ml
+      - 🇨🇳 CN 107｜openit.ml
+      - 🇨🇳 CN 108｜openit.ml
+      - 🇨🇳 CN 109｜openit.ml
       - 🇨🇳 CN 10｜openit.ml
+      - 🇨🇳 CN 110｜openit.ml
+      - 🇨🇳 CN 111｜openit.ml
+      - 🇨🇳 CN 112｜openit.ml
+      - 🇨🇳 CN 113｜openit.ml
+      - 🇨🇳 CN 114｜openit.ml
+      - 🇨🇳 CN 115｜openit.ml
+      - 🇨🇳 CN 116｜openit.ml
+      - 🇨🇳 CN 117｜openit.ml
+      - 🇨🇳 CN 118｜openit.ml
+      - 🇨🇳 CN 119｜openit.ml
       - 🇨🇳 CN 11｜openit.ml
+      - 🇨🇳 CN 120｜openit.ml
+      - 🇨🇳 CN 121｜openit.ml
+      - 🇨🇳 CN 122｜openit.ml
+      - 🇨🇳 CN 123｜openit.ml
+      - 🇨🇳 CN 124｜openit.ml
+      - 🇨🇳 CN 125｜openit.ml
+      - 🇨🇳 CN 126｜openit.ml
+      - 🇨🇳 CN 127｜openit.ml
+      - 🇨🇳 CN 128｜openit.ml
+      - 🇨🇳 CN 129｜openit.ml
       - 🇨🇳 CN 12｜openit.ml
+      - 🇨🇳 CN 130｜openit.ml
+      - 🇨🇳 CN 131｜openit.ml
+      - 🇨🇳 CN 132｜openit.ml
+      - 🇨🇳 CN 133｜openit.ml
+      - 🇨🇳 CN 134｜openit.ml
+      - 🇨🇳 CN 135｜openit.ml
+      - 🇨🇳 CN 136｜openit.ml
+      - 🇨🇳 CN 137｜openit.ml
+      - 🇨🇳 CN 138｜openit.ml
+      - 🇨🇳 CN 139｜openit.ml
       - 🇨🇳 CN 13｜openit.ml
+      - 🇨🇳 CN 140｜openit.ml
+      - 🇨🇳 CN 141｜openit.ml
+      - 🇨🇳 CN 142｜openit.ml
+      - 🇨🇳 CN 143｜openit.ml
+      - 🇨🇳 CN 144｜openit.ml
+      - 🇨🇳 CN 145｜openit.ml
+      - 🇨🇳 CN 146｜openit.ml
+      - 🇨🇳 CN 147｜openit.ml
+      - 🇨🇳 CN 148｜openit.ml
+      - 🇨🇳 CN 149｜openit.ml
       - 🇨🇳 CN 14｜openit.ml
+      - 🇨🇳 CN 150｜openit.ml
+      - 🇨🇳 CN 151｜openit.ml
+      - 🇨🇳 CN 152｜openit.ml
+      - 🇨🇳 CN 153｜openit.ml
+      - 🇨🇳 CN 154｜openit.ml
+      - 🇨🇳 CN 155｜openit.ml
+      - 🇨🇳 CN 156｜openit.ml
+      - 🇨🇳 CN 157｜openit.ml
+      - 🇨🇳 CN 158｜openit.ml
+      - 🇨🇳 CN 159｜openit.ml
       - 🇨🇳 CN 15｜openit.ml
+      - 🇨🇳 CN 160｜openit.ml
+      - 🇨🇳 CN 161｜openit.ml
+      - 🇨🇳 CN 162｜openit.ml
+      - 🇨🇳 CN 163｜openit.ml
       - 🇨🇳 CN 16｜openit.ml
+      - 🇨🇳 CN 17｜openit.ml
+      - 🇨🇳 CN 18｜openit.ml
+      - 🇨🇳 CN 19｜openit.ml
       - 🇨🇳 CN 1｜openit.ml
+      - 🇨🇳 CN 20｜openit.ml
+      - 🇨🇳 CN 21｜openit.ml
+      - 🇨🇳 CN 22｜openit.ml
+      - 🇨🇳 CN 23｜openit.ml
+      - 🇨🇳 CN 24｜openit.ml
+      - 🇨🇳 CN 25｜openit.ml
+      - 🇨🇳 CN 26｜openit.ml
+      - 🇨🇳 CN 27｜openit.ml
+      - 🇨🇳 CN 28｜openit.ml
+      - 🇨🇳 CN 29｜openit.ml
       - 🇨🇳 CN 2｜openit.ml
+      - 🇨🇳 CN 30｜openit.ml
+      - 🇨🇳 CN 31｜openit.ml
+      - 🇨🇳 CN 32｜openit.ml
+      - 🇨🇳 CN 33｜openit.ml
+      - 🇨🇳 CN 34｜openit.ml
+      - 🇨🇳 CN 35｜openit.ml
+      - 🇨🇳 CN 36｜openit.ml
+      - 🇨🇳 CN 37｜openit.ml
+      - 🇨🇳 CN 38｜openit.ml
+      - 🇨🇳 CN 39｜openit.ml
       - 🇨🇳 CN 3｜openit.ml
+      - 🇨🇳 CN 40｜openit.ml
+      - 🇨🇳 CN 41｜openit.ml
+      - 🇨🇳 CN 42｜openit.ml
+      - 🇨🇳 CN 43｜openit.ml
+      - 🇨🇳 CN 44｜openit.ml
+      - 🇨🇳 CN 45｜openit.ml
+      - 🇨🇳 CN 46｜openit.ml
+      - 🇨🇳 CN 47｜openit.ml
+      - 🇨🇳 CN 48｜openit.ml
+      - 🇨🇳 CN 49｜openit.ml
       - 🇨🇳 CN 4｜openit.ml
+      - 🇨🇳 CN 50｜openit.ml
+      - 🇨🇳 CN 51｜openit.ml
+      - 🇨🇳 CN 52｜openit.ml
+      - 🇨🇳 CN 53｜openit.ml
+      - 🇨🇳 CN 54｜openit.ml
+      - 🇨🇳 CN 55｜openit.ml
+      - 🇨🇳 CN 56｜openit.ml
+      - 🇨🇳 CN 57｜openit.ml
+      - 🇨🇳 CN 58｜openit.ml
+      - 🇨🇳 CN 59｜openit.ml
       - 🇨🇳 CN 5｜openit.ml
+      - 🇨🇳 CN 60｜openit.ml
+      - 🇨🇳 CN 61｜openit.ml
+      - 🇨🇳 CN 62｜openit.ml
+      - 🇨🇳 CN 63｜openit.ml
+      - 🇨🇳 CN 64｜openit.ml
+      - 🇨🇳 CN 65｜openit.ml
+      - 🇨🇳 CN 66｜openit.ml
+      - 🇨🇳 CN 67｜openit.ml
+      - 🇨🇳 CN 68｜openit.ml
+      - 🇨🇳 CN 69｜openit.ml
       - 🇨🇳 CN 6｜openit.ml
+      - 🇨🇳 CN 70｜openit.ml
+      - 🇨🇳 CN 71｜openit.ml
+      - 🇨🇳 CN 72｜openit.ml
+      - 🇨🇳 CN 73｜openit.ml
+      - 🇨🇳 CN 74｜openit.ml
+      - 🇨🇳 CN 75｜openit.ml
+      - 🇨🇳 CN 76｜openit.ml
+      - 🇨🇳 CN 77｜openit.ml
+      - 🇨🇳 CN 78｜openit.ml
+      - 🇨🇳 CN 79｜openit.ml
       - 🇨🇳 CN 7｜openit.ml
+      - 🇨🇳 CN 80｜openit.ml
+      - 🇨🇳 CN 81｜openit.ml
+      - 🇨🇳 CN 82｜openit.ml
+      - 🇨🇳 CN 83｜openit.ml
+      - 🇨🇳 CN 84｜openit.ml
+      - 🇨🇳 CN 85｜openit.ml
+      - 🇨🇳 CN 86｜openit.ml
+      - 🇨🇳 CN 87｜openit.ml
+      - 🇨🇳 CN 88｜openit.ml
+      - 🇨🇳 CN 89｜openit.ml
       - 🇨🇳 CN 8｜openit.ml
+      - 🇨🇳 CN 90｜openit.ml
+      - 🇨🇳 CN 91｜openit.ml
+      - 🇨🇳 CN 92｜openit.ml
+      - 🇨🇳 CN 93｜openit.ml
+      - 🇨🇳 CN 94｜openit.ml
+      - 🇨🇳 CN 95｜openit.ml
+      - 🇨🇳 CN 96｜openit.ml
+      - 🇨🇳 CN 97｜openit.ml
+      - 🇨🇳 CN 98｜openit.ml
+      - 🇨🇳 CN 99｜openit.ml
       - 🇨🇳 CN 9｜openit.ml
       - 🇨🇳 TW 1｜openit.ml
       - 🇩🇪 DE 1｜openit.ml
@@ -238,6 +709,7 @@ proxy-groups:
       - 🇭🇰 HK 11｜openit.ml
       - 🇭🇰 HK 12｜openit.ml
       - 🇭🇰 HK 13｜openit.ml
+      - 🇭🇰 HK 14｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
       - 🇭🇰 HK 2｜openit.ml
       - 🇭🇰 HK 3｜openit.ml
@@ -247,15 +719,19 @@ proxy-groups:
       - 🇭🇰 HK 7｜openit.ml
       - 🇭🇰 HK 8｜openit.ml
       - 🇭🇰 HK 9｜openit.ml
+      - 🇯🇵 JP 1｜openit.ml
+      - 🇯🇵 JP 2｜openit.ml
+      - 🇳🇱 NL 1｜openit.ml
       - 🇷🇺 RU 1｜openit.ml
       - 🇷🇺 RU 2｜openit.ml
       - 🇷🇺 RU 3｜openit.ml
-      - 🇷🇺 RU 4｜openit.ml
       - 🇸🇬 SG 1｜openit.ml
       - 🇸🇬 SG 2｜openit.ml
       - 🇸🇬 SG 3｜openit.ml
       - 🇸🇬 SG 4｜openit.ml
       - 🇸🇬 SG 5｜openit.ml
+      - 🇸🇬 SG 6｜openit.ml
+      - 🇸🇬 SG 7｜openit.ml
       - 🇺🇸 US 10｜openit.ml
       - 🇺🇸 US 11｜openit.ml
       - 🇺🇸 US 12｜openit.ml
@@ -290,6 +766,10 @@ proxy-groups:
       - 🇺🇸 US 39｜openit.ml
       - 🇺🇸 US 3｜openit.ml
       - 🇺🇸 US 40｜openit.ml
+      - 🇺🇸 US 41｜openit.ml
+      - 🇺🇸 US 42｜openit.ml
+      - 🇺🇸 US 43｜openit.ml
+      - 🇺🇸 US 44｜openit.ml
       - 🇺🇸 US 4｜openit.ml
       - 🇺🇸 US 5｜openit.ml
       - 🇺🇸 US 6｜openit.ml
@@ -306,6 +786,7 @@ proxy-groups:
       - 🇭🇰 HK 11｜openit.ml
       - 🇭🇰 HK 12｜openit.ml
       - 🇭🇰 HK 13｜openit.ml
+      - 🇭🇰 HK 14｜openit.ml
       - 🇭🇰 HK 1｜openit.ml
       - 🇭🇰 HK 2｜openit.ml
       - 🇭🇰 HK 3｜openit.ml
@@ -321,7 +802,8 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - DIRECT
+      - 🇯🇵 JP 1｜openit.ml
+      - 🇯🇵 JP 2｜openit.ml
   - name: 🇺🇲 美国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -362,6 +844,10 @@ proxy-groups:
       - 🇺🇸 US 39｜openit.ml
       - 🇺🇸 US 3｜openit.ml
       - 🇺🇸 US 40｜openit.ml
+      - 🇺🇸 US 41｜openit.ml
+      - 🇺🇸 US 42｜openit.ml
+      - 🇺🇸 US 43｜openit.ml
+      - 🇺🇸 US 44｜openit.ml
       - 🇺🇸 US 4｜openit.ml
       - 🇺🇸 US 5｜openit.ml
       - 🇺🇸 US 6｜openit.ml
@@ -386,6 +872,8 @@ proxy-groups:
       - 🇸🇬 SG 3｜openit.ml
       - 🇸🇬 SG 4｜openit.ml
       - 🇸🇬 SG 5｜openit.ml
+      - 🇸🇬 SG 6｜openit.ml
+      - 🇸🇬 SG 7｜openit.ml
   - name: 🇰🇷 韩国节点
     type: url-test
     url: https://www.google.com/generate_204
@@ -397,8 +885,13 @@ proxy-groups:
     type: select
     proxies:
       - 🇦🇺 AU 1｜openit.ml
-      - 🇦🇺 AU 2｜openit.ml
       - 🇨🇦 CA 1｜openit.ml
+      - 🇨🇦 CA 2｜openit.ml
+      - 🇨🇦 CA 3｜openit.ml
+      - 🇨🇦 CA 4｜openit.ml
+      - 🇨🇦 CA 5｜openit.ml
+      - 🇨🇦 CA 6｜openit.ml
+      - 🇨🇦 CA 7｜openit.ml
       - 🇩🇪 DE 1｜openit.ml
       - 🇬🇧 GB 1｜openit.ml
       - 🇬🇧 GB 2｜openit.ml
@@ -406,7 +899,6 @@ proxy-groups:
       - 🇷🇺 RU 1｜openit.ml
       - 🇷🇺 RU 2｜openit.ml
       - 🇷🇺 RU 3｜openit.ml
-      - 🇷🇺 RU 4｜openit.ml
   - name: 👉 国内网站
     type: select
     proxies:
