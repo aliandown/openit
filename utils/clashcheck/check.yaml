@@ -1,22 +1,26 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: ss2.2046.gq
-  port: 4443
-  type: trojan
-  password: 794871c6-022b-4498-b816-296e8a581d86
-  sni: ss2.2046.gq
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: vs.2046.gq
-  port: 4443
-  type: trojan
-  password: 794871c6-022b-4498-b816-296e8a581d86
-  sni: vs.2046.gq
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: tj-us02.yiyodns.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 2"
+  server: t03.ssrsub.com
+  port: 8443
+  type: trojan
+  password: 8fefb1b5-bee7-4736-8e00-cad32ab113d1
+  sni: t03.ssrsub.com
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: tj-hk01.yiyodns.xyz
   port: 443
   type: trojan
+  country: "\U0001F1ED\U0001F1F0 HK"
   password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  sni: tj-us02.yiyodns.xyz
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 4"
   server: s4.hazz.win
   port: 12340
@@ -25,35 +29,13 @@ proxies:
   password: dfbf0d67-f03d-4184-a224-c2d64a571f99
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 5"
-  server: v2cross.com.05.v2ce.com
+- name: "\U0001F1F8\U0001F1EC SG 5"
+  server: tj-sg02.yiyodns.xyz
   port: 443
   type: trojan
-  password: kGrwqmB1nEKUsDwE
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 6"
-  server: v2cross.com.04.v2ce.com
-  port: 443
-  type: trojan
-  password: vGWCNNfBHwSY6m6M
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 7"
-  server: ce.rutracker-cn.com
-  port: 443
-  type: trojan
-  password: 5y8y3CwxRVYhyfSY
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 8"
-  server: v2cross.com.03.v2ce.com
-  port: 443
-  type: trojan
-  password: ZD4dLSBXiMrmzdLd
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 9"
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  sni: tj-sg02.yiyodns.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   server: nm1-2.getnjnd.com
   port: 6500
   type: ssr
@@ -63,29 +45,67 @@ proxies:
   obfs: plain
   protocol-param: 152006:OeRRkC
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E6\U0001F1FA AU 10"
-  server: jgwxn2.gaox.ml
+- name: "\U0001F1E6\U0001F1FA AU 7"
+  server: jgwxn4.gaox.ml
   port: 443
   type: trojan
-  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  country: "\U0001F1E6\U0001F1FA AU"
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 11"
-  server: tj-sg02.yiyodns.xyz
-  port: 443
-  type: trojan
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  sni: tj-sg02.yiyodns.xyz
-- name: "\U0001F1E8\U0001F1FF CZ 12"
-  server: v2cross.com.02.v2ce.com
-  port: 443
-  type: trojan
-  password: 3gLlCYBipVwr6Y5F
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 13"
+- name: "\U0001F1E8\U0001F1F3 CN 8"
   server: nm1-2.getnjnd.com
-  port: 4501
+  port: 6502
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: bs2-1.getnjnd.com
+  port: 3502
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: nm1-2.getnjnd.com
+  port: 6503
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: nm1-2.getnjnd.com
+  port: 3035
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: bs2-1.getnjnd.com
+  port: 3503
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 13"
+  server: bs2-1.getnjnd.com
+  port: 3506
   type: ssr
   cipher: chacha20-ietf
   password: renzhecloud
@@ -94,8 +114,8 @@ proxies:
   protocol-param: 152006:OeRRkC
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
 - name: "\U0001F1E8\U0001F1F3 CN 14"
-  server: bs2-1.getnjnd.com
-  port: 3505
+  server: nm1-2.getnjnd.com
+  port: 3025
   type: ssr
   cipher: chacha20-ietf
   password: renzhecloud
@@ -105,7 +125,7 @@ proxies:
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
 - name: "\U0001F1E8\U0001F1F3 CN 15"
   server: bs2-1.getnjnd.com
-  port: 3503
+  port: 3509
   type: ssr
   cipher: chacha20-ietf
   password: renzhecloud
@@ -113,77 +133,50 @@ proxies:
   obfs: plain
   protocol-param: 152006:OeRRkC
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 16"
-  server: nm1-2.getnjnd.com
-  port: 3035
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 17"
-  server: bs2-2.getnjnd.com
-  port: 6503
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 18"
-  server: nm1-2.getnjnd.com
-  port: 4500
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 19"
-  server: nm1-2.getnjnd.com
-  port: 6502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 20"
-  server: bs2-2.getnjnd.com
-  port: 4501
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 21"
-  server: bs2-1.getnjnd.com
-  port: 3506
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1F8\U0001F1EC SG 22"
-  server: sg-02.licom.ml
-  port: 8443
+- name: "\U0001F1EF\U0001F1F5 JP 16"
+  server: jp-03.licom.ml
   type: trojan
-  country: "\U0001F1F8\U0001F1EC SG"
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 8443
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 23"
+- name: "\U0001F1FA\U0001F1F8 US 17"
+  server: fhcarm1.gaox.ml
+  port: 443
+  type: trojan
+  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 18"
+  server: lsj02.wangxd.life
+  port: 3052
+  type: trojan
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 19"
+  server: fhcarm2.gaox.ml
+  port: 443
+  type: trojan
+  password: f39bd244-f5fe-415c-8b98-a1e5250bf178
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 20"
+  server: s162.s2022.xyz
+  port: 23802
+  type: trojan
+  password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 21"
+  server: cd.rutracker-cn.com
+  port: 443
+  type: trojan
+  password: ukMzuFSmIXDvgW0h
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 22"
   server: sg-03.licom.ml
   port: 8443
   type: trojan
@@ -191,17 +184,7 @@ proxies:
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 24"
-  server: bs2-1.getnjnd.com
-  port: 3509
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1F8\U0001F1EC SG 25"
+- name: "\U0001F1F8\U0001F1EC SG 23"
   server: sg-04.licom.ml
   port: 8443
   type: trojan
@@ -209,202 +192,150 @@ proxies:
   password: ce433528-39fa-4711-bc0d-25a5b1579574
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 26"
-  server: bs2-1.getnjnd.com
-  port: 3508
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1FA\U0001F1F8 US 27"
-  server: lsj02.wangxd.life
-  port: 3052
-  type: trojan
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 28"
-  server: nm1-2.getnjnd.com
-  port: 6503
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1EF\U0001F1F5 JP 29"
-  server: s1.hazz.win
-  port: 12340
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 30"
-  server: bs2-2.getnjnd.com
-  port: 6502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 31"
-  server: bs2-1.getnjnd.com
-  port: 3502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 32"
-  server: bs2-1.getnjnd.com
-  port: 3500
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 33"
-  server: bs1-1.getnjnd.com
-  port: 3508
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 34"
-  server: fhcarm2.gaox.ml
+- name: "\U0001F1EC\U0001F1E7 GB 24"
+  server: jgwld2.gaox.ml
   port: 443
   type: trojan
-  password: f39bd244-f5fe-415c-8b98-a1e5250bf178
+  password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 35"
-  server: fhcarm1.gaox.ml
+- name: "\U0001F1EC\U0001F1E7 GB 25"
+  server: jgwld1.gaox.ml
   port: 443
   type: trojan
-  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
+  password: 02e653c9-7c93-46a9-999d-11834bd0c577
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 36"
-  server: bs2-2.getnjnd.com
-  port: 4500
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: 23923152006.microsoft.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 37"
-  server: bs2-2.getnjnd.com
-  port: 4503
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: TWpNNU1qTXhOVEl3TURZdWJXbGpjbTl6YjJaMExtTnZiUQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 38"
-  server: bs2-1.getnjnd.com
-  port: 3501
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 39"
-  server: bs1-1.getnjnd.com
-  port: 3506
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 40"
-  server: storage.starspace.link
-  port: 443
-  type: trojan
-  password: W8gVbKNAZlFzgGPn
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 41"
+- name: "\U0001F1FA\U0001F1F8 US 26"
   server: wireless.starspace.link
   port: 443
   type: trojan
   password: 5LN8SGTqxk336nFg
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 42"
-  server: silicon.starspace.link
-  port: 443
+- name: "\U0001F1F8\U0001F1EC SG 27"
+  server: sg-02.licom.ml
   type: trojan
-  password: 4ZPDeqJ6g766UKDJ
-  sni: silicon.starspace.link
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 8443
+  password: ce433528-39fa-4711-bc0d-25a5b1579574
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 43"
-  server: rooms.starspace.link
+- name: "\U0001F1E8\U0001F1FF CZ 28"
+  server: v2cross.com.02.v2ce.com
   port: 443
   type: trojan
-  password: 5HfENR8nt2PR8reH
+  password: 3gLlCYBipVwr6Y5F
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 44"
-  server: nm1-2.getnjnd.com
-  port: 4503
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 45"
+- name: "\U0001F1FA\U0001F1F8 US 29"
   server: tj-us01.yiyodns.xyz
   port: 443
   type: trojan
   password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 46"
-  server: bs1-1.getnjnd.com
-  port: 3509
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1FF CZ 30"
+  server: cz5.v2ce.com
+  port: 443
+  type: trojan
+  password: HTrovQkamDxNfaD5
+  skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 47"
-  server: bs1-1.getnjnd.com
+- name: "\U0001F1E8\U0001F1FF CZ 31"
+  server: ce.rutracker-cn.com
+  port: 443
+  type: trojan
+  password: 5y8y3CwxRVYhyfSY
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 32"
+  server: v2cross.com.05.v2ce.com
+  port: 443
+  type: trojan
+  password: kGrwqmB1nEKUsDwE
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 33"
+  server: v2cross.com.03.v2ce.com
+  port: 443
+  type: trojan
+  password: ZD4dLSBXiMrmzdLd
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 34"
+  server: rooms.starspace.link
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: 5HfENR8nt2PR8reH
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 35"
+  server: v2cross.com.01.v2ce.com
+  port: 443
+  type: trojan
+  password: mMQ6qJB9xbhiRvgg
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 36"
+  server: v2cross.com.04.v2ce.com
+  port: 443
+  type: trojan
+  password: vGWCNNfBHwSY6m6M
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 37"
+  server: silicon.starspace.link
+  port: 443
+  type: trojan
+  password: 4ZPDeqJ6g766UKDJ
+  sni: silicon.starspace.link
+  skip-cert-verify: false
+- name: "\U0001F1E8\U0001F1F3 HK 38"
+  server: tj-hk02.yiyodns.xyz
+  port: 443
+  type: trojan
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 39"
+  server: sg.sharecentrepro.tk
+  port: 443
+  type: trojan
+  password: sharecentre
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 40"
+  server: trojan1.udpgw.com
+  port: 443
+  type: trojan
+  password: affae2e0-e84b-11ec-b09f-1239d0255272
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 41"
+  server: jgwxn2.gaox.ml
+  port: 443
+  type: trojan
+  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 42"
+  server: jgwdb3.gaox.ml
+  port: 443
+  type: trojan
+  password: 8d2d5953-d649-4034-94f2-72f2df2623da
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 43"
+  server: kr05.wangxd.life
+  port: 3052
+  type: trojan
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 44"
+  server: bs2-1.getnjnd.com
   port: 3505
   type: ssr
   cipher: chacha20-ietf
@@ -413,441 +344,118 @@ proxies:
   obfs: plain
   protocol-param: 152006:OeRRkC
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 48"
-  server: sgg.2046.gq
-  port: 4443
+- name: "\U0001F1EF\U0001F1F5 JP 45"
+  server: s1.hazz.win
+  port: 12340
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
-  password: 794871c6-022b-4498-b816-296e8a581d86
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 49"
-  server: jgwld2.gaox.ml
-  port: 443
-  type: trojan
-  password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 50"
-  server: jgwld1.gaox.ml
-  port: 443
-  type: trojan
-  password: 02e653c9-7c93-46a9-999d-11834bd0c577
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 51"
-  server: nm1-2.getnjnd.com
-  port: 3045
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 HK 52"
-  server: tj-hk02.yiyodns.xyz
-  port: 443
-  type: trojan
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 53"
-  server: tj-hk01.yiyodns.xyz
-  port: 443
-  type: trojan
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 54"
-  server: jgwdb3.gaox.ml
-  port: 443
-  type: trojan
-  password: 8d2d5953-d649-4034-94f2-72f2df2623da
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 55"
-  server: sg.sharecentrepro.tk
-  port: 443
-  type: trojan
-  password: sharecentre
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 56"
-  server: trojan1.udpgw.com
-  port: 443
-  type: trojan
-  password: affae2e0-e84b-11ec-b09f-1239d0255272
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 57"
-  server: nm1-2.getnjnd.com
-  port: 5502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: 23923152006.microsoft.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 58"
-  server: bs1-1.getnjnd.com
-  port: 3507
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 59"
-  server: AZHJ001.xiba1.xyz
-  port: 20727
-  type: trojan
-  password: 520619fd-948a-3ff2-90c1-16488c9bfa06
-  sni: ssl.ssl12.xyz
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 60"
-  server: bs2-1.getnjnd.com
-  port: 3502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 61"
-  server: nm1-2.getnjnd.com
-  port: 4502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 62"
-  server: nm1-2.getnjnd.com
-  port: 5503
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 63"
-  server: kr05.wangxd.life
-  port: 3052
-  type: trojan
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 64"
-  server: jgwcc1.gaox.ml
-  port: 443
-  type: trojan
-  password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 65"
-  server: cz5.v2ce.com
-  port: 443
-  type: trojan
-  password: HTrovQkamDxNfaD5
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 66"
-  server: bs1-1.getnjnd.com
-  port: 3503
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: 23923152006.microsoft.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 67"
-  server: bs2-2.getnjnd.com
-  port: 3025
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 68"
-  server: jp-03.licom.ml
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 8443
-  password: ce433528-39fa-4711-bc0d-25a5b1579574
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 69"
-  server: s162.s2022.xyz
-  port: 23802
-  type: trojan
-  password: d724e4d0-841b-3b92-ac0d-70fcbbb7e934
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 70"
-  server: cm.spacez.cloud
-  port: 30002
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: c9a3a61d-5d49-4158-9e60-6fa32684b122
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 71"
-  server: bs2-2.getnjnd.com
-  port: 5500
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: 23923152006.microsoft.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 72"
-  server: bs2-2.getnjnd.com
-  port: 5502
-  type: ssr
-  cipher: chacha20-ietf
-  password: renzhecloud
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 152006:OeRRkC
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 73"
-  server: ss.2046.gq
-  port: 4443
-  type: trojan
-  password: 794871c6-022b-4498-b816-296e8a581d86
-  sni: ss.2046.gq
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 74"
-  server: usfree1.jiantian.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 23425
-  password: eecb88a3-d8c1-4fc3-bea0-8a4f13aa42be
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 75"
+- name: "\U0001F1EE\U0001F1F3 IN 46"
   server: jgwhdlb3.gaox.ml
   port: 443
   type: trojan
   password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 76"
-  server: v2cross.com.01.v2ce.com
-  port: 443
-  type: trojan
-  password: mMQ6qJB9xbhiRvgg
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 77"
-  server: HJ001.xiba1.xyz
-  port: 20762
-  type: trojan
-  password: 520619fd-948a-3ff2-90c1-16488c9bfa06
-  sni: ssl.ssl12.xyz
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 78"
-  server: HJ001.xiba1.xyz
-  port: 20769
+- name: "\U0001F1E8\U0001F1F3 HK 47"
+  server: AZHJ001.xiba1.xyz
+  port: 20718
   type: trojan
   password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
   sni: ssl.ssl12.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 79"
-  server: HJ001.xiba1.xyz
-  port: 20770
-  type: trojan
-  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
-  sni: ssl.ssl12.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 80"
-  server: 120.240.50.223
-  port: 3603
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 81"
-  server: 120.240.50.223
-  port: 3607
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 HK 82"
+- name: "\U0001F1E8\U0001F1F3 CN 48"
+  server: bs2-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 6502
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 49"
+  server: bs2-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 6500
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 HK 50"
   server: HJ001.xiba1.xyz
   port: 20767
   type: trojan
   password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
   sni: ssl.ssl12.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 83"
-  server: 120.240.50.223
-  port: 3600
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 84"
-  server: 120.240.50.248
-  port: 6600
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 85"
-  server: 120.240.50.225
-  port: 6603
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 86"
-  server: 120.240.50.248
-  port: 6601
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 87"
-  server: 120.240.50.227
-  port: 3602
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 88"
-  server: 120.240.50.227
-  port: 3600
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 89"
-  server: 120.240.50.227
-  port: 3608
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 90"
-  server: 120.240.50.225
-  port: 3026
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 91"
-  server: 120.240.50.248
-  port: 6602
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 92"
-  server: 120.240.50.225
-  port: 4601
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 93"
-  server: 120.240.50.248
-  port: 3046
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 94"
-  server: 120.240.50.225
-  port: 3046
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 95"
-  server: 120.240.50.227
-  port: 3605
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 96"
-  server: 120.240.50.248
-  port: 3026
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 97"
+- name: "\U0001F1E8\U0001F1F3 HK 51"
+  server: HJ001.xiba1.xyz
+  port: 20768
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 52"
+  server: HJ001.xiba1.xyz
+  port: 20770
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 53"
+  server: HJ001.xiba1.xyz
+  port: 20769
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 54"
+  server: nm1-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 4502
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 55"
+  server: nm1-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 6501
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 56"
+  server: nm1-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 4503
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 57"
+  server: bs2-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 6503
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 58"
   server: bs2-2.getnjnd.com
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
@@ -858,49 +466,20 @@ proxies:
   protocol-param: 152006:OeRRkC
   obfs: plain
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 98"
-  server: 120.240.50.225
-  port: 3036
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 99"
-  server: 120.240.50.248
-  port: 4603
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 100"
-  server: 120.240.50.227
-  port: 3606
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 101"
-  server: 120.240.50.248
-  port: 3036
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 102"
+- name: "\U0001F1E8\U0001F1F3 CN 59"
+  server: bs2-1.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3508
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 60"
   server: 120.240.50.223
-  port: 3606
+  port: 3608
   type: ss
   cipher: rc4-md5
   password: RenzheCloudSS
@@ -908,43 +487,7 @@ proxies:
   plugin-opts:
     mode: http
     host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 103"
-  server: 120.240.50.223
-  port: 3604
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 104"
-  server: 120.240.50.227
-  port: 3604
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 105"
-  server: 120.240.50.225
-  port: 4600
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 HK 106"
-  server: AZHJ001.xiba1.xyz
-  port: 20715
-  type: trojan
-  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
-  sni: ssl.ssl12.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 107"
+- name: "\U0001F1E8\U0001F1F3 CN 61"
   server: bs2-2.getnjnd.com
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
@@ -955,27 +498,30 @@ proxies:
   protocol-param: 152006:OeRRkC
   obfs: plain
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 108"
-  server: 120.240.50.227
-  port: 3609
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 109"
-  server: 120.240.50.227
-  port: 3607
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 110"
+- name: "\U0001F1E8\U0001F1F3 CN 62"
+  server: bs1-1.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3501
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 HK 63"
+  server: azgy001.xiba1.xyz
+  port: 6004
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 64"
+  server: azgy001.xiba1.xyz
+  port: 6003
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 65"
   server: bs2-2.getnjnd.com
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
@@ -986,9 +532,9 @@ proxies:
   protocol-param: 152006:OeRRkC
   obfs: plain
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 111"
-  server: 120.240.50.248
-  port: 6603
+- name: "\U0001F1E8\U0001F1F3 CN 66"
+  server: 120.240.50.227
+  port: 3600
   type: ss
   cipher: rc4-md5
   password: RenzheCloudSS
@@ -996,18 +542,93 @@ proxies:
   plugin-opts:
     mode: http
     host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 112"
-  server: cmrelay01.downsite.xyz
-  port: 3705
+- name: "\U0001F1E8\U0001F1F3 CN 67"
+  server: 120.240.50.227
+  port: 3605
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 68"
+  server: bs2-1.getnjnd.com
   type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3500
+  password: renzhecloud
   cipher: chacha20-ietf
-  password: jFa4F1
   protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
   obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 113"
-  server: 120.240.50.248
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 69"
+  server: 120.240.50.227
+  port: 3603
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 70"
+  server: bs1-1.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3506
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 71"
+  server: nm1-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 5503
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 72"
+  server: 120.240.50.225
+  port: 6602
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 73"
+  server: 120.240.50.227
+  port: 3606
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 HK 74"
+  server: azgy001.xiba1.xyz
+  port: 20710
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 75"
+  server: azgy001.xiba1.xyz
+  port: 20711
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 76"
+  server: 120.240.50.225
   port: 4602
   type: ss
   cipher: rc4-md5
@@ -1016,190 +637,40 @@ proxies:
   plugin-opts:
     mode: http
     host: 23923152006.microsoft.com
-- name: "\U0001F1FA\U0001F1F8 US 114"
-  server: fhcamd1.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: e23f408a-012e-4030-8b31-02022031cb50
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 115"
-  server: azgy001.xiba1.xyz
-  port: 20713
-  type: trojan
-  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
-  sni: ssl.ssl12.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 116"
-  server: cmrelay01.downsite.xyz
-  port: 3700
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 117"
-  server: 120.240.50.248
-  port: 5601
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 118"
-  server: cmrelay01.downsite.xyz
-  port: 3706
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 119"
-  server: 120.240.50.248
-  port: 5600
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 120"
-  server: 120.240.50.225
-  port: 6601
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 121"
-  server: bs1-1.getnjnd.com
+- name: "\U0001F1E8\U0001F1F3 CN 77"
+  server: nm1-2.getnjnd.com
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 3501
+  port: 5501
   password: renzhecloud
   cipher: chacha20-ietf
   protocol: auth_aes128_sha1
   protocol-param: 152006:OeRRkC
   obfs: plain
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 122"
-  server: cmrelay01.downsite.xyz
-  port: 6709
+- name: "\U0001F1E8\U0001F1F3 CN 78"
+  server: bs1-1.getnjnd.com
   type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3509
+  password: renzhecloud
   cipher: chacha20-ietf
-  password: jFa4F1
   protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
   obfs: plain
-  protocol-param: 63277:a4XecS
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 123"
-  server: cmrelay01.downsite.xyz
-  port: 3707
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 79"
+  server: bs1-1.getnjnd.com
   type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3502
+  password: renzhecloud
   cipher: chacha20-ietf
-  password: jFa4F1
   protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
   obfs: plain
-  protocol-param: 65199:xMcKnc
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 124"
-  server: cmrelay01.downsite.xyz
-  port: 6702
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 63277:a4XecS
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 125"
-  server: 120.240.50.225
-  port: 5600
-  type: ss
-  cipher: rc4-md5
-  password: RenzheCloudSS
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 23923152006.microsoft.com
-- name: "\U0001F1E6\U0001F1FA AU 126"
-  server: jgwxn3.gaox.ml
-  type: trojan
-  country: "\U0001F1E6\U0001F1FA AU"
-  port: 443
-  password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 127"
-  server: cmrelay01.downsite.xyz
-  port: 3709
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 63277:a4XecS
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 128"
-  server: cmrelay01.downsite.xyz
-  port: 3703
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 129"
-  server: cmrelay01.downsite.xyz
-  port: 6706
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 130"
-  server: cmrelay01.downsite.xyz
-  port: 6703
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 65199:xMcKnc
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 131"
-  server: cmrelay01.downsite.xyz
-  port: 6704
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 132"
-  server: cmrelay01.downsite.xyz
-  port: 6705
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 63277:a4XecS
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 133"
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 80"
   server: nm1-2.getnjnd.com
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
@@ -1210,9 +681,323 @@ proxies:
   protocol-param: 152006:OeRRkC
   obfs: plain
   obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
-- name: "\U0001F1E8\U0001F1F3 CN 134"
+- name: "\U0001F1E8\U0001F1F3 CN 81"
+  server: 120.240.50.248
+  port: 6601
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 82"
+  server: 120.240.50.248
+  port: 6600
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 83"
+  server: 120.240.50.248
+  port: 4601
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 84"
+  server: 120.240.50.248
+  port: 6602
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 85"
+  server: 120.240.50.248
+  port: 3046
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 86"
+  server: 120.240.50.248
+  port: 3036
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 87"
+  server: 120.240.50.223
+  port: 3607
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 88"
+  server: 120.240.50.223
+  port: 3601
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 89"
+  server: bs1-1.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3504
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 90"
+  server: 120.240.50.225
+  port: 3036
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 91"
+  server: 120.240.50.248
+  port: 4602
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 92"
+  server: 120.240.50.223
+  port: 3605
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 93"
+  server: 120.240.50.248
+  port: 3026
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 94"
+  server: 120.240.50.225
+  port: 3026
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 95"
+  server: 120.240.50.227
+  port: 3604
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 96"
+  server: 120.240.50.225
+  port: 4600
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 HK 97"
+  server: azgy001.xiba1.xyz
+  port: 20716
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 98"
+  server: 120.240.50.225
+  port: 6600
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 99"
+  server: 120.240.50.227
+  port: 3609
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 100"
+  server: bs1-1.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3505
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1FA\U0001F1F8 US 101"
+  server: fhcamd1.gaox.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: e23f408a-012e-4030-8b31-02022031cb50
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 102"
+  server: 120.240.50.225
+  port: 4601
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 103"
+  server: 120.240.50.248
+  port: 4603
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 104"
+  server: 120.240.50.248
+  port: 5601
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 105"
+  server: 120.240.50.225
+  port: 4603
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 106"
+  server: 120.240.50.227
+  port: 3602
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 107"
+  server: 120.240.50.248
+  port: 6603
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 108"
+  server: 120.240.50.225
+  port: 5603
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 109"
   server: cmrelay01.downsite.xyz
-  port: 7702
+  port: 6708
+  type: ssr
+  cipher: chacha20-ietf
+  password: jFa4F1
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 62611:fx2iOd
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 110"
+  server: 120.240.50.248
+  port: 5602
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1EC\U0001F1E7 GB 111"
+  server: jgwld3.gaox.ml
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7 GB"
+  port: 443
+  password: 71b55a84-3fac-4458-abff-eaad79219c91
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 112"
+  server: 120.240.50.223
+  port: 3606
+  type: ss
+  cipher: rc4-md5
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 23923152006.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 113"
+  server: cmrelay02.downsite.xyz
+  port: 2709
   type: ssr
   cipher: chacha20-ietf
   password: jFa4F1
@@ -1220,29 +1005,32 @@ proxies:
   obfs: plain
   protocol-param: 65199:xMcKnc
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 135"
+- name: "\U0001F1FA\U0001F1F8 US 114"
+  server: storage.starspace.link
+  port: 443
+  type: trojan
+  password: W8gVbKNAZlFzgGPn
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 115"
+  server: azgy001.xiba1.xyz
+  port: 20713
+  type: trojan
+  password: 7384f24b-fbb3-3222-8da9-6a496e65f4ff
+  sni: ssl.ssl12.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 116"
   server: cmrelay01.downsite.xyz
-  port: 7709
+  port: 6704
   type: ssr
   cipher: chacha20-ietf
   password: jFa4F1
   protocol: auth_aes128_sha1
   obfs: plain
-  protocol-param: 65199:xMcKnc
+  protocol-param: 67249:ojZU44
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 136"
+- name: "\U0001F1E8\U0001F1F3 CN 117"
   server: cmrelay01.downsite.xyz
-  port: 6700
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 65199:xMcKnc
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 137"
-  server: cmrelay01.downsite.xyz
-  port: 5703
+  port: 6709
   type: ssr
   cipher: chacha20-ietf
   password: jFa4F1
@@ -1250,25 +1038,85 @@ proxies:
   obfs: plain
   protocol-param: 63277:a4XecS
   obfs-param: ''
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 138"
-  server: sg-01.licom.ml
-  port: 8443
-  password: ce433528-39fa-4711-bc0d-25a5b1579574
-  udp: true
-  skip-cert-verify: true
-  sni: sg-01.licom.ml
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 139"
+- name: "\U0001F1E8\U0001F1F3 CN 118"
+  server: bs2-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 4503
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: TWpNNU1qTXhOVEl3TURZdWJXbGpjbTl6YjJaMExtTnZiUQ
+- name: "\U0001F1E8\U0001F1F3 CN 119"
   server: bs2-1.getnjnd.com
   port: 3504
-  protocol: auth_aes128_sha1
+  type: ssr
   cipher: chacha20-ietf
-  obfs: plain
   password: renzhecloud
-  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+  protocol: auth_aes128_sha1
+  obfs: plain
   protocol-param: 152006:OeRRkC
-- name: "\U0001F1E8\U0001F1F3 CN 140"
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 120"
+  server: cmrelay01.downsite.xyz
+  port: 5705
+  type: ssr
+  cipher: chacha20-ietf
+  password: jFa4F1
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 63277:a4XecS
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 121"
+  server: bs1-1.getnjnd.com
+  port: 3503
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: 23923152006.microsoft.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 122"
+  server: cmrelay01.downsite.xyz
+  port: 5701
+  type: ssr
+  cipher: chacha20-ietf
+  password: jFa4F1
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 62611:fx2iOd
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 123"
+  server: cmrelay01.downsite.xyz
+  port: 7708
+  type: ssr
+  cipher: chacha20-ietf
+  password: jFa4F1
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 67249:ojZU44
+  obfs-param: ''
+- name: "\U0001F1F8\U0001F1EC SG 124"
+  server: sg-01.licom.ml
+  port: 8443
+  type: trojan
+  password: ce433528-39fa-4711-bc0d-25a5b1579574
+  sni: sg-01.licom.ml
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 125"
+  server: jgwcc1.gaox.ml
+  port: 443
+  type: trojan
+  password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 126"
   server: cmrelay01.downsite.xyz
   port: 7705
   type: ssr
@@ -1278,17 +1126,7 @@ proxies:
   obfs: plain
   protocol-param: 63277:a4XecS
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 141"
-  server: cmrelay01.downsite.xyz
-  port: 5700
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 65199:xMcKnc
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 142"
+- name: "\U0001F1E8\U0001F1F3 CN 127"
   server: cmrelay01.downsite.xyz
   port: 5702
   type: ssr
@@ -1298,92 +1136,173 @@ proxies:
   obfs: plain
   protocol-param: 67249:ojZU44
   obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 128"
+  server: cmrelay01.downsite.xyz
+  port: 5703
+  type: ssr
+  cipher: chacha20-ietf
+  password: jFa4F1
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 63277:a4XecS
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 129"
+  server: bs2-2.getnjnd.com
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 5502
+  password: renzhecloud
+  cipher: chacha20-ietf
+  protocol: auth_aes128_sha1
+  protocol-param: 152006:OeRRkC
+  obfs: plain
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+- name: "\U0001F1E8\U0001F1F3 CN 130"
+  server: hg001.zhuan666.top
+  port: 11802
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4f9c6f67-c9e3-43b9-a052-97272685be41
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 131"
+  server: h003.zhuan666.top
+  port: 11403
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4f9c6f67-c9e3-43b9-a052-97272685be41
+  udp: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 132"
+  server: bs1-1.getnjnd.com
+  port: 3500
+  protocol: auth_aes128_sha1
+  cipher: chacha20-ietf
+  obfs: plain
+  password: renzhecloud
+  obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ
+  protocol-param: 152006:OeRRkC
+- name: "\U0001F1E8\U0001F1F3 CN 133"
+  server: bs2-1.getnjnd.com
+  port: 3507
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: 23923152006.microsoft.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 134"
+  server: rr002.zhuan666.top
+  port: 11202
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4f9c6f67-c9e3-43b9-a052-97272685be41
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 135"
+  server: nm1-2.getnjnd.com
+  port: 5502
+  type: ssr
+  cipher: chacha20-ietf
+  password: renzhecloud
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 152006:OeRRkC
+  obfs-param: 23923152006.microsoft.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 136"
+  server: e005.zhuan666.top
+  port: 11105
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4f9c6f67-c9e3-43b9-a052-97272685be41
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1FF CZ 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1FF CZ 5"
-  - "\U0001F1E8\U0001F1FF CZ 6"
-  - "\U0001F1E8\U0001F1FF CZ 7"
-  - "\U0001F1E8\U0001F1FF CZ 8"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E6\U0001F1FA AU 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E6\U0001F1FA AU 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1E8\U0001F1FF CZ 12"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
   - "\U0001F1E8\U0001F1F3 CN 15"
-  - "\U0001F1E8\U0001F1F3 CN 16"
-  - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1E8\U0001F1F3 CN 18"
-  - "\U0001F1E8\U0001F1F3 CN 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1E8\U0001F1F3 CN 21"
+  - "\U0001F1EF\U0001F1F5 JP 16"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FA\U0001F1F8 US 18"
+  - "\U0001F1FA\U0001F1F8 US 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
+  - "\U0001F1FA\U0001F1F8 US 21"
   - "\U0001F1F8\U0001F1EC SG 22"
   - "\U0001F1F8\U0001F1EC SG 23"
-  - "\U0001F1E8\U0001F1F3 CN 24"
-  - "\U0001F1F8\U0001F1EC SG 25"
-  - "\U0001F1E8\U0001F1F3 CN 26"
-  - "\U0001F1FA\U0001F1F8 US 27"
-  - "\U0001F1E8\U0001F1F3 CN 28"
-  - "\U0001F1EF\U0001F1F5 JP 29"
-  - "\U0001F1E8\U0001F1F3 CN 30"
-  - "\U0001F1E8\U0001F1F3 CN 31"
-  - "\U0001F1E8\U0001F1F3 CN 32"
-  - "\U0001F1E8\U0001F1F3 CN 33"
+  - "\U0001F1EC\U0001F1E7 GB 24"
+  - "\U0001F1EC\U0001F1E7 GB 25"
+  - "\U0001F1FA\U0001F1F8 US 26"
+  - "\U0001F1F8\U0001F1EC SG 27"
+  - "\U0001F1E8\U0001F1FF CZ 28"
+  - "\U0001F1FA\U0001F1F8 US 29"
+  - "\U0001F1E8\U0001F1FF CZ 30"
+  - "\U0001F1E8\U0001F1FF CZ 31"
+  - "\U0001F1E8\U0001F1FF CZ 32"
+  - "\U0001F1E8\U0001F1FF CZ 33"
   - "\U0001F1FA\U0001F1F8 US 34"
-  - "\U0001F1FA\U0001F1F8 US 35"
-  - "\U0001F1E8\U0001F1F3 CN 36"
-  - "\U0001F1E8\U0001F1F3 CN 37"
-  - "\U0001F1E8\U0001F1F3 CN 38"
-  - "\U0001F1E8\U0001F1F3 CN 39"
-  - "\U0001F1FA\U0001F1F8 US 40"
-  - "\U0001F1FA\U0001F1F8 US 41"
-  - "\U0001F1FA\U0001F1F8 US 42"
-  - "\U0001F1FA\U0001F1F8 US 43"
+  - "\U0001F1E8\U0001F1FF CZ 35"
+  - "\U0001F1E8\U0001F1FF CZ 36"
+  - "\U0001F1FA\U0001F1F8 US 37"
+  - "\U0001F1E8\U0001F1F3 HK 38"
+  - "\U0001F1F8\U0001F1EC SG 39"
+  - "\U0001F1F8\U0001F1EC SG 40"
+  - "\U0001F1E6\U0001F1FA AU 41"
+  - "\U0001F1EF\U0001F1F5 JP 42"
+  - "\U0001F1F0\U0001F1F7 KR 43"
   - "\U0001F1E8\U0001F1F3 CN 44"
-  - "\U0001F1FA\U0001F1F8 US 45"
-  - "\U0001F1E8\U0001F1F3 CN 46"
-  - "\U0001F1E8\U0001F1F3 CN 47"
-  - "\U0001F1F8\U0001F1EC SG 48"
-  - "\U0001F1EC\U0001F1E7 GB 49"
-  - "\U0001F1EC\U0001F1E7 GB 50"
-  - "\U0001F1E8\U0001F1F3 CN 51"
+  - "\U0001F1EF\U0001F1F5 JP 45"
+  - "\U0001F1EE\U0001F1F3 IN 46"
+  - "\U0001F1E8\U0001F1F3 HK 47"
+  - "\U0001F1E8\U0001F1F3 CN 48"
+  - "\U0001F1E8\U0001F1F3 CN 49"
+  - "\U0001F1E8\U0001F1F3 HK 50"
+  - "\U0001F1E8\U0001F1F3 HK 51"
   - "\U0001F1E8\U0001F1F3 HK 52"
   - "\U0001F1E8\U0001F1F3 HK 53"
-  - "\U0001F1EF\U0001F1F5 JP 54"
-  - "\U0001F1F8\U0001F1EC SG 55"
-  - "\U0001F1F8\U0001F1EC SG 56"
+  - "\U0001F1E8\U0001F1F3 CN 54"
+  - "\U0001F1E8\U0001F1F3 CN 55"
+  - "\U0001F1E8\U0001F1F3 CN 56"
   - "\U0001F1E8\U0001F1F3 CN 57"
   - "\U0001F1E8\U0001F1F3 CN 58"
-  - "\U0001F1E8\U0001F1F3 HK 59"
+  - "\U0001F1E8\U0001F1F3 CN 59"
   - "\U0001F1E8\U0001F1F3 CN 60"
   - "\U0001F1E8\U0001F1F3 CN 61"
   - "\U0001F1E8\U0001F1F3 CN 62"
-  - "\U0001F1F0\U0001F1F7 KR 63"
-  - "\U0001F1F0\U0001F1F7 KR 64"
-  - "\U0001F1E8\U0001F1FF CZ 65"
+  - "\U0001F1E8\U0001F1F3 HK 63"
+  - "\U0001F1E8\U0001F1F3 HK 64"
+  - "\U0001F1E8\U0001F1F3 CN 65"
   - "\U0001F1E8\U0001F1F3 CN 66"
   - "\U0001F1E8\U0001F1F3 CN 67"
-  - "\U0001F1EF\U0001F1F5 JP 68"
-  - "\U0001F1FA\U0001F1F8 US 69"
+  - "\U0001F1E8\U0001F1F3 CN 68"
+  - "\U0001F1E8\U0001F1F3 CN 69"
   - "\U0001F1E8\U0001F1F3 CN 70"
   - "\U0001F1E8\U0001F1F3 CN 71"
   - "\U0001F1E8\U0001F1F3 CN 72"
-  - "\U0001F1FA\U0001F1F8 US 73"
-  - "\U0001F1FA\U0001F1F8 US 74"
-  - "\U0001F1EE\U0001F1F3 IN 75"
-  - "\U0001F1E8\U0001F1FF CZ 76"
-  - "\U0001F1E8\U0001F1F3 HK 77"
-  - "\U0001F1E8\U0001F1F3 HK 78"
-  - "\U0001F1E8\U0001F1F3 HK 79"
+  - "\U0001F1E8\U0001F1F3 CN 73"
+  - "\U0001F1E8\U0001F1F3 HK 74"
+  - "\U0001F1E8\U0001F1F3 HK 75"
+  - "\U0001F1E8\U0001F1F3 CN 76"
+  - "\U0001F1E8\U0001F1F3 CN 77"
+  - "\U0001F1E8\U0001F1F3 CN 78"
+  - "\U0001F1E8\U0001F1F3 CN 79"
   - "\U0001F1E8\U0001F1F3 CN 80"
   - "\U0001F1E8\U0001F1F3 CN 81"
-  - "\U0001F1E8\U0001F1F3 HK 82"
+  - "\U0001F1E8\U0001F1F3 CN 82"
   - "\U0001F1E8\U0001F1F3 CN 83"
   - "\U0001F1E8\U0001F1F3 CN 84"
   - "\U0001F1E8\U0001F1F3 CN 85"
@@ -1398,21 +1317,21 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 94"
   - "\U0001F1E8\U0001F1F3 CN 95"
   - "\U0001F1E8\U0001F1F3 CN 96"
-  - "\U0001F1E8\U0001F1F3 CN 97"
+  - "\U0001F1E8\U0001F1F3 HK 97"
   - "\U0001F1E8\U0001F1F3 CN 98"
   - "\U0001F1E8\U0001F1F3 CN 99"
   - "\U0001F1E8\U0001F1F3 CN 100"
-  - "\U0001F1E8\U0001F1F3 CN 101"
+  - "\U0001F1FA\U0001F1F8 US 101"
   - "\U0001F1E8\U0001F1F3 CN 102"
   - "\U0001F1E8\U0001F1F3 CN 103"
   - "\U0001F1E8\U0001F1F3 CN 104"
   - "\U0001F1E8\U0001F1F3 CN 105"
-  - "\U0001F1E8\U0001F1F3 HK 106"
+  - "\U0001F1E8\U0001F1F3 CN 106"
   - "\U0001F1E8\U0001F1F3 CN 107"
   - "\U0001F1E8\U0001F1F3 CN 108"
   - "\U0001F1E8\U0001F1F3 CN 109"
   - "\U0001F1E8\U0001F1F3 CN 110"
-  - "\U0001F1E8\U0001F1F3 CN 111"
+  - "\U0001F1EC\U0001F1E7 GB 111"
   - "\U0001F1E8\U0001F1F3 CN 112"
   - "\U0001F1E8\U0001F1F3 CN 113"
   - "\U0001F1FA\U0001F1F8 US 114"
@@ -1425,9 +1344,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 121"
   - "\U0001F1E8\U0001F1F3 CN 122"
   - "\U0001F1E8\U0001F1F3 CN 123"
-  - "\U0001F1E8\U0001F1F3 CN 124"
-  - "\U0001F1E8\U0001F1F3 CN 125"
-  - "\U0001F1E6\U0001F1FA AU 126"
+  - "\U0001F1F8\U0001F1EC SG 124"
+  - "\U0001F1F0\U0001F1F7 KR 125"
+  - "\U0001F1E8\U0001F1F3 CN 126"
   - "\U0001F1E8\U0001F1F3 CN 127"
   - "\U0001F1E8\U0001F1F3 CN 128"
   - "\U0001F1E8\U0001F1F3 CN 129"
@@ -1438,12 +1357,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 134"
   - "\U0001F1E8\U0001F1F3 CN 135"
   - "\U0001F1E8\U0001F1F3 CN 136"
-  - "\U0001F1E8\U0001F1F3 CN 137"
-  - "\U0001F1F8\U0001F1EC SG 138"
-  - "\U0001F1E8\U0001F1F3 CN 139"
-  - "\U0001F1E8\U0001F1F3 CN 140"
-  - "\U0001F1E8\U0001F1F3 CN 141"
-  - "\U0001F1E8\U0001F1F3 CN 142"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1451,87 +1364,87 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1FF CZ 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1FF CZ 5"
-  - "\U0001F1E8\U0001F1FF CZ 6"
-  - "\U0001F1E8\U0001F1FF CZ 7"
-  - "\U0001F1E8\U0001F1FF CZ 8"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E6\U0001F1FA AU 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E6\U0001F1FA AU 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1E8\U0001F1FF CZ 12"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
   - "\U0001F1E8\U0001F1F3 CN 15"
-  - "\U0001F1E8\U0001F1F3 CN 16"
-  - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1E8\U0001F1F3 CN 18"
-  - "\U0001F1E8\U0001F1F3 CN 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1E8\U0001F1F3 CN 21"
+  - "\U0001F1EF\U0001F1F5 JP 16"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FA\U0001F1F8 US 18"
+  - "\U0001F1FA\U0001F1F8 US 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
+  - "\U0001F1FA\U0001F1F8 US 21"
   - "\U0001F1F8\U0001F1EC SG 22"
   - "\U0001F1F8\U0001F1EC SG 23"
-  - "\U0001F1E8\U0001F1F3 CN 24"
-  - "\U0001F1F8\U0001F1EC SG 25"
-  - "\U0001F1E8\U0001F1F3 CN 26"
-  - "\U0001F1FA\U0001F1F8 US 27"
-  - "\U0001F1E8\U0001F1F3 CN 28"
-  - "\U0001F1EF\U0001F1F5 JP 29"
-  - "\U0001F1E8\U0001F1F3 CN 30"
-  - "\U0001F1E8\U0001F1F3 CN 31"
-  - "\U0001F1E8\U0001F1F3 CN 32"
-  - "\U0001F1E8\U0001F1F3 CN 33"
+  - "\U0001F1EC\U0001F1E7 GB 24"
+  - "\U0001F1EC\U0001F1E7 GB 25"
+  - "\U0001F1FA\U0001F1F8 US 26"
+  - "\U0001F1F8\U0001F1EC SG 27"
+  - "\U0001F1E8\U0001F1FF CZ 28"
+  - "\U0001F1FA\U0001F1F8 US 29"
+  - "\U0001F1E8\U0001F1FF CZ 30"
+  - "\U0001F1E8\U0001F1FF CZ 31"
+  - "\U0001F1E8\U0001F1FF CZ 32"
+  - "\U0001F1E8\U0001F1FF CZ 33"
   - "\U0001F1FA\U0001F1F8 US 34"
-  - "\U0001F1FA\U0001F1F8 US 35"
-  - "\U0001F1E8\U0001F1F3 CN 36"
-  - "\U0001F1E8\U0001F1F3 CN 37"
-  - "\U0001F1E8\U0001F1F3 CN 38"
-  - "\U0001F1E8\U0001F1F3 CN 39"
-  - "\U0001F1FA\U0001F1F8 US 40"
-  - "\U0001F1FA\U0001F1F8 US 41"
-  - "\U0001F1FA\U0001F1F8 US 42"
-  - "\U0001F1FA\U0001F1F8 US 43"
+  - "\U0001F1E8\U0001F1FF CZ 35"
+  - "\U0001F1E8\U0001F1FF CZ 36"
+  - "\U0001F1FA\U0001F1F8 US 37"
+  - "\U0001F1E8\U0001F1F3 HK 38"
+  - "\U0001F1F8\U0001F1EC SG 39"
+  - "\U0001F1F8\U0001F1EC SG 40"
+  - "\U0001F1E6\U0001F1FA AU 41"
+  - "\U0001F1EF\U0001F1F5 JP 42"
+  - "\U0001F1F0\U0001F1F7 KR 43"
   - "\U0001F1E8\U0001F1F3 CN 44"
-  - "\U0001F1FA\U0001F1F8 US 45"
-  - "\U0001F1E8\U0001F1F3 CN 46"
-  - "\U0001F1E8\U0001F1F3 CN 47"
-  - "\U0001F1F8\U0001F1EC SG 48"
-  - "\U0001F1EC\U0001F1E7 GB 49"
-  - "\U0001F1EC\U0001F1E7 GB 50"
-  - "\U0001F1E8\U0001F1F3 CN 51"
+  - "\U0001F1EF\U0001F1F5 JP 45"
+  - "\U0001F1EE\U0001F1F3 IN 46"
+  - "\U0001F1E8\U0001F1F3 HK 47"
+  - "\U0001F1E8\U0001F1F3 CN 48"
+  - "\U0001F1E8\U0001F1F3 CN 49"
+  - "\U0001F1E8\U0001F1F3 HK 50"
+  - "\U0001F1E8\U0001F1F3 HK 51"
   - "\U0001F1E8\U0001F1F3 HK 52"
   - "\U0001F1E8\U0001F1F3 HK 53"
-  - "\U0001F1EF\U0001F1F5 JP 54"
-  - "\U0001F1F8\U0001F1EC SG 55"
-  - "\U0001F1F8\U0001F1EC SG 56"
+  - "\U0001F1E8\U0001F1F3 CN 54"
+  - "\U0001F1E8\U0001F1F3 CN 55"
+  - "\U0001F1E8\U0001F1F3 CN 56"
   - "\U0001F1E8\U0001F1F3 CN 57"
   - "\U0001F1E8\U0001F1F3 CN 58"
-  - "\U0001F1E8\U0001F1F3 HK 59"
+  - "\U0001F1E8\U0001F1F3 CN 59"
   - "\U0001F1E8\U0001F1F3 CN 60"
   - "\U0001F1E8\U0001F1F3 CN 61"
   - "\U0001F1E8\U0001F1F3 CN 62"
-  - "\U0001F1F0\U0001F1F7 KR 63"
-  - "\U0001F1F0\U0001F1F7 KR 64"
-  - "\U0001F1E8\U0001F1FF CZ 65"
+  - "\U0001F1E8\U0001F1F3 HK 63"
+  - "\U0001F1E8\U0001F1F3 HK 64"
+  - "\U0001F1E8\U0001F1F3 CN 65"
   - "\U0001F1E8\U0001F1F3 CN 66"
   - "\U0001F1E8\U0001F1F3 CN 67"
-  - "\U0001F1EF\U0001F1F5 JP 68"
-  - "\U0001F1FA\U0001F1F8 US 69"
+  - "\U0001F1E8\U0001F1F3 CN 68"
+  - "\U0001F1E8\U0001F1F3 CN 69"
   - "\U0001F1E8\U0001F1F3 CN 70"
   - "\U0001F1E8\U0001F1F3 CN 71"
   - "\U0001F1E8\U0001F1F3 CN 72"
-  - "\U0001F1FA\U0001F1F8 US 73"
-  - "\U0001F1FA\U0001F1F8 US 74"
-  - "\U0001F1EE\U0001F1F3 IN 75"
-  - "\U0001F1E8\U0001F1FF CZ 76"
-  - "\U0001F1E8\U0001F1F3 HK 77"
-  - "\U0001F1E8\U0001F1F3 HK 78"
-  - "\U0001F1E8\U0001F1F3 HK 79"
+  - "\U0001F1E8\U0001F1F3 CN 73"
+  - "\U0001F1E8\U0001F1F3 HK 74"
+  - "\U0001F1E8\U0001F1F3 HK 75"
+  - "\U0001F1E8\U0001F1F3 CN 76"
+  - "\U0001F1E8\U0001F1F3 CN 77"
+  - "\U0001F1E8\U0001F1F3 CN 78"
+  - "\U0001F1E8\U0001F1F3 CN 79"
   - "\U0001F1E8\U0001F1F3 CN 80"
   - "\U0001F1E8\U0001F1F3 CN 81"
-  - "\U0001F1E8\U0001F1F3 HK 82"
+  - "\U0001F1E8\U0001F1F3 CN 82"
   - "\U0001F1E8\U0001F1F3 CN 83"
   - "\U0001F1E8\U0001F1F3 CN 84"
   - "\U0001F1E8\U0001F1F3 CN 85"
@@ -1546,21 +1459,21 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 94"
   - "\U0001F1E8\U0001F1F3 CN 95"
   - "\U0001F1E8\U0001F1F3 CN 96"
-  - "\U0001F1E8\U0001F1F3 CN 97"
+  - "\U0001F1E8\U0001F1F3 HK 97"
   - "\U0001F1E8\U0001F1F3 CN 98"
   - "\U0001F1E8\U0001F1F3 CN 99"
   - "\U0001F1E8\U0001F1F3 CN 100"
-  - "\U0001F1E8\U0001F1F3 CN 101"
+  - "\U0001F1FA\U0001F1F8 US 101"
   - "\U0001F1E8\U0001F1F3 CN 102"
   - "\U0001F1E8\U0001F1F3 CN 103"
   - "\U0001F1E8\U0001F1F3 CN 104"
   - "\U0001F1E8\U0001F1F3 CN 105"
-  - "\U0001F1E8\U0001F1F3 HK 106"
+  - "\U0001F1E8\U0001F1F3 CN 106"
   - "\U0001F1E8\U0001F1F3 CN 107"
   - "\U0001F1E8\U0001F1F3 CN 108"
   - "\U0001F1E8\U0001F1F3 CN 109"
   - "\U0001F1E8\U0001F1F3 CN 110"
-  - "\U0001F1E8\U0001F1F3 CN 111"
+  - "\U0001F1EC\U0001F1E7 GB 111"
   - "\U0001F1E8\U0001F1F3 CN 112"
   - "\U0001F1E8\U0001F1F3 CN 113"
   - "\U0001F1FA\U0001F1F8 US 114"
@@ -1573,9 +1486,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 121"
   - "\U0001F1E8\U0001F1F3 CN 122"
   - "\U0001F1E8\U0001F1F3 CN 123"
-  - "\U0001F1E8\U0001F1F3 CN 124"
-  - "\U0001F1E8\U0001F1F3 CN 125"
-  - "\U0001F1E6\U0001F1FA AU 126"
+  - "\U0001F1F8\U0001F1EC SG 124"
+  - "\U0001F1F0\U0001F1F7 KR 125"
+  - "\U0001F1E8\U0001F1F3 CN 126"
   - "\U0001F1E8\U0001F1F3 CN 127"
   - "\U0001F1E8\U0001F1F3 CN 128"
   - "\U0001F1E8\U0001F1F3 CN 129"
@@ -1586,11 +1499,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 134"
   - "\U0001F1E8\U0001F1F3 CN 135"
   - "\U0001F1E8\U0001F1F3 CN 136"
-  - "\U0001F1E8\U0001F1F3 CN 137"
-  - "\U0001F1F8\U0001F1EC SG 138"
-  - "\U0001F1E8\U0001F1F3 CN 139"
-  - "\U0001F1E8\U0001F1F3 CN 140"
-  - "\U0001F1E8\U0001F1F3 CN 141"
-  - "\U0001F1E8\U0001F1F3 CN 142"
 rules:
 - "MATCH,\U0001F310 Proxy"
