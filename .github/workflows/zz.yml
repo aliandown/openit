@@ -1,0 +1,22 @@
+name: zz
+on: 
+  workflow_dispatch:
+
+jobs:
+  zz-job: 
+    name: Delete History
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: init
+      run: | 
+         git config pull.rebase false
+         git config --local user.name "Yu Steven"
+         git config --local user.email "yxyusteven@gmail.com"
+    - run: | 
+         git checkout --orphan latest_branch
+         git add -A
+         git commit -am "Hello World"
+         git branch -D main
+         git branch -m main
+         git push -f origin main
