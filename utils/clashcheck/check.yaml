@@ -15,13 +15,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: silicon.starspace.link
-  port: 443
-  type: trojan
-  password: 4ZPDeqJ6g766UKDJ
-  sni: silicon.starspace.link
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F8 US 4"
   server: rooms.starspace.link
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -29,7 +22,26 @@ proxies:
   password: 5HfENR8nt2PR8reH
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 5"
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: silicon.starspace.link
+  port: 443
+  type: trojan
+  password: 4ZPDeqJ6g766UKDJ
+  sni: silicon.starspace.link
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: 207.2.120.172
+  port: 443
+  type: trojan
+  password: a786ad3c-0aec-3751-aa72-67a380c9da42
+  sni: 20020517.luohuaxian.xyz
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 45.137.97.205
+  port: 443
+  type: trojan
+  password: 20285447-9d23-3fee-a6aa-f8f2bb3edec3
+  sni: 20020526.luohuaxian.xyz
+- name: "\U0001F1E8\U0001F1FF CZ 7"
   server: v2cross.com.03.v2ce.com
   type: trojan
   country: "\U0001F1FA\U0001F1E6UA"
@@ -37,90 +49,53 @@ proxies:
   password: ZD4dLSBXiMrmzdLd
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: activity.huawei.daanyht.com
-  port: 12023
-  type: ss
-  cipher: aes-128-gcm
-  password: haMLMXirByn6rGVh
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 7c0817db7e17.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: activity.huawei.daanyht.com
-  port: 13105
-  type: ss
-  cipher: aes-128-gcm
-  password: haMLMXirByn6rGVh
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 7c0817db7e17.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: activity.huawei.daanyht.com
-  port: 12405
-  type: ss
-  cipher: aes-128-gcm
-  password: haMLMXirByn6rGVh
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 7c0817db7e17.microsoft.com
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: azhk.r.optage.moe
-  port: 62501
-  type: trojan
-  password: 1a475206-fd91-4a45-ba83-5b23aeacae62
-  sni: azhk.r.optage.moe
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 10"
+- name: "\U0001F1F8\U0001F1EC SG 8"
   server: tj-sg02.yiyodns.xyz
   port: 443
   type: trojan
   password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
   sni: tj-sg02.yiyodns.xyz
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 11"
+- name: "\U0001F1F8\U0001F1EC SG 9"
   server: s1.hazz.win
   port: 12340
   type: trojan
   password: dfbf0d67-f03d-4184-a224-c2d64a571f99
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 12"
-  server: 73hk02.ok365.cyou
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 HK 10"
+  server: azhk.r.optage.moe
+  port: 62501
   type: trojan
-  password: 6f42acc5-995e-4060-9292-f7cc7641a830
-  sni: 73hk02.ok365.cyou
-- name: "\U0001F1E8\U0001F1F3 HK 13"
-  server: 73hk01.ok365.cyou
-  port: 443
-  type: trojan
-  password: 6f42acc5-995e-4060-9292-f7cc7641a830
-  sni: 73hk01.ok365.cyou
+  password: 1a475206-fd91-4a45-ba83-5b23aeacae62
+  sni: azhk.r.optage.moe
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 14"
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: 183.240.124.156
+  type: ssr
+  port: 1502
+  udp: true
+  password: mtbv8n
+  cipher: chacha20-ietf
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
+  obfs: plain
+  obfs-param: dC5tZS92cG5oYXQ
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: 14.29.124.168
+  port: 24001
+  type: ssr
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+  protocol: origin
+  obfs: plain
+- name: "\U0001F1F8\U0001F1EC SG 13"
   server: 626sg05.ok365.cyou
   port: 80
   type: trojan
   password: 6f42acc5-995e-4060-9292-f7cc7641a830
   sni: 626sg05.ok365.cyou
-- name: "\U0001F1EE\U0001F1F3 IN 15"
-  server: jgwhdlb1.gaox.ml
-  port: 443
-  type: trojan
-  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
-  sni: jgwhdlb1.gaox.ml
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 16"
-  server: 207.2.120.172
-  port: 443
-  type: trojan
-  password: a786ad3c-0aec-3751-aa72-67a380c9da42
-  sni: 20020517.luohuaxian.xyz
-- name: "\U0001F1FA\U0001F1F8 US 17"
+- name: "\U0001F1FA\U0001F1F8 US 14"
   server: trus.moonfree.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -128,7 +103,7 @@ proxies:
   password: 4863e1b2-ec2f-4c71-b862-ce533028e57e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 18"
+- name: "\U0001F1FA\U0001F1F8 US 15"
   server: fhcamd2.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -136,54 +111,14 @@ proxies:
   password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 19"
-  server: 45.137.97.205
-  port: 443
-  type: trojan
-  password: 20285447-9d23-3fee-a6aa-f8f2bb3edec3
-  sni: 20020526.luohuaxian.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 20"
+- name: "\U0001F1E8\U0001F1F3 CN 16"
   server: cm.spacez.cloud
   port: 30003
   type: trojan
   password: c9a3a61d-5d49-4158-9e60-6fa32684b122
   sni: cm.spacez.cloud
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 21"
-  server: bgphk6.vip.www.klrxyru.cn
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-- name: "\U0001F1FA\U0001F1F8 US 22"
-  server: s3.hazz.win
-  port: 12340
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 23"
-  server: sg.sharecentrepro.tk
-  type: trojan
-  country: "\U0001F1F8\U0001F1ECSG"
-  port: 443
-  password: sharecentre
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 24"
-  server: www.nubility.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 9a2c5cc6ef
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 25"
+- name: "\U0001F1E8\U0001F1F3 CN 17"
   server: cm.spacez.cloud
   type: trojan
   country: "\U0001F1E8\U0001F1F3 CN"
@@ -191,23 +126,14 @@ proxies:
   password: c9a3a61d-5d49-4158-9e60-6fa32684b122
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 26"
-  server: jgwdb3.gaox.ml
+- name: "\U0001F1EE\U0001F1F3 IN 18"
+  server: jgwhdlb1.gaox.ml
   port: 443
   type: trojan
-  country: "\U0001F1EF\U0001F1F5 JP"
-  password: 8d2d5953-d649-4034-94f2-72f2df2623da
+  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
+  sni: jgwhdlb1.gaox.ml
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 27"
-  server: s2.hazz.win
-  port: 12340
-  type: trojan
-  country: "\U0001F1F8\U0001F1EC SG"
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 28"
+- name: "\U0001F1F3\U0001F1F1 NL 19"
   server: youtube-bai-piao-wang-zhe.nl.884899.cf
   port: 41196
   type: trojan
@@ -215,23 +141,39 @@ proxies:
   password: 94afcc56-cc1c-4cd4-8c82-1215cd052795
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 29"
-  server: tj-us02.yiyodns.xyz
-  port: 443
+- name: "\U0001F1EF\U0001F1F5 JP 20"
+  server: www.nubility.ml
   type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 9a2c5cc6ef
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 30"
-  server: 203.138.98.199
+- name: "\U0001F1FA\U0001F1F8 US 21"
+  server: s3.hazz.win
+  port: 12340
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 22"
+  server: jgwxn4.gaox.ml
+  port: 443
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 23"
+  server: hkt.52147.top
   port: 28443
   type: trojan
-  country: "\U0001F1EF\U0001F1F5 JP"
+  country: "\U0001F1ED\U0001F1F0 HK"
   password: a3da3376-881c-4f5a-93cd-e3289e853475
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 31"
+- name: "\U0001F1EF\U0001F1F5 JP 24"
   server: 164.70.68.67
   port: 28000
   type: trojan
@@ -239,40 +181,23 @@ proxies:
   password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 32"
-  server: 36.150.19.160
-  port: 13105
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 33"
-  server: 36.150.19.135
-  port: 13105
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 34"
-  server: 36.150.19.45
-  port: 12405
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 HK 35"
+- name: "\U0001F1FA\U0001F1F8 US 25"
+  server: cd.rutracker-cn.com
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: ukMzuFSmIXDvgW0h
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 26"
+  server: 203.138.98.199
+  port: 28443
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5 JP"
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 27"
   server: hkt.52147.top
   port: 28000
   type: trojan
@@ -280,78 +205,102 @@ proxies:
   password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 36"
-  server: hkt.52147.top
-  port: 28443
+- name: "\U0001F1E8\U0001F1F3 CN 28"
+  server: gzyd1.52147.top
+  port: 20020
   type: trojan
-  country: "\U0001F1ED\U0001F1F0 HK"
+  country: "\U0001F1E8\U0001F1F3 CN"
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 29"
+  server: v2cross.com.02.v2ce.com
+  type: trojan
+  country: "\U0001F1E8\U0001F1FFCZ"
+  port: 443
+  password: 3gLlCYBipVwr6Y5F
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 30"
+  server: gzyd2.52147.top
+  port: 30010
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3 CN"
+  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 31"
+  server: gzyd1.52147.top
+  port: 20170
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3 CN"
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 32"
+  server: 14.29.124.168
+  port: 24004
+  type: ss
+  country: "\U0001F1E8\U0001F1F3 CN"
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1F8\U0001F1EC SG 33"
+  server: 91.243.81.248
+  port: 28000
+  type: trojan
+  country: "\U0001F1F7\U0001F1FA RU"
+  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 34"
+  server: s2.hazz.win
+  port: 12340
+  type: trojan
+  country: "\U0001F1F8\U0001F1EC SG"
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 35"
+  server: hnyd.52147.top
+  port: 20020
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3 CN"
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 36"
+  server: gzyd2.52147.top
+  port: 20120
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3 CN"
   password: a3da3376-881c-4f5a-93cd-e3289e853475
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 37"
-  server: 36.150.19.135
-  port: 12405
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 38"
-  server: 36.150.19.45
-  port: 13105
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 39"
-  server: 36.150.19.10
-  port: 13105
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1EE\U0001F1E9 ID 40"
-  server: 41.216.177.41
-  port: 443
+  server: hnyd.52147.top
+  port: 30180
   type: trojan
-  country: "\U0001F1F3\U0001F1F1 NL"
-  password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22
+  country: "\U0001F1E8\U0001F1F3 CN"
+  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 41"
-  server: 36.150.19.45
-  port: 12023
-  type: ss
+- name: "\U0001F1F9\U0001F1ED TH 38"
+  server: 119.59.116.248
+  port: 17159
+  type: trojan
+  country: "\U0001F1F9\U0001F1ED TH"
+  password: PHnvNV7HGp
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 39"
+  server: hnyd.52147.top
+  port: 30010
+  type: trojan
   country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 42"
-  server: 36.150.19.135
-  port: 12023
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 43"
+  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 40"
   server: aiasgp1.game.www.klrxyru.cn
   port: 1520
   type: ssr
@@ -362,112 +311,14 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 44"
-  server: 91.243.81.248
-  port: 28000
+- name: "\U0001F1F8\U0001F1EC SG 41"
+  server: bai-piao-wang-zhe.us.567568.ml
   type: trojan
-  country: "\U0001F1F7\U0001F1FA RU"
-  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  port: 19568
+  password: AglrNchEnS
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 45"
-  server: jgwxn2.gaox.ml
-  port: 443
-  type: trojan
-  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F9\U0001F1ED TH 46"
-  server: 119.59.116.248
-  port: 17159
-  type: trojan
-  country: "\U0001F1F9\U0001F1ED TH"
-  password: PHnvNV7HGp
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 47"
-  server: gzyd1.52147.top
-  port: 30010
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 48"
-  server: qdcukr1.vip.www.klrxyru.cn
-  port: 1551
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: 8d83584393.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 49"
-  server: 36.150.19.160
-  port: 12405
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 50"
-  server: hnyd.52147.top
-  port: 30180
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 51"
-  server: 183.2.197.200
-  port: 1501
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 52"
-  server: 36.150.19.10
-  port: 12023
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1E8\U0001F1F3 CN 53"
-  server: bgphk9.vip.www.klrxyru.cn
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 54"
-  server: 120.72.57.12
-  port: 1501
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 55"
+- name: "\U0001F1E8\U0001F1F3 CN 42"
   server: 183.2.204.187
   port: 1502
   type: ssr
@@ -478,55 +329,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 56"
-  server: 120.72.57.61
-  port: 1501
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 57"
-  server: gzyd1.52147.top
-  port: 30180
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 58"
-  server: 120.72.57.151
-  port: 1501
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 59"
-  server: gzyd2.52147.top
-  port: 20020
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: a3da3376-881c-4f5a-93cd-e3289e853475
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 60"
-  server: hnyd.52147.top
-  port: 20020
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: a3da3376-881c-4f5a-93cd-e3289e853475
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 61"
-  server: relayus2.vip.www.klrxyru.cn
-  port: 1402
+- name: "\U0001F1E8\U0001F1F3 CN 43"
+  server: relaysgp2.vip.www.klrxyru.cn
+  port: 1502
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -535,15 +340,44 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 62"
-  server: hnyd.52147.top
-  port: 30010
+- name: "\U0001F1E6\U0001F1FA AU 44"
+  server: jgwxn2.gaox.ml
+  port: 443
   type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 63"
+- name: "\U0001F1E8\U0001F1F3 CN 45"
+  server: 183.2.197.200
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1EE\U0001F1E9 ID 46"
+  server: 41.216.177.41
+  port: 443
+  type: trojan
+  country: "\U0001F1F3\U0001F1F1 NL"
+  password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 47"
+  server: 183.240.124.156
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 48"
   server: shkr2.vip.www.klrxyru.cn
   port: 1552
   type: ssr
@@ -554,39 +388,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: 8d83584393.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 64"
-  server: bgphka.vip.www.klrxyru.cn
-  port: 583
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 65"
-  server: gzyd2.52147.top
-  port: 20120
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: a3da3376-881c-4f5a-93cd-e3289e853475
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 66"
-  server: aiaph1.www.klrxyru.cn
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 67"
-  server: relayus4.vip.www.klrxyru.cn
-  port: 1404
+- name: "\U0001F1E8\U0001F1F3 CN 49"
+  server: qdcukr1.vip.www.klrxyru.cn
+  port: 1551
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -595,26 +399,18 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: 8d83584393.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 68"
-  server: relayjp4.vip.www.klrxyru.cn
-  port: 1454
+- name: "\U0001F1E8\U0001F1F3 CN 50"
+  server: 120.72.57.157
+  port: 1501
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
   protocol: auth_aes128_md5
   obfs: plain
   protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
+  obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 69"
-  server: hnyd.52147.top
-  port: 20140
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: a3da3376-881c-4f5a-93cd-e3289e853475
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 70"
+- name: "\U0001F1E8\U0001F1F3 CN 51"
   server: aiavnd1.vip.www.klrxyru.cn
   port: 1611
   type: ssr
@@ -625,9 +421,75 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 71"
-  server: relayus1.vip.www.klrxyru.cn
-  port: 1401
+- name: "\U0001F1E8\U0001F1F3 CN 52"
+  server: 120.72.57.12
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 53"
+  server: 120.72.57.157
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 54"
+  server: 124.236.102.213
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 55"
+  server: 58.215.126.151
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 56"
+  server: 36.150.19.97
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 57"
+  server: relayus4.vip.www.klrxyru.cn
+  port: 1404
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: 8d83584393.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 58"
+  server: relayus2.vip.www.klrxyru.cn
+  port: 1402
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -636,17 +498,28 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 72"
-  server: gzyd1.52147.top
-  port: 20020
+- name: "\U0001F1E8\U0001F1F3 CN 59"
+  server: hnyd.52147.top
+  port: 20120
   type: trojan
   country: "\U0001F1E8\U0001F1F3 CN"
   password: a3da3376-881c-4f5a-93cd-e3289e853475
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 73"
-  server: 58.215.126.151
-  port: 580
+- name: "\U0001F1E8\U0001F1F3 CN 60"
+  server: relayus3.vip.www.klrxyru.cn
+  port: 1403
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 61"
+  server: 124.236.99.75
+  port: 1501
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -655,49 +528,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 74"
-  server: jgwhdlb2.gaox.ml
-  port: 443
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  password: 54080134-2cba-4535-8599-95650bd9aa54
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 75"
-  server: 58.215.126.177
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 76"
-  server: 58.215.126.151
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 77"
-  server: 183.232.239.98
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 78"
-  server: 120.72.57.12
+- name: "\U0001F1E8\U0001F1F3 CN 62"
+  server: aiaph1.www.klrxyru.cn
   port: 1641
   type: ssr
   cipher: chacha20-ietf
@@ -705,11 +537,11 @@ proxies:
   protocol: auth_aes128_md5
   obfs: plain
   protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
+  obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 79"
+- name: "\U0001F1E8\U0001F1F3 CN 63"
   server: 58.215.126.151
-  port: 579
+  port: 1501
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -718,7 +550,32 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 80"
+- name: "\U0001F1E8\U0001F1F3 CN 64"
+  server: gzyd2.52147.top
+  type: trojan
+  port: 20140
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 65"
+  server: 124.236.99.86
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 66"
+  server: hnyd.52147.top
+  type: trojan
+  port: 30010
+  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 67"
   server: 36.150.19.97
   port: 1611
   type: ssr
@@ -729,17 +586,160 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 81"
-  server: gzyd1.52147.top
-  port: 30080
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 82"
+- name: "\U0001F1E8\U0001F1F3 CN 68"
   server: 36.150.19.55
   port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 69"
+  server: 183.232.239.98
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 70"
+  server: jgwdb3.gaox.ml
+  port: 443
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5 JP"
+  password: 8d2d5953-d649-4034-94f2-72f2df2623da
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 71"
+  server: 58.215.126.111
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 72"
+  server: 36.150.19.55
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 73"
+  server: 36.150.19.55
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 74"
+  server: 124.236.99.75
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 75"
+  server: 36.150.19.97
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 76"
+  server: 120.72.57.12
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 77"
+  server: relayjp4.vip.www.klrxyru.cn
+  port: 1454
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 78"
+  server: 183.240.124.156
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 79"
+  server: 124.236.102.213
+  port: 1501
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 80"
+  server: relayjp2.vip.www.klrxyru.cn
+  port: 1452
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 81"
+  server: aiade1.vip.www.klrxyru.cn
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 82"
+  server: 183.232.239.96
+  port: 1641
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -760,19 +760,15 @@ proxies:
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 84"
-  server: 183.2.204.187
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
+  server: hnyd.52147.top
+  type: trojan
+  port: 30130
+  password: 4cb63fcd-23e1-46e4-b55b-0d4b9bb4d2a3
+  skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 85"
-  server: 119.3.100.79
-  port: 1454
+  server: 163.177.222.146
+  port: 1502
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -782,47 +778,6 @@ proxies:
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 86"
-  server: hnyd.52147.top
-  port: 20060
-  type: trojan
-  country: "\U0001F1E8\U0001F1F3 CN"
-  password: a3da3376-881c-4f5a-93cd-e3289e853475
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 87"
-  server: 58.215.126.151
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 88"
-  server: 183.232.239.96
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 89"
-  server: 183.240.124.156
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 90"
   server: 119.3.100.79
   port: 1552
   type: ssr
@@ -833,7 +788,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 91"
+- name: "\U0001F1E8\U0001F1F3 CN 87"
   server: aiabjfr1.www.klrxyru.cn
   port: 1461
   type: ssr
@@ -844,40 +799,14 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 92"
-  server: aiade1.vip.www.klrxyru.cn
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
+- name: "\U0001F1E8\U0001F1F3 CN 88"
+  server: hnyd.52147.top
+  type: trojan
+  port: 20120
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 93"
-  server: 124.236.99.75
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 94"
-  server: 163.177.222.99
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 95"
+- name: "\U0001F1E8\U0001F1F3 CN 89"
   server: 121.36.173.229
   port: 1551
   type: ssr
@@ -888,7 +817,25 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 96"
+- name: "\U0001F1E8\U0001F1F3 CN 90"
+  server: gzyd1.52147.top
+  type: trojan
+  port: 20110
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 91"
+  server: relayus1.vip.www.klrxyru.cn
+  port: 1401
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 92"
   server: 58.215.126.151
   port: 1601
   type: ssr
@@ -899,84 +846,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 97"
-  server: 183.2.197.200
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 98"
-  server: 58.215.126.177
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 99"
-  server: 183.240.124.156
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 100"
-  server: 183.240.124.156
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 101"
-  server: 120.72.57.157
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 102"
-  server: aiashbr1.www.klrxyru.cn
-  port: 1631
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 103"
-  server: 121.36.173.229
-  port: 1460
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 104"
+- name: "\U0001F1E8\U0001F1F3 CN 93"
   server: aiashar1.www.klrxyru.cn
   port: 1651
   type: ssr
@@ -987,9 +857,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 105"
-  server: 121.36.173.229
-  port: 1451
+- name: "\U0001F1E8\U0001F1F3 CN 94"
+  server: 183.2.197.200
+  port: 1601
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -998,9 +868,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 106"
-  server: 36.150.19.97
-  port: 581
+- name: "\U0001F1E8\U0001F1F3 CN 95"
+  server: 183.240.124.156
+  port: 1501
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1009,7 +879,36 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 107"
+- name: "\U0001F1E8\U0001F1F3 CN 96"
+  server: 183.2.204.187
+  port: 1351
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 97"
+  server: hnyd.52147.top
+  type: trojan
+  port: 20110
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 98"
+  server: 163.177.222.99
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 99"
   server: 183.2.204.187
   port: 1601
   type: ssr
@@ -1020,63 +919,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 108"
-  server: 124.236.99.75
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 109"
-  server: 121.36.173.229
-  port: 1401
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 110"
-  server: 183.232.239.96
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 111"
-  server: 119.3.100.79
-  port: 1420
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 112"
-  server: 36.150.19.55
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 113"
-  server: 124.236.99.75
+- name: "\U0001F1E8\U0001F1F3 CN 100"
+  server: 120.72.57.61
   port: 1601
   type: ssr
   cipher: chacha20-ietf
@@ -1086,7 +930,29 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 114"
+- name: "\U0001F1E8\U0001F1F3 CN 101"
+  server: 124.236.99.75
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 102"
+  server: 124.236.99.75
+  port: 1352
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 103"
   server: 119.3.100.79
   port: 1403
   type: ssr
@@ -1097,19 +963,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 115"
-  server: 124.236.102.213
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 116"
-  server: 120.72.57.61
+- name: "\U0001F1E8\U0001F1F3 CN 104"
+  server: 124.236.99.75
   port: 1601
   type: ssr
   cipher: chacha20-ietf
@@ -1119,41 +974,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 117"
-  server: 36.150.19.55
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 118"
-  server: 58.215.126.177
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 119"
-  server: 36.150.19.140
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 120"
-  server: 183.240.124.156
+- name: "\U0001F1E8\U0001F1F3 CN 105"
+  server: 183.2.204.187
   port: 1501
   type: ssr
   cipher: chacha20-ietf
@@ -1163,9 +985,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 121"
-  server: 120.72.57.151
-  port: 1601
+- name: "\U0001F1E8\U0001F1F3 CN 106"
+  server: 121.36.173.229
+  port: 1401
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1174,7 +996,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 122"
+- name: "\U0001F1E8\U0001F1F3 CN 107"
   server: 121.36.173.229
   port: 1402
   type: ssr
@@ -1185,8 +1007,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 123"
-  server: 120.72.57.157
+- name: "\U0001F1E8\U0001F1F3 CN 108"
+  server: 120.72.57.151
   port: 1601
   type: ssr
   cipher: chacha20-ietf
@@ -1196,41 +1018,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 124"
-  server: 183.2.204.187
-  port: 1501
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 125"
-  server: 36.150.19.97
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 126"
-  server: 120.72.57.12
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 127"
-  server: 36.150.19.55
+- name: "\U0001F1E8\U0001F1F3 CN 109"
+  server: 183.232.239.98
   port: 1621
   type: ssr
   cipher: chacha20-ietf
@@ -1240,40 +1029,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 128"
-  server: 120.72.57.151
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 129"
-  server: 36.150.19.55
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 130"
-  server: relaytr1.vip.www.klrxyru.cn
-  port: 1561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 131"
+- name: "\U0001F1E8\U0001F1F3 CN 110"
   server: 36.150.19.82
   port: 1641
   type: ssr
@@ -1284,9 +1040,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 132"
-  server: 124.236.99.83
-  port: 1601
+- name: "\U0001F1E8\U0001F1F3 CN 111"
+  server: 58.215.126.177
+  port: 1611
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1295,7 +1051,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 133"
+- name: "\U0001F1E8\U0001F1F3 CN 112"
   server: 36.150.19.55
   port: 1461
   type: ssr
@@ -1306,8 +1062,63 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 134"
-  server: 163.177.222.146
+- name: "\U0001F1E8\U0001F1F3 CN 113"
+  server: 183.232.239.96
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 114"
+  server: 36.150.19.97
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 115"
+  server: 36.150.19.55
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 116"
+  server: 58.215.126.177
+  port: 1601
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 117"
+  server: 120.72.57.157
+  port: 1601
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 118"
+  server: 36.150.19.97
   port: 1641
   type: ssr
   cipher: chacha20-ietf
@@ -1317,9 +1128,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 135"
-  server: 124.236.102.213
-  port: 583
+- name: "\U0001F1E8\U0001F1F3 CN 119"
+  server: 120.72.57.12
+  port: 1601
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1328,19 +1139,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 136"
-  server: 36.150.19.55
-  port: 583
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 137"
-  server: 183.2.197.198
+- name: "\U0001F1E8\U0001F1F3 CN 120"
+  server: 58.215.126.162
   port: 1611
   type: ssr
   cipher: chacha20-ietf
@@ -1350,7 +1150,84 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 138"
+- name: "\U0001F1E8\U0001F1F3 CN 121"
+  server: 120.72.57.151
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 122"
+  server: 121.36.173.229
+  port: 1451
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 123"
+  server: 36.150.19.140
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 124"
+  server: 36.150.19.82
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 125"
+  server: 120.72.57.157
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 126"
+  server: 120.72.57.12
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 127"
+  server: 36.150.19.97
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 128"
   server: 121.36.173.229
   port: 1452
   type: ssr
@@ -1361,8 +1238,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 139"
-  server: 124.236.99.83
+- name: "\U0001F1E8\U0001F1F3 CN 129"
+  server: 58.215.126.151
   port: 1611
   type: ssr
   cipher: chacha20-ietf
@@ -1372,53 +1249,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 140"
-  server: 36.150.19.55
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 141"
-  server: 36.150.19.97
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 142"
-  server: 58.215.126.162
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 143"
-  server: 163.177.222.195
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 144"
+- name: "\U0001F1E8\U0001F1F3 CN 130"
   server: 36.150.19.140
-  port: 1621
+  port: 1461
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1427,29 +1260,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 145"
-  server: 36.150.19.97
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 146"
-  server: 183.232.239.96
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 147"
+- name: "\U0001F1E8\U0001F1F3 CN 131"
   server: 124.236.102.213
   port: 1601
   type: ssr
@@ -1460,9 +1271,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 148"
-  server: 183.232.239.90
-  port: 1641
+- name: "\U0001F1E8\U0001F1F3 CN 132"
+  server: 36.150.19.55
+  port: 1351
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1471,9 +1282,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 149"
-  server: 58.215.126.177
-  port: 1611
+- name: "\U0001F1E8\U0001F1F3 CN 133"
+  server: 183.232.239.96
+  port: 1601
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1482,18 +1293,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 150"
-  server: 120.72.57.12
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 151"
+- name: "\U0001F1E8\U0001F1F3 CN 134"
   server: 58.215.126.177
   port: 1501
   type: ssr
@@ -1504,40 +1304,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 152"
-  server: 120.72.57.157
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 153"
-  server: 36.150.19.55
-  port: 1351
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 154"
-  server: 36.150.19.97
-  port: 1461
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 155"
+- name: "\U0001F1E8\U0001F1F3 CN 135"
   server: 36.150.19.97
   port: 1351
   type: ssr
@@ -1548,95 +1315,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 156"
-  server: 124.236.99.75
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 157"
-  server: 36.150.19.55
-  port: 1352
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 158"
-  server: 36.150.19.140
-  port: 1461
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 159"
-  server: 120.72.57.157
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 160"
-  server: 58.215.126.151
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 161"
-  server: 120.72.57.157
-  port: 583
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 162"
-  server: 120.72.57.12
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 163"
-  server: 124.236.99.86
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 164"
+- name: "\U0001F1E8\U0001F1F3 CN 136"
   server: 58.215.126.151
   port: 1621
   type: ssr
@@ -1647,7 +1326,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 165"
+- name: "\U0001F1E8\U0001F1F3 CN 137"
   server: 163.177.222.146
   port: 1461
   type: ssr
@@ -1658,9 +1337,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 166"
-  server: 58.215.126.177
-  port: 1461
+- name: "\U0001F1E8\U0001F1F3 CN 138"
+  server: 124.236.99.86
+  port: 1601
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1669,29 +1348,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 167"
-  server: 58.215.126.111
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 168"
-  server: 120.72.57.12
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 169"
+- name: "\U0001F1E8\U0001F1F3 CN 139"
   server: 163.177.222.99
   port: 1461
   type: ssr
@@ -1702,7 +1359,117 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 170"
+- name: "\U0001F1E8\U0001F1F3 CN 140"
+  server: 58.215.126.111
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 141"
+  server: 124.236.99.83
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 142"
+  server: 124.236.99.86
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 143"
+  server: 183.2.197.198
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 144"
+  server: 58.215.126.162
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 145"
+  server: 183.2.204.187
+  port: 1352
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 146"
+  server: 120.72.57.151
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 147"
+  server: 183.2.197.198
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 148"
+  server: 124.236.99.75
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 149"
+  server: 163.177.222.243
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 150"
   server: 36.150.19.97
   port: 1601
   type: ssr
@@ -1713,52 +1480,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 171"
-  server: 163.177.222.243
-  port: 1502
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 172"
-  server: 36.150.19.97
-  port: 1352
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 173"
-  server: 183.2.197.198
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 174"
-  server: 183.2.197.200
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 175"
-  server: 120.72.57.151
+- name: "\U0001F1E8\U0001F1F3 CN 151"
+  server: 58.215.126.177
   port: 1461
   type: ssr
   cipher: chacha20-ietf
@@ -1768,9 +1491,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 176"
-  server: 58.215.126.162
-  port: 1621
+- name: "\U0001F1E8\U0001F1F3 CN 152"
+  server: 163.177.222.195
+  port: 1502
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1779,9 +1502,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 177"
-  server: 120.72.57.157
-  port: 581
+- name: "\U0001F1E8\U0001F1F3 CN 153"
+  server: 163.177.222.243
+  port: 1501
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1790,9 +1513,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 178"
-  server: 183.2.204.187
-  port: 1352
+- name: "\U0001F1E8\U0001F1F3 CN 154"
+  server: 58.215.126.177
+  port: 1502
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1801,7 +1524,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 179"
+- name: "\U0001F1E8\U0001F1F3 CN 155"
   server: 163.177.222.195
   port: 1501
   type: ssr
@@ -1812,9 +1535,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 180"
-  server: 120.72.57.12
-  port: 581
+- name: "\U0001F1E8\U0001F1F3 CN 156"
+  server: 183.2.197.198
+  port: 1351
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1823,117 +1546,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 181"
-  server: 183.232.239.90
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 182"
-  server: 163.177.222.243
-  port: 1501
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 183"
-  server: 120.72.57.12
-  port: 583
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 184"
-  server: 58.215.126.111
-  port: 1502
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 185"
-  server: 183.2.197.200
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 186"
-  server: 124.236.99.86
-  port: 575
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 187"
-  server: 183.2.197.249
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 188"
-  server: 183.2.204.187
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 189"
-  server: 163.177.222.99
-  port: 1352
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 190"
-  server: 120.72.57.12
-  port: 1502
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 191"
+- name: "\U0001F1E8\U0001F1F3 CN 157"
   server: 163.177.222.243
   port: 1611
   type: ssr
@@ -1944,8 +1557,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 192"
-  server: 58.215.126.177
+- name: "\U0001F1E8\U0001F1F3 CN 158"
+  server: 120.72.57.12
   port: 1502
   type: ssr
   cipher: chacha20-ietf
@@ -1955,7 +1568,18 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 193"
+- name: "\U0001F1E8\U0001F1F3 CN 159"
+  server: 163.177.222.195
+  port: 1611
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 160"
   server: 120.72.57.151
   port: 1641
   type: ssr
@@ -1966,7 +1590,18 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 194"
+- name: "\U0001F1E8\U0001F1F3 CN 161"
+  server: 36.150.19.97
+  port: 1352
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 162"
   server: 183.2.197.198
   port: 1461
   type: ssr
@@ -1977,9 +1612,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 195"
-  server: 163.177.222.243
-  port: 580
+- name: "\U0001F1E8\U0001F1F3 CN 163"
+  server: 183.2.197.200
+  port: 1641
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1988,9 +1623,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 196"
-  server: 58.215.126.162
-  port: 1461
+- name: "\U0001F1E8\U0001F1F3 CN 164"
+  server: 120.72.57.61
+  port: 1611
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -1999,40 +1634,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 197"
-  server: 58.215.126.177
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 198"
-  server: 163.177.222.243
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 199"
-  server: 163.177.222.243
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 200"
+- name: "\U0001F1E8\U0001F1F3 CN 165"
   server: 119.3.100.79
   port: 1404
   type: ssr
@@ -2043,40 +1645,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 201"
-  server: 163.177.222.243
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 202"
-  server: 120.72.57.61
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 203"
-  server: 163.177.222.195
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 204"
+- name: "\U0001F1E8\U0001F1F3 CN 166"
   server: 58.215.126.111
   port: 1641
   type: ssr
@@ -2087,7 +1656,18 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 205"
+- name: "\U0001F1E8\U0001F1F3 CN 167"
+  server: 120.72.57.157
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 168"
   server: 120.72.57.157
   port: 1621
   type: ssr
@@ -2098,7 +1678,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 206"
+- name: "\U0001F1E8\U0001F1F3 CN 169"
   server: 121.36.173.229
   port: 1651
   type: ssr
@@ -2109,40 +1689,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 207"
-  server: 58.215.126.177
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 208"
-  server: 120.72.57.157
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 209"
-  server: 124.236.102.213
-  port: 1611
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 210"
+- name: "\U0001F1E8\U0001F1F3 CN 170"
   server: 120.72.57.157
   port: 1461
   type: ssr
@@ -2153,40 +1700,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 211"
-  server: 58.215.126.177
-  port: 581
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 212"
-  server: 163.177.222.243
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 213"
-  server: 124.236.99.86
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 214"
+- name: "\U0001F1E8\U0001F1F3 CN 171"
   server: 163.177.222.195
   port: 1641
   type: ssr
@@ -2197,7 +1711,29 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 215"
+- name: "\U0001F1E8\U0001F1F3 CN 172"
+  server: 163.177.222.243
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 173"
+  server: 124.236.99.83
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 174"
   server: 124.236.99.75
   port: 1461
   type: ssr
@@ -2208,7 +1744,84 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 216"
+- name: "\U0001F1E8\U0001F1F3 CN 175"
+  server: 120.72.57.151
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 176"
+  server: 120.72.57.61
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 177"
+  server: 58.215.126.151
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 178"
+  server: 120.72.57.12
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 179"
+  server: 58.215.126.177
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 180"
+  server: 163.177.222.243
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 181"
+  server: 124.236.99.83
+  port: 1502
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 182"
   server: 183.2.197.200
   port: 1351
   type: ssr
@@ -2219,29 +1832,14 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 217"
-  server: 124.236.99.83
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
+- name: "\U0001F1EC\U0001F1E7 GB 183"
+  server: jgwld2.gaox.ml
+  port: 443
+  type: trojan
+  password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157
+  skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 218"
-  server: 120.72.57.151
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 219"
+- name: "\U0001F1E8\U0001F1F3 CN 184"
   server: 119.3.100.79
   port: 1631
   type: ssr
@@ -2252,73 +1850,14 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 220"
-  server: 120.72.57.12
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
+- name: "\U0001F1EC\U0001F1E7 GB 185"
+  server: jgwld1.gaox.ml
+  port: 443
+  type: trojan
+  password: 02e653c9-7c93-46a9-999d-11834bd0c577
+  skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 221"
-  server: 120.72.57.12
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 222"
-  server: 120.72.57.157
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 223"
-  server: 120.72.57.61
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 224"
-  server: 163.177.222.243
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 225"
-  server: 58.215.126.162
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 226"
+- name: "\U0001F1E8\U0001F1F3 CN 186"
   server: 163.177.222.243
   port: 1461
   type: ssr
@@ -2329,54 +1868,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 227"
-  server: jgwld2.gaox.ml
-  port: 443
-  type: trojan
-  password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 228"
-  server: 124.236.99.75
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 229"
-  server: aiajp1.game.www.klrxyru.cn
-  port: 1460
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 230"
-  server: jgwld1.gaox.ml
-  port: 443
-  type: trojan
-  password: 02e653c9-7c93-46a9-999d-11834bd0c577
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 231"
-  server: 183.2.197.198
-  port: 1351
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 232"
+- name: "\U0001F1E8\U0001F1F3 CN 187"
   server: 163.177.222.195
   port: 1621
   type: ssr
@@ -2387,20 +1879,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 233"
-  server: aiaus1.game.www.klrxyru.cn
-  port: 1420
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 234"
-  server: 183.2.204.187
-  port: 1641
+- name: "\U0001F1E8\U0001F1F3 CN 188"
+  server: 36.150.19.140
+  port: 1351
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -2409,7 +1890,36 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 235"
+- name: "\U0001F1E8\U0001F1F3 CN 189"
+  server: 183.2.197.198
+  port: 1352
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 190"
+  server: fhcarm1.gaox.ml
+  port: 443
+  type: trojan
+  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 191"
+  server: 124.236.102.213
+  port: 1621
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 192"
   server: 124.236.99.86
   port: 1621
   type: ssr
@@ -2420,16 +1930,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 236"
-  server: fhcarm1.gaox.ml
-  port: 443
-  type: trojan
-  password: 05742120-ce23-4cc8-88f5-6d221ce45bf4
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 237"
-  server: 183.2.197.249
-  port: 1352
+- name: "\U0001F1E8\U0001F1F3 CN 193"
+  server: 183.2.204.187
+  port: 1641
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -2438,86 +1941,7 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 238"
-  server: fhcarm2.gaox.ml
-  port: 443
-  type: trojan
-  password: f39bd244-f5fe-415c-8b98-a1e5250bf178
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 239"
-  server: 58.215.126.177
-  port: 580
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 240"
-  server: 58.215.126.111
-  port: 1461
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 241"
-  server: 124.236.102.213
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 242"
-  server: v2cross.com.05.v2ce.com
-  port: 443
-  type: trojan
-  password: kGrwqmB1nEKUsDwE
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 243"
-  server: ce.rutracker-cn.com
-  port: 443
-  type: trojan
-  password: 5y8y3CwxRVYhyfSY
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 244"
-  server: cz5.v2ce.com
-  port: 443
-  type: trojan
-  password: HTrovQkamDxNfaD5
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 245"
-  server: 120.72.57.61
-  port: 1621
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 246"
-  server: v2cross.com.04.v2ce.com
-  port: 443
-  type: trojan
-  password: vGWCNNfBHwSY6m6M
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 247"
+- name: "\U0001F1E8\U0001F1F3 CN 194"
   server: 58.215.126.151
   port: 1352
   type: ssr
@@ -2528,128 +1952,49 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 248"
-  server: 163.177.222.243
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 249"
-  server: 163.177.222.195
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 250"
-  server: 124.236.102.213
-  port: 579
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 251"
-  server: 124.236.102.213
-  port: 1641
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1FF CZ 252"
-  server: t03.ssrsub.com
-  port: 48443
-  type: trojan
-  password: 6f48efb9-3817-4652-832f-fd04d93ebbc1
-  sni: d76bb35696.laowanxiang.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 253"
-  server: 36.150.19.97
-  port: 582
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 254"
-  server: 120.72.57.12
-  port: 1461
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 255"
-  server: 183.2.197.198
-  port: 1601
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 256"
-  server: wireless.starspace.link
+- name: "\U0001F1FA\U0001F1F8 US 195"
+  server: fhcarm2.gaox.ml
   port: 443
   type: trojan
-  password: 5LN8SGTqxk336nFg
+  password: f39bd244-f5fe-415c-8b98-a1e5250bf178
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 257"
-  server: 183.240.124.156
-  port: 1461
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 258"
-  server: 124.236.99.83
-  port: 1461
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 259"
-  server: storage.starspace.link
+- name: "\U0001F1FA\U0001F1F8 US 196"
+  server: tj-us02.yiyodns.xyz
   port: 443
   type: trojan
-  password: W8gVbKNAZlFzgGPn
+  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 260"
+- name: "\U0001F1E8\U0001F1FF CZ 197"
+  server: v2cross.com.05.v2ce.com
+  port: 443
+  type: trojan
+  password: kGrwqmB1nEKUsDwE
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 198"
+  server: v2cross.com.04.v2ce.com
+  port: 443
+  type: trojan
+  password: vGWCNNfBHwSY6m6M
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 199"
+  server: ce.rutracker-cn.com
+  port: 443
+  type: trojan
+  password: 5y8y3CwxRVYhyfSY
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 200"
+  server: cz5.v2ce.com
+  port: 443
+  type: trojan
+  password: HTrovQkamDxNfaD5
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 201"
   server: 120.72.57.157
   port: 1352
   type: ssr
@@ -2660,9 +2005,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 261"
-  server: 120.72.57.61
-  port: 1461
+- name: "\U0001F1E8\U0001F1F3 CN 202"
+  server: 163.177.222.243
+  port: 1601
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -2671,26 +2016,15 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 262"
+- name: "\U0001F1FA\U0001F1F8 US 203"
   server: tj-us01.yiyodns.xyz
   port: 443
   type: trojan
   password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 263"
-  server: relayjp3.vip.www.klrxyru.cn
-  port: 1453
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: b43e313.wns.windows.com
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 264"
-  server: 183.2.197.249
+- name: "\U0001F1E8\U0001F1F3 CN 204"
+  server: 183.240.124.156
   port: 1461
   type: ssr
   cipher: chacha20-ietf
@@ -2700,9 +2034,39 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 265"
+- name: "\U0001F1E8\U0001F1F3 CN 205"
+  server: 163.177.222.195
+  port: 1601
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 206"
+  server: 124.236.99.83
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1FF CZ 207"
+  server: t03.ssrsub.com
+  port: 48443
+  type: trojan
+  password: 6f48efb9-3817-4652-832f-fd04d93ebbc1
+  sni: d76bb35696.laowanxiang.com
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 208"
   server: 120.72.57.61
-  port: 1351
+  port: 1621
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -2711,34 +2075,8 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 266"
-  server: alymianf1.yooo.me
-  port: 23170
-  type: trojan
-  password: aa4ed5fb-af79-34a7-a27b-7c8c2ca5ee92
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 267"
-  server: fhcamd1.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: e23f408a-012e-4030-8b31-02022031cb50
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 268"
-  server: 163.177.222.243
-  port: 1352
-  type: ssr
-  cipher: chacha20-ietf
-  password: mtbv8n
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 84393:25lGIs
-  obfs-param: dC5tZS92cG5oYXQ
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 269"
-  server: 183.232.239.98
+- name: "\U0001F1E8\U0001F1F3 CN 209"
+  server: 120.72.57.12
   port: 1461
   type: ssr
   cipher: chacha20-ietf
@@ -2748,9 +2086,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 270"
-  server: 58.215.126.151
-  port: 1351
+- name: "\U0001F1E8\U0001F1F3 CN 210"
+  server: 124.236.102.213
+  port: 1641
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -2759,7 +2097,29 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 271"
+- name: "\U0001F1E8\U0001F1F3 CN 211"
+  server: 183.2.197.198
+  port: 1601
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 212"
+  server: 58.215.126.162
+  port: 1641
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 213"
   server: 120.72.57.151
   port: 1352
   type: ssr
@@ -2770,16 +2130,9 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 272"
-  server: jgwcc1.gaox.ml
-  port: 443
-  type: trojan
-  password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 273"
-  server: 124.236.99.83
-  port: 1352
+- name: "\U0001F1E8\U0001F1F3 CN 214"
+  server: 124.236.102.213
+  port: 1611
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
@@ -2788,7 +2141,98 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 274"
+- name: "\U0001F1EF\U0001F1F5 JP 215"
+  server: jp1.jjzgy.live
+  port: 32333
+  type: trojan
+  password: 1c3dd378-6dc3-3a81-8461-ae927cd6fb7c
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 216"
+  server: jgwld4.gaox.ml
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 443
+  password: 58d32c66-43b1-4561-9951-d87c9123774e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 217"
+  server: 120.72.57.61
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 218"
+  server: 58.215.126.111
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 219"
+  server: storage.starspace.link
+  port: 443
+  type: trojan
+  password: W8gVbKNAZlFzgGPn
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 220"
+  server: wireless.starspace.link
+  port: 443
+  type: trojan
+  password: 5LN8SGTqxk336nFg
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 221"
+  server: 183.2.197.249
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 222"
+  server: aiaus1.game.www.klrxyru.cn
+  port: 1420
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 223"
+  server: aiajp1.game.www.klrxyru.cn
+  port: 1460
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 224"
+  server: v5.tgfaka.com
+  port: 48443
+  type: trojan
+  password: 6f48efb9-3817-4652-832f-fd04d93ebbc1
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 225"
   server: 58.215.126.111
   port: 1352
   type: ssr
@@ -2799,25 +2243,19 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 275"
-  server: activity.huawei.daanyht.com
-  port: 13105
-  type: ss
-  password: haMLMXirByn6rGVh
-  cipher: aes-128-gcm
-  plugin: obfs
-  plugin-opts:
-    host: 7c0817db7e17.microsoft.com
-    mode: http
-- name: "\U0001F1F0\U0001F1F7 KR 276"
-  server: kr05.wangxd.life
-  port: 3052
-  type: trojan
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 226"
+  server: 183.232.239.98
+  port: 1461
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 277"
-  server: 36.150.19.140
+- name: "\U0001F1E8\U0001F1F3 CN 227"
+  server: 163.177.222.243
   port: 1352
   type: ssr
   cipher: chacha20-ietf
@@ -2827,21 +2265,36 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 278"
-  server: alymianf2.yooo.me
-  type: trojan
-  port: 22170
-  password: aa4ed5fb-af79-34a7-a27b-7c8c2ca5ee92
-  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 228"
+  server: relayjp3.vip.www.klrxyru.cn
+  port: 1453
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: b43e313.wns.windows.com
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 279"
-  server: jgwhdlb3.gaox.ml
+- name: "\U0001F1E8\U0001F1F3 CN 229"
+  server: 58.215.126.151
+  port: 1351
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 230"
+  server: jgwcc1.gaox.ml
   port: 443
   type: trojan
-  password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
+  password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 280"
+- name: "\U0001F1E8\U0001F1F3 CN 231"
   server: 120.72.57.61
   port: 1352
   type: ssr
@@ -2852,82 +2305,88 @@ proxies:
   protocol-param: 84393:25lGIs
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 281"
-  server: bai-piao-wang-zhe.us.567568.ml
-  type: trojan
-  port: 19568
-  password: AglrNchEnS
-  skip-cert-verify: true
-  udp: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 282"
-  server: 183.2.204.187
-  port: 581
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mtbv8n
-  obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI=
-  protocol-param: 84393:25lGIs
-- name: "\U0001F1E8\U0001F1F3 CN 283"
-  server: relayjp1.vip.www.klrxyru.cn
-  port: 1451
+- name: "\U0001F1E8\U0001F1F3 CN 232"
+  server: 36.150.19.140
+  port: 1352
   type: ssr
   cipher: chacha20-ietf
   password: mtbv8n
   protocol: auth_aes128_md5
   obfs: plain
   protocol-param: 84393:25lGIs
-  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 284"
-  server: cmrelay01.downsite.xyz
-  port: 6705
-  type: ssr
-  cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 67249:ojZU44
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 285"
-  server: 183.232.239.96
-  port: 581
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mtbv8n
-  obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI=
-  protocol-param: 84393:25lGIs
-- name: "\U0001F1E8\U0001F1F3 HK 286"
-  server: tj-hk01.yiyodns.xyz
-  port: 443
-  type: trojan
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 287"
-  server: cmrelay01.downsite.xyz
-  port: 7706
+- name: "\U0001F1E8\U0001F1F3 CN 233"
+  server: 124.236.99.83
+  port: 1351
   type: ssr
   cipher: chacha20-ietf
-  password: jFa4F1
-  protocol: auth_aes128_sha1
+  password: mtbv8n
+  protocol: auth_aes128_md5
   obfs: plain
-  protocol-param: 67249:ojZU44
-  obfs-param: ZEM1dFpTOTJjRzVvWVhR
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 288"
-  server: gzyd1.52147.top
+- name: "\U0001F1F0\U0001F1F7 KR 234"
+  server: kr05.wangxd.life
+  port: 3052
   type: trojan
-  port: 20140
-  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 235"
+  server: 124.236.99.75
+  port: 1351
+  type: ssr
+  cipher: chacha20-ietf
+  password: mtbv8n
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 84393:25lGIs
+  obfs-param: dC5tZS92cG5oYXQ
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 236"
+  server: jgwhdlb3.gaox.ml
+  port: 443
+  type: trojan
+  password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 237"
+  server: relaysgp4.vip.www.klrxyru.cn
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 1504
+  password: mtbv8n
+  cipher: chacha20-ietf
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
+  obfs: plain
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
+- name: "\U0001F1E8\U0001F1F3 CN 238"
+  server: aiatw6.www.klrxyru.cn
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 1206
+  password: mtbv8n
+  cipher: chacha20-ietf
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
+  obfs: plain
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
+- name: "\U0001F1E8\U0001F1F3 CN 239"
+  server: aiatw2.www.klrxyru.cn
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 1202
+  password: mtbv8n
+  cipher: chacha20-ietf
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
+  obfs: plain
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 289"
+  name: "\U0001F1E8\U0001F1F3 CN 240"
   server: 183.232.239.96
   port: 1501
   protocol: auth_aes128_md5
@@ -2936,45 +2395,76 @@ proxies:
   password: mtbv8n
   obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI=
   protocol-param: 84393:25lGIs
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 290"
-  server: 58.215.126.177
-  port: 583
-  protocol: auth_aes128_md5
-  cipher: chacha20-ietf
-  obfs: plain
-  password: mtbv8n
-  obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI=
-  protocol-param: 84393:25lGIs
-- name: "\U0001F1E8\U0001F1F3 CN 291"
-  server: aiaph1.www.klrxyru.cn
+- name: "\U0001F1E8\U0001F1F3 CN 241"
+  server: relaysgp1.vip.www.klrxyru.cn
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 1641
+  port: 1501
   password: mtbv8n
   cipher: chacha20-ietf
   protocol: auth_aes128_md5
   protocol-param: 84393:25lGIs
   obfs: plain
-  obfs-param: b43e313.wns.windows.com
-- name: "\U0001F1F8\U0001F1EC SG 292"
-  server: bai-piao-wang-zhe.us.567568.ml
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
+- name: "\U0001F1E8\U0001F1F3 CN 242"
+  server: aiatw1.www.klrxyru.cn
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 1201
+  password: mtbv8n
+  cipher: chacha20-ietf
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
+  obfs: plain
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 243"
+  server: 183.2.197.249
+  port: 1501
+  protocol: auth_aes128_md5
+  cipher: chacha20-ietf
+  obfs: plain
+  password: mtbv8n
+  obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ==
+  protocol-param: 84393:25lGIs
+- name: "\U0001F1E8\U0001F1F3 CN 244"
+  server: relaysgp6.vip.www.klrxyru.cn
+  type: ssr
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 1506
+  password: mtbv8n
+  cipher: chacha20-ietf
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
+  obfs: plain
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
+- name: "\U0001F1E8\U0001F1F3 CN 245"
+  server: hnyd.52147.top
   type: trojan
-  port: 12337
-  password: df8ebf95-bd60-4f7e-a505-fe8db5ba3342
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 20140
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 293"
-  server: cmrelay01.downsite.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 246"
+  server: aiatw4.www.klrxyru.cn
   type: ssr
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 7706
-  password: jFa4F1
+  port: 1204
+  password: mtbv8n
   cipher: chacha20-ietf
-  protocol: auth_aes128_sha1
-  protocol-param: 67249:ojZU44
+  protocol: auth_aes128_md5
+  protocol-param: 84393:25lGIs
   obfs: plain
-  obfs-param: ZEM1dFpTOTJjRzVvWVhR
+  obfs-param: YjQzZTMxMy53bnMud2luZG93cy5jb20
+- name: "\U0001F1E8\U0001F1F3 CN 247"
+  server: gzyd2.52147.top
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 20110
+  password: a3da3376-881c-4f5a-93cd-e3289e853475
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -2983,48 +2473,48 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1FF CZ 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1FA\U0001F1F8 US 16"
-  - "\U0001F1FA\U0001F1F8 US 17"
-  - "\U0001F1FA\U0001F1F8 US 18"
-  - "\U0001F1FA\U0001F1F8 US 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1E8\U0001F1F3 CN 21"
-  - "\U0001F1FA\U0001F1F8 US 22"
-  - "\U0001F1F8\U0001F1EC SG 23"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1FF CZ 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
+  - "\U0001F1FA\U0001F1F8 US 15"
+  - "\U0001F1E8\U0001F1F3 CN 16"
+  - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1EE\U0001F1F3 IN 18"
+  - "\U0001F1F3\U0001F1F1 NL 19"
+  - "\U0001F1EF\U0001F1F5 JP 20"
+  - "\U0001F1FA\U0001F1F8 US 21"
+  - "\U0001F1E6\U0001F1FA AU 22"
+  - "\U0001F1E8\U0001F1F3 HK 23"
   - "\U0001F1EF\U0001F1F5 JP 24"
-  - "\U0001F1E8\U0001F1F3 CN 25"
+  - "\U0001F1FA\U0001F1F8 US 25"
   - "\U0001F1EF\U0001F1F5 JP 26"
-  - "\U0001F1F8\U0001F1EC SG 27"
-  - "\U0001F1F3\U0001F1F1 NL 28"
-  - "\U0001F1FA\U0001F1F8 US 29"
-  - "\U0001F1EF\U0001F1F5 JP 30"
-  - "\U0001F1EF\U0001F1F5 JP 31"
+  - "\U0001F1E8\U0001F1F3 HK 27"
+  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1E8\U0001F1FF CZ 29"
+  - "\U0001F1E8\U0001F1F3 CN 30"
+  - "\U0001F1E8\U0001F1F3 CN 31"
   - "\U0001F1E8\U0001F1F3 CN 32"
-  - "\U0001F1E8\U0001F1F3 CN 33"
-  - "\U0001F1E8\U0001F1F3 CN 34"
-  - "\U0001F1E8\U0001F1F3 HK 35"
-  - "\U0001F1E8\U0001F1F3 HK 36"
+  - "\U0001F1F8\U0001F1EC SG 33"
+  - "\U0001F1F8\U0001F1EC SG 34"
+  - "\U0001F1E8\U0001F1F3 CN 35"
+  - "\U0001F1E8\U0001F1F3 CN 36"
   - "\U0001F1E8\U0001F1F3 CN 37"
-  - "\U0001F1E8\U0001F1F3 CN 38"
+  - "\U0001F1F9\U0001F1ED TH 38"
   - "\U0001F1E8\U0001F1F3 CN 39"
-  - "\U0001F1EE\U0001F1E9 ID 40"
-  - "\U0001F1E8\U0001F1F3 CN 41"
+  - "\U0001F1E8\U0001F1F3 CN 40"
+  - "\U0001F1F8\U0001F1EC SG 41"
   - "\U0001F1E8\U0001F1F3 CN 42"
   - "\U0001F1E8\U0001F1F3 CN 43"
-  - "\U0001F1F8\U0001F1EC SG 44"
-  - "\U0001F1E6\U0001F1FA AU 45"
-  - "\U0001F1F9\U0001F1ED TH 46"
+  - "\U0001F1E6\U0001F1FA AU 44"
+  - "\U0001F1E8\U0001F1F3 CN 45"
+  - "\U0001F1EE\U0001F1E9 ID 46"
   - "\U0001F1E8\U0001F1F3 CN 47"
   - "\U0001F1E8\U0001F1F3 CN 48"
   - "\U0001F1E8\U0001F1F3 CN 49"
@@ -3048,11 +2538,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 67"
   - "\U0001F1E8\U0001F1F3 CN 68"
   - "\U0001F1E8\U0001F1F3 CN 69"
-  - "\U0001F1E8\U0001F1F3 CN 70"
+  - "\U0001F1EF\U0001F1F5 JP 70"
   - "\U0001F1E8\U0001F1F3 CN 71"
   - "\U0001F1E8\U0001F1F3 CN 72"
   - "\U0001F1E8\U0001F1F3 CN 73"
-  - "\U0001F1EE\U0001F1F3 IN 74"
+  - "\U0001F1E8\U0001F1F3 CN 74"
   - "\U0001F1E8\U0001F1F3 CN 75"
   - "\U0001F1E8\U0001F1F3 CN 76"
   - "\U0001F1E8\U0001F1F3 CN 77"
@@ -3161,31 +2651,31 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 180"
   - "\U0001F1E8\U0001F1F3 CN 181"
   - "\U0001F1E8\U0001F1F3 CN 182"
-  - "\U0001F1E8\U0001F1F3 CN 183"
+  - "\U0001F1EC\U0001F1E7 GB 183"
   - "\U0001F1E8\U0001F1F3 CN 184"
-  - "\U0001F1E8\U0001F1F3 CN 185"
+  - "\U0001F1EC\U0001F1E7 GB 185"
   - "\U0001F1E8\U0001F1F3 CN 186"
   - "\U0001F1E8\U0001F1F3 CN 187"
   - "\U0001F1E8\U0001F1F3 CN 188"
   - "\U0001F1E8\U0001F1F3 CN 189"
-  - "\U0001F1E8\U0001F1F3 CN 190"
+  - "\U0001F1FA\U0001F1F8 US 190"
   - "\U0001F1E8\U0001F1F3 CN 191"
   - "\U0001F1E8\U0001F1F3 CN 192"
   - "\U0001F1E8\U0001F1F3 CN 193"
   - "\U0001F1E8\U0001F1F3 CN 194"
-  - "\U0001F1E8\U0001F1F3 CN 195"
-  - "\U0001F1E8\U0001F1F3 CN 196"
-  - "\U0001F1E8\U0001F1F3 CN 197"
-  - "\U0001F1E8\U0001F1F3 CN 198"
-  - "\U0001F1E8\U0001F1F3 CN 199"
-  - "\U0001F1E8\U0001F1F3 CN 200"
+  - "\U0001F1FA\U0001F1F8 US 195"
+  - "\U0001F1FA\U0001F1F8 US 196"
+  - "\U0001F1E8\U0001F1FF CZ 197"
+  - "\U0001F1E8\U0001F1FF CZ 198"
+  - "\U0001F1E8\U0001F1FF CZ 199"
+  - "\U0001F1E8\U0001F1FF CZ 200"
   - "\U0001F1E8\U0001F1F3 CN 201"
   - "\U0001F1E8\U0001F1F3 CN 202"
-  - "\U0001F1E8\U0001F1F3 CN 203"
+  - "\U0001F1FA\U0001F1F8 US 203"
   - "\U0001F1E8\U0001F1F3 CN 204"
   - "\U0001F1E8\U0001F1F3 CN 205"
   - "\U0001F1E8\U0001F1F3 CN 206"
-  - "\U0001F1E8\U0001F1F3 CN 207"
+  - "\U0001F1E8\U0001F1FF CZ 207"
   - "\U0001F1E8\U0001F1F3 CN 208"
   - "\U0001F1E8\U0001F1F3 CN 209"
   - "\U0001F1E8\U0001F1F3 CN 210"
@@ -3193,85 +2683,39 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 212"
   - "\U0001F1E8\U0001F1F3 CN 213"
   - "\U0001F1E8\U0001F1F3 CN 214"
-  - "\U0001F1E8\U0001F1F3 CN 215"
-  - "\U0001F1E8\U0001F1F3 CN 216"
+  - "\U0001F1EF\U0001F1F5 JP 215"
+  - "\U0001F1EC\U0001F1E7 GB 216"
   - "\U0001F1E8\U0001F1F3 CN 217"
   - "\U0001F1E8\U0001F1F3 CN 218"
-  - "\U0001F1E8\U0001F1F3 CN 219"
-  - "\U0001F1E8\U0001F1F3 CN 220"
+  - "\U0001F1FA\U0001F1F8 US 219"
+  - "\U0001F1FA\U0001F1F8 US 220"
   - "\U0001F1E8\U0001F1F3 CN 221"
   - "\U0001F1E8\U0001F1F3 CN 222"
   - "\U0001F1E8\U0001F1F3 CN 223"
-  - "\U0001F1E8\U0001F1F3 CN 224"
+  - "\U0001F1FA\U0001F1F8 US 224"
   - "\U0001F1E8\U0001F1F3 CN 225"
   - "\U0001F1E8\U0001F1F3 CN 226"
-  - "\U0001F1EC\U0001F1E7 GB 227"
+  - "\U0001F1E8\U0001F1F3 CN 227"
   - "\U0001F1E8\U0001F1F3 CN 228"
   - "\U0001F1E8\U0001F1F3 CN 229"
-  - "\U0001F1EC\U0001F1E7 GB 230"
+  - "\U0001F1F0\U0001F1F7 KR 230"
   - "\U0001F1E8\U0001F1F3 CN 231"
   - "\U0001F1E8\U0001F1F3 CN 232"
   - "\U0001F1E8\U0001F1F3 CN 233"
-  - "\U0001F1E8\U0001F1F3 CN 234"
+  - "\U0001F1F0\U0001F1F7 KR 234"
   - "\U0001F1E8\U0001F1F3 CN 235"
-  - "\U0001F1FA\U0001F1F8 US 236"
+  - "\U0001F1EE\U0001F1F3 IN 236"
   - "\U0001F1E8\U0001F1F3 CN 237"
-  - "\U0001F1FA\U0001F1F8 US 238"
+  - "\U0001F1E8\U0001F1F3 CN 238"
   - "\U0001F1E8\U0001F1F3 CN 239"
   - "\U0001F1E8\U0001F1F3 CN 240"
   - "\U0001F1E8\U0001F1F3 CN 241"
-  - "\U0001F1E8\U0001F1FF CZ 242"
-  - "\U0001F1E8\U0001F1FF CZ 243"
-  - "\U0001F1E8\U0001F1FF CZ 244"
+  - "\U0001F1E8\U0001F1F3 CN 242"
+  - "\U0001F1E8\U0001F1F3 CN 243"
+  - "\U0001F1E8\U0001F1F3 CN 244"
   - "\U0001F1E8\U0001F1F3 CN 245"
-  - "\U0001F1E8\U0001F1FF CZ 246"
+  - "\U0001F1E8\U0001F1F3 CN 246"
   - "\U0001F1E8\U0001F1F3 CN 247"
-  - "\U0001F1E8\U0001F1F3 CN 248"
-  - "\U0001F1E8\U0001F1F3 CN 249"
-  - "\U0001F1E8\U0001F1F3 CN 250"
-  - "\U0001F1E8\U0001F1F3 CN 251"
-  - "\U0001F1E8\U0001F1FF CZ 252"
-  - "\U0001F1E8\U0001F1F3 CN 253"
-  - "\U0001F1E8\U0001F1F3 CN 254"
-  - "\U0001F1E8\U0001F1F3 CN 255"
-  - "\U0001F1FA\U0001F1F8 US 256"
-  - "\U0001F1E8\U0001F1F3 CN 257"
-  - "\U0001F1E8\U0001F1F3 CN 258"
-  - "\U0001F1FA\U0001F1F8 US 259"
-  - "\U0001F1E8\U0001F1F3 CN 260"
-  - "\U0001F1E8\U0001F1F3 CN 261"
-  - "\U0001F1FA\U0001F1F8 US 262"
-  - "\U0001F1E8\U0001F1F3 CN 263"
-  - "\U0001F1E8\U0001F1F3 CN 264"
-  - "\U0001F1E8\U0001F1F3 CN 265"
-  - "\U0001F1E8\U0001F1F3 HK 266"
-  - "\U0001F1FA\U0001F1F8 US 267"
-  - "\U0001F1E8\U0001F1F3 CN 268"
-  - "\U0001F1E8\U0001F1F3 CN 269"
-  - "\U0001F1E8\U0001F1F3 CN 270"
-  - "\U0001F1E8\U0001F1F3 CN 271"
-  - "\U0001F1F0\U0001F1F7 KR 272"
-  - "\U0001F1E8\U0001F1F3 CN 273"
-  - "\U0001F1E8\U0001F1F3 CN 274"
-  - "\U0001F1E8\U0001F1F3 CN 275"
-  - "\U0001F1F0\U0001F1F7 KR 276"
-  - "\U0001F1E8\U0001F1F3 CN 277"
-  - "\U0001F1E8\U0001F1F3 HK 278"
-  - "\U0001F1EE\U0001F1F3 IN 279"
-  - "\U0001F1E8\U0001F1F3 CN 280"
-  - "\U0001F1F8\U0001F1EC SG 281"
-  - "\U0001F1E8\U0001F1F3 CN 282"
-  - "\U0001F1E8\U0001F1F3 CN 283"
-  - "\U0001F1E8\U0001F1F3 CN 284"
-  - "\U0001F1E8\U0001F1F3 CN 285"
-  - "\U0001F1E8\U0001F1F3 HK 286"
-  - "\U0001F1E8\U0001F1F3 CN 287"
-  - "\U0001F1E8\U0001F1F3 CN 288"
-  - "\U0001F1E8\U0001F1F3 CN 289"
-  - "\U0001F1E8\U0001F1F3 CN 290"
-  - "\U0001F1E8\U0001F1F3 CN 291"
-  - "\U0001F1F8\U0001F1EC SG 292"
-  - "\U0001F1E8\U0001F1F3 CN 293"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -3282,48 +2726,48 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1FF CZ 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1FA\U0001F1F8 US 16"
-  - "\U0001F1FA\U0001F1F8 US 17"
-  - "\U0001F1FA\U0001F1F8 US 18"
-  - "\U0001F1FA\U0001F1F8 US 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1E8\U0001F1F3 CN 21"
-  - "\U0001F1FA\U0001F1F8 US 22"
-  - "\U0001F1F8\U0001F1EC SG 23"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1FF CZ 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
+  - "\U0001F1FA\U0001F1F8 US 15"
+  - "\U0001F1E8\U0001F1F3 CN 16"
+  - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1EE\U0001F1F3 IN 18"
+  - "\U0001F1F3\U0001F1F1 NL 19"
+  - "\U0001F1EF\U0001F1F5 JP 20"
+  - "\U0001F1FA\U0001F1F8 US 21"
+  - "\U0001F1E6\U0001F1FA AU 22"
+  - "\U0001F1E8\U0001F1F3 HK 23"
   - "\U0001F1EF\U0001F1F5 JP 24"
-  - "\U0001F1E8\U0001F1F3 CN 25"
+  - "\U0001F1FA\U0001F1F8 US 25"
   - "\U0001F1EF\U0001F1F5 JP 26"
-  - "\U0001F1F8\U0001F1EC SG 27"
-  - "\U0001F1F3\U0001F1F1 NL 28"
-  - "\U0001F1FA\U0001F1F8 US 29"
-  - "\U0001F1EF\U0001F1F5 JP 30"
-  - "\U0001F1EF\U0001F1F5 JP 31"
+  - "\U0001F1E8\U0001F1F3 HK 27"
+  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1E8\U0001F1FF CZ 29"
+  - "\U0001F1E8\U0001F1F3 CN 30"
+  - "\U0001F1E8\U0001F1F3 CN 31"
   - "\U0001F1E8\U0001F1F3 CN 32"
-  - "\U0001F1E8\U0001F1F3 CN 33"
-  - "\U0001F1E8\U0001F1F3 CN 34"
-  - "\U0001F1E8\U0001F1F3 HK 35"
-  - "\U0001F1E8\U0001F1F3 HK 36"
+  - "\U0001F1F8\U0001F1EC SG 33"
+  - "\U0001F1F8\U0001F1EC SG 34"
+  - "\U0001F1E8\U0001F1F3 CN 35"
+  - "\U0001F1E8\U0001F1F3 CN 36"
   - "\U0001F1E8\U0001F1F3 CN 37"
-  - "\U0001F1E8\U0001F1F3 CN 38"
+  - "\U0001F1F9\U0001F1ED TH 38"
   - "\U0001F1E8\U0001F1F3 CN 39"
-  - "\U0001F1EE\U0001F1E9 ID 40"
-  - "\U0001F1E8\U0001F1F3 CN 41"
+  - "\U0001F1E8\U0001F1F3 CN 40"
+  - "\U0001F1F8\U0001F1EC SG 41"
   - "\U0001F1E8\U0001F1F3 CN 42"
   - "\U0001F1E8\U0001F1F3 CN 43"
-  - "\U0001F1F8\U0001F1EC SG 44"
-  - "\U0001F1E6\U0001F1FA AU 45"
-  - "\U0001F1F9\U0001F1ED TH 46"
+  - "\U0001F1E6\U0001F1FA AU 44"
+  - "\U0001F1E8\U0001F1F3 CN 45"
+  - "\U0001F1EE\U0001F1E9 ID 46"
   - "\U0001F1E8\U0001F1F3 CN 47"
   - "\U0001F1E8\U0001F1F3 CN 48"
   - "\U0001F1E8\U0001F1F3 CN 49"
@@ -3347,11 +2791,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 67"
   - "\U0001F1E8\U0001F1F3 CN 68"
   - "\U0001F1E8\U0001F1F3 CN 69"
-  - "\U0001F1E8\U0001F1F3 CN 70"
+  - "\U0001F1EF\U0001F1F5 JP 70"
   - "\U0001F1E8\U0001F1F3 CN 71"
   - "\U0001F1E8\U0001F1F3 CN 72"
   - "\U0001F1E8\U0001F1F3 CN 73"
-  - "\U0001F1EE\U0001F1F3 IN 74"
+  - "\U0001F1E8\U0001F1F3 CN 74"
   - "\U0001F1E8\U0001F1F3 CN 75"
   - "\U0001F1E8\U0001F1F3 CN 76"
   - "\U0001F1E8\U0001F1F3 CN 77"
@@ -3460,31 +2904,31 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 180"
   - "\U0001F1E8\U0001F1F3 CN 181"
   - "\U0001F1E8\U0001F1F3 CN 182"
-  - "\U0001F1E8\U0001F1F3 CN 183"
+  - "\U0001F1EC\U0001F1E7 GB 183"
   - "\U0001F1E8\U0001F1F3 CN 184"
-  - "\U0001F1E8\U0001F1F3 CN 185"
+  - "\U0001F1EC\U0001F1E7 GB 185"
   - "\U0001F1E8\U0001F1F3 CN 186"
   - "\U0001F1E8\U0001F1F3 CN 187"
   - "\U0001F1E8\U0001F1F3 CN 188"
   - "\U0001F1E8\U0001F1F3 CN 189"
-  - "\U0001F1E8\U0001F1F3 CN 190"
+  - "\U0001F1FA\U0001F1F8 US 190"
   - "\U0001F1E8\U0001F1F3 CN 191"
   - "\U0001F1E8\U0001F1F3 CN 192"
   - "\U0001F1E8\U0001F1F3 CN 193"
   - "\U0001F1E8\U0001F1F3 CN 194"
-  - "\U0001F1E8\U0001F1F3 CN 195"
-  - "\U0001F1E8\U0001F1F3 CN 196"
-  - "\U0001F1E8\U0001F1F3 CN 197"
-  - "\U0001F1E8\U0001F1F3 CN 198"
-  - "\U0001F1E8\U0001F1F3 CN 199"
-  - "\U0001F1E8\U0001F1F3 CN 200"
+  - "\U0001F1FA\U0001F1F8 US 195"
+  - "\U0001F1FA\U0001F1F8 US 196"
+  - "\U0001F1E8\U0001F1FF CZ 197"
+  - "\U0001F1E8\U0001F1FF CZ 198"
+  - "\U0001F1E8\U0001F1FF CZ 199"
+  - "\U0001F1E8\U0001F1FF CZ 200"
   - "\U0001F1E8\U0001F1F3 CN 201"
   - "\U0001F1E8\U0001F1F3 CN 202"
-  - "\U0001F1E8\U0001F1F3 CN 203"
+  - "\U0001F1FA\U0001F1F8 US 203"
   - "\U0001F1E8\U0001F1F3 CN 204"
   - "\U0001F1E8\U0001F1F3 CN 205"
   - "\U0001F1E8\U0001F1F3 CN 206"
-  - "\U0001F1E8\U0001F1F3 CN 207"
+  - "\U0001F1E8\U0001F1FF CZ 207"
   - "\U0001F1E8\U0001F1F3 CN 208"
   - "\U0001F1E8\U0001F1F3 CN 209"
   - "\U0001F1E8\U0001F1F3 CN 210"
@@ -3492,84 +2936,38 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 212"
   - "\U0001F1E8\U0001F1F3 CN 213"
   - "\U0001F1E8\U0001F1F3 CN 214"
-  - "\U0001F1E8\U0001F1F3 CN 215"
-  - "\U0001F1E8\U0001F1F3 CN 216"
+  - "\U0001F1EF\U0001F1F5 JP 215"
+  - "\U0001F1EC\U0001F1E7 GB 216"
   - "\U0001F1E8\U0001F1F3 CN 217"
   - "\U0001F1E8\U0001F1F3 CN 218"
-  - "\U0001F1E8\U0001F1F3 CN 219"
-  - "\U0001F1E8\U0001F1F3 CN 220"
+  - "\U0001F1FA\U0001F1F8 US 219"
+  - "\U0001F1FA\U0001F1F8 US 220"
   - "\U0001F1E8\U0001F1F3 CN 221"
   - "\U0001F1E8\U0001F1F3 CN 222"
   - "\U0001F1E8\U0001F1F3 CN 223"
-  - "\U0001F1E8\U0001F1F3 CN 224"
+  - "\U0001F1FA\U0001F1F8 US 224"
   - "\U0001F1E8\U0001F1F3 CN 225"
   - "\U0001F1E8\U0001F1F3 CN 226"
-  - "\U0001F1EC\U0001F1E7 GB 227"
+  - "\U0001F1E8\U0001F1F3 CN 227"
   - "\U0001F1E8\U0001F1F3 CN 228"
   - "\U0001F1E8\U0001F1F3 CN 229"
-  - "\U0001F1EC\U0001F1E7 GB 230"
+  - "\U0001F1F0\U0001F1F7 KR 230"
   - "\U0001F1E8\U0001F1F3 CN 231"
   - "\U0001F1E8\U0001F1F3 CN 232"
   - "\U0001F1E8\U0001F1F3 CN 233"
-  - "\U0001F1E8\U0001F1F3 CN 234"
+  - "\U0001F1F0\U0001F1F7 KR 234"
   - "\U0001F1E8\U0001F1F3 CN 235"
-  - "\U0001F1FA\U0001F1F8 US 236"
+  - "\U0001F1EE\U0001F1F3 IN 236"
   - "\U0001F1E8\U0001F1F3 CN 237"
-  - "\U0001F1FA\U0001F1F8 US 238"
+  - "\U0001F1E8\U0001F1F3 CN 238"
   - "\U0001F1E8\U0001F1F3 CN 239"
   - "\U0001F1E8\U0001F1F3 CN 240"
   - "\U0001F1E8\U0001F1F3 CN 241"
-  - "\U0001F1E8\U0001F1FF CZ 242"
-  - "\U0001F1E8\U0001F1FF CZ 243"
-  - "\U0001F1E8\U0001F1FF CZ 244"
+  - "\U0001F1E8\U0001F1F3 CN 242"
+  - "\U0001F1E8\U0001F1F3 CN 243"
+  - "\U0001F1E8\U0001F1F3 CN 244"
   - "\U0001F1E8\U0001F1F3 CN 245"
-  - "\U0001F1E8\U0001F1FF CZ 246"
+  - "\U0001F1E8\U0001F1F3 CN 246"
   - "\U0001F1E8\U0001F1F3 CN 247"
-  - "\U0001F1E8\U0001F1F3 CN 248"
-  - "\U0001F1E8\U0001F1F3 CN 249"
-  - "\U0001F1E8\U0001F1F3 CN 250"
-  - "\U0001F1E8\U0001F1F3 CN 251"
-  - "\U0001F1E8\U0001F1FF CZ 252"
-  - "\U0001F1E8\U0001F1F3 CN 253"
-  - "\U0001F1E8\U0001F1F3 CN 254"
-  - "\U0001F1E8\U0001F1F3 CN 255"
-  - "\U0001F1FA\U0001F1F8 US 256"
-  - "\U0001F1E8\U0001F1F3 CN 257"
-  - "\U0001F1E8\U0001F1F3 CN 258"
-  - "\U0001F1FA\U0001F1F8 US 259"
-  - "\U0001F1E8\U0001F1F3 CN 260"
-  - "\U0001F1E8\U0001F1F3 CN 261"
-  - "\U0001F1FA\U0001F1F8 US 262"
-  - "\U0001F1E8\U0001F1F3 CN 263"
-  - "\U0001F1E8\U0001F1F3 CN 264"
-  - "\U0001F1E8\U0001F1F3 CN 265"
-  - "\U0001F1E8\U0001F1F3 HK 266"
-  - "\U0001F1FA\U0001F1F8 US 267"
-  - "\U0001F1E8\U0001F1F3 CN 268"
-  - "\U0001F1E8\U0001F1F3 CN 269"
-  - "\U0001F1E8\U0001F1F3 CN 270"
-  - "\U0001F1E8\U0001F1F3 CN 271"
-  - "\U0001F1F0\U0001F1F7 KR 272"
-  - "\U0001F1E8\U0001F1F3 CN 273"
-  - "\U0001F1E8\U0001F1F3 CN 274"
-  - "\U0001F1E8\U0001F1F3 CN 275"
-  - "\U0001F1F0\U0001F1F7 KR 276"
-  - "\U0001F1E8\U0001F1F3 CN 277"
-  - "\U0001F1E8\U0001F1F3 HK 278"
-  - "\U0001F1EE\U0001F1F3 IN 279"
-  - "\U0001F1E8\U0001F1F3 CN 280"
-  - "\U0001F1F8\U0001F1EC SG 281"
-  - "\U0001F1E8\U0001F1F3 CN 282"
-  - "\U0001F1E8\U0001F1F3 CN 283"
-  - "\U0001F1E8\U0001F1F3 CN 284"
-  - "\U0001F1E8\U0001F1F3 CN 285"
-  - "\U0001F1E8\U0001F1F3 HK 286"
-  - "\U0001F1E8\U0001F1F3 CN 287"
-  - "\U0001F1E8\U0001F1F3 CN 288"
-  - "\U0001F1E8\U0001F1F3 CN 289"
-  - "\U0001F1E8\U0001F1F3 CN 290"
-  - "\U0001F1E8\U0001F1F3 CN 291"
-  - "\U0001F1F8\U0001F1EC SG 292"
-  - "\U0001F1E8\U0001F1F3 CN 293"
 rules:
 - "MATCH,\U0001F310 Proxy"
