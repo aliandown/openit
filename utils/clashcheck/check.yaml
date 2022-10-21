@@ -1,20 +1,85 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: sssvip03.goumaituijian.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 19588
-  password: 071cdb2e-bc58-46dd-8ba7-476d66e1291d
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
+- name: "\U0001F1E8\U0001F1F3 HK 1"
   server: c551397.nb.gladns.com
   port: 3389
   type: trojan
   password: faf42aa0a9ad4c1e
   sni: n2.gladns.com
   skip-cert-verify: true
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 51.75.76.22
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7 FR"
+  port: 443
+  password: c60fbf90-4b55-11ed-b935-225401db9d57
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: c551397.gc.gladns.com
+  port: 3384
+  type: trojan
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 116.162.120.26
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 53924:hjgjuy6t655jjg
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: c551397.gc.gladns.com
+  port: 3385
+  type: trojan
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: us.dogintnode.com
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 91a3db80-baf5-3f35-8c0e-b6483aefa1fd
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: c551397.ga.gladns.com
+  port: 3383
+  type: trojan
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1E6 CA 8"
+  server: cat1.sshocean.net
+  type: trojan
+  country: "\U0001F1E8\U0001F1E6 CA"
+  port: 443
+  password: 8b6daf15-8342-482d-b894-1239fd98ce7f
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: 183.232.141.119
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 53924:hjgjuy6t655jjg
+  obfs-param: ''
+- name: "\U0001F1F8\U0001F1EC SG 10"
+  server: 5.44.249.155
+  type: trojan
+  country: "\U0001F3C1ZZ"
+  port: 3389
+  password: d02058f4f819dced
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 11"
   server: 183.232.141.119
   port: 561
   type: ssr
@@ -25,104 +90,15 @@ proxies:
   protocol-param: 53924:hjgjuy6t655jjg
   obfs-param: dC5tZS92cG5oYXQ
   udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 4"
-  server: cat1.sshocean.net
-  type: trojan
-  country: "\U0001F1E8\U0001F1E6 CA"
-  port: 443
-  password: 8b6daf15-8342-482d-b894-1239fd98ce7f
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  server: 51.75.76.22
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7 FR"
-  port: 443
-  password: c60fbf90-4b55-11ed-b935-225401db9d57
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: fhcamd1.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: e23f408a-012e-4030-8b31-02022031cb50
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 7"
-  server: 5.44.249.155
-  type: trojan
-  country: "\U0001F3C1ZZ"
-  port: 3389
-  password: d02058f4f819dced
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: 183.232.141.119
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 53924:hjgjuy6t655jjg
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: 183.232.141.107
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 53924:hjgjuy6t655jjg
-  obfs-param: ''
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: jgwdj3.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: da777aae-defb-41d0-a183-2c27da2b4677
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 11"
-  server: 116.162.120.24
-  port: 562
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 53924:hjgjuy6t655jjg
-  obfs-param: ''
-- name: "\U0001F1F8\U0001F1EC SG 12"
-  server: c551397.na.gladns.com
+- name: "\U0001F1E8\U0001F1F3 HK 12"
+  server: c551397.ni.gladns.com
   type: trojan
   port: 3389
   password: faf42aa0a9ad4c1e
   sni: n2.gladns.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 13"
-  server: 116.162.120.26
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 53924:hjgjuy6t655jjg
-  obfs-param: ''
-- name: "\U0001F1F0\U0001F1F7 KR 14"
-  server: hg2.leifengkeji.live
-  type: trojan
-  country: "\U0001F1F0\U0001F1F7KR"
-  port: 48900
-  password: 752a9404-c729-485e-8ea5-acb3f4fc8180
-  sni: hg2.leifengkeji.live
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 15"
+- name: "\U0001F1F8\U0001F1EC SG 13"
   server: c551397.ne.gladns.com
   type: trojan
   port: 3389
@@ -130,8 +106,25 @@ proxies:
   sni: n2.gladns.com
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 14"
+  server: hg7.leifengkeji.live
+  type: trojan
+  country: "\U0001F1F0\U0001F1F7KR"
+  port: 48905
+  password: 752a9404-c729-485e-8ea5-acb3f4fc8180
+  sni: hg7.leifengkeji.live
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 15"
+  server: c551397.nc.gladns.com
+  type: trojan
+  port: 3389
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 16"
-  server: c551397.ng.gladns.com
+  server: c551397.na.gladns.com
   type: trojan
   port: 3389
   password: faf42aa0a9ad4c1e
@@ -139,22 +132,14 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F8\U0001F1EC SG 17"
-  server: c551397.nh.gladns.com
+  server: c551397.nd.gladns.com
   type: trojan
   port: 3389
   password: faf42aa0a9ad4c1e
   sni: n2.gladns.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 18"
-  server: 152.67.98.30
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 443
-  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 19"
+- name: "\U0001F1F8\U0001F1EC SG 18"
   server: 159.223.89.239
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -162,33 +147,7 @@ proxies:
   password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 20"
-  server: 116.162.120.24
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 53924:hjgjuy6t655jjg
-  obfs-param: ''
-- name: "\U0001F1F0\U0001F1F7 KR 21"
-  server: 150.230.249.42
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: 0Y9gOHSdRt
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 22"
-  server: 138.124.183.222
-  type: trojan
-  country: "\U0001F1F3\U0001F1F4NO"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 23"
+- name: "\U0001F1E8\U0001F1F3 CN 19"
   server: c551397.ga.gladns.com
   type: trojan
   port: 3382
@@ -196,71 +155,103 @@ proxies:
   sni: n2.gladns.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 24"
-  server: jgwhdlb3.gaox.ml
+- name: "\U0001F1E8\U0001F1F3 CN 20"
+  server: c551397.gc.gladns.com
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  port: 3383
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 21"
+  server: 138.124.183.216
+  type: trojan
+  country: "\U0001F1F3\U0001F1F4NO"
   port: 443
-  password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 22"
+  server: 150.230.249.42
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: 0Y9gOHSdRt
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1E9 ID 23"
+  server: 41.216.177.41
+  type: trojan
+  country: "\U0001F1F3\U0001F1F1NL"
+  port: 443
+  password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 24"
+  server: c551397.ga.gladns.com
+  type: trojan
+  port: 3381
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
   skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1E6 CA 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1F0\U0001F1F7 KR 14"
+  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
   - "\U0001F1F8\U0001F1EC SG 15"
   - "\U0001F1F8\U0001F1EC SG 16"
   - "\U0001F1F8\U0001F1EC SG 17"
-  - "\U0001F1E6\U0001F1FA AU 18"
-  - "\U0001F1F8\U0001F1EC SG 19"
+  - "\U0001F1F8\U0001F1EC SG 18"
+  - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1F0\U0001F1F7 KR 21"
-  - "\U0001F1FA\U0001F1F8 US 22"
-  - "\U0001F1E8\U0001F1F3 CN 23"
-  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1FA\U0001F1F8 US 21"
+  - "\U0001F1F0\U0001F1F7 KR 22"
+  - "\U0001F1EE\U0001F1E9 ID 23"
+  - "\U0001F1E8\U0001F1F3 CN 24"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1E6 CA 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1F0\U0001F1F7 KR 14"
+  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
   - "\U0001F1F8\U0001F1EC SG 15"
   - "\U0001F1F8\U0001F1EC SG 16"
   - "\U0001F1F8\U0001F1EC SG 17"
-  - "\U0001F1E6\U0001F1FA AU 18"
-  - "\U0001F1F8\U0001F1EC SG 19"
+  - "\U0001F1F8\U0001F1EC SG 18"
+  - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1F0\U0001F1F7 KR 21"
-  - "\U0001F1FA\U0001F1F8 US 22"
-  - "\U0001F1E8\U0001F1F3 CN 23"
-  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1FA\U0001F1F8 US 21"
+  - "\U0001F1F0\U0001F1F7 KR 22"
+  - "\U0001F1EE\U0001F1E9 ID 23"
+  - "\U0001F1E8\U0001F1F3 CN 24"
 rules:
 - "MATCH,\U0001F310 Proxy"
