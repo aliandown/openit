@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 43-153-30-20.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 43-153-34-170.ipv4.rush.ml
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -15,13 +7,15 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: dl-hk5.efyunpan.com
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 43-153-30-20.ipv4.rush.ml
   type: trojan
-  password: 06f4b611-5e22-4e95-a250-50bcf2d017e0
-  sni: data-hk.efyunpan.com
-- name: "\U0001F1E8\U0001F1E6 CA 4"
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 3"
   server: 149.56.141.11
   type: trojan
   country: "\U0001F1E8\U0001F1E6CA"
@@ -29,25 +23,37 @@ proxies:
   password: 8b6daf15-8342-482d-b894-1239fd98ce7f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 5"
-  server: uk1.trojanvh.xyz
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us2.trojanvh.xyz
   port: 80
   type: trojan
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  sni: uk1.trojanvh.xyz
+  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  sni: us2.trojanvh.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: dl-hk5.efyunpan.com
+  port: 443
+  type: trojan
+  password: 06f4b611-5e22-4e95-a250-50bcf2d017e0
+  sni: data-hk.efyunpan.com
 - name: "\U0001F1F8\U0001F1EC SG 6"
   server: dl-sg2.efyunpan.com
   port: 443
   type: trojan
   password: 06f4b611-5e22-4e95-a250-50bcf2d017e0
   sni: data-sg.efyunpan.com
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  server: us2.trojanvh.xyz
+- name: "\U0001F1F8\U0001F1EC SG 7"
+  server: dl-sg3.efyunpan.com
+  port: 443
+  type: trojan
+  password: 06f4b611-5e22-4e95-a250-50bcf2d017e0
+  sni: data-sg.efyunpan.com
+- name: "\U0001F1EC\U0001F1E7 GB 8"
+  server: uk1.trojanvh.xyz
   port: 80
   type: trojan
-  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  sni: us2.trojanvh.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  sni: uk1.trojanvh.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 9"
   server: 116.162.120.31
   port: 562
   type: ssr
@@ -57,7 +63,7 @@ proxies:
   obfs: plain
   protocol-param: 36685:LLLiioi877
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 9"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   server: 116.162.120.29
   port: 561
   type: ssr
@@ -67,12 +73,6 @@ proxies:
   obfs: plain
   protocol-param: 36685:LLLiioi877
   obfs-param: ''
-- name: "\U0001F1F8\U0001F1EC SG 10"
-  server: dl-sg3.efyunpan.com
-  port: 443
-  type: trojan
-  password: 06f4b611-5e22-4e95-a250-50bcf2d017e0
-  sni: data-sg.efyunpan.com
 - name: "\U0001F1FA\U0001F1F8 US 11"
   server: 107.181.161.163
   type: trojan
@@ -81,15 +81,7 @@ proxies:
   password: d1478689-439c-4590-b7ce-36e786a02dc3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 12"
-  server: 43-154-228-196.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 13"
+- name: "\U0001F1E8\U0001F1F3 CN 12"
   server: 223.167.41.170
   port: 562
   type: ssr
@@ -99,12 +91,20 @@ proxies:
   obfs: plain
   protocol-param: 36685:LLLiioi877
   obfs-param: ''
-- name: "\U0001F1FA\U0001F1F8 US 14"
+- name: "\U0001F1FA\U0001F1F8 US 13"
   server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E9\U0001F1EA DE 14"
+  server: 188.40.251.19
+  type: trojan
+  country: "\U0001F1E9\U0001F1EADE"
+  port: 443
+  password: origin
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 15"
@@ -115,15 +115,7 @@ proxies:
   password: 2b7a055e-5b0a-44bd-901b-5577e61aa832
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 16"
-  server: 188.40.251.19
-  type: trojan
-  country: "\U0001F1E9\U0001F1EADE"
-  port: 443
-  password: origin
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 17"
+- name: "\U0001F1EB\U0001F1F7 FR 16"
   server: 176.31.83.90
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -131,12 +123,20 @@ proxies:
   password: origin
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 18"
-  server: content-provider24.cdn-delivery.akamaicd.com
+- name: "\U0001F1FA\U0001F1F8 US 17"
+  server: 138.124.183.222
   type: trojan
-  country: "\U0001F1F3\U0001F1F1NL"
+  country: "\U0001F1F3\U0001F1F4NO"
   port: 443
-  password: Sp3eDVp
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 18"
+  server: 20-66-19-98.ipv4.rush.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F3\U0001F1F1 NL 19"
@@ -147,7 +147,23 @@ proxies:
   password: Sp3eDVp
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 20"
+- name: "\U0001F1F3\U0001F1F1 NL 20"
+  server: content-provider24.cdn-delivery.akamaicd.com
+  type: trojan
+  country: "\U0001F1F3\U0001F1F1NL"
+  port: 443
+  password: Sp3eDVp
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 21"
+  server: 43-154-228-196.ipv4.rush.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F1\U0001F1F9 LT 22"
   server: 212.24.103.3
   type: trojan
   country: "\U0001F1F1\U0001F1F9LT"
@@ -155,15 +171,7 @@ proxies:
   password: 4f9ca636-5195-406a-b48c-0388689dd9a7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 21"
-  server: 20-66-19-98.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 22"
+- name: "\U0001F1EB\U0001F1F7 FR 23"
   server: upload.soft98.download
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -171,20 +179,12 @@ proxies:
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 23"
+- name: "\U0001F1EC\U0001F1E7 GB 24"
   server: content-provider4.cdn-delivery.akamaicd.com
   type: trojan
   country: "\U0001F1EC\U0001F1E7GB"
   port: 443
   password: shefelnak
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 24"
-  server: 152.67.160.174
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 54080134-2cba-4535-8599-95650bd9aa54
   skip-cert-verify: true
   udp: true
 - type: trojan
@@ -208,40 +208,41 @@ proxies:
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 27"
   server: 42.237.112.208
-  port: 33982
+  port: 32986
   protocol: auth_aes128_sha1
   cipher: chacha20-ietf
   obfs: http_simple
   password: zztw9jk7gu
-  protocol-param: 34:DrDXXo
+  obfs-param: b9be14021.microsoft.com
+  protocol-param: 4021:yWHABv
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1FA\U0001F1F8 US 14"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E9\U0001F1EA DE 14"
   - "\U0001F1FA\U0001F1F8 US 15"
-  - "\U0001F1E9\U0001F1EA DE 16"
-  - "\U0001F1EB\U0001F1F7 FR 17"
-  - "\U0001F1F3\U0001F1F1 NL 18"
+  - "\U0001F1EB\U0001F1F7 FR 16"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FA\U0001F1F8 US 18"
   - "\U0001F1F3\U0001F1F1 NL 19"
-  - "\U0001F1F1\U0001F1F9 LT 20"
-  - "\U0001F1FA\U0001F1F8 US 21"
-  - "\U0001F1EB\U0001F1F7 FR 22"
-  - "\U0001F1EC\U0001F1E7 GB 23"
-  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1F3\U0001F1F1 NL 20"
+  - "\U0001F1E8\U0001F1F3 HK 21"
+  - "\U0001F1F1\U0001F1F9 LT 22"
+  - "\U0001F1EB\U0001F1F7 FR 23"
+  - "\U0001F1EC\U0001F1E7 GB 24"
   - "\U0001F1FA\U0001F1F8 US 25"
   - "\U0001F1F5\U0001F1F1 PL 26"
   - "\U0001F1E8\U0001F1F3 CN 27"
@@ -253,28 +254,28 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1FA\U0001F1F8 US 14"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E9\U0001F1EA DE 14"
   - "\U0001F1FA\U0001F1F8 US 15"
-  - "\U0001F1E9\U0001F1EA DE 16"
-  - "\U0001F1EB\U0001F1F7 FR 17"
-  - "\U0001F1F3\U0001F1F1 NL 18"
+  - "\U0001F1EB\U0001F1F7 FR 16"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FA\U0001F1F8 US 18"
   - "\U0001F1F3\U0001F1F1 NL 19"
-  - "\U0001F1F1\U0001F1F9 LT 20"
-  - "\U0001F1FA\U0001F1F8 US 21"
-  - "\U0001F1EB\U0001F1F7 FR 22"
-  - "\U0001F1EC\U0001F1E7 GB 23"
-  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1F3\U0001F1F1 NL 20"
+  - "\U0001F1E8\U0001F1F3 HK 21"
+  - "\U0001F1F1\U0001F1F9 LT 22"
+  - "\U0001F1EB\U0001F1F7 FR 23"
+  - "\U0001F1EC\U0001F1E7 GB 24"
   - "\U0001F1FA\U0001F1F8 US 25"
   - "\U0001F1F5\U0001F1F1 PL 26"
   - "\U0001F1E8\U0001F1F3 CN 27"
