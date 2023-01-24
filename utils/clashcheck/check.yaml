@@ -16,6 +16,14 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
+  server: fhcamd2.gaox.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
   server: 138.124.183.222
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
@@ -23,16 +31,40 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: 194.156.99.39
+  type: trojan
+  country: "\U0001F1F7\U0001F1FA RU"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
 - type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 4"
+  name: "\U0001F1EC\U0001F1E7 GB 6"
   server: content-provider4.cdn-delivery.akamaicd.com
   port: 443
   password: shefelnak
   udp: true
   skip-cert-verify: true
   sni: content-provider4.cdn-delivery.akamaicd.com
+- type: trojan
+  name: "\U0001F1F9\U0001F1F7 TR 7"
+  server: 95.85.76.155
+  port: 38371
+  password: l97ib1eedX
+  udp: true
+  skip-cert-verify: true
+  sni: tr2.digisport.shop
+- type: trojan
+  name: "\U0001F1F9\U0001F1F7 TR 8"
+  server: 95.85.76.136
+  port: 56810
+  password: fEDTdp8Sy1
+  udp: true
+  skip-cert-verify: true
+  sni: tr1.digisport.shop
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 5"
+  name: "\U0001F1E8\U0001F1F3 CN 9"
   server: 42.237.112.208
   port: 33117
   protocol: auth_aes128_sha1
@@ -41,32 +73,8 @@ proxies:
   password: zztw9jk7gu
   obfs-param: e5ab034.microsoft.com
   protocol-param: 34:DrDXXo
-- type: trojan
-  name: "\U0001F1F9\U0001F1F7 TR 6"
-  server: 95.85.76.155
-  port: 38371
-  password: l97ib1eedX
-  udp: true
-  skip-cert-verify: true
-  sni: tr2.digisport.shop
-- type: trojan
-  name: "\U0001F1F9\U0001F1F7 TR 7"
-  server: 95.85.76.136
-  port: 56810
-  password: fEDTdp8Sy1
-  udp: true
-  skip-cert-verify: true
-  sni: tr1.digisport.shop
-- type: trojan
-  name: "\U0001F1EA\U0001F1F8 ES 8"
-  server: 82.223.46.50
-  port: 2083
-  password: EGi7EzLOD3
-  udp: true
-  skip-cert-verify: true
-  sni: freedom.wlfhope.website
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 9"
+  name: "\U0001F1E8\U0001F1F3 CN 10"
   server: 42.237.112.208
   port: 30985
   protocol: auth_aes128_sha1
@@ -76,7 +84,7 @@ proxies:
   obfs-param: b9be14021.microsoft.com
   protocol-param: 4021:yWHABv
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 10"
+  name: "\U0001F1E8\U0001F1F3 CN 11"
   server: 42.237.112.208
   port: 32012
   protocol: auth_aes128_sha1
@@ -85,14 +93,6 @@ proxies:
   password: zztw9jk7gu
   obfs-param: b9be14021.microsoft.com
   protocol-param: 4021:yWHABv
-- name: "\U0001F1EB\U0001F1F7 FR 11"
-  server: upload.soft98.download
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7 FR"
-  port: 443
-  password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -100,14 +100,14 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E6\U0001F1FA AU 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F9\U0001F1F7 TR 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1F9\U0001F1F7 TR 7"
-  - "\U0001F1EA\U0001F1F8 ES 8"
+  - "\U0001F1F9\U0001F1F7 TR 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1EB\U0001F1F7 FR 11"
+  - "\U0001F1E8\U0001F1F3 CN 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -117,13 +117,13 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E6\U0001F1FA AU 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F9\U0001F1F7 TR 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1F9\U0001F1F7 TR 7"
-  - "\U0001F1EA\U0001F1F8 ES 8"
+  - "\U0001F1F9\U0001F1F7 TR 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1EB\U0001F1F7 FR 11"
+  - "\U0001F1E8\U0001F1F3 CN 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
