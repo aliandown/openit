@@ -7,32 +7,30 @@ proxies:
   password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: 194.156.99.39
+- type: trojan
+  name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: content-provider4.cdn-delivery.akamaicd.com
+  port: 443
+  password: shefelnak
+  udp: true
+  skip-cert-verify: true
+  sni: content-provider4.cdn-delivery.akamaicd.com
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 138.124.183.222
   type: trojan
-  country: "\U0001F1F7\U0001F1FA RU"
+  country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
   password: xxoo
   skip-cert-verify: true
   udp: true
 - type: trojan
-  name: "\U0001F1F9\U0001F1F7 TR 3"
+  name: "\U0001F1F9\U0001F1F7 TR 4"
   server: 95.85.76.155
   port: 38371
   password: l97ib1eedX
   udp: true
   skip-cert-verify: true
   sni: tr2.digisport.shop
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 42.237.112.208
-  port: 33117
-  protocol: auth_aes128_sha1
-  cipher: chacha20-ietf
-  obfs: http_simple
-  password: zztw9jk7gu
-  obfs-param: e5ab034.microsoft.com
-  protocol-param: 34:DrDXXo
 - type: trojan
   name: "\U0001F1F9\U0001F1F7 TR 5"
   server: 95.85.76.136
@@ -41,24 +39,24 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: tr1.digisport.shop
-- name: "\U0001F1EB\U0001F1F7 FR 6"
-  server: upload.soft98.download
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7 FR"
-  port: 443
-  password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
-  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EA\U0001F1F8 ES 6"
+  server: 82.223.46.50
+  port: 2083
+  password: EGi7EzLOD3
   udp: true
+  skip-cert-verify: true
+  sni: freedom.wlfhope.website
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E6\U0001F1FA AU 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F9\U0001F1F7 TR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F9\U0001F1F7 TR 4"
   - "\U0001F1F9\U0001F1F7 TR 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EA\U0001F1F8 ES 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,10 +64,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E6\U0001F1FA AU 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F9\U0001F1F7 TR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F9\U0001F1F7 TR 4"
   - "\U0001F1F9\U0001F1F7 TR 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EA\U0001F1F8 ES 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
