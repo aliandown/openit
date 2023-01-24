@@ -1,16 +1,16 @@
 proxies:
-- name: "\U0001F1E6\U0001F1FA AU 1"
-  server: jgwxn4.gaox.ml
-  type: trojan
-  country: "\U0001F1E6\U0001F1FA AU"
-  port: 443
-  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: 138.124.183.222
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: 194.156.99.39
+  type: trojan
+  country: "\U0001F1F7\U0001F1FA RU"
   port: 443
   password: xxoo
   skip-cert-verify: true
@@ -23,14 +23,14 @@ proxies:
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: jgwdj4.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
+- type: trojan
+  name: "\U0001F1EC\U0001F1E7 GB 4"
+  server: content-provider4.cdn-delivery.akamaicd.com
   port: 443
-  password: c09eb137-bf68-4658-84e0-102d94b74168
-  skip-cert-verify: true
+  password: shefelnak
   udp: true
+  skip-cert-verify: true
+  sni: content-provider4.cdn-delivery.akamaicd.com
 - type: trojan
   name: "\U0001F1F9\U0001F1F7 TR 5"
   server: 95.85.76.155
@@ -47,59 +47,37 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: tr1.digisport.shop
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 7"
-  server: 15.235.197.5
-  port: 80
-  password: bedae0a3-a7dc-4ff0-9013-be459839b5b7
-  udp: true
-  skip-cert-verify: true
-  sni: sg2.trojanvh.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 8"
-  server: 194.156.99.39
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: jgwdb2.gaox.ml
   type: trojan
-  country: "\U0001F1F7\U0001F1FA RU"
+  country: "\U0001F1FA\U0001F1F8 US"
   port: 443
-  password: xxoo
+  password: c19d1432-8b3e-4818-8837-3d160cf65908
   skip-cert-verify: true
   udp: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: 42.237.112.208
-  port: 33117
-  protocol: auth_aes128_sha1
-  cipher: chacha20-ietf
-  obfs: http_simple
-  password: zztw9jk7gu
-  obfs-param: e5ab034.microsoft.com
-  protocol-param: 34:DrDXXo
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E6\U0001F1FA AU 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1F9\U0001F1F7 TR 5"
   - "\U0001F1F9\U0001F1F7 TR 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E6\U0001F1FA AU 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1F9\U0001F1F7 TR 5"
   - "\U0001F1F9\U0001F1F7 TR 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1EF\U0001F1F5 JP 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
