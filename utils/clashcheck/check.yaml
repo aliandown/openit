@@ -8,30 +8,22 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E6\U0001F1FA AU 2"
-  server: jgwxn3.gaox.ml
+  server: jgwxn4.gaox.ml
   type: trojan
   country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: fhcamd2.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
-  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 155.248.193.254
+  port: 31853
+  password: jKRJgS7uvI
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 4"
-  server: content-provider4.cdn-delivery.akamaicd.com
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7 GB"
-  port: 443
-  password: shefelnak
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: upload.soft98.download
   type: trojan
   country: "\U0001F1EB\U0001F1F7 FR"
@@ -39,7 +31,7 @@ proxies:
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: jgwdb3.gaox.ml
   type: trojan
   country: "\U0001F1EF\U0001F1F5 JP"
@@ -47,7 +39,7 @@ proxies:
   password: 8d2d5953-d649-4034-94f2-72f2df2623da
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: jgwdb2.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -56,7 +48,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 8"
+  name: "\U0001F1E8\U0001F1F3 CN 7"
   server: 36.156.222.25
   port: 32992
   protocol: auth_aes128_sha1
@@ -65,6 +57,16 @@ proxies:
   password: zztw9jk7gu
   obfs-param: b9be14021.microsoft.com
   protocol-param: 4021:yWHABv
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: 42.237.112.208
+  port: 32026
+  protocol: auth_aes128_sha1
+  cipher: chacha20-ietf
+  obfs: http_simple
+  password: zztw9jk7gu
+  obfs-param: e5ab07432.microsoft.com
+  protocol-param: 7432:82TfWp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -72,10 +74,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E6\U0001F1FA AU 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -86,10 +88,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E6\U0001F1FA AU 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
