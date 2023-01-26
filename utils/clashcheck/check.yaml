@@ -7,7 +7,15 @@ proxies:
   password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
+- name: "\U0001F1E6\U0001F1FA AU 2"
+  server: jgwxn4.gaox.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: upload.soft98.download
   type: trojan
   country: "\U0001F1EB\U0001F1F7 FR"
@@ -20,7 +28,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -28,6 +37,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
