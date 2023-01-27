@@ -1,20 +1,21 @@
 proxies:
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 155.248.193.254
-  port: 31853
-  password: jKRJgS7uvI
-  udp: true
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 138.124.183.226
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 138.124.183.216
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
   password: xxoo
   skip-cert-verify: true
   udp: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: jp1.v2pn.live
+  port: 443
+  password: 7812e7af-a2de-49a1-a034-8bc23f3f3b62
+  udp: true
+  skip-cert-verify: true
+  sni: 139-177-186-17.nhost.00cdn.com
+  network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 3"
   server: upload.soft98.download
   type: trojan
@@ -23,24 +24,7 @@ proxies:
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: 43.154.222.48
-  port: 17115
-  password: a3278882-3614-39cf-a3d6-faefa8c910ab
-  udp: true
-  skip-cert-verify: true
-  sni: azhk097.xiaohouzi.club
-- type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: jp1.v2pn.live
-  port: 443
-  password: 7812e7af-a2de-49a1-a034-8bc23f3f3b62
-  udp: true
-  skip-cert-verify: true
-  sni: 139-177-186-17.nhost.00cdn.com
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: 194.156.99.39
   type: trojan
   country: "\U0001F1F7\U0001F1FA RU"
@@ -48,16 +32,32 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 5"
+  server: content-provider4.cdn-delivery.akamaicd.com
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7 GB"
+  port: 443
+  password: shefelnak
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: jgwdb2.gaox.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: c19d1432-8b3e-4818-8837-3d160cf65908
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,10 +65,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
