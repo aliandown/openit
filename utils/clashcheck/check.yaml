@@ -15,7 +15,15 @@ proxies:
   password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 3"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: content-provider4.cdn-delivery.akamaicd.com
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7 GB"
+  port: 443
+  password: shefelnak
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: upload.soft98.download
   type: trojan
   country: "\U0001F1EB\U0001F1F7 FR"
@@ -23,20 +31,12 @@ proxies:
   password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   server: fhcamd2.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
   port: 443
   password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 5"
-  server: content-provider4.cdn-delivery.akamaicd.com
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7 GB"
-  port: 443
-  password: shefelnak
   skip-cert-verify: true
   udp: true
 - type: trojan
@@ -47,37 +47,28 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: azhk097.xiaohouzi.club
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: kr05.wangxd.life
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: 194.156.99.39
   type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 8"
-  server: jgwhdlb1.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
+  country: "\U0001F1F7\U0001F1FA RU"
   port: 443
-  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
+  password: xxoo
   skip-cert-verify: true
   udp: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: 42.237.112.208
-  port: 32992
-  protocol: auth_aes128_sha1
-  cipher: chacha20-ietf
-  obfs: http_simple
-  password: zztw9jk7gu
-  protocol-param: 34:DrDXXo
-- name: "\U0001F1F0\U0001F1F7 KR 10"
+- name: "\U0001F1F0\U0001F1F7 KR 8"
   server: jgwcc3.gaox.ml
   type: trojan
   country: "\U0001F1EF\U0001F1F5 JP"
   port: 443
   password: b291d129-ee55-4801-a9b8-b5316e5c37b7
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 9"
+  server: jgwhdlb1.gaox.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -86,14 +77,13 @@ proxy-groups:
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E6\U0001F1FA AU 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -102,13 +92,12 @@ proxy-groups:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E6\U0001F1FA AU 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
