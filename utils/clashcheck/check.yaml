@@ -1,29 +1,28 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 138.124.183.222
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 155.248.193.254
+  port: 31853
+  password: jKRJgS7uvI
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 138.124.183.226
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: content-provider4.cdn-delivery.akamaicd.com
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: upload.soft98.download
   type: trojan
-  country: "\U0001F1EC\U0001F1E7 GB"
+  country: "\U0001F1EB\U0001F1F7 FR"
   port: 443
-  password: shefelnak
+  password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: jp1.v2pn.live
-  port: 443
-  password: 7812e7af-a2de-49a1-a034-8bc23f3f3b62
-  udp: true
-  skip-cert-verify: true
-  sni: 139-177-186-17.nhost.00cdn.com
-  network: tcp
 - type: trojan
   name: "\U0001F1E8\U0001F1F3 HK 4"
   server: 43.154.222.48
@@ -32,14 +31,15 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: azhk097.xiaohouzi.club
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  server: upload.soft98.download
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7 FR"
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: jp1.v2pn.live
   port: 443
-  password: a2c8194b-fcfd-4c39-a6bd-31ea9f4ea671
-  skip-cert-verify: true
+  password: 7812e7af-a2de-49a1-a034-8bc23f3f3b62
   udp: true
+  skip-cert-verify: true
+  sni: 139-177-186-17.nhost.00cdn.com
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   server: 194.156.99.39
   type: trojan
@@ -48,25 +48,16 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
-  server: jgwhdlb3.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -74,11 +65,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
