@@ -21,16 +21,8 @@ proxies:
   password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 138.124.183.226
-  type: trojan
-  country: "\U0001F1F3\U0001F1F4 NO"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 5"
+  name: "\U0001F1FA\U0001F1F8 US 4"
   server: 104.149.155.13
   port: 443
   password: 17c412d9-f283-483c-b095-72605fb2840e
@@ -39,13 +31,21 @@ proxies:
   sni: vzwzasc.cn
   network: tcp
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 6"
+  name: "\U0001F1FA\U0001F1F8 US 5"
   server: 155.248.193.254
   port: 31853
   password: jKRJgS7uvI
   udp: true
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 138.124.183.226
+  type: trojan
+  country: "\U0001F1F3\U0001F1F4 NO"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 7"
   server: jgwdj3.gaox.ml
   type: trojan
@@ -56,20 +56,22 @@ proxies:
   udp: true
 - type: trojan
   name: "\U0001F1E8\U0001F1F3 HK 8"
-  server: 43.154.222.48
-  port: 17115
-  password: a3278882-3614-39cf-a3d6-faefa8c910ab
-  udp: true
-  skip-cert-verify: true
-  sni: azhk097.xiaohouzi.club
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 HK 9"
   server: 43.154.210.104
   port: 19357
   password: a3278882-3614-39cf-a3d6-faefa8c910ab
   udp: true
   skip-cert-verify: true
   sni: azhk003.xiaohouzi.club
+  network: tcp
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 9"
+  server: 43.154.222.48
+  port: 17115
+  password: a3278882-3614-39cf-a3d6-faefa8c910ab
+  udp: true
+  skip-cert-verify: true
+  sni: azhk097.xiaohouzi.club
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 10"
   server: jgwhdlb3.gaox.ml
   type: trojan
@@ -78,14 +80,6 @@ proxies:
   password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 11"
-  server: ccjp3.cutcloudjd.site
-  port: 10003
-  password: 2380f07e-e54c-4645-8abe-50575b31f45f
-  udp: true
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -100,7 +94,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -117,6 +110,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
