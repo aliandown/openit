@@ -63,24 +63,22 @@ proxies:
   type: trojan
   password: 0c355515-b1e5-4c0a-b843-e1defbe7c0fa
   sni: trxjp.ballistics.top
-- name: "\U0001F1EF\U0001F1F5 JP 11"
-  server: jgwdb4.gaox.ml
-  type: trojan
-  country: "\U0001F1E6\U0001F1FA AU"
-  port: 443
-  password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 12"
-  server: 138.124.183.216
-  type: trojan
-  country: "\U0001F1F3\U0001F1F4 NO"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: h961359.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: 54b57a8e76
+  password: 7fccf1c716
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: h961359.waihuizhibiaowang.com
+  port: 11443
+  type: http
+  username: 54b57a8e76
+  password: 7fccf1c716
+  tls: true
 - name: "\U0001F1FA\U0001F1F8 US 13"
-  server: 138.124.183.226
+  server: 138.124.183.216
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
@@ -89,26 +87,33 @@ proxies:
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 14"
   server: h961359.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: 54b57a8e76
-  password: 7fccf1c716
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 15"
-  server: h961359.waihuizhibiaowang.com
-  port: 11443
-  type: http
-  username: 54b57a8e76
-  password: 7fccf1c716
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 16"
-  server: h961359.waihuizhibiaowang.com
   port: 11243
   type: http
   username: 54b57a8e76
   password: 7fccf1c716
   tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 17"
+- name: "\U0001F1FA\U0001F1F8 US 15"
+  server: 138.124.183.226
+  type: trojan
+  country: "\U0001F1F3\U0001F1F4 NO"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 16"
+  type: ss
+  server: tw.wxfz.ml
+  port: 55003
+  password: yYIukPTr50XpavMx
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 17"
+  server: h961359.waihuizhibiaowang.com
+  port: 11743
+  type: http
+  username: 54b57a8e76
+  password: 7fccf1c716
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 18"
   server: jgwhdlb2.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -116,12 +121,6 @@ proxies:
   password: 54080134-2cba-4535-8599-95650bd9aa54
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 18"
-  type: ss
-  server: tw.wxfz.ml
-  port: 55003
-  password: yYIukPTr50XpavMx
-  cipher: chacha20-ietf-poly1305
 - name: "\U0001F1EE\U0001F1F3 IN 19"
   server: jgwhdlb3.gaox.ml
   type: trojan
@@ -144,14 +143,14 @@ proxy-groups:
   - "\U0001F1F8\U0001F1F0 SK 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
-  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1FA\U0001F1F8 US 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1FA\U0001F1F8 US 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
-  - "\U0001F1EE\U0001F1F3 IN 17"
-  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1EE\U0001F1F3 IN 18"
   - "\U0001F1EE\U0001F1F3 IN 19"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -169,14 +168,14 @@ proxy-groups:
   - "\U0001F1F8\U0001F1F0 SK 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
-  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1FA\U0001F1F8 US 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1FA\U0001F1F8 US 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
-  - "\U0001F1EE\U0001F1F3 IN 17"
-  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1EE\U0001F1F3 IN 18"
   - "\U0001F1EE\U0001F1F3 IN 19"
 rules:
 - "MATCH,\U0001F310 Proxy"
