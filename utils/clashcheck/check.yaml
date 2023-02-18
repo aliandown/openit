@@ -1,16 +1,18 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: phxv001.jd0001.top
-  port: 44302
-  type: trojan
-  password: 4d111af8-5078-37e0-a583-34155f60b32c
-  sni: phxv001.jd0001.top
-- name: "\U0001F1EC\U0001F1E7 GB 2"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
   server: uk1.trojanvh.xyz
   port: 80
   type: trojan
   password: b44579e1-f803-4981-86bc-aa8c783daa04
   sni: uk1.trojanvh.xyz
+- name: "\U0001F1F0\U0001F1F7 KR 2"
+  server: 2.hg.kr.cat77.cloud
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 8443
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 3"
   server: kr05.wangxd.life
   type: trojan
@@ -28,7 +30,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 138.124.183.216
+  server: 138.124.183.222
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
@@ -36,7 +38,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 138.124.183.222
+  server: 138.124.183.216
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
@@ -51,20 +53,20 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 8"
+- name: "\U0001F1E6\U0001F1FA AU 8"
+  server: jgwxn4.gaox.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 9"
   server: jgwdj4.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
   port: 443
   password: c09eb137-bf68-4658-84e0-102d94b74168
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: jgwdj3.gaox.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 443
-  password: da777aae-defb-41d0-a183-2c27da2b4677
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 10"
@@ -75,12 +77,12 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 11"
-  server: jgwcc3.gaox.ml
+- name: "\U0001F1EF\U0001F1F5 JP 11"
+  server: osav101.jd0001.top
   type: trojan
-  country: "\U0001F1EF\U0001F1F5 JP"
-  port: 443
-  password: b291d129-ee55-4801-a9b8-b5316e5c37b7
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44301
+  password: 6abfad5a-24be-3657-85da-ceac782b7e19
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 12"
@@ -111,17 +113,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1E6\U0001F1FA AU 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E6\U0001F1FA AU 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1EF\U0001F1F5 JP 11"
   - "\U0001F1EE\U0001F1F3 IN 12"
   - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1EE\U0001F1F3 IN 14"
@@ -131,17 +133,17 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1E6\U0001F1FA AU 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E6\U0001F1FA AU 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1EF\U0001F1F5 JP 11"
   - "\U0001F1EE\U0001F1F3 IN 12"
   - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1EE\U0001F1F3 IN 14"
