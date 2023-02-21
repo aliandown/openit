@@ -1,5 +1,13 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: new.viporg12345.info
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 17742
+  password: Lutsyy96g9
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 138.124.183.222
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
@@ -7,7 +15,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 138.124.183.216
+  type: trojan
+  country: "\U0001F1F3\U0001F1F4 NO"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E9\U0001F1EA DE 4"
   server: dl.progbyrazyar.ir
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,29 +31,7 @@ proxies:
   password: L3N5SJGFTA
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: c.mg.us.cat77.cloud
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8646
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 4"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 5"
-  server: sg06.170203.xyz
-  port: 443
-  type: trojan
-  password: 9aaea08e-3e22-4999-9121-0264984f1904
-  sni: sg06.170203.xyz
-- name: "\U0001F1E6\U0001F1FA AU 6"
+- name: "\U0001F1E6\U0001F1FA AU 5"
   server: jgwxn4.gaox.ml
   type: trojan
   country: "\U0001F1E6\U0001F1FA AU"
@@ -45,6 +39,12 @@ proxies:
   password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  server: sg06.170203.xyz
+  port: 443
+  type: trojan
+  password: 9aaea08e-3e22-4999-9121-0264984f1904
+  sni: sg06.170203.xyz
 - name: "\U0001F1EE\U0001F1E9 ID 7"
   server: 108.137.18.26
   port: 8443
@@ -52,19 +52,19 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: jgwdj3.gaox.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: da777aae-defb-41d0-a183-2c27da2b4677
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 9"
   server: osav101.jd0001.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 44301
   password: 6abfad5a-24be-3657-85da-ceac782b7e19
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 9"
-  server: 138.124.183.216
-  type: trojan
-  country: "\U0001F1F3\U0001F1F4 NO"
-  port: 443
-  password: xxoo
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 10"
@@ -95,15 +95,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1EE\U0001F1E9 ID 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
   - "\U0001F1EE\U0001F1F3 IN 11"
   - "\U0001F1EE\U0001F1F3 IN 12"
@@ -113,15 +113,15 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1EE\U0001F1E9 ID 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
   - "\U0001F1EE\U0001F1F3 IN 11"
   - "\U0001F1EE\U0001F1F3 IN 12"
