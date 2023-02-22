@@ -6,45 +6,22 @@ proxies:
   password: b44579e1-f803-4981-86bc-aa8c783daa04
   sni: uk1.trojanvh.xyz
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 138.124.183.222
+  server: 138.124.183.216
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1E9 ID 3"
-  server: 108.137.18.26
-  port: 8443
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: jgwdj4.gaox.ml
   type: trojan
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 138.124.183.226
-  type: trojan
-  country: "\U0001F1F3\U0001F1F4 NO"
+  country: "\U0001F1FA\U0001F1F8 US"
   port: 443
-  password: xxoo
+  password: c09eb137-bf68-4658-84e0-102d94b74168
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  type: trojan
-  server: 51.38.99.96
-  port: 443
-  udp: true
-  password: b8808043-6566-4923-9195-e66bfb553d57
-  sni: ba24.ir
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: 194.156.99.39
-  type: trojan
-  country: "\U0001F1F7\U0001F1FA RU"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   server: jgwhdlb1.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -52,7 +29,15 @@ proxies:
   password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: 194.156.99.39
+  type: trojan
+  country: "\U0001F1F7\U0001F1FA RU"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   server: jgwhdlb3.gaox.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8 US"
@@ -66,12 +51,10 @@ proxy-groups:
   proxies:
   - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1E9 ID 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -80,11 +63,9 @@ proxy-groups:
   - automatic
   - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1E9 ID 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
