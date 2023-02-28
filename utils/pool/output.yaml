@@ -3632,24 +3632,7 @@ proxies:
   sni: cdn.hkhkbn.6641634715834932.me
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F2\U0001F1F4 MO 410 TJN"
-  type: trojan
-  server: 45.64.22.56
-  port: 443
-  udp: true
-  password: '123456'
-  sni: trojan-ctb-sg01.globalssh.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 411 TJN"
-  type: trojan
-  server: awshk10-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: 3640e7d3-b3e0-430b-be5a-903d9a1aa596
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 412 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 410 SSR"
   type: ssr
   server: 42.157.195.242
   port: 12127
@@ -3659,7 +3642,7 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: 0f099600777.v23f7nM0
   protocol-param: 0f099600777.v23f7nM0
-- name: "\U0001F1ED\U0001F1F0 HK 413 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 411 TJN"
   type: trojan
   server: zzcm06.cacbce.com
   port: 2570
@@ -3668,7 +3651,7 @@ proxies:
   sni: hkt2.bbprovm.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1FC TW 414 TJN"
+- name: "\U0001F1F9\U0001F1FC TW 412 TJN"
   type: trojan
   server: azgy001.xibai6.top
   port: 20784
@@ -3677,13 +3660,30 @@ proxies:
   sni: ssl.ssl12.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 415 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 413 TJN"
   type: trojan
   server: hn.xiaohouzi.club
   port: 18463
   udp: true
   password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
   sni: hn.xiaohouzi.club
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F2\U0001F1F4 MO 414 TJN"
+  type: trojan
+  server: 45.64.22.56
+  port: 443
+  udp: true
+  password: '123456'
+  sni: trojan-ctb-sg01.globalssh.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 415 TJN"
+  type: trojan
+  server: awshk10-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 3640e7d3-b3e0-430b-be5a-903d9a1aa596
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -4099,12 +4099,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 407 TJN"
   - "\U0001F1ED\U0001F1F0 HK 408 TJN"
   - "\U0001F1ED\U0001F1F0 HK 409 TJN"
-  - "\U0001F1F2\U0001F1F4 MO 410 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 410 SSR"
   - "\U0001F1ED\U0001F1F0 HK 411 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 412 SSR"
-  - "\U0001F1ED\U0001F1F0 HK 413 TJN"
-  - "\U0001F1F9\U0001F1FC TW 414 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 415 TJN"
+  - "\U0001F1F9\U0001F1FC TW 412 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 413 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 414 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 415 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -4520,11 +4520,11 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 407 TJN"
   - "\U0001F1ED\U0001F1F0 HK 408 TJN"
   - "\U0001F1ED\U0001F1F0 HK 409 TJN"
-  - "\U0001F1F2\U0001F1F4 MO 410 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 410 SSR"
   - "\U0001F1ED\U0001F1F0 HK 411 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 412 SSR"
-  - "\U0001F1ED\U0001F1F0 HK 413 TJN"
-  - "\U0001F1F9\U0001F1FC TW 414 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 415 TJN"
+  - "\U0001F1F9\U0001F1FC TW 412 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 413 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 414 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 415 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
