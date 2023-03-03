@@ -24,19 +24,19 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  server: phxv001.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44302
-  password: 4d111af8-5078-37e0-a583-34155f60b32c
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
   server: 138.124.183.226
   type: trojan
   country: "\U0001F1F3\U0001F1F4 NO"
   port: 443
   password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: phxv001.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44302
+  password: 4d111af8-5078-37e0-a583-34155f60b32c
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 6"
@@ -47,13 +47,7 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  server: 146.19.215.81
-  port: 443
-  type: trojan
-  password: 769c2da7-add3-42e8-a03c-07be9fcf483c
-  sni: zaelot.cc
-- name: "\U0001F1EB\U0001F1F7 FR 8"
+- name: "\U0001F1EB\U0001F1F7 FR 7"
   server: t3.teslacdn2.live
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -61,12 +55,18 @@ proxies:
   password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 9"
+- name: "\U0001F1E9\U0001F1EA DE 8"
   server: linux.seatech.ir
   port: 24589
   type: trojan
   password: q37K55b8FE
   sni: linux.seatech.ir
+- name: "\U0001F1FA\U0001F1F8 US 9"
+  server: 146.19.215.81
+  port: 443
+  type: trojan
+  password: 769c2da7-add3-42e8-a03c-07be9fcf483c
+  sni: zaelot.cc
 - name: "\U0001F1EE\U0001F1E9 ID 10"
   server: asia1.oceis.net
   port: 443
@@ -81,15 +81,7 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 12"
-  server: 2.hg.kr.cat77.cloud
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 8443
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E6\U0001F1FA AU 13"
+- name: "\U0001F1E6\U0001F1FA AU 12"
   server: jgwxn4.gaox.ml
   type: trojan
   country: "\U0001F1E6\U0001F1FA AU"
@@ -97,7 +89,7 @@ proxies:
   password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 14"
+- name: "\U0001F1EE\U0001F1F3 IN 13"
   server: hyderabad-m2.4422331.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -105,7 +97,7 @@ proxies:
   password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 15"
+- name: "\U0001F1EB\U0001F1F7 FR 14"
   type: trojan
   server: t5.teslacdn2.live
   port: 443
@@ -114,6 +106,14 @@ proxies:
   sni: t5.teslacdn2.live
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 15"
+  server: jgwdj4.gaox.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 443
+  password: c09eb137-bf68-4658-84e0-102d94b74168
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 16"
   server: jgwdj3.gaox.ml
   type: trojan
@@ -156,15 +156,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1EE\U0001F1E9 ID 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1E6\U0001F1FA AU 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1EB\U0001F1F7 FR 15"
+  - "\U0001F1E6\U0001F1FA AU 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
+  - "\U0001F1EB\U0001F1F7 FR 14"
+  - "\U0001F1EF\U0001F1F5 JP 15"
   - "\U0001F1EF\U0001F1F5 JP 16"
   - "\U0001F1EF\U0001F1F5 JP 17"
   - "\U0001F1EE\U0001F1F3 IN 18"
@@ -181,15 +181,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1EE\U0001F1E9 ID 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1E6\U0001F1FA AU 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1EB\U0001F1F7 FR 15"
+  - "\U0001F1E6\U0001F1FA AU 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
+  - "\U0001F1EB\U0001F1F7 FR 14"
+  - "\U0001F1EF\U0001F1F5 JP 15"
   - "\U0001F1EF\U0001F1F5 JP 16"
   - "\U0001F1EF\U0001F1F5 JP 17"
   - "\U0001F1EE\U0001F1F3 IN 18"
