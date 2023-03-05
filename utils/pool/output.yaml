@@ -628,67 +628,64 @@ proxies:
   port: 123
   username: username
   password: password
-- type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 84 TJN"
-  server: 103.103.245.190
-  port: 50394
-  password: 9642def5-94bb-4962-a168-c510f9a93328
-  udp: true
-  skip-cert-verify: true
-  sni: cn-hk-32.fnhffffe4.cc
-  network: tcp
-- type: trojan
-  name: "\U0001F1F5\U0001F1F1 PL 85 TJN"
-  server: 51.83.186.142
-  port: 80
-  password: 555034c8-6420-45d0-893c-905c02342150
-  udp: true
-  skip-cert-verify: true
-  sni: pl1.trojanvh.xyz
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 86 SSR"
-  type: ssr
-  server: 103.45.78.241
-  port: 42833
-  password: YpX2opBbrfqJzzMs
-  cipher: aes-256-cfb
-  obfs: http_simple
-  protocol: origin
-  obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
-- name: "\U0001F1EF\U0001F1F5 JP 87 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 84 TJN"
   type: trojan
-  server: dl-jp1.steamdownload.top
+  server: hn.xiaohouzi.club
+  port: 18735
+  udp: true
+  password: 21e10785-99c6-316e-a184-a03384ee06e5
+  sni: ajpn05.xiaohouzi.club
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 85 SSS"
+  type: ss
+  server: out.jijifun.com
+  port: 30033
+  password: '114514'
+  cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 86 TJN"
+  type: trojan
+  server: hn.xiaohouzi.club
+  port: 48431
+  udp: true
+  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
+  sni: hn.xiaohouzi.club
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 87 TJN"
+  type: trojan
+  server: hnm.xiaohouzi.club
+  port: 49363
+  udp: true
+  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
+  sni: hnm.xiaohouzi.club
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 88 TJN"
+  type: trojan
+  server: hnm.xiaohouzi.club
+  port: 16082
+  udp: true
+  password: 21e10785-99c6-316e-a184-a03384ee06e5
+  sni: nh-hinet06.xiaohouzi.club
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 89 TJN"
+  type: trojan
+  server: 84.252.121.218
   port: 443
   udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-jp.xn--vur082k.cc
+  password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930
+  sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 88 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 90 TJN"
   type: trojan
-  server: dl-hk1.steamdownload.top
+  server: 148.59.74.216
   port: 443
   udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 89 TJN"
-  type: trojan
-  server: dl-hk4.steamdownload.top
-  port: 443
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 90 TJN"
-  type: trojan
-  server: dl-hk3.steamdownload.top
-  port: 443
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
+  password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930
+  sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 91 TJN"
@@ -699,27 +696,27 @@ proxies:
   password: a4b8293b-af60-4f1b-8572-dea4f5b6cdef
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 92 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 92 SSR"
+  type: ssr
+  server: 103.45.78.241
+  port: 42833
+  password: YpX2opBbrfqJzzMs
+  cipher: aes-256-cfb
+  obfs: http_simple
+  protocol: origin
+  obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
+- name: "\U0001F1EF\U0001F1F5 JP 93 TJN"
   type: trojan
-  server: hnm.xiaohouzi.club
-  port: 17105
-  udp: true
-  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
-  sni: $tukey.xiaohouzi.club
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 93 TJN"
-  type: trojan
-  server: dl-sg1.steamdownload.top
-  port: 50000
+  server: dl-jp1.steamdownload.top
+  port: 443
   udp: true
   password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-sg.xn--vur082k.cc
+  sni: data-jp.xn--vur082k.cc
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 94 TJN"
   type: trojan
-  server: dl-hk2.steamdownload.top
+  server: dl-hk1.steamdownload.top
   port: 443
   udp: true
   password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
@@ -728,7 +725,7 @@ proxies:
   network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 95 TJN"
   type: trojan
-  server: dl-hk6.steamdownload.top
+  server: dl-hk4.steamdownload.top
   port: 443
   udp: true
   password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
@@ -737,6 +734,51 @@ proxies:
   network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 96 TJN"
   type: trojan
+  server: dl-hk3.steamdownload.top
+  port: 443
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-hk.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 97 TJN"
+  type: trojan
+  server: hnm.xiaohouzi.club
+  port: 17105
+  udp: true
+  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
+  sni: $tukey.xiaohouzi.club
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 98 TJN"
+  type: trojan
+  server: dl-sg1.steamdownload.top
+  port: 50000
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-sg.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 99 TJN"
+  type: trojan
+  server: dl-hk2.steamdownload.top
+  port: 443
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-hk.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 100 TJN"
+  type: trojan
+  server: dl-hk6.steamdownload.top
+  port: 443
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-hk.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 101 TJN"
+  type: trojan
   server: dl-hk5.steamdownload.top
   port: 443
   udp: true
@@ -744,7 +786,7 @@ proxies:
   sni: data-hk.xn--vur082k.cc
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 97 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 102 TJN"
   type: trojan
   server: dl-us1.steamdownload.top
   port: 443
@@ -753,7 +795,7 @@ proxies:
   sni: data-us.xn--vur082k.cc
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 98 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 103 TJN"
   type: trojan
   server: hn.xiaohouzi.club
   port: 48462
@@ -762,7 +804,7 @@ proxies:
   sni: hn.xiaohouzi.club
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 99 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 104 TJN"
   type: trojan
   server: dl-sg2.steamdownload.top
   port: 50000
@@ -771,7 +813,7 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: trojan
-  name: "\U0001F1ED\U0001F1F0 HK 100 TJN"
+  name: "\U0001F1ED\U0001F1F0 HK 105 TJN"
   server: 103.103.245.190
   port: 50394
   password: 9642def5-94bb-4962-a168-c510f9a93328
@@ -779,72 +821,30 @@ proxies:
   skip-cert-verify: true
   sni: cn-hk-32.fnhffffe4.cc
 - type: trojan
-  name: "\U0001F1F5\U0001F1F1 PL 101 TJN"
+  name: "\U0001F1F5\U0001F1F1 PL 106 TJN"
   server: 51.83.186.142
   port: 80
   password: 555034c8-6420-45d0-893c-905c02342150
   udp: true
   skip-cert-verify: true
   sni: pl1.trojanvh.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 102 TJN"
-  type: trojan
-  server: hn.xiaohouzi.club
-  port: 18735
+- type: trojan
+  name: "\U0001F1ED\U0001F1F0 HK 107 TJN"
+  server: 103.103.245.190
+  port: 50394
+  password: 9642def5-94bb-4962-a168-c510f9a93328
   udp: true
-  password: 21e10785-99c6-316e-a184-a03384ee06e5
-  sni: ajpn05.xiaohouzi.club
   skip-cert-verify: true
+  sni: cn-hk-32.fnhffffe4.cc
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 103 SSS"
-  type: ss
-  server: out.jijifun.com
-  port: 30033
-  password: '114514'
-  cipher: aes-256-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 104 TJN"
-  type: trojan
-  server: hn.xiaohouzi.club
-  port: 48431
+- type: trojan
+  name: "\U0001F1F5\U0001F1F1 PL 108 TJN"
+  server: 51.83.186.142
+  port: 80
+  password: 555034c8-6420-45d0-893c-905c02342150
   udp: true
-  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
-  sni: hn.xiaohouzi.club
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 105 TJN"
-  type: trojan
-  server: hnm.xiaohouzi.club
-  port: 49363
-  udp: true
-  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
-  sni: hnm.xiaohouzi.club
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 106 TJN"
-  type: trojan
-  server: hnm.xiaohouzi.club
-  port: 16082
-  udp: true
-  password: 21e10785-99c6-316e-a184-a03384ee06e5
-  sni: nh-hinet06.xiaohouzi.club
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 107 TJN"
-  type: trojan
-  server: 84.252.121.218
-  port: 443
-  udp: true
-  password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930
-  sni: vzwzasc.cn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 108 TJN"
-  type: trojan
-  server: 148.59.74.216
-  port: 443
-  udp: true
-  password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930
-  sni: vzwzasc.cn
-  skip-cert-verify: true
+  sni: pl1.trojanvh.xyz
   network: tcp
 proxy-groups:
 - name: automatic
@@ -933,31 +933,31 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 81 HTT"
   - "\U0001F1E8\U0001F1F3 CN 82 SK5"
   - "\U0001F1E6\U0001F1FA AU 83 SK5"
-  - "\U0001F1ED\U0001F1F0 HK 84 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 85 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 86 SSR"
-  - "\U0001F1EF\U0001F1F5 JP 87 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 88 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 89 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 90 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 84 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 85 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 86 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 87 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 88 TJN"
+  - "\U0001F1E9\U0001F1EA DE 89 TJN"
+  - "\U0001F1FA\U0001F1F8 US 90 TJN"
   - "\U0001F1EF\U0001F1F5 JP 91 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 92 TJN"
-  - "\U0001F1F8\U0001F1EC SG 93 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 92 SSR"
+  - "\U0001F1EF\U0001F1F5 JP 93 TJN"
   - "\U0001F1ED\U0001F1F0 HK 94 TJN"
   - "\U0001F1ED\U0001F1F0 HK 95 TJN"
   - "\U0001F1ED\U0001F1F0 HK 96 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 97 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 98 TJN"
-  - "\U0001F1FA\U0001F1F8 US 99 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 97 TJN"
+  - "\U0001F1F8\U0001F1EC SG 98 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 99 TJN"
   - "\U0001F1ED\U0001F1F0 HK 100 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 101 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 102 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 103 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 104 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 105 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 106 TJN"
-  - "\U0001F1E9\U0001F1EA DE 107 TJN"
-  - "\U0001F1FA\U0001F1F8 US 108 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 101 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 102 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 103 TJN"
+  - "\U0001F1FA\U0001F1F8 US 104 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 105 TJN"
+  - "\U0001F1F5\U0001F1F1 PL 106 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 107 TJN"
+  - "\U0001F1F5\U0001F1F1 PL 108 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1047,30 +1047,30 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 81 HTT"
   - "\U0001F1E8\U0001F1F3 CN 82 SK5"
   - "\U0001F1E6\U0001F1FA AU 83 SK5"
-  - "\U0001F1ED\U0001F1F0 HK 84 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 85 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 86 SSR"
-  - "\U0001F1EF\U0001F1F5 JP 87 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 88 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 89 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 90 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 84 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 85 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 86 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 87 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 88 TJN"
+  - "\U0001F1E9\U0001F1EA DE 89 TJN"
+  - "\U0001F1FA\U0001F1F8 US 90 TJN"
   - "\U0001F1EF\U0001F1F5 JP 91 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 92 TJN"
-  - "\U0001F1F8\U0001F1EC SG 93 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 92 SSR"
+  - "\U0001F1EF\U0001F1F5 JP 93 TJN"
   - "\U0001F1ED\U0001F1F0 HK 94 TJN"
   - "\U0001F1ED\U0001F1F0 HK 95 TJN"
   - "\U0001F1ED\U0001F1F0 HK 96 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 97 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 98 TJN"
-  - "\U0001F1FA\U0001F1F8 US 99 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 97 TJN"
+  - "\U0001F1F8\U0001F1EC SG 98 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 99 TJN"
   - "\U0001F1ED\U0001F1F0 HK 100 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 101 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 102 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 103 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 104 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 105 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 106 TJN"
-  - "\U0001F1E9\U0001F1EA DE 107 TJN"
-  - "\U0001F1FA\U0001F1F8 US 108 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 101 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 102 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 103 TJN"
+  - "\U0001F1FA\U0001F1F8 US 104 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 105 TJN"
+  - "\U0001F1F5\U0001F1F1 PL 106 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 107 TJN"
+  - "\U0001F1F5\U0001F1F1 PL 108 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"

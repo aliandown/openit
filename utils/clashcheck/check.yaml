@@ -31,16 +31,7 @@ proxies:
   password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1F5\U0001F1F1 PL 5"
-  server: 51.83.186.142
-  port: 80
-  password: 555034c8-6420-45d0-893c-905c02342150
-  udp: true
-  skip-cert-verify: true
-  sni: pl1.trojanvh.xyz
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
   server: 139.162.113.113
   port: 443
@@ -48,7 +39,7 @@ proxies:
   password: a4b8293b-af60-4f1b-8572-dea4f5b6cdef
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   type: trojan
   server: dl-jp1.steamdownload.top
   port: 443
@@ -57,68 +48,15 @@ proxies:
   sni: data-jp.xn--vur082k.cc
   skip-cert-verify: true
   network: tcp
+- type: trojan
+  name: "\U0001F1F5\U0001F1F1 PL 7"
+  server: 51.83.186.142
+  port: 80
+  password: 555034c8-6420-45d0-893c-905c02342150
+  udp: true
+  skip-cert-verify: true
+  sni: pl1.trojanvh.xyz
 - name: "\U0001F1E8\U0001F1F3 HK 8"
-  type: trojan
-  server: dl-hk1.steamdownload.top
-  port: 443
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  type: trojan
-  server: dl-hk2.steamdownload.top
-  port: 443
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 10"
-  type: trojan
-  server: dl-hk3.steamdownload.top
-  port: 443
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 11"
-  server: mumbai-m2.4422331.xyz
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 10086
-  password: 4134219f-2384-449c-92e9-50fe8474c30a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 12"
-  type: trojan
-  server: dl-hk6.steamdownload.top
-  port: 443
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-hk.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 13"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 14"
-  type: trojan
-  server: dl-sg1.steamdownload.top
-  port: 50000
-  udp: true
-  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
-  sni: data-sg.xn--vur082k.cc
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 15"
   type: trojan
   server: dl-hk4.steamdownload.top
   port: 443
@@ -127,7 +65,24 @@ proxies:
   sni: data-hk.xn--vur082k.cc
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 16"
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  type: trojan
+  server: dl-hk6.steamdownload.top
+  port: 443
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-hk.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 10"
+  server: 103.103.245.190
+  port: 50394
+  password: 9642def5-94bb-4962-a168-c510f9a93328
+  udp: true
+  skip-cert-verify: true
+  sni: cn-hk-32.fnhffffe4.cc
+- name: "\U0001F1FA\U0001F1F8 US 11"
   type: trojan
   server: dl-sg2.steamdownload.top
   port: 50000
@@ -135,6 +90,49 @@ proxies:
   password: c30b14da-adac-4bb3-ac27-c5759d4890ac
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 12"
+  type: trojan
+  server: dl-hk3.steamdownload.top
+  port: 443
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-hk.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 13"
+  type: trojan
+  server: dl-sg1.steamdownload.top
+  port: 50000
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-sg.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 14"
+  server: mumbai-m2.4422331.xyz
+  type: trojan
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 10086
+  password: 4134219f-2384-449c-92e9-50fe8474c30a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 15"
+  type: trojan
+  server: dl-hk2.steamdownload.top
+  port: 443
+  udp: true
+  password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5
+  sni: data-hk.xn--vur082k.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 16"
+  server: insaneguo2333.top
+  type: trojan
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 443
+  password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 17"
   server: hyderabad-m2.4422331.xyz
   type: trojan
@@ -151,18 +149,18 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1F5\U0001F1F1 PL 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F5\U0001F1F1 PL 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1FA\U0001F1F8 US 11"
   - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1EE\U0001F1F3 IN 14"
   - "\U0001F1E8\U0001F1F3 HK 15"
-  - "\U0001F1FA\U0001F1F8 US 16"
+  - "\U0001F1F7\U0001F1FA RU 16"
   - "\U0001F1EE\U0001F1F3 IN 17"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -174,18 +172,18 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1F5\U0001F1F1 PL 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F5\U0001F1F1 PL 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1FA\U0001F1F8 US 11"
   - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1EE\U0001F1F3 IN 14"
   - "\U0001F1E8\U0001F1F3 HK 15"
-  - "\U0001F1FA\U0001F1F8 US 16"
+  - "\U0001F1F7\U0001F1FA RU 16"
   - "\U0001F1EE\U0001F1F3 IN 17"
 rules:
 - "MATCH,\U0001F310 Proxy"
