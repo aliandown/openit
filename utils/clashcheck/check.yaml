@@ -8,14 +8,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 1.mg.us.cat77.cloud
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 1434
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 15.204.210.176
   port: 80
@@ -23,6 +15,14 @@ proxies:
   password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 1.mg.us.cat77.cloud
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 1434
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 4"
   server: 148.59.74.154
   port: 443
@@ -38,14 +38,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 6"
-  server: sanjose-d2.4422331.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 10086
-  password: 4134219f-2384-449c-92e9-50fe8474c30a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
   server: c.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -53,20 +45,28 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 8"
-  server: t3.teslacdn2.live
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: sanjose-d2.4422331.xyz
   type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 10086
+  password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 9"
+- name: "\U0001F1E9\U0001F1EA DE 8"
   server: stonebreak.online
   type: trojan
   country: "\U0001F1E9\U0001F1EADE"
   port: 443
   password: xl87654321
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 9"
+  server: t3.teslacdn2.live
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 10"
@@ -86,7 +86,15 @@ proxies:
   sni: mm.net.my
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 12"
+- name: "\U0001F1F0\U0001F1F7 KR 12"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 13"
   server: hyderabad-m2.4422331.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -105,11 +113,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
   - "\U0001F1EE\U0001F1E9 ID 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
+  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -123,10 +132,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
   - "\U0001F1EE\U0001F1E9 ID 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
+  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
