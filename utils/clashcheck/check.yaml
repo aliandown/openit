@@ -9,10 +9,12 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: github.seatech.ir
-  port: 443
   type: trojan
+  country: "\U0001F1E9\U0001F1EADE"
+  port: 443
   password: SSIaZaRpA5
-  sni: github.seatech.ir
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: phxv001.jd0001.top
   type: trojan
@@ -73,15 +75,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "\U0001F1F7\U0001F1FA RU 10"
-  server: insaneguo2333.top
-  type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 443
-  password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 11"
+- name: "\U0001F1F0\U0001F1F7 KR 10"
   server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -89,7 +83,7 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 12"
+- name: "\U0001F1EE\U0001F1F3 IN 11"
   server: mumbai-m2.4422331.xyz
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -97,38 +91,28 @@ proxies:
   password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 13"
+- name: "\U0001F1F7\U0001F1FA RU 12"
+  server: insaneguo2333.top
   type: trojan
-  server: ssrsub.o04.trojan.tel
-  port: 80
-  udp: true
-  password: 6ba745ca-823a-4643-8f4e-22997ca67a2f
-  sni: ssrsub.o04.trojan.tel
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 14"
-  type: trojan
-  server: ulist.com.my.asia1.oceis.net
+  country: "\U0001F1F7\U0001F1FARU"
   port: 443
-  udp: true
-  password: 94660920-baaa-11ed-b236-205c6d5f5d78
-  sni: mm.net.my
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 15"
-  server: hyderabad-m2.4422331.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 10086
-  password: 4134219f-2384-449c-92e9-50fe8474c30a
+  password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 16"
+- name: "\U0001F1F0\U0001F1F7 KR 13"
   server: 2.hg.kr.cat77.cloud
   type: trojan
   country: "\U0001F1EC\U0001F1E7GB"
   port: 8443
   password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 14"
+  server: hyderabad-m2.4422331.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 10086
+  password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -144,13 +128,11 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1F7\U0001F1FA RU 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
-  - "\U0001F1EE\U0001F1E9 ID 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1F0\U0001F1F7 KR 16"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1F7\U0001F1FA RU 12"
+  - "\U0001F1F0\U0001F1F7 KR 13"
+  - "\U0001F1EE\U0001F1F3 IN 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -166,12 +148,10 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1F7\U0001F1FA RU 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
-  - "\U0001F1EE\U0001F1E9 ID 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1F0\U0001F1F7 KR 16"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1F7\U0001F1FA RU 12"
+  - "\U0001F1F0\U0001F1F7 KR 13"
+  - "\U0001F1EE\U0001F1F3 IN 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
