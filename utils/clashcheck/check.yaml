@@ -1,11 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: github.seatech.ir
-  port: 443
-  type: trojan
-  password: SSIaZaRpA5
-  sni: github.seatech.ir
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 1.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -13,14 +7,18 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: github.seatech.ir
+  port: 443
   type: trojan
-  server: 15.204.210.176
-  port: 80
-  udp: true
-  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
-  skip-cert-verify: true
-  network: tcp
+  password: SSIaZaRpA5
+  sni: github.seatech.ir
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 148.59.74.154
+  port: 443
+  type: trojan
+  password: 3855b736-bf24-461f-b5b9-1d3f04484b37
+  sni: zaelot.cc
 - name: "\U0001F1FA\U0001F1F8 US 4"
   server: c.mg.us.cat77.cloud
   type: trojan
@@ -30,12 +28,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 148.59.74.154
-  port: 443
-  type: trojan
-  password: 3855b736-bf24-461f-b5b9-1d3f04484b37
-  sni: zaelot.cc
-- name: "\U0001F1FA\U0001F1F8 US 6"
   server: sanjose-d2.4422331.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -43,7 +35,7 @@ proxies:
   password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   server: phxv001.jd0001.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -51,6 +43,14 @@ proxies:
   password: 4d111af8-5078-37e0-a583-34155f60b32c
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: 15.204.210.176
+  port: 80
+  udp: true
+  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 8"
   server: stonebreak.online
   type: trojan
@@ -85,14 +85,15 @@ proxies:
   type: trojan
   password: e0d7cfe6-b30c-4da2-968c-83cf5a878ec6
   sni: tls.microsoftjs.top
-- name: "\U0001F1F0\U0001F1F7 KR 12"
-  server: kr05.wangxd.life
+- name: "\U0001F1EE\U0001F1E9 ID 12"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
+  server: ulist.com.my.asia1.oceis.net
+  port: 443
   udp: true
+  password: 94660920-baaa-11ed-b236-205c6d5f5d78
+  sni: mm.net.my
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 13"
   server: mumbai-m2.4422331.xyz
   type: trojan
@@ -109,15 +110,6 @@ proxies:
   password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1E9 ID 15"
-  type: trojan
-  server: ulist.com.my.asia1.oceis.net
-  port: 443
-  udp: true
-  password: 94660920-baaa-11ed-b236-205c6d5f5d78
-  sni: mm.net.my
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -133,10 +125,9 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1EE\U0001F1E9 ID 12"
   - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1EE\U0001F1E9 ID 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -154,9 +145,8 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1EE\U0001F1E9 ID 12"
   - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1EE\U0001F1E9 ID 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
