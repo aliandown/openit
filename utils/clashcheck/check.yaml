@@ -6,19 +6,19 @@ proxies:
   password: 3855b736-bf24-461f-b5b9-1d3f04484b37
   sni: zaelot.cc
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: sanjose-d2.4422331.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 10086
-  password: 4134219f-2384-449c-92e9-50fe8474c30a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: c.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 8646
   password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: sanjose-d2.4422331.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 10086
+  password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 4"
@@ -77,15 +77,7 @@ proxies:
   password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F7\U0001F1FA RU 11"
-  server: insaneguo2333.top
-  type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 443
-  password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 12"
+- name: "\U0001F1EE\U0001F1F3 IN 11"
   server: mumbai-m2.4422331.xyz
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -93,12 +85,20 @@ proxies:
   password: 4134219f-2384-449c-92e9-50fe8474c30a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 13"
+- name: "\U0001F1EE\U0001F1F3 IN 12"
   server: hyderabad-m2.4422331.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 10086
   password: 4134219f-2384-449c-92e9-50fe8474c30a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 13"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -115,9 +115,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E9\U0001F1EA DE 9"
   - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1F7\U0001F1FA RU 11"
+  - "\U0001F1EE\U0001F1F3 IN 11"
   - "\U0001F1EE\U0001F1F3 IN 12"
-  - "\U0001F1EE\U0001F1F3 IN 13"
+  - "\U0001F1F0\U0001F1F7 KR 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -134,8 +134,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E9\U0001F1EA DE 9"
   - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1F7\U0001F1FA RU 11"
+  - "\U0001F1EE\U0001F1F3 IN 11"
   - "\U0001F1EE\U0001F1F3 IN 12"
-  - "\U0001F1EE\U0001F1F3 IN 13"
+  - "\U0001F1F0\U0001F1F7 KR 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
