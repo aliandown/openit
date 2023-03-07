@@ -71,14 +71,16 @@ proxies:
   obfs: plain
   protocol-param: 51923:99q87y
   obfs-param: ''
-- name: "\U0001F1F8\U0001F1EC SG 10"
-  server: singapore-m2.4422331.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 10086
-  password: 4134219f-2384-449c-92e9-50fe8474c30a
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: 120.198.71.174
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 51923:99q87y
+  obfs-param: ''
 - name: "\U0001F1F0\U0001F1F7 KR 11"
   server: 2.hg.kr.cat77.cloud
   type: trojan
@@ -87,14 +89,16 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 12"
-  server: mumbai-m2.4422331.xyz
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 10086
-  password: 4134219f-2384-449c-92e9-50fe8474c30a
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: 120.198.71.182
+  port: 560
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 51923:99q87y
+  obfs-param: ''
 - name: "\U0001F1E8\U0001F1F3 CN 13"
   server: 120.198.71.169
   port: 562
@@ -105,14 +109,24 @@ proxies:
   obfs: plain
   protocol-param: 51923:99q87y
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 HK 14"
-  server: aws-hk01.aikun.online
-  port: 7045
+- name: "\U0001F1EE\U0001F1F3 IN 14"
+  server: mumbai-m2.4422331.xyz
   type: trojan
-  password: c9c498df-683b-40b3-a1cb-b574c36f9433
-  sni: aws-hk01.aikun.online
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 10086
+  password: 4134219f-2384-449c-92e9-50fe8474c30a
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 15"
   server: hyderabad-m2.4422331.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 10086
+  password: 4134219f-2384-449c-92e9-50fe8474c30a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 16"
+  server: singapore-m2.4422331.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 10086
@@ -132,12 +146,13 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 HK 14"
+  - "\U0001F1EE\U0001F1F3 IN 14"
   - "\U0001F1EE\U0001F1F3 IN 15"
+  - "\U0001F1F8\U0001F1EC SG 16"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -153,11 +168,12 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 HK 14"
+  - "\U0001F1EE\U0001F1F3 IN 14"
   - "\U0001F1EE\U0001F1F3 IN 15"
+  - "\U0001F1F8\U0001F1EC SG 16"
 rules:
 - "MATCH,\U0001F310 Proxy"
