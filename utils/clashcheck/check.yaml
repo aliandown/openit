@@ -19,26 +19,86 @@ proxies:
   type: trojan
   password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
   sni: t3.teslacdn2.live
-- name: "\U0001F1F3\U0001F1F1 NL 4"
-  server: seed.daffodil.engineer
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: s.hkspeedup.com
+  port: 4101
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: s2.hkspeedup.com
+  port: 4102
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: s.hkspeedup.com
+  port: 4003
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: s.hkspeedup.com
+  port: 4001
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: s.hkspeedup.com
+  port: 4002
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: hk7.microsoftjs.top
+  port: 443
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 34104
-  password: oFW8yaRFnz
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: op.en.usdeth.top
-  port: 449
+  password: 18343dd6-e481-4cd3-a579-345750fa9907
+  sni: tls.microsoftjs.top
+- name: "\U0001F1E8\U0001F1F3 HK 10"
+  server: hk11.microsoftjs.top
+  port: 10054
   type: trojan
-  password: 9a9326c1-d05c-4c6c-bd8b-509a69143639
-  sni: op.en.usdeth.top
-- name: "\U0001F1EE\U0001F1E9 ID 6"
+  password: 18343dd6-e481-4cd3-a579-345750fa9907
+  sni: tls.microsoftjs.top
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: s.hkspeedup.com
+  port: 4005
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: hk10.microsoftjs.top
+  port: 443
+  type: trojan
+  password: 18343dd6-e481-4cd3-a579-345750fa9907
+  sni: tls.microsoftjs.top
+- name: "\U0001F1EE\U0001F1E9 ID 13"
   server: asia1.oceis.net
   port: 443
   type: trojan
   password: 94660920-baaa-11ed-b236-205c6d5f5d78
   sni: asia1.oceis.net
+- name: "\U0001F1E8\U0001F1F3 CN 14"
+  server: s2.hkspeedup.com
+  port: 4106
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1E8\U0001F1F3 CN 15"
+  server: s.hkspeedup.com
+  port: 4031
+  type: ss
+  cipher: aes-256-gcm
+  password: d1dc6c3l6k
+- name: "\U0001F1F0\U0001F1F7 KR 16"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -46,9 +106,19 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F5\U0001F1F9 PT 3"
-  - "\U0001F1F3\U0001F1F1 NL 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1EE\U0001F1E9 ID 13"
+  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1F0\U0001F1F7 KR 16"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,8 +128,18 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F5\U0001F1F9 PT 3"
-  - "\U0001F1F3\U0001F1F1 NL 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1EE\U0001F1E9 ID 13"
+  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1F0\U0001F1F7 KR 16"
 rules:
 - "MATCH,\U0001F310 Proxy"
