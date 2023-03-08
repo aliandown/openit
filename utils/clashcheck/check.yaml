@@ -1,23 +1,23 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 1.mg.us.cat77.cloud
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 1434
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.disnet.gq
   port: 443
   type: trojan
   password: 7c7e0edb-c45a-4c07-b66a-69b191179349
   sni: us.disnet.gq
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: c.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 8646
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 1.mg.us.cat77.cloud
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 1434
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
@@ -35,14 +35,6 @@ proxies:
   type: trojan
   password: 94660920-baaa-11ed-b236-205c6d5f5d78
   sni: asia1.oceis.net
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: 2.hg.kr.cat77.cloud
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 8443
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -52,7 +44,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,6 +55,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
