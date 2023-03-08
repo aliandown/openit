@@ -8,11 +8,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: github.seatech.ir
+  server: us.disnet.gq
   type: trojan
-  country: "\U0001F1E9\U0001F1EADE"
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: SSIaZaRpA5
+  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -23,13 +23,7 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us.disnet.gq
-  port: 443
-  type: trojan
-  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
-  sni: us.disnet.gq
-- name: "\U0001F1E9\U0001F1EA DE 5"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   server: stonebreak.online
   type: trojan
   country: "\U0001F1E9\U0001F1EADE"
@@ -37,7 +31,7 @@ proxies:
   password: xl87654321
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 6"
+- name: "\U0001F1F3\U0001F1F1 NL 5"
   type: trojan
   server: 185.212.200.76
   port: 443
@@ -45,6 +39,14 @@ proxies:
   password: Sp3eDVp
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1E9 ID 6"
+  server: asia1.oceis.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1E9ID"
+  port: 443
+  password: 94660920-baaa-11ed-b236-205c6d5f5d78
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 7"
   type: trojan
   server: 139.162.113.113
@@ -54,21 +56,14 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: kr05.wangxd.life
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 9"
   server: 2.hg.kr.cat77.cloud
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
   port: 8443
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
   udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  sni: 2.hg.kr.cat77.cloud
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -76,12 +71,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1F3\U0001F1F1 NL 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -91,11 +85,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1F3\U0001F1F1 NL 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
