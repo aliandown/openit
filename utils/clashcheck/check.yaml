@@ -35,6 +35,14 @@ proxies:
   type: trojan
   password: 94660920-baaa-11ed-b236-205c6d5f5d78
   sni: asia1.oceis.net
+- name: "\U0001F1F5\U0001F1F9 PT 6"
+  server: t3.teslacdn2.live
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -44,6 +52,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EE\U0001F1E9 ID 5"
+  - "\U0001F1F5\U0001F1F9 PT 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,5 +64,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EE\U0001F1E9 ID 5"
+  - "\U0001F1F5\U0001F1F9 PT 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
