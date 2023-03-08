@@ -1,19 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.disnet.gq
-  port: 443
-  type: trojan
-  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
-  sni: us.disnet.gq
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: c.mg.us.cat77.cloud
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8646
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: 1.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -21,12 +7,26 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.disnet.gq
+  port: 443
+  type: trojan
+  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
+  sni: us.disnet.gq
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: github.seatech.ir
   type: trojan
   country: "\U0001F1E9\U0001F1EADE"
   port: 443
   password: SSIaZaRpA5
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: c.mg.us.cat77.cloud
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8646
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E9\U0001F1EA DE 5"
@@ -45,26 +45,6 @@ proxies:
   password: a4b8293b-af60-4f1b-8572-dea4f5b6cdef
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F3\U0001F1F1 NL 7"
-  type: trojan
-  server: 185.212.200.76
-  port: 443
-  udp: true
-  password: Sp3eDVp
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F5\U0001F1F9 PT 8"
-  server: t3.teslacdn2.live
-  port: 443
-  type: trojan
-  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
-  sni: t3.teslacdn2.live
-- name: "\U0001F1EE\U0001F1E9 ID 9"
-  server: asia1.oceis.net
-  port: 443
-  type: trojan
-  password: 94660920-baaa-11ed-b236-205c6d5f5d78
-  sni: asia1.oceis.net
 proxy-groups:
 - name: automatic
   type: url-test
@@ -75,9 +55,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
-  - "\U0001F1F5\U0001F1F9 PT 8"
-  - "\U0001F1EE\U0001F1E9 ID 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -90,8 +67,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
-  - "\U0001F1F5\U0001F1F9 PT 8"
-  - "\U0001F1EE\U0001F1E9 ID 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
