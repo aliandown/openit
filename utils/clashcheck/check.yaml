@@ -8,6 +8,12 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.disnet.gq
+  port: 443
+  type: trojan
+  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
+  sni: us.disnet.gq
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: c.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,12 +21,6 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: us.disnet.gq
-  port: 443
-  type: trojan
-  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
-  sni: us.disnet.gq
 - name: "\U0001F1E9\U0001F1EA DE 4"
   server: stonebreak.online
   type: trojan
@@ -29,20 +29,30 @@ proxies:
   password: xl87654321
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1E9 ID 5"
-  server: asia1.oceis.net
-  port: 443
+- name: "\U0001F1F3\U0001F1F1 NL 5"
   type: trojan
-  password: 94660920-baaa-11ed-b236-205c6d5f5d78
-  sni: asia1.oceis.net
-- name: "\U0001F1F5\U0001F1F9 PT 6"
-  server: t3.teslacdn2.live
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
+  server: 185.212.200.76
   port: 443
-  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
+  udp: true
+  password: Sp3eDVp
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  type: trojan
+  server: 2.hg.kr.cat77.cloud
+  port: 8443
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -51,8 +61,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1F5\U0001F1F9 PT 6"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -63,7 +74,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1F5\U0001F1F9 PT 6"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
