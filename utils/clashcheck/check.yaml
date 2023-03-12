@@ -1,5 +1,11 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.disnet.gq
+  port: 443
+  type: trojan
+  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
+  sni: us.disnet.gq
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 1.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,23 +13,19 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us.disnet.gq
-  port: 443
-  type: trojan
-  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
-  sni: us.disnet.gq
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  server: stonebreak.online
-  type: trojan
-  country: "\U0001F1E9\U0001F1EADE"
-  port: 443
-  password: xl87654321
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 3"
   server: 120.198.71.174
   port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 51923:99q87y
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 120.198.71.178
+  port: 562
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -49,16 +51,14 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: 120.198.71.182
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 51923:99q87y
-  obfs-param: ''
+- name: "\U0001F1E9\U0001F1EA DE 7"
+  server: stonebreak.online
+  type: trojan
+  country: "\U0001F1E9\U0001F1EADE"
+  port: 443
+  password: xl87654321
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 8"
   type: trojan
   server: 185.217.110.128
@@ -81,11 +81,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1F3\U0001F1F1 NL 9"
   url: https://www.google.com/favicon.ico
@@ -96,11 +96,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1F3\U0001F1F1 NL 9"
 rules:
