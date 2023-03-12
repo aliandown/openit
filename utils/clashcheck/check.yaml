@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.disnet.gq
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 1.mg.us.cat77.cloud
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 1434
   password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.disnet.gq
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -39,7 +39,23 @@ proxies:
   password: 211f5876-8c89-4d97-9004-ff16acddd506
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- name: "\U0001F1F5\U0001F1F9 PT 6"
+  server: t3.teslacdn2.live
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  server: 2.hg.kr.cat77.cloud
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 8443
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
   server: 120.198.71.184
   port: 561
   type: ssr
@@ -49,7 +65,7 @@ proxies:
   obfs: plain
   protocol-param: 51923:99q87y
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+- name: "\U0001F1E8\U0001F1F3 CN 9"
   server: 120.198.71.174
   port: 561
   type: ssr
@@ -59,15 +75,7 @@ proxies:
   obfs: plain
   protocol-param: 51923:99q87y
   obfs-param: ''
-- name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: 2.hg.kr.cat77.cloud
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 8443
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 9"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   server: 120.198.71.182
   port: 560
   type: ssr
@@ -77,7 +85,7 @@ proxies:
   obfs: plain
   protocol-param: 51923:99q87y
   obfs-param: ''
-- name: "\U0001F1EC\U0001F1E7 GB 10"
+- name: "\U0001F1EC\U0001F1E7 GB 11"
   type: trojan
   server: 185.217.110.128
   port: 19038
@@ -85,6 +93,31 @@ proxies:
   password: biNNEsMqYy
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 12"
+  type: trojan
+  server: 185.212.200.76
+  port: 443
+  udp: true
+  password: Sp3eDVp
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 13"
+  type: trojan
+  server: er1.bestcloud.tk
+  port: 2083
+  udp: true
+  password: 1b4c9734-f112-404d-a4ab-89f053093fd0
+  sni: er1.bestcloud.tk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 14"
+  type: trojan
+  server: blowm1k.club
+  port: 443
+  udp: true
+  password: e8801667-c3e3-49e5-ba65-b0f32c644590
+  sni: blowm1k.club
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -94,11 +127,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1F5\U0001F1F9 PT 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EC\U0001F1E7 GB 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1EC\U0001F1E7 GB 11"
+  - "\U0001F1F3\U0001F1F1 NL 12"
+  - "\U0001F1F7\U0001F1FA RU 13"
+  - "\U0001F1F0\U0001F1F7 KR 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -110,10 +147,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1F5\U0001F1F9 PT 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EC\U0001F1E7 GB 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1EC\U0001F1E7 GB 11"
+  - "\U0001F1F3\U0001F1F1 NL 12"
+  - "\U0001F1F7\U0001F1FA RU 13"
+  - "\U0001F1F0\U0001F1F7 KR 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
