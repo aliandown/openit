@@ -9,12 +9,10 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.disnet.gq
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
   port: 443
+  type: trojan
   password: 7c7e0edb-c45a-4c07-b66a-69b191179349
-  skip-cert-verify: true
-  udp: true
+  sni: us.disnet.gq
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 155.248.193.254
@@ -39,15 +37,7 @@ proxies:
   password: 211f5876-8c89-4d97-9004-ff16acddd506
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F5\U0001F1F9 PT 6"
-  server: t3.teslacdn2.live
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 7"
+- name: "\U0001F1F3\U0001F1F1 NL 6"
   type: trojan
   server: 185.212.200.76
   port: 443
@@ -55,6 +45,14 @@ proxies:
   password: Sp3eDVp
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F5\U0001F1F9 PT 7"
+  server: t3.teslacdn2.live
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E9\U0001F1EA DE 8"
   type: trojan
   server: de.strand21.xyz
@@ -97,8 +95,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1F5\U0001F1F9 PT 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
+  - "\U0001F1F3\U0001F1F1 NL 6"
+  - "\U0001F1F5\U0001F1F9 PT 7"
   - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
@@ -114,8 +112,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1F5\U0001F1F9 PT 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
+  - "\U0001F1F3\U0001F1F1 NL 6"
+  - "\U0001F1F5\U0001F1F9 PT 7"
   - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
