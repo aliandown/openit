@@ -29,20 +29,20 @@ proxies:
   password: xl87654321
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 5"
-  server: uk1.trojanvh.xyz
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 80
-  password: 211f5876-8c89-4d97-9004-ff16acddd506
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F5\U0001F1F9 PT 6"
+- name: "\U0001F1F5\U0001F1F9 PT 5"
   server: t3.teslacdn2.live
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
   port: 443
   password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 6"
+  server: uk1.trojanvh.xyz
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 80
+  password: 211f5876-8c89-4d97-9004-ff16acddd506
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 7"
@@ -76,7 +76,16 @@ proxies:
   password: Sp3eDVp
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 11"
+- name: "\U0001F1F7\U0001F1FA RU 11"
+  type: trojan
+  server: er1.bestcloud.tk
+  port: 2083
+  udp: true
+  password: 1b4c9734-f112-404d-a4ab-89f053093fd0
+  sni: er1.bestcloud.tk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 12"
   type: trojan
   server: blowm1k.club
   port: 443
@@ -92,13 +101,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1F5\U0001F1F9 PT 6"
+  - "\U0001F1F5\U0001F1F9 PT 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1F0\U0001F1F7 KR 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1F3\U0001F1F1 NL 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F7\U0001F1FA RU 11"
+  - "\U0001F1F0\U0001F1F7 KR 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -109,12 +119,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1F5\U0001F1F9 PT 6"
+  - "\U0001F1F5\U0001F1F9 PT 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1F0\U0001F1F7 KR 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1F3\U0001F1F1 NL 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F7\U0001F1FA RU 11"
+  - "\U0001F1F0\U0001F1F7 KR 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
