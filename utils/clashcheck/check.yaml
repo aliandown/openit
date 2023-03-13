@@ -7,28 +7,20 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: kr05.wangxd.life
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: wash.inbarayeman.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  port: 443
+  password: 6aaab9d9-a4aa-454e-a672-c0c99aeebeb0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -36,7 +28,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
