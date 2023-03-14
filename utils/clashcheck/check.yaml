@@ -1,37 +1,7 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: aman.101cloud.xyz
-  port: 33614
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3772f7db-6ba0-47e3-bbd5-a9807cb87932
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: wash.inbarayeman.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 6aaab9d9-a4aa-454e-a672-c0c99aeebeb0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: taig.101cloud.xyz
-  port: 58301
+- name: "\U0001F1E8\U0001F1F3 CN 1"
+  server: jpd.101cloud.xyz
+  port: 11884
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 3772f7db-6ba0-47e3-bbd5-a9807cb87932
@@ -39,21 +9,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
