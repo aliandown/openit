@@ -1,43 +1,23 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1"
-  server: kr05.wangxd.life
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: phxv002.jd0001.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
-  port: 443
-  udp: true
-  password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 3"
-  type: trojan
-  server: tw2.microsoftjs.top
-  port: 443
-  udp: true
-  password: cba70996-88fd-4495-b1bc-ad12f1017546
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
