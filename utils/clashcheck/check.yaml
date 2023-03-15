@@ -1,12 +1,10 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   server: 170-187-134-190.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
   port: 8443
+  type: trojan
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
+  sni: 170-187-134-190.ipv4.rush.ml
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: phxv002.jd0001.top
   type: trojan
@@ -15,12 +13,13 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 3"
+- name: "\U0001F1FB\U0001F1F3 VN 3"
   type: trojan
-  server: hk1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou
+  server: 0001.hn.genzpn.com
   port: 443
   udp: true
-  password: 13167d4e-1af8-4369-927f-248ac9d3d5d7
+  password: 0ecaae2c-c757-40e2-975a-f5b56a86e140
+  sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 TW 4"
@@ -38,7 +37,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1FB\U0001F1F3 VN 3"
   - "\U0001F1E8\U0001F1F3 TW 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -48,7 +47,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1FB\U0001F1F3 VN 3"
   - "\U0001F1E8\U0001F1F3 TW 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
