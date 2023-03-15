@@ -1,13 +1,22 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1EF\U0001F1F5 JP 1"
   type: trojan
-  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
-  port: 443
+  server: jp7.lianpi.xyz
+  port: 53638
   udp: true
-  password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7
+  password: 5d651d8c-d5b3-418b-a3ea-55171af5b726
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 TW 2"
+  type: trojan
+  server: kcdtw1-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: e95194b4-bc7e-497f-876a-686e127e0b65
+  sni: data.amazonwebservicess.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 3"
   type: trojan
   server: tw2.microsoftjs.top
   port: 443
@@ -19,15 +28,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
