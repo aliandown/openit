@@ -15,12 +15,20 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: s-2jp02.aikun.online
+  port: 20001
+  type: trojan
+  password: ead1716b-06ab-4230-bd45-e231dd273388
+  sni: s-2jp02.aikun.online
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,5 +37,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
