@@ -7,30 +7,7 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 2"
-  server: s-sg01.aikun.online
-  port: 10000
-  type: trojan
-  password: ead1716b-06ab-4230-bd45-e231dd273388
-  sni: s-sg01.aikun.online
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: s-2jp02.aikun.online
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 20001
-  password: ead1716b-06ab-4230-bd45-e231dd273388
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
-  port: 443
-  udp: true
-  password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 5"
+- name: "\U0001F1E8\U0001F1F3 TW 2"
   type: trojan
   server: kcdtw1-tg-data.amazonwebservicess.com
   port: 443
@@ -44,10 +21,7 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F8\U0001F1EC SG 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 TW 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,9 +29,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F8\U0001F1EC SG 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 TW 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
