@@ -1,12 +1,10 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   server: 170-187-134-190.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
   port: 8443
+  type: trojan
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
+  sni: 170-187-134-190.ipv4.rush.ml
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: phxv002.jd0001.top
   type: trojan
@@ -24,7 +22,15 @@ proxies:
   sni: sgmax03.170203.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 4"
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: ssrsub.t04.trojan.tel
+  port: 80
+  udp: true
+  password: 6ba745ca-823a-4643-8f4e-22997ca67a2f
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1E9 ID 5"
   type: trojan
   server: ulist.com.my.asia1.oceis.net
   port: 443
@@ -40,7 +46,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1E9 ID 4"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1E9 ID 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -50,6 +57,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1E9 ID 4"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1E9 ID 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
