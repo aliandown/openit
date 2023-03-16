@@ -23,16 +23,7 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  type: trojan
-  server: farsroid.porton.top
-  port: 443
-  udp: true
-  password: e018b9e8-96eb-45b6-b929-a39812631a30
-  sni: farsroid.porton.top
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 74.217.179.35
   port: 443
@@ -41,22 +32,30 @@ proxies:
   sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   type: trojan
-  server: ssrsub.t03.trojan.tel
-  port: 80
+  server: farsroid.porton.top
+  port: 443
   udp: true
-  password: 6ba745ca-823a-4643-8f4e-22997ca67a2f
-  sni: ssrsub.t03.trojan.tel
+  password: e018b9e8-96eb-45b6-b929-a39812631a30
+  sni: farsroid.porton.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 7"
+- name: "\U0001F1EE\U0001F1E9 ID 6"
   type: trojan
   server: ulist.com.my.asia1.oceis.net
   port: 443
   udp: true
   password: 8c39d570-bf58-11ed-b337-205c6d5f5d78
   sni: mm.net.my
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: ssrsub.t04.trojan.tel
+  port: 80
+  udp: true
+  password: 6ba745ca-823a-4643-8f4e-22997ca67a2f
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -66,10 +65,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EE\U0001F1E9 ID 7"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,9 +78,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EE\U0001F1E9 ID 7"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
