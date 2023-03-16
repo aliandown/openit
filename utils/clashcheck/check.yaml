@@ -15,51 +15,12 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: farsroid.porton.top
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: e018b9e8-96eb-45b6-b929-a39812631a30
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: qus6t.bcloudv.cyou
-  port: 20022
-  udp: true
-  password: ca48f855-42ef-3acc-b16c-9c674bc9fc67
-  sni: qus6t.bcloudv.cyou
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 5"
-  type: trojan
-  server: ulist.com.my.asia1.oceis.net
-  port: 443
-  udp: true
-  password: 8c39d570-bf58-11ed-b337-205c6d5f5d78
-  sni: mm.net.my
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 6"
-  type: trojan
-  server: 0001.hn.genzpn.com
-  port: 443
-  udp: true
-  password: 0ecaae2c-c757-40e2-975a-f5b56a86e140
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -68,9 +29,5 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
