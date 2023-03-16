@@ -7,7 +7,15 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1F0\U0001F1F7 KR 2"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: phxv002.jd0001.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,7 +23,7 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 74.217.179.35
   port: 443
@@ -24,24 +32,43 @@ proxies:
   sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   type: trojan
-  server: farsroid.porton.top
+  server: fr.porton.top
   port: 443
   udp: true
   password: e018b9e8-96eb-45b6-b929-a39812631a30
-  sni: farsroid.porton.top
+  sni: fr.porton.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
-  server: ssrsub.t04.trojan.tel
+  server: qus6t.bcloudv.cyou
+  port: 20022
+  udp: true
+  password: ca48f855-42ef-3acc-b16c-9c674bc9fc67
+  sni: qus6t.bcloudv.cyou
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 7"
+  type: trojan
+  server: scloudtw1-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 5c27ecc3-b9f2-4a68-90ea-5c97657eb241
+  sni: data.amazonwebservicess.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  type: trojan
+  server: ssrsub.t03.trojan.tel
   port: 80
   udp: true
   password: 6ba745ca-823a-4643-8f4e-22997ca67a2f
+  sni: ssrsub.t03.trojan.tel
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 6"
+- name: "\U0001F1EE\U0001F1E9 ID 9"
   type: trojan
   server: ulist.com.my.asia1.oceis.net
   port: 443
@@ -55,11 +82,14 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 TW 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1E9 ID 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -67,10 +97,13 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 TW 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1E9 ID 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
