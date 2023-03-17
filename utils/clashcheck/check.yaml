@@ -15,7 +15,13 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 3"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: wash.inbarayeman.xyz
+  port: 443
+  type: trojan
+  password: 6aaab9d9-a4aa-454e-a672-c0c99aeebeb0
+  sni: wash.inbarayeman.xyz
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: farsroid.porton.top
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -23,7 +29,7 @@ proxies:
   password: e018b9e8-96eb-45b6-b929-a39812631a30
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FB\U0001F1F3 VN 4"
+- name: "\U0001F1FB\U0001F1F3 VN 5"
   type: trojan
   server: 0001.hn.genzpn.com
   port: 443
@@ -38,8 +44,9 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1FB\U0001F1F3 VN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -48,7 +55,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1FB\U0001F1F3 VN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
