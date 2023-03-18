@@ -15,13 +15,14 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: us3.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
@@ -37,7 +38,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -47,7 +48,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
