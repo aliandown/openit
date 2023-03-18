@@ -3906,7 +3906,30 @@ proxies:
   obfs: tls1.2_ticket_auth
   protocol-param: 140256:6EZw4O
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 430 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 430 TJN"
+  type: trojan
+  server: ca-trojan.bonds.id
+  port: 443
+  udp: true
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 431 HTT"
+  type: http
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1F3 CN 432 SK5"
+  type: socks5
+  server: 124.15.12.24
+  port: 2312
+- name: "\U0001F1E6\U0001F1FA AU 433 SK5"
+  type: socks5
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1F3 CN 434 TJN"
   type: trojan
   server: oss-cn-shanghai.westdatacloud.top
   port: 20048
@@ -3915,7 +3938,7 @@ proxies:
   sni: oss-cn-shanghai.westdatacloud.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F2\U0001F1F4 MO 431 TJN"
+- name: "\U0001F1F2\U0001F1F4 MO 435 TJN"
   type: trojan
   server: 45.64.22.56
   port: 443
@@ -3924,41 +3947,18 @@ proxies:
   sni: trojan-ctb-sg01.globalssh.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 432 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 436 SSS"
   type: ss
   server: sa.unlimitedtraffic.top
   port: 25881
   password: 19323732-d371-43f0-a6c1-1833dc68a137
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 433 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 437 SSS"
   type: ss
   server: 36.139.166.247
   port: 11023
   password: ll668668@
   cipher: aes-256-gcm
-- name: "\U0001F1E8\U0001F1E6 CA 434 TJN"
-  type: trojan
-  server: ca-trojan.bonds.id
-  port: 443
-  udp: true
-  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 435 HTT"
-  type: http
-  server: 124.15.12.24
-  port: 251
-  username: username
-  password: password
-- name: "\U0001F1E8\U0001F1F3 CN 436 SK5"
-  type: socks5
-  server: 124.15.12.24
-  port: 2312
-- name: "\U0001F1E6\U0001F1FA AU 437 SK5"
-  type: socks5
-  server: 1.2.3.4
-  port: 123
-  username: username
-  password: password
 proxy-groups:
 - name: automatic
   type: url-test
@@ -4392,14 +4392,14 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 427 SSR"
   - "\U0001F1E8\U0001F1F3 CN 428 SSR"
   - "\U0001F1E8\U0001F1F3 CN 429 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 430 TJN"
-  - "\U0001F1F2\U0001F1F4 MO 431 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 432 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 433 SSS"
-  - "\U0001F1E8\U0001F1E6 CA 434 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 435 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 436 SK5"
-  - "\U0001F1E6\U0001F1FA AU 437 SK5"
+  - "\U0001F1E8\U0001F1E6 CA 430 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 431 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 432 SK5"
+  - "\U0001F1E6\U0001F1FA AU 433 SK5"
+  - "\U0001F1E8\U0001F1F3 CN 434 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 435 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 436 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 437 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -4835,13 +4835,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 427 SSR"
   - "\U0001F1E8\U0001F1F3 CN 428 SSR"
   - "\U0001F1E8\U0001F1F3 CN 429 SSR"
-  - "\U0001F1E8\U0001F1F3 CN 430 TJN"
-  - "\U0001F1F2\U0001F1F4 MO 431 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 432 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 433 SSS"
-  - "\U0001F1E8\U0001F1E6 CA 434 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 435 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 436 SK5"
-  - "\U0001F1E6\U0001F1FA AU 437 SK5"
+  - "\U0001F1E8\U0001F1E6 CA 430 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 431 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 432 SK5"
+  - "\U0001F1E6\U0001F1FA AU 433 SK5"
+  - "\U0001F1E8\U0001F1F3 CN 434 TJN"
+  - "\U0001F1F2\U0001F1F4 MO 435 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 436 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 437 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
