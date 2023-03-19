@@ -655,6 +655,31 @@ proxies:
   type: trojan
   password: 0e0e8057-810e-3b64-b8f5-19baa5f8fa2f
   skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 107 TJN"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 108 TJN"
+  type: trojan
+  server: jp7.lianpi.xyz
+  port: 53638
+  udp: true
+  password: 5d651d8c-d5b3-418b-a3ea-55171af5b726
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 109 TJN"
+  type: trojan
+  server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
+  port: 443
+  udp: true
+  password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7
+  sni: 13-231-155-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -765,6 +790,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 104 TJN"
   - "\U0001F1E8\U0001F1F3 CN 105 TJN"
   - "\U0001F1E8\U0001F1F3 CN 106 TJN"
+  - "\U0001F1EE\U0001F1F3 IN 107 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 108 TJN"
+  - "\U0001F1F8\U0001F1EC SG 109 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -877,5 +905,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 104 TJN"
   - "\U0001F1E8\U0001F1F3 CN 105 TJN"
   - "\U0001F1E8\U0001F1F3 CN 106 TJN"
+  - "\U0001F1EE\U0001F1F3 IN 107 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 108 TJN"
+  - "\U0001F1F8\U0001F1EC SG 109 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
