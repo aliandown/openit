@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,21 +7,21 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: ssrsub.o07.trojan.tel
-  port: 80
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: phxv002.jd0001.top
   type: trojan
-  password: e1d466c6-23da-48da-9c34-4f99100c90e9
-  sni: hk.jd.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1F0\U0001F1F7 KR 5"
+  udp: true
+- name: "\U0001F1EE\U0001F1F9 IT 3"
+  server: yangleduo.cf
+  port: 443
+  type: trojan
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
+  sni: yangleduo.cf
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -37,19 +29,27 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: ssrsub.o07.trojan.tel
+  port: 80
+  type: trojan
+  password: e1d466c6-23da-48da-9c34-4f99100c90e9
+  sni: hk.jd.com
+  skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: h073906.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: h073906.waihuizhibiaowang.com
   port: 11343
   type: http
   username: f9af186564
   password: b99148441a
   tls: true
-- name: "\U0001F1EE\U0001F1F9 IT 7"
-  server: yangleduo.cf
-  port: 443
-  type: trojan
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  sni: yangleduo.cf
 - name: "\U0001F1E8\U0001F1F3 CN 8"
   server: h073906.waihuizhibiaowang.com
   port: 11443
@@ -63,11 +63,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1EE\U0001F1F9 IT 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F9 IT 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -77,11 +77,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1EE\U0001F1F9 IT 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F9 IT 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
