@@ -15,7 +15,14 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 3"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: amazon-jp01.syjd.xyz
+  port: 30001
+  type: trojan
+  password: 7462165c-5852-486c-bc30-1afc2df05f5a
+  sni: amazon-jp01.syjd.xyz
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -23,13 +30,46 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: amazon-hk04.syjd.xyz
+  port: 3003
+  type: trojan
+  password: 7462165c-5852-486c-bc30-1afc2df05f5a
+  sni: amazon-hk04.syjd.xyz
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 6"
+  server: amazon-hk03.syjd.xyz
+  port: 3002
+  type: trojan
+  password: 7462165c-5852-486c-bc30-1afc2df05f5a
+  sni: amazon-hk03.syjd.xyz
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: amazon-hk01.syjd.xyz
+  port: 3000
+  type: trojan
+  password: 7462165c-5852-486c-bc30-1afc2df05f5a
+  sni: amazon-hk01.syjd.xyz
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: ssrsub.o07.trojan.tel
+  port: 80
+  type: trojan
+  password: e1d466c6-23da-48da-9c34-4f99100c90e9
+  sni: hk.jd.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -38,6 +78,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
