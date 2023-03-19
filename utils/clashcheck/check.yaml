@@ -7,7 +7,15 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  type: trojan
+  server: jp.stablize.top
+  port: 443
+  udp: true
+  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: phxv002.jd0001.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,32 +23,24 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: ssrsub.o07.trojan.tel
-  port: 80
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: ssrsub.t06.trojan.tel
+  port: 11443
   type: trojan
   password: e1d466c6-23da-48da-9c34-4f99100c90e9
   sni: hk.jd.com
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1EE\U0001F1F9 IT 5"
+  server: yangleduo.cf
   type: trojan
-  server: lu.stablize.top
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  type: trojan
-  server: uaejs.stablize.top
-  port: 443
   udp: true
-  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 6"
   type: trojan
-  server: swejs.stablize.top
+  server: lu.stablize.top
   port: 443
   udp: true
   password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
@@ -57,16 +57,15 @@ proxies:
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
-  server: 52.198.152.187
+  server: swejs.stablize.top
   port: 443
   udp: true
-  password: 7aa86c61-367f-447a-b883-cec526f56c51
-  sni: vzwzasc.cn
+  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 9"
   type: trojan
-  server: 3.113.31.71
+  server: 52.198.152.187
   port: 443
   udp: true
   password: 7aa86c61-367f-447a-b883-cec526f56c51
@@ -75,10 +74,11 @@ proxies:
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 10"
   type: trojan
-  server: uk.stablize.top
+  server: 3.113.31.71
   port: 443
   udp: true
-  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
+  password: 7aa86c61-367f-447a-b883-cec526f56c51
+  sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 11"
@@ -99,23 +99,7 @@ proxies:
   sni: vzwzasc.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 13"
-  type: trojan
-  server: in.stablize.top
-  port: 443
-  udp: true
-  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 14"
-  type: trojan
-  server: cajs.stablize.top
-  port: 443
-  udp: true
-  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 15"
+- name: "\U0001F1EE\U0001F1F3 IN 13"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -123,15 +107,31 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 14"
+  type: trojan
+  server: uk.stablize.top
+  port: 443
+  udp: true
+  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 15"
+  type: trojan
+  server: uaejs.stablize.top
+  port: 443
+  udp: true
+  password: f426b848-6c75-47bc-b116-c9b40f6f8bc3
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EE\U0001F1F9 IT 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
@@ -139,9 +139,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1EF\U0001F1F5 JP 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
+  - "\U0001F1EE\U0001F1F3 IN 13"
+  - "\U0001F1E8\U0001F1F3 HK 14"
+  - "\U0001F1EF\U0001F1F5 JP 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -149,10 +149,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EE\U0001F1F9 IT 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
@@ -160,8 +160,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1EF\U0001F1F5 JP 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
+  - "\U0001F1EE\U0001F1F3 IN 13"
+  - "\U0001F1E8\U0001F1F3 HK 14"
+  - "\U0001F1EF\U0001F1F5 JP 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
