@@ -14,12 +14,36 @@ proxies:
   password: e1d466c6-23da-48da-9c34-4f99100c90e9
   sni: hk.jd.com
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: h073906.waihuizhibiaowang.com
+  port: 13343
+  type: trojan
+  password: b5181de8-66d4-4f8f-904c-23e606303a13
+  sni: 106-110-192-225.d.cjjd20.com
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: h073906.waihuizhibiaowang.com
+  port: 11443
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: h073906.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -28,5 +52,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
