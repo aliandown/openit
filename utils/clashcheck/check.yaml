@@ -7,27 +7,27 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: phxv002.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: ssrsub.t06.trojan.tel
   port: 11443
   type: trojan
   password: e1d466c6-23da-48da-9c34-4f99100c90e9
   sni: hk.jd.com
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
   server: jp7.lianpi.xyz
   port: 53638
   udp: true
   password: 5d651d8c-d5b3-418b-a3ea-55171af5b726
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 4"
-  type: trojan
-  server: 152.70.74.66
-  port: 443
-  udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 5"
@@ -39,15 +39,24 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,9 +64,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
