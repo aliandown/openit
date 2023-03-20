@@ -54,6 +54,12 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: css.guyue.buzz
+- name: "\U0001F1EE\U0001F1F9 IT 8"
+  server: yangleduo.cf
+  port: 443
+  type: trojan
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
+  sni: yangleduo.cf
 proxy-groups:
 - name: automatic
   type: url-test
@@ -65,6 +71,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1EE\U0001F1F9 IT 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,5 +85,6 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1EE\U0001F1F9 IT 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
