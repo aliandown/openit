@@ -7,25 +7,24 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 138.124.183.226
-  port: 443
-  password: xxoo
-  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: phxv002.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 120.233.15.99
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
+  udp: true
+- name: "\U0001F1EE\U0001F1F9 IT 3"
+  server: yangleduo.cf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 120.198.71.185
+  server: 120.198.71.174
   port: 561
   type: ssr
   cipher: chacha20-ietf
@@ -35,8 +34,8 @@ proxies:
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
 - name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: 120.198.71.190
-  port: 562
+  server: 120.198.71.185
+  port: 561
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -44,14 +43,16 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 120.198.71.184
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
 - name: "\U0001F1E8\U0001F1F3 CN 7"
   type: ssr
   server: cn04.mynode.me
@@ -63,32 +64,14 @@ proxies:
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - name: "\U0001F1E8\U0001F1F3 CN 8"
   type: ssr
-  server: cn05.mynode.me
-  port: 8126
+  server: cn03.mynode.me
+  port: 8114
   password: passwd
   cipher: rc4-md5
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - name: "\U0001F1E8\U0001F1F3 CN 9"
-  type: ssr
-  server: cn05.mynode.me
-  port: 8124
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  type: ssr
-  server: cn04.mynode.me
-  port: 8120
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 11"
   type: ssr
   server: cn04.mynode.me
   port: 8118
@@ -97,28 +80,46 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 12"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   type: ssr
   server: cn03.mynode.me
-  port: 8114
+  port: 8112
   password: passwd
   cipher: rc4-md5
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 13"
-  server: 183.236.58.123
-  port: 8110
-  protocol: origin
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  type: ssr
+  server: cn05.mynode.me
+  port: 8125
+  password: passwd
   cipher: rc4-md5
   obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  type: ssr
+  server: cn04.mynode.me
+  port: 8120
   password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 13"
+  type: ssr
+  server: cn05.mynode.me
+  port: 8126
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 14"
-  server: 183.236.58.125
-  port: 8117
+  server: 183.236.58.123
+  port: 8104
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
@@ -135,6 +136,15 @@ proxies:
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 16"
+  server: 183.236.58.125
+  port: 8117
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 17"
   server: 183.236.58.123
   port: 8105
   protocol: origin
@@ -142,61 +152,34 @@ proxies:
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 17"
-  type: ssr
-  server: cn05.mynode.me
-  port: 8125
-  password: passwd
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 18"
+  server: 153.99.234.93
+  port: 8409
+  protocol: origin
   cipher: rc4-md5
   obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 18"
-  type: ssr
-  server: cn03.mynode.me
-  port: 8112
   password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 19"
-  server: 153.99.234.95
-  port: 8413
+  server: 153.99.234.93
+  port: 8407
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 20"
-  type: ssr
-  server: cn11.mynode.me
-  port: 8403
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 21"
-  server: 183.236.58.125
-  port: 8121
+  name: "\U0001F1E8\U0001F1F3 CN 20"
+  server: 153.99.234.95
+  port: 8410
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 22"
-  type: ssr
-  server: cn07.mynode.me
-  port: 8206
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 23"
+- name: "\U0001F1E8\U0001F1F3 CN 21"
   type: ssr
   server: cn06.mynode.me
   port: 8204
@@ -206,33 +189,42 @@ proxies:
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 24"
-  server: 153.99.234.93
-  port: 8407
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 25"
+  name: "\U0001F1E8\U0001F1F3 CN 22"
   server: 153.99.234.95
-  port: 8410
+  port: 8413
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 26"
-  server: 153.99.234.93
-  port: 8409
-  protocol: origin
+- name: "\U0001F1E8\U0001F1F3 CN 23"
+  type: ssr
+  server: cn07.mynode.me
+  port: 8206
+  password: passwd
   cipher: rc4-md5
   obfs: http_simple
-  password: passwd
+  protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 27"
+- name: "\U0001F1E8\U0001F1F3 CN 24"
+  type: ssr
+  server: cn11.mynode.me
+  port: 8403
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 25"
+  type: ssr
+  server: cn09.mynode.me
+  port: 8214
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 26"
   type: ssr
   server: cn09.mynode.me
   port: 8215
@@ -242,34 +234,16 @@ proxies:
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 27"
+  server: 153.99.234.93
+  port: 8403
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 28"
-  server: 153.99.234.93
-  port: 8602
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 29"
-  type: ssr
-  server: cn15.mynode.me
-  port: 8501
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 30"
-  server: 153.99.234.93
-  port: 8404
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 31"
   server: 183.236.58.127
   port: 8205
   protocol: origin
@@ -278,15 +252,69 @@ proxies:
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 32"
-  server: 153.99.234.93
-  port: 8403
+  name: "\U0001F1E8\U0001F1F3 CN 29"
+  server: 183.236.58.127
+  port: 8218
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 33"
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 30"
+  server: 183.236.58.123
+  port: 8109
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 31"
+  server: 183.236.58.127
+  port: 8201
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 32"
+  server: 153.99.234.93
+  port: 8404
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 33"
+  server: 183.236.58.127
+  port: 8217
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 34"
+  server: 183.236.58.125
+  port: 8305
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 35"
+  server: 153.99.234.93
+  port: 8402
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 36"
   server: 120.198.71.182
   port: 560
   type: ssr
@@ -296,7 +324,53 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 34"
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 37"
+  server: 153.99.234.93
+  port: 8602
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 38"
+  type: ssr
+  server: cn05.mynode.me
+  port: 8124
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 39"
+  server: 58.247.202.202
+  port: 568
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 40"
+  server: 183.236.58.123
+  port: 8106
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 41"
+  type: ssr
+  server: cn15.mynode.me
+  port: 8501
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 42"
   type: ssr
   server: cn16.mynode.me
   port: 8512
@@ -305,34 +379,7 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 35"
-  server: 183.236.58.127
-  port: 8218
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 36"
-  server: 153.99.234.93
-  port: 8402
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 37"
-  type: ssr
-  server: cn09.mynode.me
-  port: 8214
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 38"
+- name: "\U0001F1E8\U0001F1F3 CN 43"
   type: ssr
   server: cn17.mynode.me
   port: 8622
@@ -340,49 +387,6 @@ proxies:
   cipher: rc4-md5
   obfs: http_simple
   protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 39"
-  type: ssr
-  server: cn15.mynode.me
-  port: 8504
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 40"
-  server: 153.99.234.95
-  port: 8504
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 41"
-  server: h073906.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 42"
-  server: 153.99.234.95
-  port: 8506
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 43"
-  server: 153.99.234.95
-  port: 8511
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 44"
@@ -395,50 +399,53 @@ proxies:
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 45"
-  server: 183.236.58.127
-  port: 8201
+  server: 153.99.234.95
+  port: 8504
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 46"
+  type: ssr
+  server: cn15.mynode.me
+  port: 8504
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 47"
+  server: 153.99.234.93
+  port: 8618
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 46"
+  name: "\U0001F1E8\U0001F1F3 CN 48"
   server: 153.99.234.95
-  port: 8522
+  port: 8506
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 47"
-  type: ssr
-  server: cn16.mynode.me
-  port: 8515
-  password: passwd
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 49"
+  server: 153.99.234.93
+  port: 8622
+  protocol: origin
   cipher: rc4-md5
   obfs: http_simple
-  protocol: origin
+  password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 48"
-  server: h073906.waihuizhibiaowang.com
-  port: 11443
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 49"
-  type: trojan
-  server: 152.70.74.66
-  port: 443
-  udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  network: tcp
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 50"
-  server: 183.236.58.127
-  port: 8232
+  server: 153.99.234.95
+  port: 8511
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
@@ -447,7 +454,7 @@ proxies:
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 51"
   server: 153.99.234.95
-  port: 8501
+  port: 8522
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
@@ -455,30 +462,49 @@ proxies:
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
   name: "\U0001F1E8\U0001F1F3 CN 52"
-  server: 153.99.234.93
-  port: 8618
-  protocol: origin
-  cipher: rc4-md5
-  obfs: http_simple
-  password: passwd
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 53"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 54"
   server: 183.236.58.127
-  port: 8217
+  port: 8232
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 55"
+- name: "\U0001F1EE\U0001F1F3 IN 53"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 54"
+  type: ssr
+  server: cn16.mynode.me
+  port: 8515
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 55"
+  server: 153.99.234.95
+  port: 8513
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 56"
+  server: 183.236.58.125
+  port: 8121
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 57"
   type: ssr
   server: cn17.mynode.me
   port: 8603
@@ -488,7 +514,7 @@ proxies:
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 56"
+  name: "\U0001F1E8\U0001F1F3 CN 58"
   server: 153.99.234.93
   port: 8606
   protocol: origin
@@ -496,7 +522,14 @@ proxies:
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 57"
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 59"
+  server: 138.124.183.226
+  port: 443
+  password: xxoo
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 60"
   type: ssr
   server: cn17.mynode.me
   port: 8610
@@ -505,7 +538,23 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 58"
+- name: "\U0001F1E8\U0001F1F3 CN 61"
+  server: h073906.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 62"
+  server: 153.99.234.95
+  port: 8518
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: passwd
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 63"
   type: ssr
   server: cn17.mynode.me
   port: 8620
@@ -515,7 +564,7 @@ proxies:
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 59"
+  name: "\U0001F1E8\U0001F1F3 CN 64"
   server: 153.99.234.95
   port: 8510
   protocol: origin
@@ -523,25 +572,24 @@ proxies:
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1EE\U0001F1F9 IT 60"
-  server: yangleduo.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  skip-cert-verify: true
-  udp: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 61"
-  server: 183.236.58.123
-  port: 8106
+  name: "\U0001F1E8\U0001F1F3 CN 65"
+  server: 153.99.234.95
+  port: 8521
   protocol: origin
   cipher: rc4-md5
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 66"
+  server: h073906.waihuizhibiaowang.com
+  port: 11343
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 62"
+  name: "\U0001F1E8\U0001F1F3 CN 67"
   server: 153.99.234.93
   port: 8620
   protocol: origin
@@ -549,16 +597,23 @@ proxies:
   obfs: http_simple
   password: passwd
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 68"
+  server: h073906.waihuizhibiaowang.com
+  port: 11443
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EE\U0001F1F9 IT 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
@@ -601,20 +656,26 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 46"
   - "\U0001F1E8\U0001F1F3 CN 47"
   - "\U0001F1E8\U0001F1F3 CN 48"
-  - "\U0001F1EE\U0001F1F3 IN 49"
+  - "\U0001F1E8\U0001F1F3 CN 49"
   - "\U0001F1E8\U0001F1F3 CN 50"
   - "\U0001F1E8\U0001F1F3 CN 51"
   - "\U0001F1E8\U0001F1F3 CN 52"
-  - "\U0001F1E8\U0001F1F3 CN 53"
+  - "\U0001F1EE\U0001F1F3 IN 53"
   - "\U0001F1E8\U0001F1F3 CN 54"
   - "\U0001F1E8\U0001F1F3 CN 55"
   - "\U0001F1E8\U0001F1F3 CN 56"
   - "\U0001F1E8\U0001F1F3 CN 57"
   - "\U0001F1E8\U0001F1F3 CN 58"
-  - "\U0001F1E8\U0001F1F3 CN 59"
-  - "\U0001F1EE\U0001F1F9 IT 60"
+  - "\U0001F1FA\U0001F1F8 US 59"
+  - "\U0001F1E8\U0001F1F3 CN 60"
   - "\U0001F1E8\U0001F1F3 CN 61"
   - "\U0001F1E8\U0001F1F3 CN 62"
+  - "\U0001F1E8\U0001F1F3 CN 63"
+  - "\U0001F1E8\U0001F1F3 CN 64"
+  - "\U0001F1E8\U0001F1F3 CN 65"
+  - "\U0001F1E8\U0001F1F3 CN 66"
+  - "\U0001F1E8\U0001F1F3 CN 67"
+  - "\U0001F1E8\U0001F1F3 CN 68"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -623,10 +684,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EE\U0001F1F9 IT 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
@@ -669,19 +730,25 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 46"
   - "\U0001F1E8\U0001F1F3 CN 47"
   - "\U0001F1E8\U0001F1F3 CN 48"
-  - "\U0001F1EE\U0001F1F3 IN 49"
+  - "\U0001F1E8\U0001F1F3 CN 49"
   - "\U0001F1E8\U0001F1F3 CN 50"
   - "\U0001F1E8\U0001F1F3 CN 51"
   - "\U0001F1E8\U0001F1F3 CN 52"
-  - "\U0001F1E8\U0001F1F3 CN 53"
+  - "\U0001F1EE\U0001F1F3 IN 53"
   - "\U0001F1E8\U0001F1F3 CN 54"
   - "\U0001F1E8\U0001F1F3 CN 55"
   - "\U0001F1E8\U0001F1F3 CN 56"
   - "\U0001F1E8\U0001F1F3 CN 57"
   - "\U0001F1E8\U0001F1F3 CN 58"
-  - "\U0001F1E8\U0001F1F3 CN 59"
-  - "\U0001F1EE\U0001F1F9 IT 60"
+  - "\U0001F1FA\U0001F1F8 US 59"
+  - "\U0001F1E8\U0001F1F3 CN 60"
   - "\U0001F1E8\U0001F1F3 CN 61"
   - "\U0001F1E8\U0001F1F3 CN 62"
+  - "\U0001F1E8\U0001F1F3 CN 63"
+  - "\U0001F1E8\U0001F1F3 CN 64"
+  - "\U0001F1E8\U0001F1F3 CN 65"
+  - "\U0001F1E8\U0001F1F3 CN 66"
+  - "\U0001F1E8\U0001F1F3 CN 67"
+  - "\U0001F1E8\U0001F1F3 CN 68"
 rules:
 - "MATCH,\U0001F310 Proxy"
