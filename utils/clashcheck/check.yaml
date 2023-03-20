@@ -7,13 +7,14 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: ssrsub.t06.trojan.tel
-  port: 11443
+- name: "\U0001F1EE\U0001F1F9 IT 2"
+  server: yangleduo.cf
   type: trojan
-  password: e1d466c6-23da-48da-9c34-4f99100c90e9
-  sni: hk.jd.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: phxv002.jd0001.top
   type: trojan
@@ -22,40 +23,7 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F9 IT 4"
-  server: yangleduo.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: 120.198.71.174
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: ssrsub.o07.trojan.tel
-  port: 80
-  type: trojan
-  password: e1d466c6-23da-48da-9c34-4f99100c90e9
-  sni: hk.jd.com
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   server: 120.198.71.184
   port: 561
   type: ssr
@@ -65,7 +33,7 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 9"
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: 120.198.71.185
   port: 561
   type: ssr
@@ -75,14 +43,37 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 11"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 120.198.71.169
+  port: 562
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: 120.198.71.169
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: 120.198.71.163
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1EE\U0001F1F3 IN 9"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -90,29 +81,19 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 12"
-  server: h073906.waihuizhibiaowang.com
-  port: 11443
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EE\U0001F1F9 IT 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EE\U0001F1F9 IT 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1EE\U0001F1F3 IN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -120,16 +101,13 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EE\U0001F1F9 IT 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EE\U0001F1F9 IT 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1EE\U0001F1F3 IN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
