@@ -7,7 +7,13 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1EE\U0001F1F9 IT 2"
+  server: yangleduo.cf
+  port: 443
+  type: trojan
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
+  sni: yangleduo.cf
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 204.216.214.102
   port: 44386
@@ -15,7 +21,14 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 138.124.183.226
+  port: 443
+  password: xxoo
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -23,7 +36,14 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: h073906.waihuizhibiaowang.com
+  port: 11443
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: h073906.waihuizhibiaowang.com
   port: 11343
   type: http
@@ -35,9 +55,12 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F9 IT 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,8 +68,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F9 IT 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
