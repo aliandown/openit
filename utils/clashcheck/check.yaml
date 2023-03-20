@@ -7,14 +7,7 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 138.124.183.226
-  port: 443
-  password: xxoo
-  udp: true
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 204.216.214.102
   port: 44386
@@ -22,65 +15,14 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 120.198.71.185
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: 120.198.71.184
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: 120.198.71.174
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
 - type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: 138.2.115.240
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 138.124.183.226
+  port: 443
+  password: xxoo
   udp: true
   skip-cert-verify: true
-  sni: kr05.wangxd.life
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: 120.198.71.182
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: 58.247.202.202
-  port: 568
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1EE\U0001F1F3 IN 10"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -88,6 +30,22 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: phxv002.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 139.84.140.123
+  port: 443
+  password: 312ad542-75d7-3e4e-b777-d7c3b1c0502c
+  udp: true
+  skip-cert-verify: true
+  sni: css.guyue.buzz
 proxy-groups:
 - name: automatic
   type: url-test
@@ -95,13 +53,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -111,12 +65,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
