@@ -7,7 +7,28 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 2"
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 138.124.183.226
+  port: 443
+  password: xxoo
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F9 IT 3"
+  server: yangleduo.cf
+  port: 443
+  type: trojan
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
+  sni: yangleduo.cf
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: phxv002.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: 120.198.71.174
   port: 561
   type: ssr
@@ -17,7 +38,17 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 3"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 120.198.71.185
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: 120.198.71.184
   port: 561
   type: ssr
@@ -27,15 +58,23 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: 204.216.214.102
-  port: 44386
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 8"
+  server: 138.2.115.240
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   udp: true
-  password: C931CWacy8
+  skip-cert-verify: true
+  sni: kr05.wangxd.life
+- name: "\U0001F1EE\U0001F1F3 IN 9"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 5"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   server: 120.198.71.182
   port: 560
   type: ssr
@@ -46,19 +85,19 @@ proxies:
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
 - type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: 138.2.115.240
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  name: "\U0001F1FA\U0001F1F8 US 11"
+  server: 139.84.140.123
+  port: 443
+  password: 312ad542-75d7-3e4e-b777-d7c3b1c0502c
   udp: true
   skip-cert-verify: true
-  sni: kr05.wangxd.life
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+  sni: css.guyue.buzz
+- name: "\U0001F1FA\U0001F1F8 US 12"
   type: trojan
-  server: 152.70.74.66
-  port: 443
+  server: 204.216.214.102
+  port: 44386
   udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  password: C931CWacy8
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -66,12 +105,17 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F9 IT 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,11 +123,16 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F9 IT 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
