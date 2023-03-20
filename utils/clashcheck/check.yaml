@@ -23,27 +23,28 @@ proxies:
   password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: h073906.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: 204.216.214.102
-  port: 44386
-  udp: true
-  password: C931CWacy8
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
   server: 152.70.74.66
   port: 443
   udp: true
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 5"
+  server: 139.84.140.123
+  port: 443
+  password: 312ad542-75d7-3e4e-b777-d7c3b1c0502c
+  udp: true
+  skip-cert-verify: true
+  sni: css.guyue.buzz
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 204.216.214.102
+  port: 44386
+  udp: true
+  password: C931CWacy8
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -53,9 +54,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EE\U0001F1F9 IT 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,8 +66,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EE\U0001F1F9 IT 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
