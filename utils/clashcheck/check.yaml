@@ -7,13 +7,37 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F9 IT 2"
-  server: yangleduo.cf
-  port: 443
-  type: trojan
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  sni: yangleduo.cf
-- name: "\U0001F1F0\U0001F1F7 KR 3"
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  server: 120.198.71.189
+  port: 560
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: 120.198.71.184
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 120.198.71.185
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1F0\U0001F1F7 KR 5"
   server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -21,16 +45,17 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 120.198.71.174
+  port: 561
   type: ssr
-  server: cn04.mynode.me
-  port: 8116
-  password: passwd
-  cipher: rc4-md5
-  obfs: http_simple
-  protocol: origin
-  obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 5"
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   type: ssr
   server: cn14.mynode.me
   port: 8412
@@ -39,24 +64,43 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+- name: "\U0001F1E8\U0001F1F3 CN 8"
   type: ssr
-  server: cn07.mynode.me
-  port: 8206
+  server: cn04.mynode.me
+  port: 8116
   password: passwd
   cipher: rc4-md5
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  type: ssr
+  server: cn03.mynode.me
+  port: 8112
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  type: ssr
+  server: cn04.mynode.me
+  port: 8118
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  type: ssr
+  server: cn03.mynode.me
+  port: 8114
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 12"
   type: ssr
   server: cn11.mynode.me
   port: 8403
@@ -65,14 +109,25 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: ssrsub.o07.trojan.tel
-  port: 80
+- name: "\U0001F1E8\U0001F1F3 CN 13"
+  server: 120.233.15.99
+  port: 560
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1EE\U0001F1F9 IT 14"
+  server: yangleduo.cf
   type: trojan
-  password: e1d466c6-23da-48da-9c34-4f99100c90e9
-  sni: hk.jd.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 10"
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 15"
   server: 58.247.202.202
   port: 568
   type: ssr
@@ -82,25 +137,16 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1EE\U0001F1F3 IN 11"
-  type: trojan
-  server: 152.70.74.66
-  port: 443
-  udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 12"
-  server: 223.167.159.147
-  port: 560
+- name: "\U0001F1E8\U0001F1F3 CN 16"
   type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 13"
+  server: cn06.mynode.me
+  port: 8204
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 17"
   type: ssr
   server: cn09.mynode.me
   port: 8214
@@ -109,16 +155,25 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 14"
+- name: "\U0001F1E8\U0001F1F3 CN 18"
   type: ssr
-  server: cn15.mynode.me
-  port: 8504
+  server: cn09.mynode.me
+  port: 8215
   password: passwd
   cipher: rc4-md5
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 15"
+- name: "\U0001F1E8\U0001F1F3 CN 19"
+  type: ssr
+  server: cn07.mynode.me
+  port: 8206
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 20"
   type: ssr
   server: cn17.mynode.me
   port: 8622
@@ -127,7 +182,33 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 16"
+- name: "\U0001F1E8\U0001F1F3 CN 21"
+  type: ssr
+  server: cn16.mynode.me
+  port: 8512
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 22"
+  type: ssr
+  server: cn15.mynode.me
+  port: 8504
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1EE\U0001F1F3 IN 23"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 24"
   type: ssr
   server: cn15.mynode.me
   port: 8501
@@ -136,10 +217,54 @@ proxies:
   obfs: http_simple
   protocol: origin
   obfs-param: 28292-m9zCSDi0.download.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 17"
+- name: "\U0001F1E8\U0001F1F3 CN 25"
+  server: 120.198.71.182
+  port: 560
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 26"
   type: ssr
   server: cn16.mynode.me
-  port: 8512
+  port: 8515
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 27"
+  type: ssr
+  server: cn17.mynode.me
+  port: 8603
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 28"
+  type: ssr
+  server: cn17.mynode.me
+  port: 8620
+  password: passwd
+  cipher: rc4-md5
+  obfs: http_simple
+  protocol: origin
+  obfs-param: 28292-m9zCSDi0.download.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 29"
+  server: h073906.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 30"
+  type: ssr
+  server: cn17.mynode.me
+  port: 8610
   password: passwd
   cipher: rc4-md5
   obfs: http_simple
@@ -150,22 +275,35 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F9 IT 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1EE\U0001F1F9 IT 14"
   - "\U0001F1E8\U0001F1F3 CN 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 CN 19"
+  - "\U0001F1E8\U0001F1F3 CN 20"
+  - "\U0001F1E8\U0001F1F3 CN 21"
+  - "\U0001F1E8\U0001F1F3 CN 22"
+  - "\U0001F1EE\U0001F1F3 IN 23"
+  - "\U0001F1E8\U0001F1F3 CN 24"
+  - "\U0001F1E8\U0001F1F3 CN 25"
+  - "\U0001F1E8\U0001F1F3 CN 26"
+  - "\U0001F1E8\U0001F1F3 CN 27"
+  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1E8\U0001F1F3 CN 29"
+  - "\U0001F1E8\U0001F1F3 CN 30"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -173,21 +311,34 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F9 IT 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1EE\U0001F1F9 IT 14"
   - "\U0001F1E8\U0001F1F3 CN 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 CN 19"
+  - "\U0001F1E8\U0001F1F3 CN 20"
+  - "\U0001F1E8\U0001F1F3 CN 21"
+  - "\U0001F1E8\U0001F1F3 CN 22"
+  - "\U0001F1EE\U0001F1F3 IN 23"
+  - "\U0001F1E8\U0001F1F3 CN 24"
+  - "\U0001F1E8\U0001F1F3 CN 25"
+  - "\U0001F1E8\U0001F1F3 CN 26"
+  - "\U0001F1E8\U0001F1F3 CN 27"
+  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1E8\U0001F1F3 CN 29"
+  - "\U0001F1E8\U0001F1F3 CN 30"
 rules:
 - "MATCH,\U0001F310 Proxy"
