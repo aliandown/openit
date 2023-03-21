@@ -15,14 +15,14 @@ proxies:
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EE\U0001F1F9 IT 3"
+  server: yangleduo.cf
   type: trojan
-  server: 204.216.214.102
-  port: 44386
-  udp: true
-  password: C931CWacy8
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 4"
   type: trojan
   server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
@@ -32,7 +32,15 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 5"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 204.216.214.102
+  port: 44386
+  udp: true
+  password: C931CWacy8
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -40,24 +48,16 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F9 IT 6"
-  server: yangleduo.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EE\U0001F1F9 IT 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1EE\U0001F1F9 IT 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,9 +66,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EE\U0001F1F9 IT 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1EE\U0001F1F9 IT 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
