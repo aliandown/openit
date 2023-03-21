@@ -7,15 +7,23 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: phxv002.jd0001.top
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  type: trojan
+  server: jp7.lianpi.xyz
+  port: 53638
+  udp: true
+  password: 5d651d8c-d5b3-418b-a3ea-55171af5b726
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 3"
+- name: "\U0001F1F8\U0001F1EC SG 4"
   type: trojan
   server: sgp-3.fuckjdieng.uk
   port: 50316
@@ -24,7 +32,16 @@ proxies:
   sni: sgp-3.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 4"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  type: trojan
+  server: cn-hk-30.fnhffffe4.cc
+  port: 50110
+  udp: true
+  password: 656aeb77-1cee-4900-b412-f9cbb6df9b5f
+  sni: cn-hk-30.fnhffffe4.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -32,23 +49,16 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F9 IT 5"
-  server: yangleduo.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
-  - "\U0001F1EE\U0001F1F9 IT 5"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -56,9 +66,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
-  - "\U0001F1EE\U0001F1F9 IT 5"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
