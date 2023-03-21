@@ -24,7 +24,16 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 4"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  type: trojan
+  server: 123.jieyusustc.top
+  port: 37216
+  udp: true
+  password: 729RjPZ9NH
+  sni: 123.jieyusustc.top
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -39,7 +48,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,6 +59,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
