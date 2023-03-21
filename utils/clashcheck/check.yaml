@@ -8,6 +8,23 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: phxv002.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  type: trojan
+  server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
+  port: 443
+  udp: true
+  password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7
+  sni: 13-231-155-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 204.216.214.102
   port: 44386
@@ -15,12 +32,21 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   type: trojan
   server: 152.70.74.66
   port: 443
   udp: true
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  type: trojan
+  server: 123.jieyusustc.top
+  port: 37216
+  udp: true
+  password: 729RjPZ9NH
+  sni: 123.jieyusustc.top
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -29,7 +55,10 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -38,6 +67,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
