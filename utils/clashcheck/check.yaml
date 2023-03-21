@@ -8,14 +8,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 204.216.214.102
   port: 44386
@@ -23,32 +15,7 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  type: trojan
-  server: jp7.lianpi.xyz
-  port: 53638
-  udp: true
-  password: 5d651d8c-d5b3-418b-a3ea-55171af5b726
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  type: trojan
-  server: 123.jieyusustc.top
-  port: 37216
-  udp: true
-  password: 729RjPZ9NH
-  sni: 123.jieyusustc.top
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F9 IT 6"
-  server: yangleduo.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1EE\U0001F1F3 IN 3"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -62,11 +29,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EE\U0001F1F9 IT 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -75,10 +38,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EE\U0001F1F9 IT 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
