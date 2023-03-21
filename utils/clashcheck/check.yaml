@@ -8,19 +8,20 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 204.216.214.102
   port: 44386
   udp: true
   password: C931CWacy8
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  type: trojan
+  server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org
+  port: 443
+  udp: true
+  password: 6fab5b8e-2b5a-4ecd-82cb-fa3d1afb9ca7
+  sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 4"
@@ -46,7 +47,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
@@ -57,7 +58,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
