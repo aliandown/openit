@@ -31,6 +31,14 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F9 IT 5"
+  server: yangleduo.cf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 9e4fa728-3d7d-4371-8053-f175c019ef2c
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -39,6 +47,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F9 IT 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,5 +58,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F9 IT 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
