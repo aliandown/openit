@@ -17,23 +17,23 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
+  server: phxv002.jd0001.top
   type: trojan
-  server: 148.59.74.196
-  port: 443
-  udp: true
-  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
-  sni: 4-193-105-141.nhost.00cdn.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 4"
-  type: trojan
-  server: 89.163.224.122
-  port: 443
   udp: true
-  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 120.198.71.185
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
 - name: "\U0001F1E8\U0001F1F3 CN 5"
   server: 120.198.71.175
   port: 561
@@ -44,16 +44,15 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: 120.198.71.185
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 148.59.74.196
+  port: 443
+  udp: true
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1F9\U0001F1F7 TR 7"
   type: trojan
   server: 194.146.26.40
@@ -98,9 +97,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1F9\U0001F1F7 TR 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
@@ -114,9 +113,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1F9\U0001F1F7 TR 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
