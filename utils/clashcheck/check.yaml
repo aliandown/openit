@@ -8,17 +8,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 120.198.71.185
-  port: 561
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 13390:guKKL98786890
-  obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 120.198.71.190
+  server: 120.198.71.177
   port: 562
   type: ssr
   cipher: chacha20-ietf
@@ -27,8 +17,18 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 3"
   server: 120.198.71.184
+  port: 561
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 13390:guKKL98786890
+  obfs-param: ''
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 120.198.71.185
   port: 561
   type: ssr
   cipher: chacha20-ietf
@@ -47,7 +47,15 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: 120.198.71.182
   port: 560
   type: ssr
@@ -57,14 +65,6 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: 204.216.214.102
-  port: 44386
-  udp: true
-  password: C931CWacy8
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 8"
   server: 120.198.71.183
   port: 560
@@ -75,22 +75,14 @@ proxies:
   obfs: plain
   protocol-param: 13390:guKKL98786890
   obfs-param: ''
-- name: "\U0001F1EE\U0001F1F3 IN 9"
+- name: "\U0001F1FA\U0001F1F8 US 9"
   type: trojan
-  server: 152.70.74.66
-  port: 443
+  server: 204.216.214.102
+  port: 44386
   udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  password: C931CWacy8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 MO 10"
-  server: macau.hapchung.com
-  type: trojan
-  country: "\U0001F1F2\U0001F1F4MO"
-  port: 10443
-  password: 49687a13-99f0-4772-a1f8-af100f4687de
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -100,11 +92,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1E8\U0001F1F3 MO 10"
+  - "\U0001F1FA\U0001F1F8 US 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -116,10 +107,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1E8\U0001F1F3 MO 10"
+  - "\U0001F1FA\U0001F1F8 US 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
