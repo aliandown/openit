@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170-187-134-190.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 148.59.74.200
   port: 443
@@ -16,6 +8,14 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 170-187-134-190.ipv4.rush.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
   server: 89.163.224.122
@@ -25,7 +25,15 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 4"
+- name: "\U0001F1F0\U0001F1F7 KR 4"
+  server: oracle.blowm1k.club
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1F7 TR 5"
   type: trojan
   server: 194.146.26.40
   port: 443
@@ -34,23 +42,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 MO 5"
-  server: macau.hapchung.com
-  type: trojan
-  country: "\U0001F1F2\U0001F1F4MO"
-  port: 10443
-  password: 49687a13-99f0-4772-a1f8-af100f4687de
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: oracle.blowm1k.club
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -58,6 +50,14 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 MO 7"
+  server: macau.hapchung.com
+  type: trojan
+  country: "\U0001F1F2\U0001F1F4MO"
+  port: 10443
+  password: 49687a13-99f0-4772-a1f8-af100f4687de
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -65,10 +65,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1F9\U0001F1F7 TR 4"
-  - "\U0001F1E8\U0001F1F3 MO 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F9\U0001F1F7 TR 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 MO 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,9 +78,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1F9\U0001F1F7 TR 4"
-  - "\U0001F1E8\U0001F1F3 MO 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F9\U0001F1F7 TR 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 MO 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
