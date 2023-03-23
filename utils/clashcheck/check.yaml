@@ -16,16 +16,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 148.59.74.196
-  port: 443
-  udp: true
-  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 4"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
   server: 89.163.224.122
   port: 443
@@ -34,15 +25,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: oracle.blowm1k.club
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F9\U0001F1F7 TR 6"
+- name: "\U0001F1F9\U0001F1F7 TR 4"
   type: trojan
   server: 194.146.26.40
   port: 443
@@ -51,7 +34,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 MO 7"
+- name: "\U0001F1E8\U0001F1F3 MO 5"
   server: macau.hapchung.com
   type: trojan
   country: "\U0001F1F2\U0001F1F4MO"
@@ -59,7 +42,15 @@ proxies:
   password: 49687a13-99f0-4772-a1f8-af100f4687de
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: oracle.blowm1k.club
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -73,12 +64,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F9\U0001F1F7 TR 6"
-  - "\U0001F1E8\U0001F1F3 MO 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F9\U0001F1F7 TR 4"
+  - "\U0001F1E8\U0001F1F3 MO 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -87,11 +77,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F9\U0001F1F7 TR 6"
-  - "\U0001F1E8\U0001F1F3 MO 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F9\U0001F1F7 TR 4"
+  - "\U0001F1E8\U0001F1F3 MO 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
