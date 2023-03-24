@@ -7,18 +7,63 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: 54.168.136.231
+  port: 443
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
+  udp: true
+  skip-cert-verify: true
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: phxv002.jd0001.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 4"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 5"
   server: oracle.blowm1k.club
   port: 443
   type: trojan
   password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498
   sni: oracle.blowm1k.club
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 148.59.74.236
+  port: 443
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
+  udp: true
+  skip-cert-verify: true
+  sni: 4-193-105-141.nhost.00cdn.com
+- type: trojan
+  name: "\U0001F1F9\U0001F1F7 TR 7"
+  server: 194.146.26.40
+  port: 443
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
+  udp: true
+  skip-cert-verify: true
+  sni: 4-193-105-141.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F9\U0001F1F7 TR 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -26,6 +71,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F9\U0001F1F7 TR 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
