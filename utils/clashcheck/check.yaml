@@ -1,13 +1,5 @@
 proxies:
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 148.59.74.236
-  port: 443
-  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
-  udp: true
-  skip-cert-verify: true
-  sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,7 +7,7 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 148.59.74.200
   port: 443
@@ -24,7 +16,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 4"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
   server: 89.163.224.122
   port: 443
@@ -33,15 +25,15 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: ayus6.mysvip.online
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 148.59.74.236
   port: 443
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
   udp: true
-  password: 128d4b58-6713-4051-831e-fe79a67ccee2
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 6"
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1F9\U0001F1F7 TR 5"
   type: trojan
   server: 194.146.26.40
   port: 443
@@ -50,20 +42,20 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: 204.216.214.102
-  port: 44386
-  udp: true
-  password: C931CWacy8
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   type: trojan
   server: 152.70.74.66
   port: 443
   udp: true
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: ayus6.mysvip.online
+  port: 443
+  udp: true
+  password: 128d4b58-6713-4051-831e-fe79a67ccee2
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -72,12 +64,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F9\U0001F1F7 TR 6"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F9\U0001F1F7 TR 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -86,11 +77,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F9\U0001F1F7 TR 6"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F9\U0001F1F7 TR 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
