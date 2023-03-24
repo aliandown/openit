@@ -1,13 +1,5 @@
 proxies:
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 148.59.74.200
-  port: 443
-  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
-  udp: true
-  skip-cert-verify: true
-  sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,20 +7,30 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: phxv002.jd0001.top
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44303
-  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
-  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 148.59.74.200
+  port: 443
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
   udp: true
+  skip-cert-verify: true
+  sni: 4-193-105-141.nhost.00cdn.com
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 148.59.74.236
+  port: 443
+  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
+  udp: true
+  skip-cert-verify: true
+  sni: 4-193-105-141.nhost.00cdn.com
 - name: "\U0001F1F0\U0001F1F7 KR 4"
   server: oracle.blowm1k.club
-  port: 443
   type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
   password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498
-  sni: oracle.blowm1k.club
+  skip-cert-verify: true
+  udp: true
 - type: trojan
   name: "\U0001F1F9\U0001F1F7 TR 5"
   server: 194.146.26.40
@@ -37,14 +39,14 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: 4-193-105-141.nhost.00cdn.com
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 148.59.74.236
-  port: 443
-  password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 204.216.214.102
+  port: 44386
   udp: true
+  password: C931CWacy8
   skip-cert-verify: true
-  sni: 4-193-105-141.nhost.00cdn.com
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 7"
   type: trojan
   server: 152.70.74.66
