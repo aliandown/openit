@@ -30,26 +30,20 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 5"
-  server: 4.sg.cat77.cloud
-  port: 2255
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: phxv002.jd0001.top
   type: trojan
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  sni: 4.sg.cat77.cloud
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44303
+  password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 6"
   type: trojan
   server: 152.70.74.66
   port: 443
   udp: true
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: 204.216.214.102
-  port: 44386
-  udp: true
-  password: C931CWacy8
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -60,9 +54,8 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F9\U0001F1F7 TR 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -73,8 +66,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F9\U0001F1F7 TR 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
