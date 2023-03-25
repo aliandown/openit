@@ -1,12 +1,12 @@
 proxies:
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
-  server: g.mg.us.cat77.cloud
-  port: 4535
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 170-187-134-190.ipv4.rush.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - type: trojan
   name: "\U0001F1FA\U0001F1F8 US 2"
   server: h.mg.us.cat77.cloud
@@ -23,44 +23,44 @@ proxies:
   udp: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 170-187-134-190.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 5"
+  name: "\U0001F1FA\U0001F1F8 US 4"
   server: k.mg.us.cat77.cloud
   port: 2255
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   udp: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: e.mg.us.cat77.cloud
-  port: 2255
-  udp: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 5"
+  server: g.mg.us.cat77.cloud
+  port: 4535
   password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 7"
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 6"
+  server: c.mg.us.cat77.cloud
+  port: 2222
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 7"
+  server: e.mg.us.cat77.cloud
+  port: 2255
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 8"
   server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 3052
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  server: xw.zemzoh.cf
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 29542
-  password: GVGbsjXG
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F8\U0001F1EC SG 9"
@@ -69,6 +69,12 @@ proxies:
   type: trojan
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   sni: 5.sg.cat77.cloud
+- name: "\U0001F1F8\U0001F1EC SG 10"
+  server: 4.sg.cat77.cloud
+  port: 2255
+  type: trojan
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  sni: 4.sg.cat77.cloud
 proxy-groups:
 - name: automatic
   type: url-test
@@ -79,9 +85,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
   - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1F8\U0001F1EC SG 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -94,8 +101,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
   - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1F8\U0001F1EC SG 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
