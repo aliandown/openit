@@ -1,5 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: e.mg.us.cat77.cloud
+  port: 2255
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,14 +15,6 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 2"
-  server: g.mg.us.cat77.cloud
-  port: 4535
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  udp: true
-  skip-cert-verify: true
-  network: tcp
 - type: trojan
   name: "\U0001F1FA\U0001F1F8 US 3"
   server: h.mg.us.cat77.cloud
@@ -39,12 +39,12 @@ proxies:
   udp: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: e.mg.us.cat77.cloud
-  port: 2255
-  udp: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 6"
+  server: g.mg.us.cat77.cloud
+  port: 4535
   password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 7"
