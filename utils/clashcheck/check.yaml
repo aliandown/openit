@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170-187-134-190.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: phxv002.jd0001.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 44303
   password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 170-187-134-190.ipv4.rush.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 3"
@@ -23,7 +23,15 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F9\U0001F1F7 TR 4"
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  server: xw.zemzoh.cf
+  type: trojan
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 29542
+  password: GVGbsjXG
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F9\U0001F1F7 TR 5"
   type: trojan
   server: 194.146.26.40
   port: 443
@@ -32,7 +40,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
   server: 204.216.214.102
   port: 44386
@@ -47,8 +55,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1F9\U0001F1F7 TR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F9\U0001F1F7 TR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,7 +67,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1F9\U0001F1F7 TR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F9\U0001F1F7 TR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
