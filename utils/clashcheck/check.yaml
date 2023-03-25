@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170-187-134-190.ipv4.rush.ml
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: us.disnet.gq
   port: 443
@@ -15,15 +7,15 @@ proxies:
   password: 7c7e0edb-c45a-4c07-b66a-69b191179349
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 170-187-134-190.ipv4.rush.ml
   type: trojan
-  server: c.mg.us.cat77.cloud
-  port: 2222
-  udp: true
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: k.mg.us.cat77.cloud
   port: 2255
@@ -31,23 +23,7 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: j.mg.us.cat77.cloud
-  port: 443
-  udp: true
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: h.mg.us.cat77.cloud
-  port: 2255
-  udp: true
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: g.mg.us.cat77.cloud
   port: 4535
@@ -55,7 +31,39 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1EA IE 8"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: h.mg.us.cat77.cloud
+  port: 2255
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: j.mg.us.cat77.cloud
+  port: 443
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: c.mg.us.cat77.cloud
+  port: 2222
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  type: trojan
+  server: 15.us.cat77.cloud
+  port: 2222
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 9"
   type: trojan
   server: 3-249-129-98.ipv4.rush.ml
   port: 8443
@@ -63,7 +71,49 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 9"
+- name: "\U0001F1E9\U0001F1EA DE 10"
+  type: trojan
+  server: b.dg.cat77.cloud
+  port: 5678
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 11"
+  type: trojan
+  server: 1.hg.kr.cat77.cloud
+  port: 8443
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 12"
+  server: 5.sg.cat77.cloud
+  port: 5678
+  type: trojan
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  sni: 5.sg.cat77.cloud
+- name: "\U0001F1EB\U0001F1F7 FR 13"
+  type: trojan
+  server: t1.teslacdn2.live
+  port: 443
+  udp: true
+  password: e83fc0d1-9bed-4863-8da9-a81a6e0c4dfa
+  sni: t1.teslacdn2.live
+  skip-cert-verify: true
+  network: tcp
+  ws-opts:
+    headers:
+      host: "\U0001F1E9\U0001F1EADE\u5FB7\u56FD(youtube\u963F\u4F1F\u79D1\u6280)"
+- name: "\U0001F1F0\U0001F1F7 KR 14"
+  type: trojan
+  server: 2.hg.kr.cat77.cloud
+  port: 8443
+  udp: true
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 15"
   type: trojan
   server: 89.163.224.122
   port: 443
@@ -72,23 +122,7 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 10"
-  type: trojan
-  server: 2.hg.kr.cat77.cloud
-  port: 8443
-  udp: true
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 11"
-  type: trojan
-  server: t5.teslacdn2.live
-  port: 443
-  udp: true
-  password: af6a3685-c423-4579-bfea-784c453d5e23
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 12"
+- name: "\U0001F1F9\U0001F1F7 TR 16"
   type: trojan
   server: 194.146.26.40
   port: 443
@@ -97,22 +131,23 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 13"
+- name: "\U0001F1EB\U0001F1F7 FR 17"
   type: trojan
-  server: cn-hk-30.fnhffffe4.cc
-  port: 50110
+  server: t5.teslacdn2.live
+  port: 443
   udp: true
-  password: 656aeb77-1cee-4900-b412-f9cbb6df9b5f
-  sni: cn-hk-30.fnhffffe4.cc
+  password: af6a3685-c423-4579-bfea-784c453d5e23
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 14"
-  server: 5.sg.cat77.cloud
-  port: 5678
+- name: "\U0001F1EE\U0001F1F3 IN 18"
   type: trojan
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  sni: 5.sg.cat77.cloud
-- name: "\U0001F1EE\U0001F1F3 IN 15"
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 19"
   type: trojan
   server: 152.67.190.183
   port: 443
@@ -121,12 +156,22 @@ proxies:
   sni: jgwhdlb3.gaox.ml
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 16"
+- name: "\U0001F1E8\U0001F1F3 HK 20"
   type: trojan
-  server: 152.70.74.66
-  port: 443
+  server: cn-hk-30.fnhffffe4.cc
+  port: 50110
   udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  password: 656aeb77-1cee-4900-b412-f9cbb6df9b5f
+  sni: cn-hk-30.fnhffffe4.cc
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 21"
+  type: trojan
+  server: kr-s-1.fuckjdieng.uk
+  port: 50130
+  udp: true
+  password: 96a0471e-7632-4c67-bc98-312fe38bbe63
+  sni: kr-s-1.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -140,15 +185,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1EA IE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
-  - "\U0001F1EB\U0001F1F7 FR 11"
-  - "\U0001F1F9\U0001F1F7 TR 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1EE\U0001F1F3 IN 16"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1EA IE 9"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EB\U0001F1F7 FR 13"
+  - "\U0001F1F0\U0001F1F7 KR 14"
+  - "\U0001F1E9\U0001F1EA DE 15"
+  - "\U0001F1F9\U0001F1F7 TR 16"
+  - "\U0001F1EB\U0001F1F7 FR 17"
+  - "\U0001F1EE\U0001F1F3 IN 18"
+  - "\U0001F1EE\U0001F1F3 IN 19"
+  - "\U0001F1E8\U0001F1F3 HK 20"
+  - "\U0001F1F0\U0001F1F7 KR 21"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -162,14 +212,19 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1EA IE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
-  - "\U0001F1EB\U0001F1F7 FR 11"
-  - "\U0001F1F9\U0001F1F7 TR 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1EE\U0001F1F3 IN 16"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1EA IE 9"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EB\U0001F1F7 FR 13"
+  - "\U0001F1F0\U0001F1F7 KR 14"
+  - "\U0001F1E9\U0001F1EA DE 15"
+  - "\U0001F1F9\U0001F1F7 TR 16"
+  - "\U0001F1EB\U0001F1F7 FR 17"
+  - "\U0001F1EE\U0001F1F3 IN 18"
+  - "\U0001F1EE\U0001F1F3 IN 19"
+  - "\U0001F1E8\U0001F1F3 HK 20"
+  - "\U0001F1F0\U0001F1F7 KR 21"
 rules:
 - "MATCH,\U0001F310 Proxy"
