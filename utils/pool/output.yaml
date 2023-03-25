@@ -132,24 +132,25 @@ proxies:
   username: f9af186564
   password: b99148441a
   tls: true
-- name: "\U0001F1EC\U0001F1E7 GB 16 TJN"
-  server: kt.p.mkitty.top
-  port: 443
-  type: trojan
-  password: 45c40b80-3d85-47aa-b6e4-3e0e2a066842
-  sni: kt.p.mkitty.top
-- name: "\U0001F1E8\U0001F1F3 CN 17 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 16 SSS"
   server: 36.139.166.247
   type: ss
   port: 11023
   password: ll668668@
   cipher: aes-256-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 18 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 17 SSS"
   server: 36.137.106.45
   type: ss
   port: 11023
   password: ll668668@
   cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 18 SSS"
+  server: 14.29.124.168
+  type: ss
+  port: 24006
+  udp: true
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
 - name: "\U0001F1F8\U0001F1EC SG 19 TJN"
   server: xw.zemzoh.cf
   type: trojan
@@ -201,12 +202,66 @@ proxies:
   type: trojan
   password: 45c40b80-3d85-47aa-b6e4-3e0e2a066842
   sni: kt.p.mkitty.top
-- name: "\U0001F1FA\U0001F1F8 US 26 TJN"
+- name: "\U0001F1EC\U0001F1E7 GB 26 TJN"
+  server: kt.p.mkitty.top
+  port: 443
+  type: trojan
+  password: 45c40b80-3d85-47aa-b6e4-3e0e2a066842
+  sni: kt.p.mkitty.top
+- name: "\U0001F1FA\U0001F1F8 US 27 TJN"
   type: trojan
   server: e.mg.us.cat77.cloud
   port: 2255
   udp: true
   password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 28 TJN"
+  server: h.mg.us.cat77.cloud
+  port: 2255
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 29 TJN"
+  server: e.mg.us.cat77.cloud
+  port: 2255
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 30 TJN"
+  server: k.mg.us.cat77.cloud
+  port: 2255
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 31 TJN"
+  server: 15.us.cat77.cloud
+  port: 2222
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 32 TJN"
+  server: g.mg.us.cat77.cloud
+  port: 4535
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 33 TJN"
+  server: c.mg.us.cat77.cloud
+  port: 2222
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -228,7 +283,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 13 TJN"
   - "\U0001F1E8\U0001F1F3 CN 14 SSR"
   - "\U0001F1E8\U0001F1F3 CN 15 HTT"
-  - "\U0001F1EC\U0001F1E7 GB 16 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
   - "\U0001F1E8\U0001F1F3 CN 17 SSS"
   - "\U0001F1E8\U0001F1F3 CN 18 SSS"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
@@ -238,7 +293,14 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 23 TJN"
   - "\U0001F1E8\U0001F1F3 CN 24 TJN"
   - "\U0001F1EC\U0001F1E7 GB 25 TJN"
-  - "\U0001F1FA\U0001F1F8 US 26 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 26 TJN"
+  - "\U0001F1FA\U0001F1F8 US 27 TJN"
+  - "\U0001F1FA\U0001F1F8 US 28 TJN"
+  - "\U0001F1FA\U0001F1F8 US 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 TJN"
+  - "\U0001F1FA\U0001F1F8 US 31 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -260,7 +322,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 13 TJN"
   - "\U0001F1E8\U0001F1F3 CN 14 SSR"
   - "\U0001F1E8\U0001F1F3 CN 15 HTT"
-  - "\U0001F1EC\U0001F1E7 GB 16 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
   - "\U0001F1E8\U0001F1F3 CN 17 SSS"
   - "\U0001F1E8\U0001F1F3 CN 18 SSS"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
@@ -270,6 +332,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 23 TJN"
   - "\U0001F1E8\U0001F1F3 CN 24 TJN"
   - "\U0001F1EC\U0001F1E7 GB 25 TJN"
-  - "\U0001F1FA\U0001F1F8 US 26 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 26 TJN"
+  - "\U0001F1FA\U0001F1F8 US 27 TJN"
+  - "\U0001F1FA\U0001F1F8 US 28 TJN"
+  - "\U0001F1FA\U0001F1F8 US 29 TJN"
+  - "\U0001F1FA\U0001F1F8 US 30 TJN"
+  - "\U0001F1FA\U0001F1F8 US 31 TJN"
+  - "\U0001F1FA\U0001F1F8 US 32 TJN"
+  - "\U0001F1FA\U0001F1F8 US 33 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
