@@ -9,21 +9,13 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: k.mg.us.cat77.cloud
-  port: 2255
-  udp: true
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
   server: j.mg.us.cat77.cloud
   port: 443
   udp: true
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: g.mg.us.cat77.cloud
   port: 4535
@@ -31,7 +23,7 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: h.mg.us.cat77.cloud
   port: 2255
@@ -39,15 +31,15 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
-  server: c.mg.us.cat77.cloud
-  port: 2222
+  server: k.mg.us.cat77.cloud
+  port: 2255
   udp: true
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 7"
+- name: "\U0001F1F9\U0001F1F7 TR 6"
   type: trojan
   server: 194.146.26.40
   port: 443
@@ -56,13 +48,13 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
+- name: "\U0001F1F8\U0001F1EC SG 7"
   server: 5.sg.cat77.cloud
   port: 5678
   type: trojan
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   sni: 5.sg.cat77.cloud
-- name: "\U0001F1EE\U0001F1F3 IN 9"
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -70,7 +62,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 10"
+- name: "\U0001F1EE\U0001F1F3 IN 9"
   type: trojan
   server: 152.67.190.183
   port: 443
@@ -79,6 +71,12 @@ proxies:
   sni: jgwhdlb3.gaox.ml
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 10"
+  server: 4.sg.cat77.cloud
+  port: 2255
+  type: trojan
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  sni: 4.sg.cat77.cloud
 proxy-groups:
 - name: automatic
   type: url-test
@@ -88,11 +86,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F9\U0001F1F7 TR 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F9\U0001F1F7 TR 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -104,10 +102,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F9\U0001F1F7 TR 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F9\U0001F1F7 TR 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
