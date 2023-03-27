@@ -143,24 +143,24 @@ proxies:
   username: f9af186564
   password: b99148441a
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 16 SSS"
-  server: 36.139.166.247
-  type: ss
-  port: 11023
-  password: ll668668@
-  cipher: aes-256-gcm
+- name: "\U0001F1EC\U0001F1E7 GB 16 TJN"
+  server: kt.p.mkitty.top
+  port: 443
+  type: trojan
+  password: 45c40b80-3d85-47aa-b6e4-3e0e2a066842
+  sni: kt.p.mkitty.top
 - name: "\U0001F1E8\U0001F1F3 CN 17 SSS"
   server: 36.137.106.45
   type: ss
   port: 11023
   password: ll668668@
   cipher: aes-256-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 18 TJN"
-  server: hnm.xiaohouzi.club
-  type: trojan
-  port: 36872
-  password: a3278882-3614-39cf-a3d6-faefa8c910ab
-  sni: hnm.xiaohouzi.club
+- name: "\U0001F1E8\U0001F1F3 CN 18 SSS"
+  server: 36.139.166.247
+  type: ss
+  port: 11023
+  password: ll668668@
+  cipher: aes-256-gcm
 - name: "\U0001F1F8\U0001F1EC SG 19 TJN"
   server: xw.zemzoh.cf
   type: trojan
@@ -192,15 +192,7 @@ proxies:
   password: 5a035db3-34ea-48ca-9aa2-72c8229e1532
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 23 TJN"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 24 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 23 TJN"
   server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -208,6 +200,13 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 24 TJN"
+  server: oss-cn-shanghai.westdatacloud.top
+  port: 20048
+  type: trojan
+  password: 626351FA-3CA6-8118-FADF-CCDBCD620871
+  sni: oss-cn-shanghai.westdatacloud.top
+  skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 CN 25 TJN"
   server: oss-cn-shanghai.westdatacloud.top
   port: 20048
@@ -215,20 +214,7 @@ proxies:
   password: 626351FA-3CA6-8118-FADF-CCDBCD620871
   sni: oss-cn-shanghai.westdatacloud.top
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 26 TJN"
-  server: oss-cn-shanghai.westdatacloud.top
-  port: 20048
-  type: trojan
-  password: 626351FA-3CA6-8118-FADF-CCDBCD620871
-  sni: oss-cn-shanghai.westdatacloud.top
-  skip-cert-verify: true
-- name: "\U0001F1EC\U0001F1E7 GB 27 TJN"
-  server: kt.p.mkitty.top
-  port: 443
-  type: trojan
-  password: 45c40b80-3d85-47aa-b6e4-3e0e2a066842
-  sni: kt.p.mkitty.top
-- name: "\U0001F1EC\U0001F1E7 GB 28 TJN"
+- name: "\U0001F1EC\U0001F1E7 GB 26 TJN"
   server: kt.p.mkitty.top
   port: 443
   type: trojan
@@ -253,19 +239,17 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 13 SSR"
   - "\U0001F1F0\U0001F1F7 KR 14 TJN"
   - "\U0001F1E8\U0001F1F3 CN 15 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 16 TJN"
   - "\U0001F1E8\U0001F1F3 CN 17 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 18 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 18 SSS"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
   - "\U0001F1E8\U0001F1F3 CN 20 SSS"
   - "\U0001F1EC\U0001F1E7 GB 21 TJN"
   - "\U0001F1ED\U0001F1F0 HK 22 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 24 TJN"
   - "\U0001F1E8\U0001F1F3 CN 25 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 26 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 27 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 28 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 26 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -287,18 +271,16 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 13 SSR"
   - "\U0001F1F0\U0001F1F7 KR 14 TJN"
   - "\U0001F1E8\U0001F1F3 CN 15 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
+  - "\U0001F1EC\U0001F1E7 GB 16 TJN"
   - "\U0001F1E8\U0001F1F3 CN 17 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 18 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 18 SSS"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
   - "\U0001F1E8\U0001F1F3 CN 20 SSS"
   - "\U0001F1EC\U0001F1E7 GB 21 TJN"
   - "\U0001F1ED\U0001F1F0 HK 22 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 23 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 24 TJN"
   - "\U0001F1E8\U0001F1F3 CN 25 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 26 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 27 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 28 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 26 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
