@@ -15,14 +15,7 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: 4.hg.kr.cat77.cloud
-  port: 7890
-  type: trojan
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  sni: 4.hg.kr.cat77.cloud
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 4"
+- name: "\U0001F1F8\U0001F1EC SG 3"
   server: xw.zemzoh.cf
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -30,14 +23,21 @@ proxies:
   password: GVGbsjXG
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 4"
+  server: 4.hg.kr.cat77.cloud
+  port: 7890
+  type: trojan
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  sni: 4.hg.kr.cat77.cloud
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -46,7 +46,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
