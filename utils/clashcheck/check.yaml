@@ -30,15 +30,6 @@ proxies:
   password: 3e1890e7-4746-4378-89ba-10c7bbe06094
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  type: trojan
-  server: hk11.microsoftjs.top
-  port: 443
-  udp: true
-  password: 2c0da31c-026e-48ea-9c5a-9e018ad019bb
-  sni: tls.microsoftjs.top
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -47,7 +38,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,6 +48,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
