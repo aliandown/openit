@@ -15,49 +15,20 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 3"
-  type: trojan
-  server: 1.hk1997.pro
-  port: 443
-  udp: true
-  password: 3e1890e7-4746-4378-89ba-10c7bbe06094
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 4"
+- name: "\U0001F1F0\U0001F1F7 KR 3"
   server: 4.hg.kr.cat77.cloud
   port: 7890
   type: trojan
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   sni: 4.hg.kr.cat77.cloud
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 TW 5"
-  type: trojan
-  server: azgy001.xibai6.top
-  port: 20710
-  udp: true
-  password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf
-  sni: ssl.ssl12.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  type: trojan
-  server: hk11.microsoftjs.top
-  port: 443
-  udp: true
-  password: 2c0da31c-026e-48ea-9c5a-9e018ad019bb
-  sni: tls.microsoftjs.top
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,9 +37,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
