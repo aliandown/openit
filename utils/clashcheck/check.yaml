@@ -14,12 +14,30 @@ proxies:
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   sni: 4.hg.kr.cat77.cloud
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: usa1.vfun.icu
+  port: 443
+  type: ssr
+  cipher: aes-256-cfb
+  password: vyunme
+  protocol: auth_aes128_sha1
+  obfs: plain
+  protocol-param: 17422:TTp0SX
+  obfs-param: ab93117422.jd.hk
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
   server: 152.70.74.66
   port: 443
   udp: true
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 5"
+  type: trojan
+  server: 1.hk1997.pro
+  port: 443
+  udp: true
+  password: 3e1890e7-4746-4378-89ba-10c7bbe06094
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -28,7 +46,9 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1F7\U0001F1FA RU 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -37,6 +57,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1F7\U0001F1FA RU 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
