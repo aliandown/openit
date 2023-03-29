@@ -8,13 +8,21 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 2"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 3"
   server: 4.hg.kr.cat77.cloud
   port: 7890
   type: trojan
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   sni: 4.hg.kr.cat77.cloud
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -22,16 +30,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: usa1.vfun.icu
-  port: 443
-  type: ssr
-  cipher: aes-256-cfb
-  password: vyunme
-  protocol: auth_aes128_sha1
-  obfs: plain
-  protocol-param: 17422:TTp0SX
-  obfs-param: ab93117422.jd.hk
 - type: trojan
   name: "\U0001F1FA\U0001F1F8 US 5"
   server: 138.124.183.226
@@ -40,45 +38,31 @@ proxies:
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: jgwdj4.gaox.ml
+  name: "\U0001F1E6\U0001F1FA AU 6"
+  server: jgwxn4.gaox.ml
   port: 443
-  password: c09eb137-bf68-4658-84e0-102d94b74168
+  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 7"
-  server: 138.124.183.222
-  port: 443
-  password: xxoo
-  udp: true
-  skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1EE\U0001F1F3 IN 8"
+  name: "\U0001F1EE\U0001F1F3 IN 7"
   server: jgwhdlb3.gaox.ml
   port: 443
   password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1EE\U0001F1F3 IN 9"
+  name: "\U0001F1EE\U0001F1F3 IN 8"
   server: jgwhdlb2.gaox.ml
   port: 443
   password: 54080134-2cba-4535-8599-95650bd9aa54
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1EE\U0001F1F3 IN 10"
+  name: "\U0001F1EE\U0001F1F3 IN 9"
   server: jgwhdlb1.gaox.ml
   port: 443
   password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
-  udp: true
-  skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1E6\U0001F1FA AU 11"
-  server: jgwxn4.gaox.ml
-  port: 443
-  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
   udp: true
   skip-cert-verify: true
 proxy-groups:
@@ -87,15 +71,13 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1E6\U0001F1FA AU 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -104,14 +86,12 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1E6\U0001F1FA AU 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
