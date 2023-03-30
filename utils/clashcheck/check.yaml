@@ -15,12 +15,21 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  type: trojan
+  server: kz.mjt001.com
+  port: 443
+  udp: true
+  password: ab0b21ff-53d1-4b02-800b-9d7db3aed104
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,5 +38,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
