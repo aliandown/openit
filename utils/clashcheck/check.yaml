@@ -9,6 +9,23 @@ proxies:
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 2"
   type: ssr
+  server: 42.157.195.239
+  port: 12127
+  password: 68xdgu9eyif
+  cipher: aes-256-cfb
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: 0f099600777.v23f7nM0
+  protocol-param: 600777:154T8b
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: h073906.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ssr
   server: 14.152.92.79
   port: 12127
   password: 68xdgu9eyif
@@ -17,24 +34,6 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: 0f099600777.v23f7nM0
   protocol-param: 600777:154T8b
-- name: "\U0001F1F7\U0001F1FA RU 3"
-  type: trojan
-  server: 1.hk1997.pro
-  port: 443
-  udp: true
-  password: 3e1890e7-4746-4378-89ba-10c7bbe06094
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  type: ssr
-  server: 42.157.195.231
-  port: 12127
-  password: 68xdgu9eyif
-  cipher: aes-256-cfb
-  obfs: http_simple
-  protocol: auth_aes128_sha1
-  obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA
-  protocol-param: 600777:154T8b
 - name: "\U0001F1E8\U0001F1F3 CN 5"
   server: h073906.waihuizhibiaowang.com
   port: 11343
@@ -42,48 +41,15 @@ proxies:
   username: f9af186564
   password: b99148441a
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: ssr
-  server: 14.152.92.74
-  port: 12127
-  password: 68xdgu9eyif
-  cipher: aes-256-cfb
-  obfs: http_simple
-  protocol: auth_aes128_sha1
-  obfs-param: 0f099600777.v23f7nM0
-  protocol-param: 600777:154T8b
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  type: ssr
-  server: 14.152.92.75
-  port: 12127
-  password: 68xdgu9eyif
-  cipher: aes-256-cfb
-  obfs: http_simple
-  protocol: auth_aes128_sha1
-  obfs-param: 0f099600777.v23f7nM0
-  protocol-param: 600777:154T8b
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  type: ssr
-  server: 42.157.195.235
-  port: 12127
-  password: 68xdgu9eyif
-  cipher: aes-256-cfb
-  obfs: http_simple
-  protocol: auth_aes128_sha1
-  obfs-param: 0f099600777.v23f7nM0
-  protocol-param: 600777:154T8b
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -92,11 +58,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
