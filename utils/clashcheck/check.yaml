@@ -7,22 +7,22 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  type: trojan
-  server: awshk6-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: 23cda756-b1ed-4347-b307-648bb6fecc6b
-  sni: data.amazonwebservicess.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 3"
+- name: "\U0001F1E8\U0001F1F3 CN 2"
   type: trojan
   server: dl-hk6.steamdownload.top
   port: 443
   udp: true
   password: b3a7bc11-8971-44b6-9b49-ec0f229cb1dd
   sni: data-hk.steamdownload.top
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  type: trojan
+  server: awshk6-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 23cda756-b1ed-4347-b307-648bb6fecc6b
+  sni: data.amazonwebservicess.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 4"
@@ -47,8 +47,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 TW 5"
   url: https://www.google.com/favicon.ico
@@ -58,8 +58,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 TW 5"
 rules:
