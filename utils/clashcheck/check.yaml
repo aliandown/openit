@@ -7,7 +7,7 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 2"
+- name: "\U0001F1E8\U0001F1F3 HK 2"
   type: trojan
   server: dl-hk6.steamdownload.top
   port: 443
@@ -34,23 +34,14 @@ proxies:
   sni: jp-tk-31.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 5"
-  type: trojan
-  server: azgy001.xibai6.top
-  port: 20711
-  udp: true
-  password: f23a8308-7cf3-3e69-976a-de7246b02a2d
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 HK 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,9 +49,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 HK 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
