@@ -1,5 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 170-187-134-190.ipv4.rush.ml
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: tk-002-001.xiaoxiaobujidao.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,23 +15,23 @@ proxies:
   password: 643376cf-6164-3cac-85cf-d4610081b19f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: jp-tk-32.fuckjdieng.uk
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 50152
-  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
-  server: 152.70.74.66
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: cn-hk-31.fnhffffe4.cc
+  type: trojan
+  country: "\U0001F1FF\U0001F1E6ZA"
+  port: 50230
+  password: 2cd902a8-9295-4f38-959c-1b1bef1a8405
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
   server: 204.216.214.102
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -31,7 +39,25 @@ proxies:
   password: C931CWacy8
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 5"
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: ssr
+  server: usa1.vfun.icu
+  port: 443
+  password: vyunme
+  cipher: aes-256-cfb
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: ab93117422.jd.hk
+  protocol-param: 17422:TTp0SX
+- name: "\U0001F1E6\U0001F1FA AU 8"
   type: trojan
   server: air-Sydney12.900513.xyz
   port: 7708
@@ -44,10 +70,13 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E6\U0001F1FA AU 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,9 +84,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E6\U0001F1FA AU 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
