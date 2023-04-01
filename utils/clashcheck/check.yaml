@@ -47,24 +47,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  type: ssr
-  server: usa1.vfun.icu
-  port: 443
-  password: vyunme
-  cipher: aes-256-cfb
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: ab93117422.jd.hk
-  protocol-param: 17422:TTp0SX
-- name: "\U0001F1E6\U0001F1FA AU 8"
-  type: trojan
-  server: air-Sydney12.900513.xyz
-  port: 7708
-  udp: true
-  password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -75,8 +57,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E6\U0001F1FA AU 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -89,7 +69,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E6\U0001F1FA AU 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
