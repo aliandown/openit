@@ -16,48 +16,49 @@ proxies:
   skip-cert-verify: true
   sni: wx.qq.com
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 138.124.183.222
+  name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: 146.19.230.241
   port: 443
   password: xxoo
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 64.52.108.181
-  port: 443
-  password: b8ec1401-e5c1-4299-b315-9694cca0c2f8
-  udp: true
-  skip-cert-verify: true
-  sni: wx.qq.com
-- type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 5"
-  server: 4.dg.cat77.cloud
-  port: 2255
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  udp: true
-  skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 6"
+  name: "\U0001F1EC\U0001F1E7 GB 4"
   server: 185.16.206.211
   port: 443
   password: shefelnak
   udp: true
   skip-cert-verify: true
   sni: 185.16.206.211
-- type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 7"
-  server: b.dg.cat77.cloud
-  port: 5678
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  udp: true
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 8"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: jp-tk-32.fuckjdieng.uk
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
   port: 50152
   password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- type: trojan
+  name: "\U0001F1E9\U0001F1EA DE 7"
+  server: 4.dg.cat77.cloud
+  port: 2255
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 204.216.214.102
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44386
+  password: C931CWacy8
   skip-cert-verify: true
   udp: true
 - type: trojan
@@ -68,20 +69,19 @@ proxies:
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 10"
+  name: "\U0001F1F0\U0001F1F7 KR 10"
+  server: kr05.wangxd.life
+  port: 443
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 11"
   server: sgp-2.fuckjdieng.uk
   port: 50132
   password: 14dfcbc3-fb69-43f4-a1a1-d06124eb3d03
   udp: true
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 11"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 - type: trojan
   name: "\U0001F1F0\U0001F1F7 KR 12"
   server: 152.67.212.239
@@ -90,40 +90,51 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: mehrnews.com
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 13"
-  server: 144.24.72.126
+- name: "\U0001F1F7\U0001F1FA RU 13"
+  type: trojan
+  server: 1.hk1997.pro
   port: 443
-  password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a
   udp: true
+  password: 3e1890e7-4746-4378-89ba-10c7bbe06094
   skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 14"
-  server: sgp-3.fuckjdieng.uk
-  port: 50190
-  password: fa7868f2-a691-4871-890e-5ad4c0feb937
-  udp: true
-  skip-cert-verify: true
-  sni: sgp-3.fuckjdieng.uk
   network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 14"
+  server: ssrsub.t04.trojan.tel
+  port: 80
+  password: 6ba745ca-823a-4643-8f4e-22997ca67a2f
+  udp: true
+  skip-cert-verify: true
+  sni: ssrsub.t04.trojan.tel
+- name: "\U0001F1E8\U0001F1F3 CN 15"
+  type: ssr
+  server: usa1.vfun.icu
+  port: 443
+  password: vyunme
+  cipher: aes-256-cfb
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: ab93117422.jd.hk
+  protocol-param: 17422:TTp0SX
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F7\U0001F1FA RU 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -132,17 +143,18 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F7\U0001F1FA RU 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
