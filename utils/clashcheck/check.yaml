@@ -9,14 +9,6 @@ proxies:
   udp: true
 - type: trojan
   name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 64.52.108.181
-  port: 443
-  password: b8ec1401-e5c1-4299-b315-9694cca0c2f8
-  udp: true
-  skip-cert-verify: true
-  sni: wx.qq.com
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 3"
   server: 64.190.90.29
   port: 443
   password: b8ec1401-e5c1-4299-b315-9694cca0c2f8
@@ -24,27 +16,35 @@ proxies:
   skip-cert-verify: true
   sni: wx.qq.com
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 4"
+  name: "\U0001F1FA\U0001F1F8 US 3"
   server: 138.124.183.222
   port: 443
   password: xxoo
   udp: true
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 5"
+  name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 64.52.108.181
+  port: 443
+  password: b8ec1401-e5c1-4299-b315-9694cca0c2f8
+  udp: true
+  skip-cert-verify: true
+  sni: wx.qq.com
+- type: trojan
+  name: "\U0001F1E9\U0001F1EA DE 5"
+  server: 4.dg.cat77.cloud
+  port: 2255
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EC\U0001F1E7 GB 6"
   server: 185.16.206.211
   port: 443
   password: shefelnak
   udp: true
   skip-cert-verify: true
   sni: 185.16.206.211
-- type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 6"
-  server: 146.19.230.241
-  port: 443
-  password: xxoo
-  udp: true
-  skip-cert-verify: true
 - type: trojan
   name: "\U0001F1E9\U0001F1EA DE 7"
   server: b.dg.cat77.cloud
@@ -60,36 +60,36 @@ proxies:
   password: 4e9a8a73-a97b-4e19-8240-0115109418c8
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 9"
-  server: kr05.wangxd.life
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 9"
+  server: 1.hg.kr.cat77.cloud
+  port: 8443
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 10"
+  server: sgp-2.fuckjdieng.uk
+  port: 50132
+  password: 14dfcbc3-fb69-43f4-a1a1-d06124eb3d03
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 11"
+  server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 10"
-  server: kr05.wangxd.life
   port: 443
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
+  udp: true
 - type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 11"
+  name: "\U0001F1F0\U0001F1F7 KR 12"
   server: 152.67.212.239
   port: 8443
   password: cd27884b-c5af-34ec-b75f-8248077818fe
   udp: true
   skip-cert-verify: true
   sni: mehrnews.com
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 12"
-  server: 1.hg.kr.cat77.cloud
-  port: 8443
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  udp: true
-  skip-cert-verify: true
 - type: trojan
   name: "\U0001F1F0\U0001F1F7 KR 13"
   server: 144.24.72.126
@@ -99,60 +99,12 @@ proxies:
   skip-cert-verify: true
 - type: trojan
   name: "\U0001F1F8\U0001F1EC SG 14"
-  server: sgp-2.fuckjdieng.uk
-  port: 50132
-  password: 14dfcbc3-fb69-43f4-a1a1-d06124eb3d03
-  udp: true
-  skip-cert-verify: true
-- type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 15"
-  server: 4.dg.cat77.cloud
-  port: 2255
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  udp: true
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 16"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 17"
-  type: trojan
-  server: oss-cn-shanghai.westdatacloud.top
-  port: 20048
-  udp: true
-  password: 626351FA-3CA6-8118-FADF-CCDBCD620871
-  sni: oss-cn-shanghai.westdatacloud.top
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 18"
-  server: 204.216.214.102
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 44386
-  password: C931CWacy8
-  skip-cert-verify: true
-  udp: true
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 19"
   server: sgp-3.fuckjdieng.uk
   port: 50190
   password: fa7868f2-a691-4871-890e-5ad4c0feb937
   udp: true
   skip-cert-verify: true
   sni: sgp-3.fuckjdieng.uk
-  network: tcp
-- type: trojan
-  name: "\U0001F1E8\U0001F1F3 CN 20"
-  server: oss-cn-shanghai.westdatacloud.top
-  port: 20048
-  password: 626351FA-3CA6-8118-FADF-CCDBCD620871
-  udp: true
-  skip-cert-verify: true
-  sni: oss-cn-shanghai.westdatacloud.top
   network: tcp
 proxy-groups:
 - name: automatic
@@ -162,22 +114,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
   - "\U0001F1F0\U0001F1F7 KR 12"
   - "\U0001F1F0\U0001F1F7 KR 13"
   - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1E9\U0001F1EA DE 15"
-  - "\U0001F1EE\U0001F1F3 IN 16"
-  - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1FA\U0001F1F8 US 18"
-  - "\U0001F1F8\U0001F1EC SG 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -188,21 +134,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
   - "\U0001F1F0\U0001F1F7 KR 12"
   - "\U0001F1F0\U0001F1F7 KR 13"
   - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1E9\U0001F1EA DE 15"
-  - "\U0001F1EE\U0001F1F3 IN 16"
-  - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1FA\U0001F1F8 US 18"
-  - "\U0001F1F8\U0001F1EC SG 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
 rules:
 - "MATCH,\U0001F310 Proxy"
