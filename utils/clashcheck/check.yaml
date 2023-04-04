@@ -32,24 +32,7 @@ proxies:
   sni: apps.apple.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: usa.stablize.top
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: ef8f2f11-2050-403a-b1e6-fae07c974524
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 6"
-  type: trojan
-  server: 1a03879e-145d-4b60-8c14-a2ff5e0aca74.interface.buzz
-  port: 443
-  udp: true
-  password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
-  sni: apps.apple.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -57,7 +40,23 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 8"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: usa.stablize.top
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: ef8f2f11-2050-403a-b1e6-fae07c974524
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: jp-tk-32.fuckjdieng.uk
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   server: usa.stablize.top
   port: 443
   type: trojan
@@ -73,14 +72,15 @@ proxies:
   protocol: auth_aes128_md5
   obfs-param: t.me/vpnhat
   protocol-param: 51025:o0159ww
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: jp-tk-32.fuckjdieng.uk
+- name: "\U0001F1F8\U0001F1EC SG 10"
   type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 50152
-  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
-  skip-cert-verify: true
+  server: 1a03879e-145d-4b60-8c14-a2ff5e0aca74.interface.buzz
+  port: 443
   udp: true
+  password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
+  sni: apps.apple.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -89,12 +89,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -105,11 +105,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
