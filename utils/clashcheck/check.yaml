@@ -50,20 +50,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: h073906.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 9"
   type: ssr
   server: 120.198.71.182
   port: 560
@@ -73,13 +59,6 @@ proxies:
   protocol: auth_aes128_md5
   obfs-param: t.me/vpnhat
   protocol-param: 51025:o0159ww
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: h073906.waihuizhibiaowang.com
-  port: 13543
-  type: trojan
-  password: b5181de8-66d4-4f8f-904c-23e606303a13
-  sni: 106-110-192-225.d.cjjd20.com
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -91,9 +70,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -107,8 +83,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
