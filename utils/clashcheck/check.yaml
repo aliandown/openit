@@ -31,15 +31,7 @@ proxies:
   password: 2cd902a8-9295-4f38-959c-1b1bef1a8405
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F7\U0001F1FA RU 5"
-  type: trojan
-  server: 1.hk1997.pro
-  port: 443
-  udp: true
-  password: 2703fdad-d9fd-4884-a16d-00f0fd4a061c
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1F8\U0001F1EC SG 5"
   type: trojan
   server: sgp-2.fuckjdieng.uk
   port: 50162
@@ -48,6 +40,14 @@ proxies:
   sni: sgp-2.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: usa.stablize.top
@@ -56,21 +56,14 @@ proxies:
   password: ef8f2f11-2050-403a-b1e6-fae07c974524
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 8"
-  server: 152.70.74.66
+- name: "\U0001F1E8\U0001F1F3 HK 8"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
+  server: 103.103.245.125
+  port: 50418
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: h073906.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
+  password: a70b39d1-62ea-4d9e-b681-9c5408352234
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -79,11 +72,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -94,10 +86,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
