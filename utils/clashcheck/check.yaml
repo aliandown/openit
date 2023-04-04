@@ -15,14 +15,15 @@ proxies:
   password: cQv2PgL1Im
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: kr05.wangxd.life
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
+  server: cd529a06-85c5-4662-9157-a0ce584cd324.interface.buzz
+  port: 443
   udp: true
+  password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
+  sni: apps.apple.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 4"
   server: cn-hk-31.fnhffffe4.cc
   type: trojan
@@ -32,27 +33,28 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: jp-tk-32.fuckjdieng.uk
   type: trojan
-  server: cd529a06-85c5-4662-9157-a0ce584cd324.interface.buzz
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  type: trojan
+  server: 1a03879e-145d-4b60-8c14-a2ff5e0aca74.interface.buzz
   port: 443
   udp: true
   password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
   sni: apps.apple.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: h073906.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
-  server: 152.70.74.66
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 8"
@@ -65,36 +67,27 @@ proxies:
   protocol: auth_aes128_md5
   obfs-param: t.me/vpnhat
   protocol-param: 51025:o0159ww
-- name: "\U0001F1F8\U0001F1EC SG 9"
+- name: "\U0001F1EE\U0001F1F3 IN 9"
+  server: 152.70.74.66
   type: trojan
-  server: 1a03879e-145d-4b60-8c14-a2ff5e0aca74.interface.buzz
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: 285adff2-eb0b-41f6-80d7-8a8fc65b10fc
-  sni: apps.apple.com
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: h073906.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: f9af186564
-  password: b99148441a
-  tls: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1EE\U0001F1F3 IN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -103,13 +96,12 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1EE\U0001F1F3 IN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
