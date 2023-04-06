@@ -23,7 +23,15 @@ proxies:
   password: 2cd902a8-9295-4f38-959c-1b1bef1a8405
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 204.216.214.102
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 44386
+  password: C931CWacy8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   type: trojan
   server: oss-cn-shanghai.westdatacloud.top
   port: 20048
@@ -32,14 +40,6 @@ proxies:
   sni: oss-cn-shanghai.westdatacloud.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 5"
-  server: 1.hk1997.pro
-  type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 443
-  password: 2703fdad-d9fd-4884-a16d-00f0fd4a061c
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
@@ -48,6 +48,13 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: h073906.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: f9af186564
+  password: b99148441a
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -55,9 +62,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -67,8 +75,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
