@@ -1,12 +1,12 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 170-187-134-190.ipv4.rush.ml
   type: trojan
-  server: 192.9.130.66
-  port: 443
-  udp: true
-  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 43.153.34.170
@@ -17,13 +17,13 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 170-187-134-190.ipv4.rush.ml
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
+  server: 192.9.130.66
+  port: 443
   udp: true
+  password: 7c7e0edb-c45a-4c07-b66a-69b191179349
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1E6 CA 4"
   server: amir.greenboys.xyz
   type: trojan
@@ -32,22 +32,22 @@ proxies:
   password: cQv2PgL1Im
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1EA IE 5"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 77.83.254.18
+  port: 443
+  udp: true
+  password: 128d4b58-6713-4051-831e-fe79a67ccee2
+  sni: blog.ir
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 6"
   type: trojan
   server: 3.249.129.98
   port: 8443
   udp: true
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: defapress.ir
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 6"
-  type: trojan
-  server: stonebreak.online
-  port: 443
-  udp: true
-  password: xl87654321
-  sni: stonebreak.online
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 7"
@@ -59,14 +59,15 @@ proxies:
   sni: fr1.arashmahash.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: kr05.wangxd.life
+- name: "\U0001F1E9\U0001F1EA DE 8"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
+  server: stonebreak.online
+  port: 443
   udp: true
+  password: xl87654321
+  sni: stonebreak.online
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 9"
   type: trojan
   server: 54.37.185.148
@@ -85,7 +86,15 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11"
+- name: "\U0001F1F0\U0001F1F7 KR 11"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 12"
   type: trojan
   server: kr-s-3.fuckjdieng.uk
   port: 50328
@@ -94,7 +103,7 @@ proxies:
   sni: kr-s-3.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- name: "\U0001F1F8\U0001F1EC SG 13"
   type: trojan
   server: sgp-3.fuckjdieng.uk
   port: 50190
@@ -103,15 +112,15 @@ proxies:
   sni: sgp-3.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 13"
-  server: jp-tk-32.fuckjdieng.uk
+- name: "\U0001F1EE\U0001F1F3 IN 14"
+  server: 152.70.74.66
   type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 50152
-  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 14"
+- name: "\U0001F1E8\U0001F1F3 CN 15"
   type: trojan
   server: official.taipeicitygovernment.kiev.ua
   port: 8443
@@ -120,14 +129,6 @@ proxies:
   sni: 66.42.40.132
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 15"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -136,17 +137,17 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1EA IE 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1EE\U0001F1F3 IN 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -157,16 +158,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1EA IE 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1EE\U0001F1F3 IN 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
