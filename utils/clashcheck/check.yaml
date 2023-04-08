@@ -1,12 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170-187-134-190.ipv4.rush.ml
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 43.153.34.170
   port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
   udp: true
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: anetwork.ir
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 192.9.130.66
@@ -16,14 +17,11 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
+  server: uss.kmairplan.one
+  port: 10023
   type: trojan
-  server: 43.153.34.170
-  port: 8443
-  udp: true
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: anetwork.ir
-  skip-cert-verify: true
-  network: tcp
+  password: 4fd03ed8-6e2b-43b1-9085-f74516b8be30
+  sni: uss.kmairplan.one
 - name: "\U0001F1E8\U0001F1E6 CA 4"
   server: amir.greenboys.xyz
   type: trojan
@@ -41,15 +39,7 @@ proxies:
   sni: defapress.ir
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E9\U0001F1EA DE 7"
+- name: "\U0001F1E9\U0001F1EA DE 6"
   type: trojan
   server: stonebreak.online
   port: 443
@@ -58,7 +48,7 @@ proxies:
   sni: stonebreak.online
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 8"
+- name: "\U0001F1E9\U0001F1EA DE 7"
   type: trojan
   server: 159.100.30.64
   port: 9100
@@ -67,7 +57,7 @@ proxies:
   sni: fr1.arashmahash.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 9"
+- name: "\U0001F1EB\U0001F1F7 FR 8"
   type: trojan
   server: 54.37.185.148
   port: 32894
@@ -76,13 +66,22 @@ proxies:
   sni: jamaran.ir
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 10"
+- name: "\U0001F1EB\U0001F1F7 FR 9"
   type: trojan
   server: 51.91.11.29
   port: 80
   udp: true
   password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
   sni: telewebion.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 10"
+  type: trojan
+  server: sgp-3.fuckjdieng.uk
+  port: 50190
+  udp: true
+  password: fa7868f2-a691-4871-890e-5ad4c0feb937
+  sni: sgp-3.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 11"
@@ -94,15 +93,14 @@ proxies:
   sni: kr-s-3.fuckjdieng.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- name: "\U0001F1EF\U0001F1F5 JP 12"
+  server: jp-tk-32.fuckjdieng.uk
   type: trojan
-  server: sgp-3.fuckjdieng.uk
-  port: 50190
-  udp: true
-  password: fa7868f2-a691-4871-890e-5ad4c0feb937
-  sni: sgp-3.fuckjdieng.uk
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 13"
   server: 152.70.74.66
   type: trojan
@@ -120,14 +118,6 @@ proxies:
   sni: 66.42.40.132
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 15"
-  server: jp-tk-32.fuckjdieng.uk
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 50152
-  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -137,16 +127,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1E6 CA 4"
   - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1E9\U0001F1EA DE 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1EB\U0001F1F7 FR 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EF\U0001F1F5 JP 12"
   - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1EF\U0001F1F5 JP 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -158,15 +147,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1E6 CA 4"
   - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1E9\U0001F1EA DE 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1EB\U0001F1F7 FR 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
+  - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EF\U0001F1F5 JP 12"
   - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1EF\U0001F1F5 JP 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
