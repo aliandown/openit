@@ -8,6 +8,14 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: tj2.dalazhi.eu.org
+  type: trojan
+  country: "\U0001F1F3\U0001F1F4NO"
+  port: 443
+  password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: jp-tk-32.fuckjdieng.uk
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -15,7 +23,16 @@ proxies:
   password: 4e9a8a73-a97b-4e19-8240-0115109418c8
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: trojan
+  server: 120.240.48.202
+  port: 55230
+  udp: true
+  password: ncz2TDM8btr6ext@kaj
+  sni: ov01.essmart.co
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -29,7 +46,9 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -38,6 +57,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
