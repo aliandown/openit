@@ -241,37 +241,34 @@ proxies:
   type: ss
   cipher: aes-128-gcm
   password: 6652a517-36da-4db4-9607-326c2db9aa70
-- name: "\U0001F1E8\U0001F1F3 CN 38 TJN"
-  type: trojan
-  server: official.taipeicitygovernment.kiev.ua
-  port: 8443
-  udp: true
-  password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  sni: 66.42.40.132
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 39 SK5"
+- name: "\U0001F1EF\U0001F1F5 JP 38 SK5"
   type: socks5
   server: 138.2.50.155
   port: 54519
-  username: TG
-  password: '@shadownrocket:TG:@shadownrocket'
-- name: "\U0001F1FA\U0001F1F8 US 40 SK5"
+  username: TG:@shadownrocket
+  password: TG:@shadownrocket
+- name: "\U0001F1FA\U0001F1F8 US 39 SK5"
   type: socks5
   server: 155.248.194.239
   port: 48669
   username: alueeeeee
   password: alueeeeee
-- name: "\U0001F1F8\U0001F1EC SG 41 SK5"
+- name: "\U0001F1F8\U0001F1EC SG 40 SK5"
   type: socks5
   server: 172.104.170.64
   port: 43892
   username: alueeeeee
   password: alueeeeee
-- name: "\U0001F1FA\U0001F1F8 US 42 SK5"
+- name: "\U0001F1FA\U0001F1F8 US 41 SK5"
   type: socks5
   server: 20.243.255.134
   port: 1080
+- name: "\U0001F1EF\U0001F1F5 JP 42 SK5"
+  type: socks5
+  server: 138.2.50.155
+  port: 54519
+  username: TG
+  password: '@shadownrocket:TG:@shadownrocket'
 - name: "\U0001F1FA\U0001F1F8 US 43 SK5"
   type: socks5
   server: 20.243.255.134
@@ -280,13 +277,7 @@ proxies:
   type: socks5
   server: 20.243.255.134
   port: 1080
-- name: "\U0001F1EF\U0001F1F5 JP 45 SK5"
-  type: socks5
-  server: 138.2.50.155
-  port: 54519
-  username: TG:@shadownrocket
-  password: TG:@shadownrocket
-- name: "\U0001F1ED\U0001F1F0 HK 46 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 45 TJN"
   type: trojan
   server: azgy001.xibai6.top
   port: 20786
@@ -295,7 +286,7 @@ proxies:
   sni: ssl.ssl12.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 47 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 46 TJN"
   type: trojan
   server: azgy001.xibai6.top
   port: 20790
@@ -304,12 +295,21 @@ proxies:
   sni: ssl.ssl12.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 48 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 47 TJN"
   type: trojan
   server: hk1.microsoftjs.top
   port: 443
   udp: true
   password: be84aea5-9a99-4ca2-94a6-90d0bb1b3759
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 48 TJN"
+  type: trojan
+  server: official.taipeicitygovernment.kiev.ua
+  port: 8443
+  udp: true
+  password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  sni: 66.42.40.132
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 49 TJN"
@@ -698,17 +698,17 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 35 SSS"
   - "\U0001F1E8\U0001F1F3 CN 36 SSS"
   - "\U0001F1E8\U0001F1F3 CN 37 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 38 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 39 SK5"
-  - "\U0001F1FA\U0001F1F8 US 40 SK5"
-  - "\U0001F1F8\U0001F1EC SG 41 SK5"
-  - "\U0001F1FA\U0001F1F8 US 42 SK5"
+  - "\U0001F1EF\U0001F1F5 JP 38 SK5"
+  - "\U0001F1FA\U0001F1F8 US 39 SK5"
+  - "\U0001F1F8\U0001F1EC SG 40 SK5"
+  - "\U0001F1FA\U0001F1F8 US 41 SK5"
+  - "\U0001F1EF\U0001F1F5 JP 42 SK5"
   - "\U0001F1FA\U0001F1F8 US 43 SK5"
   - "\U0001F1FA\U0001F1F8 US 44 SK5"
-  - "\U0001F1EF\U0001F1F5 JP 45 SK5"
+  - "\U0001F1ED\U0001F1F0 HK 45 TJN"
   - "\U0001F1ED\U0001F1F0 HK 46 TJN"
   - "\U0001F1ED\U0001F1F0 HK 47 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 48 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 48 TJN"
   - "\U0001F1ED\U0001F1F0 HK 49 TJN"
   - "\U0001F1ED\U0001F1F0 HK 50 TJN"
   - "\U0001F1ED\U0001F1F0 HK 51 TJN"
@@ -791,17 +791,17 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 35 SSS"
   - "\U0001F1E8\U0001F1F3 CN 36 SSS"
   - "\U0001F1E8\U0001F1F3 CN 37 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 38 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 39 SK5"
-  - "\U0001F1FA\U0001F1F8 US 40 SK5"
-  - "\U0001F1F8\U0001F1EC SG 41 SK5"
-  - "\U0001F1FA\U0001F1F8 US 42 SK5"
+  - "\U0001F1EF\U0001F1F5 JP 38 SK5"
+  - "\U0001F1FA\U0001F1F8 US 39 SK5"
+  - "\U0001F1F8\U0001F1EC SG 40 SK5"
+  - "\U0001F1FA\U0001F1F8 US 41 SK5"
+  - "\U0001F1EF\U0001F1F5 JP 42 SK5"
   - "\U0001F1FA\U0001F1F8 US 43 SK5"
   - "\U0001F1FA\U0001F1F8 US 44 SK5"
-  - "\U0001F1EF\U0001F1F5 JP 45 SK5"
+  - "\U0001F1ED\U0001F1F0 HK 45 TJN"
   - "\U0001F1ED\U0001F1F0 HK 46 TJN"
   - "\U0001F1ED\U0001F1F0 HK 47 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 48 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 48 TJN"
   - "\U0001F1ED\U0001F1F0 HK 49 TJN"
   - "\U0001F1ED\U0001F1F0 HK 50 TJN"
   - "\U0001F1ED\U0001F1F0 HK 51 TJN"
