@@ -13,7 +13,15 @@ proxies:
   port: 48669
   username: alueeeeee
   password: alueeeeee
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: jp-tk-32.fuckjdieng.uk
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -21,27 +29,28 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  type: socks5
-  server: 172.104.170.64
-  port: 43892
-  username: alueeeeee
-  password: alueeeeee
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   type: socks5
   server: 138.2.50.155
   port: 54519
   username: TG:@shadownrocket
   password: TG:@shadownrocket
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  type: socks5
+  server: 172.104.170.64
+  port: 43892
+  username: alueeeeee
+  password: alueeeeee
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -50,8 +59,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
