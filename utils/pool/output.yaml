@@ -239,25 +239,7 @@ proxies:
   type: ss
   cipher: aes-128-gcm
   password: 6652a517-36da-4db4-9607-326c2db9aa70
-- name: "\U0001F1E8\U0001F1F3 CN 38 TJN"
-  type: trojan
-  server: official.taipeicitygovernment.kiev.ua
-  port: 8443
-  udp: true
-  password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
-  sni: 66.42.40.132
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 39 TJN"
-  type: trojan
-  server: azgy001.xibai6.top
-  port: 20789
-  udp: true
-  password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf
-  sni: ssl.ssl12.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 40 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 38 TJN"
   type: trojan
   server: azgy001.xibai6.top
   port: 20786
@@ -266,7 +248,7 @@ proxies:
   sni: ssl.ssl12.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 41 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 39 TJN"
   type: trojan
   server: azgy001.xibai6.top
   port: 20790
@@ -275,7 +257,7 @@ proxies:
   sni: ssl.ssl12.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 42 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 40 TJN"
   type: trojan
   server: hk1.microsoftjs.top
   port: 443
@@ -283,12 +265,30 @@ proxies:
   password: be84aea5-9a99-4ca2-94a6-90d0bb1b3759
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 43 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 41 TJN"
+  type: trojan
+  server: official.taipeicitygovernment.kiev.ua
+  port: 8443
+  udp: true
+  password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  sni: 66.42.40.132
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 42 TJN"
   type: trojan
   server: hk19.microsoftjs.top
   port: 443
   udp: true
   password: be84aea5-9a99-4ca2-94a6-90d0bb1b3759
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 43 TJN"
+  type: trojan
+  server: azgy001.xibai6.top
+  port: 20789
+  udp: true
+  password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf
+  sni: ssl.ssl12.xyz
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1ED\U0001F1F0 HK 44 TJN"
@@ -660,10 +660,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 35 SSS"
   - "\U0001F1E8\U0001F1F3 CN 36 SSS"
   - "\U0001F1E8\U0001F1F3 CN 37 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 38 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 38 TJN"
   - "\U0001F1ED\U0001F1F0 HK 39 TJN"
   - "\U0001F1ED\U0001F1F0 HK 40 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 41 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 41 TJN"
   - "\U0001F1ED\U0001F1F0 HK 42 TJN"
   - "\U0001F1ED\U0001F1F0 HK 43 TJN"
   - "\U0001F1ED\U0001F1F0 HK 44 TJN"
@@ -746,10 +746,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 35 SSS"
   - "\U0001F1E8\U0001F1F3 CN 36 SSS"
   - "\U0001F1E8\U0001F1F3 CN 37 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 38 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 38 TJN"
   - "\U0001F1ED\U0001F1F0 HK 39 TJN"
   - "\U0001F1ED\U0001F1F0 HK 40 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 41 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 41 TJN"
   - "\U0001F1ED\U0001F1F0 HK 42 TJN"
   - "\U0001F1ED\U0001F1F0 HK 43 TJN"
   - "\U0001F1ED\U0001F1F0 HK 44 TJN"
