@@ -1,21 +1,40 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1"
-  server: kr05.wangxd.life
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 170-187-134-190.ipv4.rush.ml
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 2"
-  server: 152.70.74.66
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: jp-tk-32.fuckjdieng.uk
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: ssr
+  server: hk4.vfun.icu
+  port: 446
+  password: vyunme
+  cipher: aes-256-cfb
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: ab93117422.jd.hk
+  protocol-param: 17422:TTp0SX
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  type: trojan
+  server: 43.207.172.9
+  port: 443
+  udp: true
+  password: 7fb22fe6-1d53-4e3d-ab24-9a92aa44e6f5
+  sni: 20-212-60-88.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   type: ssr
   server: nk7.boom.skin
   port: 17000
@@ -25,17 +44,25 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: download.windowsupdate.com
   protocol-param: 476637:foU1An
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   type: ssr
-  server: nk6.boom.skin
-  port: 16000
+  server: nk7.boom.skin
+  port: 17000
   password: Uk92CS
   cipher: aes-256-cfb
   obfs: http_simple
   protocol: auth_aes128_sha1
   obfs-param: download.windowsupdate.com
   protocol-param: 476637:foU1An
-- name: "\U0001F1FB\U0001F1F3 VN 5"
+- name: "\U0001F1EE\U0001F1F3 IN 7"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FB\U0001F1F3 VN 8"
   type: trojan
   server: 0001.hn.genzpn.com
   port: 443
@@ -48,21 +75,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
