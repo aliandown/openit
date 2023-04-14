@@ -1,5 +1,21 @@
 proxies:
-- name: "\U0001F1EE\U0001F1F3 IN 1"
+- name: "\U0001F1F0\U0001F1F7 KR 1"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: jp-tk-32.fuckjdieng.uk
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 3"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,41 +23,21 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  type: socks5
-  server: 34.96.222.111
-  port: 18831
-  username: GmJqPm2eui
-  password: dan80gdWMN
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  type: socks5
-  server: 34.150.117.254
-  port: 28943
-  username: UcXomwcjRD
-  password: Npym4YTRDP
-- name: "\U0001F1E8\U0001F1F3 TW 4"
-  type: socks5
-  server: 130.211.243.5
-  port: 27831
-  username: Np5tn030QJ
-  password: WKOxxQI6oR
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1F0\U0001F1F7 KR 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1F0\U0001F1F7 KR 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
