@@ -1,10 +1,10 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170-187-134-190.ipv4.rush.ml
+- name: "\U0001F1EF\U0001F1F5 JP 1"
+  server: jp-tk-32.fuckjdieng.uk
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 2"
@@ -19,7 +19,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EE\U0001F1F3 IN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -27,7 +27,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EE\U0001F1F3 IN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
