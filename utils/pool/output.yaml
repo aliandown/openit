@@ -361,18 +361,15 @@ proxies:
   password: 9f0ae767-0156-460c-acd6-67cb3000faf1
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 52 TJN"
-  type: trojan
-  server: zzus01.gutingting.com
-  port: 20220
-  udp: true
-  password: 55ec6d9f-5414-44b5-8078-d2a8f88f808c
-  sni: zzus01.gutingting.com
-  skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  type: ss
+  server: 14.29.124.168
+  port: 25266
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
 - name: "\U0001F1FA\U0001F1F8 US 53 TJN"
   type: trojan
-  server: 170-187-134-190.ipv4.rush.ml
+  server: 170.187.134.190
   port: 8443
   udp: true
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
@@ -381,24 +378,10 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 54 SSS"
   type: ss
   server: 14.29.124.168
-  port: 25266
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1FA\U0001F1F8 US 55 TJN"
-  type: trojan
-  server: 170.187.134.190
-  port: 8443
-  udp: true
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 56 SSS"
-  type: ss
-  server: 14.29.124.168
   port: 24002
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 57 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 55 TJN"
   type: trojan
   server: sa.steamdownload.top
   port: 36654
@@ -407,30 +390,47 @@ proxies:
   sni: dataus.steamdownload.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 58 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 56 SSS"
   type: ss
   server: 14.29.124.168
   port: 24001
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 59 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 57 SSS"
   type: ss
   server: 14.29.124.168
   port: 25219
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 60 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 58 SSS"
   type: ss
   server: 14.29.124.168
   port: 25222
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 61 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 59 SSS"
   type: ss
   server: 14.29.124.168
   port: 25252
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
+- name: "\U0001F1FA\U0001F1F8 US 60 TJN"
+  type: trojan
+  server: zzus01.gutingting.com
+  port: 20220
+  udp: true
+  password: 55ec6d9f-5414-44b5-8078-d2a8f88f808c
+  sni: zzus01.gutingting.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 61 TJN"
+  type: trojan
+  server: 170-187-134-190.ipv4.rush.ml
+  port: 8443
+  udp: true
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -486,16 +486,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 49 TJN"
   - "\U0001F1EF\U0001F1F5 JP 50 TJN"
   - "\U0001F1F0\U0001F1F7 KR 51 TJN"
-  - "\U0001F1FA\U0001F1F8 US 52 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
   - "\U0001F1FA\U0001F1F8 US 53 TJN"
   - "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  - "\U0001F1FA\U0001F1F8 US 55 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 55 TJN"
   - "\U0001F1E8\U0001F1F3 CN 56 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 57 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
   - "\U0001F1E8\U0001F1F3 CN 58 SSS"
   - "\U0001F1E8\U0001F1F3 CN 59 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 60 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 61 SSS"
+  - "\U0001F1FA\U0001F1F8 US 60 TJN"
+  - "\U0001F1FA\U0001F1F8 US 61 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -553,15 +553,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 49 TJN"
   - "\U0001F1EF\U0001F1F5 JP 50 TJN"
   - "\U0001F1F0\U0001F1F7 KR 51 TJN"
-  - "\U0001F1FA\U0001F1F8 US 52 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
   - "\U0001F1FA\U0001F1F8 US 53 TJN"
   - "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  - "\U0001F1FA\U0001F1F8 US 55 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 55 TJN"
   - "\U0001F1E8\U0001F1F3 CN 56 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 57 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
   - "\U0001F1E8\U0001F1F3 CN 58 SSS"
   - "\U0001F1E8\U0001F1F3 CN 59 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 60 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 61 SSS"
+  - "\U0001F1FA\U0001F1F8 US 60 TJN"
+  - "\U0001F1FA\U0001F1F8 US 61 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
