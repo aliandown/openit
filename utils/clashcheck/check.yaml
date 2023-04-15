@@ -18,15 +18,21 @@ proxies:
   type: trojan
   password: 683ea3d3-eda1-42ba-ac7c-71a222821ff6
   sni: hedy.taherfix1.site
-- name: "\U0001F1F0\U0001F1F7 KR 4"
-  server: kr05.wangxd.life
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: zzus01.gutingting.com
+  port: 20220
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  password: ac02ce33-c478-4682-b26d-6b05223a2d89
+  sni: zzus01.gutingting.com
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 5"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: zzjp01.gutingting.com
+  port: 20220
+  type: trojan
+  password: ac02ce33-c478-4682-b26d-6b05223a2d89
+  sni: zzjp01.gutingting.com
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -41,8 +47,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -52,7 +59,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
