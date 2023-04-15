@@ -1,22 +1,23 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us2.trojanvh.xyz
-  port: 80
+  server: 170.187.134.190
+  port: 8443
   type: trojan
-  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  sni: us2.trojanvh.xyz
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
+  skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: hedy.taherfix1.site
   port: 443
   type: trojan
   password: 683ea3d3-eda1-42ba-ac7c-71a222821ff6
   sni: hedy.taherfix1.site
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hk12.microsoftjs.top
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: us2.trojanvh.xyz
+  port: 80
   type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
+  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  sni: us2.trojanvh.xyz
 - name: "\U0001F1F0\U0001F1F7 KR 4"
   server: kr05.wangxd.life
   type: trojan
@@ -25,46 +26,7 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hk2.microsoftjs.top
-  port: 80
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: hk14.microsoftjs.top
-  port: 443
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: hk14.microsoftjs.top
-  type: trojan
-  port: 443
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 8"
-  server: hk4.microsoftjs.top
-  port: 443
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  server: hk10.microsoftjs.top
-  port: 443
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1FA\U0001F1F8 US 10"
-  type: trojan
-  server: 51.81.82.15
-  port: 443
-  udp: true
-  password: fe432450-d881-11ed-bb61-1239d0255272
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 11"
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -72,7 +34,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- name: "\U0001F1F8\U0001F1EC SG 6"
   type: trojan
   server: o2.114188.xyz
   port: 10021
@@ -81,15 +43,7 @@ proxies:
   sni: o2.114188.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 13"
-  type: trojan
-  server: anycast.okvpn.cc
-  port: 55210
-  udp: true
-  password: 2e9e038e-e1d6-4e39-b242-3382758d35ad
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 14"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   type: trojan
   server: anycast.okvpn.cc
   port: 55213
@@ -103,18 +57,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -123,17 +70,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
