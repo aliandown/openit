@@ -1,23 +1,23 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   server: 170.187.134.190
-  port: 8443
   type: trojan
+  port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: hedy.taherfix1.site
-  port: 443
-  type: trojan
-  password: 683ea3d3-eda1-42ba-ac7c-71a222821ff6
-  sni: hedy.taherfix1.site
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: us2.trojanvh.xyz
   port: 80
   type: trojan
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   sni: us2.trojanvh.xyz
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: hedy.taherfix1.site
+  port: 443
+  type: trojan
+  password: 683ea3d3-eda1-42ba-ac7c-71a222821ff6
+  sni: hedy.taherfix1.site
 - name: "\U0001F1F0\U0001F1F7 KR 4"
   server: kr05.wangxd.life
   type: trojan
@@ -34,23 +34,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 6"
-  type: trojan
-  server: o2.114188.xyz
-  port: 10021
-  udp: true
-  password: d07433e2-8197-44e7-a44b-929dff98bdb7
-  sni: o2.114188.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  type: trojan
-  server: anycast.okvpn.cc
-  port: 55213
-  udp: true
-  password: 2e9e038e-e1d6-4e39-b242-3382758d35ad
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -60,8 +43,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -73,7 +54,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
