@@ -12,32 +12,32 @@ proxies:
   password: 683ea3d3-eda1-42ba-ac7c-71a222821ff6
   sni: hedy.taherfix1.site
 - name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hk12.microsoftjs.top
-  port: 443
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: hk14.microsoftjs.top
-  port: 443
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hk4.microsoftjs.top
-  port: 443
-  type: trojan
-  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
-  sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hk10.microsoftjs.top
   port: 443
   type: trojan
   password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
   sni: tls.microsoftjs.top
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: hk12.microsoftjs.top
+  port: 443
+  type: trojan
+  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
+  sni: tls.microsoftjs.top
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   server: hk2.microsoftjs.top
   port: 80
+  type: trojan
+  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
+  sni: tls.microsoftjs.top
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: hk14.microsoftjs.top
+  port: 443
+  type: trojan
+  password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
+  sni: tls.microsoftjs.top
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: hk4.microsoftjs.top
+  port: 443
   type: trojan
   password: 932fb8f8-e1ca-4339-9d71-2d74757fca41
   sni: tls.microsoftjs.top
@@ -64,6 +64,15 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1F8\U0001F1EC SG 11"
+  type: trojan
+  server: o2.114188.xyz
+  port: 10021
+  udp: true
+  password: d07433e2-8197-44e7-a44b-929dff98bdb7
+  sni: o2.114188.xyz
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -71,13 +80,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -87,12 +97,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
