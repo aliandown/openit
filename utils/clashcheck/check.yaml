@@ -7,7 +7,15 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: rn.blowm1k.club
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 14978
+  password: f5mpynwukL
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 3"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -20,7 +28,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -28,6 +37,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
