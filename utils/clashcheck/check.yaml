@@ -16,19 +16,12 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: aujs.stablize.top
   port: 443
   type: trojan
   password: 85f0aed5-6694-4194-90d3-9b33352e0791
   sni: aujs.stablize.top
-- name: "\U0001F1EB\U0001F1EE FI 5"
+- name: "\U0001F1EB\U0001F1EE FI 4"
   type: http
   server: fn.secureconnect.me
   port: 993
@@ -37,7 +30,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -46,7 +39,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 7"
+  name: "\U0001F1E8\U0001F1F3 CN 6"
   server: cmres.standpro.co
   port: 563
   protocol: auth_aes128_md5
@@ -61,10 +54,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EB\U0001F1EE FI 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EB\U0001F1EE FI 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -74,9 +66,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EB\U0001F1EE FI 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EB\U0001F1EE FI 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
