@@ -1,11 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: rnrn3g.555456.xyz
-  port: 443
-  type: trojan
-  password: 17c6c64e-eb3c-44ae-98f8-d469713f91f1
-  sni: rnrn3g.555456.xyz
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us2.trojanvh.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -13,14 +7,19 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: jp-tk-32.fuckjdieng.uk
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: rnrn3g.555456.xyz
+  port: 443
   type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 50152
-  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  password: 17c6c64e-eb3c-44ae-98f8-d469713f91f1
+  sni: rnrn3g.555456.xyz
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 170.187.134.190
+  port: 8443
+  type: trojan
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 4"
   server: kr05.wangxd.life
   type: trojan
@@ -29,26 +28,26 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1F8\U0001F1EC SG 5"
   server: kr.stablize.top
   port: 443
   type: trojan
   password: ed5a1734-aa35-4c79-bda2-6bf319c66cf7
   sni: kr.stablize.top
-- name: "\U0001F1F8\U0001F1EC SG 6"
-  server: kr.stablize.top
-  port: 443
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  server: 152.70.74.66
   type: trojan
-  password: ed5a1734-aa35-4c79-bda2-6bf319c66cf7
-  sni: kr.stablize.top
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  type: trojan
-  server: fscsg.fscloud123456789.com
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: ed19b239-8e49-4b82-979a-24b84fa7b173
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  network: tcp
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: kr.stablize.top
+  port: 443
+  type: trojan
+  password: ed5a1734-aa35-4c79-bda2-6bf319c66cf7
+  sni: kr.stablize.top
 - name: "\U0001F1EB\U0001F1EE FI 8"
   type: http
   server: fn.secureconnect.me
@@ -58,20 +57,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 9"
-  server: 152.70.74.66
+- name: "\U0001F1FA\U0001F1F8 US 9"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: jp.stablize.top
   port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  udp: true
+  password: 5962fe8f-d510-4046-a21e-e1acede672e6
   skip-cert-verify: true
-  udp: true
-- type: trojan
-  name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: fscuk.fscloud123456789.com
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  type: trojan
+  server: cajs.stablize.top
   port: 443
-  password: ed19b239-8e49-4b82-979a-24b84fa7b173
   udp: true
+  password: 0282f7e0-f452-4298-a985-0a3984919128
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -80,14 +79,14 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EB\U0001F1EE FI 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -96,13 +95,13 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EB\U0001F1EE FI 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
