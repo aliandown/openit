@@ -6,7 +6,13 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 2"
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: lond.inbarayeman.xyz
+  port: 443
+  type: trojan
+  password: fd3677a5-b5ba-4991-b346-b5887b879d84
+  sni: lond.inbarayeman.xyz
+- name: "\U0001F1EE\U0001F1F3 IN 3"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -19,7 +25,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -27,6 +34,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
