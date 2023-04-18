@@ -15,12 +15,12 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: jp-csjc.syjd.xyz
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 170.187.134.190
   type: trojan
-  password: 87bd6efd-2fb5-4920-852d-921d7c29f916
-  sni: jp-csjc.syjd.xyz
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 HK 4"
   server: aws-hk01.syjd.xyz
@@ -43,7 +43,14 @@ proxies:
   password: 87bd6efd-2fb5-4920-852d-921d7c29f916
   sni: microsoft-hk02.syjd.xyz
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1F8\U0001F1EC SG 7"
+  server: sg-csjc.syjd.xyz
+  port: 443
+  type: trojan
+  password: 87bd6efd-2fb5-4920-852d-921d7c29f916
+  sni: sg-csjc.syjd.xyz
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -51,17 +58,27 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 9"
+  type: trojan
+  server: usajs.stablize.top
+  port: 443
+  udp: true
+  password: 71da89b8-04e4-46f3-ab21-3df05240e171
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -70,10 +87,12 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
