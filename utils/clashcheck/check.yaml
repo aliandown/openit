@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: rnrn3g.555456.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 17c6c64e-eb3c-44ae-98f8-d469713f91f1
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us2.trojanvh.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 80
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: rnrn3g.555456.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 17c6c64e-eb3c-44ae-98f8-d469713f91f1
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
@@ -22,50 +22,35 @@ proxies:
   password: 87bd6efd-2fb5-4920-852d-921d7c29f916
   sni: jp-csjc.syjd.xyz
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: aws-hk01.syjd.xyz
   port: 7047
   type: trojan
   password: 87bd6efd-2fb5-4920-852d-921d7c29f916
   sni: aws-hk01.syjd.xyz
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1F8\U0001F1EC SG 5"
   server: sg-csjc.syjd.xyz
   port: 443
   type: trojan
   password: 87bd6efd-2fb5-4920-852d-921d7c29f916
   sni: sg-csjc.syjd.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   server: microsoft-hk02.syjd.xyz
   port: 443
   type: trojan
   password: 87bd6efd-2fb5-4920-852d-921d7c29f916
   sni: microsoft-hk02.syjd.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: microsoft-hk03.syjd.xyz
   port: 443
   type: trojan
   password: 87bd6efd-2fb5-4920-852d-921d7c29f916
   sni: microsoft-hk03.syjd.xyz
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 9"
-  type: trojan
-  server: fscjp.fscloud123456789.com
-  port: 443
-  udp: true
-  password: 7dc3a0b7-0930-42da-a6be-2a8623cdcfb4
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 10"
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -73,6 +58,22 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: jp-tk-32.fuckjdieng.uk
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 50152
+  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  type: trojan
+  server: aujs.stablize.top
+  port: 443
+  udp: true
+  password: 71da89b8-04e4-46f3-ab21-3df05240e171
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -80,13 +81,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -96,12 +97,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
