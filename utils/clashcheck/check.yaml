@@ -1,5 +1,13 @@
 proxies:
-- name: "\U0001F1EE\U0001F1F3 IN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: rnrn3g.555456.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 17c6c64e-eb3c-44ae-98f8-d469713f91f1
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 2"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -8,7 +16,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - type: trojan
-  name: "\U0001F1EB\U0001F1F7 FR 2"
+  name: "\U0001F1EB\U0001F1F7 FR 3"
   server: 54.37.185.148
   port: 32894
   password: HchlVCfnXB
@@ -16,19 +24,33 @@ proxies:
   skip-cert-verify: true
   sni: fararu.com
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ssr
+  server: sql.accessconnect.cc
+  port: 1114
+  password: di15PV
+  cipher: aes-256-cfb
+  obfs: tls1.2_ticket_auth
+  protocol: auth_aes128_md5
+  obfs-param: ebd35180892.www.gov.hk
+  protocol-param: 180892:fQxekF
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
