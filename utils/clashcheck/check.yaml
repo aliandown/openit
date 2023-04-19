@@ -16,31 +16,12 @@ proxies:
   skip-cert-verify: true
   sni: fararu.com
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  type: ssr
-  server: sql.accessconnect.cc
-  port: 1114
-  password: di15PV
-  cipher: aes-256-cfb
-  obfs: tls1.2_ticket_auth
-  protocol: auth_aes128_md5
-  obfs-param: ebd35180892.www.gov.hk
-  protocol-param: 180892:fQxekF
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EE\U0001F1F3 IN 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,7 +30,5 @@ proxy-groups:
   - automatic
   - "\U0001F1EE\U0001F1F3 IN 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
