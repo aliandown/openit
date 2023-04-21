@@ -1,34 +1,34 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
-  server: 163.123.192.36
-  port: 443
-  type: trojan
-  password: 3ed05c55-38ad-4b86-827a-ca263c457eda
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
-  server: 163.123.192.34
-  port: 443
-  type: trojan
-  password: 3ed05c55-38ad-4b86-827a-ca263c457eda
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
-  server: 163.123.192.35
-  port: 443
-  type: trojan
-  password: 3ed05c55-38ad-4b86-827a-ca263c457eda
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 4 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 1 TJN"
   server: awsjp3.untilmu.com
   port: 443
   type: trojan
   password: ae3a5c1a-d497-4f4a-b91d-36f051fcea12
   sni: awsjp3.untilmu.com
-- name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 2 TJN"
   server: tk3.021122.xyz
   port: 35666
   type: trojan
   password: 6YXVEzkR40
   sni: tk3.021122.xyz
+- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
+  server: 163.123.192.36
+  port: 443
+  type: trojan
+  password: 3ed05c55-38ad-4b86-827a-ca263c457eda
+  sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
+  server: 163.123.192.34
+  port: 443
+  type: trojan
+  password: 3ed05c55-38ad-4b86-827a-ca263c457eda
+  sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
+  server: 163.123.192.35
+  port: 443
+  type: trojan
+  password: 3ed05c55-38ad-4b86-827a-ca263c457eda
+  sni: 16-163-218-240.nhost.00cdn.com
 - name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
   server: 112.30.145.82
   port: 37906
@@ -1006,7 +1006,7 @@ proxies:
   password: e80ce621-ace4-4a45-ba0f-6a3c10293564
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 147 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 147 TJN"
   type: trojan
   server: jp.stablize.top
   port: 443
@@ -1014,7 +1014,7 @@ proxies:
   password: 3ae74123-53b2-48fe-9677-09fcf8520ca7
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 148 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 148 TJN"
   type: trojan
   server: aujs.stablize.top
   port: 443
@@ -1030,7 +1030,7 @@ proxies:
   password: '4478'
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 150 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 150 TJN"
   type: trojan
   server: usa.stablize.top
   port: 443
@@ -1067,11 +1067,11 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
   - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1E8\U0001F1F3 CN 8 SSS"
@@ -1213,10 +1213,10 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 144 TJN"
   - "\U0001F1EE\U0001F1F3 IN 145 TJN"
   - "\U0001F1F8\U0001F1EC SG 146 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 147 TJN"
-  - "\U0001F1F8\U0001F1EC SG 148 TJN"
+  - "\U0001F1F8\U0001F1EC SG 147 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 148 TJN"
   - "\U0001F1E8\U0001F1ED CH 149 TJN"
-  - "\U0001F1F8\U0001F1EC SG 150 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 150 TJN"
   - "\U0001F1E8\U0001F1F3 CN 151 SSR"
   - "\U0001F1EF\U0001F1F5 JP 152 TJN"
   - "\U0001F1E8\U0001F1F3 CN 153 SSR"
@@ -1226,11 +1226,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1 TJN"
-  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
   - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1E8\U0001F1F3 CN 8 SSS"
@@ -1372,10 +1372,10 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 144 TJN"
   - "\U0001F1EE\U0001F1F3 IN 145 TJN"
   - "\U0001F1F8\U0001F1EC SG 146 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 147 TJN"
-  - "\U0001F1F8\U0001F1EC SG 148 TJN"
+  - "\U0001F1F8\U0001F1EC SG 147 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 148 TJN"
   - "\U0001F1E8\U0001F1ED CH 149 TJN"
-  - "\U0001F1F8\U0001F1EC SG 150 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 150 TJN"
   - "\U0001F1E8\U0001F1F3 CN 151 SSR"
   - "\U0001F1EF\U0001F1F5 JP 152 TJN"
   - "\U0001F1E8\U0001F1F3 CN 153 SSR"
