@@ -1,32 +1,30 @@
 proxies:
 - name: "\U0001F1EE\U0001F1F3 IN 1"
   server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
   port: 443
+  type: trojan
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: kr05.wangxd.life
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
+  server: aujs.stablize.top
+  port: 443
   udp: true
+  password: 26775186-bb86-4db0-a650-ceec31095b68
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 3"
-  type: socks5
-  server: 34.143.172.167
-  port: 3145
-  username: QIHOhn42pF
-  password: OrC6EmqGt8
-- name: "\U0001F1F8\U0001F1EC SG 4"
   type: socks5
   server: 34.142.128.151
   port: 5283
   username: 20ckvZqs71
   password: ouvxjLv6iz
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  type: socks5
+  server: 34.143.172.167
+  port: 3145
+  username: QIHOhn42pF
+  password: OrC6EmqGt8
 - name: "\U0001F1F8\U0001F1EC SG 5"
   type: socks5
   server: 34.143.194.3
@@ -38,7 +36,7 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
@@ -49,7 +47,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
