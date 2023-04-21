@@ -1,43 +1,37 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 163.123.192.34
-  port: 443
-  type: trojan
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 163.123.192.36
   port: 443
   type: trojan
   password: be8b8f45-a290-4405-8699-ffeb07f3ee24
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: aws-jp.aikun.online
   port: 443
   type: trojan
   password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
   sni: aws-jp.aikun.online
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: hk1.cnamazon.sbs
+  port: 443
+  type: trojan
+  password: 767758f5-2808-475c-8c72-1c103d416236
+  sni: tls.cnamazon.sbs
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: 16.162.44.241
+  port: 443
+  type: trojan
+  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
+  sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: aws-hk01.aikun.online
   port: 443
   type: trojan
   password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
   sni: aws-hk01.aikun.online
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hk1.cnamazon.sbs
-  port: 443
-  type: trojan
-  password: 767758f5-2808-475c-8c72-1c103d416236
-  sni: tls.cnamazon.sbs
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: 16.162.44.241
-  port: 443
-  type: trojan
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1EB\U0001F1F7 FR 7"
+- name: "\U0001F1EB\U0001F1F7 FR 6"
   type: trojan
   server: a1.veryfastnet1.tk
   port: 32894
@@ -45,7 +39,7 @@ proxies:
   password: HchlVCfnXB
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 8"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   type: trojan
   server: tk3.021122.xyz
   port: 35666
@@ -54,7 +48,7 @@ proxies:
   sni: tk3.021122.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 9"
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.70.74.66
   port: 443
   type: trojan
@@ -65,14 +59,13 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -80,13 +73,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
