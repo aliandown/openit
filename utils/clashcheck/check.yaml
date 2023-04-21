@@ -1,23 +1,23 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1"
-  server: kr05.wangxd.life
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 3052
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
+  server: aujs.stablize.top
+  port: 443
   udp: true
+  password: 26775186-bb86-4db0-a650-ceec31095b68
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
