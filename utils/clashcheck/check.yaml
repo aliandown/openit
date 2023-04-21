@@ -1,10 +1,10 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: rnrn3g.555456.xyz
+- name: "\U0001F1EE\U0001F1F3 IN 1"
+  server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 17c6c64e-eb3c-44ae-98f8-d469713f91f1
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 2"
@@ -15,39 +15,43 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: jp-tk-32.fuckjdieng.uk
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 50152
-  password: 4e9a8a73-a97b-4e19-8240-0115109418c8
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: kr.stablize.top
-  port: 443
-  udp: true
-  password: 6b3713f0-1249-4e9d-b405-2936579fd31d
-  skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  type: socks5
+  server: 34.143.172.167
+  port: 3145
+  username: QIHOhn42pF
+  password: OrC6EmqGt8
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  type: socks5
+  server: 34.142.128.151
+  port: 5283
+  username: 20ckvZqs71
+  password: ouvxjLv6iz
+- name: "\U0001F1F8\U0001F1EC SG 5"
+  type: socks5
+  server: 34.143.194.3
+  port: 4654
+  username: Ov89GVNwnb
+  password: MCum4Gl8ao
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1F3 IN 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1F3 IN 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
