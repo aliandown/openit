@@ -5,14 +5,12 @@ proxies:
   type: trojan
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  type: trojan
-  server: kr.stablize.top
-  port: 443
-  udp: true
-  password: 6b3713f0-1249-4e9d-b405-2936579fd31d
-  skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 2"
+  type: socks5
+  server: 34.142.128.151
+  port: 5283
+  username: 20ckvZqs71
+  password: ouvxjLv6iz
 - name: "\U0001F1F8\U0001F1EC SG 3"
   type: socks5
   server: 34.143.172.167
@@ -25,21 +23,19 @@ proxies:
   port: 4654
   username: Ov89GVNwnb
   password: MCum4Gl8ao
-- name: "\U0001F1F8\U0001F1EC SG 5"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: socks5
-  server: 34.142.128.151
-  port: 5283
-  username: 20ckvZqs71
-  password: ouvxjLv6iz
+  server: 47.243.95.228
+  port: 10080
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -47,9 +43,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EE\U0001F1F3 IN 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
