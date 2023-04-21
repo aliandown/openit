@@ -1,28 +1,28 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1 TJN"
-  server: awsjp3.untilmu.com
-  port: 443
-  type: trojan
-  password: ae3a5c1a-d497-4f4a-b91d-36f051fcea12
-  sni: awsjp3.untilmu.com
-- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 1 TJN"
   server: 163.123.192.36
   port: 443
   type: trojan
   password: 3ed05c55-38ad-4b86-827a-ca263c457eda
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
   server: 163.123.192.34
   port: 443
   type: trojan
   password: 3ed05c55-38ad-4b86-827a-ca263c457eda
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
   server: 163.123.192.35
   port: 443
   type: trojan
   password: 3ed05c55-38ad-4b86-827a-ca263c457eda
   sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 4 TJN"
+  server: awsjp3.untilmu.com
+  port: 443
+  type: trojan
+  password: ae3a5c1a-d497-4f4a-b91d-36f051fcea12
+  sni: awsjp3.untilmu.com
 - name: "\U0001F1E8\U0001F1F3 CN 5 SSS"
   server: 36.137.106.45
   type: ss
@@ -69,7 +69,7 @@ proxies:
   password: 4e9a8a73-a97b-4e19-8240-0115109418c8
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 11 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 11 TJN"
   server: jp.mjt001.com
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -1098,17 +1098,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1F8\U0001F1EC SG 6 TJN"
   - "\U0001F1EF\U0001F1F5 JP 7 TJN"
   - "\U0001F1ED\U0001F1F0 HK 8 TJN"
   - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1EF\U0001F1F5 JP 10 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 11 TJN"
+  - "\U0001F1F8\U0001F1EC SG 11 TJN"
   - "\U0001F1FA\U0001F1F8 US 12 TJN"
   - "\U0001F1FA\U0001F1F8 US 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 TJN"
@@ -1262,17 +1262,17 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
+  - "\U0001F1FA\U0001F1F8 US 1 TJN"
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1F8\U0001F1EC SG 6 TJN"
   - "\U0001F1EF\U0001F1F5 JP 7 TJN"
   - "\U0001F1ED\U0001F1F0 HK 8 TJN"
   - "\U0001F1FA\U0001F1F8 US 9 TJN"
   - "\U0001F1EF\U0001F1F5 JP 10 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 11 TJN"
+  - "\U0001F1F8\U0001F1EC SG 11 TJN"
   - "\U0001F1FA\U0001F1F8 US 12 TJN"
   - "\U0001F1FA\U0001F1F8 US 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 TJN"
