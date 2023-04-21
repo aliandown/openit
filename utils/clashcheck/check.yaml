@@ -1,64 +1,57 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170.187.134.190
-  port: 8443
+  server: 163.123.192.36
+  port: 443
   type: trojan
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
+  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
+  sni: 16-163-218-240.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: 163.123.192.34
   port: 443
   type: trojan
   password: be8b8f45-a290-4405-8699-ffeb07f3ee24
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 163.123.192.36
-  port: 443
-  type: trojan
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: aws-jp.aikun.online
   port: 443
   type: trojan
   password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
   sni: aws-jp.aikun.online
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: awsjp1.untilmu.com
-  port: 443
-  type: trojan
-  password: 968720c1-de02-4f39-b259-036075c3cba0
-  sni: awsjp1.untilmu.com
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: 16.162.44.241
-  port: 443
-  type: trojan
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: hk1.cnamazon.sbs
   port: 443
   type: trojan
   password: 767758f5-2808-475c-8c72-1c103d416236
   sni: tls.cnamazon.sbs
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: 16.162.44.241
+  port: 443
+  type: trojan
+  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
+  sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   server: aws-hk01.aikun.online
   port: 443
   type: trojan
   password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
   sni: aws-hk01.aikun.online
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 9"
+- name: "\U0001F1F8\U0001F1EC SG 7"
   server: aws-sg.aikun.online
   port: 443
   type: trojan
   password: f8e4d8e3-36b5-42b1-af33-f0e1719976b4
   sni: aws-sg.aikun.online
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 10"
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 170.187.134.190
+  port: 8443
+  type: trojan
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
+  skip-cert-verify: true
+- name: "\U0001F1EB\U0001F1F7 FR 9"
   type: trojan
   server: a1.veryfastnet1.tk
   port: 32894
@@ -66,7 +59,7 @@ proxies:
   password: HchlVCfnXB
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 11"
+- name: "\U0001F1EF\U0001F1F5 JP 10"
   type: trojan
   server: tk3.021122.xyz
   port: 35666
@@ -75,7 +68,7 @@ proxies:
   sni: tk3.021122.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 12"
+- name: "\U0001F1EE\U0001F1F3 IN 11"
   server: 152.70.74.66
   port: 443
   type: trojan
@@ -87,16 +80,15 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -105,15 +97,14 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
