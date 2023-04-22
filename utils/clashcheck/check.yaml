@@ -5,14 +5,12 @@ proxies:
   type: trojan
   password: be8b8f45-a290-4405-8699-ffeb07f3ee24
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 HK 2"
+- name: "\U0001F1F9\U0001F1F7 TR 2"
+  server: 45.136.5.2
+  port: 443
   type: trojan
-  server: fc.hk04.fp-dns.xyz
-  port: 2087
-  udp: true
-  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
-  skip-cert-verify: true
-  network: tcp
+  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
+  sni: 16-163-218-240.nhost.00cdn.com
 - name: "\U0001F1E8\U0001F1F3 HK 3"
   type: trojan
   server: fc.hk03.fp-dns.xyz
@@ -21,12 +19,14 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 4"
-  server: 45.136.5.2
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   type: trojan
-  password: be8b8f45-a290-4405-8699-ffeb07f3ee24
-  sni: 16-163-218-240.nhost.00cdn.com
+  server: fc.hk04.fp-dns.xyz
+  port: 2087
+  udp: true
+  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 5"
   type: trojan
   server: 152.70.74.66
@@ -40,9 +40,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1F9\U0001F1F7 TR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1F9\U0001F1F7 TR 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -51,9 +51,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1F9\U0001F1F7 TR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1F9\U0001F1F7 TR 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
