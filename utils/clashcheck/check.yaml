@@ -7,13 +7,11 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1E9\U0001F1EA DE 2"
-  type: trojan
   server: mahsa2081p5k.mahsaaminivpn.com
   port: 23706
-  udp: true
+  type: trojan
   password: 41oia27jYy
-  skip-cert-verify: true
-  network: tcp
+  sni: mahsa2081p5k.mahsaaminivpn.com
 - name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
   server: 54.37.185.148
@@ -24,10 +22,12 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 4"
   server: fc.hk03.fp-dns.xyz
-  port: 2087
   type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 2087
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
-  sni: fc.hk03.fp-dns.xyz
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 5"
   server: fc.hk04.fp-dns.xyz
   type: trojan
@@ -52,18 +52,18 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 8"
+- name: "\U0001F1EE\U0001F1F3 IN 8"
+  server: 152.70.74.66
   type: trojan
-  server: iplc.sh.to.us.fp-dns.xyz
-  port: 34439
-  udp: true
-  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 9"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
-  port: 34438
+  port: 34439
   udp: true
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
@@ -79,7 +79,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -94,7 +94,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
