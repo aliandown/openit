@@ -31,7 +31,7 @@ proxies:
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
-  port: 34437
+  port: 34436
   udp: true
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
@@ -39,12 +39,20 @@ proxies:
 - name: "\U0001F1EF\U0001F1F5 JP 6"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
-  port: 34436
+  port: 34437
   udp: true
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 7"
+  type: trojan
+  server: iplc.sh.to.us.fp-dns.xyz
+  port: 34438
+  udp: true
+  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
   port: 34439
@@ -63,6 +71,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -76,5 +85,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
