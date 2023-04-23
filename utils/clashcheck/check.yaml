@@ -1,11 +1,5 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
-  server: a1.veryfastnet1.tk
-  type: trojan
-  port: 32894
-  password: HchlVCfnXB
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
+- name: "\U0001F1E8\U0001F1F3 HK 1"
   server: fc.hk03.fp-dns.xyz
   type: trojan
   country: "\U0001F1EC\U0001F1E7GB"
@@ -13,7 +7,7 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 3"
+- name: "\U0001F1E8\U0001F1F3 HK 2"
   server: fc.hk04.fp-dns.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -21,10 +15,16 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: a1.veryfastnet1.tk
+  type: trojan
+  port: 32894
+  password: HchlVCfnXB
+  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
-  port: 34436
+  port: 34437
   udp: true
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
@@ -32,7 +32,7 @@ proxies:
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
-  port: 34437
+  port: 34436
   udp: true
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
@@ -65,9 +65,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
@@ -79,9 +79,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
