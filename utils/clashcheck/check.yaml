@@ -1,5 +1,13 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
+- name: "\U0001F1E8\U0001F1F3 HK 1"
+  type: trojan
+  server: fc.hk04.fp-dns.xyz
+  port: 2087
+  udp: true
+  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 2"
   type: trojan
   server: mahsa8.mahsaaminivpn.com
   port: 24930
@@ -7,23 +15,7 @@ proxies:
   password: 21ra5sH0EZ
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  type: trojan
-  server: mahsa8.mahsaaminivpn.com
-  port: 40688
-  udp: true
-  password: Un91yMsV60
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 3"
-  type: trojan
-  server: mahsa2081p5k.mahsaaminivpn.com
-  port: 23706
-  udp: true
-  password: 41oia27jYy
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: mahsa6.mahsaaminivpn.com
   port: 39134
@@ -31,12 +23,20 @@ proxies:
   password: 99cp0Vgi7d
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
-  server: fc.hk04.fp-dns.xyz
-  port: 2087
+  server: mahsa2081p5k.mahsaaminivpn.com
+  port: 23706
   udp: true
-  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  password: 41oia27jYy
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 5"
+  type: trojan
+  server: mahsa8.mahsaaminivpn.com
+  port: 40688
+  udp: true
+  password: Un91yMsV60
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 6"
@@ -63,31 +63,39 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  server: fc.hk03.fp-dns.xyz
+  port: 2087
+  type: trojan
+  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
+  sni: fc.hk03.fp-dns.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
