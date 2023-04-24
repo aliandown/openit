@@ -6,13 +6,18 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: socks5
+  server: 45.33.34.126
+  port: 80
+  username: "\u9632\u5C01socks5-\u8054\u7CFB@heroku666"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: a1.veryfastnet1.tk
   type: trojan
   port: 32894
   password: HchlVCfnXB
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 3"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: fc.hk03.fp-dns.xyz
   type: trojan
   country: "\U0001F1EC\U0001F1E7GB"
@@ -20,22 +25,34 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: fc.hk04.fp-dns.xyz
   type: trojan
-  server: iplc.sh.to.us.fp-dns.xyz
-  port: 34438
-  udp: true
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 2087
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
-  network: tcp
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  type: ssr
+  server: usa1.vfun.icu
+  port: 443
+  password: vyunme
+  cipher: aes-256-cfb
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: ab93117422.jd.hk
+  protocol-param: 17422:TTp0SX
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -43,8 +60,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
