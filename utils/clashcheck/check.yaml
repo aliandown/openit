@@ -20,15 +20,7 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: fc.hk04.fp-dns.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 2087
-  password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 5"
+- name: "\U0001F1F8\U0001F1EC SG 4"
   type: trojan
   server: hkmax01.170203.xyz
   port: 443
@@ -36,7 +28,7 @@ proxies:
   password: 1f3f5b8a-be41-4a92-9b90-6473702aaa3b
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
   server: iplc.sh.to.us.fp-dns.xyz
   port: 34438
@@ -44,14 +36,15 @@ proxies:
   password: f0a9a2e2-0b62-4d46-a97c-c16eb25a88c7
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 7"
-  server: 152.70.74.66
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: sg.mjt001.com
   port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
   udp: true
+  password: e5305888-423d-4239-b140-495f53014098
+  sni: sg.mjt001.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -59,10 +52,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,9 +64,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
