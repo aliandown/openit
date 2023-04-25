@@ -20,14 +20,6 @@ proxies:
   port: 32894
   password: HchlVCfnXB
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 4"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -35,7 +27,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,6 +36,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
