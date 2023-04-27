@@ -7,41 +7,26 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: JP1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12007
-  type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: SG1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
   port: 12007
   type: trojan
   password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
   sni: 13-231-155-134.NHOST.00CDN.COM
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: SG3.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
   port: 12007
   type: trojan
   password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
   sni: 13-231-155-134.NHOST.00CDN.COM
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 5"
+- name: "\U0001F1F8\U0001F1EC SG 4"
   server: JP5.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
   port: 12007
   type: trojan
   password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
   sni: 13-231-155-134.NHOST.00CDN.COM
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 6"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -49,9 +34,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1F8\U0001F1EC SG 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -61,8 +44,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1F8\U0001F1EC SG 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
