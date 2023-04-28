@@ -12,15 +12,7 @@ proxies:
   type: trojan
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   sni: us2.trojanvh.xyz
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: tempest-us.aikun.online
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: tj2.dalazhi.eu.org
   type: trojan
   country: "\U0001F1F3\U0001F1F4NO"
@@ -28,6 +20,13 @@ proxies:
   password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: fschk.fscloud123456789.com
+  port: 443
+  type: trojan
+  password: 514b8c92-12da-4219-b06c-56ecc67dfa23
+  sni: fschk.fscloud123456789.com
+  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   server: fschk.fscloud123456789.com
   port: 443
@@ -35,28 +34,36 @@ proxies:
   password: 32a1f860-3b91-4d7e-bdc6-e76a40a8ded8
   sni: fschk.fscloud123456789.com
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: fscsg.fscloud123456789.com
   port: 443
   type: trojan
   password: 514b8c92-12da-4219-b06c-56ecc67dfa23
   sni: fscsg.fscloud123456789.com
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: sg.stablize.top
   port: 443
   type: trojan
   password: 4cb60c22-8d5d-469e-b5c1-c1cb78448a6d
   sni: sg.stablize.top
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  server: JP5.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12007
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: jp.stablize.top
+  port: 443
   type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
+  password: 4cb60c22-8d5d-469e-b5c1-c1cb78448a6d
+  sni: jp.stablize.top
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 9"
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  type: trojan
+  server: JP4.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
+  port: 12007
+  udp: true
+  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 10"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -70,13 +77,14 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EE\U0001F1F3 IN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -85,12 +93,13 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EE\U0001F1F3 IN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
