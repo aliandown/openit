@@ -8,12 +8,10 @@ proxies:
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: us2.trojanvh.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
   port: 80
+  type: trojan
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  skip-cert-verify: true
-  udp: true
+  sni: us2.trojanvh.xyz
 - name: "\U0001F1EF\U0001F1F5 JP 3"
   server: tj2.dalazhi.eu.org
   type: trojan
@@ -29,13 +27,21 @@ proxies:
   password: 32a1f860-3b91-4d7e-bdc6-e76a40a8ded8
   sni: fschk.fscloud123456789.com
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   server: sg.stablize.top
   port: 443
   type: trojan
   password: 4cb60c22-8d5d-469e-b5c1-c1cb78448a6d
   sni: sg.stablize.top
   skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -44,7 +50,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,6 +62,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
