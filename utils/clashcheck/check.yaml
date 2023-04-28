@@ -32,10 +32,12 @@ proxies:
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 5"
   server: any3017.bcloud.cyou
-  port: 10116
   type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 10116
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  sni: any3017.bcloud.cyou
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hkhe02.bcloudv.cyou
   type: trojan
@@ -44,14 +46,7 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: JP1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12007
-  type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   type: trojan
   server: awshk.superjj.cc
   port: 443
@@ -60,7 +55,7 @@ proxies:
   sni: datahk.steamdownload.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 9"
+- name: "\U0001F1F8\U0001F1EC SG 8"
   type: trojan
   server: fscus.fscloud123456789.com
   port: 443
@@ -68,14 +63,6 @@ proxies:
   password: 514b8c92-12da-4219-b06c-56ecc67dfa23
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 10"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -86,10 +73,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -102,9 +87,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
