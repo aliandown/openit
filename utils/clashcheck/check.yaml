@@ -6,20 +6,26 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us2.trojanvh.xyz
-  port: 80
-  type: trojan
-  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  sni: us2.trojanvh.xyz
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 3"
+  name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.disnet.gq
   port: 443
   password: 7c7e0edb-c45a-4c07-b66a-69b191179349
   udp: true
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: us2.trojanvh.xyz
+  port: 80
+  type: trojan
+  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  sni: us2.trojanvh.xyz
+- name: "\U0001F1EE\U0001F1F7 IR 4"
+  server: uniquenet50.khasbox.fun
+  port: 10010
+  type: trojan
+  password: 2e454370-4207-4443-8262-7e06663f54cb
+  sni: uniquenet50.khasbox.fun
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: tj2.dalazhi.eu.org
   type: trojan
   country: "\U0001F1F3\U0001F1F4NO"
@@ -27,13 +33,6 @@ proxies:
   password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1EE\U0001F1F7 IR 5"
-  server: uniquenet50.khasbox.fun
-  port: 10010
-  password: 2e454370-4207-4443-8262-7e06663f54cb
-  udp: true
-  skip-cert-verify: true
 - name: "\U0001F1F0\U0001F1F7 KR 6"
   server: kr05.wangxd.life
   type: trojan
@@ -50,14 +49,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1EE\U0001F1F3 IN 8"
-  server: 152.67.162.166
-  port: 443
-  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
-  udp: true
-  skip-cert-verify: true
-  sni: content-provider22.cdn-delivery.akamaicd.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -65,11 +56,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EE\U0001F1F7 IR 5"
+  - "\U0001F1EE\U0001F1F7 IR 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,10 +69,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EE\U0001F1F7 IR 5"
+  - "\U0001F1EE\U0001F1F7 IR 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
