@@ -42,13 +42,14 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 7"
-  server: sg.stablize.top
+- name: "\U0001F1EE\U0001F1F3 IN 7"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 2bfe8e4f-c00c-496b-ba8c-e67d2becd03b
-  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
+  udp: true
 - type: trojan
   name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.67.162.166
@@ -57,14 +58,6 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: content-provider22.cdn-delivery.akamaicd.com
-- name: "\U0001F1EE\U0001F1F3 IN 9"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -75,9 +68,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F7 IR 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -90,8 +82,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F7 IR 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
