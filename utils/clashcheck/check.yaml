@@ -21,12 +21,12 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 4"
-  server: mahsa2081p5k.mahsaaminivpn.com
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: tj2.dalazhi.eu.org
   type: trojan
-  country: "\U0001F1E9\U0001F1EADE"
-  port: 23706
-  password: 41oia27jYy
+  country: "\U0001F1F3\U0001F1F4NO"
+  port: 443
+  password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E9\U0001F1EA DE 5"
@@ -38,22 +38,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: tj2.dalazhi.eu.org
-  type: trojan
-  country: "\U0001F1F3\U0001F1F4NO"
-  port: 443
-  password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 7"
-  server: fscsg.fscloud123456789.com
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: ed19b239-8e49-4b82-979a-24b84fa7b173
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
   server: cd529a06-85c5-4662-9157-a0ce584cd324.interface.buzz
   port: 50932
@@ -62,7 +46,13 @@ proxies:
   sni: itunes.apple.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 9"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: fscsg.fscloud123456789.com
+  port: 443
+  type: trojan
+  password: ed19b239-8e49-4b82-979a-24b84fa7b173
+  sni: fscsg.fscloud123456789.com
+- name: "\U0001F1F8\U0001F1EC SG 8"
   server: fscuk.fscloud123456789.com
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -70,15 +60,15 @@ proxies:
   password: ed19b239-8e49-4b82-979a-24b84fa7b173
   skip-cert-verify: true
   udp: true
-- type: trojan
-  name: "\U0001F1EE\U0001F1F3 IN 10"
-  server: 152.67.162.166
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  type: trojan
+  server: usa.stablize.top
   port: 443
-  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
   udp: true
+  password: ccf6d04e-5803-44a6-ad89-c87941a16ef5
   skip-cert-verify: true
-  sni: content-provider22.cdn-delivery.akamaicd.com
-- name: "\U0001F1EF\U0001F1F5 JP 11"
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 10"
   type: trojan
   server: cd529a06-85c5-4662-9157-a0ce584cd324.interface.buzz
   port: 34545
@@ -87,6 +77,30 @@ proxies:
   sni: itunes.apple.com
   skip-cert-verify: true
   network: tcp
+- type: trojan
+  name: "\U0001F1EE\U0001F1F3 IN 11"
+  server: 152.67.162.166
+  port: 443
+  password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a
+  udp: true
+  skip-cert-verify: true
+  sni: content-provider22.cdn-delivery.akamaicd.com
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  type: trojan
+  server: awshk1-zj.amazon-azure.com
+  port: 443
+  udp: true
+  password: 6d6b76a0-7be8-4935-a284-77d000401d3a
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 13"
+  server: li1cahsfvu2bisd-sc.559xp5.cn
+  port: 443
+  password: 93613fc1-eb61-4553-b552-475b24587265
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -94,14 +108,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -111,13 +127,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
