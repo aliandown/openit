@@ -1,17 +1,17 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 163.123.192.34
+  port: 443
+  type: trojan
+  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
+  sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170.187.134.190
   type: trojan
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 163.123.192.34
-  port: 443
-  type: trojan
-  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
-  sni: 16-163-218-240.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: us2.trojanvh.xyz
   type: trojan
@@ -35,14 +35,14 @@ proxies:
   password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
   sni: 16-163-218-240.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: T2.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
+  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
   port: 12008
   type: trojan
   password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
   sni: 13-231-155-134.NHOST.00CDN.COM
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
+- name: "\U0001F1F8\U0001F1EC SG 7"
+  server: HK1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
   port: 12008
   type: trojan
   password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
@@ -66,7 +66,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -80,7 +80,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
