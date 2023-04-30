@@ -22,20 +22,6 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 163.123.192.34
-  port: 443
-  type: trojan
-  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: us2.trojanvh.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 80
-  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
   server: 148.59.74.238
   port: 443
@@ -44,7 +30,15 @@ proxies:
   sni: 20-212-60-88.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: us2.trojanvh.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 80
+  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: tj2.dalazhi.eu.org
   type: trojan
   country: "\U0001F1F3\U0001F1F4NO"
@@ -52,6 +46,12 @@ proxies:
   password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: 163.123.192.34
+  port: 443
+  type: trojan
+  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
+  sni: 16-163-218-240.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
   server: awsjp6-data.amazon-azure.com
@@ -67,20 +67,6 @@ proxies:
   type: trojan
   password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: T2.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12008
-  type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 11"
-  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12008
-  type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -90,12 +76,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -107,11 +91,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
