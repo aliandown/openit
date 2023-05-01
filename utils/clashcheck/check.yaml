@@ -7,12 +7,6 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 163.123.192.33
-  port: 443
-  type: trojan
-  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: us2.trojanvh.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -20,12 +14,21 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 163.123.192.34
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 HK 3"
   type: trojan
-  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
-  sni: 16-163-218-240.nhost.00cdn.com
+  server: 103.20.223.4
+  port: 50180
+  udp: true
+  password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
+  port: 12008
+  type: trojan
+  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
+  sni: 13-231-155-134.NHOST.00CDN.COM
+  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   server: tj2.dalazhi.eu.org
   type: trojan
@@ -34,15 +37,7 @@ proxies:
   password: 23fd9f2e-7ff8-4d98-8099-8acce9499433
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  type: trojan
-  server: 103.20.223.4
-  port: 50180
-  udp: true
-  password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   type: ssr
   server: 211.99.115.14
   port: 10302
@@ -52,16 +47,13 @@ proxies:
   protocol: auth_aes128_sha1
   protocol-param: 11199:NzEbzJlpSb
   group: SSRProvider
-- name: "\U0001F1E8\U0001F1F3 HK 8"
-  type: trojan
-  server: 16.163.194.6
-  port: 443
-  udp: true
-  password: 6d6b76a0-7be8-4935-a284-77d000401d3a
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 9"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: ss
+  server: p1.bxy-fun1.com
+  port: 44101
+  password: d7bee830-09aa-43b2-8945-3b341b8787db
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -69,19 +61,25 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  server: 16.162.44.241
+  port: 443
+  type: trojan
+  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
+  sni: 16-163-218-240.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -90,12 +88,12 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
