@@ -7,7 +7,7 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 163.123.192.33
+  server: 163.123.192.34
   port: 443
   type: trojan
   password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
@@ -20,22 +20,22 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: jp2trojan.cloudbb.loan
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 163.123.192.33
+  port: 443
   type: trojan
-  country: "\U0001F1F8\U0001F1ECSG"
-  port: 20022
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: any3017.bcloud.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 10116
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
+  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
+  sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  type: ssr
+  server: 211.99.115.14
+  port: 10302
+  password: 5e588698f977c017
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  protocol-param: 11199:NzEbzJlpSb
+  group: SSRProvider
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   type: trojan
   server: 103.20.223.4
@@ -44,22 +44,15 @@ proxies:
   password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 7"
-  server: 152.70.74.66
+- name: "\U0001F1E8\U0001F1F3 HK 7"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 16.163.194.6
   port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 8"
-  server: hkhe02.bcloudv.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 20897
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  password: 6d6b76a0-7be8-4935-a284-77d000401d3a
+  sni: data.amazon-azure.com
   skip-cert-verify: true
-  udp: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -67,11 +60,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -81,10 +73,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 HK 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
