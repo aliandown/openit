@@ -13,26 +13,29 @@ proxies:
   password: 2c7cccd3-8de4-4f47-8fd6-b787e42ca4a2
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: sg.stablize.top
-  port: 443
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
+  port: 12008
   type: trojan
-  password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
-  sni: sg.stablize.top
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: ap.stablize.top
-  port: 443
+  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
+  sni: 13-231-155-134.NHOST.00CDN.COM
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
-  password: 10f94506-9bf9-4dbb-9542-3ff13893b190
-  sni: ap.stablize.top
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -41,7 +44,7 @@ proxy-groups:
   - automatic
   - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
