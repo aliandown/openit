@@ -1,78 +1,66 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: mirab.sandbad.live
-  port: 443
+- name: "\U0001F1EF\U0001F1F5 JP 1"
   type: trojan
-  password: 6bc66c8e-8c95-0c62-bfa0-249dcff0618f
-  sni: mirab.sandbad.live
+  server: clash.ktq.ltd
+  port: 443
+  udp: true
+  password: xiemo59444880
+  sni: clash.ktq.ltd
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   server: sg.stablize.top
   port: 443
   type: trojan
   password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
   sni: sg.stablize.top
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: jp.stablize.top
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: mirab.sandbad.live
   port: 443
-  udp: true
-  password: 10f94506-9bf9-4dbb-9542-3ff13893b190
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  type: ssr
-  server: cmlayer6.standurls.co
-  port: 561
-  password: mblank1port
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_md5
-  protocol-param: 48530:LLLiuiuiu787878
-- name: "\U0001F1EE\U0001F1F3 IN 5"
   type: trojan
-  server: 152.67.160.174
-  port: 443
-  udp: true
-  password: 54080134-2cba-4535-8599-95650bd9aa54
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6"
+  password: 6bc66c8e-8c95-0c62-bfa0-249dcff0618f
+  sni: mirab.sandbad.live
+- name: "\U0001F1F8\U0001F1EC SG 4"
   server: ap.stablize.top
   port: 443
   type: trojan
   password: 10f94506-9bf9-4dbb-9542-3ff13893b190
   sni: ap.stablize.top
-- name: "\U0001F1F8\U0001F1EC SG 7"
+- name: "\U0001F1F8\U0001F1EC SG 5"
+  server: ap.stablize.top
+  port: 443
   type: trojan
-  server: ca.stablize.top
+  password: 10f94506-9bf9-4dbb-9542-3ff13893b190
+  sni: ap.stablize.top
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  type: trojan
+  server: uk.stablize.top
   port: 443
   udp: true
-  password: 10f94506-9bf9-4dbb-9542-3ff13893b190
+  password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
   skip-cert-verify: true
   network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
