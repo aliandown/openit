@@ -29,14 +29,14 @@ proxies:
   type: ss
   cipher: aes-128-cfb
   password: QazEdcTgb159@$*
-- name: "\U0001F1F8\U0001F1EC SG 6 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 6 TJN"
   server: fschk.fscloud123456789.com
   port: 443
   type: trojan
   password: 32a1f860-3b91-4d7e-bdc6-e76a40a8ded8
   sni: fschk.fscloud123456789.com
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 7 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 7 TJN"
   server: fschk.fscloud123456789.com
   port: 443
   type: trojan
@@ -256,13 +256,27 @@ proxies:
   username: b3b1de88b0
   password: b91b087fa4
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 39 SSS"
+- name: "\U0001F1E8\U0001F1ED CH 39 TJN"
+  type: trojan
+  server: 195.15.243.26
+  port: 443
+  udp: true
+  password: '4478'
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 40 SSS"
+  type: ss
+  server: 111.38.40.132
+  port: 45195
+  password: 4d5a811b-2289-43c3-a042-abd484e7505b
+  cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 41 SSS"
   type: ss
   server: relay-jp4.nxunfan.com
   port: 33386
   password: f6ac8f57-8fe7-4636-8290-3992e410e6d8
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1EE\U0001F1F3 IN 40 TJN"
+- name: "\U0001F1EE\U0001F1F3 IN 42 TJN"
   type: trojan
   server: 152.67.160.174
   port: 443
@@ -270,7 +284,7 @@ proxies:
   password: 54080134-2cba-4535-8599-95650bd9aa54
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 41 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 43 SSR"
   type: ssr
   server: usa1.vfun.icu
   port: 443
@@ -280,7 +294,7 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: ab93117422.jd.hk
   protocol-param: 17422:TTp0SX
-- name: "\U0001F1F8\U0001F1EC SG 42 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 44 TJN"
   type: trojan
   server: ca.stablize.top
   port: 443
@@ -288,7 +302,7 @@ proxies:
   password: 10f94506-9bf9-4dbb-9542-3ff13893b190
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 43 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 45 TJN"
   type: trojan
   server: uk.stablize.top
   port: 443
@@ -296,7 +310,7 @@ proxies:
   password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 44 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 46 TJN"
   type: trojan
   server: tempest-us.aikun.online
   port: 443
@@ -304,7 +318,7 @@ proxies:
   password: 11e247e5-136d-45f1-844a-a7f054d36bab
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 45 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 47 SSR"
   type: ssr
   server: initest08.initcloud.pro
   port: 562
@@ -313,7 +327,7 @@ proxies:
   obfs: plain
   protocol: auth_aes128_md5
   protocol-param: 48530:LLLiuiuiu787878
-- name: "\U0001F1EE\U0001F1F3 IN 46 TJN"
+- name: "\U0001F1EE\U0001F1F3 IN 48 TJN"
   type: trojan
   server: 152.70.74.66
   port: 443
@@ -321,7 +335,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 47 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 49 SSR"
   type: ssr
   server: cmlayer6.standurls.co
   port: 561
@@ -339,8 +353,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1F8\U0001F1EC SG 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
-  - "\U0001F1F8\U0001F1EC SG 6 TJN"
-  - "\U0001F1F8\U0001F1EC SG 7 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 7 TJN"
   - "\U0001F1F8\U0001F1EC SG 8 TJN"
   - "\U0001F1F8\U0001F1EC SG 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 TJN"
@@ -372,15 +386,17 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 36 HTT"
   - "\U0001F1E8\U0001F1F3 CN 37 HTT"
   - "\U0001F1E8\U0001F1F3 CN 38 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 39 SSS"
-  - "\U0001F1EE\U0001F1F3 IN 40 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 41 SSR"
-  - "\U0001F1F8\U0001F1EC SG 42 TJN"
-  - "\U0001F1F8\U0001F1EC SG 43 TJN"
-  - "\U0001F1FA\U0001F1F8 US 44 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 45 SSR"
-  - "\U0001F1EE\U0001F1F3 IN 46 TJN"
+  - "\U0001F1E8\U0001F1ED CH 39 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 40 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 41 SSS"
+  - "\U0001F1EE\U0001F1F3 IN 42 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 43 SSR"
+  - "\U0001F1F8\U0001F1EC SG 44 TJN"
+  - "\U0001F1F8\U0001F1EC SG 45 TJN"
+  - "\U0001F1FA\U0001F1F8 US 46 TJN"
   - "\U0001F1E8\U0001F1F3 CN 47 SSR"
+  - "\U0001F1EE\U0001F1F3 IN 48 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 49 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -392,8 +408,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1F8\U0001F1EC SG 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
-  - "\U0001F1F8\U0001F1EC SG 6 TJN"
-  - "\U0001F1F8\U0001F1EC SG 7 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 7 TJN"
   - "\U0001F1F8\U0001F1EC SG 8 TJN"
   - "\U0001F1F8\U0001F1EC SG 9 TJN"
   - "\U0001F1E8\U0001F1F3 CN 10 TJN"
@@ -425,14 +441,16 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 36 HTT"
   - "\U0001F1E8\U0001F1F3 CN 37 HTT"
   - "\U0001F1E8\U0001F1F3 CN 38 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 39 SSS"
-  - "\U0001F1EE\U0001F1F3 IN 40 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 41 SSR"
-  - "\U0001F1F8\U0001F1EC SG 42 TJN"
-  - "\U0001F1F8\U0001F1EC SG 43 TJN"
-  - "\U0001F1FA\U0001F1F8 US 44 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 45 SSR"
-  - "\U0001F1EE\U0001F1F3 IN 46 TJN"
+  - "\U0001F1E8\U0001F1ED CH 39 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 40 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 41 SSS"
+  - "\U0001F1EE\U0001F1F3 IN 42 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 43 SSR"
+  - "\U0001F1F8\U0001F1EC SG 44 TJN"
+  - "\U0001F1F8\U0001F1EC SG 45 TJN"
+  - "\U0001F1FA\U0001F1F8 US 46 TJN"
   - "\U0001F1E8\U0001F1F3 CN 47 SSR"
+  - "\U0001F1EE\U0001F1F3 IN 48 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 49 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
