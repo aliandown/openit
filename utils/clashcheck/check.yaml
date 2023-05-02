@@ -5,28 +5,24 @@ proxies:
   type: trojan
   password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
   sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 163.123.192.33
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: mirab.sandbad.live
   port: 443
   type: trojan
-  password: 4a7cab09-d65d-4d3e-8951-697310c2f48f
-  sni: 16-163-218-240.nhost.00cdn.com
-- name: "\U0001F1EE\U0001F1F3 IN 3"
-  type: trojan
-  server: 152.67.160.174
+  password: 6bc66c8e-8c95-0c62-bfa0-249dcff0618f
+  sni: mirab.sandbad.live
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: microsoft-hk.85413.xyz
   port: 443
-  udp: true
-  password: 54080134-2cba-4535-8599-95650bd9aa54
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
-  server: 152.70.74.66
+  password: a3f80b20-99d0-498b-8fd2-24b3349e1b95
+  sni: microsoft-hk.85413.xyz
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  server: ap.stablize.top
   port: 443
-  udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  network: tcp
+  type: trojan
+  password: 10f94506-9bf9-4dbb-9542-3ff13893b190
+  sni: ap.stablize.top
 - name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: ca.stablize.top
@@ -35,15 +31,42 @@ proxies:
   password: 10f94506-9bf9-4dbb-9542-3ff13893b190
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  type: trojan
+  server: 152.67.160.174
+  port: 443
+  udp: true
+  password: 54080134-2cba-4535-8599-95650bd9aa54
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 7"
+  type: trojan
+  server: 152.70.74.66
+  port: 443
+  udp: true
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  type: trojan
+  server: uk.stablize.top
+  port: 443
+  udp: true
+  password: 9014ea56-3fec-43d8-bed6-af7bcb5e2cb3
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -51,9 +74,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
