@@ -1,26 +1,11 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: fscjp.fscloud123456789.com
+  server: 148.59.74.239
   port: 443
   udp: true
-  password: 2c7cccd3-8de4-4f47-8fd6-b787e42ca4a2
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  type: trojan
-  server: fscsg.fscloud123456789.com
-  port: 443
-  udp: true
-  password: 2c7cccd3-8de4-4f47-8fd6-b787e42ca4a2
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 3"
-  type: trojan
-  server: 152.70.74.66
-  port: 443
-  udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  password: d5be26d4-8d71-4d8e-a74c-ce8afdd09395
+  sni: 20-212-60-88.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -28,8 +13,6 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -37,7 +20,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
