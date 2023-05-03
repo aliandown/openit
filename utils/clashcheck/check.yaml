@@ -8,11 +8,28 @@ proxies:
   sni: 20-212-60-88.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: cxf.sz-jhsee.com
+  port: 7022
+  type: trojan
+  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
+  sni: cxf.sz-jhsee.com
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: azkr.untilmu.com
+  port: 16627
+  udp: true
+  password: 37a36205-6030-42c1-a0e7-ad6cf9d7ec39
+  sni: azkr.untilmu.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -20,5 +37,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
