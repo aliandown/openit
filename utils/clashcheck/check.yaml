@@ -1,12 +1,20 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
-  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12008
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: cxf.sz-jhsee.com
+  port: 7022
   type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
+  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
+  sni: cxf.sz-jhsee.com
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  type: trojan
+  server: clash.ktq.ltd
+  port: 443
+  udp: true
+  password: xiemo59444880
+  sni: clash.ktq.ltd
   skip-cert-verify: true
-- name: "\U0001F1E6\U0001F1FA AU 2"
+  network: tcp
+- name: "\U0001F1E6\U0001F1FA AU 3"
   type: trojan
   server: wangqifei.tk
   port: 59973
@@ -15,29 +23,21 @@ proxies:
   sni: wangqifei.tk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 3"
-  type: trojan
-  server: 152.70.74.66
-  port: 443
-  udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E6\U0001F1FA AU 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E6\U0001F1FA AU 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
