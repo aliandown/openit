@@ -1,41 +1,56 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1"
-  server: HK1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12008
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: T1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12008
-  type: trojan
-  password: 45ca2685-b3ac-4410-b658-ee60d3640c4e
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
-  type: trojan
-  server: 152.70.74.66
+  server: 148.59.74.239
   port: 443
   udp: true
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  password: d5be26d4-8d71-4d8e-a74c-ce8afdd09395
+  sni: 20-212-60-88.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 2"
+  type: trojan
+  server: tw2.microsoft-orgwly.vip
+  port: 443
+  udp: true
+  password: 757ff16b-4835-474e-b0af-d13daf0b72ec
+  sni: tls.microsoft-orgwly.vip
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: fscjp.fscloud123456789.com
+  port: 443
+  udp: true
+  password: 2c7cccd3-8de4-4f47-8fd6-b787e42ca4a2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E6\U0001F1FA AU 4"
+  type: trojan
+  server: wangqifei.tk
+  port: 59973
+  udp: true
+  password: S1k6yPgFhc
+  sni: wangqifei.tk
   skip-cert-verify: true
   network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EC SG 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E6\U0001F1FA AU 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E6\U0001F1FA AU 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
