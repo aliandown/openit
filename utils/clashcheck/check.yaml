@@ -5,20 +5,11 @@ proxies:
   type: trojan
   password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
   sni: cxf.sz-jhsee.com
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  type: trojan
-  server: 20.239.165.30
-  port: 40408
-  udp: true
-  password: 42b99403-2702-4163-8878-92f853a8f0e3
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -26,6 +17,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
