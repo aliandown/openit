@@ -1,23 +1,13 @@
-proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
-  type: trojan
-  server: fscjp.fscloud123456789.com
-  port: 443
-  udp: true
-  password: 2c7cccd3-8de4-4f47-8fd6-b787e42ca4a2
-  skip-cert-verify: true
-  network: tcp
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
