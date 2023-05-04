@@ -1,19 +1,26 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: da.ddmmy.top
-  port: 50087
-  udp: true
-  password: BD8DB-5SD151S5-6D5D1V
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: cxf.sz-jhsee.com
   port: 7022
   type: trojan
   password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
   sni: cxf.sz-jhsee.com
-- name: "\U0001F1F8\U0001F1EC SG 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: da.ddmmy.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 50087
+  password: BD8DB-5SD151S5-6D5D1V
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 170.187.134.190
+  type: trojan
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC SG 4"
   type: trojan
   server: 18.141.206.28
   port: 51118
@@ -22,7 +29,7 @@ proxies:
   sni: sg1.hneko.online
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E6\U0001F1FA AU 4"
+- name: "\U0001F1E6\U0001F1FA AU 5"
   type: trojan
   server: wangqifei.tk
   port: 59973
@@ -31,14 +38,24 @@ proxies:
   sni: wangqifei.tk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1E6\U0001F1FA AU 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -47,7 +64,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1E6\U0001F1FA AU 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
