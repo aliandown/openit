@@ -22,6 +22,14 @@ proxies:
   password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: cc.tross.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 60528
+  password: sfgdg225v5ddfs
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -29,6 +37,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -38,5 +47,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
