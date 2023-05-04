@@ -1,19 +1,25 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: da.ddmmy.top
+  port: 50087
+  udp: true
+  password: BD8DB-5SD151S5-6D5D1V
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: cxf.sz-jhsee.com
   port: 7022
   type: trojan
   password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
   sni: cxf.sz-jhsee.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: cc.tross.top
+  port: 60528
   type: trojan
-  server: agroup.node5.t.nodelist-gfwairport1.download
-  port: 50001
-  udp: true
-  password: ca76834c-3e07-4c44-8347-ec19c26087cb
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 3"
+  password: sfgdg225v5ddfs
+  sni: cc.tross.top
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   type: trojan
   server: 16.163.194.6
   port: 443
@@ -22,20 +28,14 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: vir.troaa.top
-  port: 53559
-  type: trojan
-  password: e3c70763-89cf-4267-831d-61a98467c6dc
-  sni: vir.troaa.top
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -44,7 +44,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
