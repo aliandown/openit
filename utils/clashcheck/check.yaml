@@ -22,6 +22,15 @@ proxies:
   sni: sg1.hneko.online
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E6\U0001F1FA AU 4"
+  type: trojan
+  server: wangqifei.tk
+  port: 59973
+  udp: true
+  password: S1k6yPgFhc
+  sni: wangqifei.tk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -29,6 +38,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1E6\U0001F1FA AU 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -38,5 +48,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1E6\U0001F1FA AU 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
