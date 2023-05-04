@@ -19,12 +19,14 @@ proxies:
   type: trojan
   password: sfgdg225v5ddfs
   sni: cc.tross.top
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: vir.troaa.top
-  port: 53559
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
-  password: e3c70763-89cf-4267-831d-61a98467c6dc
-  sni: vir.troaa.top
+  server: fr2.stealthtunnel.net
+  port: 60606
+  udp: true
+  password: 72A2478A-FE5F-6CFC-74F0-2781E6E5DDCF
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
   server: 16.163.194.6
@@ -34,16 +36,12 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: ssr
-  server: hk4.vfun.icu
-  port: 446
-  password: vyunme
-  cipher: aes-256-cfb
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: ab93117422.jd.hk
-  protocol-param: 17422:TTp0SX
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: vir.troaa.top
+  port: 53559
+  type: trojan
+  password: e3c70763-89cf-4267-831d-61a98467c6dc
+  sni: vir.troaa.top
 proxy-groups:
 - name: automatic
   type: url-test
@@ -51,9 +49,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -63,8 +61,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
