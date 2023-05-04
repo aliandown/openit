@@ -1,11 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: cxf.sz-jhsee.com
-  port: 7022
-  type: trojan
-  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
-  sni: cxf.sz-jhsee.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: da.ddmmy.top
   port: 50087
@@ -13,6 +7,12 @@ proxies:
   password: BD8DB-5SD151S5-6D5D1V
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: cxf.sz-jhsee.com
+  port: 7022
+  type: trojan
+  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
+  sni: cxf.sz-jhsee.com
 - name: "\U0001F1F8\U0001F1EC SG 3"
   type: trojan
   server: 18.141.206.28
@@ -22,14 +22,6 @@ proxies:
   sni: sg1.hneko.online
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  type: trojan
-  server: fr2.stealthtunnel.net
-  port: 60606
-  udp: true
-  password: 72A2478A-FE5F-6CFC-74F0-2781E6E5DDCF
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -37,7 +29,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -47,6 +38,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
