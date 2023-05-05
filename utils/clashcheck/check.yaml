@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: tempest-us.aikun.online
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: cxf.sz-jhsee.com
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,20 +7,20 @@ proxies:
   password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  server: tr00ca.bewater.top
-  port: 7654
-  type: trojan
-  password: c6be3827-5e18-4194-a85d-b56280b058dc
-  sni: tr00ca.bewater.top
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170.187.134.190
   type: trojan
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1EC\U0001F1E7 GB 5"
+- name: "\U0001F1E8\U0001F1E6 CA 3"
+  server: tr00ca.bewater.top
+  port: 7654
+  type: trojan
+  password: c6be3827-5e18-4194-a85d-b56280b058dc
+  sni: tr00ca.bewater.top
+- name: "\U0001F1EC\U0001F1E7 GB 4"
   server: truk00.bewater.top
   type: trojan
   country: "\U0001F1EC\U0001F1E7GB"
@@ -36,12 +28,20 @@ proxies:
   password: c6be3827-5e18-4194-a85d-b56280b058dc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   server: sg.stablize.top
   port: 443
   type: trojan
   password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
   sni: sg.stablize.top
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: sg.stablize.top
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 7"
   server: assets.flareai.site
   port: 11543
@@ -49,16 +49,17 @@ proxies:
   username: b3b1de88b0
   password: b91b087fa4
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: assets.flareai.site
-  port: 11343
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 8"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 9"
   server: assets.flareai.site
-  port: 11443
+  port: 11343
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -70,11 +71,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -85,11 +86,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
