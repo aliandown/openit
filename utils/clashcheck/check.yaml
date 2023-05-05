@@ -7,74 +7,33 @@ proxies:
   password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: usa3.hneko.online
-  port: 54444
-  type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: usa3.hneko.online
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: usa6.hneko.online
-  port: 42111
-  type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: usa6.hneko.online
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: usa6.hneko.online
-  port: 41113
-  type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: usa6.hneko.online
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: usa2.hneko.online
-  port: 41144
-  type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: usa2.hneko.online
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: jp11.hneko.online
-  port: 56334
-  type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: jp11.hneko.online
-- name: "\U0001F1FA\U0001F1F8 US 8"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: sg.stablize.top
   port: 443
   type: trojan
   password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
   sni: sg.stablize.top
-- name: "\U0001F1F8\U0001F1EC SG 9"
-  server: sg2.hneko.online
-  port: 51117
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: sg2.hneko.online
-- name: "\U0001F1EF\U0001F1F5 JP 10"
+  server: sg.stablize.top
+  port: 443
+  udp: true
+  password: a85ddae0-3f7d-4f55-bd1d-436062e3a966
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: kr.mjt001.com
   port: 443
   type: trojan
   password: ad3f9bf7-d8d1-47df-a6bd-77ff50037339
   sni: kr.mjt001.com
-- name: "\U0001F1F0\U0001F1F7 KR 11"
-  server: kr1.hneko.online
-  port: 56337
-  type: trojan
-  password: a1b5ee2e-1e69-451c-b5dd-7c6c577a4bcc
-  sni: kr1.hneko.online
-- name: "\U0001F1EF\U0001F1F5 JP 12"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: kr.mjt001.com
   port: 443
   type: trojan
   password: ad3f9bf7-d8d1-47df-a6bd-77ff50037339
   sni: kr.mjt001.com
-- name: "\U0001F1EF\U0001F1F5 JP 13"
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: kr.mjt001.com
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -82,7 +41,7 @@ proxies:
   password: ad3f9bf7-d8d1-47df-a6bd-77ff50037339
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 14"
+- name: "\U0001F1E6\U0001F1FA AU 7"
   type: trojan
   server: wangqifei.tk
   port: 59973
@@ -90,16 +49,23 @@ proxies:
   password: S1k6yPgFhc
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 15"
+- name: "\U0001F1E8\U0001F1F3 CN 8"
   server: assets.flareai.site
   port: 11543
   type: http
   username: b3b1de88b0
   password: b91b087fa4
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 16"
-  server: h295826.waihuizhibiaowang.com
-  port: 11543
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: assets.flareai.site
+  port: 11343
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: assets.flareai.site
+  port: 11443
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -109,21 +75,15 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1EF\U0001F1F5 JP 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1E6\U0001F1FA AU 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
-  - "\U0001F1E8\U0001F1F3 CN 16"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E6\U0001F1FA AU 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -131,20 +91,14 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1EF\U0001F1F5 JP 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1E6\U0001F1FA AU 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
-  - "\U0001F1E8\U0001F1F3 CN 16"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E6\U0001F1FA AU 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
