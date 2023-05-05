@@ -22,25 +22,17 @@ proxies:
   password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: assets.flareai.site
   port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1E6\U0001F1FA AU 5"
-  type: trojan
-  server: wangqifei.tk
-  port: 59973
-  udp: true
-  password: S1k6yPgFhc
-  sni: wangqifei.tk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: assets.flareai.site
-  port: 11343
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -52,9 +44,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E6\U0001F1FA AU 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,8 +55,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E6\U0001F1FA AU 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
