@@ -34,7 +34,7 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
-  server: 217.145.236.25
+  server: 217.145.236.23
   port: 443
   udp: true
   password: 05e34875-a77c-4156-8bc8-f815f235905a
@@ -52,7 +52,7 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 7"
   type: trojan
-  server: 217.145.236.23
+  server: 217.145.236.25
   port: 443
   udp: true
   password: 05e34875-a77c-4156-8bc8-f815f235905a
@@ -102,6 +102,14 @@ proxies:
   username: b3b1de88b0
   password: b91b087fa4
   tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 13"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -118,6 +126,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1F7\U0001F1FA RU 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -136,5 +145,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1F7\U0001F1FA RU 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
