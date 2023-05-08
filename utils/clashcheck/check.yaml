@@ -14,14 +14,21 @@ proxies:
   password: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: h295826.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: cxf.sz-jhsee.com
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 7022
+  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ss
+  server: 61.152.183.109
+  port: 29993
+  password: 7088fefc-b03a-4c16-a5fd-b3aaf19c324b
+  cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   type: ssr
   server: usa1.vfun.icu
   port: 443
@@ -31,39 +38,15 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: ab93117422.jd.hk
   protocol-param: 17422:TTp0SX
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: h295826.waihuizhibiaowang.com
-  port: 11443
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 6"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: h295826.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,10 +55,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
