@@ -7,14 +7,6 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: cxf.sz-jhsee.com
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 7022
-  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: irancpi1.duckdns.org
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -22,13 +14,47 @@ proxies:
   password: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: cxf.sz-jhsee.com
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 7022
+  password: b9fcb525-f308-4e21-a8a6-08bc40cdbba0
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: fscjp.fscloud123456789.com
   port: 443
   type: trojan
   password: 7dc3a0b7-0930-42da-a6be-2a8623cdcfb4
   sni: fscjp.fscloud123456789.com
-- name: "\U0001F1EE\U0001F1F3 IN 5"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: fscjp.fscloud123456789.com
+  type: trojan
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 443
+  password: 7dc3a0b7-0930-42da-a6be-2a8623cdcfb4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  type: trojan
+  server: singvip1.csadata4g.me
+  port: 443
+  udp: true
+  password: e505ff62-bc60-4113-b922-b40919396462
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FB\U0001F1F3 VN 7"
+  type: trojan
+  server: gmvip01.csadata4g.me
+  port: 443
+  udp: true
+  password: e505ff62-bc60-4113-b922-b40919396462
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -36,13 +62,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: h295826.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -50,9 +69,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -62,8 +83,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
