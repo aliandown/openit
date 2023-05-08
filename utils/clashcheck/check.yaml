@@ -20,39 +20,28 @@ proxies:
   type: trojan
   password: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
   sni: bozbozghandi.foriran.nl
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  type: trojan
-  server: hk9.microsoftjs.top
-  port: 443
-  udp: true
-  password: e5d13389-59bf-4ae8-8237-d8dec8195e60
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  type: trojan
-  server: hk3.microsoftjs.top
-  port: 80
-  udp: true
-  password: e5d13389-59bf-4ae8-8237-d8dec8195e60
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  type: trojan
-  server: hk2.microsoftjs.top
-  port: 80
-  udp: true
-  password: e5d13389-59bf-4ae8-8237-d8dec8195e60
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 7"
-  type: trojan
-  server: hk5.microsoftjs.top
-  port: 443
-  udp: true
-  password: e5d13389-59bf-4ae8-8237-d8dec8195e60
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: h295826.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: h295826.waihuizhibiaowang.com
+  port: 11343
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: h295826.waihuizhibiaowang.com
+  port: 11443
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -67,11 +56,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -81,10 +69,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
