@@ -1,31 +1,39 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: irancpi1.duckdns.org
+  server: 170.187.134.190
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
+- name: "\U0001F1EC\U0001F1E7 GB 2"
   type: trojan
-  server: kr1.cnamazon.sbs
+  server: 157.245.37.47
   port: 443
   udp: true
   password: cc955bd1-b2b1-4304-8bab-98c8054392b9
   sni: tlsdata.cnamazon.sbs
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 3"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: gmvip01.csadata4g.me
+  server: 31.40.212.144
   port: 443
   udp: true
-  password: e505ff62-bc60-4113-b922-b40919396462
-  sni: dl.kgvn.garenanow.com
+  password: cc955bd1-b2b1-4304-8bab-98c8054392b9
+  sni: tlsdata.cnamazon.sbs
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 4"
+  type: trojan
+  server: in1.cnamazon.sbs
+  port: 443
+  udp: true
+  password: cc955bd1-b2b1-4304-8bab-98c8054392b9
+  sni: tlsdata.cnamazon.sbs
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -38,9 +46,10 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -48,8 +57,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
