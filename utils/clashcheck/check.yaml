@@ -1,21 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: 163.123.192.146
-  port: 443
-  udp: true
-  password: 2cb6537c-e6db-4d20-ba70-3495b95aca68
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
   server: bhjuyyyyyho.toxesi52532231.workers.dev
   port: 443
@@ -25,7 +9,7 @@ proxies:
   network: ws
   ws-opts:
     path: malta-potter-whom-owns.trycloudflare.com/mio
-- name: "\U0001F1F8\U0001F1EC SG 4"
+- name: "\U0001F1F8\U0001F1EC SG 2"
   type: trojan
   server: 13.215.140.145
   port: 443
@@ -34,7 +18,7 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 5"
+- name: "\U0001F1E8\U0001F1F3 CN 3"
   type: trojan
   server: 43.198.88.70
   port: 443
@@ -43,9 +27,24 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   server: h295826.waihuizhibiaowang.com
   port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 5"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: h295826.waihuizhibiaowang.com
+  port: 11343
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -54,11 +53,11 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -66,11 +65,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
