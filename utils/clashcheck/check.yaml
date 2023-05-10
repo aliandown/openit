@@ -40,7 +40,25 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  type: trojan
+  server: aws-hk02.aikun.online
+  port: 443
+  udp: true
+  password: 1d636482-5f7b-41d3-ac42-241c00935fbb
+  sni: aws-hk02.aikun.online
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: trojan
+  server: 43.198.88.70
+  port: 443
+  udp: true
+  password: e9751f11-d8d1-4a02-81eb-3ba7691e975c
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 8"
   type: trojan
   server: aws-sg.aikun.online
   port: 443
@@ -49,38 +67,15 @@ proxies:
   sni: aws-sg.aikun.online
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  type: trojan
-  server: kr1.microsoft-orgwly.vip
-  port: 443
-  udp: true
-  password: 29645da0-a43a-4ec4-95a1-57eb5e92be44
-  sni: tls.microsoft-orgwly.vip
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 8"
-  type: trojan
-  server: japan.tltvpn.xyz
-  port: 443
-  udp: true
-  password: 022e3c2a-f4bf-423e-8c05-7f26fff93674
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: h295826.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: h295826.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+  type: trojan
+  server: aws-hk01.aikun.online
+  port: 443
+  udp: true
+  password: 1d636482-5f7b-41d3-ac42-241c00935fbb
+  sni: aws-hk01.aikun.online
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -90,11 +85,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -106,10 +100,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
