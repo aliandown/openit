@@ -29,24 +29,6 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 4"
   type: trojan
-  server: aws-hk01.aikun.online
-  port: 443
-  udp: true
-  password: 1d636482-5f7b-41d3-ac42-241c00935fbb
-  sni: aws-hk01.aikun.online
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  type: trojan
-  server: 43.198.88.70
-  port: 443
-  udp: true
-  password: e9751f11-d8d1-4a02-81eb-3ba7691e975c
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: trojan
   server: aws-hk02.aikun.online
   port: 443
   udp: true
@@ -54,7 +36,16 @@ proxies:
   sni: aws-hk02.aikun.online
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 7"
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  type: trojan
+  server: aws-hk01.aikun.online
+  port: 443
+  udp: true
+  password: 1d636482-5f7b-41d3-ac42-241c00935fbb
+  sni: aws-hk01.aikun.online
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 6"
   type: trojan
   server: aws-sg.aikun.online
   port: 443
@@ -63,7 +54,22 @@ proxies:
   sni: aws-sg.aikun.online
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: h295826.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 8"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 9"
   type: trojan
   server: 13.215.140.145
   port: 443
@@ -72,21 +78,6 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 9"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: h295826.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -96,11 +87,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -112,10 +102,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
