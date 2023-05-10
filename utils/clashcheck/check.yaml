@@ -6,34 +6,41 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: irancpi1.duckdns.org
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: jp4.cnamazon.sbs
   port: 443
   type: trojan
   password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
   sni: tlsdata.cnamazon.sbs
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: jp01.studentplanner.uk
   port: 443
   type: trojan
   password: c2e0cb10-3c0f-4b41-8939-af235800cf07
   sni: jp01.studentplanner.uk
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: 141.11.127.23
-  port: 443
-  udp: true
-  password: 5bc475b9-18f4-4eeb-8b2e-65d66a928a76
-  sni: mzy.windowsupdate1.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hk5.cnamazon.sbs
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: hk1.cnamazon.sbs
   port: 443
   type: trojan
   password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
   sni: tlsdata.cnamazon.sbs
-- name: "\U0001F1E8\U0001F1F3 HK 6"
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 7"
   type: trojan
   server: download1hkt.windowsupdate.lol
   port: 443
@@ -42,7 +49,29 @@ proxies:
   sni: mzy.windowsupdate1.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1E8\U0001F1F3 HK 8"
+  server: hk5.cnamazon.sbs
+  port: 443
+  type: trojan
+  password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
+  sni: tlsdata.cnamazon.sbs
+- name: "\U0001F1FA\U0001F1F8 US 9"
+  type: trojan
+  server: 141.11.127.23
+  port: 443
+  udp: true
+  password: 5bc475b9-18f4-4eeb-8b2e-65d66a928a76
+  sni: mzy.windowsupdate1.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: h295826.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 11"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -50,9 +79,9 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 12"
   server: h295826.waihuizhibiaowang.com
-  port: 11543
+  port: 11343
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -62,13 +91,17 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -76,12 +109,16 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
