@@ -6,83 +6,13 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 104.149.155.15
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.windowsupdatea.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 141.193.68.81
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.windowsupdatea.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: 74.217.179.22
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.windowsupdatea.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 5"
-  type: trojan
-  server: 89.163.220.99
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.windowsupdatea.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: 141.11.127.23
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.windowsupdate1.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: 199.15.78.134
-  port: 44337
-  udp: true
-  password: wrJLGmrVUo
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  type: trojan
-  server: 66.42.50.66
-  port: 80
-  udp: true
-  password: 86523a68-b346-413c-ab61-85af7e36c3db
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 9"
-  type: trojan
-  server: download1tw.windowsupdate.lol
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.windowsupdatea.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 10"
+- name: "\U0001F1F8\U0001F1EC SG 2"
   server: aws-sg.aikun.online
   port: 443
   type: trojan
   password: ff81ed1c-366d-422f-9362-6d10b116d1cf
   sni: aws-sg.aikun.online
-- name: "\U0001F1EE\U0001F1F3 IN 11"
+- name: "\U0001F1EE\U0001F1F3 IN 3"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -90,61 +20,13 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FB\U0001F1F3 VN 12"
-  type: trojan
-  server: 103.173.255.234
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.hruqoaw.cn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 13"
-  type: trojan
-  server: 103.173.255.127
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.hruqoaw.cn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 14"
-  type: trojan
-  server: 103.173.255.21
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.hruqoaw.cn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 15"
-  type: trojan
-  server: 103.81.85.238
-  port: 443
-  udp: true
-  password: 274fefdb-6159-4765-b3e8-c6050b23b48f
-  sni: mzy.hruqoaw.cn
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1E8\U0001F1F3 TW 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1FB\U0001F1F3 VN 12"
-  - "\U0001F1FB\U0001F1F3 VN 13"
-  - "\U0001F1FB\U0001F1F3 VN 14"
-  - "\U0001F1FB\U0001F1F3 VN 15"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -152,19 +34,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1E8\U0001F1F3 TW 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1FB\U0001F1F3 VN 12"
-  - "\U0001F1FB\U0001F1F3 VN 13"
-  - "\U0001F1FB\U0001F1F3 VN 14"
-  - "\U0001F1FB\U0001F1F3 VN 15"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
