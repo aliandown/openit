@@ -7,24 +7,41 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: bozbozghandi.foriran.nl
   type: trojan
-  server: 141.11.127.23
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
+  password: a6e6b3e0-b8a7-4123-8ab4-573a9241a259
+  skip-cert-verify: true
   udp: true
-  password: 5bc475b9-18f4-4eeb-8b2e-65d66a928a76
-  sni: mzy.windowsupdate1.com
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: jp01.studentplanner.uk
+  port: 443
+  type: trojan
+  password: c2e0cb10-3c0f-4b41-8939-af235800cf07
+  sni: jp01.studentplanner.uk
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  type: trojan
+  server: 66.42.50.66
+  port: 80
+  udp: true
+  password: 86523a68-b346-413c-ab61-85af7e36c3db
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 3"
-  type: trojan
-  server: 103.173.255.127
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: hk5.cnamazon.sbs
   port: 443
-  udp: true
-  password: 5bc475b9-18f4-4eeb-8b2e-65d66a928a76
-  sni: mzy.hruqoaw.cn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 4"
+  type: trojan
+  password: 6cc96992-cfab-48ca-9e16-963c4a0aa585
+  sni: tlsdata.cnamazon.sbs
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: h295826.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -32,14 +49,27 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 8"
+  type: trojan
+  server: awshk7-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  sni: data.amazonwebservicess.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FB\U0001F1F3 VN 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -48,7 +78,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FB\U0001F1F3 VN 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
