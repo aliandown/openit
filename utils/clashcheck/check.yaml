@@ -15,22 +15,7 @@ proxies:
   sni: mzy.windowsupdate1.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: jp01.studentplanner.uk
-  port: 443
-  type: trojan
-  password: c2e0cb10-3c0f-4b41-8939-af235800cf07
-  sni: jp01.studentplanner.uk
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  type: trojan
-  server: download1hkt.windowsupdate.lol
-  port: 443
-  udp: true
-  password: 5bc475b9-18f4-4eeb-8b2e-65d66a928a76
-  sni: mzy.windowsupdate1.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 5"
+- name: "\U0001F1FB\U0001F1F3 VN 3"
   type: trojan
   server: 103.173.255.127
   port: 443
@@ -39,7 +24,7 @@ proxies:
   sni: mzy.hruqoaw.cn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -53,10 +38,8 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,9 +48,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1EE\U0001F1F3 IN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
