@@ -16,15 +16,6 @@ proxies:
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
-  server: awsjp11-data.amazon-azure.com
-  port: 443
-  udp: true
-  password: 4062b33c-be7a-4b69-94f5-4c738a4def8f
-  sni: data.amazon-azure.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  type: trojan
   server: awsjp4-data.amazon-azure.com
   port: 443
   udp: true
@@ -32,12 +23,21 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
   server: awsjp16-data.amazon-azure.com
   port: 443
   udp: true
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  sni: data.amazon-azure.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  type: trojan
+  server: awsjp11-data.amazon-azure.com
+  port: 443
+  udp: true
+  password: 4062b33c-be7a-4b69-94f5-4c738a4def8f
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
@@ -67,13 +67,14 @@ proxies:
   sni: data.amazonwebservicess.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: h295826.waihuizhibiaowang.com
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 9"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 10"
   type: trojan
   server: 43.207.172.213
@@ -83,28 +84,6 @@ proxies:
   sni: data.amazon-azure.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 11"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 12"
-  server: h295826.waihuizhibiaowang.com
-  port: 11343
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 13"
-  server: h295826.waihuizhibiaowang.com
-  port: 11443
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -117,11 +96,8 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1EE\U0001F1F3 IN 9"
   - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -136,10 +112,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1EE\U0001F1F3 IN 9"
   - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
