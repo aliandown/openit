@@ -14,7 +14,42 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 148.59.74.241
+  port: 443
+  udp: true
+  password: 39025112-63f3-4e71-ba0d-887fc739f583
+  sni: 20-212-60-88.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: 74.217.179.22
+  port: 443
+  udp: true
+  password: 525d29c2-4c39-477f-a526-2da92861cdff
+  sni: glc.windowsupdatea.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 5"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  type: trojan
+  server: awssg13-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  sni: data.amazonwebservicess.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -22,21 +57,17 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,7 +76,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
