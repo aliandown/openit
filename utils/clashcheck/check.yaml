@@ -7,14 +7,13 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us2.trojanvh.xyz
   type: trojan
-  server: 148.59.74.241
-  port: 443
-  udp: true
-  password: 39025112-63f3-4e71-ba0d-887fc739f583
-  sni: 20-212-60-88.nhost.00cdn.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 80
+  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 148.59.74.240
@@ -26,6 +25,15 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
+  server: 148.59.74.241
+  port: 443
+  udp: true
+  password: 39025112-63f3-4e71-ba0d-887fc739f583
+  sni: 20-212-60-88.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
   server: 74.217.179.22
   port: 443
   udp: true
@@ -33,23 +41,14 @@ proxies:
   sni: glc.windowsupdatea.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: us2.trojanvh.xyz
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: kr05.wangxd.life
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
-  port: 80
-  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  type: trojan
-  server: bgptw3.cnamazon.sbs
   port: 443
-  udp: true
-  password: fe455c1d-33ab-439d-acdb-449bba167fb1
-  sni: tlsdata.cnamazon.sbs
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 7"
   type: trojan
   server: sg2.cnamazon.sbs
@@ -67,16 +66,18 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  type: trojan
+  server: awssg13-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  sni: data.amazonwebservicess.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 10"
   server: assets.flareai.site
-  port: 11343
+  port: 11543
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -90,10 +91,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -106,10 +107,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1F0\U0001F1F7 KR 6"
   - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
