@@ -1,11 +1,13 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170.187.134.190
+- name: "\U0001F1F7\U0001F1FA RU 1"
   type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
+  server: bgptru1.cnamazon.sbs
+  port: 443
+  udp: true
+  password: bc2a1eb1-a706-4ee5-95a6-732a6c324142
+  sni: tlsdata.cnamazon.sbs
   skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 2"
   server: 152.70.74.66
   type: trojan
@@ -25,7 +27,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F7\U0001F1FA RU 1"
   - "\U0001F1EE\U0001F1F3 IN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
@@ -34,7 +36,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F7\U0001F1FA RU 1"
   - "\U0001F1EE\U0001F1F3 IN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
