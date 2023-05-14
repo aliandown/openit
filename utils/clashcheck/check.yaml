@@ -22,16 +22,18 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  type: trojan
+  server: awssg13-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  sni: data.amazonwebservicess.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 5"
   server: assets.flareai.site
-  port: 11343
+  port: 11543
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -43,7 +45,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -54,7 +56,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
