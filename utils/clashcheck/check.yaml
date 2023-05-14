@@ -1,18 +1,17 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: tempest-us.aikun.online
+  server: 170.187.134.190
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 0d234e81-52f2-44a7-8bcc-b9e737c3830f
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: US3.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 12008
+  server: tempest-us.aikun.online
+  port: 443
   type: trojan
-  password: cd886da4-d68e-44b8-b7ef-fb5bc0c6c09c
-  sni: 13-231-155-134.NHOST.00CDN.COM
+  password: 0d234e81-52f2-44a7-8bcc-b9e737c3830f
+  sni: tempest-us.aikun.online
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: us2.trojanvh.xyz
   type: trojan
@@ -21,21 +20,29 @@ proxies:
   password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 170.187.134.190
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: aws-jp.aikun.online
+  port: 443
   type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
+  password: 0d234e81-52f2-44a7-8bcc-b9e737c3830f
+  sni: aws-jp.aikun.online
+- name: "\U0001F1F0\U0001F1F7 KR 5"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 3052
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: kr05.wangxd.life
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -43,14 +50,21 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: assets.flareai.site
+  port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 9"
   server: assets.flareai.site
   port: 11343
   type: http
   username: b3b1de88b0
   password: b91b087fa4
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   server: assets.flareai.site
   port: 11443
   type: http
@@ -64,11 +78,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,10 +94,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
