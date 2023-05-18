@@ -1,34 +1,34 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: 148.59.74.143
+  port: 443
+  udp: true
+  password: 3e49b072-4746-4e46-a256-233c3c7b52bf
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170.187.134.190
   type: trojan
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: US1.FP3KEMYH-CM4S-2HAK-2GB9-W3534UMY2SQ5.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 443
-  udp: true
-  password: cd886da4-d68e-44b8-b7ef-fb5bc0c6c09c
-  sni: 13-231-155-134.NHOST.00CDN.COM
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: us2.trojanvh.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 80
-  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
   port: 443
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us2.trojanvh.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 80
+  password: 255c924c-1314-4084-9a9e-1d1a82a5cf49
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 5"
@@ -49,49 +49,25 @@ proxies:
   type: trojan
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   sni: data.amazon-azure.com
-- name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: kr05.wangxd.life
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 9"
+- name: "\U0001F1E8\U0001F1F3 HK 8"
   server: awshk15-data.amazon-azure.com
   port: 443
   type: trojan
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   sni: data.amazon-azure.com
-- name: "\U0001F1E8\U0001F1F3 HK 10"
+- name: "\U0001F1E8\U0001F1F3 HK 9"
   server: awshk8-data.amazon-azure.com
   port: 443
   type: trojan
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   sni: data.amazon-azure.com
-- name: "\U0001F1E8\U0001F1F3 HK 11"
+- name: "\U0001F1E8\U0001F1F3 HK 10"
   server: awshk5-tg-data.amazonwebservicess.com
   port: 443
   type: trojan
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   sni: data.amazonwebservicess.com
-- name: "\U0001F1E8\U0001F1F3 TW 12"
-  type: trojan
-  server: stw8-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 13"
-  type: trojan
-  server: scloudtw1-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 14"
+- name: "\U0001F1E8\U0001F1F3 HK 11"
   type: trojan
   server: awshk9-tg-data.amazonwebservicess.com
   port: 443
@@ -100,24 +76,7 @@ proxies:
   sni: data.amazonwebservicess.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 15"
-  type: trojan
-  server: hk5.cnamazon.sbs
-  port: 443
-  udp: true
-  password: bc2a1eb1-a706-4ee5-95a6-732a6c324142
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 16"
-  type: trojan
-  server: 3.112.220.151
-  port: 31467
-  udp: true
-  password: e8dacfc5-79b1-4289-92f1-e390080d56aa
-  sni: sgp.piaole.me
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 17"
+- name: "\U0001F1E8\U0001F1F3 TW 12"
   type: trojan
   server: scloudtw2-tg-data.amazonwebservicess.com
   port: 443
@@ -125,15 +84,15 @@ proxies:
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 18"
+- name: "\U0001F1EE\U0001F1F3 IN 13"
+  server: 152.70.74.66
   type: trojan
-  server: stw5-tg-data.amazonwebservicess.com
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 19"
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 14"
   type: trojan
   server: stw10-tg-data.amazonwebservicess.com
   port: 443
@@ -141,62 +100,7 @@ proxies:
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 20"
-  type: trojan
-  server: scloudtw1-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 21"
-  type: trojan
-  server: 3.112.220.151
-  port: 26911
-  udp: true
-  password: a3869db4-eaaa-4cef-b131-26b3c0b46686
-  sni: sgp.piaole.me
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 22"
-  type: trojan
-  server: stw6-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 23"
-  type: trojan
-  server: stw7-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 24"
-  type: trojan
-  server: scloudtw2-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 25"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 26"
-  server: assets.flareai.site
-  port: 11343
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 HK 27"
+- name: "\U0001F1E8\U0001F1F3 TW 15"
   type: trojan
   server: stw3-tg-data.amazonwebservicess.com
   port: 443
@@ -204,9 +108,17 @@ proxies:
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 28"
+- name: "\U0001F1E8\U0001F1F3 TW 16"
+  type: trojan
+  server: stw5-tg-data.amazonwebservicess.com
+  port: 443
+  udp: true
+  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 17"
   server: assets.flareai.site
-  port: 11443
+  port: 11543
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -217,32 +129,21 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1E8\U0001F1F3 TW 12"
-  - "\U0001F1E8\U0001F1F3 TW 13"
+  - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1E8\U0001F1F3 HK 14"
-  - "\U0001F1E8\U0001F1F3 HK 15"
-  - "\U0001F1EF\U0001F1F5 JP 16"
-  - "\U0001F1E8\U0001F1F3 TW 17"
-  - "\U0001F1EE\U0001F1F3 IN 18"
-  - "\U0001F1E8\U0001F1F3 HK 19"
-  - "\U0001F1E8\U0001F1F3 TW 20"
-  - "\U0001F1EF\U0001F1F5 JP 21"
-  - "\U0001F1E8\U0001F1F3 TW 22"
-  - "\U0001F1E8\U0001F1F3 HK 23"
-  - "\U0001F1E8\U0001F1F3 TW 24"
-  - "\U0001F1E8\U0001F1F3 CN 25"
-  - "\U0001F1E8\U0001F1F3 CN 26"
-  - "\U0001F1E8\U0001F1F3 HK 27"
-  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1E8\U0001F1F3 TW 15"
+  - "\U0001F1E8\U0001F1F3 TW 16"
+  - "\U0001F1E8\U0001F1F3 CN 17"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -251,31 +152,20 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1E8\U0001F1F3 TW 12"
-  - "\U0001F1E8\U0001F1F3 TW 13"
+  - "\U0001F1EE\U0001F1F3 IN 13"
   - "\U0001F1E8\U0001F1F3 HK 14"
-  - "\U0001F1E8\U0001F1F3 HK 15"
-  - "\U0001F1EF\U0001F1F5 JP 16"
-  - "\U0001F1E8\U0001F1F3 TW 17"
-  - "\U0001F1EE\U0001F1F3 IN 18"
-  - "\U0001F1E8\U0001F1F3 HK 19"
-  - "\U0001F1E8\U0001F1F3 TW 20"
-  - "\U0001F1EF\U0001F1F5 JP 21"
-  - "\U0001F1E8\U0001F1F3 TW 22"
-  - "\U0001F1E8\U0001F1F3 HK 23"
-  - "\U0001F1E8\U0001F1F3 TW 24"
-  - "\U0001F1E8\U0001F1F3 CN 25"
-  - "\U0001F1E8\U0001F1F3 CN 26"
-  - "\U0001F1E8\U0001F1F3 HK 27"
-  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1E8\U0001F1F3 TW 15"
+  - "\U0001F1E8\U0001F1F3 TW 16"
+  - "\U0001F1E8\U0001F1F3 CN 17"
 rules:
 - "MATCH,\U0001F310 Proxy"
