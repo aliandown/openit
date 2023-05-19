@@ -1,13 +1,5 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: yingguo1.zhoushuren.me
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 58850
-  password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1EF\U0001F1F5 JP 1"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -15,23 +7,38 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 3"
+- name: "\U0001F1F8\U0001F1EC SG 2"
   type: trojan
   server: xuxu.ixx520.club
   port: 16486
   udp: true
   password: SuebuWmyBsEHn1_bosIfBMGC8OZOoIDBbQouXp1N7aOS8dBV
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 4"
+- name: "\U0001F1F8\U0001F1EC SG 3"
   type: trojan
   server: xuxu.ixx520.club
   port: 9438
   udp: true
   password: SuebuWmyBsEHn1_bosIfBMGC8OZOoIDBbQouXp1N7aOS8dBV
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 5"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   server: assets.flareai.site
   port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1EE\U0001F1F3 IN 5"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: assets.flareai.site
+  port: 11443
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -40,21 +47,23 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
