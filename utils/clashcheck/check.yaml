@@ -1,20 +1,20 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: 163.123.192.150
-  port: 443
-  udp: true
-  password: 7f4e8527-79da-49c3-8ca8-64eef120882f
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
   server: 148.59.74.143
   port: 443
   udp: true
   password: 3e49b072-4746-4e46-a256-233c3c7b52bf
   sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 163.123.192.150
+  port: 443
+  udp: true
+  password: 7f4e8527-79da-49c3-8ca8-64eef120882f
+  sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 3"
@@ -25,7 +25,19 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: hk04.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 331365d8-3ce5-484d-a226-33312bcc3217
+  sni: hk04.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: hk03.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 331365d8-3ce5-484d-a226-33312bcc3217
+  sni: hk03.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   type: trojan
   server: 43.198.142.159
   port: 443
@@ -34,7 +46,7 @@ proxies:
   sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
+- name: "\U0001F1E8\U0001F1F3 HK 7"
   type: trojan
   server: 16.162.50.230
   port: 443
@@ -42,7 +54,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
   server: azjp1.downloadvip.cfd
   port: 443
@@ -51,21 +63,24 @@ proxies:
   sni: us1.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  server: jp.mjt001.com
-  port: 443
-  type: trojan
-  password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  sni: jp.mjt001.com
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  server: usla.mjt001.com
-  port: 443
-  type: trojan
-  password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
-  sni: usla.mjt001.com
 - name: "\U0001F1E8\U0001F1F3 CN 9"
   server: assets.flareai.site
   port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1F3\U0001F1F1 NL 10"
+  server: iranfreedom.duckdns.org
+  type: trojan
+  country: "\U0001F1F3\U0001F1F1NL"
+  port: 443
+  password: 8357816b-68e4-4a2b-830c-e9bdd369ea22
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: assets.flareai.site
+  port: 11443
   type: http
   username: b3b1de88b0
   password: b91b087fa4
@@ -77,12 +92,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1F3\U0001F1F1 NL 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -92,11 +109,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1F3\U0001F1F1 NL 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
