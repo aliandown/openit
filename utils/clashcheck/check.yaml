@@ -57,14 +57,12 @@ proxies:
   type: trojan
   password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
   sni: jp.mjt001.com
-- name: "\U0001F1EE\U0001F1F3 IN 8"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: usla.mjt001.com
   port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
+  type: trojan
+  password: 9d3b1e0e-252a-4c67-9628-8b62e77197e7
+  sni: usla.mjt001.com
 - name: "\U0001F1E8\U0001F1F3 CN 9"
   server: assets.flareai.site
   port: 11543
@@ -83,7 +81,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -98,7 +96,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
