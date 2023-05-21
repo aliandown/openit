@@ -22,19 +22,7 @@ proxies:
   password: 88fa7209-5ce8-4fc4-a379-c02b546cf3f2
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: fscus.fscloud123456789.com
-  port: 443
-  type: trojan
-  password: 8a7d181d-0a3c-4266-b2b1-336124d1d943
-  sni: fscus.fscloud123456789.com
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: fscus.fscloud123456789.com
-  port: 443
-  type: trojan
-  password: 8a7d181d-0a3c-4266-b2b1-336124d1d943
-  sni: fscus.fscloud123456789.com
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -42,13 +30,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -56,10 +37,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -69,9 +47,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EE\U0001F1F3 IN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
