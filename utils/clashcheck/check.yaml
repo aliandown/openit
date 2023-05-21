@@ -16,19 +16,25 @@ proxies:
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 3"
   server: hgchk.457843.xyz
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
   port: 9998
-  type: trojan
   password: 88fa7209-5ce8-4fc4-a379-c02b546cf3f2
-  sni: hgchk.457843.xyz
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: doxjp02.588511.xyz
-  type: trojan
-  country: "\U0001F1F8\U0001F1ECSG"
-  port: 58850
-  password: bf0cd4b6-80a0-47d9-83d7-b887516eebe7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 5"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: fscus.fscloud123456789.com
+  port: 443
+  type: trojan
+  password: 8a7d181d-0a3c-4266-b2b1-336124d1d943
+  sni: fscus.fscloud123456789.com
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: fscus.fscloud123456789.com
+  port: 443
+  type: trojan
+  password: 8a7d181d-0a3c-4266-b2b1-336124d1d943
+  sni: fscus.fscloud123456789.com
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -36,7 +42,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: assets.flareai.site
   port: 11543
   type: http
@@ -50,9 +56,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -62,8 +69,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
