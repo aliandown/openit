@@ -7,14 +7,6 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 2"
-  type: trojan
-  server: xuxu.ixx520.club
-  port: 34318
-  udp: true
-  password: GKX2ZvhBma
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -22,19 +14,65 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  type: trojan
+  server: xuxu.ixx520.club
+  port: 34318
+  udp: true
+  password: GKX2ZvhBma
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  type: trojan
+  server: sg4.microsoft-orgwly.vip
+  port: 80
+  udp: true
+  password: ce58cab4-2675-47f7-b3e1-96f08839f86b
+  sni: tls.microsoft-orgwly.vip
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: h295826.waihuizhibiaowang.com
+  port: 11543
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   server: assets.flareai.site
   port: 11543
   type: http
   username: b3b1de88b0
   password: b91b087fa4
   tls: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: ap.stablize.top
-  port: 443
-  type: trojan
-  password: b327d1e6-3abc-4ce5-81f3-620ea3f10647
-  sni: ap.stablize.top
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: h295826.waihuizhibiaowang.com
+  port: 11343
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: assets.flareai.site
+  port: 11343
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: h295826.waihuizhibiaowang.com
+  port: 11443
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: assets.flareai.site
+  port: 11443
+  type: http
+  username: b3b1de88b0
+  password: b91b087fa4
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -42,8 +80,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -53,7 +96,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
