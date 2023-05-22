@@ -8,19 +8,19 @@ proxies:
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 163.123.192.154
+  server: 163.123.192.153
   port: 443
   udp: true
-  password: 997a9caa-5950-476f-8614-462fb2e0ed18
+  password: d69793f4-8379-41ab-91aa-e51371ca8d26
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: 163.123.192.153
+  server: 163.123.192.154
   port: 443
   udp: true
-  password: d69793f4-8379-41ab-91aa-e51371ca8d26
+  password: 997a9caa-5950-476f-8614-462fb2e0ed18
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
@@ -32,27 +32,15 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1FE CY 5"
+- name: "\U0001F1E8\U0001F1F3 TW 5"
   type: trojan
-  server: cnamemk.ciscocdn1.live
+  server: 165.154.227.191
   port: 443
   udp: true
-  password: 3c2504f0-8014-4a68-b49a-a098d8808e61
-  sni: c7mk.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /BLda1CCMAiWUNnzj51ltOjG4G3
-- name: "\U0001F1F8\U0001F1EC SG 6"
-  type: trojan
-  server: sg4.microsoft-orgwly.vip
-  port: 80
-  udp: true
-  password: ce58cab4-2675-47f7-b3e1-96f08839f86b
-  sni: tls.microsoft-orgwly.vip
+  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   type: trojan
   server: 165.154.246.229
   port: 443
@@ -60,14 +48,24 @@ proxies:
   password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 8"
-  server: 152.70.74.66
+- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 163.123.192.149
   port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
   udp: true
+  password: ce918944-78ef-4b99-9304-60337192b4b7
+  sni: download.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  type: trojan
+  server: 163.123.192.151
+  port: 443
+  udp: true
+  password: ce918944-78ef-4b99-9304-60337192b4b7
+  sni: download.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 9"
   type: trojan
   server: 163.123.192.150
@@ -79,15 +77,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 10"
   type: trojan
-  server: 163.123.192.149
-  port: 443
-  udp: true
-  password: ce918944-78ef-4b99-9304-60337192b4b7
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11"
-  type: trojan
   server: 163.123.192.152
   port: 443
   udp: true
@@ -95,13 +84,21 @@ proxies:
   sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 12"
+- name: "\U0001F1EE\U0001F1F3 IN 11"
+  server: 152.70.74.66
   type: trojan
-  server: 163.123.192.151
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 12"
+  type: trojan
+  server: vn1.microsoft-orgwly.vip
   port: 443
   udp: true
-  password: ce918944-78ef-4b99-9304-60337192b4b7
-  sni: download.xn--mes358acgm99l.com
+  password: aef8d2c4-6ff7-4cc1-8d14-8596d3426223
+  sni: tls.microsoft-orgwly.vip
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 13"
@@ -113,38 +110,7 @@ proxies:
   sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 14"
-  type: trojan
-  server: vn1.microsoft-orgwly.vip
-  port: 443
-  udp: true
-  password: aef8d2c4-6ff7-4cc1-8d14-8596d3426223
-  sni: tls.microsoft-orgwly.vip
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 15"
-  type: ss
-  server: yd-04.paofunlink.com
-  port: 5980
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 16"
-  type: ss
-  server: yd-03.paofunlink.com
-  port: 1195
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 17"
+- name: "\U0001F1E8\U0001F1F3 CN 14"
   type: ss
   server: yd-04.paofunlink.com
   port: 5982
@@ -155,15 +121,50 @@ proxies:
     mode: http
     host: c6a60226523.microsoft.com
     mux: false
-- name: "\U0001F1EF\U0001F1F5 JP 18"
-  type: trojan
-  server: azjp1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: ce918944-78ef-4b99-9304-60337192b4b7
-  sni: jp1.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 15"
+  type: ss
+  server: yd-04.paofunlink.com
+  port: 5986
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1E8\U0001F1F3 CN 16"
+  type: ss
+  server: yd-03.paofunlink.com
+  port: 1170
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1E8\U0001F1F3 CN 17"
+  type: ss
+  server: yd-03.paofunlink.com
+  port: 1171
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1E8\U0001F1F3 CN 18"
+  type: ss
+  server: yd-04.paofunlink.com
+  port: 5987
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
 - name: "\U0001F1E8\U0001F1F3 CN 19"
   type: ss
   server: yd-03.paofunlink.com
@@ -178,7 +179,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 20"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1197
+  port: 1195
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -189,7 +190,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 21"
   type: ss
   server: yd-04.paofunlink.com
-  port: 5981
+  port: 5985
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -199,8 +200,8 @@ proxies:
     mux: false
 - name: "\U0001F1E8\U0001F1F3 CN 22"
   type: ss
-  server: yd-04.paofunlink.com
-  port: 5985
+  server: yd-03.paofunlink.com
+  port: 1197
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -211,7 +212,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 23"
   type: ss
   server: yd-04.paofunlink.com
-  port: 5988
+  port: 5980
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -222,28 +223,6 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 24"
   type: ss
   server: yd-04.paofunlink.com
-  port: 5984
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 25"
-  type: ss
-  server: yd-04.paofunlink.com
-  port: 5987
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 26"
-  type: ss
-  server: yd-04.paofunlink.com
   port: 5983
   password: Paofu
   cipher: rc4-md5
@@ -252,29 +231,7 @@ proxies:
     mode: http
     host: c6a60226523.microsoft.com
     mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 27"
-  type: ss
-  server: yd-04.paofunlink.com
-  port: 5986
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 28"
-  type: ss
-  server: yd-04.paofunlink.com
-  port: 5989
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 29"
+- name: "\U0001F1E8\U0001F1F3 CN 25"
   type: ss
   server: yd-03.paofunlink.com
   port: 1198
@@ -285,10 +242,10 @@ proxies:
     mode: http
     host: c6a60226523.microsoft.com
     mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 30"
+- name: "\U0001F1E8\U0001F1F3 CN 26"
   type: ss
-  server: yd-03.paofunlink.com
-  port: 1158
+  server: yd-04.paofunlink.com
+  port: 5984
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -296,10 +253,51 @@ proxies:
     mode: http
     host: c6a60226523.microsoft.com
     mux: false
+- name: "\U0001F1E8\U0001F1F3 CN 27"
+  type: ss
+  server: yd-04.paofunlink.com
+  port: 5981
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1E8\U0001F1F3 CN 28"
+  type: ss
+  server: yd-04.paofunlink.com
+  port: 5988
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1E8\U0001F1F3 CN 29"
+  type: ss
+  server: yd-04.paofunlink.com
+  port: 5989
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1E8\U0001F1F3 TW 30"
+  type: trojan
+  server: goctw1.pmssr.xyz
+  port: 443
+  udp: true
+  password: 95b2dc83-a476-4a82-93b2-0d77b4c30c18
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 31"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1156
+  port: 1155
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -321,7 +319,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 33"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1155
+  port: 1172
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -332,7 +330,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 34"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1172
+  port: 1156
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -341,41 +339,6 @@ proxies:
     host: c6a60226523.microsoft.com
     mux: false
 - name: "\U0001F1E8\U0001F1F3 CN 35"
-  type: trojan
-  server: hk1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: ce918944-78ef-4b99-9304-60337192b4b7
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 36"
-  type: trojan
-  server: sg1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: ce918944-78ef-4b99-9304-60337192b4b7
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 37"
-  type: trojan
-  server: jp1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: ce918944-78ef-4b99-9304-60337192b4b7
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 38"
-  type: trojan
-  server: scloudtw2-tg-data.amazonwebservicess.com
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 39"
   type: ss
   server: yd-03.paofunlink.com
   port: 1173
@@ -386,18 +349,57 @@ proxies:
     mode: http
     host: c6a60226523.microsoft.com
     mux: false
-- name: "\U0001F1E8\U0001F1F3 TW 40"
+- name: "\U0001F1E8\U0001F1F3 CN 36"
+  type: ss
+  server: yd-03.paofunlink.com
+  port: 1158
+  password: Paofu
+  cipher: rc4-md5
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: c6a60226523.microsoft.com
+    mux: false
+- name: "\U0001F1EF\U0001F1F5 JP 37"
   type: trojan
-  server: goctw1.pmssr.xyz
+  server: azjp1.downloadvip.cfd
   port: 443
   udp: true
-  password: 95b2dc83-a476-4a82-93b2-0d77b4c30c18
+  password: ce918944-78ef-4b99-9304-60337192b4b7
+  sni: jp1.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 38"
+  type: trojan
+  server: sg1.downloadvip.cfd
+  port: 443
+  udp: true
+  password: ce918944-78ef-4b99-9304-60337192b4b7
+  sni: download.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 39"
+  type: trojan
+  server: jp1.downloadvip.cfd
+  port: 443
+  udp: true
+  password: ce918944-78ef-4b99-9304-60337192b4b7
+  sni: download.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 40"
+  type: trojan
+  server: hk1.downloadvip.cfd
+  port: 443
+  udp: true
+  password: ce918944-78ef-4b99-9304-60337192b4b7
+  sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 41"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1171
+  port: 1188
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -408,7 +410,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 42"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1170
+  port: 1186
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -419,7 +421,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 43"
   type: ss
   server: yd-03.paofunlink.com
-  port: 1188
+  port: 1185
   password: Paofu
   cipher: rc4-md5
   plugin: obfs
@@ -438,28 +440,6 @@ proxies:
     mode: http
     host: c6a60226523.microsoft.com
     mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 45"
-  type: ss
-  server: yd-03.paofunlink.com
-  port: 1185
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
-- name: "\U0001F1E8\U0001F1F3 CN 46"
-  type: ss
-  server: yd-03.paofunlink.com
-  port: 1186
-  password: Paofu
-  cipher: rc4-md5
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: c6a60226523.microsoft.com
-    mux: false
 proxy-groups:
 - name: automatic
   type: url-test
@@ -468,20 +448,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1FE CY 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1FA\U0001F1F3 UN 12"
   - "\U0001F1E9\U0001F1EA DE 13"
-  - "\U0001F1FA\U0001F1F3 UN 14"
+  - "\U0001F1E8\U0001F1F3 CN 14"
   - "\U0001F1E8\U0001F1F3 CN 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1EF\U0001F1F5 JP 18"
+  - "\U0001F1E8\U0001F1F3 CN 18"
   - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
   - "\U0001F1E8\U0001F1F3 CN 21"
@@ -493,23 +473,21 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 27"
   - "\U0001F1E8\U0001F1F3 CN 28"
   - "\U0001F1E8\U0001F1F3 CN 29"
-  - "\U0001F1E8\U0001F1F3 CN 30"
+  - "\U0001F1E8\U0001F1F3 TW 30"
   - "\U0001F1E8\U0001F1F3 CN 31"
   - "\U0001F1E8\U0001F1F3 CN 32"
   - "\U0001F1E8\U0001F1F3 CN 33"
   - "\U0001F1E8\U0001F1F3 CN 34"
   - "\U0001F1E8\U0001F1F3 CN 35"
-  - "\U0001F1E8\U0001F1F3 HK 36"
-  - "\U0001F1E8\U0001F1F3 HK 37"
+  - "\U0001F1E8\U0001F1F3 CN 36"
+  - "\U0001F1EF\U0001F1F5 JP 37"
   - "\U0001F1E8\U0001F1F3 HK 38"
-  - "\U0001F1E8\U0001F1F3 CN 39"
-  - "\U0001F1E8\U0001F1F3 TW 40"
+  - "\U0001F1E8\U0001F1F3 HK 39"
+  - "\U0001F1E8\U0001F1F3 CN 40"
   - "\U0001F1E8\U0001F1F3 CN 41"
   - "\U0001F1E8\U0001F1F3 CN 42"
   - "\U0001F1E8\U0001F1F3 CN 43"
   - "\U0001F1E8\U0001F1F3 CN 44"
-  - "\U0001F1E8\U0001F1F3 CN 45"
-  - "\U0001F1E8\U0001F1F3 CN 46"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -520,20 +498,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1FE CY 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1FA\U0001F1F3 UN 12"
   - "\U0001F1E9\U0001F1EA DE 13"
-  - "\U0001F1FA\U0001F1F3 UN 14"
+  - "\U0001F1E8\U0001F1F3 CN 14"
   - "\U0001F1E8\U0001F1F3 CN 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1EF\U0001F1F5 JP 18"
+  - "\U0001F1E8\U0001F1F3 CN 18"
   - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
   - "\U0001F1E8\U0001F1F3 CN 21"
@@ -545,22 +523,20 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 27"
   - "\U0001F1E8\U0001F1F3 CN 28"
   - "\U0001F1E8\U0001F1F3 CN 29"
-  - "\U0001F1E8\U0001F1F3 CN 30"
+  - "\U0001F1E8\U0001F1F3 TW 30"
   - "\U0001F1E8\U0001F1F3 CN 31"
   - "\U0001F1E8\U0001F1F3 CN 32"
   - "\U0001F1E8\U0001F1F3 CN 33"
   - "\U0001F1E8\U0001F1F3 CN 34"
   - "\U0001F1E8\U0001F1F3 CN 35"
-  - "\U0001F1E8\U0001F1F3 HK 36"
-  - "\U0001F1E8\U0001F1F3 HK 37"
+  - "\U0001F1E8\U0001F1F3 CN 36"
+  - "\U0001F1EF\U0001F1F5 JP 37"
   - "\U0001F1E8\U0001F1F3 HK 38"
-  - "\U0001F1E8\U0001F1F3 CN 39"
-  - "\U0001F1E8\U0001F1F3 TW 40"
+  - "\U0001F1E8\U0001F1F3 HK 39"
+  - "\U0001F1E8\U0001F1F3 CN 40"
   - "\U0001F1E8\U0001F1F3 CN 41"
   - "\U0001F1E8\U0001F1F3 CN 42"
   - "\U0001F1E8\U0001F1F3 CN 43"
   - "\U0001F1E8\U0001F1F3 CN 44"
-  - "\U0001F1E8\U0001F1F3 CN 45"
-  - "\U0001F1E8\U0001F1F3 CN 46"
 rules:
 - "MATCH,\U0001F310 Proxy"
