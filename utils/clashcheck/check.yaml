@@ -14,13 +14,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 3"
-  server: cdn.twnct.6641634715834932.me
-  port: 7047
-  type: trojan
-  password: 2bb4a580-db46-4010-b814-a9f74001a646
-  sni: cdn.twnct.6641634715834932.me
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
   server: xuxu.ixx520.club
   port: 34318
@@ -28,7 +22,7 @@ proxies:
   password: GKX2ZvhBma
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 5"
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   type: trojan
   server: ko1.lianpi.xyz
   port: 51256
@@ -37,33 +31,30 @@ proxies:
   sni: ko1.lianpi.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1E8\U0001F1F3 TW 5"
+  server: cdn.twnct.6641634715834932.me
+  port: 7047
   type: trojan
-  server: sg4.microsoft-orgwly.vip
-  port: 80
-  udp: true
-  password: ce58cab4-2675-47f7-b3e1-96f08839f86b
-  sni: tls.microsoft-orgwly.vip
+  password: 2bb4a580-db46-4010-b814-a9f74001a646
+  sni: cdn.twnct.6641634715834932.me
+- name: "\U0001F1EE\U0001F1F3 IN 6"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: assets.flareai.site
-  port: 11543
-  type: http
-  username: b3b1de88b0
-  password: b91b087fa4
-  tls: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,10 +63,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1EE\U0001F1F3 IN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
