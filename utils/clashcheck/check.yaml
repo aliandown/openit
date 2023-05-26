@@ -24,15 +24,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 4"
-  type: trojan
-  server: 165.154.253.144
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 5"
+- name: "\U0001F1EE\U0001F1E9 ID 4"
   type: trojan
   server: 103.169.7.11
   port: 80
@@ -40,12 +32,20 @@ proxies:
   password: c0d9da22-2569-4bed-a395-607d9e7ae687
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 6"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
-  server: 165.154.226.194
+  server: 165.154.246.207
   port: 443
   udp: true
-  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 6"
+  type: trojan
+  server: 165.154.253.144
+  port: 443
+  udp: true
+  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 7"
@@ -56,6 +56,14 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 TW 8"
+  type: trojan
+  server: 165.154.226.194
+  port: 443
+  udp: true
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -63,10 +71,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
+  - "\U0001F1EE\U0001F1E9 ID 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -76,9 +85,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
+  - "\U0001F1EE\U0001F1E9 ID 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
