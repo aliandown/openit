@@ -16,6 +16,23 @@ proxies:
   udp: true
 - name: "\U0001F1E8\U0001F1F3 TW 3"
   type: trojan
+  server: 165.154.253.144
+  port: 443
+  udp: true
+  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  type: trojan
+  server: bgptw3.cnamazon.sbs
+  port: 443
+  udp: true
+  password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690
+  sni: tlsdata.cnamazon.sbs
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 5"
+  type: trojan
   server: hinet1.downloadvip.cfd
   port: 443
   udp: true
@@ -23,16 +40,7 @@ proxies:
   sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  type: trojan
-  server: awshk1.gsjc.cfd
-  port: 443
-  udp: true
-  password: 60454f67-7e28-4ddd-855f-e8216dfedf5a
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 5"
+- name: "\U0001F1EE\U0001F1E9 ID 6"
   type: trojan
   server: 103.169.7.11
   port: 80
@@ -40,7 +48,7 @@ proxies:
   password: c0d9da22-2569-4bed-a395-607d9e7ae687
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 6"
+- name: "\U0001F1E8\U0001F1F3 TW 7"
   type: trojan
   server: 165.154.226.194
   port: 443
@@ -48,14 +56,6 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 7"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -64,9 +64,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1E8\U0001F1F3 TW 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -77,8 +77,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EE\U0001F1E9 ID 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
+  - "\U0001F1E8\U0001F1F3 TW 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
