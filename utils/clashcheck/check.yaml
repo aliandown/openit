@@ -30,15 +30,7 @@ proxies:
   password: c2f90faa-4097-49fe-a169-19c0badb1038
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 5"
-  type: trojan
-  server: 165.154.253.144
-  port: 443
-  udp: true
-  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -46,6 +38,14 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 TW 6"
+  type: trojan
+  server: 165.154.253.144
+  port: 443
+  udp: true
+  password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -54,8 +54,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,7 +66,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
