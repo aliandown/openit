@@ -15,12 +15,20 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: awsjp14-data.amazon-azure.com
+  type: trojan
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 443
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: azjp2.downloadvip.cfd
   port: 443
   type: trojan
   password: f5a18240-423f-47a0-b9a3-5e647bcdf38f
   sni: us4.xn--mes358a9urctx.com
-- name: "\U0001F1EE\U0001F1F3 IN 4"
+- name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -35,7 +43,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,6 +54,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
