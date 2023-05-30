@@ -1,22 +1,20 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us5.microsoft-orgwly.vip
+  port: 12088
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170.187.134.190
   type: trojan
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: 163.123.192.155
+  server: 163.123.192.156
   port: 443
   udp: true
   password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
@@ -24,6 +22,14 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 163.123.192.154
   port: 443
@@ -32,7 +38,16 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 163.123.192.153
+  port: 443
+  udp: true
+  password: 1113a9fa-c6ee-4929-ae93-d29d024b1728
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -40,32 +55,31 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 6"
+- name: "\U0001F1EC\U0001F1E7 GB 8"
+  server: gb3.microsoft-orgwly.vip
+  port: 35625
   type: trojan
-  server: 217.79.184.18
-  port: 443
-  udp: true
-  password: a9d2b5b8-f0de-47c5-8162-a60bc54d6731
-  sni: download.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1E8\U0001F1F3 TW 9"
+  server: tw3.microsoft-orgwly.vip
+  port: 80
   type: trojan
-  server: cdn-1.651568.xyz
-  port: 24558
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 8"
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1E8\U0001F1F3 TW 10"
+  server: tw2.microsoft-orgwly.vip
+  port: 80
   type: trojan
-  server: cdn.651568.xyz
-  port: 24560
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 9"
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1F8\U0001F1EC SG 11"
+  server: sg12.microsoft-orgwly.vip
+  port: 16789
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1EF\U0001F1F5 JP 12"
   type: trojan
   server: cdn.651568.xyz
   port: 16847
@@ -73,7 +87,41 @@ proxies:
   password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 10"
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  type: trojan
+  server: cdn-1.651568.xyz
+  port: 24558
+  udp: true
+  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 14"
+  type: trojan
+  server: cdn.651568.xyz
+  port: 24560
+  udp: true
+  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 15"
+  server: kr1.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1F0\U0001F1F7 KR 16"
+  server: kr5.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1F0\U0001F1F7 KR 17"
+  server: kr2.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1E8\U0001F1F3 TW 18"
   type: trojan
   server: hinet2.downloadvip.cfd
   port: 443
@@ -82,7 +130,40 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 11"
+- name: "\U0001F1E8\U0001F1F3 HK 19"
+  server: hk2.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1F0\U0001F1F7 KR 20"
+  server: kr4.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1E9\U0001F1EA DE 21"
+  type: trojan
+  server: 217.79.184.18
+  port: 443
+  udp: true
+  password: a9d2b5b8-f0de-47c5-8162-a60bc54d6731
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F9\U0001F1ED TH 22"
+  server: th1.microsoft-orgwly.vip
+  port: 80
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1EE\U0001F1F3 IN 23"
+  server: in2.microsoft-orgwly.vip
+  port: 32029
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1E8\U0001F1F3 HK 24"
   type: trojan
   server: sg2.downloadvip.cfd
   port: 443
@@ -91,7 +172,7 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 12"
+- name: "\U0001F1E8\U0001F1F3 HK 25"
   type: trojan
   server: hk2.downloadvip.cfd
   port: 443
@@ -100,7 +181,7 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 13"
+- name: "\U0001F1EE\U0001F1E9 ID 26"
   type: trojan
   server: 103.169.7.11
   port: 80
@@ -109,7 +190,19 @@ proxies:
   sni: sciencedirect.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1ED TH 14"
+- name: "\U0001F1F0\U0001F1F7 KR 27"
+  server: kr3.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1EF\U0001F1F5 JP 28"
+  server: azjp2.downloadvip.cfd
+  port: 443
+  type: trojan
+  password: f5a18240-423f-47a0-b9a3-5e647bcdf38f
+  sni: us4.xn--mes358a9urctx.com
+- name: "\U0001F1F9\U0001F1ED TH 29"
   type: trojan
   server: th2.microsoft-orgwly.vip
   port: 443
@@ -118,39 +211,18 @@ proxies:
   sni: tls.microsoft-orgwly.vip
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 15"
+- name: "\U0001F1FB\U0001F1EC VG 30"
   type: trojan
-  server: cdn.651568.xyz
-  port: 45816
+  server: cnamemk.ciscocdn1.live
+  port: 443
   udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  password: 3c2504f0-8014-4a68-b49a-a098d8808e61
+  sni: c7mk.ciscocdn1.live
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 16"
-  type: trojan
-  server: cdn.651568.xyz
-  port: 20173
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 17"
-  type: trojan
-  server: cdn-1.651568.xyz
-  port: 45814
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 18"
-  type: trojan
-  server: cdn-1.651568.xyz
-  port: 12506
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 19"
+  network: ws
+  ws-opts:
+    path: /BLda1CCMAiWUNnzj51ltOjG4G3
+- name: "\U0001F1EE\U0001F1F3 IN 31"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -158,7 +230,51 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 20"
+- name: "\U0001F1EF\U0001F1F5 JP 32"
+  type: trojan
+  server: cdn-1.651568.xyz
+  port: 45814
+  udp: true
+  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 33"
+  server: hk6.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1EF\U0001F1F5 JP 34"
+  type: trojan
+  server: cdn.651568.xyz
+  port: 20173
+  udp: true
+  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 35"
+  type: trojan
+  server: cdn-1.651568.xyz
+  port: 12506
+  udp: true
+  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 36"
+  type: trojan
+  server: cdn.651568.xyz
+  port: 45816
+  udp: true
+  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 37"
+  server: vn2.microsoft-orgwly.vip
+  port: 443
+  type: trojan
+  password: fcf74125-99de-4df3-af94-552a0b1ee021
+  sni: tls.microsoft-orgwly.vip
+- name: "\U0001F1EF\U0001F1F5 JP 38"
   type: trojan
   server: cdn-1.651568.xyz
   port: 18861
@@ -166,12 +282,6 @@ proxies:
   password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 21"
-  server: tw3.microsoft-orgwly.vip
-  port: 80
-  type: trojan
-  password: fcf74125-99de-4df3-af94-552a0b1ee021
-  sni: tls.microsoft-orgwly.vip
 proxy-groups:
 - name: automatic
   type: url-test
@@ -180,23 +290,40 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EC\U0001F1E7 GB 8"
+  - "\U0001F1E8\U0001F1F3 TW 9"
   - "\U0001F1E8\U0001F1F3 TW 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1EE\U0001F1E9 ID 13"
-  - "\U0001F1F9\U0001F1ED TH 14"
-  - "\U0001F1EF\U0001F1F5 JP 15"
-  - "\U0001F1EF\U0001F1F5 JP 16"
-  - "\U0001F1EF\U0001F1F5 JP 17"
-  - "\U0001F1EF\U0001F1F5 JP 18"
-  - "\U0001F1EE\U0001F1F3 IN 19"
-  - "\U0001F1EF\U0001F1F5 JP 20"
-  - "\U0001F1E8\U0001F1F3 TW 21"
+  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
+  - "\U0001F1EF\U0001F1F5 JP 14"
+  - "\U0001F1F0\U0001F1F7 KR 15"
+  - "\U0001F1F0\U0001F1F7 KR 16"
+  - "\U0001F1F0\U0001F1F7 KR 17"
+  - "\U0001F1E8\U0001F1F3 TW 18"
+  - "\U0001F1E8\U0001F1F3 HK 19"
+  - "\U0001F1F0\U0001F1F7 KR 20"
+  - "\U0001F1E9\U0001F1EA DE 21"
+  - "\U0001F1F9\U0001F1ED TH 22"
+  - "\U0001F1EE\U0001F1F3 IN 23"
+  - "\U0001F1E8\U0001F1F3 HK 24"
+  - "\U0001F1E8\U0001F1F3 HK 25"
+  - "\U0001F1EE\U0001F1E9 ID 26"
+  - "\U0001F1F0\U0001F1F7 KR 27"
+  - "\U0001F1EF\U0001F1F5 JP 28"
+  - "\U0001F1F9\U0001F1ED TH 29"
+  - "\U0001F1FB\U0001F1EC VG 30"
+  - "\U0001F1EE\U0001F1F3 IN 31"
+  - "\U0001F1EF\U0001F1F5 JP 32"
+  - "\U0001F1E8\U0001F1F3 HK 33"
+  - "\U0001F1EF\U0001F1F5 JP 34"
+  - "\U0001F1EF\U0001F1F5 JP 35"
+  - "\U0001F1EF\U0001F1F5 JP 36"
+  - "\U0001F1FA\U0001F1F3 UN 37"
+  - "\U0001F1EF\U0001F1F5 JP 38"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -207,22 +334,39 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EC\U0001F1E7 GB 8"
+  - "\U0001F1E8\U0001F1F3 TW 9"
   - "\U0001F1E8\U0001F1F3 TW 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1EE\U0001F1E9 ID 13"
-  - "\U0001F1F9\U0001F1ED TH 14"
-  - "\U0001F1EF\U0001F1F5 JP 15"
-  - "\U0001F1EF\U0001F1F5 JP 16"
-  - "\U0001F1EF\U0001F1F5 JP 17"
-  - "\U0001F1EF\U0001F1F5 JP 18"
-  - "\U0001F1EE\U0001F1F3 IN 19"
-  - "\U0001F1EF\U0001F1F5 JP 20"
-  - "\U0001F1E8\U0001F1F3 TW 21"
+  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
+  - "\U0001F1EF\U0001F1F5 JP 14"
+  - "\U0001F1F0\U0001F1F7 KR 15"
+  - "\U0001F1F0\U0001F1F7 KR 16"
+  - "\U0001F1F0\U0001F1F7 KR 17"
+  - "\U0001F1E8\U0001F1F3 TW 18"
+  - "\U0001F1E8\U0001F1F3 HK 19"
+  - "\U0001F1F0\U0001F1F7 KR 20"
+  - "\U0001F1E9\U0001F1EA DE 21"
+  - "\U0001F1F9\U0001F1ED TH 22"
+  - "\U0001F1EE\U0001F1F3 IN 23"
+  - "\U0001F1E8\U0001F1F3 HK 24"
+  - "\U0001F1E8\U0001F1F3 HK 25"
+  - "\U0001F1EE\U0001F1E9 ID 26"
+  - "\U0001F1F0\U0001F1F7 KR 27"
+  - "\U0001F1EF\U0001F1F5 JP 28"
+  - "\U0001F1F9\U0001F1ED TH 29"
+  - "\U0001F1FB\U0001F1EC VG 30"
+  - "\U0001F1EE\U0001F1F3 IN 31"
+  - "\U0001F1EF\U0001F1F5 JP 32"
+  - "\U0001F1E8\U0001F1F3 HK 33"
+  - "\U0001F1EF\U0001F1F5 JP 34"
+  - "\U0001F1EF\U0001F1F5 JP 35"
+  - "\U0001F1EF\U0001F1F5 JP 36"
+  - "\U0001F1FA\U0001F1F3 UN 37"
+  - "\U0001F1EF\U0001F1F5 JP 38"
 rules:
 - "MATCH,\U0001F310 Proxy"
