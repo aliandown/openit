@@ -1,13 +1,12 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
   type: trojan
-  server: 217.79.184.18
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: a9d2b5b8-f0de-47c5-8162-a60bc54d6731
-  sni: download.xn--mes358a9urctx.com
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170.187.134.190
   type: trojan
@@ -23,21 +22,19 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
-  server: cnamemk.ciscocdn1.live
+  server: 217.79.184.18
   port: 443
   udp: true
-  password: 3c2504f0-8014-4a68-b49a-a098d8808e61
-  sni: c7mk.ciscocdn1.live
+  password: a9d2b5b8-f0de-47c5-8162-a60bc54d6731
+  sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /BLda1CCMAiWUNnzj51ltOjG4G3
+  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
   server: cdn.651568.xyz
-  port: 16847
+  port: 24560
   udp: true
   password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
   skip-cert-verify: true
@@ -45,7 +42,7 @@ proxies:
 - name: "\U0001F1EF\U0001F1F5 JP 6"
   type: trojan
   server: cdn.651568.xyz
-  port: 24560
+  port: 16847
   udp: true
   password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
   skip-cert-verify: true
@@ -67,15 +64,17 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 9"
+- name: "\U0001F1FA\U0001F1F8 US 9"
   type: trojan
-  server: sg2.downloadvip.cfd
+  server: cnamemk.ciscocdn1.live
   port: 443
   udp: true
-  password: a9d2b5b8-f0de-47c5-8162-a60bc54d6731
-  sni: download.xn--mes358a9urctx.com
+  password: 3c2504f0-8014-4a68-b49a-a098d8808e61
+  sni: c7mk.ciscocdn1.live
   skip-cert-verify: true
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /BLda1CCMAiWUNnzj51ltOjG4G3
 - name: "\U0001F1E8\U0001F1F3 HK 10"
   type: trojan
   server: hk2.downloadvip.cfd
@@ -85,40 +84,16 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 11"
+- name: "\U0001F1E8\U0001F1F3 HK 11"
   type: trojan
-  server: 103.169.7.11
-  port: 80
+  server: sg2.downloadvip.cfd
+  port: 443
   udp: true
-  password: c0d9da22-2569-4bed-a395-607d9e7ae687
-  sni: sciencedirect.com
+  password: a9d2b5b8-f0de-47c5-8162-a60bc54d6731
+  sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 12"
-  type: trojan
-  server: cdn.651568.xyz
-  port: 20173
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 13"
-  type: trojan
-  server: cdn.651568.xyz
-  port: 45816
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 14"
-  type: trojan
-  server: cdn-1.651568.xyz
-  port: 45814
-  udp: true
-  password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 15"
   type: trojan
   server: cdn-1.651568.xyz
   port: 12506
@@ -126,7 +101,7 @@ proxies:
   password: 2afbc319-ee6a-43a7-9a36-09f1c90015df
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 16"
+- name: "\U0001F1EF\U0001F1F5 JP 13"
   type: trojan
   server: cdn-1.651568.xyz
   port: 18861
@@ -138,43 +113,37 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
+  - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1EE\U0001F1E9 ID 11"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1EF\U0001F1F5 JP 12"
   - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1EF\U0001F1F5 JP 14"
-  - "\U0001F1EF\U0001F1F5 JP 15"
-  - "\U0001F1EF\U0001F1F5 JP 16"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
+  - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1EE\U0001F1E9 ID 11"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1EF\U0001F1F5 JP 12"
   - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1EF\U0001F1F5 JP 14"
-  - "\U0001F1EF\U0001F1F5 JP 15"
-  - "\U0001F1EF\U0001F1F5 JP 16"
 rules:
 - "MATCH,\U0001F310 Proxy"
