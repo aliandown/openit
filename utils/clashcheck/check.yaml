@@ -1,18 +1,17 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: tempest-us.aikun.online
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 0d234e81-52f2-44a7-8bcc-b9e737c3830f
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 170.187.134.190
   type: trojan
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F1 IL 2"
+  server: us1.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+  sni: us1.chuqiangtou.net
   skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
   server: awsjp14-data.amazon-azure.com
@@ -22,40 +21,26 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 4"
-  server: au1.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: fscsg.fscloud123456789.com
   port: 443
   type: trojan
   password: 6e050f42-84ae-448b-b602-48e0d5747a4d
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1F8\U0001F1EC SG 5"
   server: aujs.stablize.top
   port: 443
   type: trojan
   password: 03604138-c4b4-481a-bc82-52a41189415a
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 7"
-  server: us1.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-  sni: us1.chuqiangtou.net
   skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F1 IL 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1F1 IL 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EE\U0001F1F1 IL 7"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -63,11 +48,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F1 IL 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EE\U0001F1F1 IL 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EE\U0001F1F1 IL 7"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
