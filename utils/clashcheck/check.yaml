@@ -6,7 +6,15 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1EE\U0001F1F1 IL 2"
+  server: us1.chuqiangtou.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 163.123.192.154
   port: 443
@@ -15,11 +23,6 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 3"
-  server: fscjp.fscloud123456789.com
-  port: 443
-  type: trojan
-  password: 3d927416-3e74-45ce-ac16-df69c33c725a
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   server: awsjp14-data.amazon-azure.com
   type: trojan
@@ -28,30 +31,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 5"
-  server: fscjp.fscloud123456789.com
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3d927416-3e74-45ce-ac16-df69c33c725a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 6"
-  server: au1.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1EE\U0001F1F1 IL 7"
-  server: us1.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1EF\U0001F1F5 JP 8"
-  server: fscsg.fscloud123456789.com
-  port: 443
-  type: trojan
-  password: 6e050f42-84ae-448b-b602-48e0d5747a4d
-- name: "\U0001F1E8\U0001F1F3 HK 9"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
   server: hk2.downloadvip.cfd
   port: 443
@@ -60,7 +40,7 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1E9 ID 10"
+- name: "\U0001F1EE\U0001F1E9 ID 6"
   type: trojan
   server: 103.169.7.11
   port: 80
@@ -69,27 +49,16 @@ proxies:
   sni: sciencedirect.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11"
-  server: aujs.stablize.top
-  port: 443
-  type: trojan
-  password: 03604138-c4b4-481a-bc82-52a41189415a
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1EE\U0001F1F1 IL 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1EE\U0001F1F1 IL 6"
-  - "\U0001F1EE\U0001F1F1 IL 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1EE\U0001F1E9 ID 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -97,15 +66,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1EE\U0001F1F1 IL 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1EE\U0001F1F1 IL 6"
-  - "\U0001F1EE\U0001F1F1 IL 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1EE\U0001F1E9 ID 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EE\U0001F1E9 ID 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
