@@ -14,36 +14,29 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EE\U0001F1F1 IL 3"
+  server: us1.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+  sni: us1.chuqiangtou.net
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F1 IL 4"
+  server: us3.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+- name: "\U0001F1EE\U0001F1F1 IL 5"
+  server: uk1.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+- name: "\U0001F1FA\U0001F1F8 US 6"
   server: 4.zhoushuren.me
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 58850
   password: 431218b0-8b07-4d71-89a4-c20aa92fce30
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 4"
-  server: uk1.chuqiangtou.net
-  type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
-  port: 4003
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 5"
-  server: us3.chuqiangtou.net
-  type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
-  port: 4003
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 6"
-  server: us1.chuqiangtou.net
-  type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
-  port: 4003
-  password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 7"
@@ -55,14 +48,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 8"
-  type: trojan
-  server: au3.chuqiangtou.net
-  port: 4003
-  udp: true
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F1 IL 9"
   server: au1.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
@@ -70,6 +55,14 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EE\U0001F1F1 IL 9"
+  type: trojan
+  server: au3.chuqiangtou.net
+  port: 4003
+  udp: true
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 10"
   server: 152.70.74.66
   type: trojan
@@ -78,35 +71,20 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 11"
-  server: 62e2186f.f0acf363.83df.34fb5e38.cc
-  port: 30001
-  type: ss
-  cipher: aes-256-gcm
-  password: 23f24a65-57de-464b-9ff5-e994fbd6fe47
-- name: "\U0001F1E8\U0001F1F3 CN 12"
-  server: 62e2186f.f0acf363.83df.34fb5e38.cc
-  type: ss
-  country: "\U0001F1E8\U0001F1F3CN"
-  port: 30001
-  password: 23f24a65-57de-464b-9ff5-e994fbd6fe47
-  cipher: aes-256-gcm
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EE\U0001F1F1 IL 3"
   - "\U0001F1EE\U0001F1F1 IL 4"
   - "\U0001F1EE\U0001F1F1 IL 5"
-  - "\U0001F1EE\U0001F1F1 IL 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EE\U0001F1F1 IL 8"
   - "\U0001F1EE\U0001F1F1 IL 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -115,15 +93,13 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EE\U0001F1F1 IL 3"
   - "\U0001F1EE\U0001F1F1 IL 4"
   - "\U0001F1EE\U0001F1F1 IL 5"
-  - "\U0001F1EE\U0001F1F1 IL 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EE\U0001F1F1 IL 8"
   - "\U0001F1EE\U0001F1F1 IL 9"
   - "\U0001F1EE\U0001F1F3 IN 10"
-  - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
