@@ -1,30 +1,35 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 2"
-  server: us3.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
   server: 4.zhoushuren.me
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 58850
   password: 431218b0-8b07-4d71-89a4-c20aa92fce30
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F1 IL 2"
+  server: us3.chuqiangtou.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 163.123.192.153
+  port: 443
+  udp: true
+  password: fdc1988b-2e49-483f-9a0d-752dc8294084
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
@@ -43,7 +48,14 @@ proxies:
   password: 0d234e81-52f2-44a7-8bcc-b9e737c3830f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1EE\U0001F1F1 IL 7"
+  server: us1.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+  sni: us1.chuqiangtou.net
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 8"
   server: aws-hk01.aikun.online
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -51,11 +63,31 @@ proxies:
   password: 0d234e81-52f2-44a7-8bcc-b9e737c3830f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 8"
-  server: au1.chuqiangtou.net
-  port: 4003
+- name: "\U0001F1E8\U0001F1F3 TW 9"
   type: trojan
+  server: hinet2.downloadvip.cfd
+  port: 443
+  udp: true
+  password: fdc1988b-2e49-483f-9a0d-752dc8294084
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F1 IL 10"
+  type: trojan
+  server: au3.chuqiangtou.net
+  port: 4003
+  udp: true
   password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F1 IL 11"
+  server: au1.chuqiangtou.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -66,8 +98,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1EE\U0001F1F1 IL 8"
+  - "\U0001F1EE\U0001F1F1 IL 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 TW 9"
+  - "\U0001F1EE\U0001F1F1 IL 10"
+  - "\U0001F1EE\U0001F1F1 IL 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -80,7 +115,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1EE\U0001F1F1 IL 8"
+  - "\U0001F1EE\U0001F1F1 IL 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 TW 9"
+  - "\U0001F1EE\U0001F1F1 IL 10"
+  - "\U0001F1EE\U0001F1F1 IL 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
