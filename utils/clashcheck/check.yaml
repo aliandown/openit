@@ -1,30 +1,15 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 170.187.134.190
-  type: trojan
-  port: 8443
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  sni: 170-187-134-190.ipv4.rush.ml
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 3"
+- name: "\U0001F1EE\U0001F1F1 IL 1"
   server: us3.chuqiangtou.net
   port: 4003
   type: trojan
   password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1EE\U0001F1F1 IL 4"
+- name: "\U0001F1EE\U0001F1F1 IL 2"
   server: us1.chuqiangtou.net
   port: 4003
   type: trojan
   password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: 4.zhoushuren.me
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -32,20 +17,35 @@ proxies:
   password: 431218b0-8b07-4d71-89a4-c20aa92fce30
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 6"
-  server: uk1.chuqiangtou.net
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 170.187.134.190
   type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
-  port: 4003
-  password: TJCfE7Mx2YcA8kX8zg
+  port: 8443
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  sni: 170-187-134-190.ipv4.rush.ml
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
   port: 443
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F1 IL 7"
+  server: uk1.chuqiangtou.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
+  password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F8\U0001F1EC SG 8"
@@ -55,15 +55,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   sni: awssg18-data.amazon-azure.com
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 9"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 10"
+- name: "\U0001F1EE\U0001F1F1 IL 9"
   type: trojan
   server: au3.chuqiangtou.net
   port: 4003
@@ -71,35 +63,43 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 10"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F1 IL 3"
-  - "\U0001F1EE\U0001F1F1 IL 4"
+  - "\U0001F1EE\U0001F1F1 IL 1"
+  - "\U0001F1EE\U0001F1F1 IL 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1F1 IL 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EE\U0001F1F1 IL 7"
   - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EE\U0001F1F1 IL 10"
+  - "\U0001F1EE\U0001F1F1 IL 9"
+  - "\U0001F1EE\U0001F1F3 IN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F1 IL 3"
-  - "\U0001F1EE\U0001F1F1 IL 4"
+  - "\U0001F1EE\U0001F1F1 IL 1"
+  - "\U0001F1EE\U0001F1F1 IL 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1F1 IL 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EE\U0001F1F1 IL 7"
   - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1EE\U0001F1F1 IL 10"
+  - "\U0001F1EE\U0001F1F1 IL 9"
+  - "\U0001F1EE\U0001F1F3 IN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
