@@ -35,7 +35,18 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EE\U0001F1F1 IL 6"
+  server: us1.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+  sni: us1.chuqiangtou.net
+- name: "\U0001F1EE\U0001F1F1 IL 7"
+  server: us3.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -43,26 +54,27 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 7"
-  server: us3.chuqiangtou.net
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  type: trojan
+  server: roygcphk.xmsl.us
+  port: 10001
+  udp: true
+  password: Z7ciHYYFnX
+  sni: roygcphk.xmsl.us
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F1 IL 10"
+  server: au1.chuqiangtou.net
   port: 4003
   type: trojan
   password: TJCfE7Mx2YcA8kX8zg
-- name: "\U0001F1F8\U0001F1EC SG 8"
+- name: "\U0001F1F8\U0001F1EC SG 11"
   server: awssg18-data.amazon-azure.com
   port: 443
   type: trojan
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   sni: awssg18-data.amazon-azure.com
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 9"
-  type: trojan
-  server: au3.chuqiangtou.net
-  port: 4003
-  udp: true
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -72,10 +84,12 @@ proxy-groups:
   - "\U0001F1EE\U0001F1F1 IL 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EE\U0001F1F1 IL 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EE\U0001F1F1 IL 6"
   - "\U0001F1EE\U0001F1F1 IL 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F1 IL 9"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
+  - "\U0001F1EE\U0001F1F1 IL 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -87,9 +101,11 @@ proxy-groups:
   - "\U0001F1EE\U0001F1F1 IL 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EE\U0001F1F1 IL 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EE\U0001F1F1 IL 6"
   - "\U0001F1EE\U0001F1F1 IL 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EE\U0001F1F1 IL 9"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
+  - "\U0001F1EE\U0001F1F1 IL 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
