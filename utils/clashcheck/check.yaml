@@ -1,6 +1,6 @@
 proxies:
 - name: "\U0001F1EE\U0001F1F1 IL 1"
-  server: us3.chuqiangtou.net
+  server: us1.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
   port: 4003
@@ -8,7 +8,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 2"
-  server: us1.chuqiangtou.net
+  server: us3.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
   port: 4003
@@ -30,19 +30,19 @@ proxies:
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 148.59.74.52
-  port: 443
-  type: trojan
-  password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 6"
   server: 163.123.192.59
   port: 443
   type: trojan
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   server: 163.123.192.60
+  port: 443
+  type: trojan
+  password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: 148.59.74.52
   port: 443
   type: trojan
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
@@ -79,7 +79,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 12"
-  server: nl2.chuqiangtou.net
+  server: nl1.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
   port: 4003
@@ -118,28 +118,7 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 17"
-  server: trs21.bolab.net
-  port: 443
-  type: trojan
-  password: 7a73f1dc97a70905870c0c0484b12145
-  sni: trs21.bolab.net
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 18"
-  server: uk1.chuqiangtou.net
-  type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
-  port: 4003
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 19"
-  server: tw1.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 20"
+- name: "\U0001F1EE\U0001F1F1 IL 17"
   server: au1.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
@@ -147,6 +126,34 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 18"
+  server: trs21.bolab.net
+  port: 443
+  type: trojan
+  password: 7a73f1dc97a70905870c0c0484b12145
+  sni: trs21.bolab.net
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 TW 19"
+  server: tw1.chuqiangtou.net
+  port: 4003
+  type: trojan
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F1 IL 20"
+  server: nl2.chuqiangtou.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 21"
+  server: h961359.waihuizhibiaowang.com
+  port: 11343
+  type: http
+  username: b74b2457b5
+  password: ddc132a6a3
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -167,10 +174,11 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 14"
   - "\U0001F1EE\U0001F1F1 IL 15"
   - "\U0001F1EE\U0001F1F1 IL 16"
-  - "\U0001F1EF\U0001F1F5 JP 17"
-  - "\U0001F1EE\U0001F1F1 IL 18"
+  - "\U0001F1EE\U0001F1F1 IL 17"
+  - "\U0001F1EF\U0001F1F5 JP 18"
   - "\U0001F1E8\U0001F1F3 TW 19"
   - "\U0001F1EE\U0001F1F1 IL 20"
+  - "\U0001F1E8\U0001F1F3 CN 21"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -193,9 +201,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 14"
   - "\U0001F1EE\U0001F1F1 IL 15"
   - "\U0001F1EE\U0001F1F1 IL 16"
-  - "\U0001F1EF\U0001F1F5 JP 17"
-  - "\U0001F1EE\U0001F1F1 IL 18"
+  - "\U0001F1EE\U0001F1F1 IL 17"
+  - "\U0001F1EF\U0001F1F5 JP 18"
   - "\U0001F1E8\U0001F1F3 TW 19"
   - "\U0001F1EE\U0001F1F1 IL 20"
+  - "\U0001F1E8\U0001F1F3 CN 21"
 rules:
 - "MATCH,\U0001F310 Proxy"
