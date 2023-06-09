@@ -21,19 +21,19 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 163.123.192.59
+  server: 163.123.192.58
   port: 443
   type: trojan
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 163.123.192.60
+  server: 163.123.192.59
   port: 443
   type: trojan
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 163.123.192.58
+  server: 163.123.192.60
   port: 443
   type: trojan
   password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
@@ -62,13 +62,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 10"
-  server: jp3.chuqiangtou.net
-  type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
+  server: nl3.chuqiangtou.net
   port: 4003
+  type: trojan
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 11"
   server: nl1.chuqiangtou.net
   port: 4003
@@ -77,25 +75,29 @@ proxies:
   sni: nl1.chuqiangtou.net
   skip-cert-verify: true
 - name: "\U0001F1EE\U0001F1F1 IL 12"
-  server: nl3.chuqiangtou.net
-  port: 4003
+  server: jp3.chuqiangtou.net
   type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 13"
-  server: jp2.chuqiangtou.net
-  port: 4003
-  type: trojan
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 14"
   server: nl2.chuqiangtou.net
   port: 4003
   type: trojan
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F1 IL 15"
+- name: "\U0001F1EE\U0001F1F1 IL 14"
   server: uk1.chuqiangtou.net
+  type: trojan
+  country: "\U0001F1EE\U0001F1F1IL"
+  port: 4003
+  password: TJCfE7Mx2YcA8kX8zg
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F1 IL 15"
+  server: au3.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
   port: 4003
@@ -111,14 +113,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EE\U0001F1F1 IL 17"
-  server: au3.chuqiangtou.net
-  type: trojan
-  country: "\U0001F1EE\U0001F1F1IL"
-  port: 4003
-  password: TJCfE7Mx2YcA8kX8zg
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EE\U0001F1F1 IL 18"
   server: au1.chuqiangtou.net
   type: trojan
   country: "\U0001F1EE\U0001F1F1IL"
@@ -126,33 +120,26 @@ proxies:
   password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 19"
-  server: 152.70.74.66
+- name: "\U0001F1EE\U0001F1F1 IL 18"
+  server: jp2.chuqiangtou.net
+  port: 4003
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  password: TJCfE7Mx2YcA8kX8zg
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 20"
+- name: "\U0001F1E8\U0001F1F3 CN 19"
   server: h961359.waihuizhibiaowang.com
   port: 11543
   type: http
   username: b74b2457b5
   password: ddc132a6a3
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 21"
+- name: "\U0001F1E8\U0001F1F3 CN 20"
   server: h961359.waihuizhibiaowang.com
   port: 11343
   type: http
   username: b74b2457b5
   password: ddc132a6a3
   tls: true
-- name: "\U0001F1EF\U0001F1F5 JP 22"
-  server: usa.stablize.top
-  port: 443
-  type: trojan
-  password: e81c0cf0-d4f4-402e-81ee-4eb19a832ffa
 proxy-groups:
 - name: automatic
   type: url-test
@@ -175,10 +162,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 16"
   - "\U0001F1EE\U0001F1F1 IL 17"
   - "\U0001F1EE\U0001F1F1 IL 18"
-  - "\U0001F1EE\U0001F1F3 IN 19"
+  - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1E8\U0001F1F3 CN 21"
-  - "\U0001F1EF\U0001F1F5 JP 22"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -203,9 +188,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 16"
   - "\U0001F1EE\U0001F1F1 IL 17"
   - "\U0001F1EE\U0001F1F1 IL 18"
-  - "\U0001F1EE\U0001F1F3 IN 19"
+  - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
-  - "\U0001F1E8\U0001F1F3 CN 21"
-  - "\U0001F1EF\U0001F1F5 JP 22"
 rules:
 - "MATCH,\U0001F310 Proxy"
