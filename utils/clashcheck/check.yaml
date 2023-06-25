@@ -9,21 +9,13 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 64.64.225.221
-  port: 38712
+  server: 18.191.139.90
+  port: 20903
   udp: true
-  password: lyfOBMxydA
+  password: DulxM7ae07
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 52.53.190.55
-  port: 10574
-  udp: true
-  password: FHbcin2ORB
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 66.112.216.121
   port: 40317
@@ -31,12 +23,20 @@ proxies:
   password: AA3uvT5KGT
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: 64.64.225.221
+  port: 38712
+  udp: true
+  password: lyfOBMxydA
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
-  server: 18.191.139.90
-  port: 20903
+  server: 52.53.190.55
+  port: 10574
   udp: true
-  password: DulxM7ae07
+  password: FHbcin2ORB
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 6"
@@ -64,14 +64,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: trs22.bolab.net
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 10"
   type: trojan
   server: 15.152.45.154
   port: 38584
@@ -79,7 +71,7 @@ proxies:
   password: vrEapjAokI
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 11"
+- name: "\U0001F1F8\U0001F1EC SG 10"
   type: trojan
   server: 13.213.31.141
   port: 27323
@@ -87,7 +79,7 @@ proxies:
   password: 2ASNg4PSz7
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 12"
+- name: "\U0001F1F0\U0001F1F7 KR 11"
   type: trojan
   server: 3.38.178.191
   port: 11525
@@ -95,6 +87,14 @@ proxies:
   password: 75WJZnNuyW
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 12"
+  server: trs22.bolab.net
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -108,9 +108,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -126,8 +126,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
