@@ -1,26 +1,26 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: 64.64.225.221
-  port: 38712
+  server: 18.191.139.90
+  port: 20903
   udp: true
-  password: lyfOBMxydA
+  password: DulxM7ae07
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 216.52.59.50
-  port: 20458
-  udp: true
-  password: m8krTirthj
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 66.112.216.121
   port: 40317
   udp: true
   password: AA3uvT5KGT
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 64.64.225.221
+  port: 38712
+  udp: true
+  password: lyfOBMxydA
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
@@ -33,18 +33,18 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
-  server: 23.94.122.66
-  port: 38505
+  server: 216.52.59.50
+  port: 20458
   udp: true
-  password: dTjHHw2kDE
+  password: m8krTirthj
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
-  server: 18.191.139.90
-  port: 20903
+  server: 23.94.122.66
+  port: 38505
   udp: true
-  password: DulxM7ae07
+  password: dTjHHw2kDE
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 7"
@@ -63,7 +63,15 @@ proxies:
   password: vrEapjAokI
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 9"
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  type: trojan
+  server: 13.213.31.141
+  port: 27323
+  udp: true
+  password: 2ASNg4PSz7
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 10"
   type: trojan
   server: 3.38.178.191
   port: 11525
@@ -71,20 +79,12 @@ proxies:
   password: 75WJZnNuyW
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 10"
+- name: "\U0001F1E8\U0001F1F3 HK 11"
   type: trojan
   server: hk7.yihaobao.xyz
   port: 443
   udp: true
   password: bb72bd02-b929-405c-b274-e0ff95141df4
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 11"
-  type: trojan
-  server: 13.213.31.141
-  port: 27323
-  udp: true
-  password: 2ASNg4PSz7
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 12"
@@ -113,9 +113,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1EF\U0001F1F5 JP 12"
   - "\U0001F1FB\U0001F1F3 VN 13"
   url: https://www.google.com/favicon.ico
@@ -132,9 +132,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1EF\U0001F1F5 JP 12"
   - "\U0001F1FB\U0001F1F3 VN 13"
 rules:
