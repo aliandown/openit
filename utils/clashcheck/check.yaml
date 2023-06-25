@@ -31,15 +31,7 @@ proxies:
   password: vrEapjAokI
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: trs19.bolab.net
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   type: trojan
   server: zf.heigouyunzf.xyz
   port: 38805
@@ -47,6 +39,11 @@ proxies:
   password: e958b47d-3510-445a-99cb-dc98d227e29e
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 6"
+  server: sg.stablize.top
+  port: 443
+  type: trojan
+  password: 5b51e0af-08af-4208-b834-6d6ac5721837
 - name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
@@ -61,6 +58,14 @@ proxies:
   type: trojan
   password: 19537db7-b002-4a60-8f91-59461bf56c3b
   skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: trs19.bolab.net
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -69,10 +74,11 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -83,9 +89,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
   - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
