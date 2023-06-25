@@ -1,26 +1,26 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
   type: trojan
-  server: 64.64.225.221
-  port: 38712
-  udp: true
-  password: lyfOBMxydA
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 66.112.216.121
-  port: 40317
-  udp: true
-  password: AA3uvT5KGT
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 18.191.139.90
   port: 20903
   udp: true
   password: DulxM7ae07
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 66.112.216.121
+  port: 40317
+  udp: true
+  password: AA3uvT5KGT
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
@@ -56,14 +56,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 8"
-  type: trojan
-  server: 15.152.45.154
-  port: 38584
-  udp: true
-  password: vrEapjAokI
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 9"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -71,6 +63,14 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  type: trojan
+  server: 15.152.45.154
+  port: 38584
+  udp: true
+  password: vrEapjAokI
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1F0\U0001F1F7 KR 10"
   type: trojan
   server: 3.38.178.191
@@ -87,37 +87,7 @@ proxies:
   password: bb72bd02-b929-405c-b274-e0ff95141df4
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 12"
-  type: trojan
-  server: 35.177.142.188
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-  ws-opts:
-    headers:
-      host: "\U0001F1EC\U0001F1E7GB\u82F1\u56FD(youtube\u963F\u4F1F\u79D1\u6280)"
-- name: "\U0001F1FB\U0001F1F3 VN 13"
-  server: 202.158.244.220
-  port: 443
-  type: trojan
-  password: 19537db7-b002-4a60-8f91-59461bf56c3b
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 14"
-  type: trojan
-  server: hk8.jisuyun.co
-  port: 10063
-  udp: true
-  password: 7518bb10-a901-40bd-85d2-4d2971e4c2d1
-  sni: tls.jisuyun.co
-  skip-cert-verify: true
-  network: tcp
-  ws-opts:
-    headers:
-      host: "\U0001F1ED\U0001F1F0HK\u9999\u6E2F(youtube\u963F\u4F1F\u79D1\u62802)"
-- name: "\U0001F1E8\U0001F1E6 CA 15"
+- name: "\U0001F1E8\U0001F1E6 CA 12"
   type: trojan
   server: 35.183.6.96
   port: 22222
@@ -130,6 +100,24 @@ proxies:
     headers:
       host: "\U0001F1E8\U0001F1E6CA\u52A0\u62FF\u5927(youtube\u963F\u4F1F\u79D1\u6280\
         )"
+- name: "\U0001F1E8\U0001F1F3 HK 13"
+  type: trojan
+  server: hk8.jisuyun.co
+  port: 10063
+  udp: true
+  password: 7518bb10-a901-40bd-85d2-4d2971e4c2d1
+  sni: tls.jisuyun.co
+  skip-cert-verify: true
+  network: tcp
+  ws-opts:
+    headers:
+      host: "\U0001F1ED\U0001F1F0HK\u9999\u6E2F(youtube\u963F\u4F1F\u79D1\u62802)"
+- name: "\U0001F1FB\U0001F1F3 VN 14"
+  server: 202.158.244.220
+  port: 443
+  type: trojan
+  password: 19537db7-b002-4a60-8f91-59461bf56c3b
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -145,10 +133,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1EC\U0001F1E7 GB 12"
-  - "\U0001F1FB\U0001F1F3 VN 13"
-  - "\U0001F1E8\U0001F1F3 HK 14"
-  - "\U0001F1E8\U0001F1E6 CA 15"
+  - "\U0001F1E8\U0001F1E6 CA 12"
+  - "\U0001F1E8\U0001F1F3 HK 13"
+  - "\U0001F1FB\U0001F1F3 VN 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -166,9 +153,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1EC\U0001F1E7 GB 12"
-  - "\U0001F1FB\U0001F1F3 VN 13"
-  - "\U0001F1E8\U0001F1F3 HK 14"
-  - "\U0001F1E8\U0001F1E6 CA 15"
+  - "\U0001F1E8\U0001F1E6 CA 12"
+  - "\U0001F1E8\U0001F1F3 HK 13"
+  - "\U0001F1FB\U0001F1F3 VN 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
