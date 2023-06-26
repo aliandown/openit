@@ -39,13 +39,7 @@ proxies:
   password: e958b47d-3510-445a-99cb-dc98d227e29e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 6"
-  server: 202.158.244.220
-  port: 443
-  type: trojan
-  password: 19537db7-b002-4a60-8f91-59461bf56c3b
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -53,6 +47,12 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FB\U0001F1F3 VN 7"
+  server: 202.158.244.220
+  port: 443
+  type: trojan
+  password: 19537db7-b002-4a60-8f91-59461bf56c3b
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -62,8 +62,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -75,7 +75,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
