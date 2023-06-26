@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 52.53.190.55
   port: 10574
   udp: true
   password: FHbcin2ORB
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 23.94.122.66
+  port: 38505
+  udp: true
+  password: dTjHHw2kDE
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -24,13 +24,13 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us.blazeppn.info
   type: trojan
-  server: 38.54.126.42
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: YWePoB69GG
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   server: awsjp14-data.amazon-azure.com
   type: trojan
@@ -84,7 +84,14 @@ proxies:
   password: e958b47d-3510-445a-99cb-dc98d227e29e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 12"
+- name: "\U0001F1F0\U0001F1F7 KR 12"
+  server: kr2.microsoft-orgwly.vip
+  port: 10014
+  type: trojan
+  password: e0db16b0-964e-4f14-8b67-cd0d627da872
+  sni: kr2.microsoft-orgwly.vip
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 13"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -92,13 +99,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 13"
-  server: kr2.microsoft-orgwly.vip
-  port: 10014
-  type: trojan
-  password: e0db16b0-964e-4f14-8b67-cd0d627da872
-  sni: kr2.microsoft-orgwly.vip
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -114,8 +114,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
+  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -133,7 +133,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1EE\U0001F1F3 IN 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
+  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
