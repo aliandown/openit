@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: 23.94.122.66
-  port: 38505
-  udp: true
-  password: dTjHHw2kDE
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,15 +7,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: awsjp14-data.amazon-azure.com
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 443
-  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  skip-cert-verify: true
+  server: 23.94.122.66
+  port: 38505
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+  password: dTjHHw2kDE
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: jp1.520748.xyz
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -31,14 +23,20 @@ proxies:
   password: d7616325-e7cf-4901-b2b2-f1ea3669d022
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: trs22.bolab.net
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: awsjp14-data.amazon-azure.com
   type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
+  country: "\U0001F1E6\U0001F1FAAU"
   port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: zf.heigouyunzf.xyz
+  port: 38805
+  type: trojan
+  password: e958b47d-3510-445a-99cb-dc98d227e29e
+  skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hk2.yihaobao.xyz
   port: 10022
@@ -46,13 +44,7 @@ proxies:
   password: bb72bd02-b929-405c-b274-e0ff95141df4
   sni: hk2.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: zf.heigouyunzf.xyz
-  port: 38805
-  type: trojan
-  password: e958b47d-3510-445a-99cb-dc98d227e29e
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -68,10 +60,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EE\U0001F1F3 IN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -82,9 +73,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EE\U0001F1F3 IN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
