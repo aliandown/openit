@@ -9,18 +9,18 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 216.52.59.50
-  port: 20458
+  server: 52.53.190.55
+  port: 10574
   udp: true
-  password: m8krTirthj
+  password: FHbcin2ORB
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: 23.94.122.66
-  port: 38505
+  server: 216.52.59.50
+  port: 20458
   udp: true
-  password: dTjHHw2kDE
+  password: m8krTirthj
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
@@ -40,14 +40,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 6"
-  type: trojan
-  server: 15.152.45.154
-  port: 38584
-  udp: true
-  password: vrEapjAokI
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -55,7 +47,22 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 8"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  type: trojan
+  server: 15.152.45.154
+  port: 38584
+  udp: true
+  password: vrEapjAokI
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 8"
+  server: hk2.yihaobao.xyz
+  port: 10022
+  type: trojan
+  password: bb72bd02-b929-405c-b274-e0ff95141df4
+  sni: hk2.yihaobao.xyz
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 9"
   type: trojan
   server: 3.38.178.191
   port: 11525
@@ -63,14 +70,21 @@ proxies:
   password: 75WJZnNuyW
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  server: hk2.yihaobao.xyz
-  port: 10022
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   type: trojan
-  password: bb72bd02-b929-405c-b274-e0ff95141df4
-  sni: hk2.yihaobao.xyz
+  server: zf.heigouyunzf.xyz
+  port: 38805
+  udp: true
+  password: e958b47d-3510-445a-99cb-dc98d227e29e
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 10"
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: zf.heigouyunzf.xyz
+  port: 38805
+  type: trojan
+  password: e958b47d-3510-445a-99cb-dc98d227e29e
+  skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1F3 IN 12"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -89,9 +103,11 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1EE\U0001F1F3 IN 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -105,8 +121,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1EE\U0001F1F3 IN 10"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1EE\U0001F1F3 IN 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
