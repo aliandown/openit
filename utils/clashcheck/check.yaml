@@ -15,7 +15,14 @@ proxies:
   password: m8krTirthj
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: fr2.microsoft-orgwly.vip
+  port: 444
+  type: trojan
+  password: 3e1ff3a0-c427-486f-95cf-9207721f570b
+  sni: tls.microsoft-orgwly.vip
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -23,29 +30,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: fr2.microsoft-orgwly.vip
-  port: 444
-  type: trojan
-  password: 3e1ff3a0-c427-486f-95cf-9207721f570b
-  sni: tls.microsoft-orgwly.vip
-  skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: kr5.microsoft-orgwly.vip
-  port: 10023
-  type: trojan
-  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
-  sni: tls.microsoft-orgwly.vip
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: trojan
-  server: zf.heigouyunzf.xyz
-  port: 38805
-  udp: true
-  password: e958b47d-3510-445a-99cb-dc98d227e29e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -53,13 +38,22 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FB\U0001F1F3 VN 8"
-  server: 103.81.85.238
-  port: 443
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: kr5.microsoft-orgwly.vip
+  port: 10023
   type: trojan
-  password: b49e3ef1-8a43-4c95-8365-20f4a012e693
+  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
+  sni: tls.microsoft-orgwly.vip
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 9"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: trojan
+  server: zf.heigouyunzf.xyz
+  port: 38805
+  udp: true
+  password: e958b47d-3510-445a-99cb-dc98d227e29e
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F3 IN 8"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -67,19 +61,25 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FB\U0001F1F3 VN 9"
+  server: 103.81.85.238
+  port: 443
+  type: trojan
+  password: b49e3ef1-8a43-4c95-8365-20f4a012e693
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -88,12 +88,12 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
-  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
