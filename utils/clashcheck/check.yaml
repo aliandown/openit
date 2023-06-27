@@ -23,6 +23,11 @@ proxies:
   sni: tls.microsoft-orgwly.vip
   skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: jp2.520748.xyz
+  port: 10002
+  type: trojan
+  password: d7616325-e7cf-4901-b2b2-f1ea3669d022
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: awsjp14-data.amazon-azure.com
   type: trojan
   country: "\U0001F1E6\U0001F1FAAU"
@@ -30,7 +35,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: jp1.520748.xyz
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -38,11 +43,6 @@ proxies:
   password: d7616325-e7cf-4901-b2b2-f1ea3669d022
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: jp2.520748.xyz
-  port: 10002
-  type: trojan
-  password: d7616325-e7cf-4901-b2b2-f1ea3669d022
 - name: "\U0001F1EF\U0001F1F5 JP 7"
   server: trs22.bolab.net
   type: trojan
@@ -56,7 +56,7 @@ proxies:
   port: 10023
   type: trojan
   password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
-  sni: kr5.microsoft-orgwly.vip
+  sni: tls.microsoft-orgwly.vip
   skip-cert-verify: true
 - name: "\U0001F1EE\U0001F1F3 IN 9"
   server: 152.70.74.66
@@ -66,15 +66,7 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  type: trojan
-  server: zf.heigouyunzf.xyz
-  port: 38805
-  udp: true
-  password: e958b47d-3510-445a-99cb-dc98d227e29e
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 11"
+- name: "\U0001F1FB\U0001F1F3 VN 10"
   server: 103.81.85.238
   port: 443
   type: trojan
@@ -93,8 +85,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1F0\U0001F1F7 KR 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1FB\U0001F1F3 VN 11"
+  - "\U0001F1FB\U0001F1F3 VN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -110,7 +101,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1F0\U0001F1F7 KR 8"
   - "\U0001F1EE\U0001F1F3 IN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1FB\U0001F1F3 VN 11"
+  - "\U0001F1FB\U0001F1F3 VN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
