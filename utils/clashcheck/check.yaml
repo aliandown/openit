@@ -7,12 +7,12 @@ proxies:
   password: m8krTirthj
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us.blazeppn.info
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: awsjp14-data.amazon-azure.com
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  country: "\U0001F1E6\U0001F1FAAU"
   port: 443
-  password: xxoo
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
@@ -24,14 +24,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: awsjp14-data.amazon-azure.com
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 443
-  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -39,6 +31,12 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: zf.heigouyunzf.xyz
+  port: 38805
+  type: trojan
+  password: e958b47d-3510-445a-99cb-dc98d227e29e
+  skip-cert-verify: true
 - name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
@@ -47,16 +45,25 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: trojan
+  server: zf.heigouyunzf.xyz
+  port: 38805
+  udp: true
+  password: e958b47d-3510-445a-99cb-dc98d227e29e
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,10 +71,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
