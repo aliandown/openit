@@ -1,12 +1,11 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: fr2.microsoft-orgwly.vip
+  port: 444
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
+  password: 3e1ff3a0-c427-486f-95cf-9207721f570b
+  sni: tls.microsoft-orgwly.vip
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   server: awsjp14-data.amazon-azure.com
   type: trojan
@@ -23,12 +22,12 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: fr2.microsoft-orgwly.vip
-  port: 444
+- name: "\U0001F1F0\U0001F1F7 KR 4"
+  server: kr5.microsoft-orgwly.vip
+  port: 10023
   type: trojan
-  password: 3e1ff3a0-c427-486f-95cf-9207721f570b
-  sni: tls.microsoft-orgwly.vip
+  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
+  sni: kr5.microsoft-orgwly.vip
   skip-cert-verify: true
 - name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
@@ -38,34 +37,25 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: kr5.microsoft-orgwly.vip
-  port: 10023
-  type: trojan
-  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
-  sni: kr5.microsoft-orgwly.vip
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1F0\U0001F1F7 KR 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1F0\U0001F1F7 KR 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
