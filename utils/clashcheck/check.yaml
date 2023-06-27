@@ -30,14 +30,13 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: trs19.bolab.net
+- name: "\U0001F1F0\U0001F1F7 KR 5"
+  server: kr5.microsoft-orgwly.vip
+  port: 10023
   type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
+  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
+  sni: kr5.microsoft-orgwly.vip
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
@@ -46,13 +45,14 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: kr5.microsoft-orgwly.vip
-  port: 10023
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: trs19.bolab.net
   type: trojan
-  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
-  sni: kr5.microsoft-orgwly.vip
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -61,9 +61,9 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -74,8 +74,8 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1EF\U0001F1F5 JP 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
