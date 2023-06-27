@@ -39,6 +39,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: jp2.520748.xyz
+  port: 10002
+  type: trojan
+  password: d7616325-e7cf-4901-b2b2-f1ea3669d022
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -46,14 +51,21 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 7"
-  server: tw1.yihaobao.xyz
-  port: 10021
+- name: "\U0001F1EE\U0001F1F3 IN 8"
+  server: 152.70.74.66
   type: trojan
-  password: 28909c58-3354-4c52-a1e5-26b6dfb59d65
-  sni: tw1.yihaobao.xyz
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+  udp: true
+- name: "\U0001F1FB\U0001F1F3 VN 9"
+  server: 103.81.85.238
+  port: 443
+  type: trojan
+  password: b49e3ef1-8a43-4c95-8365-20f4a012e693
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   type: trojan
   server: zf.heigouyunzf.xyz
   port: 38805
@@ -61,19 +73,6 @@ proxies:
   password: e958b47d-3510-445a-99cb-dc98d227e29e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 9"
-  server: kr5.microsoft-orgwly.vip
-  port: 10023
-  type: trojan
-  password: 12070a37-7ad6-4e18-95ef-b9e54cd4365c
-  sni: kr5.microsoft-orgwly.vip
-  skip-cert-verify: true
-- name: "\U0001F1FB\U0001F1F3 VN 10"
-  server: 103.81.85.238
-  port: 443
-  type: trojan
-  password: b49e3ef1-8a43-4c95-8365-20f4a012e693
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -84,10 +83,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 TW 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1FB\U0001F1F3 VN 10"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -100,9 +99,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 TW 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1FB\U0001F1F3 VN 10"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
