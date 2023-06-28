@@ -1,18 +1,15 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: hk1997.pro
+  port: 4000
+  type: trojan
+  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
   password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: hk1997.pro
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 4000
-  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
@@ -33,12 +30,10 @@ proxies:
   udp: true
 - name: "\U0001F1EE\U0001F1F3 IN 5"
   server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
   port: 443
+  type: trojan
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
