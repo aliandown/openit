@@ -1,13 +1,26 @@
 proxies:
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
+  name: "\U0001F1FA\U0001F1F8 US 2"
   server: 66.112.216.121
   port: 40317
   password: AA3uvT5KGT
   udp: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: hk1997.pro
+  port: 4000
+  type: trojan
+  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 163.123.192.60
   port: 443
@@ -16,22 +29,6 @@ proxies:
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: hk1997.pro
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 4000
-  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   server: awsjp14-data.amazon-azure.com
   type: trojan
