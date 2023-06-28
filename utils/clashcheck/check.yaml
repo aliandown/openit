@@ -1,5 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: hk1997.pro
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 4000
+  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,11 +15,6 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: hk1997.pro
-  port: 4000
-  type: trojan
-  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
 - name: "\U0001F1EF\U0001F1F5 JP 3"
   server: awsjp14-data.amazon-azure.com
   type: trojan
@@ -34,11 +37,6 @@ proxies:
   type: trojan
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: trs19.bolab.net
-  port: 443
-  type: trojan
-  password: 7a73f1dc97a70905870c0c0484b12145
 proxy-groups:
 - name: automatic
   type: url-test
@@ -48,7 +46,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -60,6 +57,5 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
