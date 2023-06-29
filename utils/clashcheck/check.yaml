@@ -8,14 +8,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: hk1997.pro
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 4000
-  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 163.123.192.57
   port: 443
@@ -24,6 +16,14 @@ proxies:
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: hk1997.pro
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 4000
+  password: 887c0298-2bab-4d4c-8cb0-b85b3ba9c4bb
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   server: awsjp14-data.amazon-azure.com
   type: trojan
@@ -40,20 +40,29 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: jp2.downloadvip.cfd
+  port: 443
+  password: eafd508e-0aa5-44e8-9e85-b33871f66cae
+  udp: true
+  skip-cert-verify: true
+  sni: download.xn--mes358a9urctx.com
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: zf.heigouyunzf.xyz
   port: 38805
   type: trojan
   password: e958b47d-3510-445a-99cb-dc98d227e29e
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
-  server: 152.70.74.66
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 8"
+  server: kr2.jb7ueoq73.xyz
+  port: 80
+  password: 28f57cb0-f336-46e6-b040-fcc138affb29
   udp: true
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -63,8 +72,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -76,7 +86,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
