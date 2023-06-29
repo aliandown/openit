@@ -62,41 +62,7 @@ proxies:
   password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 8"
-  type: trojan
-  server: asia.ifastcdncache.com
-  port: 21750
-  udp: true
-  password: 98418cc3-2a5c-4e9a-b43c-d395e4561cd7
-  sni: asia.ifastcdncache.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: trs22.bolab.net
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 10"
-  type: trojan
-  server: kr2.jb7ueoq73.xyz
-  port: 80
-  udp: true
-  password: 28f57cb0-f336-46e6-b040-fcc138affb29
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1FF CZ 11"
-  type: trojan
-  server: jp5.cdn.nttsoftgroup.com
-  port: 23155
-  udp: true
-  password: 98418cc3-2a5c-4e9a-b43c-d395e4561cd7
-  sni: jp5.cdn.nttsoftgroup.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 12"
+- name: "\U0001F1E8\U0001F1F3 HK 8"
   type: trojan
   server: appU928304887687.api.steamgamepowered.net
   port: 18180
@@ -105,6 +71,39 @@ proxies:
   sni: appU928304887687.api.steamgamepowered.net
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1FF CZ 9"
+  type: trojan
+  server: jp5.cdn.nttsoftgroup.com
+  port: 23155
+  udp: true
+  password: 98418cc3-2a5c-4e9a-b43c-d395e4561cd7
+  sni: jp5.cdn.nttsoftgroup.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 10"
+  type: trojan
+  server: kr2.jb7ueoq73.xyz
+  port: 80
+  udp: true
+  password: 28f57cb0-f336-46e6-b040-fcc138affb29
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 11"
+  server: trs22.bolab.net
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1F3 IN 12"
+  server: 152.70.74.66
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -116,11 +115,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1FF CZ 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
-  - "\U0001F1E8\U0001F1FF CZ 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EE\U0001F1F3 IN 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -134,10 +133,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1FF CZ 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
-  - "\U0001F1E8\U0001F1FF CZ 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EE\U0001F1F3 IN 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
