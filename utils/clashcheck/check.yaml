@@ -32,18 +32,14 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: jp1.gsjc.cfd
-  port: 443
+  server: awsjp14-data.amazon-azure.com
   type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 443
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: jp2.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -51,31 +47,25 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  server: sg2.gsjc.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: jp2.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: jp1.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 9"
-  server: sg1.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 10"
-  server: hk2.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 11"
   server: hk1.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- name: "\U0001F1F8\U0001F1EC SG 10"
   type: trojan
   server: sg2.downloadvip.cfd
   port: 443
@@ -84,7 +74,13 @@ proxies:
   sni: djsg1.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 13"
+- name: "\U0001F1F8\U0001F1EC SG 11"
+  server: hk2.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 HK 12"
   type: trojan
   server: hk2.yihaobao.xyz
   port: 10022
@@ -92,7 +88,19 @@ proxies:
   password: e4726fb3-b5da-4959-97aa-4dc9efbd2be8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 14"
+- name: "\U0001F1F8\U0001F1EC SG 13"
+  server: sg2.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 14"
+  server: sg1.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EE\U0001F1F3 IN 15"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -100,20 +108,20 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 15"
+- name: "\U0001F1E8\U0001F1F3 CN 16"
   server: 116.192.171.97
   type: trojan
   port: 8443
   password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 16"
+- name: "\U0001F1E8\U0001F1F3 CN 17"
   server: official.taipeicitygovernment.kiev.ua
   type: trojan
   port: 8443
   password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   sni: 66.42.40.132
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 17"
+- name: "\U0001F1E8\U0001F1F3 CN 18"
   type: trojan
   server: 116.192.171.97
   port: 8443
@@ -121,6 +129,14 @@ proxies:
   password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 19"
+  server: hnm.xiaohouzi.club
+  type: trojan
+  country: "\U0001F1F9\U0001F1FCTW"
+  port: 23330
+  password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -132,16 +148,18 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1EE\U0001F1F3 IN 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 TW 19"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,15 +173,17 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1EE\U0001F1F3 IN 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
+  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 TW 19"
 rules:
 - "MATCH,\U0001F310 Proxy"
