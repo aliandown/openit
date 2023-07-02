@@ -38,13 +38,19 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: jp1.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 7"
   server: sg1.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 8"
   type: trojan
   server: hk2.yihaobao.xyz
   port: 10022
@@ -52,7 +58,13 @@ proxies:
   password: e4726fb3-b5da-4959-97aa-4dc9efbd2be8
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  server: hk2.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 10"
   server: sgmax05.170203.xyz
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -60,20 +72,8 @@ proxies:
   password: 07578f26-1009-4c31-8c4d-fc46f1eef55f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: jp2.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 10"
+- name: "\U0001F1F8\U0001F1EC SG 11"
   server: hk1.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 11"
-  server: jp1.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
@@ -85,8 +85,8 @@ proxies:
   password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   sni: 66.42.40.132
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 13"
-  server: hk2.gsjc.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  server: jp2.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
@@ -99,6 +99,20 @@ proxies:
   password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 15"
+  type: trojan
+  server: official.taipeicitygovernment.kiev.ua
+  port: 8443
+  udp: true
+  password: 5505f6ba-cd37-30ce-8f92-be4120c83d7f
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 16"
+  server: sg2.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -108,15 +122,17 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1F8\U0001F1EC SG 16"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -128,14 +144,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1F8\U0001F1EC SG 16"
 rules:
 - "MATCH,\U0001F310 Proxy"
