@@ -43,33 +43,25 @@ proxies:
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 7"
-  server: sg2.gsjc.cfd
+  server: hk2.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 8"
-  server: hk1.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 9"
-  server: sgmax05.170203.xyz
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 07578f26-1009-4c31-8c4d-fc46f1eef55f
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 10"
   server: sg1.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 11"
-  server: hk2.gsjc.cfd
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  server: sg2.gsjc.cfd
+  port: 443
+  type: trojan
+  password: bce72830-6561-4af6-a2c4-052fccb94595
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 10"
+  server: hk1.gsjc.cfd
   port: 443
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
@@ -88,7 +80,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 8"
   - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -105,6 +96,5 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 8"
   - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
