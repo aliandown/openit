@@ -15,13 +15,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 163.123.192.60
+  port: 443
   type: trojan
-  server: 216.52.59.50
-  port: 20458
-  udp: true
-  password: m8krTirthj
+  password: 7cca3a08-e664-4fb8-bf5c-b2da2774665a
   skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 163.123.192.57
@@ -31,7 +29,15 @@ proxies:
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 216.52.59.50
+  port: 20458
+  udp: true
+  password: m8krTirthj
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -39,12 +45,6 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 6"
-  server: gs-hinet.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -53,8 +53,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,7 +65,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
