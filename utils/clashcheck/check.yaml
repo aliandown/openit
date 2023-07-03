@@ -7,11 +7,13 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 163.123.192.60
-  port: 443
+  server: us.blazeppn.info
   type: trojan
-  password: 7cca3a08-e664-4fb8-bf5c-b2da2774665a
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 216.52.59.50
@@ -43,18 +45,6 @@ proxies:
   type: trojan
   password: bce72830-6561-4af6-a2c4-052fccb94595
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 7"
-  server: hk1.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  server: sg2.gsjc.cfd
-  port: 443
-  type: trojan
-  password: bce72830-6561-4af6-a2c4-052fccb94595
-  sni: 20-212-60-88.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -65,8 +55,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,7 +67,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
