@@ -1,25 +1,29 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: 163.123.192.150
+  port: 443
+  udp: true
+  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
+  sni: downloadus.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 163.123.192.152
+  port: 443
+  udp: true
+  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
+  sni: downloadus.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: 170.187.134.190
   type: trojan
   port: 8443
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 163.123.192.57
-  port: 443
-  type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: download.xn--mes358aby2apfg.com
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 163.123.192.151
@@ -30,31 +34,26 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 5"
+  server: us.blazeppn.info
   type: trojan
-  server: 163.123.192.150
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: downloadus.xn--mes358acgm99l.com
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: 163.123.192.152
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 TW 6"
+  server: hinet1.downloadvip.cfd
   port: 443
-  udp: true
-  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: downloadus.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 7"
   type: trojan
-  server: tr.mellivmess.com
-  port: 32950
-  udp: true
-  password: AJCBkjTy9v
+  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
+  sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 7"
+  server: sg2.downloadvip.cfd
+  port: 443
+  type: trojan
+  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
+  sni: jssg1.xn--mes358acgm99l.com
 - name: "\U0001F1EF\U0001F1F5 JP 8"
   server: trs22.bolab.net
   type: trojan
@@ -63,32 +62,55 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 9"
+- name: "\U0001F1E9\U0001F1EA DE 9"
+  server: 217.79.181.82
+  port: 443
+  type: trojan
+  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
+  sni: downloadde.xn--mes358acgm99l.com
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA DE 10"
+  type: trojan
+  server: tr.mellivmess.com
+  port: 32950
+  udp: true
+  password: AJCBkjTy9v
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 11"
   server: ccarm.wasanbi.tk
   port: 58678
   type: trojan
   password: z3NtLA8ocb
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 TW 10"
-  server: hinet1.downloadvip.cfd
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 12"
   type: trojan
-  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: download.xn--mes358acgm99l.com
+  server: 163.123.192.155
+  port: 443
+  udp: true
+  password: d66c0489-3003-464c-805c-7694a55600ed
+  sni: downloadus.xn--mes358a9urctx.com
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 11"
-  server: sg2.downloadvip.cfd
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 13"
+  server: 163.123.192.60
   port: 443
   type: trojan
-  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: jssg1.xn--mes358acgm99l.com
-- name: "\U0001F1E8\U0001F1F3 CN 12"
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: download.xn--mes358aby2apfg.com
+- name: "\U0001F1E8\U0001F1F3 CN 14"
   server: catlog.flareai.science
   port: 11543
   type: http
   username: b74b2457b5
   password: ddc132a6a3
   tls: true
+- name: "\U0001F1F8\U0001F1EC SG 15"
+  server: pqawszf.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: us2.pqjc.site
 proxy-groups:
 - name: automatic
   type: url-test
@@ -98,13 +120,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1E8\U0001F1F3 TW 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1F8\U0001F1EC SG 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -116,12 +141,15 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1E8\U0001F1F3 TW 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1F8\U0001F1EC SG 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
