@@ -15,18 +15,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 163.123.192.57
-  port: 443
-  type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: download.xn--mes358aby2apfg.com
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 163.123.192.60
-  port: 443
-  type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: download.xn--mes358aby2apfg.com
-- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 163.123.192.151
   port: 443
@@ -35,16 +23,7 @@ proxies:
   sni: downloadus.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: 163.123.192.150
-  port: 443
-  udp: true
-  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: downloadus.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 163.123.192.155
   port: 443
@@ -53,14 +32,16 @@ proxies:
   sni: downloadus.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 8"
-  server: 217.79.181.82
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
+  server: 163.123.192.152
+  port: 443
+  udp: true
   password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: downloadde.xn--mes358acgm99l.com
+  sni: downloadus.xn--mes358acgm99l.com
   skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 9"
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 6"
   type: trojan
   server: tr.mellivmess.com
   port: 32950
@@ -68,7 +49,7 @@ proxies:
   password: AJCBkjTy9v
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 10"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -76,26 +57,25 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 11"
-  server: hinet1.downloadvip.cfd
-  port: 443
-  type: trojan
-  password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 12"
+- name: "\U0001F1F0\U0001F1F7 KR 8"
   server: ccarm.wasanbi.tk
   port: 58678
   type: trojan
   password: z3NtLA8ocb
   skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 13"
+- name: "\U0001F1F8\U0001F1EC SG 9"
   server: sg2.downloadvip.cfd
   port: 443
   type: trojan
   password: 718c4ef4-9f65-496c-9547-f27e4226c4f5
   sni: jssg1.xn--mes358acgm99l.com
-- name: "\U0001F1EE\U0001F1F3 IN 14"
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  server: 163.123.192.57
+  port: 443
+  type: trojan
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: download.xn--mes358aby2apfg.com
+- name: "\U0001F1EE\U0001F1F3 IN 11"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -103,6 +83,13 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: catlog.flareai.science
+  port: 11543
+  type: http
+  username: b74b2457b5
+  password: ddc132a6a3
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -112,15 +99,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1E8\U0001F1F3 TW 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -132,14 +117,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1E8\U0001F1F3 TW 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1EE\U0001F1F3 IN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
