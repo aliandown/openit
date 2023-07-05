@@ -6,7 +6,21 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 163.123.192.60
+  port: 443
+  type: trojan
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: download.xn--mes358aby2apfg.com
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: tr.mellivmess.com
   port: 32950
@@ -14,13 +28,7 @@ proxies:
   password: AJCBkjTy9v
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: ccarm.wasanbi.tk
-  port: 58678
-  type: trojan
-  password: z3NtLA8ocb
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -28,13 +36,26 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 163.123.192.60
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: ccarm.wasanbi.tk
+  port: 58678
+  type: trojan
+  password: z3NtLA8ocb
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  server: kr5.microsoft-orgwly.vip
+  port: 10023
+  type: trojan
+  password: db7a325b-b2a2-4217-af2c-1e2bfdc8d71c
+  sni: kr5.microsoft-orgwly.vip
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 163.123.192.57
   port: 443
   type: trojan
   password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
   sni: download.xn--mes358aby2apfg.com
-- name: "\U0001F1EE\U0001F1F3 IN 6"
+- name: "\U0001F1EE\U0001F1F3 IN 9"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -42,40 +63,19 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: 216.52.59.50
-  port: 20458
-  udp: true
-  password: m8krTirthj
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: kr5.microsoft-orgwly.vip
-  port: 10023
-  type: trojan
-  password: db7a325b-b2a2-4217-af2c-1e2bfdc8d71c
-  sni: kr5.microsoft-orgwly.vip
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 9"
-  server: pqawszf.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: us1.pqjc.site
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -83,13 +83,13 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
