@@ -15,15 +15,13 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 135.148.148.4
-  port: 80
-  udp: true
-  password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
   server: 163.123.192.57
+  port: 443
+  type: trojan
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: download.xn--mes358aby2apfg.com
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 163.123.192.60
   port: 443
   type: trojan
   password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
@@ -36,23 +34,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: 138.124.183.216
-  port: 443
-  udp: true
-  password: xxoo
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: awsjp14-data.amazon-azure.com
-  type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
-  port: 443
-  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E9\U0001F1EA DE 8"
+- name: "\U0001F1E9\U0001F1EA DE 6"
   server: unohana.ddns.net
   type: trojan
   country: "\U0001F1E9\U0001F1EADE"
@@ -60,6 +42,22 @@ proxies:
   password: PqMqhThD9Q
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: 138.124.183.216
+  port: 443
+  udp: true
+  password: xxoo
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  type: trojan
+  server: 135.148.148.4
+  port: 80
+  udp: true
+  password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EC\U0001F1E7 GB 9"
   type: trojan
   server: 51.38.71.175
@@ -68,23 +66,7 @@ proxies:
   password: b640d791-ff83-4300-b509-c2a02f97f167
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: trs22.bolab.net
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 11"
-  type: trojan
-  server: 185.167.99.205
-  port: 60606
-  udp: true
-  password: D9269A88-D1E9-F72F-803B-3D2E5D7C1A32
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 12"
+- name: "\U0001F1E9\U0001F1EA DE 10"
   type: trojan
   server: 167.235.240.65
   port: 32950
@@ -93,7 +75,7 @@ proxies:
   sni: getandroid.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EA\U0001F1F8 ES 13"
+- name: "\U0001F1EA\U0001F1F8 ES 11"
   type: trojan
   server: 27.0.175.159
   port: 1935
@@ -101,6 +83,22 @@ proxies:
   password: fWCdFcWBZ8
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 12"
+  type: trojan
+  server: 185.167.99.205
+  port: 60606
+  udp: true
+  password: D9269A88-D1E9-F72F-803B-3D2E5D7C1A32
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  server: trs22.bolab.net
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 14"
   type: trojan
   server: 103.234.53.27
@@ -153,14 +151,6 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 20"
-  type: trojan
-  server: 19211tj.matrixxx888.com
-  port: 19211
-  udp: true
-  password: 05a677b9-63f0-3680-b53b-67406b27cffe
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -170,21 +160,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1F3\U0001F1F1 NL 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1EA\U0001F1F8 ES 13"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1EA\U0001F1F8 ES 11"
+  - "\U0001F1F3\U0001F1F1 NL 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1E8\U0001F1F3 HK 14"
   - "\U0001F1E8\U0001F1F3 HK 15"
   - "\U0001F1F0\U0001F1F7 KR 16"
   - "\U0001F1F0\U0001F1F7 KR 17"
   - "\U0001F1FA\U0001F1F8 US 18"
   - "\U0001F1FB\U0001F1F3 VN 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -196,20 +185,19 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1F3\U0001F1F1 NL 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1EA\U0001F1F8 ES 13"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1EA\U0001F1F8 ES 11"
+  - "\U0001F1F3\U0001F1F1 NL 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1E8\U0001F1F3 HK 14"
   - "\U0001F1E8\U0001F1F3 HK 15"
   - "\U0001F1F0\U0001F1F7 KR 16"
   - "\U0001F1F0\U0001F1F7 KR 17"
   - "\U0001F1FA\U0001F1F8 US 18"
   - "\U0001F1FB\U0001F1F3 VN 19"
-  - "\U0001F1E8\U0001F1F3 CN 20"
 rules:
 - "MATCH,\U0001F310 Proxy"
