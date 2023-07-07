@@ -7,26 +7,26 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: us.nfsq.me
   port: 22200
   type: trojan
   password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca
   sni: us.nfsq.me
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
   port: 443
   password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: fsctw.fscloud123456789.com
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 3228a77c-c1c3-451f-9112-e6e766684558
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 5"
@@ -43,14 +43,7 @@ proxies:
   type: trojan
   password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
   sni: us2.pqjc.site
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: catlog.flareai.science
-  port: 11543
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1EE\U0001F1F3 IN 7"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -58,18 +51,25 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: catlog.flareai.science
+  port: 11543
+  type: http
+  username: b74b2457b5
+  password: ddc132a6a3
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,11 +78,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
