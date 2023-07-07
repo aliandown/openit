@@ -7,21 +7,29 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: us.nfsq.me
   port: 22200
   type: trojan
   password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca
   sni: us.nfsq.me
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: trs22.bolab.net
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: awsjp14-data.amazon-azure.com
   type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
+  country: "\U0001F1E6\U0001F1FAAU"
   port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
+  password: 4aeda200-44c9-4168-8f2a-a00a72176d35
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   server: boostortop.top
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -29,7 +37,15 @@ proxies:
   password: 5095bd19-85f5-44c2-b5a8-f1e821ef8090
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: trs22.bolab.net
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   server: ovotw.ovogreat.com
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -37,20 +53,13 @@ proxies:
   password: 0e40fe8c-23d2-4dee-a9a4-25006da2d0bf
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   server: pqawszf.aiopen.cfd
   port: 443
   type: trojan
   password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
   sni: us2.pqjc.site
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: catlog.flareai.science
-  port: 11543
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1EE\U0001F1F3 IN 8"
+- name: "\U0001F1EE\U0001F1F3 IN 9"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -58,33 +67,27 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: uk.stablize.top
-  port: 443
-  type: trojan
-  password: 4565bf4a-951a-4981-9b60-4b1a496c9cbc
-- name: "\U0001F1E8\U0001F1F3 TW 10"
-  server: hnm.xiaohouzi.club
-  type: trojan
-  country: "\U0001F1F9\U0001F1FCTW"
-  port: 23330
-  password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: catlog.flareai.science
+  port: 11543
+  type: http
+  username: b74b2457b5
+  password: ddc132a6a3
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1E8\U0001F1F3 TW 10"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -93,13 +96,13 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1EE\U0001F1F3 IN 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1E8\U0001F1F3 TW 10"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1EE\U0001F1F3 IN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
