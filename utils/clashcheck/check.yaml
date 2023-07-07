@@ -22,14 +22,7 @@ proxies:
   password: m8krTirthj
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us.nfsq.me
-  port: 22200
-  type: trojan
-  password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca
-  sni: us.nfsq.me
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -37,12 +30,25 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: fsctw.fscloud123456789.com
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: pqawszf.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: us2.pqjc.site
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: us.nfsq.me
+  port: 22200
+  type: trojan
+  password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca
+  sni: us.nfsq.me
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: ovohk.ovogreat.com
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
   port: 443
-  password: 3228a77c-c1c3-451f-9112-e6e766684558
+  password: 8876657a-6a91-4ee4-8539-cf52f5dfa6f5
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -52,9 +58,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,8 +71,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
