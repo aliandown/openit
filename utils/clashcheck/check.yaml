@@ -39,14 +39,7 @@ proxies:
   password: z3NtLA8ocb
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: hk1.yihaobao.xyz
-  port: 10022
-  type: trojan
-  password: 508f3e96-f022-4bed-aa72-8bfd37af5c14
-  sni: hk1.yihaobao.xyz
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 7"
+- name: "\U0001F1EE\U0001F1F3 IN 6"
   server: 152.70.74.66
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -54,9 +47,16 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: catlog.flareai.science
   port: 11543
+  type: http
+  username: b74b2457b5
+  password: ddc132a6a3
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: assets.flareai.site
+  port: 11343
   type: http
   username: b74b2457b5
   password: ddc132a6a3
@@ -70,8 +70,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -84,8 +84,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1EE\U0001F1F3 IN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
