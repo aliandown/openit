@@ -54,6 +54,13 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: catlog.flareai.science
+  port: 11543
+  type: http
+  username: b74b2457b5
+  password: ddc132a6a3
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -65,6 +72,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,5 +86,6 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
