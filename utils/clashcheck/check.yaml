@@ -34,30 +34,22 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1F3 IN 6"
-  server: 152.70.74.66
-  port: 443
-  type: trojan
-  password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   server: assets.flareai.site
   port: 11543
   type: http
   username: b74b2457b5
   password: ddc132a6a3
   tls: true
-- name: "\U0001F1E8\U0001F1F3 TW 8"
-  server: hnm.xiaohouzi.club
-  port: 23330
+- name: "\U0001F1EE\U0001F1E9 ID 7"
   type: trojan
-  password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-- name: "\U0001F1F8\U0001F1EC SG 9"
-  server: pqawszf.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: us1.pqjc.site
+  server: 103.169.7.11
+  port: 80
+  udp: true
+  password: c0d9da22-2569-4bed-a395-607d9e7ae687
+  sni: sciencedirect.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -67,10 +59,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1E9 ID 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -82,9 +72,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EE\U0001F1F3 IN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EE\U0001F1E9 ID 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
