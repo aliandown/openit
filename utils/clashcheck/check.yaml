@@ -52,6 +52,15 @@ proxies:
   type: trojan
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
+- name: "\U0001F1EE\U0001F1E9 ID 9"
+  type: trojan
+  server: 103.169.7.11
+  port: 80
+  udp: true
+  password: c0d9da22-2569-4bed-a395-607d9e7ae687
+  sni: sciencedirect.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -64,6 +73,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EE\U0001F1E9 ID 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,5 +88,6 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1EE\U0001F1F3 IN 8"
+  - "\U0001F1EE\U0001F1E9 ID 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
