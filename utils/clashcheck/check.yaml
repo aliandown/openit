@@ -23,13 +23,13 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: kbawsjp1.aiopen.cfd
+  server: kbawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 5"
-  server: kbawssg2.aiopen.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: kbawsjp1.aiopen.cfd
   port: 443
   type: trojan
   password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c
@@ -48,14 +48,6 @@ proxies:
   password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 8"
-  server: hnm.xiaohouzi.club
-  type: trojan
-  country: "\U0001F1F9\U0001F1FCTW"
-  port: 23330
-  password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -64,10 +56,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -78,9 +69,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1F8\U0001F1EC SG 6"
   - "\U0001F1EE\U0001F1F3 IN 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
