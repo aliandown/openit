@@ -6,20 +6,31 @@ proxies:
   password: cf4295378e209e70d12c5bdd017144dfd1c772d3
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: jp-csjc.85413.xyz
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
   type: trojan
-  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: trs22.bolab.net
+  server: jp-csjc.85413.xyz
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
   port: 443
-  password: 7a73f1dc97a70905870c0c0484b12145
+  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: microsoft-hk.85413.xyz
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 443
+  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   type: trojan
   server: 15.237.142.21
   port: 22222
@@ -28,26 +39,40 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: microsoft-hk.85413.xyz
-  port: 443
-  type: trojan
-  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
 - name: "\U0001F1F8\U0001F1EC SG 6"
   server: sg-csjc.85413.xyz
+  type: trojan
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 443
+  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: 163.123.192.57
   port: 443
   type: trojan
-  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: trs22.bolab.net
+  type: trojan
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 443
+  password: 7a73f1dc97a70905870c0c0484b12145
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,10 +80,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
