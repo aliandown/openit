@@ -7,16 +7,17 @@ proxies:
   sni: 170-187-134-190.ipv4.rush.ml
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us.blazeppn.info
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 163.123.192.155
   port: 443
-  password: xxoo
-  skip-cert-verify: true
   udp: true
+  password: a48ef049-f572-4345-b75a-7b85ff83296c
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
-  server: jp2.downloadvip.cfd
+  server: hk2.downloadvip.cfd
   port: 443
   udp: true
   password: a48ef049-f572-4345-b75a-7b85ff83296c
@@ -25,7 +26,7 @@ proxies:
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
-  server: hk2.downloadvip.cfd
+  server: jp2.downloadvip.cfd
   port: 443
   udp: true
   password: a48ef049-f572-4345-b75a-7b85ff83296c
@@ -41,22 +42,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: 163.123.192.155
+  server: 163.123.192.60
   port: 443
-  udp: true
-  password: a48ef049-f572-4345-b75a-7b85ff83296c
-  sni: downloadus.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 7"
   type: trojan
-  server: iplc-enter-tw-xe.fib-sys.xyz
-  port: 11451
-  udp: true
-  password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc
-  skip-cert-verify: true
-  network: tcp
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -67,7 +57,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -80,6 +69,5 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
