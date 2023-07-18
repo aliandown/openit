@@ -15,6 +15,24 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
+  type: trojan
+  server: jp2.downloadvip.cfd
+  port: 443
+  udp: true
+  password: a48ef049-f572-4345-b75a-7b85ff83296c
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  type: trojan
+  server: hk2.downloadvip.cfd
+  port: 443
+  udp: true
+  password: a48ef049-f572-4345-b75a-7b85ff83296c
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -22,18 +40,23 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 163.123.192.57
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: 20-24-33-134.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 163.123.192.60
+  server: 163.123.192.155
   port: 443
+  udp: true
+  password: a48ef049-f572-4345-b75a-7b85ff83296c
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: 20-24-33-134.nhost.00cdn.com
+  server: iplc-enter-tw-xe.fib-sys.xyz
+  port: 11451
+  udp: true
+  password: 11a4e5be-3c87-37d2-aac8-00b85ef0fcdc
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -41,8 +64,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -52,7 +77,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
