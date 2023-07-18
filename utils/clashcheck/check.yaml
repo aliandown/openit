@@ -22,21 +22,17 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: us.disnet.gq
+  network: tcp
 - type: trojan
   name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 3.139.234.222
+  server: 34.218.233.49
   port: 22222
   password: telegram-id-directvpn
   udp: true
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 163.123.192.60
-  port: 443
-  type: trojan
-  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
-  sni: 20-24-33-134.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: trs22.bolab.net
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -44,13 +40,30 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 163.123.192.57
+  port: 443
+  type: trojan
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
 - type: trojan
-  name: "\U0001F1EA\U0001F1F8 ES 7"
-  server: free-v2ray-panel.devefun.ink
-  port: 1935
-  password: fWCdFcWBZ8
+  name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: 18.163.249.175
+  port: 443
+  password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
   udp: true
   skip-cert-verify: true
+  sni: golang.protocolbuffer.com
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 3.139.234.222
+  port: 22222
+  password: telegram-id-directvpn
+  udp: true
+  skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -59,9 +72,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EA\U0001F1F8 ES 7"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,8 +86,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EA\U0001F1F8 ES 7"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
