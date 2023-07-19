@@ -33,6 +33,16 @@ proxies:
   type: trojan
   password: c68e3c20-da73-4791-b4d8-7011a98ba06b
   sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  type: ssr
+  server: 223.113.136.122
+  port: 30901
+  password: zztw9jk7gu
+  cipher: chacha20-ietf
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: e5ab08366.microsoft.com
+  protocol-param: 8366:V35GbB
 proxy-groups:
 - name: automatic
   type: url-test
@@ -42,6 +52,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -53,5 +64,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
