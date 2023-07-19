@@ -36,6 +36,12 @@ proxies:
   type: trojan
   password: c68e3c20-da73-4791-b4d8-7011a98ba06b
   sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: ovotw.ovogreat.com
+  port: 443
+  type: trojan
+  password: 07c34f84-44f8-47d0-9ef9-95fbc762de93
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -45,6 +51,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -56,5 +63,6 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
