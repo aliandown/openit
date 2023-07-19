@@ -31,6 +31,12 @@ proxies:
   protocol: auth_aes128_sha1
   obfs-param: e5ab08366.microsoft.com
   protocol-param: 8366:V35GbB
+- name: "\U0001F1F8\U0001F1EC SG 5"
+  server: kbawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: c68e3c20-da73-4791-b4d8-7011a98ba06b
+  sni: 4-193-105-141.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -39,6 +45,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,5 +56,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
