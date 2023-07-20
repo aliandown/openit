@@ -8,12 +8,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: kbawsjp2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: c68e3c20-da73-4791-b4d8-7011a98ba06b
-  sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
   server: kbawsjp1.aiopen.cfd
   port: 443
@@ -22,6 +16,12 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  server: kbawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: c68e3c20-da73-4791-b4d8-7011a98ba06b
+  sni: 4-193-105-141.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   server: trs22.bolab.net
   type: trojan
@@ -31,7 +31,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F8\U0001F1EC SG 5"
-  server: kbawssg1.aiopen.cfd
+  server: kbawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: c68e3c20-da73-4791-b4d8-7011a98ba06b
@@ -42,7 +42,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
@@ -53,7 +53,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
 rules:
