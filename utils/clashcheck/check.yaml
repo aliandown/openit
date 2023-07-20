@@ -16,17 +16,42 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F8\U0001F1EC SG 3"
-  server: kbawssg2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 106741c8-61c9-4119-af91-05d5898e2709
-  sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 4"
   server: kbawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: 106741c8-61c9-4119-af91-05d5898e2709
   sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  server: kbawssg2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 106741c8-61c9-4119-af91-05d5898e2709
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 TW 5"
+  server: tw1.yihaobao.xyz
+  port: 10021
+  type: trojan
+  password: eeeebdd2-5aa5-4325-b69f-5b8b2c16d9a0
+  sni: tls.yihaobao.xyz
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 163.123.192.60
+  port: 443
+  udp: true
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: 223.113.136.122
+  port: 33015
+  type: ssr
+  cipher: chacha20-ietf
+  password: zztw9jk7gu
+  protocol: auth_aes128_sha1
+  obfs: http_simple
+  protocol-param: 8366:V35GbB
+  obfs-param: e5ab08366.microsoft.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -35,6 +60,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,5 +73,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
