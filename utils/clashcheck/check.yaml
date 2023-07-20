@@ -1,12 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 163.123.192.60
   port: 443
-  password: xxoo
-  skip-cert-verify: true
   udp: true
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   server: trs22.bolab.net
   type: trojan
@@ -27,16 +28,6 @@ proxies:
   type: trojan
   password: 106741c8-61c9-4119-af91-05d5898e2709
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: 223.113.136.122
-  port: 30901
-  type: ssr
-  cipher: chacha20-ietf
-  password: zztw9jk7gu
-  protocol: auth_aes128_sha1
-  obfs: http_simple
-  protocol-param: 8366:V35GbB
-  obfs-param: e5ab08366.microsoft.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -45,7 +36,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -56,6 +46,5 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
