@@ -22,14 +22,7 @@ proxies:
   password: eeeebdd2-5aa5-4325-b69f-5b8b2c16d9a0
   sni: tw2.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: hk7.tangreny.com
-  port: 10233
-  type: trojan
-  password: 2e59a739-a354-4634-8b70-8f79d5ce98c4
-  sni: hk7.tangreny.com
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 5"
+- name: "\U0001F1F8\U0001F1EC SG 4"
   type: trojan
   server: 159.65.132.147
   port: 443
@@ -38,6 +31,22 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 163.123.192.60
+  port: 443
+  udp: true
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 6"
+  server: hk7.tangreny.com
+  port: 10233
+  type: trojan
+  password: 2e59a739-a354-4634-8b70-8f79d5ce98c4
+  sni: hk7.tangreny.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -45,8 +54,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -56,7 +66,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
