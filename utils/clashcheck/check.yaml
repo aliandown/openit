@@ -31,6 +31,15 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 163.123.192.60
+  port: 443
+  udp: true
+  password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -39,6 +48,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,5 +59,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
