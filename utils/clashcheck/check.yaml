@@ -24,6 +24,13 @@ proxies:
   sni: us02web.zoom.us
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 4"
+  server: tw2.yihaobao.xyz
+  port: 10022
+  type: trojan
+  password: eeeebdd2-5aa5-4325-b69f-5b8b2c16d9a0
+  sni: tw2.yihaobao.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -31,6 +38,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1E8\U0001F1F3 TW 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -40,5 +48,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1E8\U0001F1F3 TW 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
