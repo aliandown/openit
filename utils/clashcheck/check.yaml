@@ -15,20 +15,13 @@ proxies:
   password: 7a73f1dc97a70905870c0c0484b12145
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 3"
-  server: tw2.yihaobao.xyz
-  port: 10022
-  type: trojan
-  password: eeeebdd2-5aa5-4325-b69f-5b8b2c16d9a0
-  sni: tw2.yihaobao.xyz
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 4"
+- name: "\U0001F1F8\U0001F1EC SG 3"
   server: gsawssg1.aiopen.cfd
   port: 8443
   type: trojan
   password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 5"
+- name: "\U0001F1F8\U0001F1EC SG 4"
   server: pqawssg1.aiopen.cfd
   port: 443
   type: trojan
@@ -40,9 +33,8 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -51,8 +43,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
