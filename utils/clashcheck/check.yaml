@@ -33,6 +33,14 @@ proxies:
   sni: us02web.zoom.us
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: gt.gtt.kisskiss.pro
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -41,6 +49,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -51,5 +60,6 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EE\U0001F1F3 IN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
