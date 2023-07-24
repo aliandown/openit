@@ -7,22 +7,22 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  type: trojan
-  server: 57.128.173.6
-  port: 443
-  udp: true
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 147.182.216.10
   port: 443
   udp: true
   password: 71148cca-0963-4abe-ab01-7cea982c1513
   sni: us02web.zoom.us
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 4"
@@ -47,8 +47,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
@@ -58,8 +58,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
