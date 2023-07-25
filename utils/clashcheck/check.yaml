@@ -41,12 +41,18 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 7"
+  server: kbawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 5fb22807-e954-4547-a609-ab9329bcccaf
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 8"
   server: kbawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: 5fb22807-e954-4547-a609-ab9329bcccaf
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1FB\U0001F1F3 VN 8"
+- name: "\U0001F1FB\U0001F1F3 VN 9"
   type: trojan
   server: 103.173.255.21
   port: 443
@@ -65,7 +71,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,6 +86,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
