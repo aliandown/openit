@@ -14,26 +14,26 @@ proxies:
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: gsawsjp1.aiopen.cfd
+  port: 8443
+  type: trojan
+  password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: pqawssg001.aiopen.cfd
   port: 443
   type: trojan
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   server: gsawsjp2.aiopen.cfd
   port: 8443
   type: trojan
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: pqawsjp3.aiopen.cfd
   port: 443
-  type: trojan
-  password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: gsawsjp1.aiopen.cfd
-  port: 8443
   type: trojan
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
@@ -50,30 +50,24 @@ proxies:
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 9"
-  server: gsawssg1.aiopen.cfd
-  port: 8443
-  type: trojan
-  password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 10"
-  server: pqawssg1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 11"
   server: gsawssg2.aiopen.cfd
   port: 8443
   type: trojan
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- name: "\U0001F1F8\U0001F1EC SG 10"
+  server: gsawssg1.aiopen.cfd
+  port: 8443
+  type: trojan
+  password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 11"
   server: pqawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F0\U0001F1F7 KR 13"
+- name: "\U0001F1F0\U0001F1F7 KR 12"
   server: gt.gtt.kisskiss.pro
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -81,6 +75,12 @@ proxies:
   password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1F8\U0001F1EC SG 13"
+  server: pqawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: f0366e33-84c9-4a20-ad40-4f1e2c230c36
+  sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EB\U0001F1F7 FR 14"
   type: trojan
   server: 57.128.173.6
@@ -105,8 +105,8 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
+  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
   - "\U0001F1EB\U0001F1F7 FR 14"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -125,8 +125,8 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 9"
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1F8\U0001F1EC SG 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1F0\U0001F1F7 KR 13"
+  - "\U0001F1F0\U0001F1F7 KR 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
   - "\U0001F1EB\U0001F1F7 FR 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
