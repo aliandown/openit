@@ -1,26 +1,17 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
   type: trojan
-  server: 64.64.247.178
-  port: 42014
-  udp: true
-  password: james007
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 163.123.192.155
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: d31792a4-b843-469f-9185-4a6111ff7612
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -28,6 +19,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
