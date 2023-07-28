@@ -22,15 +22,15 @@ proxies:
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
 - name: "\U0001F1F0\U0001F1F7 KR 4"
-  server: kr4.yihaobao.xyz
-  port: 10064
+  server: kr2.yihaobao.xyz
+  port: 10070
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: kr2.yihaobao.xyz
-  port: 10070
+- name: "\U0001F1E8\U0001F1F3 TW 5"
+  server: tw4.yihaobao.xyz
+  port: 10024
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
@@ -42,28 +42,7 @@ proxies:
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 7"
-  server: hk5.yihaobao.xyz
-  port: 10033
-  type: trojan
-  password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
-  sni: tls.yihaobao.xyz
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 TW 8"
-  server: tw4.yihaobao.xyz
-  port: 10024
-  type: trojan
-  password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
-  sni: tls.yihaobao.xyz
-  skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 9"
-  server: 144.24.75.121
-  port: 443
-  type: trojan
-  password: 938479db-2f21-497c-96fb-e08bff417f77
-  sni: 440300.xyz
-  skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 10"
+- name: "\U0001F1F0\U0001F1F7 KR 7"
   server: gt.gtt.kisskiss.pro
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -71,6 +50,20 @@ proxies:
   password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 8"
+  server: kr4.yihaobao.xyz
+  port: 10064
+  type: trojan
+  password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
+  sni: tls.yihaobao.xyz
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  server: hk5.yihaobao.xyz
+  port: 10033
+  type: trojan
+  password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
+  sni: tls.yihaobao.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -79,12 +72,11 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1E8\U0001F1F3 TW 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -95,11 +87,10 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1E8\U0001F1F3 TW 5"
   - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
