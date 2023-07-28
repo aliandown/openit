@@ -7,14 +7,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: home-hkbn-1.strongpipe.live
-  port: 29444
-  type: trojan
-  password: 6a53220b-71d2-4fdd-9302-c9edbf293198
-  sni: home-hkbn-1.strongpipe.live
-  skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 3"
+- name: "\U0001F1F0\U0001F1F7 KR 2"
   server: gt.gtt.kisskiss.pro
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -22,26 +15,7 @@ proxies:
   password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 223.113.136.122
-  port: 33015
-  type: ssr
-  cipher: chacha20-ietf
-  password: zztw9jk7gu
-  protocol: auth_aes128_sha1
-  obfs: http_simple
-  protocol-param: 8366:V35GbB
-  obfs-param: e5ab08366.microsoft.com
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  type: trojan
-  server: 57.128.173.6
-  port: 443
-  udp: true
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 163.123.192.57
   port: 443
@@ -50,28 +24,23 @@ proxies:
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  type: ssr
-  server: 223.113.136.122
-  port: 33015
-  password: zztw9jk7gu
-  cipher: chacha20-ietf
-  obfs: http_simple
-  protocol: auth_aes128_sha1
-  obfs-param: e5ab08366.microsoft.com
-  protocol-param: 8366:V35GbB
-  group: SSRProvider
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,11 +48,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
