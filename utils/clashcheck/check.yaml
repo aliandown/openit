@@ -1,21 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 163.123.192.154
-  port: 443
-  udp: true
-  password: d31792a4-b843-469f-9185-4a6111ff7612
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 163.123.192.57
   port: 443
@@ -24,50 +8,65 @@ proxies:
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
   type: trojan
-  server: 57.128.173.6
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: jp2.yihaobao.xyz
   port: 10048
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: jp3.yihaobao.xyz
-  port: 10062
-  type: trojan
-  password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
-  sni: tls.yihaobao.xyz
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: hk6.yihaobao.xyz
   port: 10055
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 8"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 163.123.192.154
+  port: 443
+  udp: true
+  password: d31792a4-b843-469f-9185-4a6111ff7612
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 6"
   server: kr2.yihaobao.xyz
   port: 10070
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 9"
+- name: "\U0001F1F0\U0001F1F7 KR 7"
   server: kr4.yihaobao.xyz
   port: 10064
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: jp3.yihaobao.xyz
+  port: 10062
+  type: trojan
+  password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
+  sni: tls.yihaobao.xyz
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 9"
+  server: gt.gtt.kisskiss.pro
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 10"
   server: hk5.yihaobao.xyz
   port: 10033
@@ -82,45 +81,53 @@ proxies:
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 12"
+- name: "\U0001F1EB\U0001F1F7 FR 12"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 13"
   type: ss
-  server: s.tk.jp.vampires-vip.top
+  server: uc.hk.vampires-vip.top
   port: 30006
   password: 041ffd32-6275-48d8-ae17-282f74980277
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 TW 13"
+- name: "\U0001F1E8\U0001F1F3 TW 14"
   server: tw4.yihaobao.xyz
   port: 10024
   type: trojan
   password: 2a2bfd3f-8d04-4eff-ab6f-420f74a0ec07
   sni: tls.yihaobao.xyz
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 14"
-  server: gt.gtt.kisskiss.pro
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 15"
+  type: ss
+  server: s.tk.jp.vampires-vip.top
+  port: 30006
+  password: 041ffd32-6275-48d8-ae17-282f74980277
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1E8\U0001F1F3 TW 13"
-  - "\U0001F1F0\U0001F1F7 KR 14"
+  - "\U0001F1EB\U0001F1F7 FR 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1E8\U0001F1F3 TW 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -129,17 +136,18 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1E8\U0001F1F3 TW 13"
-  - "\U0001F1F0\U0001F1F7 KR 14"
+  - "\U0001F1EB\U0001F1F7 FR 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1E8\U0001F1F3 TW 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
