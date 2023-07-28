@@ -7,40 +7,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: gt.gtt.kisskiss.pro
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
-  skip-cert-verify: true
-  udp: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 3"
+  name: "\U0001F1FA\U0001F1F8 US 2"
   server: 66.112.216.121
   port: 40317
   password: AA3uvT5KGT
   udp: true
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: 163.123.192.57
-  port: 443
-  udp: true
-  password: 41bec492-cd79-4b57-9a15-7d2bb00fcfca
-  sni: 18-140-66-207.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: 163.123.192.154
-  port: 443
-  udp: true
-  password: d31792a4-b843-469f-9185-4a6111ff7612
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 6"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
   server: 57.128.173.6
   port: 443
@@ -49,16 +24,29 @@ proxies:
   sni: www.speedtest.net
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 4"
+  server: gt.gtt.kisskiss.pro
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: a8f54f4e-1d9d-44e4-9ef7-50ee7ba89561
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  type: ss
+  server: s.tk.jp.vampires-vip.top
+  port: 30006
+  password: 041ffd32-6275-48d8-ae17-282f74980277
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,10 +54,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
