@@ -1,30 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: 144.24.75.121
-  port: 443
-  type: trojan
-  password: cf0546d1-9a60-4e1d-af8d-21a3a9665e30
-  sni: 440300.xyz
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 223.113.136.122
-  port: 32983
-  type: ssr
-  cipher: chacha20-ietf
-  password: zztw9jk7gu
-  protocol: auth_aes128_sha1
-  obfs: http_simple
-  protocol-param: 8366:V35GbB
-  obfs-param: e5ab08366.microsoft.com
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 1"
   server: 223.113.136.122
   port: 32982
   type: ssr
@@ -34,23 +9,38 @@ proxies:
   obfs: http_simple
   protocol-param: 8366:V35GbB
   obfs-param: e5ab08366.microsoft.com
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  server: 223.113.136.122
+  port: 30917
+  type: ssr
+  cipher: chacha20-ietf
+  password: zztw9jk7gu
+  protocol: auth_aes128_sha1
+  obfs: http_simple
+  protocol-param: 8366:V35GbB
+  obfs-param: e5ab08366.microsoft.com
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: 144.24.75.121
+  port: 443
+  type: trojan
+  password: cf0546d1-9a60-4e1d-af8d-21a3a9665e30
+  sni: 440300.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
