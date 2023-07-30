@@ -16,9 +16,18 @@ proxies:
   skip-cert-verify: true
   sni: telewebion.com
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 3"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   server: 223.113.136.122
-  port: 32983
+  port: 30917
   type: ssr
   cipher: chacha20-ietf
   password: zztw9jk7gu
@@ -32,7 +41,8 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -41,6 +51,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
