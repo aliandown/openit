@@ -24,22 +24,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: microsoft-hk.85413.xyz
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 443
-  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hkhe02.bcloudv.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 20897
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: any3017.bcloud.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
@@ -47,7 +31,38 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: microsoft-hk.85413.xyz
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 443
+  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 6"
+  server: hkhe02.bcloudv.cyou
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 20897
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 7"
+  server: sg-csjc.85413.xyz
+  type: trojan
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 443
+  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 8"
+  server: 57.128.173.6
+  port: 443
+  type: trojan
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 9"
   type: trojan
   server: 103.234.53.27
   port: 50174
@@ -56,29 +71,13 @@ proxies:
   sni: getandroid.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  server: sg-csjc.85413.xyz
-  type: trojan
-  country: "\U0001F1F8\U0001F1ECSG"
-  port: 443
-  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 9"
+- name: "\U0001F1E8\U0001F1F3 HK 10"
   type: trojan
   server: 103.234.53.24
   port: 50178
   udp: true
   password: bf89d5e9-a455-477f-bfe8-ba33ff71b957
   sni: getandroid.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 10"
-  type: trojan
-  server: 103.234.53.23
-  port: 50014
-  udp: true
-  password: 73658d71-be45-4495-bc3e-e69d36ce73b5
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 11"
@@ -90,13 +89,14 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 12"
-  server: 57.128.173.6
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 HK 12"
   type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
+  server: 103.234.53.23
+  port: 50014
+  udp: true
+  password: 73658d71-be45-4495-bc3e-e69d36ce73b5
   skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -107,12 +107,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
+  - "\U0001F1E8\U0001F1F3 HK 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -125,11 +125,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
+  - "\U0001F1E8\U0001F1F3 HK 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
