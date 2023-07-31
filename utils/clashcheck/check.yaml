@@ -1,53 +1,13 @@
-proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 15.204.209.50
-  port: 80
-  udp: true
-  password: 7ea37e4f-325b-416f-901a-67012367307f
-  sni: telewebion.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 15.204.210.176
-  port: 80
-  udp: true
-  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: 57.128.173.6
-  port: 443
-  type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
