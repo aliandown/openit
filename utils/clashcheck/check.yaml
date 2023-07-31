@@ -1,13 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1EF\U0001F1F5 JP 1"
   server: jp-csjc.85413.xyz
   type: trojan
   country: "\U0001F1EF\U0001F1F5JP"
@@ -15,7 +7,7 @@ proxies:
   password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: jp2trojan.cloudbb.loan
   type: trojan
   country: "\U0001F1F8\U0001F1ECSG"
@@ -23,7 +15,7 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1E8\U0001F1F3 HK 3"
   server: any3017.bcloud.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
@@ -31,7 +23,7 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: microsoft-hk.85413.xyz
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
@@ -39,7 +31,7 @@ proxies:
   password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   server: hkhe02.bcloudv.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
@@ -47,13 +39,21 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   type: trojan
   server: 103.234.53.24
   port: 50178
   udp: true
   password: bf89d5e9-a455-477f-bfe8-ba33ff71b957
   sni: getandroid.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  type: trojan
+  server: 103.234.53.23
+  port: 50014
+  udp: true
+  password: 73658d71-be45-4495-bc3e-e69d36ce73b5
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 8"
@@ -65,15 +65,7 @@ proxies:
   sni: getandroid.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  type: trojan
-  server: 103.234.53.23
-  port: 50014
-  udp: true
-  password: 73658d71-be45-4495-bc3e-e69d36ce73b5
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 10"
+- name: "\U0001F1F8\U0001F1EC SG 9"
   server: sg-csjc.85413.xyz
   type: trojan
   country: "\U0001F1F8\U0001F1ECSG"
@@ -81,6 +73,13 @@ proxies:
   password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 10"
+  server: 57.128.173.6
+  port: 443
+  type: trojan
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 HK 11"
   type: trojan
   server: 103.20.223.4
@@ -90,46 +89,37 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 12"
-  server: 57.128.173.6
-  port: 443
-  type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EB\U0001F1F7 FR 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EB\U0001F1F7 FR 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
