@@ -23,19 +23,19 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: microsoft-hk.85413.xyz
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 443
-  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
   server: hkhe02.bcloudv.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
   port: 20897
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: microsoft-hk.85413.xyz
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 443
+  password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 6"
@@ -57,15 +57,6 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 8"
   type: trojan
-  server: 103.234.53.27
-  port: 50174
-  udp: true
-  password: 6206d21a-81a4-43f6-b88e-052637dce46d
-  sni: getandroid.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  type: trojan
   server: 103.234.53.24
   port: 50178
   udp: true
@@ -73,7 +64,7 @@ proxies:
   sni: getandroid.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 10"
+- name: "\U0001F1F8\U0001F1EC SG 9"
   server: sg-csjc.85413.xyz
   type: trojan
   country: "\U0001F1F8\U0001F1ECSG"
@@ -81,6 +72,15 @@ proxies:
   password: aba9389e-21b7-45f5-a82d-0c2b8b989bb4
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 10"
+  type: trojan
+  server: 103.234.53.27
+  port: 50174
+  udp: true
+  password: 6206d21a-81a4-43f6-b88e-052637dce46d
+  sni: getandroid.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 11"
   type: trojan
   server: 103.234.53.23
@@ -101,8 +101,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -118,8 +118,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
