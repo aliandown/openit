@@ -45,6 +45,15 @@ proxies:
   password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
   sni: www.speedtest.net
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  type: trojan
+  server: 103.234.53.27
+  port: 50174
+  udp: true
+  password: 6206d21a-81a4-43f6-b88e-052637dce46d
+  sni: getandroid.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -55,6 +64,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -67,5 +77,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
