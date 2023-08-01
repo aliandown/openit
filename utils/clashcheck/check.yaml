@@ -7,14 +7,13 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: any3017.bcloud.cyou
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 57.128.173.6
+  port: 443
   type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 10116
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 3"
   server: hkhe02.bcloudv.cyou
   type: trojan
@@ -23,13 +22,14 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: 57.128.173.6
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: any3017.bcloud.cyou
   type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 10116
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 5"
   server: xjp1.2344599.xyz
   port: 47544
@@ -42,9 +42,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -53,9 +53,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
