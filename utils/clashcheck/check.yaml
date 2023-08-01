@@ -30,7 +30,14 @@ proxies:
   password: f954efd3-a638-41be-bf20-5e4748fecf77
   sni: xjp1.2344599.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  server: 57.128.173.6
+  port: 443
+  type: trojan
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hkhe02.bcloudv.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
@@ -38,13 +45,6 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 6"
-  server: 57.128.173.6
-  port: 443
-  type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -53,8 +53,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,7 +65,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
