@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: 163.123.192.155
-  port: 443
-  udp: true
-  password: d31792a4-b843-469f-9185-4a6111ff7612
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,13 +7,21 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 15.204.209.50
   port: 80
   udp: true
   password: 7ea37e4f-325b-416f-901a-67012367307f
   sni: telewebion.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 163.123.192.155
+  port: 443
+  udp: true
+  password: d31792a4-b843-469f-9185-4a6111ff7612
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 4"
@@ -32,14 +32,13 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hkhe02.bcloudv.cyou
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  server: 57.128.173.6
+  port: 443
   type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 20897
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
   skip-cert-verify: true
-  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   server: any3017.bcloud.cyou
   type: trojan
@@ -48,13 +47,14 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 7"
-  server: 57.128.173.6
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: hkhe02.bcloudv.cyou
   type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 20897
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 8"
   server: xjp1.2344599.xyz
   port: 47544
@@ -80,15 +80,6 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 11"
-  type: trojan
-  server: 103.234.53.24
-  port: 50178
-  udp: true
-  password: bf89d5e9-a455-477f-bfe8-ba33ff71b957
-  sni: getandroid.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -97,13 +88,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1F8\U0001F1EC SG 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -114,12 +104,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1F8\U0001F1EC SG 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
