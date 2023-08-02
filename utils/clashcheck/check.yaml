@@ -24,14 +24,7 @@ proxies:
   password: d31792a4-b843-469f-9185-4a6111ff7612
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: 57.128.173.6
-  port: 443
-  type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: jp2trojan.cloudbb.loan
   type: trojan
   country: "\U0001F1F8\U0001F1ECSG"
@@ -39,6 +32,13 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  server: 57.128.173.6
+  port: 443
+  type: trojan
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hkhe02.bcloudv.cyou
   type: trojan
@@ -48,13 +48,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 7"
-  server: hk3.microsoft-orgwly.vip
-  port: 10076
-  type: trojan
-  password: 6732c4b4-2e00-428d-afcf-c34a8394e116
-  sni: hk3.microsoft-orgwly.vip
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 8"
   server: any3017.bcloud.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
@@ -62,6 +55,13 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 8"
+  server: hk3.microsoft-orgwly.vip
+  port: 10076
+  type: trojan
+  password: 6732c4b4-2e00-428d-afcf-c34a8394e116
+  sni: hk3.microsoft-orgwly.vip
+  skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 HK 9"
   type: trojan
   server: 103.20.223.4
@@ -87,24 +87,6 @@ proxies:
   sni: getandroid.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 12"
-  type: trojan
-  server: 103.234.53.24
-  port: 50178
-  udp: true
-  password: bf89d5e9-a455-477f-bfe8-ba33ff71b957
-  sni: getandroid.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 13"
-  type: trojan
-  server: gzdx3.170203.xyz
-  port: 443
-  udp: true
-  password: 235a966e-8658-47ba-9d46-0d7a24107cb3
-  sni: gzdx3.170203.xyz
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -112,16 +94,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1E8\U0001F1F3 TW 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -131,15 +111,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 HK 8"
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1F8\U0001F1EC SG 10"
   - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1E8\U0001F1F3 HK 12"
-  - "\U0001F1E8\U0001F1F3 TW 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
