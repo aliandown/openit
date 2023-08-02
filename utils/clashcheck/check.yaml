@@ -23,18 +23,18 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: any3017.bcloud.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 10116
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
   server: hkhe02.bcloudv.cyou
   type: trojan
   country: "\U0001F1ED\U0001F1F0HK"
   port: 20897
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: any3017.bcloud.cyou
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 10116
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
@@ -45,6 +45,15 @@ proxies:
   password: f954efd3-a638-41be-bf20-5e4748fecf77
   sni: xjp1.2344599.xyz
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  type: trojan
+  server: 103.20.223.4
+  port: 50180
+  udp: true
+  password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2
+  sni: telewebion.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -55,6 +64,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -67,5 +77,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
