@@ -15,21 +15,22 @@ proxies:
   password: VpRuqFDCJo
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 57.128.173.6
-  port: 443
-  type: trojan
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: gsawshk2.aiopen.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: pqawssg001.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: pqawsjp2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
+  sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: gsawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
@@ -40,60 +41,71 @@ proxies:
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: gsawsjp1.aiopen.cfd
+  server: gsawshk2.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 8"
-  server: pqawssg001.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 9"
   server: gsawshk1.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: gsawsjp2.aiopen.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: gsawsjp1.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 10"
+  server: vpnhat.stablize.top
+  port: 443
+  type: trojan
+  password: 18eaf229-61d7-43ea-8140-a3e2bb1d4e6f
+  sni: vpnhat.stablize.top
+  skip-cert-verify: true
 - name: "\U0001F1F8\U0001F1EC SG 11"
   server: pqawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
 - name: "\U0001F1F8\U0001F1EC SG 12"
-  server: gsawssg1.aiopen.cfd
+  server: pqawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 13"
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 13"
   server: vpnhat.stablize.top
   port: 443
   type: trojan
   password: 18eaf229-61d7-43ea-8140-a3e2bb1d4e6f
 - name: "\U0001F1F8\U0001F1EC SG 14"
+  server: gsawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 15"
   server: pqawsjp4.aiopen.cfd
   port: 443
   type: trojan
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
@@ -103,8 +115,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
+  - "\U0001F1E8\U0001F1F3 HK 13"
   - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F8\U0001F1EC SG 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -113,7 +126,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
@@ -123,7 +136,8 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
+  - "\U0001F1E8\U0001F1F3 HK 13"
   - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F8\U0001F1EC SG 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
