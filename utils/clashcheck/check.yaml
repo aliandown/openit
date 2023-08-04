@@ -1,6 +1,14 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
+  server: 163.123.192.155
+  port: 443
+  udp: true
+  password: d31792a4-b843-469f-9185-4a6111ff7612
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
   server: sj1.alieszvps.cf
   port: 45555
   udp: true
@@ -12,6 +20,7 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -19,5 +28,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
