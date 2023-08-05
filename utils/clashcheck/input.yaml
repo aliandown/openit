@@ -6,36 +6,36 @@ proxies:
   password: 423c8688-0b8f-477c-8022-4fb187e18de1
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 2 TJN"
+  server: speedo4601.tk
+  port: 443
+  type: trojan
+  password: 82fa7e71-e129-49f6-b435-709215f06bdc
+- name: "\U0001F1EF\U0001F1F5 JP 3 TJN"
+  server: pqawssg001.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 423c8688-0b8f-477c-8022-4fb187e18de1
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 4 TJN"
   server: pqawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: 423c8688-0b8f-477c-8022-4fb187e18de1
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 3 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
   server: jp3.421421.xyz
   port: 20230
   type: trojan
   password: d9e70e09-e187-4ba1-82e4-1224676216b1
   sni: jp3.421421.xyz
   skip-cert-verify: true
-- name: "\U0001F1ED\U0001F1F0 HK 4 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 6 TJN"
   server: hk3.microsoft-orgwly.vip
   port: 10076
   type: trojan
   password: 6732c4b4-2e00-428d-afcf-c34a8394e116
   sni: hk3.microsoft-orgwly.vip
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
-  server: pqawssg001.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 423c8688-0b8f-477c-8022-4fb187e18de1
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 6 TJN"
-  server: speedo4601.tk
-  port: 443
-  type: trojan
-  password: 82fa7e71-e129-49f6-b435-709215f06bdc
 - name: "\U0001F1EF\U0001F1F5 JP 7 TJN"
   server: pqawssg001.aiopen.cfd
   port: 443
@@ -78,7 +78,7 @@ proxies:
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 13 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 13 TJN"
   server: vpnhat.stablize.top
   port: 443
   type: trojan
@@ -120,6 +120,17 @@ proxies:
   port: null
   tls: true
   skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F3 UN 20 TJN"
+  type: trojan
+  server: series-v1.samanehha.co
+  port: 443
+  udp: true
+  password: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  sni: series-v1.samanehha.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /43xf5zgeApzDAfhOHq
 proxy-groups:
 - name: automatic
   type: url-test
@@ -127,22 +138,23 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 1 TJN"
   - "\U0001F1F8\U0001F1EC SG 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 4 TJN"
+  - "\U0001F1F8\U0001F1EC SG 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
-  - "\U0001F1F8\U0001F1EC SG 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 6 TJN"
   - "\U0001F1EF\U0001F1F5 JP 7 TJN"
   - "\U0001F1EF\U0001F1F5 JP 8 TJN"
   - "\U0001F1F8\U0001F1EC SG 9 TJN"
   - "\U0001F1F8\U0001F1EC SG 10 TJN"
   - "\U0001F1EF\U0001F1F5 JP 11 TJN"
   - "\U0001F1F8\U0001F1EC SG 12 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 13 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 13 TJN"
   - "\U0001F1E8\U0001F1E6 CA 14 TJN"
   - "\U0001F1E8\U0001F1F3 CN 15 HTT"
   - "\U0001F1E8\U0001F1F3 CN 16 SK5"
   - "\U0001F1E6\U0001F1FA AU 17 SK5"
   - "\U0001F1FA\U0001F1F3 UN 18 HTT"
   - "\U0001F1FA\U0001F1F3 UN 19 HTT"
+  - "\U0001F1FA\U0001F1F3 UN 20 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -152,21 +164,22 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 1 TJN"
   - "\U0001F1F8\U0001F1EC SG 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 4 TJN"
+  - "\U0001F1F8\U0001F1EC SG 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
-  - "\U0001F1F8\U0001F1EC SG 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 6 TJN"
   - "\U0001F1EF\U0001F1F5 JP 7 TJN"
   - "\U0001F1EF\U0001F1F5 JP 8 TJN"
   - "\U0001F1F8\U0001F1EC SG 9 TJN"
   - "\U0001F1F8\U0001F1EC SG 10 TJN"
   - "\U0001F1EF\U0001F1F5 JP 11 TJN"
   - "\U0001F1F8\U0001F1EC SG 12 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 13 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 13 TJN"
   - "\U0001F1E8\U0001F1E6 CA 14 TJN"
   - "\U0001F1E8\U0001F1F3 CN 15 HTT"
   - "\U0001F1E8\U0001F1F3 CN 16 SK5"
   - "\U0001F1E6\U0001F1FA AU 17 SK5"
   - "\U0001F1FA\U0001F1F3 UN 18 HTT"
   - "\U0001F1FA\U0001F1F3 UN 19 HTT"
+  - "\U0001F1FA\U0001F1F3 UN 20 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
