@@ -61,7 +61,7 @@ proxies:
   password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 11 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 11 TJN"
   server: vpnhat.stablize.top
   port: 443
   type: trojan
@@ -157,7 +157,23 @@ proxies:
   sni: trj.rollingnext.co.uk
   network: tcp
 - type: trojan
-  name: "\U0001F1FA\U0001F1F3 UN 24 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 24 TJN"
+  server: 163.123.192.155
+  port: 443
+  password: d31792a4-b843-469f-9185-4a6111ff7612
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 25 TJN"
+  server: 15.204.210.176
+  port: 80
+  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1FA\U0001F1F3 UN 26 TJN"
   server: 104.21.12.87
   port: 443
   password: 0b65bb06-6b28-487a-8e3c-820dda51e977
@@ -168,7 +184,7 @@ proxies:
   ws-opts:
     path: /43xf5zgeApzDAfhOHq
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 25 TJN"
+  name: "\U0001F1FA\U0001F1F3 UN 27 TJN"
   server: cnamemt.ciscocdn1.live
   port: 443
   password: 4d706727-996f-4427-930d-60f3bd414cf9
@@ -179,7 +195,7 @@ proxies:
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 26 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 28 TJN"
   server: 163.123.192.154
   port: 443
   password: d31792a4-b843-469f-9185-4a6111ff7612
@@ -187,7 +203,7 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 27 TJN"
+  name: "\U0001F1FA\U0001F1F8 US 29 TJN"
   server: cnamemc.ciscocdn1.live
   port: 443
   password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
@@ -197,22 +213,6 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 28 TJN"
-  server: 163.123.192.155
-  port: 443
-  password: d31792a4-b843-469f-9185-4a6111ff7612
-  udp: true
-  skip-cert-verify: true
-  network: tcp
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 29 TJN"
-  server: 15.204.210.176
-  port: 80
-  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
-  udp: true
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 30 TJN"
   type: trojan
   server: series-v1.samanehha.co
@@ -326,7 +326,18 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F8 US 41 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 41 TJN"
+  type: trojan
+  server: 104.21.79.246
+  port: 443
+  udp: true
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1FA\U0001F1F8 US 42 TJN"
   type: trojan
   server: cnamemc.ciscocdn1.live
   port: 443
@@ -337,90 +348,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 42 TJN"
-  type: trojan
-  server: notdirect.howhealthyistoomajreally.homes
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
 - name: "\U0001F1FA\U0001F1F8 US 43 TJN"
-  type: trojan
-  server: cnamemt.ciscocdn1.live
-  port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mt.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F3 UN 44 TJN"
-  type: trojan
-  server: 104.21.12.87
-  port: 443
-  udp: true
-  password: 0b65bb06-6b28-487a-8e3c-820dda51e977
-  sni: series-v1.samanehha.co
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /43xf5zgeApzDAfhOHq
-- name: "\U0001F1FA\U0001F1F3 UN 45 TJN"
-  type: trojan
-  server: 104.21.79.246
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1E8\U0001F1F3 CN 46 SSS"
-  type: ss
-  server: whcm.pangupy.com
-  port: 23345
-  password: NodeByTelegramWeoworksChannel
-  cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F8 US 47 TJN"
-  type: trojan
-  server: cnamemc1.cdncisco4.co
-  port: 443
-  udp: true
-  password: 63779501-4c22-4a03-83d3-9f611b227e7b
-  sni: c1mc.cdncisco4.co
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F8 US 48 TJN"
-  type: trojan
-  server: cnamemc1.cdncisco3.co
-  port: 443
-  udp: true
-  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c1mc.cdncisco3.co
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 49 TJN"
-  type: trojan
-  server: 104.21.79.246
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1FA\U0001F1F8 US 50 TJN"
   type: trojan
   server: 163.123.192.154
   port: 443
@@ -428,7 +356,7 @@ proxies:
   password: d31792a4-b843-469f-9185-4a6111ff7612
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 51 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 44 TJN"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -439,7 +367,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1E9\U0001F1EA DE 52 TJN"
+- name: "\U0001F1E9\U0001F1EA DE 45 TJN"
   type: trojan
   server: 108.61.170.104
   port: 443
@@ -450,7 +378,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojangrpc
-- name: "\U0001F1FA\U0001F1F8 US 53 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 46 TJN"
   type: trojan
   server: series-v1.samanehha.co
   port: 443
@@ -461,7 +389,7 @@ proxies:
   network: ws
   ws-opts:
     path: /43xf5zgeApzDAfhOHq
-- name: "\U0001F1FA\U0001F1F8 US 54 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 47 TJN"
   type: trojan
   server: nika3hdfy2.foriran.trade
   port: 443
@@ -472,7 +400,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: M9hnxw1wCQSfVHaiznU
-- name: "\U0001F1FA\U0001F1F8 US 55 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 48 TJN"
   type: trojan
   server: 163.123.192.155
   port: 443
@@ -480,7 +408,7 @@ proxies:
   password: d31792a4-b843-469f-9185-4a6111ff7612
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 56 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 49 TJN"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -491,6 +419,78 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
+- name: "\U0001F1FA\U0001F1F3 UN 50 TJN"
+  type: trojan
+  server: notdirect.howhealthyistoomajreally.homes
+  port: 443
+  udp: true
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1FA\U0001F1F3 UN 51 TJN"
+  type: trojan
+  server: cnamemt.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mt.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1FA\U0001F1F3 UN 52 TJN"
+  type: trojan
+  server: 104.21.12.87
+  port: 443
+  udp: true
+  password: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  sni: series-v1.samanehha.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /43xf5zgeApzDAfhOHq
+- name: "\U0001F1FA\U0001F1F3 UN 53 TJN"
+  type: trojan
+  server: 104.21.79.246
+  port: 443
+  udp: true
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1FA\U0001F1F8 US 54 TJN"
+  type: trojan
+  server: cnamemc1.cdncisco4.co
+  port: 443
+  udp: true
+  password: 63779501-4c22-4a03-83d3-9f611b227e7b
+  sni: c1mc.cdncisco4.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /422Kdfwzf49IxeZJa
+- name: "\U0001F1FA\U0001F1F8 US 55 TJN"
+  type: trojan
+  server: cnamemc1.cdncisco3.co
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c1mc.cdncisco3.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
+- name: "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  type: ss
+  server: whcm.pangupy.com
+  port: 23345
+  password: NodeByTelegramWeoworksChannel
+  cipher: aes-256-gcm
 proxy-groups:
 - name: automatic
   type: url-test
@@ -505,7 +505,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 TJN"
   - "\U0001F1F8\U0001F1EC SG 10 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 11 TJN"
+  - "\U0001F1FA\U0001F1F8 US 11 TJN"
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
   - "\U0001F1EF\U0001F1F5 JP 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 TJN"
@@ -518,10 +518,10 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 21 TJN"
   - "\U0001F1FA\U0001F1F8 US 22 TJN"
   - "\U0001F1E8\U0001F1E6 CA 23 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 24 TJN"
   - "\U0001F1FA\U0001F1F8 US 25 TJN"
-  - "\U0001F1FA\U0001F1F8 US 26 TJN"
-  - "\U0001F1FA\U0001F1F8 US 27 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 26 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
   - "\U0001F1FA\U0001F1F8 US 29 TJN"
   - "\U0001F1FA\U0001F1F3 UN 30 TJN"
@@ -535,22 +535,22 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 38 TJN"
   - "\U0001F1FA\U0001F1F8 US 39 TJN"
   - "\U0001F1FA\U0001F1F8 US 40 TJN"
-  - "\U0001F1FA\U0001F1F8 US 41 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 42 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 41 TJN"
+  - "\U0001F1FA\U0001F1F8 US 42 TJN"
   - "\U0001F1FA\U0001F1F8 US 43 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 44 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 45 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 46 SSS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
+  - "\U0001F1E9\U0001F1EA DE 45 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 46 TJN"
   - "\U0001F1FA\U0001F1F8 US 47 TJN"
   - "\U0001F1FA\U0001F1F8 US 48 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 49 TJN"
-  - "\U0001F1FA\U0001F1F8 US 50 TJN"
-  - "\U0001F1FA\U0001F1F8 US 51 TJN"
-  - "\U0001F1E9\U0001F1EA DE 52 TJN"
-  - "\U0001F1FA\U0001F1F8 US 53 TJN"
+  - "\U0001F1FA\U0001F1F8 US 49 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 50 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 51 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 52 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 53 TJN"
   - "\U0001F1FA\U0001F1F8 US 54 TJN"
   - "\U0001F1FA\U0001F1F8 US 55 TJN"
-  - "\U0001F1FA\U0001F1F8 US 56 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -567,7 +567,7 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 TJN"
   - "\U0001F1F8\U0001F1EC SG 10 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 11 TJN"
+  - "\U0001F1FA\U0001F1F8 US 11 TJN"
   - "\U0001F1E8\U0001F1F3 CN 12 TJN"
   - "\U0001F1EF\U0001F1F5 JP 13 TJN"
   - "\U0001F1FA\U0001F1F8 US 14 TJN"
@@ -580,10 +580,10 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 21 TJN"
   - "\U0001F1FA\U0001F1F8 US 22 TJN"
   - "\U0001F1E8\U0001F1E6 CA 23 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
+  - "\U0001F1FA\U0001F1F8 US 24 TJN"
   - "\U0001F1FA\U0001F1F8 US 25 TJN"
-  - "\U0001F1FA\U0001F1F8 US 26 TJN"
-  - "\U0001F1FA\U0001F1F8 US 27 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 26 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
   - "\U0001F1FA\U0001F1F8 US 29 TJN"
   - "\U0001F1FA\U0001F1F3 UN 30 TJN"
@@ -597,21 +597,21 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 38 TJN"
   - "\U0001F1FA\U0001F1F8 US 39 TJN"
   - "\U0001F1FA\U0001F1F8 US 40 TJN"
-  - "\U0001F1FA\U0001F1F8 US 41 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 42 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 41 TJN"
+  - "\U0001F1FA\U0001F1F8 US 42 TJN"
   - "\U0001F1FA\U0001F1F8 US 43 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 44 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 45 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 46 SSS"
+  - "\U0001F1FA\U0001F1F8 US 44 TJN"
+  - "\U0001F1E9\U0001F1EA DE 45 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 46 TJN"
   - "\U0001F1FA\U0001F1F8 US 47 TJN"
   - "\U0001F1FA\U0001F1F8 US 48 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 49 TJN"
-  - "\U0001F1FA\U0001F1F8 US 50 TJN"
-  - "\U0001F1FA\U0001F1F8 US 51 TJN"
-  - "\U0001F1E9\U0001F1EA DE 52 TJN"
-  - "\U0001F1FA\U0001F1F8 US 53 TJN"
+  - "\U0001F1FA\U0001F1F8 US 49 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 50 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 51 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 52 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 53 TJN"
   - "\U0001F1FA\U0001F1F8 US 54 TJN"
   - "\U0001F1FA\U0001F1F8 US 55 TJN"
-  - "\U0001F1FA\U0001F1F8 US 56 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
