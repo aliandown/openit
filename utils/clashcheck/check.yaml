@@ -35,7 +35,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojangrpc
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F3 UN 5"
+  type: trojan
+  server: 104.21.79.246
+  port: 443
+  udp: true
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -46,17 +57,6 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 6"
-  server: notdirect.howhealthyistoomajreally.homes
-  port: 443
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  udp: true
-  skip-cert-verify: true
-  sni: notdirect.howhealthyistoomajreally.homes
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
 - type: trojan
   name: "\U0001F1FA\U0001F1F8 US 7"
   server: cnamemk.ciscocdn1.live
@@ -87,8 +87,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   url: https://www.google.com/favicon.ico
@@ -101,8 +101,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1FA\U0001F1F8 US 8"
 rules:
