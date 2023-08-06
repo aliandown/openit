@@ -1,10 +1,10 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 1"
   server: 163.123.192.154
   port: 443
-  udp: true
   password: d31792a4-b843-469f-9185-4a6111ff7612
+  udp: true
   skip-cert-verify: true
   network: tcp
 - type: trojan
@@ -26,12 +26,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trojangrpc
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: sg7.aitrjc.xyz
-  port: 25010
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
-  password: e85b97fa-764b-4830-b4b5-e8eaddfa24d9
-- name: "\U0001F1FA\U0001F1F3 UN 5"
+  server: notdirect.howhealthyistoomajreally.homes
+  port: 443
+  udp: true
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 5"
+  server: notdirect.howhealthyistoomajreally.homes
+  port: 443
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  udp: true
+  skip-cert-verify: true
+  sni: notdirect.howhealthyistoomajreally.homes
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -42,72 +59,22 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: cnamemt.ciscocdn1.live
-  port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mt.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
 - type: trojan
-  name: "\U0001F1F3\U0001F1F1 NL 7"
-  server: cnamemk.ciscocdn1.live
-  port: 443
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  udp: true
-  skip-cert-verify: true
-  sni: c2mk.ciscocdn1.live
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  type: trojan
-  server: nika3hdfy2.foriran.trade
-  port: 443
-  udp: true
-  password: 79770a32-9607-4919-9483-0f1794559390
-  sni: nika3hdfy2.foriran.trade
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: M9hnxw1wCQSfVHaiznU
-- name: "\U0001F1FA\U0001F1F8 US 9"
-  type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 7"
   server: cnamemc.ciscocdn1.live
   port: 443
-  udp: true
   password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c3mc.ciscocdn1.live
+  udp: true
   skip-cert-verify: true
+  sni: c3mc.ciscocdn1.live
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 10"
-  server: notdirect.howhealthyistoomajreally.homes
-  port: 443
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  udp: true
-  skip-cert-verify: true
-  sni: notdirect.howhealthyistoomajreally.homes
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1FA\U0001F1F8 US 11"
+- name: "\U0001F1F8\U0001F1EC SG 8"
+  server: sg7.aitrjc.xyz
+  port: 25010
   type: trojan
-  server: notdirect.howhealthyistoomajreally.homes
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+  password: e85b97fa-764b-4830-b4b5-e8eaddfa24d9
 proxy-groups:
 - name: automatic
   type: url-test
@@ -115,14 +82,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -132,13 +96,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
