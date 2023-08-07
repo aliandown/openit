@@ -1,21 +1,42 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: 163.123.192.154
+  port: 443
+  udp: true
+  password: d31792a4-b843-469f-9185-4a6111ff7612
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: sphk.1234567890spcloud.com
   port: 443
   type: trojan
   password: de097d49-3016-42a9-9d35-cd0e8e17df0f
   skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  type: trojan
+  server: jp2.yihaobao.xyz
+  port: 10053
+  udp: true
+  password: f78b6dfe-d15c-42bf-a9d6-a6b2db2fff5b
+  sni: tls.yihaobao.xyz
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
