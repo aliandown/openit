@@ -20,47 +20,7 @@ proxies:
   port: 443
   type: trojan
   password: opentunnel.net-cdhngt
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: gsawshk2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: e8339ff5-acb1-4ef6-96e0-04c78efbc51d
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: gsawsjp2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: e8339ff5-acb1-4ef6-96e0-04c78efbc51d
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: gsawshk1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: e8339ff5-acb1-4ef6-96e0-04c78efbc51d
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: cnamemc1.cdncisco3.co
-  port: 443
-  udp: true
-  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c1mc.cdncisco3.co
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  type: trojan
-  server: notdirect.howhealthyistoomajreally.homes
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: 104.21.79.246
   port: 443
@@ -71,11 +31,29 @@ proxies:
   network: ws
   ws-opts:
     path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: spus.1234567890spcloud.com
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: gsawshk1.aiopen.cfd
   port: 443
   type: trojan
-  password: de097d49-3016-42a9-9d35-cd0e8e17df0f
+  password: e8339ff5-acb1-4ef6-96e0-04c78efbc51d
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: gsawsjp2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: e8339ff5-acb1-4ef6-96e0-04c78efbc51d
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: spjp.1234567890spcloud.com
+  port: 443
+  type: trojan
+  password: 8b8c5ee6-6c6f-408c-9515-eab434c4bd75
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: spkr.1234567890spcloud.com
+  port: 443
+  type: trojan
+  password: 8b8c5ee6-6c6f-408c-9515-eab434c4bd75
   skip-cert-verify: true
 proxy-groups:
 - name: automatic
@@ -84,13 +62,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -100,12 +76,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
