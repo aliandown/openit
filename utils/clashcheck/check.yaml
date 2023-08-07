@@ -22,12 +22,6 @@ proxies:
   type: trojan
   password: de097d49-3016-42a9-9d35-cd0e8e17df0f
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: spsg.1234567890spcloud.com
-  port: 443
-  type: trojan
-  password: de097d49-3016-42a9-9d35-cd0e8e17df0f
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -35,7 +29,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,6 +38,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
