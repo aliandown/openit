@@ -100,7 +100,7 @@ proxies:
   password: 7036ea90-493f-4044-b706-f677e2b6b27b
   skip-cert-verify: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 18 TJN"
+  name: "\U0001F1FA\U0001F1F3 UN 18 TJN"
   server: cnamemc.cdncisco.org
   port: 443
   password: 0ad5e311-7189-4124-ac8f-f828b681f10e
@@ -119,16 +119,7 @@ proxies:
   skip-cert-verify: true
   sni: xingyunwu.top
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 20 TJN"
-  type: trojan
-  server: gonggao01.xingyunwu.top
-  port: 50000
-  udp: true
-  password: fad6dff0-9437-4ff1-ab9f-f96c48efc928
-  sni: xingyunwu.top
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 21 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 20 TJN"
   type: trojan
   server: 104.21.79.246
   port: 443
@@ -139,30 +130,22 @@ proxies:
   network: ws
   ws-opts:
     path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1FA\U0001F1F8 US 22 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 21 TJN"
   type: trojan
-  server: 163.123.192.154
-  port: 443
+  server: gonggao01.xingyunwu.top
+  port: 50000
   udp: true
-  password: d31792a4-b843-469f-9185-4a6111ff7612
+  password: fad6dff0-9437-4ff1-ab9f-f96c48efc928
+  sni: xingyunwu.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 23 TJN"
-  type: trojan
-  server: jp2.yihaobao.xyz
-  port: 10053
-  udp: true
-  password: f78b6dfe-d15c-42bf-a9d6-a6b2db2fff5b
-  sni: tls.yihaobao.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 24 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 22 SSS"
   type: ss
   server: sd.nfsq.me
   port: 33351
   password: 95869ffd-78ae-4a3f-9531-cb2b4e15ffca
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 25 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 23 TJN"
   type: trojan
   server: u-s01.xingyunwu.top
   port: 50028
@@ -171,7 +154,7 @@ proxies:
   sni: xingyunwu.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 26 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 24 TJN"
   type: trojan
   server: gonggao03.xingyunwu.top
   port: 50004
@@ -180,13 +163,30 @@ proxies:
   sni: xingyunwu.top
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 27 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 25 TJN"
   type: trojan
   server: t-wn02.xingyunwu.top
   port: 50054
   udp: true
   password: fad6dff0-9437-4ff1-ab9f-f96c48efc928
   sni: xingyunwu.top
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 26 TJN"
+  type: trojan
+  server: 163.123.192.154
+  port: 443
+  udp: true
+  password: d31792a4-b843-469f-9185-4a6111ff7612
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 27 TJN"
+  type: trojan
+  server: jp2.yihaobao.xyz
+  port: 10053
+  udp: true
+  password: f78b6dfe-d15c-42bf-a9d6-a6b2db2fff5b
+  sni: tls.yihaobao.xyz
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -210,16 +210,16 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 15 TJN"
   - "\U0001F1EF\U0001F1F5 JP 16 TJN"
   - "\U0001F1EF\U0001F1F5 JP 17 TJN"
-  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 20 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 21 TJN"
-  - "\U0001F1FA\U0001F1F8 US 22 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 23 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 20 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 21 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 22 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 23 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 24 TJN"
   - "\U0001F1E8\U0001F1F3 CN 25 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 26 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 27 TJN"
+  - "\U0001F1FA\U0001F1F8 US 26 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 27 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -243,15 +243,15 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 15 TJN"
   - "\U0001F1EF\U0001F1F5 JP 16 TJN"
   - "\U0001F1EF\U0001F1F5 JP 17 TJN"
-  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 20 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 21 TJN"
-  - "\U0001F1FA\U0001F1F8 US 22 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 23 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 20 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 21 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 22 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 23 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 24 TJN"
   - "\U0001F1E8\U0001F1F3 CN 25 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 26 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 27 TJN"
+  - "\U0001F1FA\U0001F1F8 US 26 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 27 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
