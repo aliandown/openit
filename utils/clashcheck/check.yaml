@@ -1,16 +1,16 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 1"
   server: cnamemc1.cdncisco4.co
   port: 443
-  udp: true
   password: 63779501-4c22-4a03-83d3-9f611b227e7b
-  sni: c1mc.cdncisco4.co
+  udp: true
   skip-cert-verify: true
+  sni: c1mc.cdncisco4.co
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -21,9 +21,20 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
+- type: trojan
+  name: "\U0001F1FA\U0001F1F3 UN 3"
   server: 104.21.79.246
+  port: 443
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  udp: true
+  skip-cert-verify: true
+  sni: notdirect.howhealthyistoomajreally.homes
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1FA\U0001F1F3 UN 4"
+  type: trojan
+  server: notdirect.howhealthyistoomajreally.homes
   port: 443
   udp: true
   password: e35026da-e985-49ca-b43b-276062a535a6
@@ -37,8 +48,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -46,7 +58,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
