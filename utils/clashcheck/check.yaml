@@ -1,26 +1,26 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 1"
   server: cnamemc1.cdncisco4.co
   port: 443
-  udp: true
   password: 63779501-4c22-4a03-83d3-9f611b227e7b
-  sni: c1mc.cdncisco4.co
+  udp: true
   skip-cert-verify: true
+  sni: c1mc.cdncisco4.co
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: cnamemc.cdncisco.org
+- type: trojan
+  name: "\U0001F1FA\U0001F1F3 UN 2"
+  server: 104.21.79.246
   port: 443
+  password: e35026da-e985-49ca-b43b-276062a535a6
   udp: true
-  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
-  sni: c5mc.cdncisco.org
   skip-cert-verify: true
+  sni: notdirect.howhealthyistoomajreally.homes
   network: ws
   ws-opts:
-    path: /5CSwsJSwLmxCxOCSBhOZubb
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
 - name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: cnamemc.cdncisco.org
@@ -32,25 +32,23 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   type: trojan
-  server: 104.21.79.246
-  port: 443
+  server: j-p01.xingyunwu.top
+  port: 50044
   udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
+  password: fad6dff0-9437-4ff1-ab9f-f96c48efc928
+  sni: xingyunwu.top
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,8 +56,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
