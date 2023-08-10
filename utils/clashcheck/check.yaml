@@ -5,21 +5,6 @@ proxies:
   type: trojan
   password: ad13f574-f6b7-427e-bb29-224a07c56d10
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: jp3.fighting.win
-  port: 10001
-  type: trojan
-  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
-- name: "\U0001F1F8\U0001F1EC SG 3"
-  server: sg3.fighting.win
-  port: 10001
-  type: trojan
-  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: sg2.fighting.win
-  port: 10001
-  type: trojan
-  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
-- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -30,7 +15,7 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -41,7 +26,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F3 UN 7"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
@@ -52,7 +37,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 8"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: cnamemc.ciscocdn1.live
   port: 443
@@ -63,30 +48,33 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: jp3.fighting.win
+  port: 10001
   type: trojan
-  server: 104.21.79.246
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
+- name: "\U0001F1F8\U0001F1EC SG 7"
+  server: sg3.fighting.win
+  port: 10001
+  type: trojan
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
+- name: "\U0001F1F8\U0001F1EC SG 8"
+  server: sg2.fighting.win
+  port: 10001
+  type: trojan
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -95,12 +83,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
