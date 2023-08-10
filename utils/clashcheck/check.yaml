@@ -21,71 +21,26 @@ proxies:
     path: /ywQ9KSLI4ZBm9wOAXUaN
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: cnamemc.cdncisco.org
-  port: 443
+  server: 45.63.106.86
+  port: 42903
   udp: true
-  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
-  sni: c5mc.cdncisco.org
+  password: TmxGNUA1jL
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /5CSwsJSwLmxCxOCSBhOZubb
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: cnamemc.cdncisco.org
-  port: 443
-  udp: true
-  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
-  sni: c5mc.cdncisco.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 45.63.106.86
   port: 39277
   udp: true
   password: KYAawE5EGp
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 45.63.106.86
   port: 17831
   udp: true
   password: vbmwVEzFLS
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  type: trojan
-  server: 45.63.106.86
-  port: 42903
-  udp: true
-  password: TmxGNUA1jL
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  server: pqawssg1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 9"
-  server: gsawssg1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F3 UN 10"
-  type: trojan
-  server: 104.21.79.246
-  port: 443
-  udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1FA\U0001F1F3 UN 11"
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   type: trojan
   server: notdirect.howhealthyistoomajreally.homes
   port: 443
@@ -96,14 +51,46 @@ proxies:
   network: ws
   ws-opts:
     path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1EF\U0001F1F5 JP 12"
+- name: "\U0001F1FA\U0001F1F3 UN 7"
+  type: trojan
+  server: 104.21.79.246
+  port: 443
+  udp: true
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   server: pqawssg001.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 13"
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  server: gsawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 10"
   server: pqawssg2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
+  sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC SG 11"
+  server: pqawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
+  sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 TW 12"
+  server: pqhinet2.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
@@ -117,14 +104,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F3 UN 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1FA\U0001F1F3 UN 10"
-  - "\U0001F1FA\U0001F1F3 UN 11"
-  - "\U0001F1EF\U0001F1F5 JP 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1E8\U0001F1F3 TW 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -136,13 +122,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F3 UN 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1FA\U0001F1F3 UN 10"
-  - "\U0001F1FA\U0001F1F3 UN 11"
-  - "\U0001F1EF\U0001F1F5 JP 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1E8\U0001F1F3 TW 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
