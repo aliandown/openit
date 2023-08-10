@@ -1,13 +1,15 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: 57.128.173.6
+  server: notdirect.howhealthyistoomajreally.homes
   port: 443
   udp: true
-  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
-  sni: www.speedtest.net
+  password: e35026da-e985-49ca-b43b-276062a535a6
+  sni: notdirect.howhealthyistoomajreally.homes
   skip-cert-verify: true
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: cnamemc1.cdncisco3.co
@@ -19,7 +21,16 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -30,27 +41,21 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: gsawshk1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
-  sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   server: pqawssg001.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: 45.63.106.86
-  port: 42903
-  udp: true
-  password: TmxGNUA1jL
   skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: pqawsjp2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
+  sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: gsawsjp1.aiopen.cfd
+  server: gsawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
@@ -65,9 +70,9 @@ proxies:
 - name: "\U0001F1FA\U0001F1F8 US 9"
   type: trojan
   server: 45.63.106.86
-  port: 17831
+  port: 42903
   udp: true
-  password: vbmwVEzFLS
+  password: TmxGNUA1jL
   skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 10"
   server: gsawshk2.aiopen.cfd
@@ -76,54 +81,46 @@ proxies:
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 11"
-  server: gsawsjp2.aiopen.cfd
+  server: gsawsjp1.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 12"
   type: trojan
-  server: notdirect.howhealthyistoomajreally.homes
-  port: 443
+  server: 45.63.106.86
+  port: 17831
   udp: true
-  password: e35026da-e985-49ca-b43b-276062a535a6
-  sni: notdirect.howhealthyistoomajreally.homes
+  password: vbmwVEzFLS
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
 - name: "\U0001F1EF\U0001F1F5 JP 13"
-  server: pqawsjp2.aiopen.cfd
+  server: gsawshk1.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 TW 14"
-  server: pqhinet2.aiopen.cfd
+- name: "\U0001F1F8\U0001F1EC SG 14"
+  server: pqawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 TW 15"
-  server: pqhinet3.aiopen.cfd
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC SG 15"
+  server: pqawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
 - name: "\U0001F1F8\U0001F1EC SG 16"
   server: gsawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 17"
-  server: pqawssg1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: ca2daa1f-484b-49db-b088-f25b6a398d8c
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 18"
-  server: pqawssg2.aiopen.cfd
+- name: "\U0001F1E8\U0001F1F3 TW 17"
+  server: pqhinet3.aiopen.cfd
   port: 443
   type: trojan
   password: ca2daa1f-484b-49db-b088-f25b6a398d8c
@@ -132,12 +129,12 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F8 US 9"
@@ -145,23 +142,22 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 11"
   - "\U0001F1FA\U0001F1F8 US 12"
   - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1E8\U0001F1F3 TW 14"
-  - "\U0001F1E8\U0001F1F3 TW 15"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F8\U0001F1EC SG 15"
   - "\U0001F1F8\U0001F1EC SG 16"
-  - "\U0001F1F8\U0001F1EC SG 17"
-  - "\U0001F1F8\U0001F1EC SG 18"
+  - "\U0001F1E8\U0001F1F3 TW 17"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F8 US 9"
@@ -169,10 +165,9 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 11"
   - "\U0001F1FA\U0001F1F8 US 12"
   - "\U0001F1EF\U0001F1F5 JP 13"
-  - "\U0001F1E8\U0001F1F3 TW 14"
-  - "\U0001F1E8\U0001F1F3 TW 15"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1F8\U0001F1EC SG 15"
   - "\U0001F1F8\U0001F1EC SG 16"
-  - "\U0001F1F8\U0001F1EC SG 17"
-  - "\U0001F1F8\U0001F1EC SG 18"
+  - "\U0001F1E8\U0001F1F3 TW 17"
 rules:
 - "MATCH,\U0001F310 Proxy"
