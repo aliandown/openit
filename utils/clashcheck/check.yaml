@@ -1,5 +1,15 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 513ujsh.xyzsa.top
+  port: 4431
+  type: trojan
+  password: ad13f574-f6b7-427e-bb29-224a07c56d10
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: jp3.fighting.win
+  port: 10001
+  type: trojan
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -10,7 +20,17 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  server: sg3.fighting.win
+  port: 10001
+  type: trojan
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
+- name: "\U0001F1F8\U0001F1EC SG 5"
+  server: sg2.fighting.win
+  port: 10001
+  type: trojan
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   type: trojan
   server: 104.21.79.246
   port: 443
@@ -21,7 +41,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ilb9fuWfuqWDjlQrGCkIH66kMFPa
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: cnamemc.ciscocdn1.live
   port: 443
@@ -36,17 +56,25 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
