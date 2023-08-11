@@ -10,7 +10,7 @@ proxies:
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   type: trojan
-  server: jp1.fighting.win
+  server: jp2.fighting.win
   port: 10001
   udp: true
   password: 8861ad96-45d4-42f7-9703-7de363a39a0f
@@ -26,7 +26,7 @@ proxies:
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
-  server: jp2.fighting.win
+  server: jp1.fighting.win
   port: 10001
   udp: true
   password: 8861ad96-45d4-42f7-9703-7de363a39a0f
@@ -95,6 +95,15 @@ proxies:
   password: nXlDP9xN1l
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 11"
+  type: trojan
+  server: 3.70.238.92
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -109,6 +118,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F3 UN 9"
   - "\U0001F1E6\U0001F1FA AU 10"
+  - "\U0001F1E9\U0001F1EA DE 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -125,5 +135,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F3 UN 9"
   - "\U0001F1E6\U0001F1FA AU 10"
+  - "\U0001F1E9\U0001F1EA DE 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
