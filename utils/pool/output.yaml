@@ -1,10 +1,11 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
-  server: 183.232.170.32
-  port: 20005
-  type: ss
-  cipher: aes-128-gcm
-  password: g12sQi#ss#&1
+- name: "\U0001F1F8\U0001F1EC SG 1 TJN"
+  server: pqawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: d12a8310-b971-42de-94e6-7cf6686a7552
+  sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
 - name: "\U0001F1F8\U0001F1EC SG 2 TJN"
   server: pqawssg2.aiopen.cfd
   port: 443
@@ -90,13 +91,12 @@ proxies:
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 15 TJN"
-  server: pqawssg1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: d12a8310-b971-42de-94e6-7cf6686a7552
-  sni: 18-140-66-207.nhost.00cdn.com
-  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 15 SSS"
+  server: 183.232.170.32
+  port: 20005
+  type: ss
+  cipher: aes-128-gcm
+  password: g12sQi#ss#&1
 - name: "\U0001F1EF\U0001F1F5 JP 16 TJN"
   type: trojan
   server: jpvip102.qlgq1.pw
@@ -133,7 +133,7 @@ proxies:
   sni: sgvip101.qlgq1.pw
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E6\U0001F1FA AU 20 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 20 TJN"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -609,7 +609,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1F8\U0001F1EC SG 1 TJN"
   - "\U0001F1F8\U0001F1EC SG 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
   - "\U0001F1F8\U0001F1EC SG 4 TJN"
@@ -623,12 +623,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 12 TJN"
   - "\U0001F1F8\U0001F1EC SG 13 TJN"
   - "\U0001F1F8\U0001F1EC SG 14 TJN"
-  - "\U0001F1F8\U0001F1EC SG 15 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 15 SSS"
   - "\U0001F1EF\U0001F1F5 JP 16 TJN"
   - "\U0001F1F8\U0001F1EC SG 17 TJN"
   - "\U0001F1EF\U0001F1F5 JP 18 TJN"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
-  - "\U0001F1E6\U0001F1FA AU 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
   - "\U0001F1FA\U0001F1F8 US 21 TJN"
   - "\U0001F1ED\U0001F1F0 HK 22 TJN"
   - "\U0001F1E8\U0001F1F3 CN 23 SSS"
@@ -702,7 +702,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1F8\U0001F1EC SG 1 TJN"
   - "\U0001F1F8\U0001F1EC SG 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
   - "\U0001F1F8\U0001F1EC SG 4 TJN"
@@ -716,12 +716,12 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 12 TJN"
   - "\U0001F1F8\U0001F1EC SG 13 TJN"
   - "\U0001F1F8\U0001F1EC SG 14 TJN"
-  - "\U0001F1F8\U0001F1EC SG 15 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 15 SSS"
   - "\U0001F1EF\U0001F1F5 JP 16 TJN"
   - "\U0001F1F8\U0001F1EC SG 17 TJN"
   - "\U0001F1EF\U0001F1F5 JP 18 TJN"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
-  - "\U0001F1E6\U0001F1FA AU 20 TJN"
+  - "\U0001F1FA\U0001F1F8 US 20 TJN"
   - "\U0001F1FA\U0001F1F8 US 21 TJN"
   - "\U0001F1ED\U0001F1F0 HK 22 TJN"
   - "\U0001F1E8\U0001F1F3 CN 23 SSS"
