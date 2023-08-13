@@ -1,11 +1,10 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1 TJN"
-  server: pqawssg1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: d12a8310-b971-42de-94e6-7cf6686a7552
-  sni: 18-140-66-207.nhost.00cdn.com
-  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  server: 183.232.170.32
+  port: 20005
+  type: ss
+  cipher: aes-128-gcm
+  password: g12sQi#ss#&1
 - name: "\U0001F1F8\U0001F1EC SG 2 TJN"
   server: pqawssg2.aiopen.cfd
   port: 443
@@ -91,30 +90,14 @@ proxies:
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 CN 15 SSS"
-  server: 183.232.170.32
-  port: 20005
-  type: ss
-  cipher: aes-128-gcm
-  password: g12sQi#ss#&1
-- name: "\U0001F1FA\U0001F1F8 US 16 TJN"
-  type: trojan
-  server: 45.63.106.86
-  port: 42903
-  udp: true
-  password: TmxGNUA1jL
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1ED\U0001F1F0 HK 17 TJN"
-  type: trojan
-  server: 18.163.249.175
+- name: "\U0001F1F8\U0001F1EC SG 15 TJN"
+  server: pqawssg1.aiopen.cfd
   port: 443
-  udp: true
-  password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
-  sni: golang.protocolbuffer.com
+  type: trojan
+  password: d12a8310-b971-42de-94e6-7cf6686a7552
+  sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 18 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 16 TJN"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -125,6 +108,23 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
+- name: "\U0001F1FA\U0001F1F8 US 17 TJN"
+  type: trojan
+  server: 45.63.106.86
+  port: 42903
+  udp: true
+  password: TmxGNUA1jL
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1ED\U0001F1F0 HK 18 TJN"
+  type: trojan
+  server: 18.163.249.175
+  port: 443
+  udp: true
+  password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
+  sni: golang.protocolbuffer.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 19 SSS"
   type: ss
   server: hz-cu.timiwc.com
@@ -213,7 +213,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EC SG 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   - "\U0001F1F8\U0001F1EC SG 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
   - "\U0001F1F8\U0001F1EC SG 4 TJN"
@@ -227,10 +227,10 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 12 TJN"
   - "\U0001F1F8\U0001F1EC SG 13 TJN"
   - "\U0001F1F8\U0001F1EC SG 14 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 15 SSS"
+  - "\U0001F1F8\U0001F1EC SG 15 TJN"
   - "\U0001F1FA\U0001F1F8 US 16 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 17 TJN"
-  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1E8\U0001F1F3 CN 20 SSS"
   - "\U0001F1E8\U0001F1F3 CN 21 SSS"
@@ -251,7 +251,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   - "\U0001F1F8\U0001F1EC SG 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
   - "\U0001F1F8\U0001F1EC SG 4 TJN"
@@ -265,10 +265,10 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 12 TJN"
   - "\U0001F1F8\U0001F1EC SG 13 TJN"
   - "\U0001F1F8\U0001F1EC SG 14 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 15 SSS"
+  - "\U0001F1F8\U0001F1EC SG 15 TJN"
   - "\U0001F1FA\U0001F1F8 US 16 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 17 TJN"
-  - "\U0001F1FA\U0001F1F8 US 18 TJN"
+  - "\U0001F1FA\U0001F1F8 US 17 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 18 TJN"
   - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1E8\U0001F1F3 CN 20 SSS"
   - "\U0001F1E8\U0001F1F3 CN 21 SSS"
