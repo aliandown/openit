@@ -1,17 +1,28 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
-  server: kbawsjp1.aiopen.cfd
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
-  sni: 4-193-105-141.nhost.00cdn.com
+  server: cnamemc1.cdncisco4.co
+  port: 443
+  udp: true
+  password: 63779501-4c22-4a03-83d3-9f611b227e7b
+  sni: c1mc.cdncisco4.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /422Kdfwzf49IxeZJa
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   server: kbawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: kbawsjp1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 45.63.106.86
   port: 42903
@@ -19,37 +30,50 @@ proxies:
   password: TmxGNUA1jL
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: kbawssg2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
-  sni: 4-193-105-141.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 5"
   server: kbawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  server: kbawssg2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  type: trojan
+  server: 18.163.249.175
+  port: 443
+  udp: true
+  password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
+  sni: golang.protocolbuffer.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
