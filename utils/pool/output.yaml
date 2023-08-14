@@ -15,14 +15,15 @@ proxies:
   port: 13543
   type: trojan
   password: 8bc09fe4-1d47-4500-b9e8-ad58183d31b7
-- name: "\U0001F1EF\U0001F1F5 JP 4 TJN"
-  server: kbawsjp2.aiopen.cfd
+- name: "\U0001F1F8\U0001F1EC SG 4 TJN"
+  server: pqawssg1.aiopen.cfd
   port: 443
   type: trojan
-  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
-  sni: 4-193-105-141.nhost.00cdn.com
+  password: d12a8310-b971-42de-94e6-7cf6686a7552
+  sni: 18-140-66-207.nhost.00cdn.com
+  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
-  server: kbawsjp1.aiopen.cfd
+  server: kbawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
@@ -34,42 +35,41 @@ proxies:
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 7 TJN"
+  server: kbawsjp1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 8 TJN"
   server: kbawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 8 TJN"
-  server: kbawssg2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
-  sni: 4-193-105-141.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 9 TJN"
-  server: kbawssg1.aiopen.cfd
+  server: kbawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 10 TJN"
-  server: kbawssg2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
-  sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 11 TJN"
   server: kbawssg1.aiopen.cfd
   port: 443
   type: trojan
   password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
   sni: 4-193-105-141.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 12 TJN"
-  server: pqawssg1.aiopen.cfd
+- name: "\U0001F1F8\U0001F1EC SG 11 TJN"
+  server: kbawssg2.aiopen.cfd
   port: 443
   type: trojan
-  password: d12a8310-b971-42de-94e6-7cf6686a7552
-  sni: 18-140-66-207.nhost.00cdn.com
-  skip-cert-verify: true
+  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
+  sni: 4-193-105-141.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 12 TJN"
+  server: kbawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
+  sni: 4-193-105-141.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -77,11 +77,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
+  - "\U0001F1F8\U0001F1EC SG 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
   - "\U0001F1EF\U0001F1F5 JP 6 TJN"
   - "\U0001F1EF\U0001F1F5 JP 7 TJN"
-  - "\U0001F1F8\U0001F1EC SG 8 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 8 TJN"
   - "\U0001F1F8\U0001F1EC SG 9 TJN"
   - "\U0001F1F8\U0001F1EC SG 10 TJN"
   - "\U0001F1F8\U0001F1EC SG 11 TJN"
@@ -95,11 +95,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   - "\U0001F1FA\U0001F1F8 US 2 TJN"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
+  - "\U0001F1F8\U0001F1EC SG 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
   - "\U0001F1EF\U0001F1F5 JP 6 TJN"
   - "\U0001F1EF\U0001F1F5 JP 7 TJN"
-  - "\U0001F1F8\U0001F1EC SG 8 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 8 TJN"
   - "\U0001F1F8\U0001F1EC SG 9 TJN"
   - "\U0001F1F8\U0001F1EC SG 10 TJN"
   - "\U0001F1F8\U0001F1EC SG 11 TJN"
