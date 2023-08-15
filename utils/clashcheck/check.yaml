@@ -1,16 +1,16 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  type: trojan
-  server: cnamemk.ciscocdn1.live
+- name: "\U0001F1F8\U0001F1EC SG 1"
+  server: 814sgxy.fr99kt.top
   port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mk.ciscocdn1.live
+  type: trojan
+  password: ad13f574-f6b7-427e-bb29-224a07c56d10
+- name: "\U0001F1F8\U0001F1EC SG 2"
+  server: ovotw.ovonice.com
+  port: 443
+  type: trojan
+  password: 42f6d143-729a-4e27-8fbd-d8bbcc96a3bc
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -21,33 +21,34 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1F8\U0001F1EC SG 3"
-  server: 814sgxy.fr99kt.top
-  port: 443
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
-  password: ad13f574-f6b7-427e-bb29-224a07c56d10
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: ovotw.ovonice.com
+  server: cnamemk.ciscocdn1.live
   port: 443
-  type: trojan
-  password: 42f6d143-729a-4e27-8fbd-d8bbcc96a3bc
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mk.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
