@@ -1,15 +1,15 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  server: cnamemc1.cdncisco3.co
+  server: cnamemk.ciscocdn1.live
   port: 443
   udp: true
-  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c1mc.cdncisco3.co
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mk.ciscocdn1.live
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ywQ9KSLI4ZBm9wOAXUaN
+    path: /rDCYQta83d0oPABKBhcIX
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: cnamemt.ciscocdn1.live
@@ -21,17 +21,11 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: cnamemk.ciscocdn1.live
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  server: 814sgxy.fr99kt.top
   port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mk.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
+  type: trojan
+  password: ad13f574-f6b7-427e-bb29-224a07c56d10
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   server: ovotw.ovonice.com
   port: 443
@@ -41,9 +35,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -51,9 +45,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
