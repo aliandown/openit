@@ -1,17 +1,6 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  server: cnamemk.ciscocdn1.live
-  port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mk.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
   udp: true
@@ -21,12 +10,48 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  type: trojan
+  server: cnamemk.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mk.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  type: trojan
+  server: azjp1.downloadvip.cfd
+  port: 38200
+  udp: true
+  password: e42767d0-0833-4f76-a94b-2cfd197e389f
+  sni: jp1.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  server: ovotw.ovonice.com
+  port: 443
+  type: trojan
+  password: 42f6d143-729a-4e27-8fbd-d8bbcc96a3bc
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: kbawsjp1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -34,6 +59,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
