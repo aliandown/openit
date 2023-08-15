@@ -1,13 +1,28 @@
-proxies: []
+proxies:
+- name: "\U0001F1EF\U0001F1F5 JP 1"
+  server: ovotw.ovonice.com
+  port: 443
+  type: trojan
+  password: 42f6d143-729a-4e27-8fbd-d8bbcc96a3bc
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: ovotw.ovonice.com
+  port: 443
+  type: trojan
+  password: 42f6d143-729a-4e27-8fbd-d8bbcc96a3bc
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
