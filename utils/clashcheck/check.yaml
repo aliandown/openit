@@ -1,10 +1,5 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1"
-  server: 814sgxy.fr99kt.top
-  port: 443
-  type: trojan
-  password: ad13f574-f6b7-427e-bb29-224a07c56d10
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -15,6 +10,11 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
+- name: "\U0001F1F8\U0001F1EC SG 2"
+  server: 814sgxy.fr99kt.top
+  port: 443
+  type: trojan
+  password: ad13f574-f6b7-427e-bb29-224a07c56d10
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: cnamemt.ciscocdn1.live
@@ -37,31 +37,23 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: ovotw.ovonice.com
-  port: 443
-  type: trojan
-  password: 42f6d143-729a-4e27-8fbd-d8bbcc96a3bc
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EC SG 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
