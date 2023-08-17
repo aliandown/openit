@@ -5,26 +5,32 @@ proxies:
   type: trojan
   password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: gsawshk2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: gsawsjp2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 TW 4"
+- name: "\U0001F1E8\U0001F1F3 TW 2"
   server: gshinet1.aiopen.cfd
   port: 443
   type: trojan
   password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 5"
-  server: gsawssg2.aiopen.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: gsawshk2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 4"
+  server: gsawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: gsawsjp1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: gsawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
@@ -34,10 +40,11 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1F3 TW 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -45,9 +52,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1F3 TW 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
