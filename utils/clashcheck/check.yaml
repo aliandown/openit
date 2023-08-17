@@ -8,7 +8,7 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -19,12 +19,7 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1F8\U0001F1EC SG 3"
-  server: sg.stablize.top
-  port: 443
-  type: trojan
-  password: f657e3d5-76ec-42ab-a327-8b7b9c03d479
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
@@ -35,7 +30,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1F2\U0001F1FE MY 5"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -46,6 +41,11 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: sg.stablize.top
+  port: 443
+  type: trojan
+  password: f657e3d5-76ec-42ab-a327-8b7b9c03d479
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   type: trojan
   server: 45.11.104.94
@@ -62,10 +62,10 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1F2\U0001F1FE MY 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -74,10 +74,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1F2\U0001F1FE MY 5"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
