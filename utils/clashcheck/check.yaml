@@ -10,17 +10,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
-  server: cnamemc.cdncisco.org
-  port: 443
-  udp: true
-  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
-  sni: c5mc.cdncisco.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
   udp: true
@@ -30,7 +19,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -41,7 +30,18 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
+  type: trojan
+  server: cnamemc.cdncisco.org
+  port: 443
+  udp: true
+  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
+  sni: c5mc.cdncisco.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5CSwsJSwLmxCxOCSBhOZubb
+- name: "\U0001F1F8\U0001F1EC SG 5"
   server: sg.stablize.top
   port: 443
   type: trojan
@@ -63,9 +63,9 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -75,9 +75,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
