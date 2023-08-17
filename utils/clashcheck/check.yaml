@@ -8,18 +8,7 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  type: trojan
-  server: 45.11.104.94
-  port: 3306
-  udp: true
-  password: 7b06d22a8a7c764f
-  sni: n2.gladns.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /gateway/connect
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -30,6 +19,11 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  server: sg.stablize.top
+  port: 443
+  type: trojan
+  password: f657e3d5-76ec-42ab-a327-8b7b9c03d479
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: cnamemk.ciscocdn1.live
@@ -52,15 +46,48 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1E8\U0001F1F3 HK 6"
+  type: trojan
+  server: 45.11.104.94
+  port: 3306
+  udp: true
+  password: 7b06d22a8a7c764f
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: gsawsjp1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: gsawshk1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  server: gsawssg2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  sni: 20-212-60-88.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -68,9 +95,13 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1F8\U0001F1EC SG 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
