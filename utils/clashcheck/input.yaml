@@ -263,7 +263,7 @@ proxies:
   sni: 20-212-60-88.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E6\U0001F1FA AU 41 TJN"
+- name: "\U0001F1F3\U0001F1F1 NL 41 TJN"
   type: trojan
   server: cnamemc.ciscocdn1.live
   port: 443
@@ -274,6 +274,23 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 42 TJN"
+  server: sj1.alieszvps.cf
+  port: 45555
+  password: VpRuqFDCJo
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: trojan
+  name: "\U0001F1EB\U0001F1F7 FR 43 TJN"
+  server: 57.128.173.6
+  port: 443
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  udp: true
+  skip-cert-verify: true
+  sni: www.speedtest.net
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -318,7 +335,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 38 TJN"
   - "\U0001F1F8\U0001F1EC SG 39 TJN"
   - "\U0001F1F8\U0001F1EC SG 40 TJN"
-  - "\U0001F1E6\U0001F1FA AU 41 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 41 TJN"
+  - "\U0001F1FA\U0001F1F8 US 42 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 43 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -365,6 +384,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 38 TJN"
   - "\U0001F1F8\U0001F1EC SG 39 TJN"
   - "\U0001F1F8\U0001F1EC SG 40 TJN"
-  - "\U0001F1E6\U0001F1FA AU 41 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 41 TJN"
+  - "\U0001F1FA\U0001F1F8 US 42 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 43 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
