@@ -19,7 +19,27 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1E8\U0001F1F3 TW 3"
+  type: trojan
+  server: tw4.yihaobao.xyz
+  port: 10025
+  udp: true
+  password: a9aad274-e226-4716-a8d2-7f6516d880d1
+  sni: tls.yihaobao.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: cnamemc.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c3mc.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -30,24 +50,6 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  type: trojan
-  server: jp3.421421.xyz
-  port: 20230
-  udp: true
-  password: 26af88d0-fc72-43b3-8108-521a7b12aa45
-  sni: 421421.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 5"
-  type: trojan
-  server: tw4.yihaobao.xyz
-  port: 10025
-  udp: true
-  password: a9aad274-e226-4716-a8d2-7f6516d880d1
-  sni: tls.yihaobao.xyz
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 6"
   type: trojan
   server: 45.11.104.94
@@ -65,9 +67,9 @@ proxy-groups:
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -77,9 +79,9 @@ proxy-groups:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
