@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1E6 UA 1"
+- name: "\U0001F1F3\U0001F1F1 NL 1"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -12,17 +12,6 @@ proxies:
     path: /422Kdfwzf49IxeZJa
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: cnamemt.ciscocdn1.live
-  port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mt.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
   udp: true
@@ -32,11 +21,22 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: cnamemt.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mt.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1E6 UA 1"
+  - "\U0001F1F3\U0001F1F1 NL 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
@@ -45,7 +45,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1E6 UA 1"
+  - "\U0001F1F3\U0001F1F1 NL 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
 rules:
