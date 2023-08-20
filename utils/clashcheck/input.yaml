@@ -1,23 +1,23 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
-  server: 36.156.198.43
-  port: 30104
-  type: ss
-  cipher: aes-128-gcm
-  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  server: 36.156.198.43
-  port: 30101
-  type: ss
-  cipher: aes-128-gcm
-  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
-- name: "\U0001F1ED\U0001F1F0 HK 3 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 1 TJN"
   server: hkbnx3.uueai.com
   port: 39002
   type: trojan
   password: 1e7829d2-ae30-3533-a569-bc20d980c312
   sni: hkbnx3.uueai.com
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  server: 36.156.198.43
+  port: 30104
+  type: ss
+  cipher: aes-128-gcm
+  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  server: 36.156.198.43
+  port: 30101
+  type: ss
+  cipher: aes-128-gcm
+  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
 - name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
   server: s400l.ddns1.pw
   port: 22180
@@ -163,35 +163,35 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: fbe8903b-bf49-451c-9c18-49d2a07cc712
-- name: "\U0001F1FA\U0001F1F3 UN 28 HTT"
-  type: http
-  server: xn--4gq62f66mcsc.com/sub/c444782288626399/clash
-  port: null
-  tls: true
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 29 TJN"
+- name: "\U0001F1E8\U0001F1E6 CA 28 TJN"
   type: trojan
   server: ca-trojan.bonds.id
   port: 443
   udp: true
   password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 30 HTT"
+- name: "\U0001F1E8\U0001F1F3 CN 29 HTT"
   type: http
   server: 124.15.12.24
   port: 251
   username: username
   password: password
-- name: "\U0001F1E8\U0001F1F3 CN 31 SK5"
+- name: "\U0001F1E8\U0001F1F3 CN 30 SK5"
   type: socks5
   server: 124.15.12.24
   port: 2312
-- name: "\U0001F1E6\U0001F1FA AU 32 SK5"
+- name: "\U0001F1E6\U0001F1FA AU 31 SK5"
   type: socks5
   server: 1.2.3.4
   port: 123
   username: username
   password: password
+- name: "\U0001F1FA\U0001F1F3 UN 32 HTT"
+  type: http
+  server: xn--4gq62f66mcsc.com/sub/c444782288626399/clash
+  port: null
+  tls: true
+  skip-cert-verify: true
 - name: "\U0001F1E6\U0001F1FA AU 33 TJN"
   type: trojan
   server: cnamemc.ciscocdn1.live
@@ -238,9 +238,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 3 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
@@ -265,11 +265,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 25 SSS"
   - "\U0001F1E8\U0001F1F3 CN 26 SSS"
   - "\U0001F1E8\U0001F1F3 CN 27 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 28 HTT"
-  - "\U0001F1E8\U0001F1E6 CA 29 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 30 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 31 SK5"
-  - "\U0001F1E6\U0001F1FA AU 32 SK5"
+  - "\U0001F1E8\U0001F1E6 CA 28 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 29 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 30 SK5"
+  - "\U0001F1E6\U0001F1FA AU 31 SK5"
+  - "\U0001F1FA\U0001F1F3 UN 32 HTT"
   - "\U0001F1E6\U0001F1FA AU 33 TJN"
   - "\U0001F1ED\U0001F1F0 HK 34 TJN"
   - "\U0001F1E6\U0001F1FA AU 35 TJN"
@@ -280,9 +280,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 3 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
@@ -307,11 +307,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 25 SSS"
   - "\U0001F1E8\U0001F1F3 CN 26 SSS"
   - "\U0001F1E8\U0001F1F3 CN 27 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 28 HTT"
-  - "\U0001F1E8\U0001F1E6 CA 29 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 30 HTT"
-  - "\U0001F1E8\U0001F1F3 CN 31 SK5"
-  - "\U0001F1E6\U0001F1FA AU 32 SK5"
+  - "\U0001F1E8\U0001F1E6 CA 28 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 29 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 30 SK5"
+  - "\U0001F1E6\U0001F1FA AU 31 SK5"
+  - "\U0001F1FA\U0001F1F3 UN 32 HTT"
   - "\U0001F1E6\U0001F1FA AU 33 TJN"
   - "\U0001F1ED\U0001F1F0 HK 34 TJN"
   - "\U0001F1E6\U0001F1FA AU 35 TJN"
