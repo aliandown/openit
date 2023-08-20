@@ -1,23 +1,23 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
-  server: 36.156.198.43
-  port: 30104
-  type: ss
-  cipher: aes-128-gcm
-  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  server: 36.156.198.43
-  port: 30101
-  type: ss
-  cipher: aes-128-gcm
-  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
-- name: "\U0001F1ED\U0001F1F0 HK 3 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 1 TJN"
   server: hkbnx3.uueai.com
   port: 39002
   type: trojan
   password: 1e7829d2-ae30-3533-a569-bc20d980c312
   sni: hkbnx3.uueai.com
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  server: 36.156.198.43
+  port: 30104
+  type: ss
+  cipher: aes-128-gcm
+  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  server: 36.156.198.43
+  port: 30101
+  type: ss
+  cipher: aes-128-gcm
+  password: 4d85dc57-7340-4424-a9aa-288c2e51962c
 - name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
   server: s400l.ddns1.pw
   port: 22180
@@ -192,7 +192,7 @@ proxies:
   port: null
   tls: true
   skip-cert-verify: true
-- name: "\U0001F1E6\U0001F1FA AU 33 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 33 TJN"
   type: trojan
   server: cnamemc.ciscocdn1.live
   port: 443
@@ -214,7 +214,7 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
-- name: "\U0001F1E6\U0001F1FA AU 35 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -282,9 +282,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 3 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
@@ -314,9 +314,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 30 SK5"
   - "\U0001F1E6\U0001F1FA AU 31 SK5"
   - "\U0001F1FA\U0001F1F3 UN 32 HTT"
-  - "\U0001F1E6\U0001F1FA AU 33 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 33 TJN"
   - "\U0001F1ED\U0001F1F0 HK 34 TJN"
-  - "\U0001F1E6\U0001F1FA AU 35 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
   - "\U0001F1EB\U0001F1F7 FR 36 TJN"
   - "\U0001F1E8\U0001F1FE CY 37 TJN"
   - "\U0001F1ED\U0001F1F0 HK 38 TJN"
@@ -328,9 +328,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 3 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
   - "\U0001F1E8\U0001F1F3 CN 4 SSS"
   - "\U0001F1E8\U0001F1F3 CN 5 SSS"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
@@ -360,9 +360,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 30 SK5"
   - "\U0001F1E6\U0001F1FA AU 31 SK5"
   - "\U0001F1FA\U0001F1F3 UN 32 HTT"
-  - "\U0001F1E6\U0001F1FA AU 33 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 33 TJN"
   - "\U0001F1ED\U0001F1F0 HK 34 TJN"
-  - "\U0001F1E6\U0001F1FA AU 35 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
   - "\U0001F1EB\U0001F1F7 FR 36 TJN"
   - "\U0001F1E8\U0001F1FE CY 37 TJN"
   - "\U0001F1ED\U0001F1F0 HK 38 TJN"
