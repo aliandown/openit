@@ -1,15 +1,23 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: 15.204.210.176
+  port: 80
+  udp: true
+  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 2"
   server: fra1.connecton.surf
   port: 443
   type: trojan
   password: 27181131b8
-- name: "\U0001F1EA\U0001F1F8 ES 2"
+- name: "\U0001F1EA\U0001F1F8 ES 3"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -20,7 +28,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -31,7 +39,7 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -42,7 +50,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1E8\U0001F1FE CY 6"
+- name: "\U0001F1E8\U0001F1FE CY 7"
   type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
@@ -57,23 +65,25 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1FE CY 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1FE CY 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1FE CY 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1FE CY 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
