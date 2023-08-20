@@ -1,18 +1,14 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1 TJN"
-  server: kbawsjp1.aiopen.cfd
+- name: "\U0001F1EB\U0001F1F7 FR 1 TJN"
+  server: fra1.connecton.surf
   port: 443
   type: trojan
-  password: 74faee5a-4b4c-43ef-ab9c-549d2618772a
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  server: kbawsjp1.aiopen.cfd
+  password: 27181131b8
+- name: "\U0001F1EA\U0001F1F8 ES 2 TJN"
+  server: sp1.connecton.surf
   port: 443
   type: trojan
-  password: 74faee5a-4b4c-43ef-ab9c-549d2618772a
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
+  password: 41dbabe59a
 - name: "\U0001F1EF\U0001F1F5 JP 3 TJN"
   server: kbawsjp1.aiopen.cfd
   port: 443
@@ -27,16 +23,20 @@ proxies:
   password: 74faee5a-4b4c-43ef-ab9c-549d2618772a
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 5 TJN"
-  server: fra1.connecton.surf
+- name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
+  server: kbawsjp1.aiopen.cfd
   port: 443
   type: trojan
-  password: 27181131b8
-- name: "\U0001F1EA\U0001F1F8 ES 6 TJN"
-  server: sp1.connecton.surf
+  password: 74faee5a-4b4c-43ef-ab9c-549d2618772a
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 6 TJN"
+  server: kbawsjp1.aiopen.cfd
   port: 443
   type: trojan
-  password: 41dbabe59a
+  password: 74faee5a-4b4c-43ef-ab9c-549d2618772a
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
 - name: "\U0001F1ED\U0001F1F0 HK 7 TJN"
   server: hkbnx3.uueai.com
   port: 39002
@@ -222,7 +222,7 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 35 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -233,7 +233,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 36 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 36 TJN"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -248,12 +248,12 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 1 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
   - "\U0001F1EF\U0001F1F5 JP 4 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 5 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 5 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 6 TJN"
   - "\U0001F1ED\U0001F1F0 HK 7 TJN"
   - "\U0001F1E8\U0001F1F3 CN 8 SSS"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
@@ -282,20 +282,20 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 32 TJN"
   - "\U0001F1FA\U0001F1F8 US 33 TJN"
   - "\U0001F1FA\U0001F1F8 US 34 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1FA\U0001F1F8 US 35 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 36 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 1 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 2 TJN"
   - "\U0001F1EF\U0001F1F5 JP 3 TJN"
   - "\U0001F1EF\U0001F1F5 JP 4 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 5 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 5 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 6 TJN"
   - "\U0001F1ED\U0001F1F0 HK 7 TJN"
   - "\U0001F1E8\U0001F1F3 CN 8 SSS"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
@@ -324,7 +324,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 32 TJN"
   - "\U0001F1FA\U0001F1F8 US 33 TJN"
   - "\U0001F1FA\U0001F1F8 US 34 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1FA\U0001F1F8 US 35 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 36 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
