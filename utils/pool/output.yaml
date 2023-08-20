@@ -192,6 +192,48 @@ proxies:
   port: null
   tls: true
   skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F3 UN 33 TJN"
+  type: trojan
+  server: cnamemc.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c3mc.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
+- name: "\U0001F1ED\U0001F1F0 HK 34 TJN"
+  type: trojan
+  server: 45.11.104.94
+  port: 3306
+  udp: true
+  password: 7b06d22a8a7c764f
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+- name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  type: trojan
+  server: cnamemc1.cdncisco3.co
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c1mc.cdncisco3.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
+- name: "\U0001F1EB\U0001F1F7 FR 36 TJN"
+  type: trojan
+  server: 57.128.173.6
+  port: 443
+  udp: true
+  password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
+  sni: www.speedtest.net
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -228,6 +270,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 30 SK5"
   - "\U0001F1E6\U0001F1FA AU 31 SK5"
   - "\U0001F1FA\U0001F1F3 UN 32 HTT"
+  - "\U0001F1FA\U0001F1F3 UN 33 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 34 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 36 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -266,5 +312,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 30 SK5"
   - "\U0001F1E6\U0001F1FA AU 31 SK5"
   - "\U0001F1FA\U0001F1F3 UN 32 HTT"
+  - "\U0001F1FA\U0001F1F3 UN 33 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 34 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 36 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
