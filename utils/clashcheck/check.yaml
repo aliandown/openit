@@ -1,10 +1,15 @@
 proxies:
-- name: "\U0001F1EA\U0001F1F8 ES 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: fra1.connecton.surf
+  port: 443
+  type: trojan
+  password: 27181131b8
+- name: "\U0001F1EA\U0001F1F8 ES 2"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -15,7 +20,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -26,7 +31,7 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1E6 UA 4"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -37,7 +42,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F3 UN 5"
+- name: "\U0001F1E8\U0001F1FE CY 6"
   type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
@@ -52,21 +57,23 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1E6 UA 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1FE CY 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1E6 UA 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1FE CY 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
