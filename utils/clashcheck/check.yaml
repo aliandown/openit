@@ -11,7 +11,12 @@ proxies:
   port: 443
   type: trojan
   password: 41dbabe59a
-- name: "\U0001F1F1\U0001F1F9 LT 3"
+- name: "\U0001F1F5\U0001F1F1 PL 3"
+  server: pol2.connecton.surf
+  port: 443
+  type: trojan
+  password: 5d91f01a98
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -22,28 +27,14 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1F5\U0001F1F1 PL 4"
-  server: pol2.connecton.surf
-  port: 443
-  type: trojan
-  password: 5d91f01a98
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: 45.63.106.86
-  port: 39277
-  udp: true
-  password: KYAawE5EGp
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1F1\U0001F1F9 LT 3"
-  - "\U0001F1F5\U0001F1F1 PL 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F5\U0001F1F1 PL 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -52,8 +43,7 @@ proxy-groups:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1F1\U0001F1F9 LT 3"
-  - "\U0001F1F5\U0001F1F1 PL 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1F5\U0001F1F1 PL 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
