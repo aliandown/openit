@@ -204,25 +204,6 @@ proxies:
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 34 TJN"
   type: trojan
-  server: cnamemc1.cdncisco4.co
-  port: 443
-  udp: true
-  password: 63779501-4c22-4a03-83d3-9f611b227e7b
-  sni: c1mc.cdncisco4.co
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F8 US 35 TJN"
-  type: trojan
-  server: 45.63.106.86
-  port: 39277
-  udp: true
-  password: KYAawE5EGp
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 36 TJN"
-  type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
   udp: true
@@ -232,7 +213,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1EB\U0001F1F7 FR 37 TJN"
+- name: "\U0001F1EB\U0001F1F7 FR 35 TJN"
   type: trojan
   server: 57.128.173.6
   port: 443
@@ -241,7 +222,7 @@ proxies:
   sni: www.speedtest.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 36 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -252,12 +233,31 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1E8\U0001F1F3 CN 39 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 37 SSS"
   type: ss
   server: 183.232.170.32
   port: 30016
   password: g12sQi#ss#&1
   cipher: aes-128-gcm
+- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
+  type: trojan
+  server: cnamemc1.cdncisco4.co
+  port: 443
+  udp: true
+  password: 63779501-4c22-4a03-83d3-9f611b227e7b
+  sni: c1mc.cdncisco4.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /422Kdfwzf49IxeZJa
+- name: "\U0001F1FA\U0001F1F8 US 39 TJN"
+  type: trojan
+  server: 45.63.106.86
+  port: 39277
+  udp: true
+  password: KYAawE5EGp
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -296,11 +296,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 32 SSS"
   - "\U0001F1FA\U0001F1F3 UN 33 HTT"
   - "\U0001F1FA\U0001F1F8 US 34 TJN"
-  - "\U0001F1FA\U0001F1F8 US 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 37 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 35 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 36 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSS"
   - "\U0001F1FA\U0001F1F8 US 38 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 39 SSS"
+  - "\U0001F1FA\U0001F1F8 US 39 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -341,10 +341,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 32 SSS"
   - "\U0001F1FA\U0001F1F3 UN 33 HTT"
   - "\U0001F1FA\U0001F1F8 US 34 TJN"
-  - "\U0001F1FA\U0001F1F8 US 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 37 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 35 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 36 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSS"
   - "\U0001F1FA\U0001F1F8 US 38 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 39 SSS"
+  - "\U0001F1FA\U0001F1F8 US 39 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
