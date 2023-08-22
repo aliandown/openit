@@ -172,42 +172,31 @@ proxies:
   password: 74faee5a-4b4c-43ef-ab9c-549d2618772a
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 29 TJN"
-  server: 62.210.188.19
-  port: 443
-  type: trojan
-  password: 27181131b8
-  sni: fra1.connecton.surf
-  skip-cert-verify: true
-- name: "\U0001F1EA\U0001F1F8 ES 30 TJN"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-- name: "\U0001F1F5\U0001F1F1 PL 31 TJN"
-  server: pol2.connecton.surf
-  port: 443
-  type: trojan
-  password: 5d91f01a98
-- name: "\U0001F1EA\U0001F1F8 ES 32 TJN"
+- name: "\U0001F1EA\U0001F1F8 ES 29 TJN"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1F3\U0001F1F1 NL 33 TJN"
-  type: trojan
-  server: cnamemc1.cdncisco3.co
+- name: "\U0001F1EB\U0001F1F7 FR 30 TJN"
+  server: 62.210.188.19
   port: 443
-  udp: true
-  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c1mc.cdncisco3.co
+  type: trojan
+  password: 27181131b8
+  sni: fra1.connecton.surf
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1EB\U0001F1F7 FR 34 TJN"
+- name: "\U0001F1EA\U0001F1F8 ES 31 TJN"
+  server: sp1.connecton.surf
+  port: 443
+  type: trojan
+  password: 41dbabe59a
+- name: "\U0001F1F5\U0001F1F1 PL 32 TJN"
+  server: pol2.connecton.surf
+  port: 443
+  type: trojan
+  password: 5d91f01a98
+- name: "\U0001F1EB\U0001F1F7 FR 33 TJN"
   type: trojan
   server: 57.128.173.6
   port: 443
@@ -216,7 +205,7 @@ proxies:
   sni: www.speedtest.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 35 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 34 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -227,13 +216,13 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1E8\U0001F1F3 CN 36 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 35 SSS"
   type: ss
   server: 183.232.170.32
   port: 30016
   password: g12sQi#ss#&1
   cipher: aes-128-gcm
-- name: "\U0001F1F3\U0001F1F1 NL 37 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 36 TJN"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -244,7 +233,7 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 37 TJN"
   type: trojan
   server: 45.63.106.86
   port: 39277
@@ -252,6 +241,17 @@ proxies:
   password: KYAawE5EGp
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
+  type: trojan
+  server: cnamemc1.cdncisco3.co
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c1mc.cdncisco3.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
 proxy-groups:
 - name: automatic
   type: url-test
@@ -284,15 +284,15 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 26 TJN"
   - "\U0001F1EF\U0001F1F5 JP 27 TJN"
   - "\U0001F1EF\U0001F1F5 JP 28 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 29 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 30 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 31 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 32 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 33 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 34 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 36 SSS"
-  - "\U0001F1F3\U0001F1F1 NL 37 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 29 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 30 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 31 TJN"
+  - "\U0001F1F5\U0001F1F1 PL 32 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 33 TJN"
+  - "\U0001F1FA\U0001F1F8 US 34 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1FA\U0001F1F8 US 37 TJN"
   - "\U0001F1FA\U0001F1F8 US 38 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -328,15 +328,15 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 26 TJN"
   - "\U0001F1EF\U0001F1F5 JP 27 TJN"
   - "\U0001F1EF\U0001F1F5 JP 28 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 29 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 30 TJN"
-  - "\U0001F1F5\U0001F1F1 PL 31 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 32 TJN"
-  - "\U0001F1F3\U0001F1F1 NL 33 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 34 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 35 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 36 SSS"
-  - "\U0001F1F3\U0001F1F1 NL 37 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 29 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 30 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 31 TJN"
+  - "\U0001F1F5\U0001F1F1 PL 32 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 33 TJN"
+  - "\U0001F1FA\U0001F1F8 US 34 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  - "\U0001F1FA\U0001F1F8 US 36 TJN"
+  - "\U0001F1FA\U0001F1F8 US 37 TJN"
   - "\U0001F1FA\U0001F1F8 US 38 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
