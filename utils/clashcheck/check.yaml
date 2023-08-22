@@ -15,7 +15,18 @@ proxies:
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1F3\U0001F1F1 NL 3"
+  type: trojan
+  server: cnamemc1.cdncisco3.co
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c1mc.cdncisco3.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
@@ -26,7 +37,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
   server: jp.stablize.top
   port: 443
@@ -34,7 +45,7 @@ proxies:
   password: 5e65f547-15ec-49f0-9fe6-2340cf1aa2e0
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 5"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   type: trojan
   server: uk.stablize.top
   port: 443
@@ -48,9 +59,10 @@ proxy-groups:
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -59,8 +71,9 @@ proxy-groups:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
