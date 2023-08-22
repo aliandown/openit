@@ -6,7 +6,7 @@ proxies:
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1F1\U0001F1F9 LT 2"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -38,16 +38,11 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 5"
-  server: jp.stablize.top
-  port: 443
-  type: trojan
-  password: 5e65f547-15ec-49f0-9fe6-2340cf1aa2e0
-- name: "\U0001F1F8\U0001F1EC SG 6"
   server: sg.stablize.top
   port: 443
   type: trojan
   password: 5e65f547-15ec-49f0-9fe6-2340cf1aa2e0
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: aujs.stablize.top
   port: 443
   type: trojan
@@ -57,12 +52,11 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F1\U0001F1F9 LT 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -70,11 +64,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F1\U0001F1F9 LT 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
+  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
