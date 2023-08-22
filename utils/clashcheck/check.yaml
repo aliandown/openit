@@ -15,7 +15,7 @@ proxies:
   sni: www.speedtest.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1EC VG 3"
+- name: "\U0001F1F3\U0001F1F1 NL 3"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -31,12 +31,7 @@ proxies:
   port: 443
   type: trojan
   password: 41dbabe59a
-- name: "\U0001F1F5\U0001F1F1 PL 5"
-  server: pol2.connecton.surf
-  port: 443
-  type: trojan
-  password: 5d91f01a98
-- name: "\U0001F1F1\U0001F1FA LU 6"
+- name: "\U0001F1FA\U0001F1F3 UN 5"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -47,16 +42,30 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 45.63.106.86
+  port: 39277
+  udp: true
+  password: KYAawE5EGp
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F5\U0001F1F1 PL 7"
+  server: pol2.connecton.surf
+  port: 443
+  type: trojan
+  password: 5d91f01a98
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FB\U0001F1EC VG 3"
+  - "\U0001F1F3\U0001F1F1 NL 3"
   - "\U0001F1EA\U0001F1F8 ES 4"
-  - "\U0001F1F5\U0001F1F1 PL 5"
-  - "\U0001F1F1\U0001F1FA LU 6"
+  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F5\U0001F1F1 PL 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,9 +74,10 @@ proxy-groups:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FB\U0001F1EC VG 3"
+  - "\U0001F1F3\U0001F1F1 NL 3"
   - "\U0001F1EA\U0001F1F8 ES 4"
-  - "\U0001F1F5\U0001F1F1 PL 5"
-  - "\U0001F1F1\U0001F1FA LU 6"
+  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F5\U0001F1F1 PL 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
