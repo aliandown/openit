@@ -8,14 +8,19 @@ proxies:
   sni: speed.cloudflare.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EA\U0001F1F8 ES 2"
+- name: "\U0001F1F5\U0001F1F1 PL 2"
+  server: pol2.connecton.surf
+  port: 443
+  type: trojan
+  password: 5d91f01a98
+- name: "\U0001F1EA\U0001F1F8 ES 3"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1F1\U0001F1F9 LT 3"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -26,11 +31,6 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1F5\U0001F1F1 PL 4"
-  server: pol2.connecton.surf
-  port: 443
-  type: trojan
-  password: 5d91f01a98
 - name: "\U0001F1F0\U0001F1F7 KR 5"
   server: 813krkr.fr99kt.top
   port: 44333
@@ -41,22 +41,16 @@ proxies:
   port: 60005
   type: trojan
   password: c4117245-69ca-4970-a0b2-b5f2e5ee758e
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: ovous.ovonice.com
-  port: 60004
-  type: trojan
-  password: c4117245-69ca-4970-a0b2-b5f2e5ee758e
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1F1\U0001F1F9 LT 3"
-  - "\U0001F1F5\U0001F1F1 PL 4"
+  - "\U0001F1F5\U0001F1F1 PL 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,11 +58,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1F1\U0001F1F9 LT 3"
-  - "\U0001F1F5\U0001F1F1 PL 4"
+  - "\U0001F1F5\U0001F1F1 PL 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F0\U0001F1F7 KR 5"
   - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
