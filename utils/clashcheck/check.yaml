@@ -8,16 +8,23 @@ proxies:
   sni: 16-163-218-240.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: jp2.lxjc.app
+  server: 163.123.192.36
   port: 443
   udp: true
   password: e62db6f7-88ea-425d-90de-a9ba7770b1d6
   sni: 16-163-218-240.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1E6 CA 3"
+- name: "\U0001F1EA\U0001F1F8 ES 3"
+  server: sp1.connecton.surf
+  port: 443
+  type: trojan
+  password: 41dbabe59a
+  sni: sp1.connecton.surf
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1E6 CA 4"
   type: trojan
   server: 51.161.35.200
   port: 443
@@ -26,14 +33,16 @@ proxies:
   sni: speed.cloudflare.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EA\U0001F1F8 ES 4"
-  server: sp1.connecton.surf
-  port: 443
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
-  password: 41dbabe59a
-  sni: sp1.connecton.surf
+  server: jp2.lxjc.app
+  port: 443
+  udp: true
+  password: e62db6f7-88ea-425d-90de-a9ba7770b1d6
+  sni: 16-163-218-240.nhost.00cdn.com
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
+  network: tcp
+- name: "\U0001F1E6\U0001F1FA AU 6"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -44,21 +53,28 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: fschk.1234567890spcloud.com
-  port: 20004
+- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
-  password: 7cea4e6c-ccb7-48c0-a8ba-77826f836102
+  server: cnamemk.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mk.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1EA\U0001F1F8 ES 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,10 +82,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1EA\U0001F1F8 ES 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
