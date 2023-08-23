@@ -8,23 +8,7 @@ proxies:
   sni: 16-163-218-240.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EA\U0001F1F8 ES 2"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-  sni: sp1.connecton.surf
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  type: trojan
-  server: 51.161.35.200
-  port: 443
-  udp: true
-  password: 006e3baa-cacd-4530-ae52-d633c4e9056d
-  sni: speed.cloudflare.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -35,36 +19,28 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1E8\U0001F1F3 TW 5"
+- name: "\U0001F1E8\U0001F1E6 CA 3"
   type: trojan
-  server: hinet.lxjc.app
+  server: 51.161.35.200
   port: 443
   udp: true
-  password: a00330bc-7f67-4bad-a59b-481cd2d67456
-  sni: 16-163-218-240.nhost.00cdn.com
+  password: 006e3baa-cacd-4530-ae52-d633c4e9056d
+  sni: speed.cloudflare.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 6"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: fschk.1234567890spcloud.com
+  port: 20004
   type: trojan
-  server: cnamemk.ciscocdn1.live
-  port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mk.ciscocdn1.live
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
+  password: 7cea4e6c-ccb7-48c0-a8ba-77826f836102
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,10 +48,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
