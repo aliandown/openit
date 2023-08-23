@@ -1,19 +1,13 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
   type: trojan
-  server: 51.161.35.200
-  port: 443
+  server: ho1one.09vpn.com
+  port: 2083
   udp: true
-  password: 006e3baa-cacd-4530-ae52-d633c4e9056d
-  sni: speed.cloudflare.com
+  password: u7448158457
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EA\U0001F1F8 ES 2"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -24,7 +18,21 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1EA\U0001F1F8 ES 3"
+  server: sp1.connecton.surf
+  port: 443
+  type: trojan
+  password: 41dbabe59a
+- name: "\U0001F1E8\U0001F1E6 CA 4"
+  type: trojan
+  server: 51.161.35.200
+  port: 443
+  udp: true
+  password: 006e3baa-cacd-4530-ae52-d633c4e9056d
+  sni: speed.cloudflare.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -35,14 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  type: trojan
-  server: 813krkr.fr99kt.top
-  port: 44333
-  udp: true
-  password: 1fb9c481-058b-432d-ba73-06aba4ffa75e
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
   server: cnamemt.ciscocdn1.live
@@ -54,40 +54,37 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1F0\U0001F1F7 KR 7"
   type: trojan
-  server: cnamemk.ciscocdn1.live
-  port: 443
+  server: 813krkr.fr99kt.top
+  port: 44333
   udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mk.ciscocdn1.live
+  password: 1fb9c481-058b-432d-ba73-06aba4ffa75e
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EA\U0001F1F8 ES 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F0\U0001F1F7 KR 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
