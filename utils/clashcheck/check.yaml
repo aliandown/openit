@@ -1,12 +1,5 @@
 proxies:
-- name: "\U0001F1EA\U0001F1F8 ES 1"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-  sni: sp1.connecton.surf
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1F1\U0001F1F9 LT 1"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -17,18 +10,14 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: cnamemt.ciscocdn1.live
+- name: "\U0001F1EA\U0001F1F8 ES 2"
+  server: sp1.connecton.surf
   port: 443
-  udp: true
-  password: 4d706727-996f-4427-930d-60f3bd414cf9
-  sni: c2mt.ciscocdn1.live
+  type: trojan
+  password: 41dbabe59a
+  sni: sp1.connecton.surf
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -39,6 +28,17 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: cnamemt.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mt.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
 - name: "\U0001F1F8\U0001F1EC SG 5"
   type: trojan
   server: sg1.fighting.win
@@ -51,8 +51,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F1\U0001F1F9 LT 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F8\U0001F1EC SG 5"
@@ -62,8 +62,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F1\U0001F1F9 LT 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F8\U0001F1EC SG 5"
