@@ -14,18 +14,7 @@ proxies:
   password: 8861ad96-45d4-42f7-9703-7de363a39a0f
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: cnamemc1.cdncisco3.co
-  port: 443
-  udp: true
-  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c1mc.cdncisco3.co
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -36,7 +25,7 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1FA\U0001F1F3 UN 5"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -53,9 +42,8 @@ proxy-groups:
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1"
   - "\U0001F1F8\U0001F1EC SG 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,8 +52,7 @@ proxy-groups:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1"
   - "\U0001F1F8\U0001F1EC SG 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
