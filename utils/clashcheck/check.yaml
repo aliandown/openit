@@ -1,11 +1,15 @@
 proxies:
-- name: "\U0001F1EA\U0001F1F8 ES 1"
-  server: sp1.connecton.surf
-  port: 443
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  password: 41dbabe59a
-  sni: sp1.connecton.surf
+  server: cnamemc1.cdncisco3.co
+  port: 443
+  udp: true
+  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
+  sni: c1mc.cdncisco3.co
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ywQ9KSLI4ZBm9wOAXUaN
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: cnamemc.cdncisco.org
@@ -28,17 +32,13 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1F3\U0001F1F1 NL 4"
-  type: trojan
-  server: cnamemc.ciscocdn1.live
+- name: "\U0001F1EA\U0001F1F8 ES 4"
+  server: sp1.connecton.surf
   port: 443
-  udp: true
-  password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3
-  sni: c3mc.ciscocdn1.live
+  type: trojan
+  password: 41dbabe59a
+  sni: sp1.connecton.surf
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ywQ9KSLI4ZBm9wOAXUaN
 - name: "\U0001F1F8\U0001F1EC SG 5"
   type: trojan
   server: sg1.fighting.win
@@ -51,10 +51,10 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1E6 UA 3"
-  - "\U0001F1F3\U0001F1F1 NL 4"
+  - "\U0001F1EA\U0001F1F8 ES 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -62,10 +62,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1E6 UA 3"
-  - "\U0001F1F3\U0001F1F1 NL 4"
+  - "\U0001F1EA\U0001F1F8 ES 4"
   - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
