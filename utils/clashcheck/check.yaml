@@ -6,18 +6,7 @@ proxies:
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F3 UN 2"
-  type: trojan
-  server: cnamemc.cdncisco.org
-  port: 443
-  udp: true
-  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
-  sni: c5mc.cdncisco.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1E6\U0001F1FA AU 3"
+- name: "\U0001F1F3\U0001F1F1 NL 2"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -28,7 +17,18 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  type: trojan
+  server: cnamemc.cdncisco.org
+  port: 443
+  udp: true
+  password: 0ad5e311-7189-4124-ac8f-f828b681f10e
+  sni: c5mc.cdncisco.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5CSwsJSwLmxCxOCSBhOZubb
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -39,15 +39,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: ko1.lianpi.xyz
-  port: 51256
-  udp: true
-  password: ab204b2d-dac8-4cf4-8239-d46d49d9cad5
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6"
+- name: "\U0001F1F8\U0001F1EC SG 5"
   type: trojan
   server: sg1.fighting.win
   port: 10001
@@ -60,11 +52,10 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1E6\U0001F1FA AU 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F3\U0001F1F1 NL 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,10 +63,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1E6\U0001F1FA AU 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F3\U0001F1F1 NL 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
