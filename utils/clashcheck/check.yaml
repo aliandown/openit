@@ -39,6 +39,14 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1F8\U0001F1EC SG 5"
+  type: trojan
+  server: sg1.fighting.win
+  port: 10001
+  udp: true
+  password: 8861ad96-45d4-42f7-9703-7de363a39a0f
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -47,6 +55,7 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -57,5 +66,6 @@ proxy-groups:
   - "\U0001F1F3\U0001F1F1 NL 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
