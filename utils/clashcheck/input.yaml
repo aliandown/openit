@@ -89,13 +89,14 @@ proxies:
   type: trojan
   password: aadebd6c-5714-4e8d-886d-a442eb39950c
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 CN 16 SSS"
-  server: 183.232.170.32
-  port: 30004
-  type: ss
-  cipher: aes-128-gcm
-  password: g12sQi#ss#&1
-- name: "\U0001F1F8\U0001F1EC SG 17 TJN"
+- name: "\U0001F1EA\U0001F1F8 ES 16 TJN"
+  server: sp1.connecton.surf
+  port: 443
+  type: trojan
+  password: 41dbabe59a
+  sni: sp1.connecton.surf
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 HK 17 TJN"
   server: vn.mjt001.com
   port: 443
   type: trojan
@@ -129,7 +130,7 @@ proxies:
   password: 224c91ee-7e18-4f1e-86bb-c1836f218c95
   sni: sg.mjt001.com
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 22 TJN"
+- name: "\U0001F1F8\U0001F1EC SG 22 TJN"
   server: au.mjt001.com
   port: 443
   type: trojan
@@ -142,13 +143,12 @@ proxies:
   password: a9e5d938-6fa0-4c08-9c41-056c603a4a09
   sni: 18-140-66-207.nhost.00cdn.com
   skip-cert-verify: true
-- name: "\U0001F1EA\U0001F1F8 ES 24 TJN"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-  sni: sp1.connecton.surf
-  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 24 SSS"
+  server: 183.232.170.32
+  port: 30004
+  type: ss
+  cipher: aes-128-gcm
+  password: g12sQi#ss#&1
 proxy-groups:
 - name: automatic
   type: url-test
@@ -168,15 +168,15 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 13 TJN"
   - "\U0001F1E8\U0001F1E6 CA 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
-  - "\U0001F1F8\U0001F1EC SG 17 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 16 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 17 TJN"
   - "\U0001F1EF\U0001F1F5 JP 18 TJN"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
   - "\U0001F1F8\U0001F1EC SG 20 TJN"
   - "\U0001F1F0\U0001F1F7 KR 21 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 22 TJN"
+  - "\U0001F1F8\U0001F1EC SG 22 TJN"
   - "\U0001F1F8\U0001F1EC SG 23 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 24 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -198,14 +198,14 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 13 TJN"
   - "\U0001F1E8\U0001F1E6 CA 14 TJN"
   - "\U0001F1E8\U0001F1E6 CA 15 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 16 SSS"
-  - "\U0001F1F8\U0001F1EC SG 17 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 16 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 17 TJN"
   - "\U0001F1EF\U0001F1F5 JP 18 TJN"
   - "\U0001F1F8\U0001F1EC SG 19 TJN"
   - "\U0001F1F8\U0001F1EC SG 20 TJN"
   - "\U0001F1F0\U0001F1F7 KR 21 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 22 TJN"
+  - "\U0001F1F8\U0001F1EC SG 22 TJN"
   - "\U0001F1F8\U0001F1EC SG 23 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 24 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 24 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
