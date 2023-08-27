@@ -1,22 +1,19 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  server: 108.181.23.249
-  port: 443
+- name: "\U0001F1FA\U0001F1F3 UN 1"
+  server: us1-ss.dbsyt.lol
+  port: 21029
   type: trojan
-  password: aadebd6c-5714-4e8d-886d-a442eb39950c
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 2"
-  server: 108.181.24.41
-  port: 443
+  password: 1ed44115-c20e-46aa-9b99-e76252af4fce
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us2.dbsyt.lol
+  port: 21022
   type: trojan
-  password: aadebd6c-5714-4e8d-886d-a442eb39950c
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: gsawsjp2.aiopen.cfd
-  port: 443
+  password: 1ed44115-c20e-46aa-9b99-e76252af4fce
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: jp1-ss.dbsyt.lol
+  port: 21033
   type: trojan
-  password: aadebd6c-5714-4e8d-886d-a442eb39950c
-  sni: 20-212-60-88.nhost.00cdn.com
+  password: 1ed44115-c20e-46aa-9b99-e76252af4fce
 - name: "\U0001F1EA\U0001F1F8 ES 4"
   server: sp1.connecton.surf
   port: 443
@@ -24,23 +21,30 @@ proxies:
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: hk1-ss.dbsyt.lol
+  port: 20024
+  type: trojan
+  password: 1ed44115-c20e-46aa-9b99-e76252af4fce
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EA\U0001F1F8 ES 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EA\U0001F1F8 ES 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
