@@ -6,11 +6,23 @@ proxies:
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: trojan
+  server: 110.72.99.118
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -18,5 +30,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
