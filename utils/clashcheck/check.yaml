@@ -6,11 +6,59 @@ proxies:
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: trojan
+  server: 49dafd9.na.gladns.com
+  port: 3306
+  udp: true
+  password: dc2d9db59868ba6b
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: trojan
+  server: 110.72.99.118
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: trojan
+  server: 0bee9ed.na.gladns.com
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  type: trojan
+  server: 603b827.nc.gladns.com
+  port: 3306
+  udp: true
+  password: d4e41ff772c7fd45
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -18,5 +66,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
