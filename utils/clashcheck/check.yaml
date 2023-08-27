@@ -1,26 +1,26 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  server: us1-ss.dbsyt.lol
-  port: 21029
-  type: trojan
-  password: 1ed44115-c20e-46aa-9b99-e76252af4fce
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: us2.dbsyt.lol
   port: 21022
   type: trojan
   password: 1ed44115-c20e-46aa-9b99-e76252af4fce
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: jp1-ss.dbsyt.lol
-  port: 21033
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  server: us1-ss.dbsyt.lol
+  port: 21029
   type: trojan
   password: 1ed44115-c20e-46aa-9b99-e76252af4fce
-- name: "\U0001F1EA\U0001F1F8 ES 4"
+- name: "\U0001F1EA\U0001F1F8 ES 3"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: jp1-ss.dbsyt.lol
+  port: 21033
+  type: trojan
+  password: 1ed44115-c20e-46aa-9b99-e76252af4fce
 - name: "\U0001F1E8\U0001F1F3 HK 5"
   server: hk1-ss.dbsyt.lol
   port: 20024
@@ -30,10 +30,10 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EA\U0001F1F8 ES 4"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -41,10 +41,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EA\U0001F1F8 ES 4"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
