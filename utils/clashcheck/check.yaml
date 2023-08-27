@@ -11,7 +11,13 @@ proxies:
   type: trojan
   password: aadebd6c-5714-4e8d-886d-a442eb39950c
   sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EA\U0001F1F8 ES 3"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: gsawsjp2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: aadebd6c-5714-4e8d-886d-a442eb39950c
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EA\U0001F1F8 ES 4"
   server: sp1.connecton.surf
   port: 443
   type: trojan
@@ -24,7 +30,8 @@ proxy-groups:
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EA\U0001F1F8 ES 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -33,6 +40,7 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EA\U0001F1F8 ES 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
