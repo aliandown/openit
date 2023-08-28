@@ -1,35 +1,35 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 TJN"
-  server: pqawszf.aiopen.cfd
-  port: 35000
-  type: trojan
-  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
-  sni: us4.pqjc.site
-- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
-  server: pqawszf.aiopen.cfd
-  port: 35000
-  type: trojan
-  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
-  sni: us2.pqjc.site
-- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
-  server: pqawszf.aiopen.cfd
-  port: 35000
-  type: trojan
-  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
-  sni: us1.pqjc.site
-- name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  server: pqawszf.aiopen.cfd
-  port: 35000
-  type: trojan
-  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
-  sni: us3.pqjc.site
-- name: "\U0001F1EA\U0001F1F8 ES 5 TJN"
+- name: "\U0001F1EA\U0001F1F8 ES 1 TJN"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 2 TJN"
+  server: pqawszf.aiopen.cfd
+  port: 35000
+  type: trojan
+  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
+  sni: us4.pqjc.site
+- name: "\U0001F1E8\U0001F1F3 CN 3 TJN"
+  server: pqawszf.aiopen.cfd
+  port: 35000
+  type: trojan
+  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
+  sni: us2.pqjc.site
+- name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
+  server: pqawszf.aiopen.cfd
+  port: 35000
+  type: trojan
+  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
+  sni: us1.pqjc.site
+- name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
+  server: pqawszf.aiopen.cfd
+  port: 35000
+  type: trojan
+  password: 9480d7c6-03b9-4ae0-8237-5dfcfeb30b94
+  sni: us3.pqjc.site
 - name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
   type: ss
   server: free.node.kk-proxy.pro
@@ -49,11 +49,11 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 TJN"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1E8\U0001F1E6 CA 7 TJN"
   url: https://www.google.com/favicon.ico
@@ -62,11 +62,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 TJN"
   - "\U0001F1E8\U0001F1F3 CN 3 TJN"
   - "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 5 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1E8\U0001F1E6 CA 7 TJN"
 rules:
