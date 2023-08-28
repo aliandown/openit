@@ -1,11 +1,5 @@
 proxies:
 - name: "\U0001F1E8\U0001F1E6 CA 1"
-  server: 108.181.24.41
-  port: 443
-  type: trojan
-  password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 2"
   type: trojan
   server: 51.161.35.200
   port: 443
@@ -14,20 +8,27 @@ proxies:
   sni: speed.cloudflare.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EA\U0001F1F8 ES 3"
+- name: "\U0001F1EA\U0001F1F8 ES 2"
   server: sp1.connecton.surf
   port: 443
   type: trojan
   password: 41dbabe59a
   sni: sp1.connecton.surf
   skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: zf.zsr-seoul2.661145.xyz
+  port: 50848
+  type: trojan
+  password: 66018fc4-c8c2-411f-99ae-fe410993a3bd
+  sni: zf.zsr-seoul2.661145.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1EA\U0001F1F8 ES 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -35,7 +36,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1EA\U0001F1F8 ES 3"
+  - "\U0001F1EA\U0001F1F8 ES 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
