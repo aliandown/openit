@@ -15,12 +15,20 @@ proxies:
   sni: speed.cloudflare.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: zf.zsr-seoul2.661145.xyz
+  port: 50848
+  type: trojan
+  password: 66018fc4-c8c2-411f-99ae-fe410993a3bd
+  sni: zf.zsr-seoul2.661145.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,5 +37,6 @@ proxy-groups:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
