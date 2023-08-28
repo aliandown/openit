@@ -1,5 +1,14 @@
 proxies:
-- name: "\U0001F1EA\U0001F1F8 ES 1"
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  type: trojan
+  server: 51.161.35.200
+  port: 443
+  udp: true
+  password: 006e3baa-cacd-4530-ae52-d633c4e9056d
+  sni: speed.cloudflare.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EA\U0001F1F8 ES 2"
   server: sp1.connecton.surf
   port: 443
   type: trojan
@@ -10,13 +19,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
