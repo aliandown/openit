@@ -119,7 +119,7 @@ proxies:
   port: null
   tls: true
   skip-cert-verify: true
-- name: "\U0001F1E6\U0001F1FA AU 21 TJN"
+- name: "\U0001F1F3\U0001F1F1 NL 21 TJN"
   type: trojan
   server: cnamemc.ciscocdn1.live
   port: 443
@@ -130,7 +130,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F3 UN 22 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 22 TJN"
   type: trojan
   server: cnamemc.cdncisco.org
   port: 443
@@ -141,7 +141,7 @@ proxies:
   network: ws
   ws-opts:
     path: /5CSwsJSwLmxCxOCSBhOZubb
-- name: "\U0001F1E6\U0001F1FA AU 23 TJN"
+- name: "\U0001F1F3\U0001F1F1 NL 23 TJN"
   type: trojan
   server: cnamemc1.cdncisco3.co
   port: 443
@@ -152,7 +152,7 @@ proxies:
   network: ws
   ws-opts:
     path: /ywQ9KSLI4ZBm9wOAXUaN
-- name: "\U0001F1FA\U0001F1F8 US 24 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 24 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -175,16 +175,10 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 26 SSS"
   type: ss
   server: free.node.kk-proxy.pro
-  port: 54087
+  port: 31659
   password: 956e5797-bf54-414f-80bc-5a896f3a553d
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 27 SSS"
-  type: ss
-  server: free.node.kk-proxy.pro
-  port: 55928
-  password: 956e5797-bf54-414f-80bc-5a896f3a553d
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1FA\U0001F1F8 US 28 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 27 TJN"
   type: trojan
   server: cnamemt.ciscocdn1.live
   port: 443
@@ -195,7 +189,7 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
-- name: "\U0001F1FA\U0001F1F8 US 29 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 28 TJN"
   type: trojan
   server: cnamemk.ciscocdn1.live
   port: 443
@@ -206,12 +200,29 @@ proxies:
   network: ws
   ws-opts:
     path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1E8\U0001F1F3 CN 29 SSS"
+  type: ss
+  server: free.node.kk-proxy.pro
+  port: 54087
+  password: 956e5797-bf54-414f-80bc-5a896f3a553d
+  cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 30 SSS"
   type: ss
   server: free.node.kk-proxy.pro
-  port: 31659
+  port: 55928
   password: 956e5797-bf54-414f-80bc-5a896f3a553d
   cipher: chacha20-ietf-poly1305
+- name: "\U0001F1F3\U0001F1F1 NL 31 TJN"
+  type: trojan
+  server: cnamemc1.cdncisco4.co
+  port: 443
+  udp: true
+  password: 63779501-4c22-4a03-83d3-9f611b227e7b
+  sni: c1mc.cdncisco4.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /422Kdfwzf49IxeZJa
 proxy-groups:
 - name: automatic
   type: url-test
@@ -236,16 +247,17 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 18 SK5"
   - "\U0001F1E6\U0001F1FA AU 19 SK5"
   - "\U0001F1FA\U0001F1F3 UN 20 HTT"
-  - "\U0001F1E6\U0001F1FA AU 21 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 22 TJN"
-  - "\U0001F1E6\U0001F1FA AU 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 21 TJN"
+  - "\U0001F1FA\U0001F1F8 US 22 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 23 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
   - "\U0001F1F0\U0001F1F7 KR 25 TJN"
   - "\U0001F1E8\U0001F1F3 CN 26 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 27 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
-  - "\U0001F1FA\U0001F1F8 US 29 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 29 SSS"
   - "\U0001F1E8\U0001F1F3 CN 30 SSS"
+  - "\U0001F1F3\U0001F1F1 NL 31 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -272,15 +284,16 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 18 SK5"
   - "\U0001F1E6\U0001F1FA AU 19 SK5"
   - "\U0001F1FA\U0001F1F3 UN 20 HTT"
-  - "\U0001F1E6\U0001F1FA AU 21 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 22 TJN"
-  - "\U0001F1E6\U0001F1FA AU 23 TJN"
-  - "\U0001F1FA\U0001F1F8 US 24 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 21 TJN"
+  - "\U0001F1FA\U0001F1F8 US 22 TJN"
+  - "\U0001F1F3\U0001F1F1 NL 23 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 24 TJN"
   - "\U0001F1F0\U0001F1F7 KR 25 TJN"
   - "\U0001F1E8\U0001F1F3 CN 26 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 27 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 27 TJN"
   - "\U0001F1FA\U0001F1F8 US 28 TJN"
-  - "\U0001F1FA\U0001F1F8 US 29 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 29 SSS"
   - "\U0001F1E8\U0001F1F3 CN 30 SSS"
+  - "\U0001F1F3\U0001F1F1 NL 31 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
