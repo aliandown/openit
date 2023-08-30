@@ -86,42 +86,48 @@ proxies:
   sni: 20-212-60-88.nhost.00cdn.com
 - name: "\U0001F1E8\U0001F1F3 CN 15 SSS"
   type: ss
-  server: yidong.liulangdiqiu.cyou
-  port: 10726
-  password: 27de6fe2-606d-4683-aa22-c1a50a3949cb
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 16 SSS"
-  type: ss
   server: free.node.kk-proxy.pro
   port: 54455
   password: b8b481de-2143-4ce1-a7cc-60c3b563b624
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 17 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 16 SSS"
   type: ss
   server: free.node.kk-proxy.pro
   port: 54087
   password: b8b481de-2143-4ce1-a7cc-60c3b563b624
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 18 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 17 SSS"
   type: ss
   server: free.node.kk-proxy.pro
   port: 55928
   password: b8b481de-2143-4ce1-a7cc-60c3b563b624
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1ED\U0001F1F0 HK 19 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 18 TJN"
   type: trojan
   server: in.stablize.top
   port: 443
   udp: true
   password: 8008b06e-2d1d-421c-9cdc-20af1f59093a
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 19 SSS"
+  type: ss
+  server: yidong.liulangdiqiu.cyou
+  port: 10726
+  password: 27de6fe2-606d-4683-aa22-c1a50a3949cb
+  cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 20 SSS"
+  type: ss
+  server: free.node.kk-proxy.pro
+  port: 54455
+  password: b8b481de-2143-4ce1-a7cc-60c3b563b624
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 21 SSS"
   type: ss
   server: free.node.kk-proxy.pro
   port: 55928
   password: b8b481de-2143-4ce1-a7cc-60c3b563b624
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 21 SSR"
+- name: "\U0001F1E8\U0001F1F3 CN 22 SSR"
   type: ssr
   server: yd-02.paofunlink.com
   port: 1052
@@ -132,7 +138,7 @@ proxies:
   obfs-param: 69789218362.microsoft.com
   protocol-param: 218362:ss2ufeefig
   group: SSRProvider
-- name: "\U0001F1ED\U0001F1F0 HK 22 TJN"
+- name: "\U0001F1ED\U0001F1F0 HK 23 TJN"
   type: trojan
   server: 18.163.249.175
   port: 443
@@ -140,7 +146,7 @@ proxies:
   password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
   sni: golang.protocolbuffer.com
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 23 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 24 SSS"
   type: ss
   server: 183.232.170.32
   port: 30005
@@ -149,12 +155,6 @@ proxies:
   plugin: obfs-local
   plugin-opts:
     mode: websocket
-- name: "\U0001F1E8\U0001F1F3 CN 24 SSS"
-  type: ss
-  server: free.node.kk-proxy.pro
-  port: 54455
-  password: b8b481de-2143-4ce1-a7cc-60c3b563b624
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
@@ -176,12 +176,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 15 SSS"
   - "\U0001F1E8\U0001F1F3 CN 16 SSS"
   - "\U0001F1E8\U0001F1F3 CN 17 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 18 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 19 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 18 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1E8\U0001F1F3 CN 20 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  - "\U0001F1ED\U0001F1F0 HK 22 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 22 SSR"
+  - "\U0001F1ED\U0001F1F0 HK 23 TJN"
   - "\U0001F1E8\U0001F1F3 CN 24 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -206,12 +206,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 15 SSS"
   - "\U0001F1E8\U0001F1F3 CN 16 SSS"
   - "\U0001F1E8\U0001F1F3 CN 17 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 18 SSS"
-  - "\U0001F1ED\U0001F1F0 HK 19 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 18 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 19 SSS"
   - "\U0001F1E8\U0001F1F3 CN 20 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 21 SSR"
-  - "\U0001F1ED\U0001F1F0 HK 22 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 23 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 21 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 22 SSR"
+  - "\U0001F1ED\U0001F1F0 HK 23 TJN"
   - "\U0001F1E8\U0001F1F3 CN 24 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
