@@ -1,7 +1,7 @@
 proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 1"
-  server: 183.232.112.85
-  port: 560
+  server: 183.232.112.72
+  port: 561
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -10,8 +10,8 @@ proxies:
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
 - name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 183.232.112.84
-  port: 562
+  server: 183.232.112.85
+  port: 561
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -20,26 +20,6 @@ proxies:
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
 - name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 183.232.112.85
-  port: 562
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 32407:62778
-  obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 183.232.112.84
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 32407:62778
-  obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: 183.232.112.80
   port: 563
   type: ssr
@@ -49,9 +29,9 @@ proxies:
   obfs: plain
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: 183.232.112.72
-  port: 560
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 183.232.112.78
+  port: 562
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -59,27 +39,7 @@ proxies:
   obfs: plain
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: 116.162.172.81
-  port: 560
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 32407:62778
-  obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: 116.162.172.55
-  port: 563
-  type: ssr
-  cipher: chacha20-ietf
-  password: mblank1port
-  protocol: auth_aes128_md5
-  obfs: plain
-  protocol-param: 32407:62778
-  obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 9"
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: 116.162.172.54
   port: 563
   type: ssr
@@ -89,9 +49,9 @@ proxies:
   obfs: plain
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: 116.162.172.49
-  port: 612
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 116.162.172.55
+  port: 563
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -109,10 +69,6 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -125,9 +81,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
