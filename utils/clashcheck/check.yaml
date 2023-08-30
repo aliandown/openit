@@ -10,8 +10,8 @@ proxies:
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
 - name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 183.232.112.72
-  port: 561
+  server: 183.232.112.80
+  port: 562
   type: ssr
   cipher: chacha20-ietf
   password: mblank1port
@@ -19,26 +19,12 @@ proxies:
   obfs: plain
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: vpnhat.stablize.top
-  port: 443
-  type: trojan
-  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: vpnpool.stablize.top
-  port: 443
-  type: trojan
-  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
-  sni: ap.stablize.top
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -47,7 +33,5 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
