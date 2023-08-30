@@ -1,16 +1,6 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
-  server: vpnpool.stablize.top
-  port: 443
-  type: trojan
-  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: vpnhat.stablize.top
-  port: 443
-  type: trojan
-  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 183.232.112.85
+- name: "\U0001F1E8\U0001F1F3 CN 1"
+  server: 183.232.112.72
   port: 561
   type: ssr
   cipher: chacha20-ietf
@@ -19,8 +9,8 @@ proxies:
   obfs: plain
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 183.232.112.68
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  server: 183.232.112.80
   port: 562
   type: ssr
   cipher: chacha20-ietf
@@ -29,41 +19,76 @@ proxies:
   obfs: plain
   protocol-param: 32407:62778
   obfs-param: t.me/vpnhat
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: vpnpool.stablize.top
-  port: 443
-  type: trojan
-  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
-  sni: ap.stablize.top
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   server: vpnhat.stablize.top
   port: 443
   type: trojan
   password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
-  sni: ap.stablize.top
-  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: vpnpool.stablize.top
+  port: 443
+  type: trojan
+  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: vpnhat.stablize.top
+  port: 443
+  type: trojan
+  password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 183.232.112.78
+  port: 560
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 32407:62778
+  obfs-param: t.me/vpnhat
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: 116.162.172.54
+  port: 563
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 32407:62778
+  obfs-param: t.me/vpnhat
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: 183.232.112.80
+  port: 563
+  type: ssr
+  cipher: chacha20-ietf
+  password: mblank1port
+  protocol: auth_aes128_md5
+  obfs: plain
+  protocol-param: 32407:62778
+  obfs-param: t.me/vpnhat
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
