@@ -1,6 +1,23 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: cnamemk.ciscocdn1.live
+  port: 443
+  udp: true
+  password: 4d706727-996f-4427-930d-60f3bd414cf9
+  sni: c2mk.ciscocdn1.live
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rDCYQta83d0oPABKBhcIX
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: gsawshk2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: gsawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
@@ -9,13 +26,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
