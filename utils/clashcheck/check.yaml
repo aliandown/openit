@@ -6,7 +6,7 @@ proxies:
   password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
   sni: www.speedtest.net
   skip-cert-verify: true
-- name: "\U0001F1E6\U0001F1FA AU 2"
+- name: "\U0001F1E9\U0001F1EA DE 2"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -26,7 +26,13 @@ proxies:
   sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ss
+  server: yidong.liulangdiqiu.cyou
+  port: 10707
+  password: 27de6fe2-606d-4683-aa22-c1a50a3949cb
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
   server: 45.11.104.94
   port: 3306
@@ -37,14 +43,29 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  type: ss
+  server: yidong.liulangdiqiu.cyou
+  port: 10704
+  password: 27de6fe2-606d-4683-aa22-c1a50a3949cb
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: ss
+  server: yidong.liulangdiqiu.cyou
+  port: 10708
+  password: 27de6fe2-606d-4683-aa22-c1a50a3949cb
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -52,8 +73,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
