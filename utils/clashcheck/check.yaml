@@ -6,7 +6,16 @@ proxies:
   password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
   sni: www.speedtest.net
   skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  type: trojan
+  server: kbawsjp1.aiopen.cfd
+  port: 443
+  udp: true
+  password: 343f9a0c-494e-4c23-8adc-afb3f75c1294
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 3"
   type: trojan
   server: cnamemc1.cdncisco4.co
   port: 443
@@ -17,16 +26,12 @@ proxies:
   network: ws
   ws-opts:
     path: /422Kdfwzf49IxeZJa
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: ovozhaws.ovonice.com
+  port: 60002
   type: trojan
-  server: kbawsjp1.aiopen.cfd
-  port: 443
-  udp: true
-  password: 343f9a0c-494e-4c23-8adc-afb3f75c1294
-  sni: 4-193-105-141.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+  password: cdaacb3e-00c4-4d6f-a63c-298cfb36e113
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
   server: 45.11.104.94
   port: 3306
@@ -42,9 +47,10 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -52,8 +58,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
