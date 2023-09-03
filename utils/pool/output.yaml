@@ -4,23 +4,23 @@ proxies:
   port: 443
   type: trojan
   password: 41dbabe59a
-- name: "\U0001F1EA\U0001F1F8 ES 2 TJN"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-- name: "\U0001F1EA\U0001F1F8 ES 3 TJN"
-  server: sp1.connecton.surf
-  port: 443
-  type: trojan
-  password: 41dbabe59a
-- name: "\U0001F1EB\U0001F1F7 FR 4 TJN"
+- name: "\U0001F1EB\U0001F1F7 FR 2 TJN"
   server: 57.128.173.6
   port: 443
   type: trojan
   password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d
   sni: www.speedtest.net
   skip-cert-verify: true
+- name: "\U0001F1EA\U0001F1F8 ES 3 TJN"
+  server: sp1.connecton.surf
+  port: 443
+  type: trojan
+  password: 41dbabe59a
+- name: "\U0001F1EA\U0001F1F8 ES 4 TJN"
+  server: sp1.connecton.surf
+  port: 443
+  type: trojan
+  password: 41dbabe59a
 - name: "\U0001F1E8\U0001F1F3 CN 5 SSR"
   server: 183.232.112.78
   port: 562
@@ -398,27 +398,56 @@ proxies:
   password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
   sni: ap.stablize.top
   skip-cert-verify: true
-- name: "\U0001F1ED\U0001F1F0 HK 43 TJN"
+- name: "\U0001F1F0\U0001F1F7 KR 43 TJN"
   server: vpnhat.stablize.top
   port: 443
   type: trojan
   password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
   sni: ap.stablize.top
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 44 SSS"
+- name: "\U0001F1E8\U0001F1E6 CA 44 TJN"
+  type: trojan
+  server: ca-trojan.bonds.id
+  port: 443
+  udp: true
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 45 HTT"
+  type: http
+  server: 124.15.12.24
+  port: 251
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1F3 CN 46 SK5"
+  type: socks5
+  server: 124.15.12.24
+  port: 2312
+- name: "\U0001F1E6\U0001F1FA AU 47 SK5"
+  type: socks5
+  server: 1.2.3.4
+  port: 123
+  username: username
+  password: password
+- name: "\U0001F1E8\U0001F1F3 CN 48 SSS"
   type: ss
   server: cm1-go.go001.buzz
   port: 31101
   password: '123456'
   cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 49 SSS"
+  type: ss
+  server: free.node.kk-proxy.pro
+  port: 54455
+  password: 7b5e7dee-645f-476b-bd25-7748d5f69962
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EA\U0001F1F8 ES 1 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 2 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 2 TJN"
   - "\U0001F1EA\U0001F1F8 ES 3 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 4 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSR"
   - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   - "\U0001F1E8\U0001F1F3 CN 7 SSR"
@@ -457,8 +486,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 40 SSR"
   - "\U0001F1E8\U0001F1F3 CN 41 SSR"
   - "\U0001F1F0\U0001F1F7 KR 42 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 43 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 44 SSS"
+  - "\U0001F1F0\U0001F1F7 KR 43 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 44 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 45 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 46 SK5"
+  - "\U0001F1E6\U0001F1FA AU 47 SK5"
+  - "\U0001F1E8\U0001F1F3 CN 48 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 49 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -466,9 +500,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EA\U0001F1F8 ES 1 TJN"
-  - "\U0001F1EA\U0001F1F8 ES 2 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 2 TJN"
   - "\U0001F1EA\U0001F1F8 ES 3 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 4 TJN"
+  - "\U0001F1EA\U0001F1F8 ES 4 TJN"
   - "\U0001F1E8\U0001F1F3 CN 5 SSR"
   - "\U0001F1E8\U0001F1F3 CN 6 SSR"
   - "\U0001F1E8\U0001F1F3 CN 7 SSR"
@@ -507,7 +541,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 40 SSR"
   - "\U0001F1E8\U0001F1F3 CN 41 SSR"
   - "\U0001F1F0\U0001F1F7 KR 42 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 43 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 44 SSS"
+  - "\U0001F1F0\U0001F1F7 KR 43 TJN"
+  - "\U0001F1E8\U0001F1E6 CA 44 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 45 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 46 SK5"
+  - "\U0001F1E6\U0001F1FA AU 47 SK5"
+  - "\U0001F1E8\U0001F1F3 CN 48 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 49 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
