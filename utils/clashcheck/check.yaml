@@ -1,25 +1,20 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: usa2.connecton.surf
-  port: 443
-  type: trojan
-  password: 29dbe98050
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: usa3.connecton.surf
   port: 443
   type: trojan
   password: 3550ce3dec
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa2.connecton.surf
+  port: 443
+  type: trojan
+  password: 29dbe98050
 - name: "\U0001F1EC\U0001F1E7 GB 3"
   server: uk1.connecton.surf
   port: 443
   type: trojan
   password: ee4657c907
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: fschk.1234567890spcloud.com
-  port: 20003
-  type: trojan
-  password: 7cea4e6c-ccb7-48c0-a8ba-77826f836102
-- name: "\U0001F1EE\U0001F1F3 IN 5"
+- name: "\U0001F1EE\U0001F1F3 IN 4"
   type: trojan
   server: 103.106.228.223
   port: 443
@@ -33,8 +28,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EE\U0001F1F3 IN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -44,7 +38,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EE\U0001F1F3 IN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
