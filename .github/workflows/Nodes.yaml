@@ -12,7 +12,7 @@ jobs:
     name: Collecting & Speedtest
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3     #git clone
+    - uses: actions/checkout@v4     #git clone
     - uses: actions/setup-python@v4 #python环境
       with:
         python-version: '3.x'
@@ -41,7 +41,7 @@ jobs:
     needs: cs-job
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3   #git clone
+    - uses: actions/checkout@v4   #git clone
     - uses: actions/setup-node@v3 #Node.js环境
       with:
         node-version: 16
@@ -85,7 +85,7 @@ jobs:
     needs: rr-job
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3 #git clone
+    - uses: actions/checkout@v4 #git clone
     - name: Timezone #UTC+0 → UTC+8
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: init
