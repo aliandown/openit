@@ -1,25 +1,25 @@
 proxies:
 - name: "\U0001F1EF\U0001F1F5 JP 1 TJN"
   server: fschk.1234567890spcloud.com
-  port: 20004
-  type: trojan
-  password: d8c88fd3-7fe4-422c-acf0-b2e6fc18af20
-  sni: ceshii.1234567890spcloud.com
-- name: "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  server: fschk.1234567890spcloud.com
   port: 20003
   type: trojan
   password: 7cea4e6c-ccb7-48c0-a8ba-77826f836102
-- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 2 TJN"
   server: usa2.connecton.surf
   port: 443
   type: trojan
   password: 29dbe98050
-- name: "\U0001F1EC\U0001F1E7 GB 4 TJN"
+- name: "\U0001F1EC\U0001F1E7 GB 3 TJN"
   server: uk1.connecton.surf
   port: 443
   type: trojan
   password: ee4657c907
+- name: "\U0001F1EF\U0001F1F5 JP 4 TJN"
+  server: fschk.1234567890spcloud.com
+  port: 20004
+  type: trojan
+  password: d8c88fd3-7fe4-422c-acf0-b2e6fc18af20
+  sni: ceshii.1234567890spcloud.com
 - name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
   server: fschk.1234567890spcloud.com
   port: 20003
@@ -419,7 +419,7 @@ proxies:
   password: bc23b0ef-ddae-4bd3-8892-9d4797823e9c
   sni: ap.stablize.top
   skip-cert-verify: true
-- name: "\U0001F1ED\U0001F1F0 HK 47 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 47 TJN"
   server: vpnhat.stablize.top
   port: 443
   type: trojan
@@ -450,41 +450,14 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 0c724557-db51-31ef-8ef9-d8902a31982f
-- name: "\U0001F1E8\U0001F1F3 CN 52 SSS"
-  type: ss
-  server: jh.xianyuwangluo.cyou
-  port: 27207
-  password: 2c132199-006a-4bc1-958c-d1bffe978fcb
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 53 SSS"
-  type: ss
-  server: fs.xianyuwangluo.cyou
-  port: 27202
-  password: 2c132199-006a-4bc1-958c-d1bffe978fcb
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  type: ss
-  server: jh.xianyuwangluo.cyou
-  port: 27204
-  password: 2c132199-006a-4bc1-958c-d1bffe978fcb
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1EF\U0001F1F5 JP 55 TJN"
-  type: trojan
-  server: fschk.1234567890spcloud.com
-  port: 20008
-  udp: true
-  password: d8c88fd3-7fe4-422c-acf0-b2e6fc18af20
-  sni: ceshii.1234567890spcloud.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 3 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
   - "\U0001F1FA\U0001F1F8 US 6 TJN"
   - "\U0001F1EC\U0001F1E7 GB 7 TJN"
@@ -527,15 +500,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 44 SSR"
   - "\U0001F1E8\U0001F1F3 CN 45 SSR"
   - "\U0001F1EF\U0001F1F5 JP 46 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 47 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 47 TJN"
   - "\U0001F1F9\U0001F1FC TW 48 TJN"
   - "\U0001F1EF\U0001F1F5 JP 49 TJN"
   - "\U0001F1EF\U0001F1F5 JP 50 TJN"
   - "\U0001F1E8\U0001F1F3 CN 51 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 53 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  - "\U0001F1EF\U0001F1F5 JP 55 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -543,9 +512,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  - "\U0001F1FA\U0001F1F8 US 3 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 2 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 3 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 4 TJN"
   - "\U0001F1EF\U0001F1F5 JP 5 TJN"
   - "\U0001F1FA\U0001F1F8 US 6 TJN"
   - "\U0001F1EC\U0001F1E7 GB 7 TJN"
@@ -588,14 +557,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 44 SSR"
   - "\U0001F1E8\U0001F1F3 CN 45 SSR"
   - "\U0001F1EF\U0001F1F5 JP 46 TJN"
-  - "\U0001F1ED\U0001F1F0 HK 47 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 47 TJN"
   - "\U0001F1F9\U0001F1FC TW 48 TJN"
   - "\U0001F1EF\U0001F1F5 JP 49 TJN"
   - "\U0001F1EF\U0001F1F5 JP 50 TJN"
   - "\U0001F1E8\U0001F1F3 CN 51 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 53 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 54 SSS"
-  - "\U0001F1EF\U0001F1F5 JP 55 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
