@@ -1,5 +1,10 @@
 proxies:
-- name: "\U0001F1EA\U0001F1F8 ES 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: tj1.dalazhi.eu.org
+  port: 443
+  type: trojan
+  password: d256e73b-8259-490a-aeb5-23f6a3636a1a
+- name: "\U0001F1EA\U0001F1F8 ES 2"
   server: sp1.connecton.surf
   port: 443
   type: trojan
@@ -8,13 +13,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EA\U0001F1F8 ES 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
