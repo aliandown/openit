@@ -1,22 +1,60 @@
 proxies:
-- name: "\U0001F1EE\U0001F1F3 IN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: rn.ywcloud.cf
+  port: 443
+  udp: true
+  password: 3cab4355-1a73-4b27-b744-64cc64602dd3
+  sni: rn.ywcloud.cf
+  skip-cert-verify: true
+  network: tcp
+  ws-opts:
+    headers:
+      host: rn.ywcloud.cf
+- name: "\U0001F1EE\U0001F1F3 IN 2"
   type: trojan
   server: 103.106.228.223
   port: 443
   udp: true
   password: 9aa1e1569a
   skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: ry.ywcloud.cf
+  port: 443
+  udp: true
+  password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
+  sni: ry.ywcloud.cf
+  skip-cert-verify: true
+  network: tcp
+  ws-opts:
+    headers:
+      host: ry.ywcloud.cf
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  type: trojan
+  server: fschk.1234567890spcloud.com
+  port: 20004
+  udp: true
+  password: 7cea4e6c-ccb7-48c0-a8ba-77826f836102
+  sni: ceshii.1234567890spcloud.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1F3 IN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1F3 IN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
