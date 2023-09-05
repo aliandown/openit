@@ -11,7 +11,14 @@ proxies:
   ws-opts:
     headers:
       host: rn.ywcloud.cf
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1EE\U0001F1F3 IN 2"
+  type: trojan
+  server: 103.106.228.223
+  port: 443
+  udp: true
+  password: 9aa1e1569a
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: ry.ywcloud.cf
   port: 443
@@ -28,7 +35,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -36,6 +44,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
