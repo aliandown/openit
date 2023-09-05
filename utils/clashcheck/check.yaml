@@ -4,15 +4,7 @@ proxies:
   port: 443
   type: trojan
   password: 3cab4355-1a73-4b27-b744-64cc64602dd3
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  type: trojan
-  server: 213.202.216.14
-  port: 443
-  udp: true
-  password: e5e88a39-31ee-4b33-9213-5b266dbcd4b6
-  sni: downloadde.xn--mes358acgm99l.com
-  skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1EE\U0001F1F3 IN 2"
   type: trojan
   server: 103.106.228.223
   port: 443
@@ -20,19 +12,27 @@ proxies:
   password: 9aa1e1569a
   sni: jp1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: ry.ywcloud.cf
   port: 443
   type: trojan
   password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  type: trojan
+  server: 213.202.216.14
+  port: 443
+  udp: true
+  password: e5e88a39-31ee-4b33-9213-5b266dbcd4b6
+  sni: downloadde.xn--mes358acgm99l.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -40,8 +40,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1F3 IN 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
