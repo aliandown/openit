@@ -11,14 +11,7 @@ proxies:
   ws-opts:
     headers:
       host: rn.ywcloud.cf
-- name: "\U0001F1EE\U0001F1F3 IN 2"
-  type: trojan
-  server: 103.106.228.223
-  port: 443
-  udp: true
-  password: 9aa1e1569a
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: ry.ywcloud.cf
   port: 443
@@ -30,7 +23,7 @@ proxies:
   ws-opts:
     headers:
       host: ry.ywcloud.cf
-- name: "\U0001F1EE\U0001F1EA IE 4"
+- name: "\U0001F1EE\U0001F1EA IE 3"
   type: trojan
   server: 54.170.187.155
   port: 22222
@@ -39,7 +32,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
   server: 52.47.63.150
   port: 22222
@@ -48,12 +41,21 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 6"
+- name: "\U0001F1EC\U0001F1E7 GB 5"
   type: trojan
   server: 18.168.88.7
   port: 22222
   udp: true
   password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 6"
+  type: trojan
+  server: 52.28.53.40
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
@@ -75,12 +77,12 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 9"
+- name: "\U0001F1EB\U0001F1F7 FR 9"
   type: trojan
-  server: 52.28.53.40
+  server: 13.36.9.80
   port: 22222
   udp: true
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
@@ -93,21 +95,21 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EA SE 11"
+- name: "\U0001F1E9\U0001F1EA DE 11"
   type: trojan
-  server: 13.49.2.158
+  server: 3.77.170.210
   port: 22222
   udp: true
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 12"
+- name: "\U0001F1F8\U0001F1EA SE 12"
   type: trojan
-  server: 13.36.9.80
+  server: 13.49.2.158
   port: 22222
   udp: true
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
@@ -121,20 +123,11 @@ proxies:
   network: tcp
 - name: "\U0001F1EC\U0001F1E7 GB 14"
   type: trojan
-  server: 52.56.103.51
+  server: 18.169.181.85
   port: 22222
   udp: true
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 15"
-  type: trojan
-  server: 36.227.230.124
-  port: 443
-  udp: true
-  password: e5e88a39-31ee-4b33-9213-5b266dbcd4b6
-  sni: download.xn--mes358acgm99l.com
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -142,20 +135,19 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1F8\U0001F1EA SE 10"
-  - "\U0001F1F8\U0001F1EA SE 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
+  - "\U0001F1E9\U0001F1EA DE 11"
+  - "\U0001F1F8\U0001F1EA SE 12"
   - "\U0001F1E6\U0001F1F1 AL 13"
   - "\U0001F1EC\U0001F1E7 GB 14"
-  - "\U0001F1E8\U0001F1F3 TW 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -163,19 +155,18 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1F3 IN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
   - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1F8\U0001F1EA SE 10"
-  - "\U0001F1F8\U0001F1EA SE 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
+  - "\U0001F1E9\U0001F1EA DE 11"
+  - "\U0001F1F8\U0001F1EA SE 12"
   - "\U0001F1E6\U0001F1F1 AL 13"
   - "\U0001F1EC\U0001F1E7 GB 14"
-  - "\U0001F1E8\U0001F1F3 TW 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
