@@ -1,36 +1,12 @@
 proxies:
-- name: "\U0001F1F9\U0001F1FC TW 1 TJN"
-  server: rzuee-1075-tr-0.d-hinet-02.ddll.bond
-  port: 889
-  type: trojan
-  password: DvlvtUfAReRljBFAfcgKbpojdhKifYem
-  sni: cdn.cjhh.lol
-- name: "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  server: gsawshk1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 3 TJN"
-  server: gsawshk1.aiopen.cfd
-  port: 443
-  type: trojan
-  password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
-  sni: 20-212-60-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  server: g05.hk05-ae5.entry.hsrtd.club
-  port: 1815
-  type: ss
-  cipher: aes-256-gcm
-  password: 0c724557-db51-31ef-8ef9-d8902a31982f
-- name: "\U0001F1EF\U0001F1F5 JP 5 TJN"
+- name: "\U0001F1EF\U0001F1F5 JP 1 TJN"
   server: 1gzdx2.156786.xyz
   port: 49625
   type: trojan
   password: 98bae868-4f00-40e0-9603-8d848644ec44
   sni: 1gzdx2.156786.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   server: 183.232.170.32
   port: 30005
   type: ss
@@ -40,33 +16,57 @@ proxies:
   plugin-opts:
     mode: ''
     host: ''
-- name: "\U0001F1FA\U0001F1F8 US 7 TJN"
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  server: free.node.kk-proxy.pro
+  port: 54455
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d09be431-a34b-4ab0-a0fc-a991a9d144ff
+- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
   server: ry.ywcloud.cf
   port: 443
   type: trojan
   password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
-- name: "\U0001F1E8\U0001F1F3 CN 8 SSS"
-  server: free.node.kk-proxy.pro
-  port: 54455
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d09be431-a34b-4ab0-a0fc-a991a9d144ff
+- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
+  server: ry.ywcloud.cf
+  port: 443
+  type: trojan
+  password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
+- name: "\U0001F1F9\U0001F1FC TW 6 TJN"
+  server: rzuee-1075-tr-0.d-hinet-02.ddll.bond
+  port: 889
+  type: trojan
+  password: DvlvtUfAReRljBFAfcgKbpojdhKifYem
+  sni: cdn.cjhh.lol
+- name: "\U0001F1EF\U0001F1F5 JP 7 TJN"
+  server: gsawshk1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
+  sni: 20-212-60-88.nhost.00cdn.com
+- name: "\U0001F1EF\U0001F1F5 JP 8 TJN"
+  server: gsawshk1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d
+  sni: 20-212-60-88.nhost.00cdn.com
 - name: "\U0001F1E8\U0001F1F3 CN 9 SSS"
-  server: free.node.kk-proxy.pro
-  port: 54455
+  server: g05.hk05-ae5.entry.hsrtd.club
+  port: 1815
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d09be431-a34b-4ab0-a0fc-a991a9d144ff
+  cipher: aes-256-gcm
+  password: 0c724557-db51-31ef-8ef9-d8902a31982f
 - name: "\U0001F1FA\U0001F1F8 US 10 TJN"
   server: ry.ywcloud.cf
   port: 443
   type: trojan
   password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
-- name: "\U0001F1FA\U0001F1F8 US 11 TJN"
-  server: ry.ywcloud.cf
-  port: 443
-  type: trojan
-  password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
+- name: "\U0001F1E8\U0001F1F3 CN 11 SSS"
+  server: free.node.kk-proxy.pro
+  port: 54455
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d09be431-a34b-4ab0-a0fc-a991a9d144ff
 - name: "\U0001F1F9\U0001F1FC TW 12 TJN"
   server: 211.72.35.155
   port: 3306
@@ -303,17 +303,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F9\U0001F1FC TW 1 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 3 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1EF\U0001F1F5 JP 5 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
+  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1F9\U0001F1FC TW 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 7 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1FA\U0001F1F8 US 10 TJN"
-  - "\U0001F1FA\U0001F1F8 US 11 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSS"
   - "\U0001F1F9\U0001F1FC TW 12 TJN"
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
@@ -354,17 +354,17 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F9\U0001F1FC TW 1 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 2 TJN"
-  - "\U0001F1EF\U0001F1F5 JP 3 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1EF\U0001F1F5 JP 5 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 6 SSS"
-  - "\U0001F1FA\U0001F1F8 US 7 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
+  - "\U0001F1EF\U0001F1F5 JP 1 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 3 SSS"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1F9\U0001F1FC TW 6 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 7 TJN"
+  - "\U0001F1EF\U0001F1F5 JP 8 TJN"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1FA\U0001F1F8 US 10 TJN"
-  - "\U0001F1FA\U0001F1F8 US 11 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 11 SSS"
   - "\U0001F1F9\U0001F1FC TW 12 TJN"
   - "\U0001F1F9\U0001F1FC TW 13 TJN"
   - "\U0001F1F9\U0001F1FC TW 14 TJN"
