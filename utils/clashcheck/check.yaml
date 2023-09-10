@@ -7,12 +7,12 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: ipoints.shop
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa2.connecton.surf
   type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 6023
-  password: 892c9285-96c3-4623-8e6c-3e8b321eee8e
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 3"
@@ -31,15 +31,7 @@ proxies:
   password: 41dbabe59a
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: usa2.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 6"
+- name: "\U0001F1F0\U0001F1F7 KR 5"
   server: 813krkr.fr99kt.top
   type: trojan
   country: "\U0001F1F0\U0001F1F7KR"
@@ -52,11 +44,10 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1EA\U0001F1F8 ES 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,10 +55,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1EA\U0001F1F8 ES 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
