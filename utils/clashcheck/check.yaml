@@ -1,18 +1,18 @@
 proxies:
-- name: "\U0001F1EA\U0001F1F8 ES 1"
-  server: sp1.connecton.surf
-  type: trojan
-  country: "\U0001F1EA\U0001F1F8ES"
-  port: 443
-  password: 41dbabe59a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
   password: 29dbe98050
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EA\U0001F1F8 ES 2"
+  server: sp1.connecton.surf
+  type: trojan
+  country: "\U0001F1EA\U0001F1F8ES"
+  port: 443
+  password: 41dbabe59a
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -35,8 +35,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
   url: https://www.google.com/favicon.ico
@@ -45,8 +45,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EA\U0001F1F8 ES 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EA\U0001F1F8 ES 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F0\U0001F1F7 KR 4"
 rules:
