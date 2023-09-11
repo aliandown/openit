@@ -7,12 +7,12 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: ipoints.shop
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa2.connecton.surf
   type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 6023
-  password: 892c9285-96c3-4623-8e6c-3e8b321eee8e
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 3"
@@ -20,15 +20,7 @@ proxies:
   port: 443
   type: trojan
   password: cc491f13e9
-- name: "\U0001F1EC\U0001F1E7 GB 4"
-  server: uk1.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: ee4657c907
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 134.195.101.33
   port: 3306
@@ -39,7 +31,7 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 134.195.101.32
   port: 3306
@@ -50,15 +42,31 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  server: ry.ywcloud.cf
+- name: "\U0001F1EC\U0001F1E7 GB 6"
+  server: uk1.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
+  password: ee4657c907
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 8"
+- name: "\U0001F1EC\U0001F1E7 GB 7"
+  server: ipoints.shop
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 6023
+  password: 892c9285-96c3-4623-8e6c-3e8b321eee8e
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EA\U0001F1F8 ES 8"
+  server: sp1.connecton.surf
+  type: trojan
+  country: "\U0001F1EA\U0001F1F8ES"
+  port: 443
+  password: 41dbabe59a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 9"
   server: 813krkr.fr99kt.top
   type: trojan
   country: "\U0001F1F0\U0001F1F7KR"
@@ -66,7 +74,15 @@ proxies:
   password: 1fb9c481-058b-432d-ba73-06aba4ffa75e
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 9"
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  server: ry.ywcloud.cf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 5eb2c89b-57e8-4fb8-9c22-66ba06479b1d
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 11"
   type: trojan
   server: 45.11.104.94
   port: 3306
@@ -79,38 +95,12 @@ proxies:
     path: /gateway/connect
     headers:
       host: TG.oeo12
-- name: "\U0001F1F8\U0001F1EC SG 10"
+- name: "\U0001F1F8\U0001F1EC SG 12"
   type: trojan
   server: 5.44.249.43
   port: 3306
   udp: true
   password: 8a1ab0df6abea549
-  sni: n2.gladns.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /gateway/connect
-    headers:
-      host: n2.gladns.com
-- name: "\U0001F1F8\U0001F1EC SG 11"
-  type: trojan
-  server: 5.44.249.53
-  port: 3306
-  udp: true
-  password: faf42aa0a9ad4c1e
-  sni: n2.gladns.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /gateway/connect
-    headers:
-      host: n2.gladns.com
-- name: "\U0001F1F8\U0001F1EC SG 12"
-  type: trojan
-  server: 5.44.249.42
-  port: 3306
-  udp: true
-  password: faf42aa0a9ad4c1e
   sni: n2.gladns.com
   skip-cert-verify: true
   network: ws
@@ -131,7 +121,20 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1E8\U0001F1F3 TW 14"
+- name: "\U0001F1F8\U0001F1EC SG 14"
+  type: trojan
+  server: 5.44.249.42
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+    headers:
+      host: n2.gladns.com
+- name: "\U0001F1E8\U0001F1F3 TW 15"
   type: trojan
   server: 60.248.114.188
   port: 3306
@@ -144,24 +147,39 @@ proxies:
     path: /gateway/connect
     headers:
       host: TG.oeo12
+- name: "\U0001F1F8\U0001F1EC SG 16"
+  type: trojan
+  server: 5.44.249.53
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+    headers:
+      host: n2.gladns.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1EA\U0001F1F8 ES 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1F8\U0001F1EC SG 12"
   - "\U0001F1F8\U0001F1EC SG 13"
-  - "\U0001F1E8\U0001F1F3 TW 14"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1E8\U0001F1F3 TW 15"
+  - "\U0001F1F8\U0001F1EC SG 16"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -169,18 +187,20 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
-  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1EA\U0001F1F8 ES 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   - "\U0001F1F8\U0001F1EC SG 12"
   - "\U0001F1F8\U0001F1EC SG 13"
-  - "\U0001F1E8\U0001F1F3 TW 14"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1E8\U0001F1F3 TW 15"
+  - "\U0001F1F8\U0001F1EC SG 16"
 rules:
 - "MATCH,\U0001F310 Proxy"
