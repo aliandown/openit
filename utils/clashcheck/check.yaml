@@ -12,7 +12,15 @@ proxies:
   port: 443
   type: trojan
   password: cc491f13e9
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: uk1.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: ee4657c907
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 134.195.101.33
   port: 3306
@@ -23,7 +31,7 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 134.195.101.32
   port: 3306
@@ -34,28 +42,20 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
-- name: "\U0001F1EC\U0001F1E7 GB 5"
-  server: uk1.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: ee4657c907
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 6"
-  server: ipoints.shop
-  type: trojan
-  country: "\U0001F1EC\U0001F1E7GB"
-  port: 6023
-  password: 892c9285-96c3-4623-8e6c-3e8b321eee8e
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EA\U0001F1F8 ES 7"
+- name: "\U0001F1EA\U0001F1F8 ES 6"
   server: sp1.connecton.surf
   type: trojan
   country: "\U0001F1EA\U0001F1F8ES"
   port: 443
   password: 41dbabe59a
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 7"
+  server: ipoints.shop
+  type: trojan
+  country: "\U0001F1EC\U0001F1E7GB"
+  port: 6023
+  password: 892c9285-96c3-4623-8e6c-3e8b321eee8e
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 8"
@@ -89,10 +89,10 @@ proxies:
       host: TG.oeo12
 - name: "\U0001F1F8\U0001F1EC SG 11"
   type: trojan
-  server: 5.44.249.43
+  server: 5.44.249.50
   port: 3306
   udp: true
-  password: 8a1ab0df6abea549
+  password: 5227e84e4f026b71
   sni: n2.gladns.com
   skip-cert-verify: true
   network: ws
@@ -102,10 +102,10 @@ proxies:
       host: n2.gladns.com
 - name: "\U0001F1F8\U0001F1EC SG 12"
   type: trojan
-  server: 5.44.249.50
+  server: 5.44.249.43
   port: 3306
   udp: true
-  password: 5227e84e4f026b71
+  password: 8a1ab0df6abea549
   sni: n2.gladns.com
   skip-cert-verify: true
   network: ws
@@ -158,11 +158,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1EA\U0001F1F8 ES 7"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EA\U0001F1F8 ES 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
@@ -179,11 +179,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1EA\U0001F1F8 ES 7"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EA\U0001F1F8 ES 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
