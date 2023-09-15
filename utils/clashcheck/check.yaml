@@ -8,6 +8,22 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: usa3.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3550ce3dec
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 134.195.101.33
   port: 3306
@@ -20,35 +36,15 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: us.blazeppn.info
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  server: fra1.connecton.surf
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  country: "\U0001F1EB\U0001F1F7FR"
   port: 443
-  password: xxoo
+  password: cc491f13e9
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: usa3.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3550ce3dec
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: nlctg-1060-tr-2.d-cmi.ddll.bond
-  port: 889
-  type: trojan
-  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
-  sni: cdn.cjhh.lol
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: yjxbu-1087-tr-1.d-kcd.tuil.xyz
-  port: 889
-  type: trojan
-  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
-  sni: cdn.cjhh.lol
-- name: "\U0001F1EC\U0001F1E7 GB 7"
+- name: "\U0001F1EC\U0001F1E7 GB 6"
   server: uk1.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -56,7 +52,41 @@ proxies:
   password: ee4657c907
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EA\U0001F1F8 ES 7"
+  server: sp1.connecton.surf
+  type: trojan
+  country: "\U0001F1EA\U0001F1F8ES"
+  port: 443
+  password: 41dbabe59a
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: kbawsjp1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db38d357-3ff3-4fff-b311-6a65501a1b10
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: yjxbu-1087-tr-1.d-kcd.tuil.xyz
+  port: 889
+  type: trojan
+  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+  sni: cdn.cjhh.lol
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  server: nlctg-1060-tr-2.d-cmi.ddll.bond
+  port: 889
+  type: trojan
+  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+  sni: cdn.cjhh.lol
+- name: "\U0001F1EF\U0001F1F5 JP 11"
+  server: kbawsjp2.aiopen.cfd
+  port: 443
+  type: trojan
+  password: db38d357-3ff3-4fff-b311-6a65501a1b10
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 12"
   type: trojan
   server: 103.168.155.69
   port: 3306
@@ -67,49 +97,28 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
-- name: "\U0001F1EA\U0001F1F8 ES 9"
-  server: sp1.connecton.surf
-  type: trojan
-  country: "\U0001F1EA\U0001F1F8ES"
+- name: "\U0001F1F8\U0001F1EC SG 13"
+  server: kbawssg2.aiopen.cfd
   port: 443
-  password: 41dbabe59a
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 10"
-  server: fra1.connecton.surf
   type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
+  password: db38d357-3ff3-4fff-b311-6a65501a1b10
+  sni: 4-193-105-141.nhost.00cdn.com
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC SG 14"
+  server: kbawssg1.aiopen.cfd
   port: 443
-  password: cc491f13e9
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 11"
   type: trojan
-  server: 60.248.114.188
-  port: 3306
-  udp: true
-  password: d02058f4f819dced
-  sni: n2.gladns.com
+  password: db38d357-3ff3-4fff-b311-6a65501a1b10
+  sni: 4-193-105-141.nhost.00cdn.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /gateway/connect
-    headers:
-      host: TG.oeo12
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- name: "\U0001F1EF\U0001F1F5 JP 15"
+  server: 1gzdx2.156786.xyz
+  port: 37905
   type: trojan
-  server: 5.44.249.42
-  port: 3306
-  udp: true
-  password: faf42aa0a9ad4c1e
-  sni: n2.gladns.com
+  password: 98bae868-4f00-40e0-9603-8d848644ec44
+  sni: hkmax06.170203.xyz
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /gateway/connect
-    headers:
-      host: n2.gladns.com
-- name: "\U0001F1E8\U0001F1F3 HK 13"
+- name: "\U0001F1E8\U0001F1F3 HK 16"
   type: trojan
   server: 45.11.104.94
   port: 3306
@@ -122,6 +131,19 @@ proxies:
     path: /gateway/connect
     headers:
       host: TG.oeo12
+- name: "\U0001F1F8\U0001F1EC SG 17"
+  type: trojan
+  server: 5.44.249.42
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+    headers:
+      host: n2.gladns.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -130,15 +152,19 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EA\U0001F1F8 ES 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EA\U0001F1F8 ES 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1E8\U0001F1F3 TW 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
+  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1EF\U0001F1F5 JP 15"
+  - "\U0001F1E8\U0001F1F3 HK 16"
+  - "\U0001F1F8\U0001F1EC SG 17"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -149,14 +175,18 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EA\U0001F1F8 ES 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1EA\U0001F1F8 ES 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1E8\U0001F1F3 TW 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1E8\U0001F1F3 HK 13"
+  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EC SG 14"
+  - "\U0001F1EF\U0001F1F5 JP 15"
+  - "\U0001F1E8\U0001F1F3 HK 16"
+  - "\U0001F1F8\U0001F1EC SG 17"
 rules:
 - "MATCH,\U0001F310 Proxy"
