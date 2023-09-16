@@ -1,21 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: usa3.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3550ce3dec
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -23,7 +7,27 @@ proxies:
   password: 29dbe98050
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: nlctg-1060-tr-2.d-cmi.ddll.bond
+  port: 889
+  type: trojan
+  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+  sni: cdn.cjhh.lol
+- name: "\U0001F1EF\U0001F1F5 JP 4"
+  server: yjxbu-1087-tr-1.d-kcd.tuil.xyz
+  port: 889
+  type: trojan
+  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+  sni: cdn.cjhh.lol
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   server: fra1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -31,7 +35,7 @@ proxies:
   password: cc491f13e9
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 5"
+- name: "\U0001F1EC\U0001F1E7 GB 6"
   server: uk1.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -39,27 +43,7 @@ proxies:
   password: ee4657c907
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EA\U0001F1F8 ES 6"
-  server: sp1.connecton.surf
-  type: trojan
-  country: "\U0001F1EA\U0001F1F8ES"
-  port: 443
-  password: 41dbabe59a
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: yjxbu-1087-tr-1.d-kcd.tuil.xyz
-  port: 889
-  type: trojan
-  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
-  sni: cdn.cjhh.lol
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  server: nlctg-1060-tr-2.d-cmi.ddll.bond
-  port: 889
-  type: trojan
-  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
-  sni: cdn.cjhh.lol
-- name: "\U0001F1EF\U0001F1F5 JP 9"
   server: 1gzdx2.156786.xyz
   port: 37905
   type: trojan
@@ -73,12 +57,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1EA\U0001F1F8 ES 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -88,11 +70,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1EA\U0001F1F8 ES 6"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
