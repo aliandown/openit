@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: usa2.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 134.195.101.32
   port: 3306
@@ -20,6 +12,14 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa2.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: us.blazeppn.info
   type: trojan
