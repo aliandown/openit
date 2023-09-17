@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: usa2.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,15 +7,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: usa3.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3550ce3dec
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
   server: fra1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -31,12 +15,12 @@ proxies:
   password: cc491f13e9
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EA\U0001F1F8 ES 5"
-  server: sp1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: usa2.connecton.surf
   type: trojan
-  country: "\U0001F1EA\U0001F1F8ES"
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 41dbabe59a
+  password: 29dbe98050
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -44,10 +28,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EA\U0001F1F8 ES 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -55,9 +37,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EA\U0001F1F8 ES 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
