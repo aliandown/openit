@@ -1,21 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: usa3.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3550ce3dec
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -23,15 +7,23 @@ proxies:
   password: 29dbe98050
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: fra1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
   type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: cc491f13e9
+  password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: usa3.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3550ce3dec
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 134.195.101.33
   port: 3306
@@ -44,7 +36,7 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1F3\U0001F1F1 NL 6"
+- name: "\U0001F1F3\U0001F1F1 NL 5"
   type: trojan
   server: 23.247.137.71
   port: 3306
@@ -57,6 +49,14 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
+- name: "\U0001F1EB\U0001F1F7 FR 6"
+  server: fra1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: cc491f13e9
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 7"
   server: uk1.connecton.surf
   type: trojan
@@ -88,6 +88,15 @@ proxies:
       host: n2.gladns.com
 - type: trojan
   name: "\U0001F1E8\U0001F1F3 HK 10"
+  server: 18.163.249.175
+  port: 443
+  password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
+  udp: true
+  skip-cert-verify: true
+  sni: golang.protocolbuffer.com
+  network: tcp
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 11"
   server: 45.11.104.94
   port: 3306
   password: 3febb05ea76a940f
@@ -106,13 +115,14 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F3\U0001F1F1 NL 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -122,12 +132,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F3\U0001F1F1 NL 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
