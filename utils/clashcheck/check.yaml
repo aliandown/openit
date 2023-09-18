@@ -7,15 +7,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  server: fra1.connecton.surf
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: cc491f13e9
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -23,28 +15,7 @@ proxies:
   password: 29dbe98050
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 4"
-  server: uk1.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: ee4657c907
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
-  server: 134.195.101.32
-  port: 3306
-  udp: true
-  password: faf42aa0a9ad4c1e
-  sni: n2.gladns.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /gateway/connect
-    headers:
-      host: n2.gladns.com
-- name: "\U0001F1F3\U0001F1F1 NL 6"
+- name: "\U0001F1F3\U0001F1F1 NL 3"
   type: trojan
   server: 23.247.137.71
   port: 3306
@@ -57,14 +28,43 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1EA\U0001F1F8 ES 7"
-  server: sp1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
-  country: "\U0001F1EA\U0001F1F8ES"
+  server: 134.195.101.32
+  port: 3306
+  udp: true
+  password: faf42aa0a9ad4c1e
+  sni: n2.gladns.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /gateway/connect
+    headers:
+      host: n2.gladns.com
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  server: fra1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
   port: 443
-  password: 41dbabe59a
+  password: cc491f13e9
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 6"
+  server: uk1.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: ee4657c907
+  skip-cert-verify: true
+  udp: true
+- type: trojan
+  name: "\U0001F1EC\U0001F1E7 GB 7"
+  server: 51.38.71.175
+  port: 80
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  udp: true
+  skip-cert-verify: true
+  network: tcp
 - type: trojan
   name: "\U0001F1EB\U0001F1F7 FR 8"
   server: 51.38.99.96
@@ -74,14 +74,14 @@ proxies:
   skip-cert-verify: true
   sni: sourceforge.net
   network: tcp
-- type: trojan
-  name: "\U0001F1EC\U0001F1E7 GB 9"
-  server: 51.38.71.175
-  port: 80
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  udp: true
+- name: "\U0001F1EA\U0001F1F8 ES 9"
+  server: sp1.connecton.surf
+  type: trojan
+  country: "\U0001F1EA\U0001F1F8ES"
+  port: 443
+  password: 41dbabe59a
   skip-cert-verify: true
-  network: tcp
+  udp: true
 - type: trojan
   name: "\U0001F1E8\U0001F1F3 HK 10"
   server: 45.11.104.94
@@ -113,14 +113,14 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F3\U0001F1F1 NL 6"
-  - "\U0001F1EA\U0001F1F8 ES 7"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
+  - "\U0001F1EA\U0001F1F8 ES 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1F8\U0001F1EC SG 11"
   url: https://www.google.com/favicon.ico
@@ -130,14 +130,14 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F3\U0001F1F1 NL 6"
-  - "\U0001F1EA\U0001F1F8 ES 7"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
+  - "\U0001F1EA\U0001F1F8 ES 9"
   - "\U0001F1E8\U0001F1F3 HK 10"
   - "\U0001F1F8\U0001F1EC SG 11"
 rules:
