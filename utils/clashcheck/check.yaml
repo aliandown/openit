@@ -8,6 +8,14 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa3.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3550ce3dec
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,14 +23,6 @@ proxies:
   password: 29dbe98050
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: usa3.connecton.surf
-  port: 443
-  udp: true
-  password: 3550ce3dec
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 4"
   server: fra1.connecton.surf
   type: trojan
@@ -40,19 +40,19 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EC\U0001F1E7 GB 6"
+  server: uk1.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: ee4657c907
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 7"
   type: trojan
   server: 51.38.71.175
   port: 80
   udp: true
   password: b640d791-ff83-4300-b509-c2a02f97f167
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 7"
-  type: trojan
-  server: uk1.connecton.surf
-  port: 443
-  udp: true
-  password: ee4657c907
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 8"
@@ -99,22 +99,22 @@ proxies:
   sni: jp1.connecton.surf
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 12"
-  type: trojan
-  server: rzuee-1075-tr-0.d-hinet-02.ddll.bond
-  port: 889
-  udp: true
-  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
-  sni: cdn.cjhh.lol
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 13"
+- name: "\U0001F1EF\U0001F1F5 JP 12"
   type: trojan
   server: 1gzdx2.156786.xyz
   port: 37905
   udp: true
   password: 98bae868-4f00-40e0-9603-8d848644ec44
   sni: hkmax06.170203.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 13"
+  type: trojan
+  server: rzuee-1075-tr-0.d-hinet-02.ddll.bond
+  port: 889
+  udp: true
+  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+  sni: cdn.cjhh.lol
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 14"
@@ -150,8 +150,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 TW 10"
   - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1E8\U0001F1F3 TW 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1E8\U0001F1F3 TW 13"
   - "\U0001F1FA\U0001F1F3 UN 14"
   - "\U0001F1F8\U0001F1EC SG 15"
   url: https://www.google.com/favicon.ico
@@ -171,8 +171,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 TW 10"
   - "\U0001F1EE\U0001F1F3 IN 11"
-  - "\U0001F1E8\U0001F1F3 TW 12"
-  - "\U0001F1EF\U0001F1F5 JP 13"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1E8\U0001F1F3 TW 13"
   - "\U0001F1FA\U0001F1F3 UN 14"
   - "\U0001F1F8\U0001F1EC SG 15"
 rules:
