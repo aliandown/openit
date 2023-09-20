@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: usa2.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,15 +7,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: usa3.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 3550ce3dec
+  password: 29dbe98050
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
   server: 103.168.155.69
   port: 3306
@@ -36,6 +28,14 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
+- name: "\U0001F1EC\U0001F1E7 GB 4"
+  server: uk1.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: ee4657c907
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 TW 5"
   type: trojan
   server: 211.72.35.154
@@ -49,32 +49,15 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1EC\U0001F1E7 GB 6"
-  server: uk1.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: ee4657c907
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: p1.bxy-fun1.com
-  type: ss
-  country: "\U0001F1E8\U0001F1F3CN"
-  port: 30470
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -83,10 +66,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
