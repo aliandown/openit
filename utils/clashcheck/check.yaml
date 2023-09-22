@@ -1,10 +1,10 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: uk1.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: xxoo
+  password: ee4657c907
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 2"
@@ -22,11 +22,11 @@ proxies:
   password: cc491f13e9
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 4"
-  server: 3.79.121.219
+- name: "\U0001F1EC\U0001F1E7 GB 4"
+  server: 3.9.85.53
   port: 22222
   type: trojan
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
 - name: "\U0001F1F8\U0001F1EA SE 5"
@@ -36,7 +36,14 @@ proxies:
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1EE\U0001F1EA IE 6"
+  server: 3.254.43.72
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 7"
   server: 3.128.157.76
   port: 22222
   type: trojan
@@ -47,23 +54,25 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1F8\U0001F1EA SE 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EE\U0001F1EA IE 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1F8\U0001F1EA SE 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EE\U0001F1EA IE 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
