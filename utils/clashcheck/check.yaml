@@ -38,6 +38,23 @@ proxies:
   password: ee4657c907
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 6"
+  type: trojan
+  server: 51.91.11.29
+  port: 80
+  udp: true
+  password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  type: trojan
+  server: 1gzdx2.156786.xyz
+  port: 37905
+  udp: true
+  password: 98bae868-4f00-40e0-9603-8d848644ec44
+  sni: hkmax06.170203.xyz
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -47,6 +64,8 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,5 +77,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
