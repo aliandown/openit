@@ -16,7 +16,7 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: 163.123.192.154
+  server: 163.123.192.153
   port: 443
   udp: true
   password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
@@ -25,21 +25,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
-  server: 163.123.192.153
-  port: 443
-  udp: true
-  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
-  sni: downloadus.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 163.123.192.79
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 4-193-163-88.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
   server: 163.123.192.155
   port: 443
   udp: true
@@ -47,22 +32,21 @@ proxies:
   sni: downloadus.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 7"
-  server: uk1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 163.123.192.154
   port: 443
-  password: ee4657c907
-  skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  server: usa2.connecton.surf
+  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 163.123.192.79
+  port: 443
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 4-193-163-88.nhost.00cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
@@ -73,8 +57,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -87,7 +69,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
