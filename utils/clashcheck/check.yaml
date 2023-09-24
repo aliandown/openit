@@ -1,22 +1,19 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 163.123.192.80
+  server: 163.123.192.79
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 4-193-163-88.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 163.123.192.156
+  server: 163.123.192.80
   port: 443
-  udp: true
-  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
-  sni: downloadus.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 4-193-163-88.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: 163.123.192.153
+  server: 163.123.192.156
   port: 443
   udp: true
   password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
@@ -34,7 +31,7 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
-  server: 163.123.192.154
+  server: 163.123.192.153
   port: 443
   udp: true
   password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
@@ -42,11 +39,14 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 163.123.192.79
-  port: 443
   type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 4-193-163-88.nhost.00cdn.com
+  server: 163.123.192.154
+  port: 443
+  udp: true
+  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
