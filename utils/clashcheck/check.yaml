@@ -1,46 +1,46 @@
 proxies:
 - name: "\U0001F1E8\U0001F1E6 CA 1"
-  server: 108.181.23.123
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 20-24-33-134.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 2"
   server: 108.181.24.47
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 20-24-33-134.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  server: 108.181.23.71
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 4-193-163-88.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 4"
-  server: 108.181.23.241
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 20-24-33-134.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 5"
+- name: "\U0001F1E8\U0001F1E6 CA 2"
   server: 108.181.23.231
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 20-24-33-134.nhost.00cdn.com
-- name: "\U0001F1E8\U0001F1E6 CA 6"
+- name: "\U0001F1E8\U0001F1E6 CA 3"
   server: 108.181.22.249
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 4-193-163-88.nhost.00cdn.com
-- name: "\U0001F1EB\U0001F1F7 FR 7"
-  server: fra1.connecton.surf
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
+- name: "\U0001F1E8\U0001F1E6 CA 4"
+  server: 108.181.23.123
   port: 443
-  password: cc491f13e9
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 20-24-33-134.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1E6 CA 5"
+  server: 108.181.23.71
+  port: 443
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 4-193-163-88.nhost.00cdn.com
+- name: "\U0001F1E8\U0001F1E6 CA 6"
+  server: 108.181.23.241
+  port: 443
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 20-24-33-134.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: usa2.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 8"
@@ -56,6 +56,14 @@ proxies:
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 4-193-163-88.nhost.00cdn.com
 - name: "\U0001F1EB\U0001F1F7 FR 10"
+  server: fra1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: cc491f13e9
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 11"
   type: trojan
   server: 51.91.11.29
   port: 80
@@ -63,14 +71,6 @@ proxies:
   password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11"
-  server: usa2.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 12"
   type: trojan
   server: 1gzdx2.156786.xyz
@@ -80,14 +80,6 @@ proxies:
   sni: hkmax06.170203.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 13"
-  server: uk1.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: ee4657c907
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -98,13 +90,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 4"
   - "\U0001F1E8\U0001F1E6 CA 5"
   - "\U0001F1E8\U0001F1E6 CA 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1EB\U0001F1F7 FR 11"
   - "\U0001F1EF\U0001F1F5 JP 12"
-  - "\U0001F1EC\U0001F1E7 GB 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -117,12 +108,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 4"
   - "\U0001F1E8\U0001F1E6 CA 5"
   - "\U0001F1E8\U0001F1E6 CA 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1FA\U0001F1F8 US 7"
   - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1FA\U0001F1F8 US 9"
   - "\U0001F1EB\U0001F1F7 FR 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1EB\U0001F1F7 FR 11"
   - "\U0001F1EF\U0001F1F5 JP 12"
-  - "\U0001F1EC\U0001F1E7 GB 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
