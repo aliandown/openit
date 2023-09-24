@@ -8,18 +8,47 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 163.123.192.80
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 4-193-163-88.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
   server: 163.123.192.79
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 4-193-163-88.nhost.00cdn.com
-- name: "\U0001F1EC\U0001F1E7 GB 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 163.123.192.153
+  port: 443
+  udp: true
+  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: 163.123.192.155
+  port: 443
+  udp: true
+  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 163.123.192.156
+  port: 443
+  udp: true
+  password: 9cd1c805-1da3-4441-9bb4-a211c52f1c02
+  sni: downloadus.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 7"
   server: uk1.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -27,21 +56,18 @@ proxies:
   password: ee4657c907
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 163.123.192.80
+  port: 443
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 4-193-163-88.nhost.00cdn.com
+- name: "\U0001F1EB\U0001F1F7 FR 9"
   type: trojan
   server: 51.91.11.29
   port: 80
   udp: true
   password: e0d44ae7-cb7d-4acc-a8c0-9861a6f5eaad
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  type: trojan
-  server: 1gzdx2.156786.xyz
-  port: 37905
-  udp: true
-  password: 98bae868-4f00-40e0-9603-8d848644ec44
-  sni: hkmax06.170203.xyz
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -51,9 +77,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -63,8 +92,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
