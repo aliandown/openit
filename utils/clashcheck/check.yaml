@@ -1,19 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 163.123.192.79
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 4-193-163-88.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: usa2.connecton.surf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 29dbe98050
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 163.123.192.153
   port: 443
@@ -22,6 +8,18 @@ proxies:
   sni: downloadus.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 163.123.192.79
+  port: 443
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 4-193-163-88.nhost.00cdn.com
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 163.123.192.80
+  port: 443
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 4-193-163-88.nhost.00cdn.com
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 163.123.192.154
@@ -41,11 +39,13 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 163.123.192.80
-  port: 443
+  server: usa2.connecton.surf
   type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 4-193-163-88.nhost.00cdn.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: 163.123.192.156
