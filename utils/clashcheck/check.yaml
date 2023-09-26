@@ -1,28 +1,27 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: usa3.connecton.surf
+  server: usa2.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 3550ce3dec
+  password: 29dbe98050
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  server: fra1.connecton.surf
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: cc491f13e9
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 3"
-  server: uk1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: ee4657c907
+  password: xxoo
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 23.94.122.66
+  port: 38505
+  type: trojan
+  password: dTjHHw2kDE
+  sni: telewebion.com
+  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
   server: tokyo.clare88.tk
   type: trojan
@@ -31,7 +30,31 @@ proxies:
   password: 3pfvcVO2H7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: usa3.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3550ce3dec
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EC\U0001F1E7 GB 6"
+  server: uk1.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: ee4657c907
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 7"
+  server: fra1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: cc491f13e9
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   server: 1gzdx2.156786.xyz
   port: 37905
   type: trojan
@@ -43,10 +66,13 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -54,9 +80,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
