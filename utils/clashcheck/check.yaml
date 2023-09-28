@@ -1,13 +1,59 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: winfo.shop
+  port: 9081
+  udp: true
+  password: 9b62a45e-f14a-4379-a1fe-a741287bab56
+  sni: winfo.shop
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: usa2.connecton.surf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  type: trojan
+  server: mynyr.site
+  port: 16538
+  udp: true
+  password: fae699c7-32cc-4b93-a62f-113fd6e70591
+  sni: mynyr.site
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: luyangmao.store
+  port: 8091
+  udp: true
+  password: e58576f6-4e4a-45c5-afe5-33887c7b8c18
+  sni: luyangmao.store
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
