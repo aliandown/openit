@@ -1,16 +1,6 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: winfo.shop
-  port: 9081
-  udp: true
-  password: 9b62a45e-f14a-4379-a1fe-a741287bab56
-  sni: winfo.shop
-  skip-cert-verify: true
-  alpn:
-  - http/1.1
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
   server: luyangmao.store
   port: 8091
   udp: true
@@ -24,7 +14,6 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -32,6 +21,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
