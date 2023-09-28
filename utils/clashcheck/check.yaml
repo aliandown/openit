@@ -19,21 +19,12 @@ proxies:
   skip-cert-verify: true
   alpn:
   - http/1.1
-- name: "\U0001F1F8\U0001F1EC SG 3"
-  server: ovozhaws.ovonice.com
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 60000
-  password: 65614142-4bb8-4da6-a272-ee12db5e5949
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -42,6 +33,5 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
