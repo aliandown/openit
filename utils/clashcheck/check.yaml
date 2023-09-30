@@ -6,17 +6,11 @@ proxies:
   password: 98bae868-4f00-40e0-9603-8d848644ec44
   sni: hkmax06.170203.xyz
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 TW 2"
-  server: levuior.taiwanesefood.link
-  port: 443
-  type: trojan
-  password: 2FlAxyOy3ScaC5xNOSFeRqZgASj73CpIlCYTE8p4DaBD3Rn3zXe9Y80uaZwD6K
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1ED CH 1"
-  - "\U0001F1E8\U0001F1F3 TW 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -24,6 +18,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1ED CH 1"
-  - "\U0001F1E8\U0001F1F3 TW 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
