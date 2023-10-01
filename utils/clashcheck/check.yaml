@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: usa2.connecton.surf
+  server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 29dbe98050
+  password: xxoo
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: rn.ywcloud.cf
+  server: usa3.connecton.surf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 3cab4355-1a73-4b27-b744-64cc64602dd3
+  password: 3550ce3dec
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -24,20 +24,21 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us.blazeppn.info
+  server: rn.ywcloud.cf
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: xxoo
+  password: 3cab4355-1a73-4b27-b744-64cc64602dd3
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 23.94.122.66
-  port: 38505
+  server: usa2.connecton.surf
   type: trojan
-  password: dTjHHw2kDE
-  sni: telewebion.com
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 29dbe98050
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 6"
   server: fra1.connecton.surf
   type: trojan
@@ -62,6 +63,21 @@ proxies:
   password: 6e31f936a2
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 9"
+  server: 23.94.122.66
+  port: 38505
+  type: trojan
+  password: dTjHHw2kDE
+  sni: telewebion.com
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 10"
+  server: tokyo.clare88.tk
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 43986
+  password: 3pfvcVO2H7
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -74,6 +90,8 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1EA\U0001F1F8 ES 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -88,5 +106,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EC\U0001F1E7 GB 7"
   - "\U0001F1EA\U0001F1F8 ES 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
