@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: rn.ywcloud.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3cab4355-1a73-4b27-b744-64cc64602dd3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
   password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: tokyo.clare88.tk
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 43986
+  password: 3pfvcVO2H7
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 3"
@@ -28,7 +28,7 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -37,7 +37,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
