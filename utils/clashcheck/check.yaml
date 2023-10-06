@@ -1,21 +1,12 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
+  server: 23.94.122.66
+  port: 38505
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
+  password: dTjHHw2kDE
+  sni: telewebion.com
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: tokyo.clare88.tk
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 43986
-  password: 3pfvcVO2H7
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 3"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
   type: trojan
   server: 15.237.86.179
   port: 22222
@@ -25,7 +16,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - http/1.1
-- name: "\U0001F1E9\U0001F1EA DE 4"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
   server: 3.79.77.105
   port: 22222
@@ -33,15 +24,7 @@ proxies:
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  type: trojan
-  server: 13.39.211.19
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 6"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: 35.158.187.4
   port: 22222
@@ -49,7 +32,7 @@ proxies:
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
-- name: "\U0001F1EC\U0001F1E7 GB 7"
+- name: "\U0001F1EC\U0001F1E7 GB 5"
   type: trojan
   server: 198.244.252.93
   port: 443
@@ -62,12 +45,10 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1EC\U0001F1E7 GB 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -75,11 +56,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
+  - "\U0001F1EC\U0001F1E7 GB 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
