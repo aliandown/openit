@@ -15,34 +15,19 @@ proxies:
   password: 3cab4355-1a73-4b27-b744-64cc64602dd3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 23.94.122.66
-  port: 38505
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: fra1.connecton.surf
   type: trojan
-  password: dTjHHw2kDE
-  sni: telewebion.com
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: cc491f13e9
   skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F8\U0001F1EC SG 4"
   server: sgpaws01.celerlink.one
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 4446
-  password: f8be07e9-4455-463f-ab36-770c5c5a39bb
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  type: trojan
-  server: 103.15.217.182
-  port: 33058
-  udp: true
-  password: QHhbhwe6lj
-  sni: 103.15.217.182
-  skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: jpaws01.celerlink.one
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 64003
   password: f8be07e9-4455-463f-ab36-770c5c5a39bb
   skip-cert-verify: true
   udp: true
@@ -52,10 +37,8 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,9 +47,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
