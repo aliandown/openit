@@ -7,15 +7,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: rn.ywcloud.cf
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 3cab4355-1a73-4b27-b744-64cc64602dd3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: tokyo.clare88.tk
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -23,14 +15,7 @@ proxies:
   password: 3pfvcVO2H7
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 23.94.122.66
-  port: 38505
-  type: trojan
-  password: dTjHHw2kDE
-  sni: telewebion.com
-  skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
   server: 15.237.86.179
   port: 22222
@@ -40,15 +25,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - http/1.1
-- name: "\U0001F1EB\U0001F1F7 FR 6"
-  type: trojan
-  server: 13.39.211.19
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 7"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: 3.79.77.105
   port: 22222
@@ -56,7 +33,15 @@ proxies:
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 8"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  type: trojan
+  server: 13.39.211.19
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA DE 6"
   type: trojan
   server: 35.158.187.4
   port: 22222
@@ -64,7 +49,7 @@ proxies:
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
-- name: "\U0001F1EC\U0001F1E7 GB 9"
+- name: "\U0001F1EC\U0001F1E7 GB 7"
   type: trojan
   server: 198.244.252.93
   port: 443
@@ -72,27 +57,17 @@ proxies:
   password: de5a47b3e2
   sni: uk1.connecton.surf
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 10"
-  type: trojan
-  server: fra1.connecton.surf
-  port: 443
-  udp: true
-  password: cc491f13e9
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -100,14 +75,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EC\U0001F1E7 GB 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
