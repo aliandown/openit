@@ -1,5 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: rn.ywcloud.cf
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 3cab4355-1a73-4b27-b744-64cc64602dd3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,13 +15,6 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 23.94.122.66
-  port: 38505
-  type: trojan
-  password: dTjHHw2kDE
-  sni: telewebion.com
-  skip-cert-verify: true
 - name: "\U0001F1EF\U0001F1F5 JP 3"
   server: tokyo.clare88.tk
   type: trojan
@@ -24,20 +25,20 @@ proxies:
   udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
-  server: 15.237.86.179
+  server: 15.188.67.148
   port: 22222
   udp: true
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   alpn:
   - http/1.1
 - name: "\U0001F1EB\U0001F1F7 FR 5"
   type: trojan
-  server: 15.188.67.148
+  server: 15.237.86.179
   port: 22222
   udp: true
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   alpn:
