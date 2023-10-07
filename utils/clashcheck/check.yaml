@@ -1,13 +1,32 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 TW 1"
+  server: tw1.411api-snisajdnjkndd.com
+  type: trojan
+  country: "\U0001F1F9\U0001F1FCTW"
+  port: 64002
+  password: f8be07e9-4455-463f-ab36-770c5c5a39bb
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 23.94.122.66
+  port: 38505
+  type: trojan
+  password: dTjHHw2kDE
+  sni: telewebion.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
