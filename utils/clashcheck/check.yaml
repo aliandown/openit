@@ -7,28 +7,29 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: tokyo.clare88.tk
+- name: "\U0001F1E8\U0001F1F3 TW 2"
+  server: tw1.411api-snisajdnjkndd.com
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 43986
-  password: 3pfvcVO2H7
+  country: "\U0001F1F9\U0001F1FCTW"
+  port: 64002
+  password: f8be07e9-4455-463f-ab36-770c5c5a39bb
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 23.94.122.66
-  port: 38505
+- name: "\U0001F1F7\U0001F1FA RU 3"
+  server: ru02.celerlink.one
   type: trojan
-  password: dTjHHw2kDE
-  sni: telewebion.com
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 64000
+  password: 80788c96-dfbf-40a8-ab8f-de3a6357d190
   skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -36,7 +37,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
