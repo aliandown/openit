@@ -14,20 +14,20 @@ proxies:
   password: dTjHHw2kDE
   sni: telewebion.com
   skip-cert-verify: true
-- name: "\U0001F1EB\U0001F1F7 FR 3"
+- name: "\U0001F1F7\U0001F1FA RU 3"
+  server: ru02.celerlink.one
+  type: trojan
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 64000
+  password: 80788c96-dfbf-40a8-ab8f-de3a6357d190
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: fra1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
   port: 443
   password: cc491f13e9
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 4"
-  server: tw1.411api-snisajdnjkndd.com
-  type: trojan
-  country: "\U0001F1F9\U0001F1FCTW"
-  port: 64002
-  password: f8be07e9-4455-463f-ab36-770c5c5a39bb
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -36,8 +36,8 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -46,7 +46,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
