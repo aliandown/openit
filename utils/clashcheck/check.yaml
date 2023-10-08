@@ -7,26 +7,27 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: tokyo.clare88.tk
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  server: 36.137.198.90
+  port: 10823
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 43986
-  password: 3pfvcVO2H7
+  password: 090c5c96-08e2-4d21-b7bd-ce0e75a9df73
+  sni: alibaba-node.cn
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 3"
-  server: tw2.411api-snisajdnjkndd.com
-  port: 64002
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: 36.137.198.8
+  port: 10822
   type: trojan
-  password: cb83adea-440d-4337-ac1c-46e77589051e
+  password: f69fc884-44f6-4ff1-939b-e34a55d49a4d
+  sni: alibaba-node.cn
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -34,7 +35,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
