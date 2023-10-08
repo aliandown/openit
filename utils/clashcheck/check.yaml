@@ -9,14 +9,7 @@ proxies:
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 2"
   server: 36.137.198.90
-  port: 10823
-  type: trojan
-  password: 090c5c96-08e2-4d21-b7bd-ce0e75a9df73
-  sni: alibaba-node.cn
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 36.137.198.8
-  port: 10822
+  port: 10819
   type: trojan
   password: f69fc884-44f6-4ff1-939b-e34a55d49a4d
   sni: alibaba-node.cn
@@ -27,7 +20,6 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -36,6 +28,5 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
