@@ -1,14 +1,5 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  type: trojan
-  server: 5.104.107.143
-  port: 443
-  udp: true
-  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
-  sni: de1.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 2"
+- name: "\U0001F1F7\U0001F1FA RU 1"
   server: ru02.celerlink.one
   port: 64000
   type: trojan
@@ -17,15 +8,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1F7\U0001F1FA RU 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1F7\U0001F1FA RU 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
