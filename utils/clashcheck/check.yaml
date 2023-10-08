@@ -7,17 +7,21 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 2"
-  server: tw2.411api-snisajdnjkndd.com
-  port: 64002
+- name: "\U0001F1E9\U0001F1EA DE 2"
   type: trojan
-  password: cb83adea-440d-4337-ac1c-46e77589051e
+  server: 5.104.107.143
+  port: 443
+  udp: true
+  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
+  sni: de1.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -25,6 +29,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
