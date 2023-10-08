@@ -1,23 +1,50 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 TW 1"
-  server: tw1.411api-snisajdnjkndd.com
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
   type: trojan
-  country: "\U0001F1F9\U0001F1FCTW"
-  port: 64002
-  password: f8be07e9-4455-463f-ab36-770c5c5a39bb
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  server: 36.137.198.8
+  port: 10847
+  type: trojan
+  password: 1806a9c1-d893-4783-960d-999cfb0d2d43
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: 36.137.198.90
+  port: 10847
+  type: trojan
+  password: 1d0d3d83-e245-4023-a87c-ab5b0e5268da
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 36.137.198.90
+  port: 10826
+  type: trojan
+  password: f69fc884-44f6-4ff1-939b-e34a55d49a4d
+  sni: alibaba-node.cn
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
