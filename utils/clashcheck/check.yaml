@@ -1,5 +1,13 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  udp: true
+  password: 59a182c0-64c0-11ee-b57a-1239d0255272
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 2"
   type: trojan
   server: 99.80.79.181
   port: 22222
@@ -8,38 +16,19 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: 51.38.65.155
-  port: 443
-  udp: true
-  password: 59a182c0-64c0-11ee-b57a-1239d0255272
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 3"
-  type: trojan
-  server: pqhinet3.aiopen.cfd
-  port: 443
-  udp: true
-  password: af61ca1c-fb6c-427b-b298-0791a43a968b
-  sni: 18-140-66-207.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
