@@ -17,16 +17,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1EA IE 3"
-  type: trojan
-  server: 3.254.128.82
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
   server: 13.37.64.113
   port: 22222
@@ -35,7 +26,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
   server: 13.36.61.217
   port: 22222
@@ -44,12 +35,21 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 6"
+- name: "\U0001F1E9\U0001F1EA DE 5"
   type: trojan
   server: 18.153.86.17
   port: 22222
   udp: true
   password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 6"
+  type: trojan
+  server: 3.254.128.82
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
@@ -68,10 +68,10 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EE\U0001F1EA IE 6"
   - "\U0001F1EB\U0001F1EE FI 7"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -81,10 +81,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EE\U0001F1EA IE 6"
   - "\U0001F1EB\U0001F1EE FI 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
