@@ -26,6 +26,15 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  type: trojan
+  server: 54.246.70.36
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -33,6 +42,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -42,5 +52,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
