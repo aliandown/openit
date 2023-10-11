@@ -1,20 +1,48 @@
 proxies:
-- name: "\U0001F1EB\U0001F1EE FI 1"
-  server: fi1.connecton.surf
-  port: 443
+- name: "\U0001F1E8\U0001F1F3 TW 1"
+  server: bgptwtoora.uds-global.com
+  port: 48011
   type: trojan
-  password: 44c5578a7c
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+- name: "\U0001F1E8\U0001F1F3 TW 2"
+  server: bgptwtoora.uds-global.com
+  port: 48027
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+- name: "\U0001F1E8\U0001F1F3 TW 3"
+  server: bgptwtoora.uds-global.com
+  port: 48026
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+- name: "\U0001F1E8\U0001F1F3 TW 4"
+  server: bgptwtoora.uds-global.com
+  port: 48008
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+- name: "\U0001F1E8\U0001F1F3 TW 5"
+  server: bgptwtoora.uds-global.com
+  port: 48004
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1EE FI 1"
+  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1EE FI 1"
+  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
