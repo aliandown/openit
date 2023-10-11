@@ -1,10 +1,59 @@
 proxies:
-- name: "\U0001F1EB\U0001F1EE FI 1"
-  server: fi1.connecton.surf
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  password: 44c5578a7c
-- name: "\U0001F1EE\U0001F1EA IE 2"
+  server: barbecuesauce.sovietart.site
+  port: 443
+  udp: true
+  password: PejNHihtOo
+  sni: barbecuesauce.sovietart.site
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 3.131.2.174
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 3"
+  type: trojan
+  server: 54.246.70.36
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  type: trojan
+  server: 13.37.64.113
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  type: trojan
+  server: 13.36.61.217
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 6"
+  type: trojan
+  server: 18.153.86.17
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 7"
   type: trojan
   server: 3.254.128.82
   port: 22222
@@ -17,15 +66,25 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1EE FI 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EE\U0001F1EA IE 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1EE FI 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EE\U0001F1EA IE 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
