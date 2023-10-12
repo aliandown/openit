@@ -1,13 +1,20 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 HK 1"
+  server: bpg-nd-cc-ora.nbnodeyyds.xyz
+  port: 48007
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 HK 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 HK 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
