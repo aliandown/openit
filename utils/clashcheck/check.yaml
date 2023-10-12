@@ -1,67 +1,13 @@
-proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: bwg-us-1822945.strongpipe.live
-  port: 20443
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1F7\U0001F1FA RU 2"
-  server: msk-de-9396.strongpipe.live
-  port: 20443
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: bwg-jp-1824048.strongpipe.live
-  port: 20443
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: msk-tw-9214.strongpipe.live
-  port: 20443
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1E9\U0001F1EA DE 5"
-  server: msk-hk-8982.strongpipe.live
-  port: 20443
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: home-hkt-1.strongpipe.live
-  port: 20443
-  type: http
-  username: b74b2457b5
-  password: ddc132a6a3
-  tls: true
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
