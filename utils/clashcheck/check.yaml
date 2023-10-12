@@ -1,15 +1,6 @@
 proxies:
 - name: "\U0001F1EB\U0001F1F7 FR 1"
   type: trojan
-  server: 13.38.169.131
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  type: trojan
   server: 51.195.202.124
   port: 443
   udp: true
@@ -19,6 +10,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  type: trojan
+  server: 13.38.226.255
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+  network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
   server: 15.237.86.179
@@ -30,23 +30,14 @@ proxies:
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
-  server: 13.36.185.126
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  type: trojan
-  server: 15.188.9.170
+  server: 13.39.211.19
   port: 22222
   udp: true
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: false
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 6"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   type: trojan
   server: 51.195.202.124
   port: 2053
@@ -54,6 +45,15 @@ proxies:
   password: bb106072-8b31-4ae8-b94d-be5c6c1b7ab4
   sni: MARKETVPN1AB841.ddns.net
   skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 6"
+  type: trojan
+  server: 15.188.9.170
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 7"
   type: trojan
@@ -77,8 +77,13 @@ proxies:
   sni: sourceforge.net
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: bgpfororacc.20226899.xyz
+  port: 48005
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
 - type: trojan
-  name: "\U0001F1EE\U0001F1EA IE 9"
+  name: "\U0001F1EE\U0001F1EA IE 10"
   server: 54.246.180.242
   port: 22222
   password: telegram-id-directvpn
@@ -86,11 +91,6 @@ proxies:
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  server: bgpfororacc.20226899.xyz
-  port: 48005
-  type: trojan
-  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
 - type: trojan
   name: "\U0001F1E9\U0001F1EA DE 11"
   server: 3.79.77.105
@@ -101,15 +101,20 @@ proxies:
   sni: trj.rollingnext.co.uk
   network: tcp
 - type: trojan
-  name: "\U0001F1EE\U0001F1EA IE 12"
-  server: 54.228.119.21
+  name: "\U0001F1E9\U0001F1EA DE 12"
+  server: 35.158.187.4
   port: 22222
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   udp: true
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 13"
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  server: bgpfororacc.20226899.xyz
+  port: 48007
+  type: trojan
+  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+- name: "\U0001F1EB\U0001F1F7 FR 14"
   type: trojan
   server: 54.36.173.159
   port: 443
@@ -118,19 +123,45 @@ proxies:
   sni: pol1.connecton.surf
   skip-cert-verify: false
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 14"
+- name: "\U0001F1EB\U0001F1F7 FR 15"
   type: trojan
-  server: 104.238.190.156
+  server: 51.158.63.14
   port: 443
   udp: true
-  password: b2fbaeb0-e27b-4434-a8e3-9c5ad41885e6
-  sni: hdfy1d2.foriran.trade
+  password: cc491f13e9
+  sni: fra1.connecton.surf
   skip-cert-verify: true
-  network: ws
+  network: tcp
   ws-opts:
-    path: /Qz8F1WYdH3qY7wwF
     headers:
-      host: hdfy1d2.foriran.trade
+      host: fra1.connecton.surf
+- name: "\U0001F1EB\U0001F1F7 FR 16"
+  type: trojan
+  server: 13.38.169.131
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+  network: tcp
+- type: trojan
+  name: "\U0001F1EE\U0001F1EA IE 17"
+  server: 54.228.119.21
+  port: 22222
+  password: telegram-id-privatevpns
+  udp: true
+  skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 18"
+  type: trojan
+  server: 13.36.185.126
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -143,12 +174,16 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EB\U0001F1F7 FR 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1EE\U0001F1EA IE 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EE\U0001F1EA IE 10"
   - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1EE\U0001F1EA IE 12"
-  - "\U0001F1EB\U0001F1F7 FR 13"
+  - "\U0001F1E9\U0001F1EA DE 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1EB\U0001F1F7 FR 14"
+  - "\U0001F1EB\U0001F1F7 FR 15"
+  - "\U0001F1EB\U0001F1F7 FR 16"
+  - "\U0001F1EE\U0001F1EA IE 17"
+  - "\U0001F1EB\U0001F1F7 FR 18"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -163,11 +198,15 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EB\U0001F1F7 FR 7"
   - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1EE\U0001F1EA IE 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EE\U0001F1EA IE 10"
   - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1EE\U0001F1EA IE 12"
-  - "\U0001F1EB\U0001F1F7 FR 13"
+  - "\U0001F1E9\U0001F1EA DE 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1EB\U0001F1F7 FR 14"
+  - "\U0001F1EB\U0001F1F7 FR 15"
+  - "\U0001F1EB\U0001F1F7 FR 16"
+  - "\U0001F1EE\U0001F1EA IE 17"
+  - "\U0001F1EB\U0001F1F7 FR 18"
 rules:
 - "MATCH,\U0001F310 Proxy"
