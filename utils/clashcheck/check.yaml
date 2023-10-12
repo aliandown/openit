@@ -1,15 +1,13 @@
 proxies:
 - name: "\U0001F1EB\U0001F1F7 FR 1"
   type: trojan
-  server: 51.195.202.124
-  port: 443
+  server: 13.39.211.19
+  port: 22222
   udp: true
-  password: a9a51853-3747-468a-84f3-94dc080593ac
-  sni: uk2.trojanvpn.de
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+  network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 2"
   type: trojan
   server: 15.237.86.179
@@ -21,13 +19,15 @@ proxies:
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
-  server: 13.39.211.19
-  port: 22222
+  server: 51.195.202.124
+  port: 443
   udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-  network: tcp
+  password: a9a51853-3747-468a-84f3-94dc080593ac
+  sni: uk2.trojanvpn.de
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 - name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
   server: 15.188.9.170
@@ -48,6 +48,18 @@ proxies:
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 6"
   type: trojan
+  server: 51.158.63.14
+  port: 443
+  udp: true
+  password: cc491f13e9
+  sni: fra1.connecton.surf
+  skip-cert-verify: true
+  network: tcp
+  ws-opts:
+    headers:
+      host: fra1.connecton.surf
+- name: "\U0001F1EB\U0001F1F7 FR 7"
+  type: trojan
   server: 15.236.64.14
   port: 443
   udp: true
@@ -59,7 +71,7 @@ proxies:
     path: /f1rocket
     headers:
       host: aws-fr-paris-1.f1rocketnode.comhttp/1.1
-- name: "\U0001F1EB\U0001F1F7 FR 7"
+- name: "\U0001F1EB\U0001F1F7 FR 8"
   type: trojan
   server: 51.255.49.192
   port: 443
@@ -67,15 +79,6 @@ proxies:
   password: 4cf9259e-cd09-4f38-9293-db448c116a47
   sni: sourceforge.net
   skip-cert-verify: true
-  network: tcp
-- type: trojan
-  name: "\U0001F1EE\U0001F1EA IE 8"
-  server: 54.246.180.242
-  port: 22222
-  password: telegram-id-directvpn
-  udp: true
-  skip-cert-verify: true
-  sni: trj.rollingnext.co.uk
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 9"
   type: trojan
@@ -87,8 +90,8 @@ proxies:
   skip-cert-verify: false
   network: tcp
 - type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 10"
-  server: 3.79.77.105
+  name: "\U0001F1EE\U0001F1EA IE 10"
+  server: 54.246.180.242
   port: 22222
   password: telegram-id-directvpn
   udp: true
@@ -104,20 +107,8 @@ proxies:
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 12"
-  type: trojan
-  server: 51.158.63.14
-  port: 443
-  udp: true
-  password: cc491f13e9
-  sni: fra1.connecton.surf
-  skip-cert-verify: true
-  network: tcp
-  ws-opts:
-    headers:
-      host: fra1.connecton.surf
 - type: trojan
-  name: "\U0001F1EE\U0001F1EA IE 13"
+  name: "\U0001F1EE\U0001F1EA IE 12"
   server: 54.228.119.21
   port: 22222
   password: telegram-id-privatevpns
@@ -136,12 +127,11 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EB\U0001F1F7 FR 7"
-  - "\U0001F1EE\U0001F1EA IE 8"
+  - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1EB\U0001F1F7 FR 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1EE\U0001F1EA IE 10"
   - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
-  - "\U0001F1EE\U0001F1EA IE 13"
+  - "\U0001F1EE\U0001F1EA IE 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -155,11 +145,10 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1EB\U0001F1F7 FR 7"
-  - "\U0001F1EE\U0001F1EA IE 8"
+  - "\U0001F1EB\U0001F1F7 FR 8"
   - "\U0001F1EB\U0001F1F7 FR 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1EE\U0001F1EA IE 10"
   - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1EB\U0001F1F7 FR 12"
-  - "\U0001F1EE\U0001F1EA IE 13"
+  - "\U0001F1EE\U0001F1EA IE 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
