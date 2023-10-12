@@ -1,20 +1,13 @@
-proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
-  server: bgpfororacc.20226899.xyz
-  port: 48014
-  type: trojan
-  password: ccbdc122-db63-4d56-b995-f3e27fcf4de9
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
