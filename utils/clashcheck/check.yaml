@@ -1,10 +1,11 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
   type: trojan
-  server: uk1.connecton.surf
-  port: 443
+  server: 13.39.200.15
+  port: 22222
   udp: true
-  password: c33883045c
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 2"
@@ -16,13 +17,12 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 3"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
   type: trojan
-  server: 13.39.200.15
-  port: 22222
+  server: uk1.connecton.surf
+  port: 443
   udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
+  password: c33883045c
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 4"
@@ -47,9 +47,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
@@ -58,9 +58,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1FA\U0001F1F8 US 5"
 rules:
