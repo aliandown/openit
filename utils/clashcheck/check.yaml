@@ -10,11 +10,21 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: trojan
+  server: 61.136.232.135
+  port: 10803
+  udp: true
+  password: 24c4170d-1c80-4586-8ddd-c71431ba3eb0
+  sni: alibaba-node.cn
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -22,5 +32,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
