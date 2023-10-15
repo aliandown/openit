@@ -1,5 +1,10 @@
 proxies:
-- name: "\U0001F1F7\U0001F1FA RU 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: v26.jsvpn.xyz
+  port: 443
+  type: trojan
+  password: ee5d4ca4-cb15-4201-ba4f-4709b5a833d4
+- name: "\U0001F1F7\U0001F1FA RU 2"
   server: v234.jsvpn.xyz
   port: 443
   type: trojan
@@ -8,13 +13,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F7\U0001F1FA RU 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F7\U0001F1FA RU 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
