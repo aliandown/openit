@@ -1,13 +1,5 @@
 proxies:
-- name: "\U0001F1F7\U0001F1FA RU 1"
-  server: v234.jsvpn.xyz
-  type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 443
-  password: ee5d4ca4-cb15-4201-ba4f-4709b5a833d4
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1EF\U0001F1F5 JP 1"
   type: trojan
   server: 54.168.244.142
   port: 3306
@@ -18,19 +10,27 @@ proxies:
   network: ws
   ws-opts:
     path: /gateway/connect
+- name: "\U0001F1F7\U0001F1FA RU 2"
+  server: v234.jsvpn.xyz
+  type: trojan
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 443
+  password: ee5d4ca4-cb15-4201-ba4f-4709b5a833d4
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F7\U0001F1FA RU 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1F7\U0001F1FA RU 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F7\U0001F1FA RU 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EF\U0001F1F5 JP 1"
+  - "\U0001F1F7\U0001F1FA RU 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
