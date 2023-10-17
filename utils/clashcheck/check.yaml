@@ -18,15 +18,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: sg2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 443
-  udp: true
-  password: e5c65270-bef7-4d38-b8c1-03274edf545f
-  sni: 13-231-155-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
   server: sg1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
   udp: true
@@ -34,7 +25,7 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1EE FI 5"
+- name: "\U0001F1EB\U0001F1EE FI 4"
   server: fi1.connecton.surf
   type: trojan
   country: "\U0001F1EE\U0001F1F9IT"
@@ -42,15 +33,6 @@ proxies:
   password: 44c5578a7c
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  type: trojan
-  server: hk2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 50414
-  udp: true
-  password: a3f221f8-43d6-4363-8624-ce62d3db0202
-  sni: 13-231-155-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -58,9 +40,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EB\U0001F1EE FI 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1EB\U0001F1EE FI 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -70,8 +50,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EB\U0001F1EE FI 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1EB\U0001F1EE FI 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
