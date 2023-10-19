@@ -9,6 +9,15 @@ proxies:
   udp: true
 - name: "\U0001F1EE\U0001F1EA IE 2"
   type: trojan
+  server: 108.129.3.227
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 3"
+  type: trojan
   server: 34.240.21.228
   port: 22222
   udp: true
@@ -16,7 +25,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 3"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: 3.79.131.235
   port: 22222
@@ -25,38 +34,21 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  type: trojan
-  server: 15.236.116.176
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1EA IE 5"
-  type: trojan
-  server: 108.129.3.227
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1EE FI 6"
-  server: fi1.connecton.surf
-  type: trojan
-  country: "\U0001F1EE\U0001F1F9IT"
-  port: 443
-  password: 44c5578a7c
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E9\U0001F1EA DE 7"
+- name: "\U0001F1E9\U0001F1EA DE 5"
   type: trojan
   server: 3.73.186.118
   port: 22222
   udp: true
   password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 6"
+  type: trojan
+  server: 15.236.116.176
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
@@ -66,11 +58,10 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1EB\U0001F1EE FI 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -79,10 +70,9 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1EB\U0001F1EE FI 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EB\U0001F1F7 FR 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
