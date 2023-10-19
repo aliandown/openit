@@ -7,7 +7,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1EA IE 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: no.08.ijg.cc
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: fMucnQTndf
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1EA IE 3"
   type: trojan
   server: 108.129.3.227
   port: 22222
@@ -16,7 +24,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1EA IE 3"
+- name: "\U0001F1EE\U0001F1EA IE 4"
   type: trojan
   server: 34.240.21.228
   port: 22222
@@ -25,14 +33,6 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1E9\U0001F1EA DE 5"
   type: trojan
   server: 3.79.131.235
@@ -51,16 +51,25 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EB\U0001F1EE FI 7"
+  server: fi1.connecton.surf
+  type: trojan
+  country: "\U0001F1EE\U0001F1F9IT"
+  port: 443
+  password: 44c5578a7c
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EE\U0001F1EA IE 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1EA IE 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EB\U0001F1EE FI 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -68,10 +77,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EE\U0001F1EA IE 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EE\U0001F1EA IE 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1EB\U0001F1EE FI 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
