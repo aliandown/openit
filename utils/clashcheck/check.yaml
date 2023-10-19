@@ -7,7 +7,16 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1F5\U0001F1F0 PK 2"
+  type: trojan
+  server: us1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 443
+  udp: true
+  password: 9bda5d52-ebb1-44df-bacf-039182452475
+  sni: 13-231-155-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: no.08.ijg.cc
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,15 +24,6 @@ proxies:
   password: fMucnQTndf
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EE\U0001F1EA IE 3"
-  type: trojan
-  server: 108.129.3.227
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1EE\U0001F1EA IE 4"
   type: trojan
   server: 34.240.21.228
@@ -33,7 +33,16 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 5"
+- name: "\U0001F1EE\U0001F1EA IE 5"
+  type: trojan
+  server: 108.129.3.227
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 6"
   type: trojan
   server: 3.79.131.235
   port: 22222
@@ -42,52 +51,16 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F5\U0001F1F0 PK 6"
+- name: "\U0001F1E9\U0001F1EA DE 7"
   type: trojan
-  server: us1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 443
+  server: 3.73.186.118
+  port: 22222
   udp: true
-  password: 9bda5d52-ebb1-44df-bacf-039182452475
-  sni: 13-231-155-134.nhost.00cdn.com
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  type: trojan
-  server: hk1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: a0b94904-68f1-4e35-9509-0b188cf84505
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
-  type: trojan
-  server: sg1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: a0b94904-68f1-4e35-9509-0b188cf84505
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 9"
-  type: trojan
-  server: hinet1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: a0b94904-68f1-4e35-9509-0b188cf84505
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 10"
-  type: trojan
-  server: jp1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: a0b94904-68f1-4e35-9509-0b188cf84505
-  sni: download.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1EE FI 11"
+- name: "\U0001F1EB\U0001F1EE FI 8"
   server: fi1.connecton.surf
   type: trojan
   country: "\U0001F1EE\U0001F1F9IT"
@@ -100,16 +73,13 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1F5\U0001F1F0 PK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1F5\U0001F1F0 PK 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1E8\U0001F1F3 TW 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1EB\U0001F1EE FI 11"
+  - "\U0001F1EE\U0001F1EA IE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1EB\U0001F1EE FI 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -117,15 +87,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1F5\U0001F1F0 PK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1F5\U0001F1F0 PK 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1E8\U0001F1F3 TW 9"
-  - "\U0001F1EF\U0001F1F5 JP 10"
-  - "\U0001F1EB\U0001F1EE FI 11"
+  - "\U0001F1EE\U0001F1EA IE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1EB\U0001F1EE FI 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
