@@ -1,5 +1,14 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: sg1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 443
+  udp: true
+  password: a3f221f8-43d6-4363-8624-ce62d3db0202
+  sni: 13-231-155-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,18 +16,9 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
   type: trojan
-  server: 51.158.63.14
-  port: 443
-  udp: true
-  password: 95532c1dcc
-  sni: fra1.connecton.surf
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  type: trojan
-  server: 52.28.159.71
+  server: 18.132.185.20
   port: 22222
   udp: true
   password: telegram-id-privatevpns
@@ -27,40 +27,14 @@ proxies:
   network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 4"
   type: trojan
-  server: 13.37.210.5
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  server: 51.158.63.14
   port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
   udp: true
-- name: "\U0001F1E9\U0001F1EA DE 6"
-  type: trojan
-  server: 3.120.242.243
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
+  password: 95532c1dcc
+  sni: fra1.connecton.surf
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 7"
-  type: trojan
-  server: 3.65.214.223
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 8"
+- name: "\U0001F1EC\U0001F1E7 GB 5"
   type: trojan
   server: 3.11.126.32
   port: 22222
@@ -69,7 +43,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 9"
+- name: "\U0001F1EC\U0001F1E7 GB 6"
   type: trojan
   server: 13.43.227.116
   port: 22222
@@ -78,12 +52,38 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 10"
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: no.08.ijg.cc
   type: trojan
-  server: 51.20.21.38
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: fMucnQTndf
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E9\U0001F1EA DE 8"
+  type: trojan
+  server: 3.65.214.223
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 9"
+  type: trojan
+  server: 35.181.185.130
   port: 22222
   udp: true
   password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  type: trojan
+  server: 51.20.39.88
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
@@ -101,14 +101,14 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1EC\U0001F1E7 GB 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1FA\U0001F1F8 US 10"
   - "\U0001F1F8\U0001F1EA SE 11"
   url: https://www.google.com/favicon.ico
@@ -118,14 +118,14 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1EC\U0001F1E7 GB 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1EB\U0001F1F7 FR 9"
   - "\U0001F1FA\U0001F1F8 US 10"
   - "\U0001F1F8\U0001F1EA SE 11"
 rules:
