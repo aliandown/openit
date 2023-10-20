@@ -20,25 +20,7 @@ proxies:
   port: 443
   type: trojan
   password: 95532c1dcc
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  type: trojan
-  server: hk1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
-  sni: download.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  type: trojan
-  server: jp1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
-  sni: download.xn--mes358a9urctx.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 6"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: 5.104.107.143
   port: 443
@@ -47,18 +29,36 @@ proxies:
   sni: de1.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 7"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
-  server: hinet1.downloadvip.cfd
+  server: hk1.downloadvip.cfd
   port: 443
   udp: true
   password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  type: trojan
+  server: jp1.downloadvip.cfd
+  port: 443
+  udp: true
+  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 7"
   type: trojan
   server: sg2.downloadvip.cfd
+  port: 443
+  udp: true
+  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 8"
+  type: trojan
+  server: hinet1.downloadvip.cfd
   port: 443
   udp: true
   password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
@@ -72,11 +72,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1E8\U0001F1F3 TW 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -86,10 +86,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1E8\U0001F1F3 TW 7"
-  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
