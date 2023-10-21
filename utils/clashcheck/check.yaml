@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -15,15 +7,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: fra1.connecton.surf
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: 95532c1dcc
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 23.224.22.210
   port: 49753
@@ -31,6 +15,22 @@ proxies:
   password: 4ECP7vbtsW
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: no.08.ijg.cc
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: fMucnQTndf
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  server: fra1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: 95532c1dcc
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 5"
   type: trojan
   server: 138.68.136.50
@@ -58,7 +58,7 @@ proxies:
   udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
-  server: hk1.downloadvip.cfd
+  server: jp1.downloadvip.cfd
   port: 443
   udp: true
   password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
@@ -67,7 +67,16 @@ proxies:
   network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 9"
   type: trojan
-  server: jp1.downloadvip.cfd
+  server: hk1.downloadvip.cfd
+  port: 443
+  udp: true
+  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
+  sni: download.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 10"
+  type: trojan
+  server: hinet1.downloadvip.cfd
   port: 443
   udp: true
   password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
@@ -75,7 +84,7 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: trojan
-  name: "\U0001F1E8\U0001F1F3 HK 10"
+  name: "\U0001F1E8\U0001F1F3 HK 11"
   server: 103.15.217.182
   port: 33058
   password: QHhbhwe6lj
@@ -83,21 +92,12 @@ proxies:
   skip-cert-verify: true
   sni: 103.15.217.182
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11"
+- name: "\U0001F1FA\U0001F1F8 US 12"
   type: trojan
   server: 23.95.67.188
   port: 46756
   udp: true
   password: 5pKlgaOIM2
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 12"
-  type: trojan
-  server: hinet1.downloadvip.cfd
-  port: 443
-  udp: true
-  password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a
-  sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 13"
@@ -123,16 +123,16 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
   - "\U0001F1E9\U0001F1EA DE 6"
   - "\U0001F1EB\U0001F1EE FI 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1E8\U0001F1F3 TW 12"
+  - "\U0001F1E8\U0001F1F3 TW 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
   - "\U0001F1F8\U0001F1EC SG 13"
   - "\U0001F1FA\U0001F1F8 US 14"
   url: https://www.google.com/favicon.ico
@@ -143,16 +143,16 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
   - "\U0001F1E9\U0001F1EA DE 6"
   - "\U0001F1EB\U0001F1EE FI 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1E8\U0001F1F3 TW 12"
+  - "\U0001F1E8\U0001F1F3 TW 10"
+  - "\U0001F1E8\U0001F1F3 HK 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
   - "\U0001F1F8\U0001F1EC SG 13"
   - "\U0001F1FA\U0001F1F8 US 14"
 rules:
