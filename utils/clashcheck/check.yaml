@@ -1,10 +1,10 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: fra1.connecton.surf
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  country: "\U0001F1EB\U0001F1F7FR"
   port: 443
-  password: xxoo
+  password: 95532c1dcc
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
@@ -16,23 +16,7 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: fra1.connecton.surf
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: 95532c1dcc
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 5"
+- name: "\U0001F1EF\U0001F1F5 JP 3"
   type: trojan
   server: hk1.downloadvip.cfd
   port: 443
@@ -41,7 +25,7 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
   server: jp1.downloadvip.cfd
   port: 443
@@ -50,7 +34,15 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 7"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: no.08.ijg.cc
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: fMucnQTndf
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 TW 6"
   type: trojan
   server: hinet1.downloadvip.cfd
   port: 443
@@ -59,7 +51,7 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 8"
+- name: "\U0001F1F8\U0001F1EC SG 7"
   type: trojan
   server: sg1.downloadvip.cfd
   port: 443
@@ -68,7 +60,7 @@ proxies:
   sni: download.xn--mes358a9urctx.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 9"
+- name: "\U0001F1F8\U0001F1EC SG 8"
   type: trojan
   server: sg2.downloadvip.cfd
   port: 443
@@ -81,29 +73,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 TW 7"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 TW 7"
+  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
   - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1F8\U0001F1EC SG 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
