@@ -16,6 +16,15 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: sg2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 443
+  udp: true
+  password: 7e23957d-535a-4dc6-9482-e6f44518da87
+  sni: 13-231-155-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
   server: no.08.ijg.cc
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -30,6 +39,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -39,5 +49,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
