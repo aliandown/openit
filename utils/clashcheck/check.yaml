@@ -1,19 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: sg2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 443
-  udp: true
-  password: 7e23957d-535a-4dc6-9482-e6f44518da87
-  sni: 13-231-155-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
   password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: no.08.ijg.cc
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: fMucnQTndf
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 3"
@@ -24,14 +23,23 @@ proxies:
   password: 95532c1dcc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: no.08.ijg.cc
+- name: "\U0001F1EB\U0001F1EE FI 4"
+  server: fi1.connecton.surf
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  country: "\U0001F1EE\U0001F1F9IT"
   port: 443
-  password: fMucnQTndf
+  password: 44c5578a7c
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: sg2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 443
+  udp: true
+  password: 7e23957d-535a-4dc6-9482-e6f44518da87
+  sni: 13-231-155-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -39,7 +47,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1EE FI 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,6 +58,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1EE FI 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
