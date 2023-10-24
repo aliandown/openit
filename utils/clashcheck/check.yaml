@@ -8,14 +8,30 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: no.08.ijg.cc
   type: trojan
-  server: sg2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: 56a00699-1857-46ac-a861-60d3c17e1b9f
-  sni: 13-231-155-134.nhost.00cdn.com
+  password: fMucnQTndf
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: fra1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: 95532c1dcc
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1EE FI 4"
+  server: fi1.connecton.surf
+  type: trojan
+  country: "\U0001F1EE\U0001F1F9IT"
+  port: 443
+  password: 44c5578a7c
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: sg1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -24,22 +40,6 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: fra1.connecton.surf
-  type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
-  port: 443
-  password: 95532c1dcc
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EB\U0001F1F7 FR 6"
   type: trojan
   server: 13.37.163.17
@@ -49,15 +49,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1EE FI 7"
-  server: fi1.connecton.surf
-  type: trojan
-  country: "\U0001F1EE\U0001F1F9IT"
-  port: 443
-  password: 44c5578a7c
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E9\U0001F1EA DE 8"
+- name: "\U0001F1E9\U0001F1EA DE 7"
   type: trojan
   server: 3.66.186.194
   port: 22222
@@ -72,12 +64,11 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1EE FI 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1EB\U0001F1EE FI 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1E9\U0001F1EA DE 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -86,11 +77,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1EE FI 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1EB\U0001F1EE FI 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1E9\U0001F1EA DE 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
