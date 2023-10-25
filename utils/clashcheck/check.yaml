@@ -8,14 +8,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 13.58.195.124
   port: 22222
@@ -24,7 +16,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: fra1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -32,15 +24,15 @@ proxies:
   password: 95532c1dcc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
-  server: pol1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: no.08.ijg.cc
   type: trojan
-  country: "\U0001F1EB\U0001F1F7FR"
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 4452b6961b
+  password: fMucnQTndf
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1EE FI 6"
+- name: "\U0001F1EB\U0001F1EE FI 5"
   server: fi1.connecton.surf
   type: trojan
   country: "\U0001F1EE\U0001F1F9IT"
@@ -48,16 +40,73 @@ proxies:
   password: 44c5578a7c
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  type: ss
+  server: 120.232.165.61
+  port: 9900
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
+- name: "\U0001F1EB\U0001F1F7 FR 7"
+  server: pol1.connecton.surf
+  type: trojan
+  country: "\U0001F1EB\U0001F1F7FR"
+  port: 443
+  password: 4452b6961b
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  type: ss
+  server: 120.232.165.61
+  port: 31001
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  type: ss
+  server: 120.232.165.61
+  port: 32001
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  type: ss
+  server: 120.232.165.61
+  port: 32006
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  type: ss
+  server: 120.232.165.61
+  port: 32002
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  type: ss
+  server: 120.232.165.61
+  port: 32003
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 13"
+  type: ss
+  server: 120.232.165.61
+  port: 32007
+  password: bbf04cb3-df5f-4ba6-a8c9-699ad42556b6
+  cipher: aes-128-gcm
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1EE FI 6"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1EE FI 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,9 +115,16 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1EE FI 6"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1EB\U0001F1EE FI 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
