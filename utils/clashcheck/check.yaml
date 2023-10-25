@@ -8,14 +8,6 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 13.58.195.124
   port: 22222
@@ -24,7 +16,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: fra1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -32,7 +24,7 @@ proxies:
   password: 95532c1dcc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: pol1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -40,12 +32,12 @@ proxies:
   password: 4452b6961b
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1EE FI 6"
-  server: fi1.connecton.surf
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: no.08.ijg.cc
   type: trojan
-  country: "\U0001F1EE\U0001F1F9IT"
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 44c5578a7c
+  password: fMucnQTndf
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -54,10 +46,9 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1EE FI 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -66,9 +57,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1EE FI 6"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
