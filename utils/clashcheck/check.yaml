@@ -7,7 +7,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: no.08.ijg.cc
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: fMucnQTndf
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: fra1.connecton.surf
   type: trojan
   country: "\U0001F1EB\U0001F1F7FR"
@@ -15,20 +23,16 @@ proxies:
   password: 95532c1dcc
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: pqawsjp1.aiopen.cfd
-  port: 443
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  server: pol1.connecton.surf
   type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: gsawsjp1.aiopen.cfd
+  country: "\U0001F1EB\U0001F1F7FR"
   port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 18-140-66-207.nhost.00cdn.com
+  password: 4452b6961b
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: gsawshk1.aiopen.cfd
+  server: pqawsjp2.aiopen.cfd
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
@@ -46,19 +50,19 @@ proxies:
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1F8\U0001F1EC SG 8"
+  server: gsawssg1.aiopen.cfd
+  port: 443
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 18-140-66-207.nhost.00cdn.com
+- name: "\U0001F1F8\U0001F1EC SG 9"
   server: gsawssg2.aiopen.cfd
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: gsawsjp2.aiopen.cfd
-  port: 443
-  type: trojan
-  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
-  sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1F8\U0001F1EC SG 10"
-  server: gsawssg1.aiopen.cfd
+- name: "\U0001F1EF\U0001F1F5 JP 10"
+  server: pqawsjp4.aiopen.cfd
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
@@ -75,16 +79,14 @@ proxies:
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
   sni: 18-140-66-207.nhost.00cdn.com
-- name: "\U0001F1FA\U0001F1F8 US 13"
-  server: no.08.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  server: gsawsjp1.aiopen.cfd
   port: 443
-  password: fMucnQTndf
-  skip-cert-verify: true
-  udp: true
+  type: trojan
+  password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
+  sni: 18-140-66-207.nhost.00cdn.com
 - name: "\U0001F1EF\U0001F1F5 JP 14"
-  server: pqawsjp4.aiopen.cfd
+  server: gsawshk1.aiopen.cfd
   port: 443
   type: trojan
   password: 89ce124f-42d1-4c90-b9d2-bde2861ae615
@@ -103,18 +105,18 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1EF\U0001F1F5 JP 14"
   - "\U0001F1F8\U0001F1EC SG 15"
   url: https://www.google.com/favicon.ico
@@ -124,18 +126,18 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
   - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1F8\U0001F1EC SG 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
   - "\U0001F1F8\U0001F1EC SG 11"
   - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1EF\U0001F1F5 JP 14"
   - "\U0001F1F8\U0001F1EC SG 15"
 rules:
