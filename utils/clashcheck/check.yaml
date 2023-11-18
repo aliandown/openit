@@ -1,24 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: tempest-us.aikun.online
+  server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  password: xxoo
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 167.68.5.183
-  port: 443
-  udp: true
-  password: d2698cf9-c47e-455c-8384-12e642cbba15
-  sni: 6us3.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us3
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -29,12 +18,23 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 167.68.5.183
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: 6us3.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us3
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us.blazeppn.info
+  server: tempest-us.aikun.online
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: xxoo
+  password: 11e247e5-136d-45f1-844a-a7f054d36bab
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 5"
