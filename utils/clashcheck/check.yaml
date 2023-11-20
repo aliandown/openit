@@ -1,5 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: no.09.ijg.cc
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -7,12 +15,12 @@ proxies:
   password: j47juGmQIo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: xg107.npv4.com
+- name: "\U0001F1F7\U0001F1FA RU 3"
+  server: hk3.visaapp.top
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 6a96b7c2-c918-3bb6-94b5-9861d13f9a00
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 49487
+  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -21,6 +29,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,5 +38,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
