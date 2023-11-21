@@ -1,18 +1,18 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: no.09.ijg.cc
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: j47juGmQIo
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
   password: xxoo
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: no.09.ijg.cc
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: j47juGmQIo
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -39,42 +39,6 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: nljs.liangyuandiancloud.com
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 443
-  password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 7"
-  server: lu.liangyuandiancloud.com
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 443
-  password: 4f2f34cc-d2e9-4ca8-a687-68efe5ad5959
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  type: ssr
-  server: yd-02.paofunlink.com
-  port: 1081
-  password: bxsnucrgk6hfish
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: TG@wangcai_1
-  protocol-param: 40575:fV3Nxq
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  type: ssr
-  server: yd-05.paofunlink.com
-  port: 1083
-  password: bxsnucrgk6hfish
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: TG@wangcai_1
-  protocol-param: 40575:fV3Nxq
 proxy-groups:
 - name: automatic
   type: url-test
@@ -84,10 +48,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -99,9 +59,5 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
