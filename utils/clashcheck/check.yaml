@@ -1,13 +1,27 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: no.09.ijg.cc
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: j47juGmQIo
-  skip-cert-verify: true
+  server: 159.223.207.182
+  port: 34428
   udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 2"
+  password: zIvR7ryOXv
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: sj1.alieszvps.cf
+  port: 45555
+  udp: true
+  password: VpRuqFDCJo
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: ss
+  server: 154.3.8.151
+  port: 30067
+  password: iUB0923RBA
+  cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1E6 CA 4"
   type: trojan
   server: t5.583181.xyz
   port: 1272
@@ -16,37 +30,58 @@ proxies:
   sni: www.baidu.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: us.blazeppn.info
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 138.197.5.103
+  port: 443
+  udp: true
+  password: xxoo
+  sni: dserver.adad.ir
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: no.09.ijg.cc
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: xxoo
+  password: j47juGmQIo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1F7\U0001F1FA RU 7"
+  server: hk3.visaapp.top
   type: trojan
-  server: 159.223.207.182
-  port: 34428
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 49487
+  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+  skip-cert-verify: true
   udp: true
-  password: zIvR7ryOXv
+- name: "\U0001F1EB\U0001F1F7 FR 8"
+  type: trojan
+  server: 13.36.121.210
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1F0\U0001F1F7 KR 9"
   type: trojan
-  server: sj1.alieszvps.cf
-  port: 45555
+  server: 144.24.87.186
+  port: 46527
   udp: true
-  password: VpRuqFDCJo
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: ss
-  server: 154.3.8.151
-  port: 30067
-  password: iUB0923RBA
-  cipher: aes-256-gcm
-- name: "\U0001F1FA\U0001F1F8 US 7"
+- name: "\U0001F1F0\U0001F1F7 KR 10"
+  type: trojan
+  server: 144.24.87.186
+  port: 46521
+  udp: true
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 11"
   type: trojan
   server: 51.20.228.116
   port: 22222
@@ -55,16 +90,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EA SE 8"
-  type: trojan
-  server: 13.48.251.162
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 9"
+- name: "\U0001F1EC\U0001F1E7 GB 12"
   type: trojan
   server: 18.132.92.245
   port: 22222
@@ -73,40 +99,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 10"
-  server: tempest-us.aikun.online
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F7\U0001F1FA RU 11"
-  server: hk3.visaapp.top
-  type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 49487
-  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E9\U0001F1EA DE 12"
-  type: trojan
-  server: 3.66.68.39
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 13"
-  type: trojan
-  server: 18.198.62.12
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 14"
+- name: "\U0001F1F8\U0001F1EC SG 13"
   type: trojan
   server: 138.2.85.162
   port: 10001
@@ -115,12 +108,48 @@ proxies:
   sni: sg1.fighting.win
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 15"
+- name: "\U0001F1F8\U0001F1EA SE 14"
   type: trojan
-  server: 13.36.121.210
+  server: 16.16.153.200
   port: 22222
   udp: true
   password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 15"
+  type: trojan
+  server: 3.66.68.39
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 16"
+  type: trojan
+  server: 18.198.62.12
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EC\U0001F1E7 GB 17"
+  type: trojan
+  server: 18.169.247.68
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 18"
+  type: trojan
+  server: 15.188.224.58
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -128,20 +157,23 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EA SE 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1F7\U0001F1FA RU 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1E9\U0001F1EA DE 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1EB\U0001F1F7 FR 15"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F7\U0001F1FA RU 7"
+  - "\U0001F1EB\U0001F1F7 FR 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1EC\U0001F1E7 GB 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EA SE 14"
+  - "\U0001F1E9\U0001F1EA DE 15"
+  - "\U0001F1E9\U0001F1EA DE 16"
+  - "\U0001F1EC\U0001F1E7 GB 17"
+  - "\U0001F1EB\U0001F1F7 FR 18"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -149,19 +181,22 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1F8\U0001F1EA SE 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1F7\U0001F1FA RU 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1E9\U0001F1EA DE 13"
-  - "\U0001F1F8\U0001F1EC SG 14"
-  - "\U0001F1EB\U0001F1F7 FR 15"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1F7\U0001F1FA RU 7"
+  - "\U0001F1EB\U0001F1F7 FR 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1EC\U0001F1E7 GB 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1F8\U0001F1EA SE 14"
+  - "\U0001F1E9\U0001F1EA DE 15"
+  - "\U0001F1E9\U0001F1EA DE 16"
+  - "\U0001F1EC\U0001F1E7 GB 17"
+  - "\U0001F1EB\U0001F1F7 FR 18"
 rules:
 - "MATCH,\U0001F310 Proxy"
