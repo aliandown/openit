@@ -7,13 +7,7 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: download1hkt.windowsupdatea.com
-  port: 443
-  type: trojan
-  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-  sni: glc-hkt1.windowsupdatea.com
-- name: "\U0001F1F7\U0001F1FA RU 3"
+- name: "\U0001F1F7\U0001F1FA RU 2"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -21,28 +15,33 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 TW 4"
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: service.ouluyun9803.com
+  port: 50004
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 99301d55-a41f-4919-986b-1435996533aa
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: service.ouluyun9803.com
+  port: 20009
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 99301d55-a41f-4919-986b-1435996533aa
+- name: "\U0001F1E8\U0001F1F3 TW 5"
   server: download1tw.windowsupdatea.com
   port: 443
   type: trojan
   password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
   sni: glc-tw1.windowsupdatea.com
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: service.ouluyun9803.com
-  type: ss
-  country: "\U0001F1E8\U0001F1F3CN"
-  port: 20001
-  password: 99301d55-a41f-4919-986b-1435996533aa
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -50,9 +49,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 TW 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
