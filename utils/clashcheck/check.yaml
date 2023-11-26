@@ -7,7 +7,13 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F7\U0001F1FA RU 2"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: jp2.djjsvip.cfd
+  port: 443
+  type: trojan
+  password: d33df23a-8b9e-468e-bc33-dd3643008ced
+  sni: download.xn--mes358a9urctx.com
+- name: "\U0001F1F7\U0001F1FA RU 3"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -20,7 +26,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -28,6 +35,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
