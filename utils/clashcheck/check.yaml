@@ -7,15 +7,22 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: tempest-us.aikun.online
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 35.178.76.249
+  port: 22222
   type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  type: trojan
+  server: 5.104.107.143
   port: 443
-  password: 11e247e5-136d-45f1-844a-a7f054d36bab
-  skip-cert-verify: true
   udp: true
-- name: "\U0001F1F7\U0001F1FA RU 3"
+  password: d33df23a-8b9e-468e-bc33-dd3643008ced
+  sni: de1.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 4"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -23,13 +30,24 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  type: trojan
+  server: 203.198.16.190
+  port: 443
+  udp: true
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-hkt1.windowsupdatea.com
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -37,7 +55,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
