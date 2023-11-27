@@ -15,12 +15,15 @@ proxies:
   password: 11e247e5-136d-45f1-844a-a7f054d36bab
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 3"
-  server: 35.178.76.249
-  port: 22222
+- name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
+  server: 5.104.107.143
+  port: 443
+  udp: true
+  password: d33df23a-8b9e-468e-bc33-dd3643008ced
+  sni: de1.xn--mes358a9urctx.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1F7\U0001F1FA RU 4"
   server: hk3.visaapp.top
   type: trojan
@@ -35,7 +38,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1F7\U0001F1FA RU 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -45,7 +48,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1F7\U0001F1FA RU 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
