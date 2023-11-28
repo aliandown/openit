@@ -1,21 +1,13 @@
 proxies:
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 138.2.234.225
-  port: 45555
-  password: VpRuqFDCJo
-  udp: true
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: us.blazeppn.info
   type: trojan
-  server: canada11.zf.id.vn
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  udp: true
-  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
-  sni: dl.kgvn.garenanow.com
+  password: xxoo
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: us11.zf.id.vn
   port: 443
@@ -24,46 +16,16 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1E8\U0001F1E6 CA 3"
   type: trojan
-  server: japan1.chiencloud.fun
-  port: 443
-  udp: true
-  password: ef69c32d-f28f-4188-aa46-71f8a853f355
-  sni: ybb.softbank.jp
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  type: trojan
-  server: jpsoftbank11.zf.id.vn
+  server: canada11.zf.id.vn
   port: 443
   udp: true
   password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  type: trojan
-  server: jpsoftbank22.zf.id.vn
-  port: 443
-  udp: true
-  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: 154.3.8.151
-  port: 30067
-  cipher: aes-256-gcm
-  password: iUB0923RBA
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: 154.3.8.151
-  port: 30067
-  cipher: aes-256-gcm
-  password: iUB0923RBA
-- name: "\U0001F1EC\U0001F1E7 GB 9"
+- name: "\U0001F1EC\U0001F1E7 GB 4"
   type: trojan
   server: uk11.zf.id.vn
   port: 443
@@ -72,7 +34,7 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 10"
+- name: "\U0001F1E9\U0001F1EA DE 5"
   type: trojan
   server: germany11.zf.id.vn
   port: 443
@@ -81,45 +43,81 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 11"
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 138.2.234.225
+  port: 45555
+  password: VpRuqFDCJo
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: tempest-us.aikun.online
   type: trojan
-  server: sydney11.zf.id.vn
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F7\U0001F1FA RU 8"
+  type: trojan
+  server: 89.221.224.94
+  port: 80
+  udp: true
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
+  skip-cert-verify: true
+  network: tcp
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: 154.3.8.151
+  port: 30067
+  cipher: aes-256-gcm
+  password: iUB0923RBA
+- name: "\U0001F1EF\U0001F1F5 JP 10"
+  type: trojan
+  server: jpsoftbank11.zf.id.vn
   port: 443
   udp: true
   password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 12"
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: 154.3.8.151
+  port: 30067
+  cipher: aes-256-gcm
+  password: iUB0923RBA
+- name: "\U0001F1EF\U0001F1F5 JP 12"
   type: trojan
-  server: 66.42.58.87
-  port: 443
-  udp: true
-  password: a4712887-fcc9-4aef-9d92-066c8e8197f7
-  sni: dl.ops.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 13"
-  type: trojan
-  server: sgpublic11.zf.id.vn
+  server: jpsoftbank22.zf.id.vn
   port: 443
   udp: true
   password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
   sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  type: trojan
+  server: japan1.chiencloud.fun
+  port: 443
+  udp: true
+  password: ef69c32d-f28f-4188-aa46-71f8a853f355
+  sni: ybb.softbank.jp
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 14"
   type: trojan
-  server: 206.189.90.19
+  server: 206.189.93.191
   port: 443
   udp: true
-  password: 30f134d5-b7c1-41ca-bd78-6f86a8a5a53c
+  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 15"
   type: trojan
-  server: 206.189.91.98
+  server: 178.128.217.180
   port: 443
   udp: true
   password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
@@ -128,7 +126,7 @@ proxies:
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 16"
   type: trojan
-  server: 178.128.217.180
+  server: sgpublic11.zf.id.vn
   port: 443
   udp: true
   password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
@@ -146,11 +144,11 @@ proxies:
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 18"
   type: trojan
-  server: 207.148.72.255
+  server: 206.189.90.19
   port: 443
   udp: true
-  password: a4712887-fcc9-4aef-9d92-066c8e8197f7
-  sni: dl.ops.kgvn.garenanow.com
+  password: 30f134d5-b7c1-41ca-bd78-6f86a8a5a53c
+  sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 19"
@@ -164,6 +162,24 @@ proxies:
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 20"
   type: trojan
+  server: 206.189.91.98
+  port: 443
+  udp: true
+  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 21"
+  type: trojan
+  server: sydney11.zf.id.vn
+  port: 443
+  udp: true
+  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 22"
+  type: trojan
   server: 139.162.35.40
   port: 443
   udp: true
@@ -171,42 +187,16 @@ proxies:
   sni: dl.ops.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 21"
-  server: hk3.visaapp.top
+- name: "\U0001F1F8\U0001F1EC SG 23"
   type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 49487
-  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F8\U0001F1EC SG 22"
-  type: trojan
-  server: 206.189.93.191
+  server: 207.148.72.255
   port: 443
   udp: true
-  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
-  sni: dl.kgvn.garenanow.com
+  password: a4712887-fcc9-4aef-9d92-066c8e8197f7
+  sni: dl.ops.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 23"
-  type: trojan
-  server: 89.221.224.94
-  port: 80
-  udp: true
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 24"
-  type: trojan
-  server: 36.50.53.241
-  port: 443
-  udp: true
-  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 25"
+- name: "\U0001F1EE\U0001F1F3 IN 24"
   type: trojan
   server: india11.zf.id.vn
   port: 443
@@ -215,7 +205,7 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 26"
+- name: "\U0001F1FB\U0001F1F3 VN 25"
   type: trojan
   server: inet.5gsieutocdo.com
   port: 443
@@ -224,43 +214,15 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 26"
+  server: hk3.visaapp.top
+  type: trojan
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 49487
+  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 27"
-  type: trojan
-  server: 103.245.237.111
-  port: 443
-  udp: true
-  password: cd039512-e335-44ba-bef5-4c70c70f5786
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 28"
-  type: trojan
-  server: 103.245.237.107
-  port: 443
-  udp: true
-  password: cd039512-e335-44ba-bef5-4c70c70f5786
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 29"
-  type: trojan
-  server: vn1.chiencloud.fun
-  port: 443
-  udp: true
-  password: ef69c32d-f28f-4188-aa46-71f8a853f355
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 30"
-  type: trojan
-  server: 103.196.144.144
-  port: 443
-  udp: true
-  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 31"
   type: trojan
   server: 36.50.52.60
   port: 443
@@ -269,7 +231,61 @@ proxies:
   sni: dl.kgvn.garenanow.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 28"
+  type: trojan
+  server: 103.245.237.126
+  port: 443
+  udp: true
+  password: cd039512-e335-44ba-bef5-4c70c70f5786
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 29"
+  type: trojan
+  server: 103.245.237.107
+  port: 443
+  udp: true
+  password: cd039512-e335-44ba-bef5-4c70c70f5786
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 30"
+  type: trojan
+  server: 36.50.53.241
+  port: 443
+  udp: true
+  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 31"
+  type: trojan
+  server: 103.245.237.111
+  port: 443
+  udp: true
+  password: cd039512-e335-44ba-bef5-4c70c70f5786
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F3 UN 32"
+  type: trojan
+  server: 103.196.144.144
+  port: 443
+  udp: true
+  password: dfaecaa8-8cb7-4947-9f0a-3299691692d6
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 33"
+  type: trojan
+  server: vn1.chiencloud.fun
+  port: 443
+  udp: true
+  password: ef69c32d-f28f-4188-aa46-71f8a853f355
+  sni: dl.kgvn.garenanow.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 34"
   type: trojan
   server: 36.50.52.217
   port: 443
@@ -279,64 +295,38 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: trojan
-  name: "\U0001F1F3\U0001F1F1 NL 33"
-  server: hdfy7c1.cpionline.co
-  port: 443
-  password: 01596265-168b-46a7-bcb7-25662c7a9546
+  name: "\U0001F1F0\U0001F1F7 KR 35"
+  server: 144.24.87.186
+  port: 46527
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
   udp: true
   skip-cert-verify: true
-  sni: hdfy7c1.cpionline.co
-- name: "\U0001F1FA\U0001F1F3 UN 34"
-  type: trojan
-  server: 103.245.237.126
-  port: 443
-  udp: true
-  password: cd039512-e335-44ba-bef5-4c70c70f5786
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
+  sni: lovehjq.xyz
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 35"
+  name: "\U0001F1F8\U0001F1EC SG 36"
   server: 138.2.85.162
   port: 10001
   password: 8861ad96-45d4-42f7-9703-7de363a39a0f
   udp: true
   skip-cert-verify: true
   sni: sg1.fighting.win
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 36"
-  server: 144.24.87.186
-  port: 46521
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  udp: true
-  skip-cert-verify: true
-  sni: lovehjq.xyz
-- name: "\U0001F1FB\U0001F1F3 VN 37"
-  type: trojan
-  server: 103.174.73.134
-  port: 443
-  udp: true
-  password: vMbujq85mD
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F7\U0001F1FA RU 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1F8\U0001F1EC SG 14"
   - "\U0001F1F8\U0001F1EC SG 15"
   - "\U0001F1F8\U0001F1EC SG 16"
@@ -344,23 +334,22 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 18"
   - "\U0001F1F8\U0001F1EC SG 19"
   - "\U0001F1F8\U0001F1EC SG 20"
-  - "\U0001F1F7\U0001F1FA RU 21"
+  - "\U0001F1FA\U0001F1F8 US 21"
   - "\U0001F1F8\U0001F1EC SG 22"
-  - "\U0001F1F7\U0001F1FA RU 23"
-  - "\U0001F1FA\U0001F1F3 UN 24"
-  - "\U0001F1EE\U0001F1F3 IN 25"
-  - "\U0001F1FB\U0001F1F3 VN 26"
+  - "\U0001F1F8\U0001F1EC SG 23"
+  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1FB\U0001F1F3 VN 25"
+  - "\U0001F1F7\U0001F1FA RU 26"
   - "\U0001F1FA\U0001F1F3 UN 27"
   - "\U0001F1FA\U0001F1F3 UN 28"
   - "\U0001F1FA\U0001F1F3 UN 29"
   - "\U0001F1FA\U0001F1F3 UN 30"
   - "\U0001F1FA\U0001F1F3 UN 31"
   - "\U0001F1FA\U0001F1F3 UN 32"
-  - "\U0001F1F3\U0001F1F1 NL 33"
+  - "\U0001F1FA\U0001F1F3 UN 33"
   - "\U0001F1FA\U0001F1F3 UN 34"
-  - "\U0001F1F8\U0001F1EC SG 35"
-  - "\U0001F1F0\U0001F1F7 KR 36"
-  - "\U0001F1FB\U0001F1F3 VN 37"
+  - "\U0001F1F0\U0001F1F7 KR 35"
+  - "\U0001F1F8\U0001F1EC SG 36"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -368,18 +357,18 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
-  - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F7\U0001F1FA RU 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1EF\U0001F1F5 JP 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   - "\U0001F1F8\U0001F1EC SG 14"
   - "\U0001F1F8\U0001F1EC SG 15"
   - "\U0001F1F8\U0001F1EC SG 16"
@@ -387,22 +376,21 @@ proxy-groups:
   - "\U0001F1F8\U0001F1EC SG 18"
   - "\U0001F1F8\U0001F1EC SG 19"
   - "\U0001F1F8\U0001F1EC SG 20"
-  - "\U0001F1F7\U0001F1FA RU 21"
+  - "\U0001F1FA\U0001F1F8 US 21"
   - "\U0001F1F8\U0001F1EC SG 22"
-  - "\U0001F1F7\U0001F1FA RU 23"
-  - "\U0001F1FA\U0001F1F3 UN 24"
-  - "\U0001F1EE\U0001F1F3 IN 25"
-  - "\U0001F1FB\U0001F1F3 VN 26"
+  - "\U0001F1F8\U0001F1EC SG 23"
+  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1FB\U0001F1F3 VN 25"
+  - "\U0001F1F7\U0001F1FA RU 26"
   - "\U0001F1FA\U0001F1F3 UN 27"
   - "\U0001F1FA\U0001F1F3 UN 28"
   - "\U0001F1FA\U0001F1F3 UN 29"
   - "\U0001F1FA\U0001F1F3 UN 30"
   - "\U0001F1FA\U0001F1F3 UN 31"
   - "\U0001F1FA\U0001F1F3 UN 32"
-  - "\U0001F1F3\U0001F1F1 NL 33"
+  - "\U0001F1FA\U0001F1F3 UN 33"
   - "\U0001F1FA\U0001F1F3 UN 34"
-  - "\U0001F1F8\U0001F1EC SG 35"
-  - "\U0001F1F0\U0001F1F7 KR 36"
-  - "\U0001F1FB\U0001F1F3 VN 37"
+  - "\U0001F1F0\U0001F1F7 KR 35"
+  - "\U0001F1F8\U0001F1EC SG 36"
 rules:
 - "MATCH,\U0001F310 Proxy"
