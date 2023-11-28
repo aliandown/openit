@@ -14,7 +14,6 @@ proxies:
   password: VpRuqFDCJo
   udp: true
   skip-cert-verify: true
-  network: tcp
 - type: ss
   name: "\U0001F1E8\U0001F1F3 CN 3"
   server: 154.3.8.151
@@ -28,17 +27,22 @@ proxies:
   cipher: aes-256-gcm
   password: iUB0923RBA
 - type: trojan
-  name: "\U0001F1E9\U0001F1EA DE 5"
-  server: 5.75.254.127
-  port: 42181
-  password: s4NbWipu9H
+  name: "\U0001F1F3\U0001F1F1 NL 5"
+  server: hdfy7c1.cpionline.co
+  port: 443
+  password: 01596265-168b-46a7-bcb7-25662c7a9546
   udp: true
   skip-cert-verify: true
-  sni: b2.talamala.co
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1F7\U0001F1FA RU 6"
+  sni: hdfy7c1.cpionline.co
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: 144.24.87.186
+  port: 46527
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  udp: true
+  skip-cert-verify: true
+  sni: lovehjq.xyz
+- name: "\U0001F1F7\U0001F1FA RU 7"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -47,41 +51,13 @@ proxies:
   skip-cert-verify: true
   udp: true
 - type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: 144.24.87.186
-  port: 46527
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  udp: true
-  skip-cert-verify: true
-  sni: lovehjq.xyz
-  network: tcp
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: 144.24.87.186
-  port: 46521
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  udp: true
-  skip-cert-verify: true
-  sni: lovehjq.xyz
-  network: tcp
-- type: trojan
-  name: "\U0001F1F3\U0001F1F1 NL 9"
-  server: hdfy7c1.cpionline.co
-  port: 443
-  password: 01596265-168b-46a7-bcb7-25662c7a9546
-  udp: true
-  skip-cert-verify: true
-  sni: hdfy7c1.cpionline.co
-  network: tcp
-- type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 10"
+  name: "\U0001F1F8\U0001F1EC SG 8"
   server: 138.2.85.162
   port: 10001
   password: 8861ad96-45d4-42f7-9703-7de363a39a0f
   udp: true
   skip-cert-verify: true
   sni: sg1.fighting.win
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -90,12 +66,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1F3\U0001F1F1 NL 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F7\U0001F1FA RU 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -106,11 +80,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1F3\U0001F1F1 NL 9"
-  - "\U0001F1F8\U0001F1EC SG 10"
+  - "\U0001F1F3\U0001F1F1 NL 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F7\U0001F1FA RU 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
