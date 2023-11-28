@@ -1,14 +1,6 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us.blazeppn.info
-  type: trojan
-  country: "\U0001F1FA\U0001F1F8US"
-  port: 443
-  password: xxoo
-  skip-cert-verify: true
-  udp: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 2"
+  name: "\U0001F1FA\U0001F1F8 US 1"
   server: 138.2.234.225
   port: 45555
   password: VpRuqFDCJo
@@ -16,27 +8,26 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 3"
+  name: "\U0001F1E8\U0001F1F3 CN 2"
   server: 154.3.8.151
   port: 30067
   cipher: aes-256-gcm
   password: iUB0923RBA
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 4"
+  name: "\U0001F1E8\U0001F1F3 CN 3"
   server: 154.3.8.151
   port: 30067
   cipher: aes-256-gcm
   password: iUB0923RBA
-- type: trojan
-  name: "\U0001F1F3\U0001F1F1 NL 5"
-  server: hdfy7c1.cpionline.co
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us.blazeppn.info
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 01596265-168b-46a7-bcb7-25662c7a9546
-  udp: true
+  password: xxoo
   skip-cert-verify: true
-  sni: hdfy7c1.cpionline.co
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 6"
+  udp: true
+- name: "\U0001F1F7\U0001F1FA RU 5"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -45,7 +36,7 @@ proxies:
   skip-cert-verify: true
   udp: true
 - type: trojan
-  name: "\U0001F1F8\U0001F1EC SG 7"
+  name: "\U0001F1F8\U0001F1EC SG 6"
   server: 138.2.85.162
   port: 10001
   password: 8861ad96-45d4-42f7-9703-7de363a39a0f
@@ -53,17 +44,36 @@ proxies:
   skip-cert-verify: true
   sni: sg1.fighting.win
   network: tcp
+- type: trojan
+  name: "\U0001F1E8\U0001F1E6 CA 7"
+  server: 108.181.22.161
+  port: 443
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  udp: true
+  skip-cert-verify: true
+  sni: glc-us2.windowsupdatea.com
+  network: tcp
+- type: trojan
+  name: "\U0001F1F3\U0001F1F1 NL 8"
+  server: hdfy7c1.cpionline.co
+  port: 443
+  password: 01596265-168b-46a7-bcb7-25662c7a9546
+  udp: true
+  skip-cert-verify: true
+  sni: hdfy7c1.cpionline.co
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F3\U0001F1F1 NL 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1E6 CA 7"
+  - "\U0001F1F3\U0001F1F1 NL 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -71,11 +81,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F3\U0001F1F1 NL 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1E8\U0001F1E6 CA 7"
+  - "\U0001F1F3\U0001F1F1 NL 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
