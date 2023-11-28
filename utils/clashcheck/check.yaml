@@ -1,19 +1,5 @@
 proxies:
-- type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 138.2.234.225
-  port: 45555
-  password: VpRuqFDCJo
-  udp: true
-  skip-cert-verify: true
-  network: tcp
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 154.3.8.151
-  port: 30067
-  cipher: aes-256-gcm
-  password: iUB0923RBA
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
@@ -21,30 +7,43 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 138.2.234.225
+  port: 45555
+  password: VpRuqFDCJo
+  udp: true
+  skip-cert-verify: true
+  network: tcp
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: 154.3.8.151
+  port: 30067
+  cipher: aes-256-gcm
+  password: iUB0923RBA
 - type: ss
   name: "\U0001F1E8\U0001F1F3 CN 4"
   server: 154.3.8.151
   port: 30067
   cipher: aes-256-gcm
   password: iUB0923RBA
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: 144.24.87.186
-  port: 46527
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+- name: "\U0001F1F7\U0001F1FA RU 5"
+  type: trojan
+  server: 89.221.224.94
+  port: 80
   udp: true
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
   skip-cert-verify: true
-  sni: lovehjq.xyz
   network: tcp
-- type: trojan
-  name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: 144.24.87.186
-  port: 46521
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+- name: "\U0001F1F7\U0001F1FA RU 6"
+  server: hk3.visaapp.top
+  type: trojan
+  country: "\U0001F1F7\U0001F1FARU"
+  port: 49487
+  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
+  skip-cert-verify: true
   udp: true
-  skip-cert-verify: true
-  sni: lovehjq.xyz
-  network: tcp
 - type: trojan
   name: "\U0001F1F8\U0001F1EC SG 7"
   server: 138.2.85.162
@@ -54,26 +53,27 @@ proxies:
   skip-cert-verify: true
   sni: sg1.fighting.win
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 8"
-  server: hk3.visaapp.top
-  type: trojan
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 49487
-  password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
-  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 8"
+  server: 144.24.87.186
+  port: 46521
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
   udp: true
+  skip-cert-verify: true
+  sni: lovehjq.xyz
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F7\U0001F1FA RU 6"
   - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1F7\U0001F1FA RU 8"
+  - "\U0001F1F0\U0001F1F7 KR 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -81,12 +81,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F7\U0001F1FA RU 6"
   - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1F7\U0001F1FA RU 8"
+  - "\U0001F1F0\U0001F1F7 KR 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
