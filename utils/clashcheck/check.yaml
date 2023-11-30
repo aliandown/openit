@@ -1,21 +1,13 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: tempest-us.aikun.online
+  server: us.blazeppn.info
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: jp2trojan.cloudbb.loan
-  type: trojan
-  country: "\U0001F1F8\U0001F1ECSG"
-  port: 20022
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F7\U0001F1FA RU 3"
+- name: "\U0001F1F7\U0001F1FA RU 2"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -24,6 +16,14 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 3"
+  server: jp2trojan.cloudbb.loan
+  type: trojan
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 20022
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 HK 4"
   server: any3017.bcloud.cyou
   type: trojan
@@ -32,15 +32,7 @@ proxies:
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: hkhe02.bcloudv.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 20897
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F7\U0001F1FA RU 6"
+- name: "\U0001F1F7\U0001F1FA RU 5"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -48,18 +40,19 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 6"
+  server: hkhe02.bcloudv.cyou
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 20897
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: p1.bxy-fun1.com
+  server: p1.bxy-fun3.com
   type: ss
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 44101
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: p1.bxy-fun1.com
-  type: ss
-  country: "\U0001F1E8\U0001F1F3CN"
-  port: 30470
+  port: 24105
   password: d7bee830-09aa-43b2-8945-3b341b8787db
   cipher: chacha20-ietf-poly1305
 proxy-groups:
@@ -67,13 +60,12 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -81,12 +73,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1EF\U0001F1F5 JP 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
