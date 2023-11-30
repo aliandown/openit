@@ -7,31 +7,15 @@ proxies:
   password: xxoo
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: ru.mjt001.com
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: jp2trojan.cloudbb.loan
   type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 443
-  password: 5a035db3-34ea-48ca-9aa2-72c8229e1532
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hkhe02.bcloudv.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 20897
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 20022
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: any3017.bcloud.cyou
-  type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
-  port: 10116
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1F7\U0001F1FA RU 5"
+- name: "\U0001F1F7\U0001F1FA RU 3"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -40,6 +24,22 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: any3017.bcloud.cyou
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 10116
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: hkhe02.bcloudv.cyou
+  type: trojan
+  country: "\U0001F1ED\U0001F1F0HK"
+  port: 20897
+  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1F7\U0001F1FA RU 6"
   server: hk3.visaapp.top
   type: trojan
@@ -48,25 +48,16 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: jp2trojan.cloudbb.loan
-  type: trojan
-  country: "\U0001F1F8\U0001F1ECSG"
-  port: 20022
-  password: 10f87a8e-a6f6-319d-a895-8310d326ecce
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -74,11 +65,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
