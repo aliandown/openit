@@ -1,47 +1,5 @@
 proxies:
-- name: "\U0001F1F3\U0001F1F1 NL 1"
-  server: hdfy7c1.cpionline.co
-  port: 443
-  type: trojan
-  password: 01596265-168b-46a7-bcb7-25662c7a9546
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 104.25.255.254
-  port: 443
-  udp: true
-  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  sni: hdfy8c1.foriran.me
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
-- name: "\U0001F1F3\U0001F1F1 NL 3"
-  type: trojan
-  server: 188.114.99.29
-  port: 443
-  udp: true
-  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  sni: hdfy8c1.foriran.me
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
-  alpn:
-  - h2
-- name: "\U0001F1FA\U0001F1F3 UN 4"
-  type: trojan
-  server: 104.19.145.205
-  port: 443
-  udp: true
-  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  sni: hdfy8c1.foriran.nl
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /8bHUAD5IX0licU6D349brWUw6a
-    headers:
-      host: hdfy8c1.foriran.nl
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: 172.67.216.195
   port: 443
@@ -55,7 +13,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "\U0001F1F2\U0001F1F9 MT 6"
+- name: "\U0001F1F2\U0001F1F9 MT 2"
   type: trojan
   server: 193.227.99.55
   port: 443
@@ -70,7 +28,7 @@ proxies:
       host: cdn.miladfaryad.cf
   alpn:
   - http/1.1
-- name: "\U0001F1F8\U0001F1EC SG 7"
+- name: "\U0001F1F8\U0001F1EC SG 3"
   type: trojan
   server: 5.44.249.50
   port: 3306
@@ -87,25 +45,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F3\U0001F1F1 NL 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F3\U0001F1F1 NL 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F2\U0001F1F9 MT 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F2\U0001F1F9 MT 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F3\U0001F1F1 NL 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F3\U0001F1F1 NL 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F2\U0001F1F9 MT 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F2\U0001F1F9 MT 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
