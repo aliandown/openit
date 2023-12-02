@@ -20,30 +20,6 @@ proxies:
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
-  server: 104.25.255.254
-  port: 443
-  udp: true
-  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  sni: hdfy8c1.foriran.me
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
-- name: "\U0001F1F3\U0001F1F1 NL 4"
-  type: trojan
-  server: 188.114.99.29
-  port: 443
-  udp: true
-  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  sni: hdfy8c1.foriran.me
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
-  alpn:
-  - h2
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
   server: 172.67.216.195
   port: 443
   udp: true
@@ -56,9 +32,33 @@ proxies:
   alpn:
   - h2
   - http/1.1
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: 104.25.255.254
+  port: 443
+  udp: true
+  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  sni: hdfy8c1.foriran.me
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
+- name: "\U0001F1F3\U0001F1F1 NL 5"
+  type: trojan
+  server: 188.114.99.29
+  port: 443
+  udp: true
+  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  sni: hdfy8c1.foriran.me
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
+  alpn:
+  - h2
 - name: "\U0001F1EE\U0001F1EA IE 6"
   type: trojan
-  server: 99.80.151.102
+  server: 54.195.160.243
   port: 22222
   udp: true
   password: telegram-id-directvpn
@@ -75,29 +75,7 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 8"
-  type: trojan
-  server: 15.237.164.227
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - http/1.1
-- name: "\U0001F1EC\U0001F1E7 GB 9"
-  type: trojan
-  server: 18.171.107.85
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - http/1.1
-- name: "\U0001F1E9\U0001F1EA DE 10"
+- name: "\U0001F1E9\U0001F1EA DE 8"
   type: trojan
   server: 52.28.68.41
   port: 22222
@@ -108,6 +86,25 @@ proxies:
   network: tcp
   alpn:
   - http/1.1
+- name: "\U0001F1E9\U0001F1EA DE 9"
+  type: trojan
+  server: 18.156.44.111
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+  alpn:
+  - http/1.1
+- name: "\U0001F1F3\U0001F1F1 NL 10"
+  server: hdfy7d1.jahangirkh.eu.org
+  type: trojan
+  country: "\U0001F1F3\U0001F1F1NL"
+  port: 443
+  password: 01596265-168b-46a7-bcb7-25662c7a9546
+  skip-cert-verify: true
+  udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 11"
   type: trojan
   server: 104.19.145.205
@@ -121,7 +118,18 @@ proxies:
     path: /8bHUAD5IX0licU6D349brWUw6a
     headers:
       host: hdfy8c1.foriran.nl
-- name: "\U0001F1F7\U0001F1FA RU 12"
+- name: "\U0001F1E9\U0001F1EA DE 12"
+  type: trojan
+  server: 3.74.109.17
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+  alpn:
+  - http/1.1
+- name: "\U0001F1F7\U0001F1FA RU 13"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -130,7 +138,7 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 13"
+- name: "\U0001F1F7\U0001F1FA RU 14"
   type: trojan
   server: 89.221.224.94
   port: 443
@@ -150,16 +158,17 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F3\U0001F1F1 NL 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F3\U0001F1F1 NL 5"
   - "\U0001F1EE\U0001F1EA IE 6"
   - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1F3\U0001F1F1 NL 10"
   - "\U0001F1FA\U0001F1F3 UN 11"
-  - "\U0001F1F7\U0001F1FA RU 12"
+  - "\U0001F1E9\U0001F1EA DE 12"
   - "\U0001F1F7\U0001F1FA RU 13"
+  - "\U0001F1F7\U0001F1FA RU 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -169,15 +178,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F3\U0001F1F1 NL 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1F3\U0001F1F1 NL 5"
   - "\U0001F1EE\U0001F1EA IE 6"
   - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1EB\U0001F1F7 FR 8"
-  - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1F3\U0001F1F1 NL 10"
   - "\U0001F1FA\U0001F1F3 UN 11"
-  - "\U0001F1F7\U0001F1FA RU 12"
+  - "\U0001F1E9\U0001F1EA DE 12"
   - "\U0001F1F7\U0001F1FA RU 13"
+  - "\U0001F1F7\U0001F1FA RU 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
