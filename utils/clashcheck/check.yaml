@@ -8,8 +8,27 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
+  server: tempest-us.aikun.online
   type: trojan
-  server: 35.83.236.159
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 11e247e5-136d-45f1-844a-a7f054d36bab
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EE\U0001F1EA IE 3"
+  type: trojan
+  server: 54.170.78.155
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+  alpn:
+  - http/1.1
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  type: trojan
+  server: 54.195.160.243
   port: 22222
   udp: true
   password: telegram-id-directvpn
@@ -18,7 +37,7 @@ proxies:
   network: tcp
   alpn:
   - http/1.1
-- name: "\U0001F1EC\U0001F1E7 GB 3"
+- name: "\U0001F1EC\U0001F1E7 GB 5"
   type: trojan
   server: 18.171.107.85
   port: 22222
@@ -29,7 +48,7 @@ proxies:
   network: tcp
   alpn:
   - http/1.1
-- name: "\U0001F1F7\U0001F1FA RU 4"
+- name: "\U0001F1F7\U0001F1FA RU 6"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -38,7 +57,7 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: 172.67.216.195
   port: 443
@@ -52,7 +71,18 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "\U0001F1F7\U0001F1FA RU 6"
+- name: "\U0001F1E9\U0001F1EA DE 8"
+  type: trojan
+  server: 52.28.68.41
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+  alpn:
+  - http/1.1
+- name: "\U0001F1F7\U0001F1FA RU 9"
   server: hk3.visaapp.top
   type: trojan
   country: "\U0001F1F7\U0001F1FARU"
@@ -60,7 +90,7 @@ proxies:
   password: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F7\U0001F1FA RU 7"
+- name: "\U0001F1F7\U0001F1FA RU 10"
   type: trojan
   server: 89.221.224.94
   port: 443
@@ -73,29 +103,32 @@ proxies:
     path: /
     headers:
       host: is2-t.sshmax.xyz
-- name: "\U0001F1FA\U0001F1F8 US 8"
+- name: "\U0001F1E9\U0001F1EA DE 11"
   type: trojan
-  server: 104.25.255.254
-  port: 443
+  server: 3.74.109.17
+  port: 22222
   udp: true
-  password: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  sni: hdfy8c1.foriran.me
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
   skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8bHUAD5IX0lC5KffvrsN6rqb
+  network: tcp
+  alpn:
+  - http/1.1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
   - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1F7\U0001F1FA RU 9"
+  - "\U0001F1F7\U0001F1FA RU 10"
+  - "\U0001F1E9\U0001F1EA DE 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -104,11 +137,14 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
   - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1F7\U0001F1FA RU 9"
+  - "\U0001F1F7\U0001F1FA RU 10"
+  - "\U0001F1E9\U0001F1EA DE 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
