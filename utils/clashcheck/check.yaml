@@ -1,7 +1,7 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: 3.74.109.17
+  server: 35.83.236.159
   port: 22222
   udp: true
   password: telegram-id-directvpn
@@ -10,16 +10,19 @@ proxies:
   network: tcp
   alpn:
   - http/1.1
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 18.156.44.111
-  port: 22222
+  server: 172.67.216.195
+  port: 443
   udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
+  password: 4d7dba2d-dd24-4edb-988a-64c6fadf1a35
+  sni: vpneror1010101.sajadhadadi.top
   skip-cert-verify: true
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
   alpn:
+  - h2
   - http/1.1
 - name: "\U0001F1F7\U0001F1FA RU 3"
   type: trojan
@@ -56,25 +59,42 @@ proxies:
     path: /
     headers:
       host: is2-t.sshmax.xyz
+- name: "\U0001F1F2\U0001F1F9 MT 6"
+  type: trojan
+  server: 193.227.99.55
+  port: 443
+  udp: true
+  password: dd3b2971-2e5e-49c4-8de9-62aca12ff466
+  sni: cdn.miladfaryad.cf
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /RGikK8PMHRUZInjQYjx
+    headers:
+      host: cdn.miladfaryad.cf
+  alpn:
+  - http/1.1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F7\U0001F1FA RU 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F2\U0001F1F9 MT 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F7\U0001F1FA RU 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F2\U0001F1F9 MT 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
