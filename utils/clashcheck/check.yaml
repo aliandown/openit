@@ -1,5 +1,25 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  type: trojan
+  server: 3.74.109.17
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
+  alpn:
+  - http/1.1
+- name: "\U0001F1F7\U0001F1FA RU 2"
+  type: trojan
+  server: 89.221.224.94
+  port: 80
+  udp: true
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 35.83.236.159
   port: 22222
@@ -10,38 +30,7 @@ proxies:
   network: tcp
   alpn:
   - http/1.1
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  type: trojan
-  server: 52.28.68.41
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - http/1.1
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  type: trojan
-  server: 18.156.44.111
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - http/1.1
 - name: "\U0001F1F7\U0001F1FA RU 4"
-  type: trojan
-  server: 89.221.224.94
-  port: 80
-  udp: true
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 5"
   type: trojan
   server: 89.221.224.94
   port: 443
@@ -54,6 +43,20 @@ proxies:
     path: /
     headers:
       host: is2-t.sshmax.xyz
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 172.67.216.195
+  port: 443
+  udp: true
+  password: 4d7dba2d-dd24-4edb-988a-64c6fadf1a35
+  sni: vpneror1010101.sajadhadadi.top
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+  alpn:
+  - h2
+  - http/1.1
 - name: "\U0001F1F2\U0001F1F9 MT 6"
   type: trojan
   server: 193.227.99.55
@@ -82,45 +85,29 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  type: trojan
-  server: 172.67.216.195
-  port: 443
-  udp: true
-  password: 4d7dba2d-dd24-4edb-988a-64c6fadf1a35
-  sni: vpneror1010101.sajadhadadi.top
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-  alpn:
-  - h2
-  - http/1.1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1F2\U0001F1F9 MT 6"
   - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1F7\U0001F1FA RU 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1F2\U0001F1F9 MT 6"
   - "\U0001F1F8\U0001F1EC SG 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
