@@ -1,27 +1,5 @@
 proxies:
-- name: "\U0001F1F7\U0001F1FA RU 1"
-  type: trojan
-  server: 89.221.224.94
-  port: 80
-  udp: true
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 2"
-  type: trojan
-  server: 89.221.224.94
-  port: 443
-  udp: true
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: is2-t.sshmax.xyz
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: 172.67.216.195
   port: 443
@@ -35,7 +13,22 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: "\U0001F1F8\U0001F1EC SG 4"
+- name: "\U0001F1F2\U0001F1F9 MT 2"
+  type: trojan
+  server: 193.227.99.55
+  port: 443
+  udp: true
+  password: dd3b2971-2e5e-49c4-8de9-62aca12ff466
+  sni: cdn.miladfaryad.cf
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /RGikK8PMHRUZInjQYjx
+    headers:
+      host: cdn.miladfaryad.cf
+  alpn:
+  - http/1.1
+- name: "\U0001F1F8\U0001F1EC SG 3"
   type: trojan
   server: 5.44.249.50
   port: 3306
@@ -52,19 +45,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F7\U0001F1FA RU 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F2\U0001F1F9 MT 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F7\U0001F1FA RU 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F2\U0001F1F9 MT 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
