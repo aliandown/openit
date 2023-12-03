@@ -10,11 +10,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: RGikK8PMHRUZX8MrGWVN1ct9nq
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  type: trojan
+  server: 3.121.187.77
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -22,5 +32,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
