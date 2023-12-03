@@ -1,5 +1,14 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  type: trojan
+  server: 213.202.216.14
+  port: 443
+  udp: true
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  sni: downloadde.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: proxystore11.ddns.net
   port: 443
@@ -10,15 +19,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: RGikK8PMHRUZX8MrGWVN1ct9nq
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  type: trojan
-  server: 213.202.216.14
-  port: 443
-  udp: true
-  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
-  sni: downloadde.xn--mes358acgm99l.com
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
   server: 3.77.143.73
@@ -28,21 +28,32 @@ proxies:
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  type: trojan
+  server: 3.121.187.77
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
