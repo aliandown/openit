@@ -1,13 +1,42 @@
-proxies: []
+proxies:
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  type: trojan
+  server: 213.202.216.14
+  port: 443
+  udp: true
+  password: 3f23c1eb-ace4-49ec-a7f0-f591b006b95a
+  sni: downloadde.xn--mes358acgm99l.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  type: trojan
+  server: 45.65.113.195
+  port: 443
+  udp: true
+  password: 268f7997-fc81-4607-bae2-e61e8416ac3b
+  sni: 16-163-218-240.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: ftq.wiki
+  port: 6000
+  type: trojan
+  password: 9be082a5-5c0a-4636-97a5-26b4a32c4884
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
