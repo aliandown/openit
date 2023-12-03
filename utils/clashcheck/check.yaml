@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: proxystore11.ddns.net
-  port: 443
-  udp: true
-  password: dd3b2971-2e5e-49c4-8de9-62aca12ff466
-  sni: cdn.miladfaryad.cf
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: RGikK8PMHRUZX8MrGWVN1ct9nq
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1E9\U0001F1EA DE 1"
   type: trojan
   server: 3.121.187.77
   port: 22222
@@ -23,15 +12,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
