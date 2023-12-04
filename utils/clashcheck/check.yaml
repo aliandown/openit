@@ -1,14 +1,5 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
-  type: trojan
-  server: sg7.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.57aaa8ec.the-best-airport.com
-  port: 443
-  udp: true
-  password: 91d7b973-630c-492f-9600-719f6a70f01e
-  sni: 144-22-163-118.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1ED CH 2"
+- name: "\U0001F1E8\U0001F1ED CH 1"
   type: trojan
   server: sg2.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.2c4b5066.the-best-airport.com
   port: 443
@@ -17,7 +8,25 @@ proxies:
   sni: 144-22-163-118.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  type: trojan
+  server: sg7.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.57aaa8ec.the-best-airport.com
+  port: 443
+  udp: true
+  password: 91d7b973-630c-492f-9600-719f6a70f01e
+  sni: 144-22-163-118.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EF\U0001F1F5 JP 3"
+  type: trojan
+  server: jp2.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.02444020.the-best-airport.com
+  port: 443
+  udp: true
+  password: 91d7b973-630c-492f-9600-719f6a70f01e
+  sni: 144-22-163-118.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   type: trojan
   server: sg3.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.d4f84ebb.the-best-airport.com
   port: 443
@@ -26,36 +35,30 @@ proxies:
   sni: 144-22-163-118.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  type: ss
-  server: hk.jiedian.stream
-  port: 10001
-  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
-  cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  type: ss
-  server: us.jiedian.stream
-  port: 10004
-  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
-  cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: ss
-  server: jp.jiedian.stream
-  port: 10002
-  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
-  cipher: aes-128-gcm
-- name: "\U0001F1F8\U0001F1EC SG 7"
+- name: "\U0001F1EF\U0001F1F5 JP 5"
   type: trojan
-  server: sg6.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.0aca10d1.the-best-airport.com
+  server: sg1.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.2dde7df3.the-best-airport.com
   port: 443
   udp: true
   password: 91d7b973-630c-492f-9600-719f6a70f01e
   sni: 144-22-163-118.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  type: ss
+  server: hk.jiedian.stream
+  port: 10001
+  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  type: ss
+  server: us.jiedian.stream
+  port: 10004
+  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
+  cipher: aes-128-gcm
 - name: "\U0001F1EF\U0001F1F5 JP 8"
   type: trojan
-  server: sg4.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.2ce203e5.the-best-airport.com
+  server: jp3.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.5584fc1f.the-best-airport.com
   port: 443
   udp: true
   password: 91d7b973-630c-492f-9600-719f6a70f01e
@@ -64,7 +67,43 @@ proxies:
   network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 9"
   type: trojan
+  server: sg6.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.0aca10d1.the-best-airport.com
+  port: 443
+  udp: true
+  password: 91d7b973-630c-492f-9600-719f6a70f01e
+  sni: 144-22-163-118.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 10"
+  type: trojan
+  server: us3.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.47253001.the-best-airport.com
+  port: 443
+  udp: true
+  password: 91d7b973-630c-492f-9600-719f6a70f01e
+  sni: 144-22-163-118.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 11"
+  type: trojan
   server: sg8.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.c586e7c2.the-best-airport.com
+  port: 443
+  udp: true
+  password: 91d7b973-630c-492f-9600-719f6a70f01e
+  sni: 144-22-163-118.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 12"
+  type: trojan
+  server: jp4.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.69408ae5.the-best-airport.com
+  port: 443
+  udp: true
+  password: 91d7b973-630c-492f-9600-719f6a70f01e
+  sni: 144-22-163-118.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 13"
+  type: trojan
+  server: sg4.ba2472f5-8ad5-503e-f1e4-13b8c0fc695b.2ce203e5.the-best-airport.com
   port: 443
   udp: true
   password: 91d7b973-630c-492f-9600-719f6a70f01e
@@ -75,29 +114,37 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E8\U0001F1ED CH 2"
+  - "\U0001F1E8\U0001F1ED CH 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E8\U0001F1ED CH 2"
+  - "\U0001F1E8\U0001F1ED CH 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   - "\U0001F1F8\U0001F1EC SG 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1F8\U0001F1EC SG 11"
+  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EF\U0001F1F5 JP 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
