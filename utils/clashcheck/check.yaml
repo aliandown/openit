@@ -7,8 +7,20 @@ proxies:
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 2"
   type: ss
+  server: jp.jiedian.stream
+  port: 10002
+  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: ss
   server: us.jiedian.stream
   port: 10004
+  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ss
+  server: sg.jiedian.stream
+  port: 10003
   password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
   cipher: aes-128-gcm
 proxy-groups:
@@ -17,6 +29,8 @@ proxy-groups:
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -25,5 +39,7 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
