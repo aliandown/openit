@@ -1,33 +1,36 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  type: trojan
+  server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 443
+  udp: true
+  password: 5582a559-d68a-484b-bc33-4274bf63c71a
+  sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 2"
   type: ss
   server: hk.jiedian.stream
   port: 10001
   password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 2"
+- name: "\U0001F1E8\U0001F1F3 CN 3"
   type: ss
   server: jp.jiedian.stream
   port: 10002
   password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 3"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   type: ss
   server: us.jiedian.stream
   port: 10004
-  password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
-  cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  type: ss
-  server: sg.jiedian.stream
-  port: 10003
   password: 257a6e6b-65c9-4f02-9a85-925a9cf62e2d
   cipher: aes-128-gcm
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
@@ -37,7 +40,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
