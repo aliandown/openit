@@ -13,18 +13,12 @@ proxies:
   port: 50517
   type: trojan
   password: 2b357b66-c345-499c-ae28-399112e9cabd
-- name: "\U0001F1EE\U0001F1F3 IN 3"
-  server: in502.zebrassr.com
-  port: 40206
-  type: trojan
-  password: 2b357b66-c345-499c-ae28-399112e9cabd
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -33,6 +27,5 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
