@@ -1,18 +1,26 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  server: 89.116.180.179
   port: 443
   udp: true
-  password: 5582a559-d68a-484b-bc33-4274bf63c71a
-  sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: p6us4.pqjc.buzz
   skip-cert-verify: true
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /pq/us4
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: tr602.zebrassr.com
-  port: 50517
   type: trojan
-  password: 2b357b66-c345-499c-ae28-399112e9cabd
+  server: 167.68.5.183
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: 6us3.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us3
 proxy-groups:
 - name: automatic
   type: url-test
