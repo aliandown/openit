@@ -1,19 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 443
-  udp: true
-  password: 5582a559-d68a-484b-bc33-4274bf63c71a
-  sni: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: tr602.zebrassr.com
-  port: 50517
-  type: trojan
-  password: 2b357b66-c345-499c-ae28-399112e9cabd
-- name: "\U0001F1EE\U0001F1F3 IN 3"
+- name: "\U0001F1EE\U0001F1F3 IN 1"
   server: in502.zebrassr.com
   port: 40206
   type: trojan
@@ -22,17 +8,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1EE\U0001F1F3 IN 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1F3 IN 3"
+  - "\U0001F1EE\U0001F1F3 IN 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
