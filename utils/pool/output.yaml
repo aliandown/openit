@@ -4,19 +4,19 @@ proxies:
   port: 50001
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8775cf7-3f4e-4112-abce-9c760709bc0d
+  password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
 - name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   server: service.ouluyun9803.com
-  port: 20009
+  port: 20003
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8775cf7-3f4e-4112-abce-9c760709bc0d
+  password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
 - name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
   server: service.ouluyun9803.com
-  port: 20001
+  port: 50002
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: f8775cf7-3f4e-4112-abce-9c760709bc0d
+  password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
 - name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
   server: 61.136.232.6
   port: 10840
@@ -208,23 +208,47 @@ proxies:
   skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1F3 CN 31 SSS"
   server: service.ouluyun9803.com
+  port: 20001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
+- name: "\U0001F1F9\U0001F1FC TW 32 TJN"
+  server: download1tw.windowsupdatea.com
+  port: 443
+  type: trojan
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-tw1.windowsupdatea.com
+- name: "\U0001F1E8\U0001F1F3 CN 33 SSS"
+  server: service.ouluyun9803.com
   port: 50001
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
-- name: "\U0001F1E8\U0001F1F3 CN 32 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 34 SSS"
+  server: service.ouluyun9803.com
+  port: 20009
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
+- name: "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  server: service.ouluyun9803.com
+  port: 50001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
+- name: "\U0001F1E8\U0001F1F3 CN 36 SSS"
   server: service.ouluyun9803.com
   port: 20003
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
-- name: "\U0001F1E8\U0001F1F3 CN 33 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 37 SSS"
   server: service.ouluyun9803.com
   port: 50002
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 12d29bd8-3461-42c8-81af-897cf3dc15b0
-- name: "\U0001F1FA\U0001F1F8 US 34 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -235,7 +259,7 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
-- name: "\U0001F1FA\U0001F1F8 US 35 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 39 TJN"
   type: trojan
   server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -244,7 +268,7 @@ proxies:
   sni: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 36 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 40 TJN"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -255,7 +279,7 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
-- name: "\U0001F1FA\U0001F1F8 US 37 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 41 TJN"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -301,12 +325,16 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 29 TJN"
   - "\U0001F1E8\U0001F1F3 CN 30 TJN"
   - "\U0001F1E8\U0001F1F3 CN 31 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  - "\U0001F1F9\U0001F1FC TW 32 TJN"
   - "\U0001F1E8\U0001F1F3 CN 33 SSS"
-  - "\U0001F1FA\U0001F1F8 US 34 TJN"
-  - "\U0001F1FA\U0001F1F8 US 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
-  - "\U0001F1FA\U0001F1F8 US 37 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 34 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 36 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSS"
+  - "\U0001F1FA\U0001F1F8 US 38 TJN"
+  - "\U0001F1FA\U0001F1F8 US 39 TJN"
+  - "\U0001F1FA\U0001F1F8 US 40 TJN"
+  - "\U0001F1FA\U0001F1F8 US 41 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -344,11 +372,15 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 29 TJN"
   - "\U0001F1E8\U0001F1F3 CN 30 TJN"
   - "\U0001F1E8\U0001F1F3 CN 31 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 32 SSS"
+  - "\U0001F1F9\U0001F1FC TW 32 TJN"
   - "\U0001F1E8\U0001F1F3 CN 33 SSS"
-  - "\U0001F1FA\U0001F1F8 US 34 TJN"
-  - "\U0001F1FA\U0001F1F8 US 35 TJN"
-  - "\U0001F1FA\U0001F1F8 US 36 TJN"
-  - "\U0001F1FA\U0001F1F8 US 37 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 34 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 35 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 36 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 37 SSS"
+  - "\U0001F1FA\U0001F1F8 US 38 TJN"
+  - "\U0001F1FA\U0001F1F8 US 39 TJN"
+  - "\U0001F1FA\U0001F1F8 US 40 TJN"
+  - "\U0001F1FA\U0001F1F8 US 41 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
