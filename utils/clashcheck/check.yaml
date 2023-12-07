@@ -10,17 +10,6 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 167.68.5.183
-  port: 443
-  udp: true
-  password: d2698cf9-c47e-455c-8384-12e642cbba15
-  sni: 6us3.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us3
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
   server: 89.116.180.179
   port: 443
   udp: true
@@ -30,7 +19,26 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 167.68.5.183
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: 6us3.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us3
 - name: "\U0001F1FA\U0001F1F8 US 4"
+  type: trojan
+  server: 172.232.157.47
+  port: 443
+  udp: true
+  password: 2e23dfc2-fd4d-45f3-9022-f2319c5314c8
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: sg1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -39,30 +47,22 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
-  server: 172.232.157.47
+  server: us2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
   udp: true
-  password: 2e23dfc2-fd4d-45f3-9022-f2319c5314c8
+  password: e5f9c753-d401-487f-a77b-1004b7f0f439
+  sni: 206.237.5.220
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
   type: trojan
   server: malva.superpokemon.com
   port: 28335
   udp: true
   password: ZCqpeNxYA8Z3YDCX83743lBS9IwaynuFDTjKRlp0e2a3RDxzC6cEgFSySOAaO5
   sni: malva.superpokemon.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1ED CH 7"
-  type: trojan
-  server: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 20202
-  udp: true
-  password: e5f9c753-d401-487f-a77b-1004b7f0f439
-  sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1ED CH 8"
@@ -76,11 +76,11 @@ proxies:
   network: tcp
 - name: "\U0001F1E8\U0001F1ED CH 9"
   type: trojan
-  server: hk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 20252
+  server: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 20202
   udp: true
   password: e5f9c753-d401-487f-a77b-1004b7f0f439
-  sni: hk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -92,8 +92,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1ED CH 7"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1E8\U0001F1ED CH 8"
   - "\U0001F1E8\U0001F1ED CH 9"
   url: https://www.google.com/favicon.ico
@@ -107,8 +107,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1ED CH 7"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1E8\U0001F1ED CH 8"
   - "\U0001F1E8\U0001F1ED CH 9"
 rules:
