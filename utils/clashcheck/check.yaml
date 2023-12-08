@@ -70,6 +70,14 @@ proxies:
   sni: telewebion.com
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 10"
+  server: 108.181.22.161
+  port: 443
+  type: trojan
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-us2.windowsupdatea.com
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -83,6 +91,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 7"
   - "\U0001F1F0\U0001F1F7 KR 8"
   - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E8\U0001F1E6 CA 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -98,5 +107,6 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 7"
   - "\U0001F1F0\U0001F1F7 KR 8"
   - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E8\U0001F1E6 CA 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
