@@ -1,18 +1,18 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  server: 108.181.24.37
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: aws-us-nyc-1.f1rocketnode.com
   port: 443
   type: trojan
-  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-  sni: glc-us1.windowsupdatea.com
+  password: pjdnqv
+  sni: aws-us-nyc-1.f1rocketnode.com
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 138.2.234.225
-  port: 45555
+  server: 138.197.5.103
+  port: 443
   type: trojan
-  password: VpRuqFDCJo
-  sni: sj1.alieszvps.cf
+  password: xxoo
+  sni: telewebion.com
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -23,30 +23,7 @@ proxies:
   sni: aws-us-dallas-1.f1rocketnode.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 154.3.8.151
-  port: 30067
-  type: ss
-  cipher: aes-256-gcm
-  password: iUB0923RBA
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: aws-us-nyc-1.f1rocketnode.com
-  port: 443
-  type: trojan
-  password: pjdnqv
-  sni: aws-us-nyc-1.f1rocketnode.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 138.197.5.103
-  port: 443
-  type: trojan
-  password: xxoo
-  sni: telewebion.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 7"
+- name: "\U0001F1E8\U0001F1E6 CA 4"
   server: 108.181.22.161
   port: 443
   type: trojan
@@ -54,12 +31,35 @@ proxies:
   sni: glc-us2.windowsupdatea.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: 144.24.87.186
-  port: 46527
+- name: "\U0001F1E8\U0001F1E6 CA 5"
+  server: 108.181.24.37
+  port: 443
   type: trojan
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  sni: lovehjq.xyz
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-us1.windowsupdatea.com
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 138.2.234.225
+  port: 45555
+  type: trojan
+  password: VpRuqFDCJo
+  sni: sj1.alieszvps.cf
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: 154.3.8.151
+  port: 30067
+  type: ss
+  cipher: aes-256-gcm
+  password: iUB0923RBA
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 23.94.122.66
+  port: 38505
+  type: trojan
+  password: dTjHHw2kDE
+  sni: telewebion.com
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1F0\U0001F1F7 KR 9"
@@ -70,43 +70,43 @@ proxies:
   sni: lovehjq.xyz
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 10"
-  server: 23.94.122.66
-  port: 38505
+- name: "\U0001F1F0\U0001F1F7 KR 10"
+  server: 144.24.87.186
+  port: 46527
   type: trojan
-  password: dTjHHw2kDE
-  sni: telewebion.com
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
   skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1E8\U0001F1E6 CA 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E8\U0001F1E6 CA 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1F0\U0001F1F7 KR 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1E8\U0001F1E6 CA 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E8\U0001F1E6 CA 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
   - "\U0001F1F0\U0001F1F7 KR 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1F0\U0001F1F7 KR 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
