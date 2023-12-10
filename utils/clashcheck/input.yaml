@@ -239,15 +239,13 @@ proxies:
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 35 TJN"
   type: trojan
-  server: 89.116.180.179
+  server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
   udp: true
-  password: d2698cf9-c47e-455c-8384-12e642cbba15
-  sni: p6us4.pqjc.buzz
+  password: d56cb8dc-e932-4d57-bd90-1381a1245f90
+  sni: 206.237.5.220
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us4
+  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 36 TJN"
   type: trojan
   server: 167.68.5.183
@@ -261,25 +259,16 @@ proxies:
     path: /pq/us3
 - name: "\U0001F1FA\U0001F1F8 US 37 TJN"
   type: trojan
-  server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 443
-  udp: true
-  password: d56cb8dc-e932-4d57-bd90-1381a1245f90
-  sni: 206.237.5.220
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
-  type: trojan
-  server: 167.68.5.183
+  server: 89.116.180.179
   port: 443
   udp: true
   password: d2698cf9-c47e-455c-8384-12e642cbba15
-  sni: 6us3.pqjc.buzz
+  sni: p6us4.pqjc.buzz
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pq/us3
-- name: "\U0001F1FA\U0001F1F8 US 39 TJN"
+    path: /pq/us4
+- name: "\U0001F1FA\U0001F1F8 US 38 TJN"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -290,6 +279,17 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
+- name: "\U0001F1FA\U0001F1F8 US 39 TJN"
+  type: trojan
+  server: 167.68.5.183
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: 6us3.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us3
 proxy-groups:
 - name: automatic
   type: url-test
