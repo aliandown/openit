@@ -1,33 +1,33 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1 TJN"
-  server: frontend.kuangbiaoyun.com
-  port: 40006
-  type: trojan
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-- name: "\U0001F1EB\U0001F1F7 FR 2 TJN"
-  server: 35.181.237.230
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  server: service.ouluyun9803.com
-  port: 20001
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
-- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
   server: service.ouluyun9803.com
   port: 50001
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
-- name: "\U0001F1E8\U0001F1F3 CN 5 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+  server: service.ouluyun9803.com
+  port: 20001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
   server: service.ouluyun9803.com
   port: 26667
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
+- name: "\U0001F1F0\U0001F1F7 KR 4 TJN"
+  server: frontend.kuangbiaoyun.com
+  port: 40006
+  type: trojan
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+- name: "\U0001F1EB\U0001F1F7 FR 5 TJN"
+  server: 35.181.237.230
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
 - name: "\U0001F1E8\U0001F1F3 CN 6 SSS"
   server: service.ouluyun9803.com
   port: 20001
@@ -36,13 +36,13 @@ proxies:
   password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
 - name: "\U0001F1E8\U0001F1F3 CN 7 SSS"
   server: service.ouluyun9803.com
-  port: 26667
+  port: 50001
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
 - name: "\U0001F1E8\U0001F1F3 CN 8 SSS"
   server: service.ouluyun9803.com
-  port: 50001
+  port: 26667
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
@@ -290,11 +290,11 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  - "\U0001F1F0\U0001F1F7 KR 4 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1E8\U0001F1F3 CN 8 SSS"
@@ -338,11 +338,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1 TJN"
-  - "\U0001F1EB\U0001F1F7 FR 2 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 5 SSS"
+  - "\U0001F1F0\U0001F1F7 KR 4 TJN"
+  - "\U0001F1EB\U0001F1F7 FR 5 TJN"
   - "\U0001F1E8\U0001F1F3 CN 6 SSS"
   - "\U0001F1E8\U0001F1F3 CN 7 SSS"
   - "\U0001F1E8\U0001F1F3 CN 8 SSS"
