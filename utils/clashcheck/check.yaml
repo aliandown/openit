@@ -30,7 +30,16 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1E8\U0001F1E6 CA 4"
+  type: trojan
+  server: frontend.kuangbiaoyun.com
+  port: 40007
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  sni: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   type: trojan
   server: 141.94.221.127
   port: 80
@@ -39,22 +48,22 @@ proxies:
   sni: ftp.debian.org
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 70.34.252.233
+  port: 443
+  udp: true
+  password: fd2ef3e6-75b7-46cf-bc60-e8899851ed57
+  sni: proxmox.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: sg2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
   udp: true
   password: 928dc6ee-495b-446f-9f20-883dedce564a
   sni: 206.237.5.220
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1E6 CA 6"
-  type: trojan
-  server: frontend.kuangbiaoyun.com
-  port: 40007
-  udp: true
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  sni: frontend.kuangbiaoyun.com
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -64,9 +73,10 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -76,8 +86,9 @@ proxy-groups:
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
