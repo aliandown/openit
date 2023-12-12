@@ -1,14 +1,32 @@
 proxies:
 - name: "\U0001F1E8\U0001F1E6 CA 1"
   type: trojan
-  server: mrarshaordenshpgaamericang00d.arshaproplus.cf
+  server: 172.105.5.158
   port: 443
   udp: true
   password: 027c71ac-026b-4755-9a33-26558ce6f6a2
   sni: ddragon.leagueoflegends.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  type: trojan
+  server: 141.94.221.127
+  port: 80
+  udp: true
+  password: 9ebdbb4a-8ae6-45e8-9169-33fe68fdbaae
+  sni: ftp.debian.org
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  type: trojan
+  server: 70.34.252.233
+  port: 443
+  udp: true
+  password: fd2ef3e6-75b7-46cf-bc60-e8899851ed57
+  sni: proxmox.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -19,31 +37,13 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  type: trojan
-  server: 141.94.221.127
-  port: 80
-  udp: true
-  password: 9ebdbb4a-8ae6-45e8-9169-33fe68fdbaae
-  sni: ftp.debian.org
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  type: trojan
-  server: 70.34.252.233
-  port: 443
-  udp: true
-  password: fd2ef3e6-75b7-46cf-bc60-e8899851ed57
-  sni: proxmox.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -52,8 +52,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
