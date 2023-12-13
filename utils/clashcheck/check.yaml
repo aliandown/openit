@@ -19,22 +19,22 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  type: trojan
-  server: 141.94.221.127
-  port: 80
-  udp: true
-  password: 9ebdbb4a-8ae6-45e8-9169-33fe68fdbaae
-  sni: ftp.debian.org
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1E6 CA 4"
+- name: "\U0001F1E8\U0001F1E6 CA 3"
   type: trojan
   server: frontend.kuangbiaoyun.com
   port: 40007
   udp: true
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   sni: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  type: trojan
+  server: 141.94.221.127
+  port: 80
+  udp: true
+  password: 9ebdbb4a-8ae6-45e8-9169-33fe68fdbaae
+  sni: ftp.debian.org
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 5"
@@ -55,16 +55,28 @@ proxies:
   sni: 206.237.5.220
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: 167.68.5.183
+  port: 443
+  udp: true
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  sni: 6us3.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us3
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -73,9 +85,10 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
