@@ -1,44 +1,32 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
+- name: "\U0001F1EE\U0001F1EA IE 1"
+  server: 54.247.173.195
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1E6 CA 2"
+  type: trojan
   server: frontend.kuangbiaoyun.com
   port: 40007
-  type: trojan
+  udp: true
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   sni: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: UNLK2.LVWF8N-HH8E-2300-NMOO-D2E9NAOBEACN.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  port: 20352
-  udp: true
-  password: d56cb8dc-e932-4d57-bd90-1381a1245f90
-  sni: 206.237.5.220
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 64.176.162.24
-  port: 443
-  udp: true
-  password: wkmY1R4EcP
-  sni: z-v1-zzzh.ashx.net
   skip-cert-verify: true
   network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
