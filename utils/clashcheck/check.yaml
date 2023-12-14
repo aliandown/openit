@@ -1,13 +1,39 @@
-proxies: []
+proxies:
+- name: "\U0001F1EE\U0001F1EA IE 1"
+  server: 63.34.230.226
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 15.237.206.104
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1E6 CA 3"
+  type: trojan
+  server: frontend.kuangbiaoyun.com
+  port: 40007
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
