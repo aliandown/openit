@@ -1,13 +1,30 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 HK 1"
+  server: waphk.mjt000.com
+  port: 443
+  type: trojan
+  password: c2c76420-257f-492a-b20f-6560f3bfa78d
+- name: "\U0001F1E8\U0001F1E6 CA 2"
+  type: trojan
+  server: frontend.kuangbiaoyun.com
+  port: 40007
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
