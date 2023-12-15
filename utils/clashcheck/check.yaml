@@ -8,21 +8,25 @@ proxies:
   sni: 20-24-33-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 5.104.108.120
+  server: 89.116.180.179
   port: 443
   udp: true
   password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  sni: 20-24-33-134.nhost.00cdn.com
+  sni: p6us4.pqjc.buzz
   skip-cert-verify: true
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /pq/us4
+    headers:
+      host: p6us4.pqjc.buzz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -30,6 +34,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
