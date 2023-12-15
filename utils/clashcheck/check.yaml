@@ -34,13 +34,7 @@ proxies:
   sni: 20-24-33-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1E6 CA 4"
-  server: frontend.kuangbiaoyun.com
-  port: 40004
-  type: trojan
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 5"
+- name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: 5.104.108.109
   port: 443
@@ -49,9 +43,9 @@ proxies:
   sni: 20-24-33-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1E6 CA 6"
+- name: "\U0001F1E8\U0001F1E6 CA 5"
   server: frontend.kuangbiaoyun.com
-  port: 40006
+  port: 40004
   type: trojan
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   skip-cert-verify: true
@@ -62,9 +56,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E8\U0001F1E6 CA 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -74,8 +67,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E8\U0001F1E6 CA 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
