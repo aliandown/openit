@@ -1,19 +1,6 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: 89.116.180.158
-  port: 443
-  udp: true
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  sni: 3us2.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us2
-    headers:
-      host: 3us2.pqjc.buzz
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
   server: 89.116.180.179
   port: 443
   udp: true
@@ -25,6 +12,19 @@ proxies:
     path: /pq/us4
     headers:
       host: p6us4.pqjc.buzz
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 89.116.180.158
+  port: 443
+  udp: true
+  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
+  sni: 3us2.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us2
+    headers:
+      host: 3us2.pqjc.buzz
 - name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
   server: 5.104.108.120
@@ -49,7 +49,20 @@ proxies:
   type: trojan
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 6"
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  type: trojan
+  server: 89.116.161.133
+  port: 443
+  udp: true
+  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
+  sni: p1us1.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us1
+    headers:
+      host: p1us1.pqjc.buzz
+- name: "\U0001F1E8\U0001F1E6 CA 7"
   server: frontend.kuangbiaoyun.com
   port: 40006
   type: trojan
@@ -64,7 +77,8 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1E8\U0001F1E6 CA 5"
-  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1E6 CA 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -76,6 +90,7 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1E8\U0001F1E6 CA 5"
-  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1E6 CA 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
