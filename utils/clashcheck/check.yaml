@@ -12,16 +12,7 @@ proxies:
     path: /pq/us4
     headers:
       host: p6us4.pqjc.buzz
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  type: trojan
-  server: 5.104.108.109
-  port: 443
-  udp: true
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  sni: 20-24-33-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 89.116.180.158
   port: 443
@@ -34,6 +25,15 @@ proxies:
     path: /pq/us2
     headers:
       host: 3us2.pqjc.buzz
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  type: trojan
+  server: 5.104.108.109
+  port: 443
+  udp: true
+  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 4"
   type: trojan
   server: 5.104.108.120
@@ -60,8 +60,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1E8\U0001F1E6 CA 5"
   - "\U0001F1E8\U0001F1E6 CA 6"
@@ -72,8 +72,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1E8\U0001F1E6 CA 5"
   - "\U0001F1E8\U0001F1E6 CA 6"
