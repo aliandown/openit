@@ -1,13 +1,20 @@
-proxies: []
+proxies:
+- name: "\U0001F1F7\U0001F1FA RU 1"
+  server: eluosi.handboy.top
+  port: 10060
+  type: trojan
+  password: 22425357-dc2f-4001-afe2-7f56a7210fca
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F7\U0001F1FA RU 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F7\U0001F1FA RU 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
