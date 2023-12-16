@@ -1,63 +1,29 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: 89.116.180.179
-  port: 443
-  udp: true
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  sni: p6us4.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us4
-    headers:
-      host: p6us4.pqjc.buzz
-- name: "\U0001F1EC\U0001F1E7 GB 2"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
   server: 18.171.110.132
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  server: frontend.kuangbiaoyun.com
-  port: 40004
-  type: trojan
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 4"
+- name: "\U0001F1E8\U0001F1E6 CA 2"
   server: frontend.kuangbiaoyun.com
   port: 40007
   type: trojan
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 5"
-  type: trojan
-  server: 5.104.108.120
-  port: 443
-  udp: true
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  sni: 20-24-33-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
