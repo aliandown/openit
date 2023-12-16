@@ -1,21 +1,13 @@
-proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  server: frontend.kuangbiaoyun.com
-  port: 40006
-  type: trojan
-  password: 57edfecf-5694-4a34-8072-54a4f0636a62
-  skip-cert-verify: true
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
