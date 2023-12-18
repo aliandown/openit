@@ -1,23 +1,30 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: sg.liangyuandiancloud.com
-  port: 443
   type: trojan
-  password: 96f625d7-f202-46b0-b679-34f8289c6945
-- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 89.116.180.179
+  port: 443
+  udp: true
+  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
+  sni: p6us4.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us4
+    headers:
+      host: p6us4.pqjc.buzz
+- name: "\U0001F1F8\U0001F1EC SG 2"
   server: jp.liangyuandiancloud.com
   port: 443
   type: trojan
   password: 3b31223a-960a-4166-b37f-edf0a23b884b
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  server: frontend.kuangbiaoyun.com
-  port: 40003
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: crispy.koreanbbq.link
+  port: 443
   type: trojan
-  password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
-  skip-cert-verify: true
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
 - name: "\U0001F1E8\U0001F1E6 CA 4"
   server: frontend.kuangbiaoyun.com
-  port: 40007
+  port: 40003
   type: trojan
   password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
   skip-cert-verify: true
@@ -26,8 +33,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1E8\U0001F1E6 CA 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -36,8 +43,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1E8\U0001F1E6 CA 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
