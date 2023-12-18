@@ -1,54 +1,34 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: hk01.trojanyyds.xyz
+  server: sg.liangyuandiancloud.com
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: hk03.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk03.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 4"
+  password: 96f625d7-f202-46b0-b679-34f8289c6945
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: jp.liangyuandiancloud.com
   port: 443
   type: trojan
   password: 3b31223a-960a-4166-b37f-edf0a23b884b
-- name: "\U0001F1E8\U0001F1E6 CA 5"
+- name: "\U0001F1E8\U0001F1E6 CA 3"
   server: frontend.kuangbiaoyun.com
-  port: 40004
+  port: 40003
   type: trojan
   password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
   skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: usajs.liangyuandiancloud.com
-  port: 443
+- name: "\U0001F1E8\U0001F1E6 CA 4"
+  server: frontend.kuangbiaoyun.com
+  port: 40007
   type: trojan
-  password: 3b31223a-960a-4166-b37f-edf0a23b884b
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+  password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1E6 CA 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -56,11 +36,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1E6 CA 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
