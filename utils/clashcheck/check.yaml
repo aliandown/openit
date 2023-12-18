@@ -13,10 +13,18 @@ proxies:
     headers:
       host: 3us2.pqjc.buzz
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: my02.trojanyyds.xyz
-  port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  server: 89.116.180.179
+  port: 443
+  udp: true
+  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
+  sni: p6us4.pqjc.buzz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pq/us4
+    headers:
+      host: p6us4.pqjc.buzz
 - name: "\U0001F1E8\U0001F1E6 CA 3"
   server: frontend.kuangbiaoyun.com
   port: 40004
