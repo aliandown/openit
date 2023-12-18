@@ -1,17 +1,41 @@
 proxies:
 - name: "\U0001F1E8\U0001F1E6 CA 1"
   server: frontend.kuangbiaoyun.com
+  port: 40007
+  type: trojan
+  password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: hk01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: hk03.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk03.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1E6 CA 4"
+  server: frontend.kuangbiaoyun.com
   port: 40004
   type: trojan
   password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 2"
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: sg01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: sg01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1E6 CA 6"
   server: frontend.kuangbiaoyun.com
   port: 40006
   type: trojan
   password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 3"
+- name: "\U0001F1E8\U0001F1E6 CA 7"
   server: frontend.kuangbiaoyun.com
   port: 40003
   type: trojan
@@ -22,8 +46,12 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1E8\U0001F1E6 CA 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -31,7 +59,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1E6 CA 6"
+  - "\U0001F1E8\U0001F1E6 CA 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
