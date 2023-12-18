@@ -7,12 +7,6 @@ proxies:
   skip-cert-verify: true
 - name: "\U0001F1E8\U0001F1E6 CA 2"
   server: frontend.kuangbiaoyun.com
-  port: 40003
-  type: trojan
-  password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  server: frontend.kuangbiaoyun.com
   port: 40006
   type: trojan
   password: 9737c85e-ad5c-48f5-93f6-9bdb0361d04c
@@ -23,7 +17,6 @@ proxy-groups:
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -32,6 +25,5 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
