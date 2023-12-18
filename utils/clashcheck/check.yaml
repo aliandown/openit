@@ -1,16 +1,15 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: hk03.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk03.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: sg01.trojanyyds.xyz
+- name: "\U0001F1F0\U0001F1F7 KR 2"
+  server: crispy.koreanbbq.link
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
 - name: "\U0001F1F0\U0001F1F7 KR 3"
   server: octopus.koreanbbq.link
   port: 443
@@ -27,30 +26,23 @@ proxies:
   obfs-param: 511df45641.microsoft.com
   protocol-param: 45641:1119_jE165t
   group: "Update-\u4E8C\u7237"
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
