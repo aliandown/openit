@@ -1,21 +1,36 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1E8\U0001F1F3 HK 1"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: sg01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: sg01.trojanyyds.xyz
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  server: octopus.koreanbbq.link
+  port: 443
+  type: trojan
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
