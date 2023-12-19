@@ -1,18 +1,23 @@
 proxies:
-- name: "\U0001F1EC\U0001F1EE GI 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
   type: trojan
-  server: gbs.pptv-tv.store
-  port: 17728
+  server: 5.104.107.143
+  port: 443
   udp: true
-  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  password: 6befeeb3-702b-4948-9028-f9e072f2da98
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: hk03.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk03.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7706
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 511df45641.microsoft.com
+  protocol-param: 45641:1119_jE165t
+  group: "Update-\u4E8C\u7237"
 - name: "\U0001F1E8\U0001F1F3 CN 3"
   type: ssr
   server: cm01.newcome.xyz
@@ -28,8 +33,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -37,8 +42,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
