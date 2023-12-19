@@ -1,13 +1,23 @@
-proxies: []
+proxies:
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  type: trojan
+  server: 5.104.107.143
+  port: 443
+  udp: true
+  password: 6befeeb3-702b-4948-9028-f9e072f2da98
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E9\U0001F1EA DE 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E9\U0001F1EA DE 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
