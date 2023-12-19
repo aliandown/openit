@@ -1,13 +1,34 @@
-proxies: []
+proxies:
+- name: "\U0001F1EE\U0001F1EA IE 1"
+  server: 3.251.101.115
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7703
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 511df45641.microsoft.com
+  protocol-param: 45641:1119_jE165t
+  group: "Update-\u4E8C\u7237"
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
