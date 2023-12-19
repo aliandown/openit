@@ -10,7 +10,7 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 2"
   type: ssr
   server: cm01.newcome.xyz
-  port: 7703
+  port: 7706
   password: jFa4F1
   cipher: chacha20-ietf
   obfs: plain
@@ -18,10 +18,16 @@ proxies:
   obfs-param: 511df45641.microsoft.com
   protocol-param: 45641:1119_jE165t
   group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 3"
+- name: "\U0001F1EE\U0001F1EA IE 3"
+  server: 3.251.101.115
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   type: ssr
   server: cm01.newcome.xyz
-  port: 7703
+  port: 7706
   password: jFa4F1
   cipher: chacha20-ietf
   obfs: plain
@@ -35,7 +41,8 @@ proxy-groups:
   proxies:
   - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -44,6 +51,7 @@ proxy-groups:
   - automatic
   - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
