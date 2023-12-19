@@ -1,52 +1,20 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7706
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 511df45641.microsoft.com
-  protocol-param: 45641:1119_jE165t
-  group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7703
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 511df45641.microsoft.com
-  protocol-param: 45641:1119_jE165t
-  group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7703
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 511df45641.microsoft.com
-  protocol-param: 45641:1119_jE165t
-  group: "Update-\u4E8C\u7237"
+- name: "\U0001F1F0\U0001F1F7 KR 1"
+  server: octopus.koreanbbq.link
+  port: 443
+  type: trojan
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1F0\U0001F1F7 KR 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1F0\U0001F1F7 KR 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
