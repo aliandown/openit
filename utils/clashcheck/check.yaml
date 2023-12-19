@@ -1,47 +1,13 @@
-proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  type: trojan
-  server: 5.104.107.143
-  port: 443
-  udp: true
-  password: 6befeeb3-702b-4948-9028-f9e072f2da98
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: hk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
