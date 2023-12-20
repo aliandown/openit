@@ -1,56 +1,29 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  server: 34.248.5.222
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: 35.178.236.184
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: my01.trojanyyds.xyz
-  port: 443
+- name: "\U0001F1EC\U0001F1EE GI 2"
+  server: gbs.pptv-tv.store
+  port: 17728
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: my01.trojanyyds.xyz
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EC\U0001F1EE GI 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EC\U0001F1EE GI 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
