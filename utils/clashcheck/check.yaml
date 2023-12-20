@@ -1,29 +1,27 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  server: 34.248.5.222
-  port: 22222
+- name: "\U0001F1E8\U0001F1F3 HK 1"
+  server: sk01.trojanyyds.xyz
+  port: 443
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: 3.9.110.248
-  port: 22222
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: us01.trojanyyds.xyz
+  port: 443
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
