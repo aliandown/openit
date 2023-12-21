@@ -5,23 +5,11 @@ proxies:
   type: trojan
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: octopus.koreanbbq.link
-  port: 443
-  type: trojan
-  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,7 +17,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
