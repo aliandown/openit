@@ -1,45 +1,61 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 3.75.146.110
-  port: 22222
+- name: "\U0001F1E8\U0001F1F3 HK 1"
+  server: hk02.trojanyyds.xyz
+  port: 443
   type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk02.trojanyyds.xyz
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   server: sg01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: sg01.trojanyyds.xyz
-- name: "\U0001F1F8\U0001F1EA SE 3"
-  server: 13.53.252.96
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 3.75.146.110
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: us01.trojanyyds.xyz
+  sni: hk04.trojanyyds.xyz
+- name: "\U0001F1EF\U0001F1F5 JP 5"
+  server: my02.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: my02.trojanyyds.xyz
+- name: "\U0001F1EE\U0001F1EA IE 6"
+  server: 54.216.77.237
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EE\U0001F1EA IE 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 5"
+  - "\U0001F1EE\U0001F1EA IE 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
