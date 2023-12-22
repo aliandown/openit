@@ -1,13 +1,56 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  type: trojan
+  server: 68.233.121.121
+  port: 40020
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  sni: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1E6 CA 2"
+  type: trojan
+  server: frontend.kuangbiaoyun.com
+  port: 40007
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  sni: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: tw02.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: in01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: my02.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
