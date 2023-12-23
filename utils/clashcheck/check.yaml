@@ -1,13 +1,20 @@
-proxies: []
+proxies:
+- name: "\U0001F1F0\U0001F1F7 KR 1"
+  server: octopus.koreanbbq.link
+  port: 443
+  type: trojan
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F0\U0001F1F7 KR 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F0\U0001F1F7 KR 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
