@@ -1,5 +1,14 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  type: trojan
+  server: 5.104.108.120
+  port: 443
+  udp: true
+  password: 45a8d20d-9a78-4be4-a74a-ab3b9e84e34e
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: hk2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -8,7 +17,33 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  type: trojan
+  server: skk.moe
+  port: 8443
+  udp: true
+  password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  sni: vps.restia.love
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
+    headers:
+      host: tj.restia.love
+- name: "\U0001F1FA\U0001F1F3 UN 4"
+  type: trojan
+  server: skk.moe
+  port: 8443
+  udp: true
+  password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  sni: vps.restia.love
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
+    headers:
+      host: tj.restia.love
+- name: "\U0001F1E9\U0001F1EA DE 5"
   type: trojan
   server: 5.104.108.109
   port: 443
@@ -17,24 +52,21 @@ proxies:
   sni: 20-24-33-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: octopus.koreanbbq.link
-  port: 443
+- name: "\U0001F1EC\U0001F1EE GI 7"
   type: trojan
-  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
-- name: "\U0001F1F8\U0001F1EC SG 6"
+  server: gbs.pptv-tv.store
+  port: 17728
+  udp: true
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 8"
   type: trojan
   server: 185.230.245.213
   port: 3306
@@ -47,65 +79,39 @@ proxies:
     path: /gateway/connect
     headers:
       host: n2.gladns.com
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: uk01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  server: my01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: uk01.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 8"
-  type: trojan
-  server: skk.moe
-  port: 8443
-  udp: true
-  password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
-  sni: vps.restia.love
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
-    headers:
-      host: tj.restia.love
-- name: "\U0001F1FA\U0001F1F3 UN 9"
-  type: trojan
-  server: skk.moe
-  port: 8443
-  udp: true
-  password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
-  sni: vps.restia.love
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
-    headers:
-      host: tj.restia.love
+  sni: my01.trojanyyds.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EC\U0001F1EE GI 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1EC\U0001F1EE GI 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1E8\U0001F1F3 HK 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
