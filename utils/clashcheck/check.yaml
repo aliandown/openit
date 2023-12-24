@@ -1,17 +1,23 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 3.136.242.112
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 2"
+- name: "\U0001F1EE\U0001F1EA IE 1"
   server: 54.247.10.59
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 18.169.219.60
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: 15.236.197.166
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: jp1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
   port: 443
@@ -20,47 +26,41 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: 15.236.197.166
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
 - name: "\U0001F1E9\U0001F1EA DE 5"
   server: 3.78.174.152
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1EF\U0001F1F5 JP 6"
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1EF\U0001F1F5 JP 7"
+  server: hk02.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk02.trojanyyds.xyz
+- name: "\U0001F1EF\U0001F1F5 JP 8"
   server: sg01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: sg01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 8"
-  server: my02.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: my02.trojanyyds.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -68,13 +68,13 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1EF\U0001F1F5 JP 7"
   - "\U0001F1EF\U0001F1F5 JP 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
