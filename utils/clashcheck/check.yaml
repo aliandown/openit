@@ -1,62 +1,68 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 52.33.50.238
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EE\U0001F1EA IE 2"
   server: 54.247.10.59
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: 18.171.95.197
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 35.181.255.98
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: 18.169.219.60
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: hk04.trojanyyds.xyz
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  server: 15.236.197.166
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 5"
+  server: 3.78.174.152
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: crispy.koreanbbq.link
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: hk01.trojanyyds.xyz
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  server: 43.201.255.129
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
+  sni: octopus.koreanbbq.link
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
