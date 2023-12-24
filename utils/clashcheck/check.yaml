@@ -8,49 +8,50 @@ proxies:
   sni: 13-231-155-134.nhost.00cdn.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
-  server: hk1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
-  port: 443
+  server: skk.moe
+  port: 8443
   udp: true
-  password: cc287f24-c5a5-4ebc-a77a-bb95ff902445
-  sni: 13-231-155-134.nhost.00cdn.com
+  password: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c
+  sni: vps.restia.love
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: hk04.trojanyyds.xyz
+  network: ws
+  ws-opts:
+    path: 41aa073b-68fa-40c0-9b1c-9dc42c0b312c-trojan
+    headers:
+      host: tj.restia.love
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: hk03.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
 - name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: sg01.trojanyyds.xyz
+  server: tw01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: hk01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: my02.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 52.33.50.238
+- name: "\U0001F1EC\U0001F1E7 GB 6"
+  server: 18.169.219.60
   port: 22222
   type: trojan
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,10 +59,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EC\U0001F1E7 GB 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
