@@ -1,22 +1,22 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
-  server: 118.142.55.62
-  port: 443
-  type: trojan
-  password: e4818e8930644822aa7d15cc805e3fd7
-  sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: 118.142.55.54
-  port: 443
-  type: trojan
-  password: e4818e8930644822aa7d15cc805e3fd7
-  sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 CN 3"
+- name: "\U0001F1E8\U0001F1F3 CN 1"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: 118.142.55.62
+  port: 443
+  type: trojan
+  password: e4818e8930644822aa7d15cc805e3fd7
+  sni: www.gpt123.one
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: 118.142.55.54
+  port: 443
+  type: trojan
+  password: e4818e8930644822aa7d15cc805e3fd7
+  sni: www.gpt123.one
 - name: "\U0001F1E8\U0001F1F3 CN 4"
   server: nc.cm.go002.xyz
   port: 19511
@@ -29,28 +29,24 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1F0\U0001F1F7 KR 6"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: east.eeeeeef998.buzz
+  port: 15002
+  type: trojan
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 7"
   server: crispy.koreanbbq.link
   port: 443
   type: trojan
   password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: nc.cm.go002.xyz
-  port: 19584
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7701
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 5d3ee46961.microsoft.com
-  protocol-param: 46961:1210-Tha
-  group: "Update-\u4E8C\u7237"
+- name: "\U0001F1E8\U0001F1F3 TW 8"
+  server: download1tw.windowsupdatea.com
+  port: 443
+  type: trojan
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-tw1.windowsupdatea.com
 - name: "\U0001F1E8\U0001F1F3 CN 9"
   type: ssr
   server: cm01.newcome.xyz
@@ -62,33 +58,54 @@ proxies:
   obfs-param: 5d3ee46961.microsoft.com
   protocol-param: 46961:1210-Tha
   group: "Update-\u4E8C\u7237"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7701
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 5d3ee46961.microsoft.com
+  protocol-param: 46961:1210-Tha
+  group: "Update-\u4E8C\u7237"
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: nc.cm.go002.xyz
+  port: 19584
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1E8\U0001F1F3 CN 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
