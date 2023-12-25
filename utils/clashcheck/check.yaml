@@ -1,38 +1,45 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
+- name: "\U0001F1EE\U0001F1EA IE 1"
   type: trojan
-  server: 35.177.252.168
+  server: 108.129.62.33
   port: 22222
   udp: true
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: hk04.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: 118.142.55.62
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: tw01.trojanyyds.xyz
+  password: e4818e8930644822aa7d15cc805e3fd7
+  sni: www.gpt123.one
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: 118.142.55.54
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: tw01.trojanyyds.xyz
+  password: e4818e8930644822aa7d15cc805e3fd7
+  sni: www.gpt123.one
 - name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: sg01.trojanyyds.xyz
+  server: tw02.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 5"
-  server: us01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1E6 CA 5"
+  type: trojan
+  server: frontend.kuangbiaoyun.com
+  port: 40005
+  udp: true
+  password: 57edfecf-5694-4a34-8072-54a4f0636a62
+  sni: frontend.kuangbiaoyun.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: de01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: us01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   type: ssr
   server: cm01.newcome.xyz
   port: 7701
@@ -43,27 +50,49 @@ proxies:
   obfs-param: 5d3ee46961.microsoft.com
   protocol-param: 46961:1210-Tha
   group: "Update-\u4E8C\u7237"
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7701
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 5d3ee46961.microsoft.com
+  protocol-param: 46961:1210-Tha
+  group: "Update-\u4E8C\u7237"
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: ru01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1E6 CA 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1E6 CA 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
