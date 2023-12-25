@@ -8,63 +8,47 @@ proxies:
   sni: frontend.kuangbiaoyun.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: 35.177.252.168
-  port: 22222
-  udp: true
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 3"
+- name: "\U0001F1E8\U0001F1F3 HK 2"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-- name: "\U0001F1F0\U0001F1F7 KR 4"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7701
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 5d3ee46961.microsoft.com
+  protocol-param: 46961:1210-Tha
+  group: "Update-\u4E8C\u7237"
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ssr
+  server: cm01.newcome.xyz
+  port: 7701
+  password: jFa4F1
+  cipher: chacha20-ietf
+  obfs: plain
+  protocol: auth_aes128_sha1
+  obfs-param: 5d3ee46961.microsoft.com
+  protocol-param: 46961:1210-Tha
+  group: "Update-\u4E8C\u7237"
 - name: "\U0001F1EF\U0001F1F5 JP 5"
   server: ru01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7701
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 5d3ee46961.microsoft.com
-  protocol-param: 46961:1210-Tha
-  group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7701
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 5d3ee46961.microsoft.com
-  protocol-param: 46961:1210-Tha
-  group: "Update-\u4E8C\u7237"
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,11 +56,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1EF\U0001F1F5 JP 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
