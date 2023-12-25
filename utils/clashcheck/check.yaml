@@ -8,20 +8,18 @@ proxies:
   sni: frontend.kuangbiaoyun.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: 35.177.252.168
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 35.181.192.220
   port: 22222
-  udp: true
+  type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hk04.trojanyyds.xyz
+  server: hk01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk01.trojanyyds.xyz
 - name: "\U0001F1FA\U0001F1F8 US 4"
   server: hk04.trojanyyds.xyz
   port: 443
@@ -29,17 +27,16 @@ proxies:
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: sg01.trojanyyds.xyz
+  server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
@@ -50,7 +47,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
