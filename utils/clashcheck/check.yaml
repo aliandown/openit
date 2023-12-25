@@ -14,24 +14,22 @@ proxies:
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: crispy.koreanbbq.link
-  port: 443
+- name: "\U0001F1EC\U0001F1E7 GB 3"
   type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1F0\U0001F1F7 KR 4"
-  server: octopus.koreanbbq.link
-  port: 443
-  type: trojan
-  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
+  server: 35.177.252.168
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1EC\U0001F1E7 GB 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -40,7 +38,6 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1EC\U0001F1E7 GB 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
