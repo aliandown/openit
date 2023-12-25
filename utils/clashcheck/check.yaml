@@ -7,26 +7,26 @@ proxies:
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 2"
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 3"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: hk01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk01.trojanyyds.xyz
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: sg01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: sg01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: 118.142.55.62
-  port: 443
-  type: trojan
-  password: e4818e8930644822aa7d15cc805e3fd7
-  sni: www.gpt123.one
 - name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: 118.142.55.54
+  server: 118.142.55.62
   port: 443
   type: trojan
   password: e4818e8930644822aa7d15cc805e3fd7
@@ -37,37 +37,42 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: crispy.koreanbbq.link
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: 118.142.55.54
   port: 443
   type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+  password: e4818e8930644822aa7d15cc805e3fd7
+  sni: www.gpt123.one
 - name: "\U0001F1E8\U0001F1F3 CN 8"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 9"
+- name: "\U0001F1E8\U0001F1F3 HK 9"
+  server: my01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: my01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 10"
+- name: "\U0001F1F0\U0001F1F7 KR 11"
+  server: crispy.koreanbbq.link
+  port: 443
+  type: trojan
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+- name: "\U0001F1E8\U0001F1F3 CN 12"
   server: nc.cm.go002.xyz
   port: 19584
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 11"
-  server: east.eeeeeef998.buzz
-  port: 15006
-  type: trojan
-  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-  sni: data.steamdownload.top
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 12"
+- name: "\U0001F1E8\U0001F1F3 CN 13"
   type: ssr
   server: cm01.newcome.xyz
   port: 7701
@@ -78,7 +83,7 @@ proxies:
   obfs-param: 5d3ee46961.microsoft.com
   protocol-param: 46961:1210-Tha
   group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 13"
+- name: "\U0001F1E8\U0001F1F3 CN 14"
   type: ssr
   server: cm01.newcome.xyz
   port: 7701
@@ -94,18 +99,19 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1F0\U0001F1F7 KR 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1E8\U0001F1F3 CN 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -113,17 +119,18 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1F0\U0001F1F7 KR 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1E8\U0001F1F3 CN 14"
 rules:
 - "MATCH,\U0001F310 Proxy"
