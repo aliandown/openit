@@ -1,25 +1,23 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  type: trojan
-  server: 18.171.110.135
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: 13.37.154.46
   port: 22222
-  udp: true
+  type: trojan
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 2"
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: 18.193.97.34
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+- name: "\U0001F1E8\U0001F1F3 HK 3"
   server: 183.179.168.53
   port: 443
   type: trojan
   password: 00266df31ee542f397068800c1b91e57
   sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: nc.cm.go002.xyz
-  port: 19511
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 - name: "\U0001F1E8\U0001F1F3 CN 4"
   type: ss
   server: 154.3.8.151
@@ -32,16 +30,19 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  type: trojan
-  server: foreign01.lovehjq.xyz
-  port: 46521
-  udp: true
-  password: 09833a6f-4d46-426e-87fe-7793a5489f84
-  sni: lovehjq.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 7"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: nc.cm.go002.xyz
+  port: 19511
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: nc.cm.go002.xyz
+  port: 19584
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+- name: "\U0001F1F0\U0001F1F7 KR 8"
   type: trojan
   server: 144.24.87.186
   port: 46527
@@ -50,18 +51,15 @@ proxies:
   sni: lovehjq.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: nc.ct1.go002.xyz
-  port: 19551
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: nc.cm.go002.xyz
-  port: 19584
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+- name: "\U0001F1F0\U0001F1F7 KR 9"
+  type: trojan
+  server: foreign01.lovehjq.xyz
+  port: 46521
+  udp: true
+  password: 09833a6f-4d46-426e-87fe-7793a5489f84
+  sni: lovehjq.xyz
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1E8\U0001F1F3 CN 10"
   server: nc.cm.go002.xyz
   port: 19584
@@ -72,15 +70,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -88,15 +86,15 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
