@@ -1,20 +1,20 @@
 proxies:
 - name: "\U0001F1E9\U0001F1EA DE 1"
   server: www.casperco.online
-  port: 993
+  port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 - name: "\U0001F1E9\U0001F1EA DE 2"
   server: www.casperco.online
-  port: 1935
+  port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: nc.cm.go002.xyz
-  port: 19511
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+- name: "\U0001F1E8\U0001F1F3 HK 3"
+  server: 183.179.168.53
+  port: 443
+  type: trojan
+  password: 00266df31ee542f397068800c1b91e57
+  sni: www.gpt123.one
 - name: "\U0001F1E8\U0001F1F3 CN 4"
   server: nc.cm.go002.xyz
   port: 19511
@@ -27,27 +27,15 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 51.21.51.115
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: nc.cm.go002.xyz
-  port: 19584
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   server: nc.ct1.go002.xyz
   port: 19551
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 9"
-  server: nc.cm.go002.xyz
-  port: 19584
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: nc.ct1.go002.xyz
+  port: 19551
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
@@ -57,13 +45,11 @@ proxy-groups:
   proxies:
   - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,12 +58,10 @@ proxy-groups:
   - automatic
   - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 CN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
