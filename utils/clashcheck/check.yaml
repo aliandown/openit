@@ -1,73 +1,49 @@
 proxies:
 - name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: hk04.trojanyyds.xyz
-  port: 443
+  server: 18.169.98.94
+  port: 22222
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: hk02.trojanyyds.xyz
-  port: 443
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 18.134.109.200
+  port: 22222
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk02.trojanyyds.xyz
-- name: "\U0001F1EC\U0001F1EE GI 3"
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 18.193.97.34
+  port: 22222
   type: trojan
-  server: gbs.pptv-tv.store
-  port: 17728
-  udp: true
-  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: sg01.trojanyyds.xyz
-  port: 443
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  server: www.casperco.online
+  port: 993
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: 118.142.55.62
-  port: 443
-  type: trojan
-  password: e4818e8930644822aa7d15cc805e3fd7
-  sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: 118.142.55.54
-  port: 443
-  type: trojan
-  password: e4818e8930644822aa7d15cc805e3fd7
-  sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 CN 7"
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E8\U0001F1F3 CN 5"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 TW 8"
-  server: download1tw.windowsupdatea.com
-  port: 443
-  type: trojan
-  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
-  sni: glc-tw1.windowsupdatea.com
-- name: "\U0001F1EF\U0001F1F5 JP 9"
-  server: us01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: us01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: nc.cm.go002.xyz
+  port: 19511
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1EC\U0001F1EE GI 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -75,13 +51,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1EC\U0001F1EE GI 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 TW 8"
-  - "\U0001F1EF\U0001F1F5 JP 9"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
