@@ -1,71 +1,97 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 18.134.109.200
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 2"
   server: www.casperco.online
   port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   server: www.casperco.online
   port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: tw02.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
 - name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: tw01.trojanyyds.xyz
+  server: hk01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: crispy.koreanbbq.link
+  sni: hk01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1E8\U0001F1F3 CN 6"
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk04.trojanyyds.xyz
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: sg01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: sg01.trojanyyds.xyz
+- name: "\U0001F1E9\U0001F1EA DE 7"
+  server: 18.193.97.34
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EF\U0001F1F5 JP 8"
+  server: sk01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: sk01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 9"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1EC\U0001F1E7 GB 7"
-  server: uk01.trojanyyds.xyz
+- name: "\U0001F1F0\U0001F1F7 KR 10"
+  server: crispy.koreanbbq.link
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: uk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 8"
-  server: my02.trojanyyds.xyz
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+- name: "\U0001F1F0\U0001F1F7 KR 11"
+  server: octopus.koreanbbq.link
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1EC\U0001F1E7 GB 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1F0\U0001F1F7 KR 10"
+  - "\U0001F1F0\U0001F1F7 KR 11"
 rules:
 - "MATCH,\U0001F310 Proxy"
