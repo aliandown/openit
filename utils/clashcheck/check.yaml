@@ -1,5 +1,17 @@
 proxies:
-- name: "\U0001F1EC\U0001F1EE GI 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: hk04.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk04.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: hk02.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk02.trojanyyds.xyz
+- name: "\U0001F1EC\U0001F1EE GI 3"
   type: trojan
   server: gbs.pptv-tv.store
   port: 17728
@@ -7,19 +19,7 @@ proxies:
   password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1EC\U0001F1E7 GB 3"
-  server: hk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: sg01.trojanyyds.xyz
   port: 443
   type: trojan
@@ -31,106 +31,57 @@ proxies:
   type: trojan
   password: e4818e8930644822aa7d15cc805e3fd7
   sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: nc.cm.go002.xyz
-  port: 19511
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 HK 7"
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: 118.142.55.54
   port: 443
   type: trojan
   password: e4818e8930644822aa7d15cc805e3fd7
   sni: www.gpt123.one
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  server: my01.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 TW 8"
+  server: download1tw.windowsupdatea.com
+  port: 443
+  type: trojan
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  sni: glc-tw1.windowsupdatea.com
+- name: "\U0001F1EF\U0001F1F5 JP 9"
+  server: us01.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: my01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: nc.cm.go002.xyz
-  port: 19511
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1F0\U0001F1F7 KR 11"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1E8\U0001F1F3 CN 12"
-  server: nc.cm.go002.xyz
-  port: 19584
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 13"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7701
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 5d3ee46961.microsoft.com
-  protocol-param: 46961:1210-Tha
-  group: "Update-\u4E8C\u7237"
-- name: "\U0001F1E8\U0001F1F3 CN 14"
-  type: ssr
-  server: cm01.newcome.xyz
-  port: 7701
-  password: jFa4F1
-  cipher: chacha20-ietf
-  obfs: plain
-  protocol: auth_aes128_sha1
-  obfs-param: 5d3ee46961.microsoft.com
-  protocol-param: 46961:1210-Tha
-  group: "Update-\u4E8C\u7237"
+  sni: us01.trojanyyds.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1EE GI 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1E8\U0001F1F3 CN 10"
-  - "\U0001F1F0\U0001F1F7 KR 11"
-  - "\U0001F1E8\U0001F1F3 CN 12"
-  - "\U0001F1E8\U0001F1F3 CN 13"
-  - "\U0001F1E8\U0001F1F3 CN 14"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
+  - "\U0001F1EF\U0001F1F5 JP 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
