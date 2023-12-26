@@ -1,38 +1,23 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: www.casperco.online
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1EC\U0001F1E7 GB 3"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
   server: 18.134.109.200
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1E9\U0001F1EA DE 4"
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: www.casperco.online
+  port: 1935
   type: trojan
-  server: 35.157.223.95
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 5"
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: www.casperco.online
+  port: 993
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E8\U0001F1F3 CN 4"
   server: nc.cm.go002.xyz
   port: 19511
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: nc.cm.go002.xyz
-  port: 19584
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
@@ -40,23 +25,19 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
