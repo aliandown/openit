@@ -35,23 +35,18 @@ proxies:
   port: 9980
   type: trojan
   password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1E8\U0001F1F3 CN 8"
+- name: "\U0001F1E8\U0001F1F3 CN 7"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1FB\U0001F1F3 VN 9"
+- name: "\U0001F1FB\U0001F1F3 VN 8"
   server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
-- name: "\U0001F1F0\U0001F1F7 KR 10"
+- name: "\U0001F1F0\U0001F1F7 KR 9"
   type: trojan
   server: 144.24.87.186
   port: 46527
@@ -60,7 +55,7 @@ proxies:
   sni: lovehjq.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 11"
+- name: "\U0001F1F0\U0001F1F7 KR 10"
   type: trojan
   server: foreign01.lovehjq.xyz
   port: 46521
@@ -69,6 +64,16 @@ proxies:
   sni: lovehjq.xyz
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 11"
+  server: crispy.koreanbbq.link
+  port: 443
+  type: trojan
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+- name: "\U0001F1F0\U0001F1F7 KR 12"
+  server: octopus.koreanbbq.link
+  port: 443
+  type: trojan
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
@@ -79,11 +84,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1FB\U0001F1F3 VN 9"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F0\U0001F1F7 KR 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -96,10 +102,11 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1FB\U0001F1F3 VN 9"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
   - "\U0001F1F0\U0001F1F7 KR 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
+  - "\U0001F1F0\U0001F1F7 KR 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
