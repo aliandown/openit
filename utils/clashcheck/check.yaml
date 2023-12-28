@@ -1,51 +1,47 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
+- name: "\U0001F1EE\U0001F1EA IE 1"
+  server: 34.252.31.254
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EB\U0001F1F7 FR 2"
   server: 15.188.249.175
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 - name: "\U0001F1E9\U0001F1EA DE 3"
-  server: www.casperco.online
-  port: 1935
+  server: 3.69.9.233
+  port: 22222
   type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: sg01.trojanyyds.xyz
-  port: 443
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  server: 3.126.191.69
+  port: 22222
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: nc.cm.go002.xyz
-  port: 19511
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EC\U0001F1E7 GB 5"
+  server: 3.11.192.228
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1F3 CN 6"
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1EC\U0001F1E7 GB 6"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
+  server: 154.3.8.151
+  port: 30067
+  password: iUB0923RBA
+  cipher: aes-256-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 7"
   server: nc.cm.go002.xyz
   port: 19511
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  type: ss
-  server: 154.3.8.151
-  port: 30067
-  password: iUB0923RBA
-  cipher: aes-256-gcm
-- name: "\U0001F1F7\U0001F1FA RU 9"
+- name: "\U0001F1F7\U0001F1FA RU 8"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -54,13 +50,18 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: nc.cm.go002.xyz
+  port: 19511
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 - name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: east.eeeeeef998.buzz
-  port: 15006
-  type: trojan
-  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-  sni: data.steamdownload.top
-  skip-cert-verify: true
+  server: nc.cm.go002.xyz
+  port: 19511
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 - name: "\U0001F1F0\U0001F1F7 KR 11"
   type: trojan
   server: foreign01.lovehjq.xyz
@@ -83,15 +84,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F7\U0001F1FA RU 9"
+  - "\U0001F1F7\U0001F1FA RU 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
   - "\U0001F1F0\U0001F1F7 KR 12"
@@ -101,15 +102,15 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1F7\U0001F1FA RU 9"
+  - "\U0001F1F7\U0001F1FA RU 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1F0\U0001F1F7 KR 11"
   - "\U0001F1F0\U0001F1F7 KR 12"
