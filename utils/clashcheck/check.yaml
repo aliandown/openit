@@ -12,12 +12,12 @@ proxies:
   skip-cert-verify: true
 - name: "\U0001F1E9\U0001F1EA DE 3"
   server: www.casperco.online
-  port: 1935
+  port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 - name: "\U0001F1E9\U0001F1EA DE 4"
   server: www.casperco.online
-  port: 993
+  port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 - name: "\U0001F1F7\U0001F1FA RU 5"
@@ -26,21 +26,26 @@ proxies:
   type: trojan
   password: 9e77b491-73d4-4ea3-985b-cfe3ae583580
   sni: is1-t.sshmax.xyz
-- name: "\U0001F1E8\U0001F1F3 TW 6"
-  server: tj-tw02.yiyo2way.xyz
-  port: 9980
-  type: trojan
-  password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
-- name: "\U0001F1F0\U0001F1F7 KR 7"
-  server: octopus.koreanbbq.link
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: crispy.koreanbbq.link
   port: 443
   type: trojan
-  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
-- name: "\U0001F1FB\U0001F1F3 VN 8"
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
+- name: "\U0001F1FB\U0001F1F3 VN 7"
   server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
+- name: "\U0001F1E8\U0001F1F3 TW 8"
+  server: tj-tw02.yiyo2way.xyz
+  port: 9980
+  type: trojan
+  password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
+- name: "\U0001F1F0\U0001F1F7 KR 9"
+  server: octopus.koreanbbq.link
+  port: 443
+  type: trojan
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
@@ -50,9 +55,10 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,8 +70,9 @@ proxy-groups:
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1E8\U0001F1F3 TW 8"
+  - "\U0001F1F0\U0001F1F7 KR 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
