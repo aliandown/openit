@@ -1,51 +1,57 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
+  server: us5.msio.uk
+  port: 50089
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 172.234.99.161
   port: 443
   type: trojan
   password: 5f610684-118f-46cf-aa34-9951475b75ad
   skip-cert-verify: true
-- name: "\U0001F1F7\U0001F1FA RU 2"
+- name: "\U0001F1E8\U0001F1F3 TW 3"
+  server: tj-tw02.yiyo2way.xyz
+  port: 9980
+  type: trojan
+  password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
+- name: "\U0001F1FB\U0001F1F3 VN 4"
+  server: vip.zinok.pro
+  port: 443
+  type: trojan
+  password: mothai3456789080898
+- name: "\U0001F1F7\U0001F1FA RU 5"
   server: 89.221.224.93
   port: 80
   type: trojan
   password: 9e77b491-73d4-4ea3-985b-cfe3ae583580
   sni: is1-t.sshmax.xyz
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: 43.201.255.129
+- name: "\U0001F1F0\U0001F1F7 KR 6"
+  server: octopus.koreanbbq.link
   port: 443
   type: trojan
   password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
-  sni: octopus.koreanbbq.link
-- name: "\U0001F1E8\U0001F1F3 TW 4"
-  server: tj-tw02.yiyo2way.xyz
-  port: 9980
-  type: trojan
-  password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
-- name: "\U0001F1FB\U0001F1F3 VN 5"
-  server: vip.zinok.pro
-  port: 443
-  type: trojan
-  password: mothai3456789080898
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1F0\U0001F1F7 KR 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
