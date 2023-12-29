@@ -11,11 +11,12 @@ proxies:
   type: trojan
   password: 9e77b491-73d4-4ea3-985b-cfe3ae583580
   sni: is1-t.sshmax.xyz
-- name: "\U0001F1E8\U0001F1F3 TW 3"
-  server: tj-tw02.yiyo2way.xyz
-  port: 9980
-  type: trojan
-  password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: nc.cm.go002.xyz
+  port: 19511
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 - name: "\U0001F1E8\U0001F1F3 CN 4"
   server: nc.cm.go002.xyz
   port: 19511
@@ -27,15 +28,35 @@ proxies:
   port: 443
   type: trojan
   password: mothai3456789080898
+- name: "\U0001F1E8\U0001F1F3 TW 6"
+  server: tj-tw02.yiyo2way.xyz
+  port: 9980
+  type: trojan
+  password: e8d23f6d-b1b3-3bec-a67a-b8b3df55aa95
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: nc.cm.go002.xyz
+  port: 19584
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: nc.cm.go002.xyz
+  port: 19584
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -44,8 +65,11 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
