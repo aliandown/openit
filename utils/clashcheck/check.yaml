@@ -1,68 +1,13 @@
-proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 18.193.99.85
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1F7\U0001F1FA RU 2"
-  server: 89.221.224.93
-  port: 80
-  type: trojan
-  password: 9e77b491-73d4-4ea3-985b-cfe3ae583580
-  sni: is1-t.sshmax.xyz
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 4"
-  server: sk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sk01.trojanyyds.xyz
-- name: "\U0001F1FB\U0001F1F3 VN 5"
-  server: vip.zinok.pro
-  port: 443
-  type: trojan
-  password: mothai3456789080898
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  server: crispy.koreanbbq.link
-  port: 443
-  type: trojan
-  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: nc.cm.go002.xyz
-  port: 19511
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dcbc1c7f-c323-4365-bd48-cf767f9081ce
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
