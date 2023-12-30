@@ -1,82 +1,28 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 18.196.161.138
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 2"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
   server: 15.237.10.26
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 13.37.58.201
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 4"
-  server: 35.178.97.234
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 51.21.70.48
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1FB\U0001F1F3 VN 6"
-  server: vip.zinok.pro
-  port: 443
-  type: trojan
-  password: mothai3456789080898
-- name: "\U0001F1FA\U0001F1F3 UN 7"
-  server: us5.msio.uk
-  port: 50089
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1E9\U0001F1EA DE 8"
+- name: "\U0001F1E9\U0001F1EA DE 2"
   server: www.casperco.online
   port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 9"
-  server: www.casperco.online
-  port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
