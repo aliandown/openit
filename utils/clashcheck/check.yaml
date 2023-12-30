@@ -6,7 +6,7 @@ proxies:
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: us2.wlds.uk
-  port: 50020
+  port: 50022
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 3"
@@ -16,7 +16,7 @@ proxies:
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 4"
   server: us2.wlds.uk
-  port: 50022
+  port: 50020
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 5"
@@ -38,35 +38,20 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 8"
-  server: hk01.trojanyyds.xyz
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 8"
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 9"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 10"
-  server: sk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sk01.trojanyyds.xyz
-- name: "\U0001F1E9\U0001F1EA DE 11"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 12"
-  server: www.casperco.online
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1FB\U0001F1F3 VN 13"
+  server: cdn-13.cdn2cdn.com
+  port: 2083
+  udp: true
+  password: qG9K8AGnn9XH5jUqeFu96g
+  sni: cdn13.cdn2cdn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: cdn13.cdn2cdn.com
+- name: "\U0001F1FB\U0001F1F3 VN 9"
   server: vip.zinok.pro
   port: 443
   type: trojan
@@ -82,12 +67,8 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1FB\U0001F1F3 VN 13"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -101,11 +82,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
-  - "\U0001F1E8\U0001F1F3 HK 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1FB\U0001F1F3 VN 13"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
