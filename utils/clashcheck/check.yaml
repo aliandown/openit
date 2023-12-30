@@ -1,11 +1,58 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 51.21.70.48
+  server: us2.wlds.uk
+  port: 50023
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: us2.wlds.uk
+  port: 50022
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: us2.wlds.uk
+  port: 50020
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: us2.wlds.uk
+  port: 50021
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: us2.wlds.uk
+  port: 50024
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1FA\U0001F1F3 UN 6"
+  server: us5.msio.uk
+  port: 50091
+  type: trojan
+  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
+- name: "\U0001F1E9\U0001F1EA DE 7"
+  server: 3.77.69.109
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1E9\U0001F1EA DE 8"
+  type: trojan
+  server: 5.104.108.120
+  port: 443
+  udp: true
+  password: e86e242e-b5d5-46ae-a410-3684f7d70ac2
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F7\U0001F1FA RU 9"
+  type: trojan
+  server: 89.221.224.94
+  port: 80
+  udp: true
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 10"
   type: trojan
   server: cdn-13.cdn2cdn.com
   port: 2083
@@ -18,39 +65,29 @@ proxies:
     path: /
     headers:
       host: cdn13.cdn2cdn.com
-- name: "\U0001F1F7\U0001F1FA RU 3"
+- name: "\U0001F1EF\U0001F1F5 JP 11"
+  server: hk03.trojanyyds.xyz
+  port: 443
   type: trojan
-  server: 89.221.224.94
-  port: 80
-  udp: true
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk03.trojanyyds.xyz
+- name: "\U0001F1EF\U0001F1F5 JP 12"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E9\U0001F1EA DE 5"
-  server: 78.47.217.216
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-  sni: www.casperco.online
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1E9\U0001F1EA DE 7"
+- name: "\U0001F1E9\U0001F1EA DE 13"
   server: www.casperco.online
   port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1FB\U0001F1F3 VN 8"
+- name: "\U0001F1E9\U0001F1EA DE 14"
+  server: www.casperco.online
+  port: 1935
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1FB\U0001F1F3 VN 15"
   server: vip.zinok.pro
   port: 443
   type: trojan
@@ -60,13 +97,20 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1F7\U0001F1FA RU 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1E9\U0001F1EA DE 13"
+  - "\U0001F1E9\U0001F1EA DE 14"
+  - "\U0001F1FB\U0001F1F3 VN 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -74,12 +118,19 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1E9\U0001F1EA DE 8"
+  - "\U0001F1F7\U0001F1FA RU 9"
+  - "\U0001F1FA\U0001F1F8 US 10"
+  - "\U0001F1EF\U0001F1F5 JP 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1E9\U0001F1EA DE 13"
+  - "\U0001F1E9\U0001F1EA DE 14"
+  - "\U0001F1FB\U0001F1F3 VN 15"
 rules:
 - "MATCH,\U0001F310 Proxy"
