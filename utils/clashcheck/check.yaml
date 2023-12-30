@@ -5,35 +5,49 @@ proxies:
   type: trojan
   password: f92ddb05-6cec-49ae-93c9-5fa44276e528
   sni: t1.csyun.buzz
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: www.casperco.online
-  port: 1935
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: jp2.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  port: 443
   type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1F0\U0001F1F7 KR 4"
+  password: fb73fbf9-ed99-44ca-8eba-ccdcd7d59f67
+  sni: 13-231-155-134.nhost.00cdn.com
+- name: "\U0001F1F0\U0001F1F7 KR 3"
   server: octopus.koreanbbq.link
   port: 443
   type: trojan
   password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
-- name: "\U0001F1FB\U0001F1F3 VN 5"
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  server: 78.47.217.216
+  port: 1935
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+  sni: www.casperco.online
+- name: "\U0001F1E9\U0001F1EA DE 5"
+  server: www.casperco.online
+  port: 993
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1FB\U0001F1F3 VN 6"
   server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  server: crispy.koreanbbq.link
+  port: 443
+  type: trojan
+  password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FB\U0001F1F3 VN 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -41,9 +55,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FB\U0001F1F3 VN 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
