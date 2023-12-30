@@ -1,95 +1,34 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us2.wlds.uk
-  port: 50021
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: us2.wlds.uk
-  port: 50020
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: us2.wlds.uk
-  port: 50023
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: us2.wlds.uk
-  port: 50024
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: us2.wlds.uk
-  port: 50022
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 6"
   server: 107.148.200.75
   port: 37665
   type: trojan
   password: f92ddb05-6cec-49ae-93c9-5fa44276e528
   sni: t1.csyun.buzz
-- name: "\U0001F1FA\U0001F1F3 UN 7"
-  server: us5.msio.uk
-  port: 50091
-  type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1F0\U0001F1F7 KR 8"
-  server: octopus.koreanbbq.link
-  port: 443
-  type: trojan
-  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
-- name: "\U0001F1FB\U0001F1F3 VN 9"
-  server: vip.zinok.pro
-  port: 443
-  type: trojan
-  password: mothai3456789080898
-- name: "\U0001F1E9\U0001F1EA DE 10"
+- name: "\U0001F1E9\U0001F1EA DE 2"
   server: www.casperco.online
   port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 11"
-  server: www.casperco.online
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 78.47.217.216
   port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1FA\U0001F1F3 UN 12"
-  server: us5.msio.uk
-  port: 50089
+  sni: www.casperco.online
+- name: "\U0001F1FB\U0001F1F3 VN 4"
+  server: vip.zinok.pro
+  port: 443
   type: trojan
-  password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 13"
-  type: trojan
-  server: cdn-13.cdn2cdn.com
-  port: 2083
-  udp: true
-  password: qG9K8AGnn9XH5jUqeFu96g
-  sni: cdn13.cdn2cdn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      host: cdn13.cdn2cdn.com
+  password: mothai3456789080898
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1FB\U0001F1F3 VN 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
-  - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1FA\U0001F1F3 UN 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1FB\U0001F1F3 VN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -97,17 +36,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1F0\U0001F1F7 KR 8"
-  - "\U0001F1FB\U0001F1F3 VN 9"
-  - "\U0001F1E9\U0001F1EA DE 10"
-  - "\U0001F1E9\U0001F1EA DE 11"
-  - "\U0001F1FA\U0001F1F3 UN 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1FB\U0001F1F3 VN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
