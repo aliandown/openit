@@ -1,23 +1,17 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
-  server: 15.237.10.26
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1E9\U0001F1EA DE 1"
   server: 3.77.69.109
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 51.21.70.48
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: cdn-13.cdn2cdn.com
   port: 2083
@@ -30,7 +24,7 @@ proxies:
     path: /
     headers:
       host: cdn13.cdn2cdn.com
-- name: "\U0001F1F7\U0001F1FA RU 5"
+- name: "\U0001F1F7\U0001F1FA RU 4"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -39,35 +33,7 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 7"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1E9\U0001F1EA DE 8"
-  server: 78.47.217.216
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-  sni: www.casperco.online
-- name: "\U0001F1E9\U0001F1EA DE 9"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1FB\U0001F1F3 VN 10"
-  server: vip.zinok.pro
-  port: 443
-  type: trojan
-  password: mothai3456789080898
-- name: "\U0001F1E9\U0001F1EA DE 11"
+- name: "\U0001F1E9\U0001F1EA DE 5"
   type: trojan
   server: 5.104.108.120
   port: 443
@@ -75,37 +41,47 @@ proxies:
   password: e86e242e-b5d5-46ae-a410-3684f7d70ac2
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1E9\U0001F1EA DE 6"
+  server: www.casperco.online
+  port: 993
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E9\U0001F1EA DE 7"
+  server: 78.47.217.216
+  port: 1935
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+  sni: www.casperco.online
+- name: "\U0001F1FB\U0001F1F3 VN 8"
+  server: vip.zinok.pro
+  port: 443
+  type: trojan
+  password: mothai3456789080898
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
-  - "\U0001F1FB\U0001F1F3 VN 10"
-  - "\U0001F1E9\U0001F1EA DE 11"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1E9\U0001F1EA DE 8"
-  - "\U0001F1E9\U0001F1EA DE 9"
-  - "\U0001F1FB\U0001F1F3 VN 10"
-  - "\U0001F1E9\U0001F1EA DE 11"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
