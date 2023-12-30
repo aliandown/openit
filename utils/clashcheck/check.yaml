@@ -6,45 +6,30 @@ proxies:
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 2"
   server: us2.wlds.uk
-  port: 50024
+  port: 50020
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: us2.wlds.uk
-  port: 50023
+  port: 50024
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 4"
   server: us2.wlds.uk
-  port: 50020
+  port: 50022
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
 - name: "\U0001F1FA\U0001F1F8 US 5"
   server: us2.wlds.uk
-  port: 50022
+  port: 50023
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 107.148.200.75
-  port: 37665
-  type: trojan
-  password: f92ddb05-6cec-49ae-93c9-5fa44276e528
-  sni: t1.csyun.buzz
-- name: "\U0001F1FA\U0001F1F3 UN 7"
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   server: us5.msio.uk
   port: 50091
   type: trojan
   password: 801725d8-08df-4a20-b69a-e534b8c4ede7
-- name: "\U0001F1F7\U0001F1FA RU 8"
-  type: trojan
-  server: 89.221.224.94
-  port: 80
-  udp: true
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F3 UN 7"
   type: trojan
   server: cdn-13.cdn2cdn.com
   port: 2083
@@ -57,33 +42,35 @@ proxies:
     path: /
     headers:
       host: cdn13.cdn2cdn.com
-- name: "\U0001F1E8\U0001F1F3 HK 10"
-  server: hk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 11"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1E9\U0001F1EA DE 12"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 13"
-  server: www.casperco.online
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1FB\U0001F1F3 VN 14"
+- name: "\U0001F1FB\U0001F1F3 VN 8"
   server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
+- name: "\U0001F1E9\U0001F1EA DE 9"
+  server: www.casperco.online
+  port: 1935
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E9\U0001F1EA DE 10"
+  server: www.casperco.online
+  port: 993
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1F7\U0001F1FA RU 11"
+  type: trojan
+  server: 89.221.224.94
+  port: 80
+  udp: true
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 12"
+  server: octopus.koreanbbq.link
+  port: 443
+  type: trojan
+  password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg
 proxy-groups:
 - name: automatic
   type: url-test
@@ -93,15 +80,13 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1F7\U0001F1FA RU 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1E9\U0001F1EA DE 13"
-  - "\U0001F1FB\U0001F1F3 VN 14"
+  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1F7\U0001F1FA RU 11"
+  - "\U0001F1F0\U0001F1F7 KR 12"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -113,14 +98,12 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1F7\U0001F1FA RU 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1E9\U0001F1EA DE 12"
-  - "\U0001F1E9\U0001F1EA DE 13"
-  - "\U0001F1FB\U0001F1F3 VN 14"
+  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1E9\U0001F1EA DE 9"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1F7\U0001F1FA RU 11"
+  - "\U0001F1F0\U0001F1F7 KR 12"
 rules:
 - "MATCH,\U0001F310 Proxy"
