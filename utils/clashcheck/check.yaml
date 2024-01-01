@@ -1,12 +1,12 @@
 proxies:
 - name: "\U0001F1EB\U0001F1F7 FR 1"
-  server: 13.39.58.213
+  server: 52.47.40.157
   port: 22222
   type: trojan
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  server: 52.47.40.157
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: 3.70.1.130
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
@@ -23,20 +23,33 @@ proxies:
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
   sni: www.casperco.online
-- name: "\U0001F1E8\U0001F1F3 HK 5"
+- name: "\U0001F1F8\U0001F1EA SE 5"
+  server: 13.50.154.188
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1F3 HK 6"
   server: hkhe02.bcloudv.cyou
   port: 20897
   type: trojan
   password: 10f87a8e-a6f6-319d-a895-8310d326ecce
+- name: "\U0001F1FB\U0001F1F3 VN 7"
+  server: vip.zinok.pro
+  port: 443
+  type: trojan
+  password: mothai3456789080898
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1F8\U0001F1EA SE 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -44,9 +57,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1F8\U0001F1EA SE 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FB\U0001F1F3 VN 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
