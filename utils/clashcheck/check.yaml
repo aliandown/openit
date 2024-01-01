@@ -1,5 +1,15 @@
 proxies:
-- name: "\U0001F1F7\U0001F1FA RU 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  server: www.casperco.online
+  port: 1935
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: www.casperco.online
+  port: 993
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1F7\U0001F1FA RU 3"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -8,16 +18,6 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: www.casperco.online
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 - name: "\U0001F1FB\U0001F1F3 VN 4"
   server: vip.zinok.pro
   port: 443
@@ -27,9 +27,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F7\U0001F1FA RU 3"
   - "\U0001F1FB\U0001F1F3 VN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -37,9 +37,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F7\U0001F1FA RU 3"
   - "\U0001F1FB\U0001F1F3 VN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
