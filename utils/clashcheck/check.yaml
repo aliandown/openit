@@ -1,5 +1,17 @@
 proxies:
-- name: "\U0001F1F7\U0001F1FA RU 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  server: 3.68.4.210
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 13.38.234.170
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1F7\U0001F1FA RU 3"
   type: trojan
   server: 89.221.224.94
   port: 80
@@ -8,72 +20,35 @@ proxies:
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: hk04.trojanyyds.xyz
+- name: "\U0001F1FB\U0001F1F3 VN 4"
+  server: vip.zinok.pro
   port: 443
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: hk03.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk03.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: frontend.kuangbiaoyun.com
-  port: 40020
-  type: trojan
-  password: ad953998-e8ea-4d5b-8b2f-e63edd9d375d
-  sni: frontend.kuangbiaoyun.com
-  skip-cert-verify: true
+  password: mothai3456789080898
 - name: "\U0001F1E9\U0001F1EA DE 5"
   server: www.casperco.online
   port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: hk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 7"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1FB\U0001F1F3 VN 8"
-  server: vip.zinok.pro
-  port: 443
-  type: trojan
-  password: mothai3456789080898
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F7\U0001F1FA RU 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1FB\U0001F1F3 VN 4"
   - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F7\U0001F1FA RU 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1FB\U0001F1F3 VN 4"
   - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
-  - "\U0001F1E8\U0001F1F3 HK 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
