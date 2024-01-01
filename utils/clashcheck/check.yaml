@@ -4,23 +4,11 @@ proxies:
   port: 443
   type: trojan
   password: mothai3456789080898
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: www.casperco.online
-  port: 993
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  server: www.casperco.online
-  port: 1935
-  type: trojan
-  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FB\U0001F1F3 VN 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -28,7 +16,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FB\U0001F1F3 VN 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
