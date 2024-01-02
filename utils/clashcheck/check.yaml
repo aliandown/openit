@@ -1,82 +1,61 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 3.77.225.126
-  port: 22222
+- name: "\U0001F1E8\U0001F1E6 CA 1"
   type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1F7\U0001F1FA RU 2"
-  type: trojan
-  server: els_trojanone.yunjisuan.cf
-  port: 14866
+  server: 192.46.223.61
+  port: 443
   udp: true
-  password: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
-  sni: els_trojanone.yunjisuan.cf
+  password: fe62cb68-6891-4e96-8fb9-e39f0ee53b7e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1F7\U0001F1FA RU 4"
-  type: trojan
+- name: "\U0001F1F7\U0001F1FA RU 2"
   server: 89.221.224.94
   port: 80
-  udp: true
+  type: trojan
   password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
   sni: is2-t.sshmax.xyz
   skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: hk03.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk03.trojanyyds.xyz
-- name: "\U0001F1FB\U0001F1F3 VN 6"
+- name: "\U0001F1FB\U0001F1F3 VN 3"
   server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: sk01.trojanyyds.xyz
-  port: 443
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  server: www.casperco.online
+  port: 993
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sk01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 8"
-  server: hk01.trojanyyds.xyz
-  port: 443
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E9\U0001F1EA DE 5"
+  server: www.casperco.online
+  port: 1935
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+- name: "\U0001F1E9\U0001F1EA DE 6"
+  server: 3.124.154.113
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1F7\U0001F1FA RU 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1F7\U0001F1FA RU 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1EF\U0001F1F5 JP 8"
+  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
