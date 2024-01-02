@@ -1,48 +1,46 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  type: trojan
-  server: 192.46.223.61
+- name: "\U0001F1E8\U0001F1F3 HK 1"
+  server: sg01.trojanyyds.xyz
   port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: sk01.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+- name: "\U0001F1FB\U0001F1F3 VN 3"
+  server: vip.zinok.pro
+  port: 443
+  type: trojan
+  password: mothai3456789080898
+- name: "\U0001F1F7\U0001F1FA RU 4"
+  type: trojan
+  server: 89.221.224.94
+  port: 80
   udp: true
-  password: fe62cb68-6891-4e96-8fb9-e39f0ee53b7e
+  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
+  sni: is2-t.sshmax.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: 3.77.225.126
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: hk03.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk03.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
 - name: "\U0001F1E9\U0001F1EA DE 5"
   server: www.casperco.online
-  port: 993
+  port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 - name: "\U0001F1E9\U0001F1EA DE 6"
   server: www.casperco.online
-  port: 1935
+  port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1E9\U0001F1EA DE 6"
   url: https://www.google.com/favicon.ico
@@ -51,10 +49,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FB\U0001F1F3 VN 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
   - "\U0001F1E9\U0001F1EA DE 5"
   - "\U0001F1E9\U0001F1EA DE 6"
 rules:
