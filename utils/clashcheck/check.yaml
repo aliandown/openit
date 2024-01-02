@@ -1,16 +1,22 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
+- name: "\U0001F1EC\U0001F1EE GI 1"
+  server: gbs.pptv-tv.store
+  port: 17728
+  type: trojan
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA DE 2"
   server: 78.47.217.216
   port: 993
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
   sni: www.casperco.online
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   server: www.casperco.online
   port: 1935
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
-- name: "\U0001F1F7\U0001F1FA RU 3"
+- name: "\U0001F1F7\U0001F1FA RU 4"
   type: trojan
   server: els_trojanone.yunjisuan.cf
   port: 14866
@@ -19,7 +25,7 @@ proxies:
   sni: els_trojanone.yunjisuan.cf
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 4"
+- name: "\U0001F1FB\U0001F1F3 VN 5"
   server: vip.zinok.pro
   port: 443
   type: trojan
@@ -28,19 +34,21 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1EE GI 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
+  - "\U0001F1FB\U0001F1F3 VN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1EE GI 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1F7\U0001F1FA RU 3"
-  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F7\U0001F1FA RU 4"
+  - "\U0001F1FB\U0001F1F3 VN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
