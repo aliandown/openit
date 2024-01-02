@@ -1,16 +1,16 @@
 proxies:
 - name: "\U0001F1E8\U0001F1F3 HK 1"
+  server: hk03.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: hk03.trojanyyds.xyz
+- name: "\U0001F1EF\U0001F1F5 JP 2"
   server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   sni: hk04.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
 - name: "\U0001F1E9\U0001F1EA DE 3"
   server: www.casperco.online
   port: 1935
@@ -22,13 +22,7 @@ proxies:
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
   sni: www.casperco.online
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: in01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: in01.trojanyyds.xyz
-- name: "\U0001F1FB\U0001F1F3 VN 6"
+- name: "\U0001F1FB\U0001F1F3 VN 5"
   server: vip.zinok.pro
   port: 443
   type: trojan
@@ -41,8 +35,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
+  - "\U0001F1FB\U0001F1F3 VN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -53,7 +46,6 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1E9\U0001F1EA DE 4"
-  - "\U0001F1E8\U0001F1F3 HK 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
+  - "\U0001F1FB\U0001F1F3 VN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
