@@ -1,10 +1,11 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
   type: trojan
-  server: 192.46.223.61
-  port: 443
+  server: 13.37.174.12
+  port: 22222
   udp: true
-  password: fe62cb68-6891-4e96-8fb9-e39f0ee53b7e
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1FB\U0001F1F3 VN 2"
@@ -13,17 +14,19 @@ proxies:
   type: trojan
   password: mothai3456789080898
 - name: "\U0001F1F7\U0001F1FA RU 3"
-  server: 89.221.224.94
-  port: 80
   type: trojan
-  password: 28c79056-ccfd-4cc1-93d4-c337cc782e65
-  sni: is2-t.sshmax.xyz
+  server: els_trojanone.yunjisuan.cf
+  port: 14866
+  udp: true
+  password: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
+  sni: els_trojanone.yunjisuan.cf
   skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1FB\U0001F1F3 VN 2"
   - "\U0001F1F7\U0001F1FA RU 3"
   url: https://www.google.com/favicon.ico
@@ -32,7 +35,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   - "\U0001F1FB\U0001F1F3 VN 2"
   - "\U0001F1F7\U0001F1FA RU 3"
 rules:
