@@ -1,20 +1,39 @@
 proxies:
-- name: "\U0001F1FB\U0001F1F3 VN 1"
+- name: "\U0001F1F7\U0001F1FA RU 1"
+  type: trojan
+  server: els_trojanone.yunjisuan.cf
+  port: 14866
+  udp: true
+  password: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
+  sni: els_trojanone.yunjisuan.cf
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FB\U0001F1F3 VN 2"
   server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 78.47.217.216
+  port: 993
+  type: trojan
+  password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
+  sni: www.casperco.online
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FB\U0001F1F3 VN 1"
+  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1FB\U0001F1F3 VN 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FB\U0001F1F3 VN 1"
+  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1FB\U0001F1F3 VN 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
