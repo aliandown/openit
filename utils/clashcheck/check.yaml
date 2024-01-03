@@ -10,25 +10,7 @@ proxies:
   type: trojan
   password: 74811f39-8f69-4334-9e0f-a8a25d7413c1
   sni: www.casperco.online
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: hk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: hk04.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk04.trojanyyds.xyz
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: hk03.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: hk03.trojanyyds.xyz
-- name: "\U0001F1F7\U0001F1FA RU 6"
+- name: "\U0001F1F7\U0001F1FA RU 3"
   type: trojan
   server: els_trojanone.yunjisuan.cf
   port: 14866
@@ -37,13 +19,19 @@ proxies:
   sni: els_trojanone.yunjisuan.cf
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 7"
-  server: sg01.trojanyyds.xyz
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: hk04.trojanyyds.xyz
   port: 443
   type: trojan
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: sg01.trojanyyds.xyz
-- name: "\U0001F1FB\U0001F1F3 VN 8"
+  sni: hk04.trojanyyds.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: my02.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  sni: my02.trojanyyds.xyz
+- name: "\U0001F1FB\U0001F1F3 VN 6"
   server: vip.zinok.pro
   port: 443
   type: trojan
@@ -54,12 +42,10 @@ proxy-groups:
   proxies:
   - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1FB\U0001F1F3 VN 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -68,11 +54,9 @@ proxy-groups:
   - automatic
   - "\U0001F1E9\U0001F1EA DE 1"
   - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F7\U0001F1FA RU 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F7\U0001F1FA RU 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1FB\U0001F1F3 VN 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
