@@ -10,12 +10,38 @@ proxies:
   port: 443
   type: trojan
   password: mothai3456789080898
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: east.eeeeeef998.buzz
+  port: 15006
+  type: trojan
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: east.eeeeeef998.buzz
+  port: 15003
+  type: trojan
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  type: trojan
+  server: east.eeeeeef998.buzz
+  port: 15003
+  udp: true
+  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
+  sni: data.steamdownload.top
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EC\U0001F1EE GI 1"
   - "\U0001F1FB\U0001F1F3 VN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -24,5 +50,8 @@ proxy-groups:
   - automatic
   - "\U0001F1EC\U0001F1EE GI 1"
   - "\U0001F1FB\U0001F1F3 VN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
