@@ -10,11 +10,14 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us3
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: a4.zgc.su
-  port: 567
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  password: 2d8a021a-0ba2-4a3c-bbd1-f63b743c2920
+  server: 172.234.99.161
+  port: 443
+  udp: true
+  password: 3165dac2-6203-46bd-a758-ecb170e58397
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 89.116.180.179
@@ -28,26 +31,13 @@ proxies:
     path: /pq/us4
 - name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
-  server: 172.234.99.161
-  port: 443
-  udp: true
-  password: 3165dac2-6203-46bd-a758-ecb170e58397
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  type: trojan
   server: 172.232.195.16
   port: 443
   udp: true
   password: 74223dc9-8fe0-4cb3-bd54-fe639851b69e
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 6"
-  server: a25.zgc.su
-  port: 567
-  type: trojan
-  password: 2d8a021a-0ba2-4a3c-bbd1-f63b743c2920
-- name: "\U0001F1F7\U0001F1FA RU 7"
+- name: "\U0001F1F7\U0001F1FA RU 5"
   type: trojan
   server: els_trojanone.yunjisuan.cf
   port: 14866
@@ -56,25 +46,43 @@ proxies:
   sni: els_trojanone.yunjisuan.cf
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 8"
-  server: 103.166.185.11
+- name: "\U0001F1EF\U0001F1F5 JP 6"
+  server: a4.zgc.su
+  port: 567
+  type: trojan
+  password: 2d8a021a-0ba2-4a3c-bbd1-f63b743c2920
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: 15.204.9.172
+  port: 443
+  udp: true
+  password: opentunnel.net-12qwe
+  sni: www.yahoo.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 8"
+  server: a25.zgc.su
+  port: 567
+  type: trojan
+  password: 2d8a021a-0ba2-4a3c-bbd1-f63b743c2920
+- name: "\U0001F1FB\U0001F1F3 VN 9"
+  server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
-  sni: dl.kgvn.garenanow.com
-  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -82,12 +90,13 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1F8\U0001F1EC SG 6"
-  - "\U0001F1F7\U0001F1FA RU 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
