@@ -4,59 +4,61 @@ proxies:
   port: 567
   type: trojan
   password: 2d8a021a-0ba2-4a3c-bbd1-f63b743c2920
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: hk04.trojanyyds.xyz
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  server: 15.204.9.172
+  port: 443
+  udp: true
+  password: opentunnel.net-12qwe
+  sni: www.yahoo.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1F8\U0001F1EC SG 3"
   server: a25.zgc.su
   port: 567
   type: trojan
   password: 2d8a021a-0ba2-4a3c-bbd1-f63b743c2920
-- name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: hk02.trojanyyds.xyz
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  server: 172.232.195.16
+  port: 443
+  udp: true
+  password: 74223dc9-8fe0-4cb3-bd54-fe639851b69e
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1FB\U0001F1F3 VN 5"
-  server: 103.166.185.11
+  server: vip.zinok.pro
   port: 443
   type: trojan
   password: mothai3456789080898
-  sni: dl.kgvn.garenanow.com
+- name: "\U0001F1F7\U0001F1FA RU 6"
+  type: trojan
+  server: els_trojanone.yunjisuan.cf
+  port: 14866
+  udp: true
+  password: bf3d038a-93a2-4e24-886c-6bc64e3c3a90
+  sni: els_trojanone.yunjisuan.cf
   skip-cert-verify: true
-- name: "\U0001F1EF\U0001F1F5 JP 6"
-  server: my01.trojanyyds.xyz
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  type: trojan
+  server: 172.234.99.161
   port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: my01.trojanyyds.xyz
-- name: "\U0001F1EF\U0001F1F5 JP 7"
-  server: uk01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  sni: uk01.trojanyyds.xyz
-- name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: east.eeeeeef998.buzz
-  port: 15002
-  type: trojan
-  password: 414dff55-922a-4dc8-b5d3-b6517942b25a
-  sni: data.steamdownload.top
+  udp: true
+  password: 3165dac2-6203-46bd-a758-ecb170e58397
   skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FB\U0001F1F3 VN 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1F7\U0001F1FA RU 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,12 +66,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FB\U0001F1F3 VN 5"
-  - "\U0001F1EF\U0001F1F5 JP 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1F7\U0001F1FA RU 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
