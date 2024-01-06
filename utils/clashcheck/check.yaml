@@ -1,18 +1,5 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: 3.11.136.238
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 51.21.103.152
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: 15.204.9.172
   port: 443
@@ -21,24 +8,39 @@ proxies:
   sni: www.yahoo.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
+- name: "\U0001F1E8\U0001F1F3 TW 2"
   type: ss
-  server: 874b20d.f3.gladns.com
+  server: 874b20d.b9.gladns.com
   port: 2377
-  udp: true
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   cipher: chacha20-ietf-poly1305
   plugin: obfs
   plugin-opts:
     mode: tls
-    host: 874b20d.dl.microsoft.lv.net:48331
+    host: 874b20d.dl.microsoft.hu:48331
+- name: "\U0001F1EE\U0001F1EA IE 3"
+  server: 54.154.150.136
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ss
+  server: 874b20d.f1.gladns.com
+  port: 2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  cipher: chacha20-ietf-poly1305
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: 874b20d.dl.microsoft.io.net:48331
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -46,9 +48,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1F3 TW 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
