@@ -1,13 +1,41 @@
-proxies: []
+proxies:
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 3.11.170.124
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1F8\U0001F1EC SG 2"
+  type: trojan
+  server: 54.255.176.223
+  port: 14569
+  udp: true
+  password: Ja0Cpbu9CjTS
+  sni: www.myethblog.com
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  type: trojan
+  server: 13.229.182.117
+  port: 14565
+  udp: true
+  password: mgUWMstPIgyC
+  sni: www.myethblog.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
