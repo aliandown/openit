@@ -1,44 +1,37 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
-  server: 13.39.133.17
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: 51.20.173.209
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 13.39.133.17
+  port: 22222
   type: trojan
-  server: ironone.libertasiran.cloud
-  port: 443
-  udp: true
-  password: Libertasone*
-  sni: ironone.libertasiran.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /n89
-    headers:
-      host: ironone.libertasiran.cloud
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 18.199.58.30
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
