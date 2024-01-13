@@ -4,7 +4,18 @@ proxies:
   port: 443
   type: trojan
   password: d47423d0-b161-11ee-8640-1239d0255272
-- name: "\U0001F1E8\U0001F1ED CH 2"
+- name: "\U0001F1EE\U0001F1EA IE 2"
+  server: 34.251.16.160
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  server: los16.ttddd.xyz
+  port: 443
+  type: trojan
+  password: 27876_t7d7f4e3f
+- name: "\U0001F1EF\U0001F1F5 JP 4"
   server: jp1.lxjc.app
   port: 443
   type: trojan
@@ -15,7 +26,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E8\U0001F1ED CH 2"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -23,6 +36,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E8\U0001F1ED CH 2"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1EF\U0001F1F5 JP 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
