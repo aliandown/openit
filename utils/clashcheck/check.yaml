@@ -1,28 +1,51 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: de2.test3.net
+- name: "\U0001F1FA\U0001F1F3 UN 1"
+  server: los16.ttddd.xyz
   port: 443
   type: trojan
-  password: d47423d0-b161-11ee-8640-1239d0255272
+  password: 27876_t7d7f4e3f
 - name: "\U0001F1EF\U0001F1F5 JP 2"
   server: jp1.lxjc.app
   port: 443
   type: trojan
   password: 7fb404f3-9aa0-4734-8783-34ce1c24f9e0
   sni: 16-163-218-240.nhost.00cdn.com
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: 35.176.180.61
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  server: 52.16.81.169
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 5"
+  server: de2.test3.net
+  port: 443
+  type: trojan
+  password: d47423d0-b161-11ee-8640-1239d0255272
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
