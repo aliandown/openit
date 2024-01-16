@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  type: trojan
-  server: cdn-16.cdn2cdn.com
-  port: 2083
-  udp: true
-  password: gviRoLVUKA5kBX2M0gJSvg
-  sni: cdn16.cdn2cdn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
   server: 104.21.69.44
   port: 443
@@ -21,11 +10,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  type: trojan
+  server: cdn-16.cdn2cdn.com
+  port: 2083
+  udp: true
+  password: gviRoLVUKA5kBX2M0gJSvg
+  sni: cdn16.cdn2cdn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -33,7 +33,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
