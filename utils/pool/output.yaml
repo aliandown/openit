@@ -371,21 +371,21 @@ proxies:
   udp: true
   password: Nu5EqwcJ2OCuvKAcSQeGdg
   sni: cdn-22.gsmxreality.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 55 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 55 TJN"
   type: trojan
-  server: cdn-16.cdn2cdn.com
-  port: 2083
+  server: 104.19.67.53
+  port: 443
   udp: true
-  password: gviRoLVUKA5kBX2M0gJSvg
-  sni: cdn16.cdn2cdn.com
+  password: Mahanvpn-insta-mahan_vpn
+  sni: mahanvip.mahantu.top
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mahanvip.mahantu.top
 - name: "\U0001F1FA\U0001F1F3 UN 56 TJN"
   type: trojan
   server: 104.19.67.53
@@ -397,7 +397,51 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mahanvip.mahantu.top
-- name: "\U0001F1E6\U0001F1FA AU 57 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 57 TJN"
+  type: trojan
+  server: 104.21.69.44
+  port: 443
+  udp: true
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  sni: cdn-22.gsmxreality.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 58 TJN"
+  type: trojan
+  server: 104.21.69.44
+  port: 443
+  udp: true
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  sni: cdn-22.gsmxreality.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 59 TJN"
+  type: trojan
+  server: cdn-16.cdn2cdn.com
+  port: 2083
+  udp: true
+  password: gviRoLVUKA5kBX2M0gJSvg
+  sni: cdn16.cdn2cdn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: "\U0001F1FA\U0001F1F3 UN 60 TJN"
+  type: trojan
+  server: 104.19.67.53
+  port: 443
+  udp: true
+  password: Mahanvpn-insta-mahan_vpn
+  sni: mahanvip.mahantu.top
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mahanvip.mahantu.top
+- name: "\U0001F1E6\U0001F1FA AU 61 TJN"
   type: trojan
   server: 192.65.217.247
   port: 443
@@ -410,50 +454,6 @@ proxies:
     path: /yfjc/kus2
     headers:
       host: k5us2.yfjc.sbs
-- name: "\U0001F1FA\U0001F1F3 UN 58 TJN"
-  type: trojan
-  server: 104.19.67.53
-  port: 443
-  udp: true
-  password: Mahanvpn-insta-mahan_vpn
-  sni: mahanvip.mahantu.top
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mahanvip.mahantu.top
-- name: "\U0001F1FA\U0001F1F3 UN 59 TJN"
-  type: trojan
-  server: 104.21.69.44
-  port: 443
-  udp: true
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  sni: cdn-22.gsmxreality.com
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F3 UN 60 TJN"
-  type: trojan
-  server: 104.21.69.44
-  port: 443
-  udp: true
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  sni: cdn-22.gsmxreality.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F3 UN 61 TJN"
-  type: trojan
-  server: 104.19.67.53
-  port: 443
-  udp: true
-  password: Mahanvpn-insta-mahan_vpn
-  sni: mahanvip.mahantu.top
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mahanvip.mahantu.top
 proxy-groups:
 - name: automatic
   type: url-test
@@ -512,13 +512,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 52 TJN"
   - "\U0001F1E6\U0001F1FA AU 53 TJN"
   - "\U0001F1FA\U0001F1F3 UN 54 TJN"
-  - "\U0001F1FA\U0001F1F8 US 55 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 55 TJN"
   - "\U0001F1FA\U0001F1F3 UN 56 TJN"
-  - "\U0001F1E6\U0001F1FA AU 57 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 57 TJN"
   - "\U0001F1FA\U0001F1F3 UN 58 TJN"
   - "\U0001F1FA\U0001F1F3 UN 59 TJN"
   - "\U0001F1FA\U0001F1F3 UN 60 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 61 TJN"
+  - "\U0001F1E6\U0001F1FA AU 61 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -579,12 +579,12 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 52 TJN"
   - "\U0001F1E6\U0001F1FA AU 53 TJN"
   - "\U0001F1FA\U0001F1F3 UN 54 TJN"
-  - "\U0001F1FA\U0001F1F8 US 55 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 55 TJN"
   - "\U0001F1FA\U0001F1F3 UN 56 TJN"
-  - "\U0001F1E6\U0001F1FA AU 57 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 57 TJN"
   - "\U0001F1FA\U0001F1F3 UN 58 TJN"
   - "\U0001F1FA\U0001F1F3 UN 59 TJN"
   - "\U0001F1FA\U0001F1F3 UN 60 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 61 TJN"
+  - "\U0001F1E6\U0001F1FA AU 61 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
