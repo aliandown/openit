@@ -10,17 +10,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: cdn-16.cdn2cdn.com
-  port: 2083
+  server: 172.67.204.84
+  port: 443
   udp: true
-  password: gviRoLVUKA5kBX2M0gJSvg
-  sni: cdn16.cdn2cdn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  sni: cdn-22.gsmxreality.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
 - name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: cdn-16.cdn2cdn.com
@@ -32,13 +32,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: vpnpool.liangyuandiancloud.com
+  port: 443
+  type: trojan
+  password: 17cae44f-1b58-4407-bb31-8273b7a51ff2
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -46,7 +52,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
