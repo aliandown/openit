@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  type: trojan
-  server: 104.21.69.44
-  port: 443
-  udp: true
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  sni: cdn-22.gsmxreality.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -21,18 +10,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  type: trojan
+  server: 104.21.69.44
+  port: 443
+  udp: true
+  password: Nu5EqwcJ2OCuvKAcSQeGdg
+  sni: cdn-22.gsmxreality.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 51.21.89.231
+  server: 18.216.104.57
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1EF\U0001F1F5 JP 4"
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   type: trojan
-  server: jp.tnetz.net
+  server: KR68.5GTOCDOCAO.COM
   port: 443
   udp: true
-  password: f3701a75-164d-41e7-a7a3-3a487cbda613
+  password: eb9e8a52-0fec-4a10-8d16-af3b32874933
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
@@ -47,6 +47,15 @@ proxies:
   network: tcp
 - name: "\U0001F1FB\U0001F1F3 VN 6"
   type: trojan
+  server: gamehcm.fast4g.vn
+  port: 443
+  udp: true
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FB\U0001F1F3 VN 7"
+  type: trojan
   server: all2.tnetz.net
   port: 443
   udp: true
@@ -54,16 +63,34 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 7"
+- name: "\U0001F1FB\U0001F1F3 VN 8"
   type: trojan
-  server: 103.154.63.16
+  server: gamehn1.fast4g.vn
+  port: 443
+  udp: true
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 9"
+  type: trojan
+  server: 103.154.62.23
   port: 443
   udp: true
   password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 8"
+- name: "\U0001F1FB\U0001F1F3 VN 10"
+  type: trojan
+  server: ANTIDDOS5.5GTOCDOCAO.COM
+  port: 443
+  udp: true
+  password: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 11"
   type: trojan
   server: Platin.tnetz.net
   port: 443
@@ -72,31 +99,59 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 12"
+  type: trojan
+  server: 103.154.63.16
+  port: 443
+  udp: true
+  password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F3 UN 13"
+  type: trojan
+  server: 103.149.87.45
+  port: 443
+  udp: true
+  password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F0\U0001F1F7 KR 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
+  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FB\U0001F1F3 VN 10"
+  - "\U0001F1FA\U0001F1F3 UN 11"
+  - "\U0001F1FA\U0001F1F3 UN 12"
+  - "\U0001F1FA\U0001F1F3 UN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EF\U0001F1F5 JP 4"
+  - "\U0001F1F0\U0001F1F7 KR 4"
   - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
+  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1FB\U0001F1F3 VN 8"
+  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FB\U0001F1F3 VN 10"
+  - "\U0001F1FA\U0001F1F3 UN 11"
+  - "\U0001F1FA\U0001F1F3 UN 12"
+  - "\U0001F1FA\U0001F1F3 UN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
