@@ -1,10 +1,10 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: us03.333210.xyz
-  port: 40000
+  server: 18.216.104.57
+  port: 22222
   type: trojan
-  password: 892e4ff3-f8bb-42ac-9bd5-e103f235fc78
-  sni: 400567.xyz
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
 - name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: 104.21.69.44
@@ -27,15 +27,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 18.216.104.57
-  port: 22222
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   type: trojan
-  password: telegram-id-directvpn
-  sni: trj.rollingnext.co.uk
-- name: "\U0001F1FB\U0001F1F3 VN 5"
+  server: KR68.5GTOCDOCAO.COM
+  port: 443
+  udp: true
+  password: eb9e8a52-0fec-4a10-8d16-af3b32874933
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 5"
   type: trojan
-  server: skyht2.vpndata.vn
+  server: sg.vpndata.vn
   port: 443
   udp: true
   password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
@@ -44,23 +47,14 @@ proxies:
   network: tcp
 - name: "\U0001F1FB\U0001F1F3 VN 6"
   type: trojan
-  server: all2.tnetz.net
+  server: skyht2.vpndata.vn
   port: 443
   udp: true
-  password: f3701a75-164d-41e7-a7a3-3a487cbda613
+  password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 7"
-  type: trojan
-  server: ANTIDDOS5.5GTOCDOCAO.COM
-  port: 443
-  udp: true
-  password: eb9e8a52-0fec-4a10-8d16-af3b32874933
-  sni: lienquan.garena.vn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 8"
+- name: "\U0001F1FA\U0001F1F3 UN 7"
   type: trojan
   server: 103.154.63.16
   port: 443
@@ -69,7 +63,7 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F3 UN 8"
   type: trojan
   server: 103.149.87.45
   port: 443
@@ -85,12 +79,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1FA\U0001F1F3 UN 7"
   - "\U0001F1FA\U0001F1F3 UN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -100,11 +93,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FB\U0001F1F3 VN 5"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F8\U0001F1EC SG 5"
   - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FB\U0001F1F3 VN 7"
+  - "\U0001F1FA\U0001F1F3 UN 7"
   - "\U0001F1FA\U0001F1F3 UN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
