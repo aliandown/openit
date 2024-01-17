@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  type: trojan
-  server: 104.21.69.44
-  port: 443
-  udp: true
-  password: Nu5EqwcJ2OCuvKAcSQeGdg
-  sni: cdn-22.gsmxreality.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -21,6 +10,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: 3.78.106.221
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
 - name: "\U0001F1F0\U0001F1F7 KR 3"
   type: trojan
   server: KR68.5GTOCDOCAO.COM
@@ -30,12 +25,28 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: vpnpool.liangyuandiancloud.com
+- name: "\U0001F1E8\U0001F1F3 TW 4"
+  server: hinet.djjsvip.cfd
   port: 443
   type: trojan
-  password: 17cae44f-1b58-4407-bb31-8273b7a51ff2
-- name: "\U0001F1F8\U0001F1EC SG 5"
+  password: cc83520b-f30e-4c84-93b0-187587156902
+  sni: download.xn--mes358a9urctx.com
+- name: "\U0001F1F8\U0001F1EA SE 5"
+  server: 16.170.56.59
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  type: trojan
+  server: 139.180.137.151
+  port: 443
+  udp: true
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 7"
   type: trojan
   server: sg.vpndata.vn
   port: 443
@@ -44,7 +55,25 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 6"
+- name: "\U0001F1F8\U0001F1EC SG 8"
+  type: trojan
+  server: 139.180.157.14
+  port: 443
+  udp: true
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FB\U0001F1F3 VN 9"
+  type: trojan
+  server: gamehcm.fast4g.vn
+  port: 443
+  udp: true
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FB\U0001F1F3 VN 10"
   type: trojan
   server: vm02.nguyendinhnghi.id.vn
   port: 443
@@ -53,25 +82,25 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 7"
+- name: "\U0001F1FB\U0001F1F3 VN 11"
   type: trojan
-  server: 103.154.63.16
+  server: skyht2.vpndata.vn
   port: 443
   udp: true
-  password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
+  password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 8"
+- name: "\U0001F1FB\U0001F1F3 VN 12"
   type: trojan
-  server: tls2.maxprovpn.com
+  server: gamehn1.fast4g.vn
   port: 443
   udp: true
-  password: b02a3331-8f9f-4f4c-a042-a1632eedf5bc
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F3 UN 13"
   type: trojan
   server: 103.149.87.45
   port: 443
@@ -84,29 +113,37 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1F8\U0001F1EA SE 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
+  - "\U0001F1FB\U0001F1F3 VN 10"
+  - "\U0001F1FB\U0001F1F3 VN 11"
+  - "\U0001F1FB\U0001F1F3 VN 12"
+  - "\U0001F1FA\U0001F1F3 UN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1FB\U0001F1F3 VN 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1E8\U0001F1F3 TW 4"
+  - "\U0001F1F8\U0001F1EA SE 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
+  - "\U0001F1F8\U0001F1EC SG 7"
+  - "\U0001F1F8\U0001F1EC SG 8"
+  - "\U0001F1FB\U0001F1F3 VN 9"
+  - "\U0001F1FB\U0001F1F3 VN 10"
+  - "\U0001F1FB\U0001F1F3 VN 11"
+  - "\U0001F1FB\U0001F1F3 VN 12"
+  - "\U0001F1FA\U0001F1F3 UN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
