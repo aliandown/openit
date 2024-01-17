@@ -1,7 +1,7 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  server: 172.67.204.84
+  server: 104.21.69.44
   port: 443
   udp: true
   password: Nu5EqwcJ2OCuvKAcSQeGdg
@@ -10,9 +10,9 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
-  server: 104.21.69.44
+  server: 172.67.204.84
   port: 443
   udp: true
   password: Nu5EqwcJ2OCuvKAcSQeGdg
@@ -27,13 +27,7 @@ proxies:
   type: trojan
   password: telegram-id-directvpn
   sni: trj.rollingnext.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 51.21.7.70
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 5"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: cdn-16.cdn2cdn.com
   port: 2083
@@ -48,21 +42,19 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
