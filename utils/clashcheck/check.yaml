@@ -1,57 +1,21 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: 13.39.130.142
+  port: 22222
   type: trojan
-  server: 103.154.63.16
-  port: 443
-  udp: true
-  password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f
-  sni: lienquan.garena.vn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 2"
-  type: trojan
-  server: skyht2.vpndata.vn
-  port: 443
-  udp: true
-  password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
-  sni: lienquan.garena.vn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: 103.118.28.110
-  port: 443
-  udp: true
-  password: f2d51ddb-1dea-414d-b179-3880e7a60ad6
-  sni: lienquan.garena.vn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 4"
-  type: trojan
-  server: vm02.nguyendinhnghi.id.vn
-  port: 443
-  udp: true
-  password: e51b7afc-ca85-4336-aee8-0ef812d788f6
-  sni: lienquan.garena.vn
-  skip-cert-verify: true
-  network: tcp
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FB\U0001F1F3 VN 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1EB\U0001F1F7 FR 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FB\U0001F1F3 VN 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FB\U0001F1F3 VN 4"
+  - "\U0001F1EB\U0001F1F7 FR 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
