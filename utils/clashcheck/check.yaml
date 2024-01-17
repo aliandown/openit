@@ -1,5 +1,11 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: 35.181.250.110
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1F0\U0001F1F7 KR 2"
   type: trojan
   server: KR68.5GTOCDOCAO.COM
   port: 443
@@ -8,24 +14,21 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  server: 35.181.250.110
-  port: 22222
+- name: "\U0001F1F8\U0001F1EC SG 3"
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 13.39.130.142
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FB\U0001F1F3 VN 4"
-  type: trojan
-  server: tls2.maxprovpn.com
+  server: 139.180.157.14
   port: 443
   udp: true
-  password: b02a3331-8f9f-4f4c-a042-a1632eedf5bc
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
+  sni: lienquan.garena.vn
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FB\U0001F1F3 VN 4"
+  type: trojan
+  server: gamehcm.fast4g.vn
+  port: 443
+  udp: true
+  password: a7e840da-c9a3-4808-bc68-19bbd2defeab
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
@@ -38,12 +41,12 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 6"
+- name: "\U0001F1FB\U0001F1F3 VN 6"
   type: trojan
-  server: 103.77.214.248
+  server: skyht2.vpndata.vn
   port: 443
   udp: true
-  password: f2d51ddb-1dea-414d-b179-3880e7a60ad6
+  password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
@@ -56,16 +59,7 @@ proxies:
   sni: lienquan.garena.vn
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FB\U0001F1F3 VN 8"
-  type: trojan
-  server: skyht2.vpndata.vn
-  port: 443
-  udp: true
-  password: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
-  sni: lienquan.garena.vn
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F3 UN 8"
   type: trojan
   server: 103.149.87.45
   port: 443
@@ -78,29 +72,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1FB\U0001F1F3 VN 4"
   - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FB\U0001F1F3 VN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FA\U0001F1F3 UN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1FB\U0001F1F3 VN 4"
   - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FB\U0001F1F3 VN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FB\U0001F1F3 VN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FA\U0001F1F3 UN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
