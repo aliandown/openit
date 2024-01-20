@@ -1,16 +1,17 @@
 proxies:
-- name: "\U0001F1EF\U0001F1F5 JP 1"
-  server: a22.zgc.su
-  port: 567
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  server: 3.73.245.33
+  port: 22222
   type: trojan
-  password: 94744160-abe9-44ca-b085-0f6994e1944e
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: hk.zgc.su
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EF\U0001F1F5 JP 2"
+  server: a4.zgc.su
   port: 567
   type: trojan
   password: 94744160-abe9-44ca-b085-0f6994e1944e
 - name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: a4.zgc.su
+  server: a22.zgc.su
   port: 567
   type: trojan
   password: 94744160-abe9-44ca-b085-0f6994e1944e
@@ -18,8 +19,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -27,8 +28,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EF\U0001F1F5 JP 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EF\U0001F1F5 JP 2"
   - "\U0001F1EF\U0001F1F5 JP 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
