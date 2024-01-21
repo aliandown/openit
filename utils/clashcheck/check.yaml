@@ -1,28 +1,13 @@
-proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: 18.169.42.168
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: hk.zgc.su
-  port: 567
-  type: trojan
-  password: 94744160-abe9-44ca-b085-0f6994e1944e
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
