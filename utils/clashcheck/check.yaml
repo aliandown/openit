@@ -1,21 +1,54 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1"
-  server: 149.28.151.140
-  port: 443
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 18.169.42.168
+  port: 22222
   type: trojan
-  password: 842b5f9dd11e458d8613c907c4cc5723
-  sni: www.gpt123.one
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  type: trojan
+  server: 18.196.211.152
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+  skip-cert-verify: false
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 3"
+  type: trojan
+  server: 103.214.68.57
+  port: 10003
+  udp: true
+  password: 6x8HcghsjS
+  sni: yes998.chickenkiller.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EA SE 4"
+  type: trojan
+  server: ec2-13-49-127-111.eu-north-1.compute.amazonaws.com
+  port: 443
+  udp: true
+  password: f63c1106-be09-4479-b214-aef555f9fc44
+  sni: north-1.compute.seatech.ir
+  skip-cert-verify: false
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
