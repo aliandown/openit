@@ -1,35 +1,13 @@
-proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
-  type: trojan
-  server: hk-13-4739E.pigsmightfly.pro
-  port: 8313
-  udp: true
-  password: 43fad462-cd67-5e80-a251-1145b94f9b0d
-  sni: hk-13-568.duuk.info
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  type: trojan
-  server: us-cn-hk-relay-3-49ae82.pigsmightfly.pro
-  port: 7303
-  udp: true
-  password: 43fad462-cd67-5e80-a251-1145b94f9b0d
-  sni: us-3-572.duuk.info
-  skip-cert-verify: true
-  network: tcp
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
