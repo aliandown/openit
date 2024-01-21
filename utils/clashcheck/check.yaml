@@ -1,13 +1,21 @@
-proxies: []
+proxies:
+- name: "\U0001F1F8\U0001F1EC SG 1"
+  server: 149.28.151.140
+  port: 443
+  type: trojan
+  password: 842b5f9dd11e458d8613c907c4cc5723
+  sni: www.gpt123.one
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1F8\U0001F1EC SG 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1F8\U0001F1EC SG 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
