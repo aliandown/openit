@@ -5,11 +5,21 @@ proxies:
   type: trojan
   password: 842b5f9dd11e458d8613c907c4cc5723
   sni: www.gpt123.one
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: trojan
+  server: hk-03-0478A.pigsmightfly.pro
+  port: 8303
+  udp: true
+  password: 43fad462-cd67-5e80-a251-1145b94f9b0d
+  sni: hk-3-562.duuk.info
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -17,5 +27,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
