@@ -1,35 +1,21 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 18.171.124.136
+  port: 22222
   type: trojan
-  server: tw-04-D2B9E.pigsmightfly.pro
-  port: 5304
-  udp: true
-  password: 43fad462-cd67-5e80-a251-1145b94f9b0d
-  sni: tw-04-590.duuk.info
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  type: trojan
-  server: shanghai-router1-892412-jp3.pigsmightfly.pro
-  port: 6303
-  udp: true
-  password: 43fad462-cd67-5e80-a251-1145b94f9b0d
-  sni: jp-3-556.duuk.info
-  skip-cert-verify: true
-  network: tcp
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
