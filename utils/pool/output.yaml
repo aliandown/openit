@@ -1,17 +1,5 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
-  server: service.ouluyun9803.com
-  port: 21003
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  server: service.ouluyun9803.com
-  port: 26668
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cfa17a0d-5e7d-4871-976e-f116e0818123
-- name: "\U0001F1F1\U0001F1FA LU 3 TJN"
+- name: "\U0001F1F1\U0001F1FA LU 1 TJN"
   server: 188.42.145.11
   port: 443
   type: trojan
@@ -22,13 +10,13 @@ proxies:
     path: /djjc/us2
     headers:
       Host: k2us2.djjc.sbs
-- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   server: service.ouluyun9803.com
   port: 21003
   type: ss
   cipher: chacha20-ietf-poly1305
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
-- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
   server: 167.68.11.221
   port: 443
   type: trojan
@@ -39,33 +27,45 @@ proxies:
     path: /djjc/us3
     headers:
       Host: k6us3.djjc.sbs
-- name: "\U0001F1EC\U0001F1E7 GB 6 TJN"
+- name: "\U0001F1EC\U0001F1E7 GB 4 TJN"
   server: 18.171.124.136
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 7 TJN"
+- name: "\U0001F1FA\U0001F1F3 UN 5 TJN"
   server: 104.18.213.21
   port: 2096
   type: trojan
   password: DUvWfvC7xH
   sni: my.gjgjhjvjjjjgjbvxhkinkhgijmvy02.cfd
-- name: "\U0001F1FA\U0001F1F8 US 8 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 6 TJN"
   server: 104.25.255.254
   port: 443
   type: trojan
   password: a6292090-afe1-4640-97a7-4f1d1d877cf1
   sni: hdfy8c1.foriran.me
-- name: "\U0001F1E8\U0001F1F3 CN 9 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 7 SSS"
   server: service.ouluyun9803.com
   port: 26668
   type: ss
   cipher: chacha20-ietf-poly1305
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
-- name: "\U0001F1E8\U0001F1F3 CN 10 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 8 SSS"
   server: service.ouluyun9803.com
   port: 21003
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+- name: "\U0001F1E8\U0001F1F3 CN 9 SSS"
+  server: service.ouluyun9803.com
+  port: 21003
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+- name: "\U0001F1E8\U0001F1F3 CN 10 SSS"
+  server: service.ouluyun9803.com
+  port: 26668
   type: ss
   cipher: chacha20-ietf-poly1305
   password: cfa17a0d-5e7d-4871-976e-f116e0818123
@@ -934,14 +934,14 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1F1\U0001F1FA LU 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1F1\U0001F1FA LU 3 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1FA\U0001F1F8 US 5 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 6 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 4 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 6 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
   - "\U0001F1E8\U0001F1F3 CN 11 TJN"
@@ -1060,14 +1060,14 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
+  - "\U0001F1F1\U0001F1FA LU 1 TJN"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
-  - "\U0001F1F1\U0001F1FA LU 3 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
-  - "\U0001F1FA\U0001F1F8 US 5 TJN"
-  - "\U0001F1EC\U0001F1E7 GB 6 TJN"
-  - "\U0001F1FA\U0001F1F3 UN 7 TJN"
-  - "\U0001F1FA\U0001F1F8 US 8 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1EC\U0001F1E7 GB 4 TJN"
+  - "\U0001F1FA\U0001F1F3 UN 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 6 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 7 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 8 SSS"
   - "\U0001F1E8\U0001F1F3 CN 9 SSS"
   - "\U0001F1E8\U0001F1F3 CN 10 SSS"
   - "\U0001F1E8\U0001F1F3 CN 11 TJN"
