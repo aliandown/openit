@@ -1,23 +1,11 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EA SE 1"
-  server: 13.48.223.124
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1F8\U0001F1EA SE 2"
-  server: 13.48.181.177
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   server: los16.ttddd.xyz
   port: 443
   type: trojan
   password: 27876_t7d7f4e3f
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 172.67.147.142
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: clean1.freelines.net
   port: 443
   type: trojan
   password: 61817e64-10ca-47be-97e8-9d6ff6aa2a5d
@@ -27,8 +15,8 @@ proxies:
     path: /3D8U0cLhe2MGwH9c1eh1994
     headers:
       Host: rsfrndc.foriran.trade
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: clean1.freelines.net
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 172.67.147.142
   port: 443
   type: trojan
   password: 61817e64-10ca-47be-97e8-9d6ff6aa2a5d
@@ -42,21 +30,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EA SE 1"
-  - "\U0001F1F8\U0001F1EA SE 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EA SE 1"
-  - "\U0001F1F8\U0001F1EA SE 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
