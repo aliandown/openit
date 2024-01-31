@@ -1,11 +1,23 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  server: 54.76.33.104
-  port: 22222
+- name: "\U0001F1F8\U0001F1EC SG 1"
+  server: 128.199.183.65
+  port: 20017
   type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
+  sni: tls.qqwljs.buzz
+- name: "\U0001F1F8\U0001F1EC SG 2"
+  server: 157.245.149.232
+  port: 20021
+  type: trojan
+  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
+  sni: tls.qqwljs.buzz
+- name: "\U0001F1F8\U0001F1EC SG 3"
+  server: 128.199.183.69
+  port: 20022
+  type: trojan
+  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
+  sni: tls.qqwljs.buzz
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: clean1.freelines.net
   port: 443
@@ -18,51 +30,23 @@ proxies:
     path: /3D8U0cLhe2MGwH9c1eh1994
     headers:
       host: rsfrndc.foriran.trade
-- name: "\U0001F1F8\U0001F1EC SG 3"
-  server: 128.199.183.65
-  port: 20017
-  type: trojan
-  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
-  sni: tls.qqwljs.buzz
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: 128.199.183.69
-  port: 20022
-  type: trojan
-  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
-  sni: tls.qqwljs.buzz
-- name: "\U0001F1F8\U0001F1EC SG 5"
-  server: 157.245.149.232
-  port: 20021
-  type: trojan
-  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
-  sni: tls.qqwljs.buzz
-- name: "\U0001F1E9\U0001F1EA DE 6"
-  server: 18.153.235.105
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1F8\U0001F1EC SG 1"
+  - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
-  - "\U0001F1F8\U0001F1EC SG 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
