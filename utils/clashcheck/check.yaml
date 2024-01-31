@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: clean1.freelines.net
   port: 443
@@ -13,14 +13,14 @@ proxies:
     headers:
       host: rsfrndc.foriran.trade
 - name: "\U0001F1F8\U0001F1EC SG 2"
-  server: 128.199.183.65
-  port: 20017
+  server: 128.199.183.69
+  port: 20022
   type: trojan
   password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
   sni: tls.qqwljs.buzz
 - name: "\U0001F1F8\U0001F1EC SG 3"
-  server: 128.199.183.69
-  port: 20022
+  server: 128.199.183.65
+  port: 20017
   type: trojan
   password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
   sni: tls.qqwljs.buzz
@@ -34,7 +34,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
@@ -44,7 +44,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
   - "\U0001F1F8\U0001F1EC SG 4"
