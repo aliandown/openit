@@ -5,7 +5,13 @@ proxies:
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: 18.153.235.105
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: clean1.freelines.net
   port: 443
@@ -18,15 +24,9 @@ proxies:
     path: /3D8U0cLhe2MGwH9c1eh1994
     headers:
       host: rsfrndc.foriran.trade
-- name: "\U0001F1F8\U0001F1EC SG 3"
+- name: "\U0001F1F8\U0001F1EC SG 4"
   server: 128.199.183.65
   port: 20017
-  type: trojan
-  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
-  sni: tls.qqwljs.buzz
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: 128.199.183.69
-  port: 20022
   type: trojan
   password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
   sni: tls.qqwljs.buzz
@@ -36,15 +36,22 @@ proxies:
   type: trojan
   password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
   sni: tls.qqwljs.buzz
+- name: "\U0001F1F8\U0001F1EC SG 6"
+  server: 128.199.183.69
+  port: 20022
+  type: trojan
+  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
+  sni: tls.qqwljs.buzz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -52,9 +59,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1F8\U0001F1EC SG 3"
+  - "\U0001F1E9\U0001F1EA DE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1F8\U0001F1EC SG 4"
   - "\U0001F1F8\U0001F1EC SG 5"
+  - "\U0001F1F8\U0001F1EC SG 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
