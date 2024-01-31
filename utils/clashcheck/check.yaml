@@ -1,17 +1,10 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1F8\U0001F1EC SG 1"
+  server: 157.245.149.232
+  port: 20021
   type: trojan
-  server: clean1.freelines.net
-  port: 443
-  udp: true
-  password: 61817e64-10ca-47be-97e8-9d6ff6aa2a5d
-  sni: rsfrndc.foriran.trade
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /3D8U0cLhe2MGwH9c1eh1994
-    headers:
-      host: rsfrndc.foriran.trade
+  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
+  sni: tls.qqwljs.buzz
 - name: "\U0001F1F8\U0001F1EC SG 2"
   server: 128.199.183.65
   port: 20017
@@ -24,29 +17,36 @@ proxies:
   type: trojan
   password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
   sni: tls.qqwljs.buzz
-- name: "\U0001F1F8\U0001F1EC SG 4"
-  server: 157.245.149.232
-  port: 20021
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
-  password: ee2d164e-ee98-4f0b-ac21-1b5bdca4024f
-  sni: tls.qqwljs.buzz
+  server: clean1.freelines.net
+  port: 443
+  udp: true
+  password: 61817e64-10ca-47be-97e8-9d6ff6aa2a5d
+  sni: rsfrndc.foriran.trade
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /3D8U0cLhe2MGwH9c1eh1994
+    headers:
+      host: rsfrndc.foriran.trade
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1F8\U0001F1EC SG 1"
   - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1F8\U0001F1EC SG 1"
   - "\U0001F1F8\U0001F1EC SG 2"
   - "\U0001F1F8\U0001F1EC SG 3"
-  - "\U0001F1F8\U0001F1EC SG 4"
+  - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
