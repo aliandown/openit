@@ -1,21 +1,67 @@
 proxies:
-- name: "\U0001F1EB\U0001F1F7 FR 1"
-  server: 13.37.201.146
+- name: "\U0001F1EE\U0001F1EA IE 1"
+  server: 108.128.106.193
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 18.134.216.106
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: 15.237.239.151
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  type: trojan
+  server: 13.37.201.146
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EC\U0001F1E7 GB 5"
+  type: trojan
+  server: 13.43.185.197
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: false
+  network: tcp
+- name: "\U0001F1E8\U0001F1F3 TW 6"
+  server: hinet.djjsvip.cfd
+  port: 443
+  type: trojan
+  password: 496d4a22-c5f8-4170-bba2-23aa252350d2
+  sni: download.xn--mes358acgm99l.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
+  - "\U0001F1E8\U0001F1F3 TW 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
