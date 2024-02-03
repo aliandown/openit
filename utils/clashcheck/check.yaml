@@ -1,11 +1,20 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: 35.176.84.46
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 18.189.51.69
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 2"
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  type: trojan
+  server: 5.104.108.109
+  port: 443
+  udp: true
+  password: 676ccd3b-793d-4efd-b93c-48943711055d
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 167.68.5.183
   port: 443
@@ -18,7 +27,7 @@ proxies:
     path: /pq/us3
     headers:
       host: 6us3.pqjc.buzz
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -31,7 +40,16 @@ proxies:
     path: /pq/us4
     headers:
       host: p6us4.pqjc.buzz
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  type: trojan
+  server: 15.236.45.222
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
   server: 89.116.161.133
   port: 443
@@ -44,27 +62,9 @@ proxies:
     path: /pq/us1
     headers:
       host: p1us1.pqjc.buzz
-- name: "\U0001F1E9\U0001F1EA DE 5"
+- name: "\U0001F1E9\U0001F1EA DE 7"
   type: trojan
-  server: 5.104.108.120
-  port: 443
-  udp: true
-  password: 676ccd3b-793d-4efd-b93c-48943711055d
-  sni: 20-24-33-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 6"
-  type: trojan
-  server: 5.104.108.109
-  port: 443
-  udp: true
-  password: 676ccd3b-793d-4efd-b93c-48943711055d
-  sni: 20-24-33-134.nhost.00cdn.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 7"
-  type: trojan
-  server: 15.236.45.222
+  server: 3.70.41.199
   port: 22222
   udp: true
   password: telegram-id-privatevpns
@@ -73,23 +73,32 @@ proxies:
   network: tcp
 - name: "\U0001F1E9\U0001F1EA DE 8"
   type: trojan
-  server: 18.156.123.121
+  server: 5.104.108.120
+  port: 443
+  udp: true
+  password: 676ccd3b-793d-4efd-b93c-48943711055d
+  sni: 20-24-33-134.nhost.00cdn.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EC\U0001F1E7 GB 9"
+  type: trojan
+  server: 13.40.58.205
   port: 22222
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
   skip-cert-verify: false
   network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 9"
+- name: "\U0001F1F8\U0001F1EA SE 10"
   type: trojan
-  server: 13.42.93.180
+  server: 13.50.121.165
   port: 22222
   udp: true
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 10"
+- name: "\U0001F1FA\U0001F1F8 US 11"
   type: trojan
   server: 51.21.9.149
   port: 22222
@@ -98,46 +107,40 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: false
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 11"
+- name: "\U0001F1E8\U0001F1F3 CN 12"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
   port: 20105
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 12"
-  type: ss
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20201
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 13"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20202
+  port: 20105
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 14"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20109
+  port: 20201
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 15"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20108
+  port: 20106
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 16"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20107
+  port: 20203
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 17"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20203
+  port: 20109
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 18"
@@ -146,61 +149,58 @@ proxies:
   port: 20205
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1EE\U0001F1F3 IN 19"
-  type: trojan
-  server: 64.227.153.43
-  port: 443
-  udp: true
-  password: jrKkWeksAL
-  sni: m.zoom.us
-  skip-cert-verify: true
-  network: tcp
+- name: "\U0001F1E8\U0001F1F3 CN 19"
+  type: ss
+  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
+  port: 20107
+  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
+  cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 20"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20204
+  port: 20108
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 21"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20105
+  port: 20202
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 22"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20210
+  port: 20204
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 23"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20106
+  port: 20113
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 24"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20113
+  port: 20114
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 25"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20114
+  port: 20111
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 26"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20111
+  port: 20112
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 27"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20112
+  port: 20210
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 28"
@@ -212,13 +212,13 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 29"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20120
+  port: 20119
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 30"
   type: ss
   server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20115
+  port: 20120
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
 - name: "\U0001F1E8\U0001F1F3 CN 31"
@@ -233,27 +233,21 @@ proxies:
   port: 20118
   password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 33"
-  type: ss
-  server: sj6hn4kq43eqwkk1.zozazutenoga.shop
-  port: 20119
-  password: b572175b-0cdf-48b9-a2d1-4d3a3f4506f3
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1F8\U0001F1EA SE 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
@@ -261,7 +255,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
   - "\U0001F1E8\U0001F1F3 CN 18"
-  - "\U0001F1EE\U0001F1F3 IN 19"
+  - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
   - "\U0001F1E8\U0001F1F3 CN 21"
   - "\U0001F1E8\U0001F1F3 CN 22"
@@ -275,24 +269,23 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 30"
   - "\U0001F1E8\U0001F1F3 CN 31"
   - "\U0001F1E8\U0001F1F3 CN 32"
-  - "\U0001F1E8\U0001F1F3 CN 33"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E9\U0001F1EA DE 7"
   - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1FA\U0001F1F8 US 10"
-  - "\U0001F1E8\U0001F1F3 CN 11"
+  - "\U0001F1F8\U0001F1EA SE 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
@@ -300,7 +293,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 16"
   - "\U0001F1E8\U0001F1F3 CN 17"
   - "\U0001F1E8\U0001F1F3 CN 18"
-  - "\U0001F1EE\U0001F1F3 IN 19"
+  - "\U0001F1E8\U0001F1F3 CN 19"
   - "\U0001F1E8\U0001F1F3 CN 20"
   - "\U0001F1E8\U0001F1F3 CN 21"
   - "\U0001F1E8\U0001F1F3 CN 22"
@@ -314,6 +307,5 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 30"
   - "\U0001F1E8\U0001F1F3 CN 31"
   - "\U0001F1E8\U0001F1F3 CN 32"
-  - "\U0001F1E8\U0001F1F3 CN 33"
 rules:
 - "MATCH,\U0001F310 Proxy"
