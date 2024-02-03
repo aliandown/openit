@@ -1,20 +1,5 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1"
-  server: 103.214.68.57
-  port: 10003
-  type: trojan
-  password: 6x8HcghsjS
-  sni: yes998.chickenkiller.com
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: 13.42.130.228
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-  network: tcp
-- name: "\U0001F1EC\U0001F1E7 GB 3"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
   type: trojan
   server: 198.244.190.189
   port: 443
@@ -22,7 +7,7 @@ proxies:
   password: 81dfb458-9a26-486a-a0da-914c380459c6
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
   type: trojan
   server: 141.94.115.231
   port: 443
@@ -30,7 +15,7 @@ proxies:
   password: f46677ae-8d38-4580-9359-d91078fa49c9
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 5"
+- name: "\U0001F1EE\U0001F1F3 IN 3"
   type: trojan
   server: 64.227.153.43
   port: 443
@@ -43,21 +28,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1EE\U0001F1F3 IN 5"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EE\U0001F1F3 IN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
