@@ -1,10 +1,10 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: 35.176.84.46
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 18.189.51.69
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
+  password: telegram-id-directvpn
+  sni: trj.rollingnext.co.uk
 - name: "\U0001F1EC\U0001F1E7 GB 2"
   type: trojan
   server: 13.42.130.228
@@ -14,21 +14,24 @@ proxies:
   sni: trojan.miwan.co.uk
   skip-cert-verify: false
   network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 3"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   type: trojan
-  server: 103.214.68.57
-  port: 10003
+  server: 3.70.41.199
+  port: 22222
   udp: true
-  password: 6x8HcghsjS
-  sni: yes998.chickenkiller.com
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  type: ss
-  server: p1.bxy-fun3.com
-  port: 23106
-  password: d7bee830-09aa-43b2-8945-3b341b8787db
-  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1EB\U0001F1F7 FR 4"
+  type: trojan
+  server: 15.236.45.222
+  port: 22222
+  udp: true
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1EE\U0001F1F3 IN 5"
   type: trojan
   server: 64.227.153.43
@@ -42,10 +45,10 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -53,10 +56,10 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EE\U0001F1F3 IN 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
