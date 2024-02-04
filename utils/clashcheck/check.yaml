@@ -1,5 +1,13 @@
 proxies:
-- name: "\U0001F1F3\U0001F1F1 NL 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  type: trojan
+  server: 198.244.190.189
+  port: 443
+  udp: true
+  password: 81dfb458-9a26-486a-a0da-914c380459c6
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 2"
   type: trojan
   server: 188.114.98.0
   port: 443
@@ -10,14 +18,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: fYn1ncaQMA1foaK1hpquM
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: 198.244.190.189
-  port: 443
-  udp: true
-  password: 81dfb458-9a26-486a-a0da-914c380459c6
-  skip-cert-verify: true
-  network: tcp
 - name: "\U0001F1EB\U0001F1F7 FR 3"
   type: trojan
   server: 141.94.115.231
@@ -39,8 +39,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F3\U0001F1F1 NL 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1F3\U0001F1F1 NL 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EE\U0001F1F3 IN 4"
   url: https://www.google.com/favicon.ico
@@ -49,8 +49,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F3\U0001F1F1 NL 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1F3\U0001F1F1 NL 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1EE\U0001F1F3 IN 4"
 rules:
