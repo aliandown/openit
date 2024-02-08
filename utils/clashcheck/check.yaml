@@ -5,23 +5,11 @@ proxies:
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 172.67.175.243
-  port: 2053
-  udp: true
-  password: YS7mIZvKNt
-  sni: panell.followprovider.ir
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: server-53651.prod.hosts.ooklaserver.net
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,6 +17,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
