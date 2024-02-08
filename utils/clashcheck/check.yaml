@@ -10,7 +10,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 172.67.175.243
   port: 2053
@@ -21,18 +26,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: server-53651.prod.hosts.ooklaserver.net
-- name: "\U0001F1E8\U0001F1F3 HK 3"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -40,7 +40,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
