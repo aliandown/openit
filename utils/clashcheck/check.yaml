@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  server: 104.19.154.92
-  port: 443
-  type: trojan
-  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
-  sni: sshhiddifyc1.cpionline.cc
-  network: ws
-  ws-opts:
-    path: /u5ht27KSp8j3Z2QIPbkyFm3I
-    headers:
-      Host: sshhiddifyc1.cpionline.cc
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -21,19 +10,30 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  server: 104.19.154.92
+  port: 443
+  type: trojan
+  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
+  sni: sshhiddifyc1.cpionline.cc
+  network: ws
+  ws-opts:
+    path: /u5ht27KSp8j3Z2QIPbkyFm3I
+    headers:
+      Host: sshhiddifyc1.cpionline.cc
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
