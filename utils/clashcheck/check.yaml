@@ -1,22 +1,16 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 44.217.145.102
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 2"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
   server: android.dev1s.alilinki.site
   port: 55957
   type: trojan
   password: k6lya2EmWS
-- name: "\U0001F1F8\U0001F1EA SE 3"
+- name: "\U0001F1F8\U0001F1EA SE 2"
   server: 13.48.90.61
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1E8\U0001F1F3 HK 3"
   server: www.chrome-helper.cc
   port: 21830
   type: http
@@ -25,19 +19,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1F8\U0001F1EA SE 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1F8\U0001F1EA SE 2"
+  - "\U0001F1E8\U0001F1F3 HK 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
