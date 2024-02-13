@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 172.66.128.32
-  port: 443
-  type: trojan
-  password: mainssh-Gftgfvy
-  sni: catws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: catws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   server: 198.41.220.20
   port: 443
   type: trojan
@@ -21,6 +10,17 @@ proxies:
     path: 6b777a91
     headers:
       Host: avianrecruit.com
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 172.66.128.32
+  port: 443
+  type: trojan
+  password: mainssh-Gftgfvy
+  sni: catws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: catws.mainssh.xyz
 - name: "\U0001F1FA\U0001F1F3 UN 3"
   server: 104.19.159.144
   port: 443
@@ -33,18 +33,35 @@ proxies:
     path: 6b777a91
     headers:
       Host: avianrecruit.com
-- name: "\U0001F1FA\U0001F1F3 UN 4"
-  server: 162.159.1.94
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  server: 52.210.141.144
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F3 UN 5"
+  server: 104.18.0.226
   port: 443
   type: trojan
-  password: 7397ca10-3fa4-459c-9f58-330800df292b
-  sni: 6exEa2RpxrVmgn.lowerpingservise.ir
+  password: mainssh-Lpkomlj
+  sni: uktws.mainssh.xyz
   network: ws
   ws-opts:
-    path: /kg1gATzuCPEFTouGlCp
+    path: /trojan
     headers:
-      Host: 6exEa2RpxrVmgn.lowerpingservise.ir
-- name: "\U0001F1E8\U0001F1F3 TW 5"
+      Host: uktws.mainssh.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 6"
+  server: 104.21.79.143
+  port: 443
+  type: trojan
+  password: mainssh-Vcvffty
+  sni: uktws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: uktws.mainssh.xyz
+- name: "\U0001F1E8\U0001F1F3 TW 7"
   server: 114.43.134.221
   port: 443
   type: trojan
@@ -54,21 +71,25 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1E8\U0001F1F3 TW 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1E8\U0001F1F3 TW 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
