@@ -1,13 +1,42 @@
-proxies: []
+proxies:
+- name: "\U0001F1FA\U0001F1F3 UN 1"
+  server: 104.19.171.3
+  port: 443
+  type: trojan
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: sherasheba.com
+  network: ws
+  ws-opts:
+    path: 6b777a91
+    headers:
+      Host: sherasheba.com
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 15.236.93.160
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1F8\U0001F1EA SE 3"
+  server: 13.50.187.57
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1F8\U0001F1EA SE 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1F8\U0001F1EA SE 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
