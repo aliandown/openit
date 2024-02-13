@@ -1,32 +1,33 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 172.66.128.32
-  port: 443
-  type: trojan
-  password: mainssh-Gftgfvy
-  sni: catws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: catws.mainssh.xyz
-- name: "\U0001F1EE\U0001F1EA IE 2"
-  server: 52.210.141.144
+  server: 3.12.61.235
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  server: 104.21.79.143
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  server: 104.19.159.144
   port: 443
   type: trojan
-  password: mainssh-Vcvffty
-  sni: uktws.mainssh.xyz
+  password: 4aec4e7f8cf8454ea4613659822e1a61
+  sni: avianrecruit.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojan
+    path: 6b777a91
     headers:
-      Host: uktws.mainssh.xyz
+      Host: avianrecruit.com
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  server: 198.41.220.20
+  port: 443
+  type: trojan
+  password: e8105dfd24414268b6c7652c63731097
+  sni: avianrecruit.com
+  network: ws
+  ws-opts:
+    path: 6b777a91
+    headers:
+      Host: avianrecruit.com
 - name: "\U0001F1FA\U0001F1F3 UN 4"
   server: 104.18.0.226
   port: 443
@@ -39,6 +40,17 @@ proxies:
     headers:
       Host: uktws.mainssh.xyz
 - name: "\U0001F1FA\U0001F1F3 UN 5"
+  server: 104.21.79.143
+  port: 443
+  type: trojan
+  password: mainssh-Vcvffty
+  sni: uktws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: uktws.mainssh.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   server: 162.159.1.94
   port: 443
   type: trojan
@@ -49,22 +61,28 @@ proxies:
     path: /kg1gATzuCPEFTouGlCp
     headers:
       Host: 6exEa2RpxrVmgn.lowerpingservise.ir
-- name: "\U0001F1E8\U0001F1F3 TW 6"
-  server: 114.43.134.221
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: 172.66.128.32
   port: 443
   type: trojan
-  password: 7b4066ae-accc-11eb-a8bf-f23c91cfbbc9
-  sni: ce394066-s90cg0-0-zzkl.tw3.p5pv.com
+  password: mainssh-Gftgfvy
+  sni: catws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: catws.mainssh.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,10 +90,11 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1E8\U0001F1F3 TW 6"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
