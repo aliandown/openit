@@ -1,18 +1,36 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  server: 198.41.220.20
+  server: 104.19.171.3
   port: 443
   udp: true
-  password: e8105dfd24414268b6c7652c63731097
-  sni: avianrecruit.com
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: sherasheba.com
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: 6b777a91
     headers:
-      host: avianrecruit.com
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+      host: sherasheba.com
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 13.42.113.165
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  server: 162.159.1.94
+  port: 443
+  type: trojan
+  password: 7397ca10-3fa4-459c-9f58-330800df292b
+  sni: 6exEa2RpxrVmgn.lowerpingservise.ir
+  network: ws
+  ws-opts:
+    path: /kg1gATzuCPEFTouGlCp
+    headers:
+      Host: 6exEa2RpxrVmgn.lowerpingservise.ir
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: 104.19.159.144
   port: 443
@@ -25,36 +43,12 @@ proxies:
     path: 6b777a91
     headers:
       host: avianrecruit.com
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: 104.19.171.3
-  port: 443
-  udp: true
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  sni: sherasheba.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 6b777a91
-    headers:
-      host: sherasheba.com
-- name: "\U0001F1FA\U0001F1F3 UN 4"
-  server: 162.159.1.94
-  port: 443
-  type: trojan
-  password: 7397ca10-3fa4-459c-9f58-330800df292b
-  sni: 6exEa2RpxrVmgn.lowerpingservise.ir
-  network: ws
-  ws-opts:
-    path: /kg1gATzuCPEFTouGlCp
-    headers:
-      Host: 6exEa2RpxrVmgn.lowerpingservise.ir
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
@@ -64,7 +58,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
