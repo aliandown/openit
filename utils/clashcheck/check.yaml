@@ -1,5 +1,12 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 3.136.135.182
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: 104.19.171.3
   port: 443
@@ -12,7 +19,7 @@ proxies:
     path: 6b777a91
     headers:
       host: sherasheba.com
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   server: 104.19.159.144
   port: 443
   type: trojan
@@ -23,7 +30,7 @@ proxies:
     path: 6b777a91
     headers:
       Host: avianrecruit.com
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: 198.41.220.20
   port: 443
@@ -36,13 +43,19 @@ proxies:
     path: 6b777a91
     headers:
       host: avianrecruit.com
-- name: "\U0001F1EE\U0001F1EA IE 4"
-  server: 108.128.165.249
+- name: "\U0001F1EE\U0001F1EA IE 5"
+  server: 34.254.79.22
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1E9\U0001F1EA DE 6"
+  server: 18.195.93.19
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -53,63 +66,63 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
-- name: "\U0001F1FA\U0001F1F8 US 6"
+- name: "\U0001F1FA\U0001F1F8 US 8"
   server: 51.20.225.57
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 7"
-  type: trojan
-  server: 104.18.0.226
+- name: "\U0001F1FA\U0001F1F3 UN 9"
+  server: 104.19.154.92
   port: 443
-  udp: true
-  password: mainssh-Lpkomlj
-  sni: uktws.mainssh.xyz
-  skip-cert-verify: true
+  type: trojan
+  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
+  sni: sshhiddifyc1.cpionline.cc
   network: ws
   ws-opts:
-    path: /trojan
+    path: /u5ht27KSp8j3Z2QIPbkyFm3I
     headers:
-      host: uktws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 8"
-  type: trojan
-  server: 104.21.79.143
+      Host: sshhiddifyc1.cpionline.cc
+- name: "\U0001F1FA\U0001F1F3 UN 10"
+  server: 104.19.155.92
   port: 443
-  udp: true
-  password: mainssh-Vcvffty
-  sni: uktws.mainssh.xyz
-  skip-cert-verify: true
+  type: trojan
+  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
+  sni: sshhiddifyc1.cpionline.cc
   network: ws
   ws-opts:
-    path: /trojan
+    path: /u5ht27KSp8j3Z2QIPbkyFm3I
     headers:
-      host: uktws.mainssh.xyz
+      Host: sshhiddifyc1.cpionline.cc
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1EE\U0001F1EA IE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FA\U0001F1F3 UN 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
+  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1EE\U0001F1EA IE 5"
+  - "\U0001F1E9\U0001F1EA DE 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FA\U0001F1F3 UN 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
