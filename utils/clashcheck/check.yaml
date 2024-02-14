@@ -18,20 +18,13 @@ proxies:
     path: 6b777a91
     headers:
       host: sherasheba.com
-- name: "\U0001F1EC\U0001F1E7 GB 3"
-  server: 13.42.113.165
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: 15.236.228.126
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 5"
+- name: "\U0001F1FA\U0001F1F8 US 4"
   type: trojan
   server: 89.116.180.179
   port: 443
@@ -42,6 +35,17 @@ proxies:
   network: ws
   ws-opts:
     path: /pq/us4
+- name: "\U0001F1FA\U0001F1F3 UN 5"
+  server: 162.159.1.94
+  port: 443
+  type: trojan
+  password: 7397ca10-3fa4-459c-9f58-330800df292b
+  sni: 6exEa2RpxrVmgn.lowerpingservise.ir
+  network: ws
+  ws-opts:
+    path: /kg1gATzuCPEFTouGlCp
+    headers:
+      Host: 6exEa2RpxrVmgn.lowerpingservise.ir
 - name: "\U0001F1FA\U0001F1F3 UN 6"
   type: trojan
   server: 198.41.220.20
@@ -68,29 +72,17 @@ proxies:
     path: 6b777a91
     headers:
       host: avianrecruit.com
-- name: "\U0001F1FA\U0001F1F3 UN 8"
-  server: 162.159.1.94
-  port: 443
-  type: trojan
-  password: 7397ca10-3fa4-459c-9f58-330800df292b
-  sni: 6exEa2RpxrVmgn.lowerpingservise.ir
-  network: ws
-  ws-opts:
-    path: /kg1gATzuCPEFTouGlCp
-    headers:
-      Host: 6exEa2RpxrVmgn.lowerpingservise.ir
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F3 UN 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -99,11 +91,10 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F3 UN 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
