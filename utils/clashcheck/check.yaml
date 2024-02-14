@@ -1,11 +1,31 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.23.31.58
-  port: 22222
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
+  server: 198.41.220.20
+  port: 443
+  udp: true
+  password: e8105dfd24414268b6c7652c63731097
+  sni: avianrecruit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 6b777a91
+    headers:
+      host: avianrecruit.com
 - name: "\U0001F1FA\U0001F1F3 UN 2"
+  type: trojan
+  server: 104.19.159.144
+  port: 443
+  udp: true
+  password: 4aec4e7f8cf8454ea4613659822e1a61
+  sni: avianrecruit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 6b777a91
+    headers:
+      host: avianrecruit.com
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: 104.19.171.3
   port: 443
@@ -18,17 +38,6 @@ proxies:
     path: 6b777a91
     headers:
       host: sherasheba.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 89.116.180.179
-  port: 443
-  udp: true
-  password: d2698cf9-c47e-455c-8384-12e642cbba15
-  sni: p6us4.pqjc.buzz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pq/us4
 - name: "\U0001F1FA\U0001F1F3 UN 4"
   server: 162.159.1.94
   port: 443
@@ -44,9 +53,9 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -54,9 +63,9 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
