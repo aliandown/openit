@@ -1,18 +1,11 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.1.184.70
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1E6 CA 2"
+- name: "\U0001F1E8\U0001F1E6 CA 1"
   server: 35.183.170.114
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   server: 104.19.159.144
   port: 443
   type: trojan
@@ -23,43 +16,25 @@ proxies:
     path: 6b777a91
     headers:
       Host: avianrecruit.com
-- name: "\U0001F1EE\U0001F1EA IE 4"
-  server: 54.247.163.22
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 5"
+- name: "\U0001F1EE\U0001F1EA IE 3"
   server: 52.30.0.110
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 6"
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: 13.39.140.222
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 7"
-  server: 13.37.77.51
+- name: "\U0001F1E9\U0001F1EA DE 5"
+  server: 18.196.228.215
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  server: 172.66.192.18
-  port: 443
-  type: trojan
-  password: mainssh-Juhygtr
-  sni: frtws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: frtws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F8 US 9"
+- name: "\U0001F1FA\U0001F1F8 US 6"
   server: 192.200.160.18
   port: 443
   type: trojan
@@ -70,7 +45,18 @@ proxies:
     path: /howdy
     headers:
       Host: uk1.test3.net
-- name: "\U0001F1E8\U0001F1F3 HK 10"
+- name: "\U0001F1FA\U0001F1F8 US 7"
+  server: 172.66.192.18
+  port: 443
+  type: trojan
+  password: mainssh-Juhygtr
+  sni: frtws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: frtws.mainssh.xyz
+- name: "\U0001F1E8\U0001F1F3 HK 8"
   server: www.chrome-helper.cc
   port: 21830
   type: http
@@ -79,31 +65,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1EE\U0001F1EA IE 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1EB\U0001F1F7 FR 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
-  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1FA\U0001F1F8 US 7"
+  - "\U0001F1E8\U0001F1F3 HK 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
