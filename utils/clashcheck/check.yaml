@@ -1,26 +1,29 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  server: 198.41.220.20
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 3.20.64.137
+  port: 22222
   type: trojan
-  password: e8105dfd24414268b6c7652c63731097
-  sni: avianrecruit.com
-  network: ws
-  ws-opts:
-    path: 6b777a91
-    headers:
-      Host: avianrecruit.com
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EE\U0001F1EA IE 2"
+  server: 18.203.52.214
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
