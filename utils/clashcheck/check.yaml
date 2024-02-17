@@ -1,5 +1,16 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F3 UN 1"
+  server: 198.41.220.20
+  port: 443
+  type: trojan
+  password: e8105dfd24414268b6c7652c63731097
+  sni: avianrecruit.com
+  network: ws
+  ws-opts:
+    path: 6b777a91
+    headers:
+      Host: avianrecruit.com
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: 104.19.171.3
   port: 443
@@ -10,14 +21,8 @@ proxies:
   network: ws
   ws-opts:
     path: 6b777a91
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1E9\U0001F1EA DE 3"
   server: 3.125.221.51
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 13.37.155.102
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
@@ -33,26 +38,26 @@ proxies:
   network: ws
   ws-opts:
     path: 6b777a91
-- name: "\U0001F1FA\U0001F1F3 UN 5"
-  server: 198.41.220.20
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: 172.67.146.69
   port: 443
   type: trojan
-  password: e8105dfd24414268b6c7652c63731097
-  sni: avianrecruit.com
+  password: mainssh-Vcvffty
+  sni: uktws.mainssh.xyz
   network: ws
   ws-opts:
-    path: 6b777a91
+    path: /trojan
     headers:
-      Host: avianrecruit.com
+      Host: uktws.mainssh.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -60,9 +65,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
