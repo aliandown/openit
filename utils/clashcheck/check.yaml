@@ -10,18 +10,7 @@ proxies:
   network: ws
   ws-opts:
     path: 6b777a91
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 172.67.146.69
-  port: 443
-  type: trojan
-  password: mainssh-Vcvffty
-  sni: uktws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: uktws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: 104.19.159.144
   port: 443
@@ -32,7 +21,7 @@ proxies:
   network: ws
   ws-opts:
     path: 6b777a91
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   server: 198.41.220.20
   port: 443
   type: trojan
@@ -43,14 +32,42 @@ proxies:
     path: 6b777a91
     headers:
       Host: avianrecruit.com
+- name: "\U0001F1E8\U0001F1E6 CA 4"
+  type: trojan
+  server: 99.79.131.31
+  port: 22222
+  udp: true
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EB\U0001F1F7 FR 5"
+  server: 13.37.155.102
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 172.67.146.69
+  port: 443
+  type: trojan
+  password: mainssh-Vcvffty
+  sni: uktws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: uktws.mainssh.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,8 +75,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1E6 CA 4"
+  - "\U0001F1EB\U0001F1F7 FR 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
