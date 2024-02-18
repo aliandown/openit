@@ -1,6 +1,6 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.201.87.176
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  server: 3.96.13.197
   port: 22222
   type: trojan
   password: telegram-id-directvpn
@@ -12,11 +12,11 @@ proxies:
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
   skip-cert-verify: false
-- name: "\U0001F1EE\U0001F1EA IE 3"
-  server: 52.31.81.10
+- name: "\U0001F1E8\U0001F1E6 CA 3"
+  server: 35.182.88.186
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
 - name: "\U0001F1FA\U0001F1F3 UN 4"
   server: 104.19.171.3
@@ -29,24 +29,18 @@ proxies:
     path: 6b777a91
     headers:
       Host: sherasheba.com
-- name: "\U0001F1E9\U0001F1EA DE 5"
-  server: 18.185.162.188
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 6"
-  type: trojan
-  server: 104.19.154.92
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: 172.66.128.32
   port: 443
-  udp: true
-  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
-  sni: sshhiddifyc1.cpionline.cc
-  skip-cert-verify: true
+  type: trojan
+  password: mainssh-Gftgfvy
+  sni: catws.mainssh.xyz
   network: ws
   ws-opts:
-    path: /u5ht27KSp8j3Z2QIPbkyFm3I
-- name: "\U0001F1FA\U0001F1F3 UN 7"
+    path: /trojan
+    headers:
+      Host: catws.mainssh.xyz
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   server: 104.19.155.92
   port: 443
   type: trojan
@@ -57,15 +51,26 @@ proxies:
     path: /u5ht27KSp8j3Z2QIPbkyFm3I
     headers:
       Host: sshhiddifyc1.cpionline.cc
+- name: "\U0001F1FA\U0001F1F3 UN 7"
+  type: trojan
+  server: 104.19.154.92
+  port: 443
+  udp: true
+  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
+  sni: sshhiddifyc1.cpionline.cc
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /u5ht27KSp8j3Z2QIPbkyFm3I
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E8\U0001F1E6 CA 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
   url: https://www.google.com/favicon.ico
@@ -74,11 +79,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E8\U0001F1E6 CA 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
+  - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
   - "\U0001F1FA\U0001F1F3 UN 7"
 rules:
