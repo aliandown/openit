@@ -1,29 +1,11 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.201.87.176
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  server: 3.96.13.197
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 172.66.128.32
-  port: 443
-  type: trojan
-  password: mainssh-Gftgfvy
-  sni: catws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: catws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 3.135.106.37
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: 198.41.220.20
   port: 443
@@ -34,23 +16,32 @@ proxies:
   network: ws
   ws-opts:
     path: 6b777a91
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  server: 104.19.171.3
+  port: 443
+  type: trojan
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: sherasheba.com
+  network: ws
+  ws-opts:
+    path: 6b777a91
+    headers:
+      Host: sherasheba.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
