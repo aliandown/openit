@@ -1,80 +1,82 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.201.87.176
-  port: 22222
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1E8\U0001F1E6 CA 2"
-  server: 3.96.13.197
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1E8\U0001F1E6 CA 3"
-  server: 35.182.88.186
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 3.135.106.37
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 172.66.128.32
-  port: 443
-  type: trojan
-  password: mainssh-Gftgfvy
-  sni: catws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: catws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 6"
   server: 104.19.171.3
   port: 443
-  type: trojan
+  udp: true
   password: f0eb8c92ce8946aaba856569cff1a16b
   sni: sherasheba.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 6b777a91
+- name: "\U0001F1EE\U0001F1EA IE 2"
+  server: 63.33.80.83
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: false
+- name: "\U0001F1FA\U0001F1F3 UN 3"
+  server: 190.93.246.247
+  port: 443
+  type: trojan
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  sni: jobscareerforlawyers.com
   network: ws
   ws-opts:
     path: 6b777a91
     headers:
-      Host: sherasheba.com
-- name: "\U0001F1E9\U0001F1EA DE 7"
-  server: 18.185.162.188
+      Host: jobscareerforlawyers.com
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  server: 18.153.255.154
   port: 22222
   type: trojan
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: 172.67.204.84
+  port: 443
+  udp: true
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  sni: cdn-21.gsmxreality.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
+- name: "\U0001F1FA\U0001F1F3 UN 6"
+  type: trojan
+  server: 198.41.220.20
+  port: 443
+  udp: true
+  password: e8105dfd24414268b6c7652c63731097
+  sni: avianrecruit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 6b777a91
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
-  - "\U0001F1E8\U0001F1E6 CA 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F3 UN 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
