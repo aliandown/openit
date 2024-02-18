@@ -1,13 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 159.223.207.182
-  port: 34428
-  type: trojan
-  password: zIvR7ryOXv
-  sni: 159.223.207.182
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   server: 190.93.246.247
   port: 443
   type: trojan
@@ -18,15 +10,15 @@ proxies:
     path: 6b777a91
     headers:
       Host: jobscareerforlawyers.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 138.197.5.103
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 159.223.207.182
+  port: 34428
   type: trojan
-  password: xxoo
-  sni: marzfun.ir
+  password: zIvR7ryOXv
+  sni: 159.223.207.182
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
+- name: "\U0001F1FA\U0001F1F8 US 3"
   server: 172.66.192.18
   port: 443
   type: trojan
@@ -37,23 +29,38 @@ proxies:
     path: /trojan
     headers:
       Host: frtws.mainssh.xyz
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 138.197.5.103
+  port: 443
+  type: trojan
+  password: xxoo
+  sni: marzfun.ir
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
