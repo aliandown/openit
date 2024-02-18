@@ -1,6 +1,6 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.201.87.176
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  server: 3.96.13.197
   port: 22222
   type: trojan
   password: telegram-id-directvpn
@@ -22,47 +22,29 @@ proxies:
     path: 6b777a91
     headers:
       Host: sherasheba.com
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 172.66.128.32
-  port: 443
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  server: 52.31.81.10
+  port: 22222
   type: trojan
-  password: mainssh-Gftgfvy
-  sni: catws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: catws.mainssh.xyz
-- name: "\U0001F1FA\U0001F1F3 UN 5"
-  type: trojan
-  server: 198.41.220.20
-  port: 443
-  udp: true
-  password: e8105dfd24414268b6c7652c63731097
-  sni: avianrecruit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 6b777a91
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1EE\U0001F1EA IE 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1E8\U0001F1E6 CA 2"
   - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
+  - "\U0001F1EE\U0001F1EA IE 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
