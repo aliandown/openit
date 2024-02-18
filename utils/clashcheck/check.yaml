@@ -1,12 +1,22 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 3.135.106.37
+- name: "\U0001F1FA\U0001F1F3 UN 1"
+  type: trojan
+  server: 198.41.220.20
+  port: 443
+  udp: true
+  password: e8105dfd24414268b6c7652c63731097
+  sni: avianrecruit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 6b777a91
+- name: "\U0001F1EE\U0001F1EA IE 2"
+  server: 52.31.81.10
   port: 22222
   type: trojan
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   server: 104.19.171.3
   port: 443
   type: trojan
@@ -17,12 +27,6 @@ proxies:
     path: 6b777a91
     headers:
       Host: sherasheba.com
-- name: "\U0001F1EE\U0001F1EA IE 3"
-  server: 52.31.81.10
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
 - name: "\U0001F1E9\U0001F1EA DE 4"
   server: 18.185.162.188
   port: 22222
@@ -40,32 +44,25 @@ proxies:
     path: /trojan
     headers:
       Host: catws.mainssh.xyz
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   - "\U0001F1E9\U0001F1EA DE 4"
   - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
