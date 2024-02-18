@@ -18,12 +18,24 @@ proxies:
   sni: 159.223.207.182
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 172.66.192.18
+  port: 443
+  type: trojan
+  password: mainssh-Juhygtr
+  sni: frtws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: frtws.mainssh.xyz
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -32,5 +44,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
