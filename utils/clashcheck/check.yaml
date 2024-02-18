@@ -1,6 +1,6 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 52.201.87.176
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  server: 3.96.13.197
   port: 22222
   type: trojan
   password: telegram-id-directvpn
@@ -17,25 +17,6 @@ proxies:
     headers:
       Host: sherasheba.com
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 3.135.106.37
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1E8\U0001F1E6 CA 4"
-  server: 3.96.13.197
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 5"
-  server: 52.31.81.10
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 6"
   server: 172.66.128.32
   port: 443
   type: trojan
@@ -46,24 +27,7 @@ proxies:
     path: /trojan
     headers:
       Host: catws.mainssh.xyz
-- name: "\U0001F1E9\U0001F1EA DE 7"
-  server: 18.185.162.188
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 8"
-  server: 104.19.155.92
-  port: 443
-  type: trojan
-  password: 8d0de334-c1a0-44ab-9362-e7916c0d268d
-  sni: sshhiddifyc1.cpionline.cc
-  network: ws
-  ws-opts:
-    path: /u5ht27KSp8j3Z2QIPbkyFm3I
-    headers:
-      Host: sshhiddifyc1.cpionline.cc
-- name: "\U0001F1FA\U0001F1F3 UN 9"
+- name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
   server: 104.19.154.92
   port: 443
@@ -78,29 +42,19 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FA\U0001F1F3 UN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1E6 CA 4"
-  - "\U0001F1EE\U0001F1EA IE 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1FA\U0001F1F3 UN 8"
-  - "\U0001F1FA\U0001F1F3 UN 9"
+  - "\U0001F1FA\U0001F1F3 UN 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
