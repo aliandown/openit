@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 138.197.5.103
-  port: 443
-  type: trojan
-  password: xxoo
-  sni: marzfun.ir
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 159.223.207.182
   port: 34428
   type: trojan
@@ -15,6 +7,17 @@ proxies:
   sni: 159.223.207.182
   skip-cert-verify: true
   udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 172.67.146.69
+  port: 443
+  type: trojan
+  password: mainssh-Vcvffty
+  sni: uktws.mainssh.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: uktws.mainssh.xyz
 - name: "\U0001F1FA\U0001F1F3 UN 3"
   server: 104.21.79.143
   port: 443
@@ -27,16 +30,13 @@ proxies:
     headers:
       Host: uktws.mainssh.xyz
 - name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 172.67.146.69
+  server: 138.197.5.103
   port: 443
   type: trojan
-  password: mainssh-Vcvffty
-  sni: uktws.mainssh.xyz
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: uktws.mainssh.xyz
+  password: xxoo
+  sni: marzfun.ir
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
