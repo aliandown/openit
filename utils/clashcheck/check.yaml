@@ -1,13 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 159.223.207.182
-  port: 34428
-  type: trojan
-  password: zIvR7ryOXv
-  sni: 159.223.207.182
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: 138.197.5.103
   port: 443
   type: trojan
@@ -15,19 +7,20 @@ proxies:
   sni: marzfun.ir
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F8\U0001F1EA SE 3"
-  server: 13.48.179.241
-  port: 22222
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 159.223.207.182
+  port: 34428
   type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
+  password: zIvR7ryOXv
+  sni: 159.223.207.182
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -36,6 +29,5 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
