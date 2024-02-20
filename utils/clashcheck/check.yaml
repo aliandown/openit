@@ -5,7 +5,7 @@ proxies:
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   type: trojan
   server: chat.openai.com
   port: 443
@@ -19,16 +19,16 @@ proxies:
     headers:
       host: qingyu.yyo30397.workers.dev
 - name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 13.36.85.141
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: 13.37.209.10
   port: 22222
   type: trojan
   password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EC\U0001F1E7 GB 4"
+  server: 13.42.132.143
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
 - name: "\U0001F1FA\U0001F1F3 UN 5"
   server: 104.21.69.44
@@ -41,29 +41,15 @@ proxies:
     path: /websocket
     headers:
       Host: de1.trojanvpn.de
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  type: trojan
-  server: chat.openai.com
-  port: 443
-  udp: true
-  password: ce8b8b30ebba45f2a38dd608b85e8628
-  sni: fenai.624438300.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /bangladeshipatri.com:443/6b777a91
-    headers:
-      host: fenai.624438300.workers.dev
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -71,10 +57,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
