@@ -12,37 +12,38 @@ proxies:
     path: /avianrecruit.com:443/6b777a91
     headers:
       host: qingyu.yyo30397.workers.dev
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  server: 13.37.209.10
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  server: 104.21.69.44
-  port: 2083
-  type: trojan
-  password: 0e81a9cd-d849-4101-8d64-574c283207de
-  sni: de1.trojanvpn.de
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: de1.trojanvpn.de
-- name: "\U0001F1F0\U0001F1F7 KR 4"
+- name: "\U0001F1F0\U0001F1F7 KR 2"
   server: 103.214.68.57
   port: 10003
   type: trojan
   password: 6x8HcghsjS
   sni: yes998.chickenkiller.com
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: 13.37.209.10
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1F8\U0001F1EA SE 4"
+  server: 16.16.165.43
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -50,8 +51,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
