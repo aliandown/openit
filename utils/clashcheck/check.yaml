@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: chat.openai.com
   port: 443
@@ -13,32 +13,55 @@ proxies:
     headers:
       host: qingyu.yyo30397.workers.dev
 - name: "\U0001F1EE\U0001F1EA IE 2"
-  server: 108.129.34.16
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 3"
   server: 34.252.54.161
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 35.157.201.195
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  server: 108.129.34.16
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  type: trojan
+  server: chat.openai.com
+  port: 443
+  udp: true
+  password: ce8b8b30ebba45f2a38dd608b85e8628
+  sni: fenai.624438300.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /bangladeshipatri.com:443/6b777a91
+    headers:
+      host: fenai.624438300.workers.dev
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1EE\U0001F1EA IE 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
