@@ -1,41 +1,21 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  server: 35.156.196.177
+  port: 22222
   type: trojan
-  server: chat.openai.com
-  port: 443
-  udp: true
-  password: e8105dfd24414268b6c7652c63731097
-  sni: qingyu.yyo30397.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /avianrecruit.com:443/6b777a91
-    headers:
-      host: qingyu.yyo30397.workers.dev
-- name: "\U0001F1FA\U0001F1F3 UN 2"
-  server: 104.21.69.44
-  port: 2083
-  type: trojan
-  password: 0e81a9cd-d849-4101-8d64-574c283207de
-  sni: de1.trojanvpn.de
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: de1.trojanvpn.de
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
