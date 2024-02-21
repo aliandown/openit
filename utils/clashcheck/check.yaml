@@ -1,5 +1,5 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: chat.openai.com
   port: 443
@@ -23,27 +23,19 @@ proxies:
     path: /websocket
     headers:
       Host: de1.trojanvpn.de
-- name: "\U0001F1F0\U0001F1F7 KR 3"
-  server: 103.214.68.57
-  port: 10003
-  type: trojan
-  password: 6x8HcghsjS
-  sni: yes998.chickenkiller.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
