@@ -1,26 +1,13 @@
-proxies:
-- name: "\U0001F1EB\U0001F1EE FI 1"
-  server: 95.216.199.148
-  port: 443
-  type: trojan
-  password: 8n2KOKmyfS
-  sni: dl.richmondvaaadom.org
-  network: ws
-  ws-opts:
-    path: /CDN?ed=2048
-    headers:
-      Host: dl.richmondvaaadom.org
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1EB\U0001F1EE FI 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EB\U0001F1EE FI 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
