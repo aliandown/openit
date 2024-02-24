@@ -1,20 +1,37 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  server: 15.157.171.188
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 3.10.121.127
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 18.185.219.146
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
