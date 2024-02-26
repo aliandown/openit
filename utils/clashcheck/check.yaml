@@ -16,6 +16,11 @@ proxies:
   port: 443
   type: trojan
   password: 915dc116-70c6-403b-8a03-18d885c311bf
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -23,6 +28,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 1"
   - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1E6 UA 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -32,5 +38,6 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 KR 1"
   - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1E6 UA 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
