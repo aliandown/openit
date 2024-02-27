@@ -5,8 +5,8 @@ proxies:
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 2"
-  server: 99.80.98.145
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 3.8.35.92
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
@@ -17,46 +17,33 @@ proxies:
   type: trojan
   password: 6x8HcghsjS
   sni: yes998.chickenkiller.com
-- name: "\U0001F1EC\U0001F1E7 GB 4"
-  server: 3.8.35.92
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 5"
+- name: "\U0001F1EB\U0001F1F7 FR 4"
   server: 52.47.191.156
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 6"
+- name: "\U0001F1EB\U0001F1F7 FR 5"
   server: 13.38.248.44
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1E6 UA 7"
+- name: "\U0001F1FA\U0001F1E6 UA 6"
   server: it-full.privateip.net
   port: 443
   type: trojan
   password: 915dc116-70c6-403b-8a03-18d885c311bf
-- name: "\U0001F1FA\U0001F1F8 US 8"
-  server: es-full.privateip.net
-  port: 443
-  type: trojan
-  password: b556587e-6b3a-4cca-b379-714bfae91515
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1FA\U0001F1E6 UA 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FA\U0001F1E6 UA 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -64,12 +51,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1F0\U0001F1F7 KR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1EB\U0001F1F7 FR 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1FA\U0001F1E6 UA 7"
-  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1FA\U0001F1E6 UA 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
