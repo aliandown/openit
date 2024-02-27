@@ -1,16 +1,16 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 44.217.205.218
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 2"
+- name: "\U0001F1EE\U0001F1EA IE 1"
   server: 99.80.98.145
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
+- name: "\U0001F1F0\U0001F1F7 KR 2"
+  server: 103.214.68.57
+  port: 10003
+  type: trojan
+  password: 6x8HcghsjS
+  sni: yes998.chickenkiller.com
 - name: "\U0001F1EC\U0001F1E7 GB 3"
   server: 3.8.35.92
   port: 22222
@@ -31,8 +31,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1E6 UA 5"
@@ -42,8 +42,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1F0\U0001F1F7 KR 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
   - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1FA\U0001F1E6 UA 5"
