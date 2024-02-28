@@ -1,17 +1,5 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  server: 54.195.100.55
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: 103.214.68.57
-  port: 10003
-  type: trojan
-  password: 6x8HcghsjS
-  sni: yes998.chickenkiller.com
-- name: "\U0001F1FA\U0001F1F3 UN 3"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   server: 104.16.192.155
   port: 443
   type: trojan
@@ -22,7 +10,7 @@ proxies:
     path: 6b777a91
     headers:
       Host: jobscareerfortoday.com
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1E8\U0001F1F3 HK 2"
   server: www.chrome-helper.cc
   port: 21830
   type: http
@@ -31,19 +19,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1F0\U0001F1F7 KR 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
