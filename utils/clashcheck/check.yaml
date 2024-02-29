@@ -1,53 +1,11 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1F8\U0001F1EA SE 1"
+  server: 13.53.108.149
+  port: 22222
   type: trojan
-  server: 54.174.146.222
-  port: 16816
-  udp: true
-  password: HU34JJWj1oHR
-  sni: www.myethblog.com
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: 3.137.174.9
-  port: 16811
-  udp: true
-  password: 1crmgnSwj5RY
-  sni: www.myethblog.com
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  type: trojan
-  server: 52.13.48.44
-  port: 16809
-  udp: true
-  password: NfKmA7bqzskg
-  sni: www.myethblog.com
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
-- name: "\U0001F1E8\U0001F1ED CH 4"
-  type: trojan
-  server: 57.180.30.152
-  port: 16806
-  udp: true
-  password: tWi47ViS3VrP
-  sni: www.myethblog.com
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
-- name: "\U0001F1FA\U0001F1F3 UN 5"
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F3 UN 2"
   server: 104.16.122.175
   port: 2083
   type: trojan
@@ -58,39 +16,19 @@ proxies:
     path: /
     headers:
       Host: cdn13.cdn2cdn.com
-- name: "\U0001F1F0\U0001F1F7 KR 6"
-  type: trojan
-  server: 43.201.45.10
-  port: 16812
-  udp: true
-  password: YMeP0457unyx
-  sni: www.myethblog.com
-  skip-cert-verify: true
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1ED CH 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1ED CH 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1F0\U0001F1F7 KR 6"
+  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
