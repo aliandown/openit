@@ -1,26 +1,34 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F3 UN 1"
-  server: 104.16.192.155
-  port: 443
+- name: "\U0001F1F8\U0001F1EA SE 1"
+  server: 13.53.108.149
+  port: 22222
   type: trojan
-  password: e8105dfd24414268b6c7652c63731097
-  sni: jobscareerfortoday.com
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1F3 UN 2"
+  server: 104.16.122.175
+  port: 2083
+  type: trojan
+  password: qG9K8AGnn9XH5jUqeFu96g
+  sni: cdn13.cdn2cdn.com
   network: ws
   ws-opts:
-    path: 6b777a91
+    path: /
     headers:
-      Host: jobscareerfortoday.com
+      Host: cdn13.cdn2cdn.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1FA\U0001F1F3 UN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
