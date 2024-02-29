@@ -16,12 +16,20 @@ proxies:
   type: trojan
   password: 6x8HcghsjS
   sni: yes998.chickenkiller.com
+- name: "\U0001F1EC\U0001F1EE GI 3"
+  server: 95.164.114.43
+  port: 443
+  type: trojan
+  password: 180c7f40-c29e-445d-8056-ae92f3b451d7
+  sni: kz-full.privateip.net
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EC\U0001F1EE GI 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -30,5 +38,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
+  - "\U0001F1EC\U0001F1EE GI 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
