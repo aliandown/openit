@@ -1,12 +1,5 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 35.156.250.252
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1E8\U0001F1E6 CA 2"
+- name: "\U0001F1E8\U0001F1E6 CA 1"
   type: trojan
   server: 23.227.38.11
   port: 443
@@ -17,6 +10,13 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: 35.156.250.252
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+  skip-cert-verify: false
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: es-full.privateip.net
   port: 443
@@ -26,8 +26,8 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -35,8 +35,8 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1FA\U0001F1F8 US 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
