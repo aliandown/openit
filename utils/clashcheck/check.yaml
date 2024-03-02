@@ -10,13 +10,19 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
-- name: "\U0001F1F3\U0001F1F1 NL 2"
+- name: "\U0001F1F8\U0001F1EA SE 2"
+  server: 13.48.39.210
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1F3\U0001F1F1 NL 3"
   server: 78.141.221.194
   port: 443
   type: trojan
   password: wkmY1R4EcP
   sni: z-v2-002750.kailib.com
-- name: "\U0001F1E8\U0001F1F3 HK 3"
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: www.chrome-helper.cc
   port: 21830
   type: http
@@ -26,8 +32,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1F3\U0001F1F1 NL 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1F8\U0001F1EA SE 2"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -35,7 +42,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1F3\U0001F1F1 NL 2"
-  - "\U0001F1E8\U0001F1F3 HK 3"
+  - "\U0001F1F8\U0001F1EA SE 2"
+  - "\U0001F1F3\U0001F1F1 NL 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
