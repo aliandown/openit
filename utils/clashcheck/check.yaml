@@ -1,22 +1,29 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  udp: true
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /argox-tr
-- name: "\U0001F1EE\U0001F1EA IE 2"
+- name: "\U0001F1EE\U0001F1EA IE 1"
   server: 63.33.75.225
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1E6 UA 3"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 13.38.153.192
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
+  server: 3.77.84.199
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1F8\U0001F1EA SE 4"
+  server: 13.48.157.138
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1E6 UA 5"
   server: it-full.privateip.net
   port: 443
   type: trojan
@@ -25,17 +32,21 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1FA\U0001F1E6 UA 3"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
+  - "\U0001F1FA\U0001F1E6 UA 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1FA\U0001F1E6 UA 3"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
+  - "\U0001F1FA\U0001F1E6 UA 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
