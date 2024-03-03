@@ -1,5 +1,22 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
+- name: "\U0001F1F8\U0001F1EA SE 1"
+  server: 13.48.157.138
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1FA\U0001F1E6 UA 2"
+  server: it-full.privateip.net
+  port: 443
+  type: trojan
+  password: 31583130-de1f-44ce-a433-1dbb108e1846
+- name: "\U0001F1EB\U0001F1F7 FR 3"
+  server: 13.38.153.192
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1E8\U0001F1E6 CA 4"
   type: trojan
   server: 23.227.38.11
   port: 443
@@ -10,48 +27,23 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
-- name: "\U0001F1EE\U0001F1EA IE 2"
-  server: 63.33.75.225
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 3"
-  server: 13.38.153.192
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1FA\U0001F1E6 UA 4"
-  server: it-full.privateip.net
-  port: 443
-  type: trojan
-  password: 31583130-de1f-44ce-a433-1dbb108e1846
-- name: "\U0001F1F8\U0001F1EA SE 5"
-  server: 13.48.157.138
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1FA\U0001F1E6 UA 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1E6 UA 4"
-  - "\U0001F1F8\U0001F1EA SE 5"
+  - "\U0001F1E8\U0001F1E6 CA 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1FA\U0001F1E6 UA 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1FA\U0001F1E6 UA 4"
-  - "\U0001F1F8\U0001F1EA SE 5"
+  - "\U0001F1E8\U0001F1E6 CA 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
