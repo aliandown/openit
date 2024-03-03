@@ -5,11 +5,11 @@ proxies:
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: 18.169.148.45
+- name: "\U0001F1E9\U0001F1EA DE 2"
+  server: 3.77.84.199
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trojan.miwan.co.uk
 - name: "\U0001F1EB\U0001F1F7 FR 3"
   server: 13.38.153.192
@@ -22,26 +22,14 @@ proxies:
   port: 443
   type: trojan
   password: 31583130-de1f-44ce-a433-1dbb108e1846
-- name: "\U0001F1E8\U0001F1E6 CA 5"
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  udp: true
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /argox-tr
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1FA\U0001F1E6 UA 4"
-  - "\U0001F1E8\U0001F1E6 CA 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,9 +37,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 2"
   - "\U0001F1EB\U0001F1F7 FR 3"
   - "\U0001F1FA\U0001F1E6 UA 4"
-  - "\U0001F1E8\U0001F1E6 CA 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
