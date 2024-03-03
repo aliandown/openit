@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  udp: true
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /argox-tr
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   server: 104.16.192.146
   port: 443
   type: trojan
@@ -21,51 +10,30 @@ proxies:
     path: 6b777a91
     headers:
       Host: jobscareertoday.com
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 51.44.30.166
-  port: 22222
+- name: "\U0001F1E8\U0001F1E6 CA 2"
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 4"
-  server: 13.38.153.192
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.miwan.co.uk
-  skip-cert-verify: false
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 51.21.114.201
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.miwan.co.uk
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
+  server: 23.227.38.11
+  port: 443
+  udp: true
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /argox-tr
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1FA\U0001F1F3 UN 1"
+  - "\U0001F1E8\U0001F1E6 CA 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
