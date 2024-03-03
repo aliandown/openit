@@ -10,12 +10,13 @@ proxies:
     path: 6b777a91
     headers:
       Host: jobscareertoday.com
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 51.21.114.201
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 13.38.153.192
   port: 22222
   type: trojan
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   sni: trojan.miwan.co.uk
+  skip-cert-verify: false
 - name: "\U0001F1E8\U0001F1E6 CA 3"
   type: trojan
   server: 23.227.38.11
@@ -32,7 +33,7 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -41,7 +42,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F3 UN 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 2"
   - "\U0001F1E8\U0001F1E6 CA 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
