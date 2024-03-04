@@ -1,16 +1,11 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   server: 94.131.117.240
   port: 443
   type: trojan
   password: e2486b91-71a6-421b-9d53-3c080fb0edb8
   skip-cert-verify: true
-- name: "\U0001F1EC\U0001F1EE GI 3"
+- name: "\U0001F1EC\U0001F1EE GI 2"
   server: tr-full.privateip.net
   port: 443
   type: trojan
@@ -19,17 +14,15 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EC\U0001F1EE GI 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EC\U0001F1EE GI 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
