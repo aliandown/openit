@@ -1,13 +1,20 @@
-proxies: []
+proxies:
+- name: "\U0001F1EC\U0001F1EE GI 1"
+  server: tr-full.privateip.net
+  port: 443
+  type: trojan
+  password: 01f378e3-16fb-41ba-be7e-e23a7813275e
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EC\U0001F1EE GI 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EC\U0001F1EE GI 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
