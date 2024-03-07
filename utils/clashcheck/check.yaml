@@ -1,5 +1,23 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
+- name: "\U0001F1EB\U0001F1F7 FR 1"
+  server: 13.37.54.123
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.miwan.co.uk
+- name: "\U0001F1E8\U0001F1F3 HK 2"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
+- name: "\U0001F1E8\U0001F1F3 TW 3"
+  server: c11.twtc.dynu.net
+  port: 13989
+  type: trojan
+  password: f7def183-ec24-4b77-86ee-7b8a2ba8e351
+  sni: c11.twtc.dynu.net
+  skip-cert-verify: false
+- name: "\U0001F1E8\U0001F1F3 HK 4"
   server: sst.onlineweb.work
   port: 443
   type: trojan
@@ -8,13 +26,19 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  - "\U0001F1EB\U0001F1F7 FR 1"
+  - "\U0001F1E8\U0001F1F3 HK 2"
+  - "\U0001F1E8\U0001F1F3 TW 3"
+  - "\U0001F1E8\U0001F1F3 HK 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
