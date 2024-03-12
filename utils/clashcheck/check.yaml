@@ -10,23 +10,11 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
-- name: "\U0001F1FA\U0001F1F3 UN 2"
-  server: 104.21.69.44
-  port: 443
-  type: trojan
-  password: EnCONaDGCw
-  sni: dui-punishment-pending-wu.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: '@daily_configs,@daily_configs,@daily_configs,@daily_configs,@daily_configs'
-    headers:
-      Host: dui-punishment-pending-wu.trycloudflare.com
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -34,6 +22,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
