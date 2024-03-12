@@ -1,16 +1,5 @@
 proxies:
-- name: "\U0001F1E8\U0001F1E6 CA 1"
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  udp: true
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /argox-tr
-- name: "\U0001F1FA\U0001F1F3 UN 2"
+- name: "\U0001F1FA\U0001F1F3 UN 1"
   server: 104.21.69.44
   port: 443
   type: trojan
@@ -25,15 +14,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1FA\U0001F1F3 UN 2"
+  - "\U0001F1FA\U0001F1F3 UN 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
