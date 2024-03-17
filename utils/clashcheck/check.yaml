@@ -6,18 +6,11 @@ proxies:
   password: wkmY1R4EcP
   sni: z-v2-002750.kailib.com
   skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 2"
-  server: 3.75.28.99
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1F3\U0001F1F1 NL 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -25,6 +18,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1F3\U0001F1F1 NL 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
