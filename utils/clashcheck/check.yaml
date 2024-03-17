@@ -5,24 +5,18 @@ proxies:
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-- name: "\U0001F1E8\U0001F1F3 HK 2"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
-- name: "\U0001F1F8\U0001F1EA SE 3"
-  server: 16.16.42.61
+- name: "\U0001F1F8\U0001F1EA SE 2"
+  server: 13.50.57.122
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
+  - "\U0001F1F8\U0001F1EA SE 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -30,7 +24,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EB\U0001F1F7 FR 1"
-  - "\U0001F1E8\U0001F1F3 HK 2"
-  - "\U0001F1F8\U0001F1EA SE 3"
+  - "\U0001F1F8\U0001F1EA SE 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
