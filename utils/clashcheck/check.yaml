@@ -1,13 +1,21 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1F3 TW 1"
+  server: ty12t.twty.dynu.net
+  port: 18912
+  type: trojan
+  password: 7c252929-6ac0-4681-a835-e52af701f151
+  sni: ty12t.twty.dynu.net
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1F3 TW 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1F3 TW 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
