@@ -1,49 +1,49 @@
 proxies:
-- name: "\U0001F1ED\U0001F1F0 HK 1 HTT"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
-- name: "\U0001F1F0\U0001F1F7 KR 2 TJN"
+- name: "\U0001F1F0\U0001F1F7 KR 1 TJN"
   server: 146.56.179.67
   port: 40005
   type: trojan
   password: cc05b267-2e17-4e73-92f0-2cf603aa5997
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 3 TJN"
+- name: "\U0001F1F0\U0001F1F7 KR 2 TJN"
   server: 146.56.179.67
   port: 40005
   type: trojan
   password: 57edfecf-5694-4a34-8072-54a4f0636a62
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 4 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 3 TJN"
   server: east.eeeeeef998.buzz
   port: 15003
   type: trojan
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   sni: data.steamdownload.top
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 5 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 4 TJN"
   server: east.eeeeeef998.buzz
   port: 15005
   type: trojan
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   sni: data.steamdownload.top
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 6 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 5 TJN"
   server: east.eeeeeef998.buzz
   port: 15006
   type: trojan
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   sni: data.steamdownload.top
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 7 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 6 TJN"
   server: east.eeeeeef998.buzz
   port: 15002
   type: trojan
   password: 414dff55-922a-4dc8-b5d3-b6517942b25a
   sni: data.steamdownload.top
   skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 HK 7 HTT"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 - name: "\U0001F1F7\U0001F1FA RU 8 TJN"
   server: ru01.freeflyingcloud.xyz
   port: 30002
@@ -338,12 +338,17 @@ proxies:
   type: trojan
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 CN 57 SSS"
-  type: ss
-  server: 728b7b7.yrpfkl.xyz
-  port: 40159
-  password: 23288813e52245ea
-  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1E6 CA 57 TJN"
+  type: trojan
+  server: 23.227.38.11
+  port: 443
+  udp: true
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /argox-tr
 - name: "\U0001F1E8\U0001F1F3 CN 58 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
@@ -365,656 +370,651 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 61 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 40798
+  port: 40159
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 62 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 40243
+  port: 40798
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 63 SSS"
   type: ss
-  server: 927d843.itbdon.xyz
-  port: 40983
+  server: 728b7b7.yrpfkl.xyz
+  port: 40243
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 64 SSS"
   type: ss
   server: 927d843.itbdon.xyz
-  port: 44730
+  port: 40983
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 65 SSS"
   type: ss
   server: 927d843.itbdon.xyz
-  port: 42931
+  port: 44730
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 66 SSS"
   type: ss
-  server: 520b07b.kiitux.xyz
-  port: 47476
+  server: 927d843.itbdon.xyz
+  port: 42931
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 67 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
-  port: 40457
+  port: 47476
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 68 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
-  port: 42944
+  port: 40457
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 69 SSS"
   type: ss
-  server: 728b7b7.yrpfkl.xyz
-  port: 43641
+  server: 520b07b.kiitux.xyz
+  port: 42944
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 70 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 43748
+  port: 43641
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 71 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 41832
+  port: 43748
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 72 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 47150
+  port: 41832
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 73 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 40107
+  port: 47150
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 74 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 43589
+  port: 40107
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 75 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 46843
+  port: 43589
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 76 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 44147
+  port: 46843
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 77 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 43296
+  port: 44147
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 78 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 40676
+  port: 43296
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 79 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 45502
+  port: 40676
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 80 SSS"
   type: ss
-  server: 927d843.itbdon.xyz
-  port: 45483
+  server: 728b7b7.yrpfkl.xyz
+  port: 45502
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 81 SSS"
   type: ss
   server: 927d843.itbdon.xyz
-  port: 46681
+  port: 45483
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 82 SSS"
   type: ss
   server: 927d843.itbdon.xyz
-  port: 45388
+  port: 46681
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 83 SSS"
   type: ss
-  server: 520b07b.kiitux.xyz
-  port: 44011
+  server: 927d843.itbdon.xyz
+  port: 45388
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 84 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
-  port: 41328
+  port: 44011
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 85 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
-  port: 47370
+  port: 41328
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 86 SSS"
   type: ss
-  server: 728b7b7.yrpfkl.xyz
-  port: 40773
+  server: 520b07b.kiitux.xyz
+  port: 47370
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 87 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 47402
+  port: 40773
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 88 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
-  port: 44269
+  port: 47402
   password: 23288813e52245ea
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 89 SSS"
+  type: ss
+  server: 728b7b7.yrpfkl.xyz
+  port: 44269
+  password: 23288813e52245ea
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 90 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 41234
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 90 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 91 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
   port: 41251
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 91 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 92 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 39937
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 92 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 93 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 45542
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 93 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 94 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 41590
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 94 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 95 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
   port: 46136
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 95 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 96 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
   port: 45659
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 96 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 97 SSS"
   type: ss
   server: 520b07b.kiitux.xyz
   port: 41558
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 97 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 98 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 47367
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 98 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 99 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 42936
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 99 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 100 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 40280
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 100 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 101 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 40845
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 101 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 102 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 42849
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 102 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 103 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 45063
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 103 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 104 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 47250
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 104 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 105 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 42507
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 105 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 106 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 41770
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 106 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 107 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 43512
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 107 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 108 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 43631
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 108 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 109 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 42502
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 109 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 110 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 40848
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 110 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 111 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 45310
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 111 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 112 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 45192
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 112 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 113 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 47260
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 113 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 114 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 46622
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 114 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 115 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 40618
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 115 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 116 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 45255
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 116 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 117 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43922
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 117 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 118 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44893
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 118 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 119 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45440
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 119 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 120 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 41475
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 120 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 121 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 39758
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 121 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 122 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45513
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 122 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 123 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 39928
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 123 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 124 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43527
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 124 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 125 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 42044
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 125 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 126 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46876
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 126 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 127 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46761
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 127 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 128 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 41246
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 128 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 129 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46302
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 129 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 130 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46082
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 130 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 131 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 40231
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 131 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 132 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45182
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 132 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 133 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 39973
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 133 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 134 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 42194
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 134 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 135 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44253
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 135 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 136 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 40890
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 136 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 137 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44994
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 137 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 138 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44776
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 138 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 139 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 42575
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 139 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 140 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45743
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 140 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 141 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45079
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 141 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 142 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 39823
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 142 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 143 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43702
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 143 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 144 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45947
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 144 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 145 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45800
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 145 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 146 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44372
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 146 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 147 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 42225
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 147 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 148 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 41735
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 148 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 149 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 42773
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 149 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 150 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 46259
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 150 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 151 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46400
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 151 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 152 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 40045
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 152 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 153 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43010
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 153 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 154 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44807
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 154 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 155 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44320
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 155 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 156 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 42516
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 156 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 157 SSS"
   type: ss
   server: 927d843.itbdon.xyz
   port: 43065
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 157 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 158 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 42288
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 158 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 159 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43905
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 159 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 160 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46715
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 160 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 161 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43222
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 161 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 162 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 40781
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 162 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 163 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46544
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 163 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 164 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 46594
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 164 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 165 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 43858
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 165 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 166 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 44068
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 166 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 167 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 41456
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1F3 CN 167 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 168 SSS"
   type: ss
   server: 728b7b7.yrpfkl.xyz
   port: 45361
   password: 23288813e52245ea
   cipher: aes-128-gcm
-- name: "\U0001F1E8\U0001F1E6 CA 168 TJN"
-  type: trojan
-  server: 23.227.38.11
-  port: 443
-  udp: true
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /argox-tr
 - name: "\U0001F1E8\U0001F1F3 CN 169 SSS"
   type: ss
   server: v3-js-us.as9929.uk
@@ -1031,13 +1031,13 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1ED\U0001F1F0 HK 1 HTT"
+  - "\U0001F1F0\U0001F1F7 KR 1 TJN"
   - "\U0001F1F0\U0001F1F7 KR 2 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 3 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 6 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 7 HTT"
   - "\U0001F1F7\U0001F1FA RU 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 TJN"
   - "\U0001F1EC\U0001F1EE GI 10 TJN"
@@ -1087,7 +1087,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 54 TJN"
   - "\U0001F1E8\U0001F1F3 CN 55 TJN"
   - "\U0001F1E8\U0001F1F3 CN 56 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1E8\U0001F1E6 CA 57 TJN"
   - "\U0001F1E8\U0001F1F3 CN 58 SSS"
   - "\U0001F1E8\U0001F1F3 CN 59 SSS"
   - "\U0001F1E8\U0001F1F3 CN 60 SSS"
@@ -1198,7 +1198,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 165 SSS"
   - "\U0001F1E8\U0001F1F3 CN 166 SSS"
   - "\U0001F1E8\U0001F1F3 CN 167 SSS"
-  - "\U0001F1E8\U0001F1E6 CA 168 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 168 SSS"
   - "\U0001F1E8\U0001F1F3 CN 169 SSS"
   - "\U0001F1E8\U0001F1F3 CN 170 SSS"
   url: https://www.google.com/favicon.ico
@@ -1207,13 +1207,13 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1ED\U0001F1F0 HK 1 HTT"
+  - "\U0001F1F0\U0001F1F7 KR 1 TJN"
   - "\U0001F1F0\U0001F1F7 KR 2 TJN"
-  - "\U0001F1F0\U0001F1F7 KR 3 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 4 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 5 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 6 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 7 TJN"
+  - "\U0001F1FA\U0001F1F8 US 3 TJN"
+  - "\U0001F1FA\U0001F1F8 US 4 TJN"
+  - "\U0001F1FA\U0001F1F8 US 5 TJN"
+  - "\U0001F1FA\U0001F1F8 US 6 TJN"
+  - "\U0001F1ED\U0001F1F0 HK 7 HTT"
   - "\U0001F1F7\U0001F1FA RU 8 TJN"
   - "\U0001F1EF\U0001F1F5 JP 9 TJN"
   - "\U0001F1EC\U0001F1EE GI 10 TJN"
@@ -1263,7 +1263,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 54 TJN"
   - "\U0001F1E8\U0001F1F3 CN 55 TJN"
   - "\U0001F1E8\U0001F1F3 CN 56 TJN"
-  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1E8\U0001F1E6 CA 57 TJN"
   - "\U0001F1E8\U0001F1F3 CN 58 SSS"
   - "\U0001F1E8\U0001F1F3 CN 59 SSS"
   - "\U0001F1E8\U0001F1F3 CN 60 SSS"
@@ -1374,7 +1374,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 165 SSS"
   - "\U0001F1E8\U0001F1F3 CN 166 SSS"
   - "\U0001F1E8\U0001F1F3 CN 167 SSS"
-  - "\U0001F1E8\U0001F1E6 CA 168 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 168 SSS"
   - "\U0001F1E8\U0001F1F3 CN 169 SSS"
   - "\U0001F1E8\U0001F1F3 CN 170 SSS"
 rules:
