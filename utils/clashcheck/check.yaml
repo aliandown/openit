@@ -1,20 +1,14 @@
 proxies:
-- name: "\U0001F1EC\U0001F1E7 GB 1"
-  server: 18.175.6.150
-  port: 22222
+- name: "\U0001F1E6\U0001F1FA AU 1"
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1E6\U0001F1FA AU 2"
-  type: trojan
-  server: 19203tj.matrixxx888.com
-  port: 19203
+  server: 19202tj.matrixxx888.com
+  port: 19202
   udp: true
-  password: 7b0ed263-ed4d-375f-9002-a932b1da098a
+  password: fe782130-bdca-3f5c-a3cc-ba6a7584f722
   sni: eplcgame.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E6\U0001F1FA AU 3"
+- name: "\U0001F1E6\U0001F1FA AU 2"
   type: trojan
   server: 19201tj.matrixxx888.com
   port: 19201
@@ -23,10 +17,19 @@ proxies:
   sni: eplcgame.com
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F9\U0001F1F7 TR 3"
+  type: trojan
+  server: 19233tj.matrixxx888.com
+  port: 19233
+  udp: true
+  password: fe782130-bdca-3f5c-a3cc-ba6a7584f722
+  sni: eplcgame.com
+  skip-cert-verify: true
+  network: tcp
 - name: "\U0001F1F9\U0001F1F7 TR 4"
   type: trojan
-  server: 19234tj.matrixxx888.com
-  port: 19234
+  server: 19237tj.matrixxx888.com
+  port: 19237
   udp: true
   password: fe782130-bdca-3f5c-a3cc-ba6a7584f722
   sni: eplcgame.com
@@ -34,8 +37,8 @@ proxies:
   network: tcp
 - name: "\U0001F1F9\U0001F1F7 TR 5"
   type: trojan
-  server: 19233tj.matrixxx888.com
-  port: 19233
+  server: 19234tj.matrixxx888.com
+  port: 19234
   udp: true
   password: fe782130-bdca-3f5c-a3cc-ba6a7584f722
   sni: eplcgame.com
@@ -52,6 +55,15 @@ proxies:
   network: tcp
 - name: "\U0001F1E6\U0001F1FA AU 7"
   type: trojan
+  server: 19203tj.matrixxx888.com
+  port: 19203
+  udp: true
+  password: 7b0ed263-ed4d-375f-9002-a932b1da098a
+  sni: eplcgame.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E6\U0001F1FA AU 8"
+  type: trojan
   server: 19204tj.matrixxx888.com
   port: 19204
   udp: true
@@ -59,19 +71,10 @@ proxies:
   sni: eplcgame.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 8"
+- name: "\U0001F1F9\U0001F1F7 TR 9"
   type: trojan
   server: 19238tj.matrixxx888.com
   port: 19238
-  udp: true
-  password: fe782130-bdca-3f5c-a3cc-ba6a7584f722
-  sni: eplcgame.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E6\U0001F1FA AU 9"
-  type: trojan
-  server: 19202tj.matrixxx888.com
-  port: 19202
   udp: true
   password: fe782130-bdca-3f5c-a3cc-ba6a7584f722
   sni: eplcgame.com
@@ -81,29 +84,29 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E6\U0001F1FA AU 1"
   - "\U0001F1E6\U0001F1FA AU 2"
-  - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1F9\U0001F1F7 TR 3"
   - "\U0001F1F9\U0001F1F7 TR 4"
   - "\U0001F1F9\U0001F1F7 TR 5"
   - "\U0001F1F9\U0001F1F7 TR 6"
   - "\U0001F1E6\U0001F1FA AU 7"
-  - "\U0001F1F9\U0001F1F7 TR 8"
-  - "\U0001F1E6\U0001F1FA AU 9"
+  - "\U0001F1E6\U0001F1FA AU 8"
+  - "\U0001F1F9\U0001F1F7 TR 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E6\U0001F1FA AU 1"
   - "\U0001F1E6\U0001F1FA AU 2"
-  - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1F9\U0001F1F7 TR 3"
   - "\U0001F1F9\U0001F1F7 TR 4"
   - "\U0001F1F9\U0001F1F7 TR 5"
   - "\U0001F1F9\U0001F1F7 TR 6"
   - "\U0001F1E6\U0001F1FA AU 7"
-  - "\U0001F1F9\U0001F1F7 TR 8"
-  - "\U0001F1E6\U0001F1FA AU 9"
+  - "\U0001F1E6\U0001F1FA AU 8"
+  - "\U0001F1F9\U0001F1F7 TR 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
