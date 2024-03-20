@@ -1,5 +1,20 @@
 proxies:
-- name: "\U0001F1E6\U0001F1FA AU 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 18.132.51.156
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1E6\U0001F1FA AU 2"
+  type: trojan
+  server: 19201tj.matrixxx888.com
+  port: 19201
+  udp: true
+  password: 7b0ed263-ed4d-375f-9002-a932b1da098a
+  sni: eplcgame.com
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1E6\U0001F1FA AU 3"
   type: trojan
   server: 19203tj.matrixxx888.com
   port: 19203
@@ -8,19 +23,10 @@ proxies:
   sni: eplcgame.com
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F9\U0001F1F7 TR 2"
+- name: "\U0001F1F9\U0001F1F7 TR 4"
   type: trojan
   server: 19235tj.matrixxx888.com
   port: 19235
-  udp: true
-  password: 7b0ed263-ed4d-375f-9002-a932b1da098a
-  sni: eplcgame.com
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E6\U0001F1FA AU 3"
-  type: trojan
-  server: 19201tj.matrixxx888.com
-  port: 19201
   udp: true
   password: 7b0ed263-ed4d-375f-9002-a932b1da098a
   sni: eplcgame.com
@@ -30,17 +36,19 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E6\U0001F1FA AU 1"
-  - "\U0001F1F9\U0001F1F7 TR 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E6\U0001F1FA AU 2"
   - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1F9\U0001F1F7 TR 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E6\U0001F1FA AU 1"
-  - "\U0001F1F9\U0001F1F7 TR 2"
+  - "\U0001F1EC\U0001F1E7 GB 1"
+  - "\U0001F1E6\U0001F1FA AU 2"
   - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1F9\U0001F1F7 TR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
