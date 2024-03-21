@@ -5,31 +5,50 @@ proxies:
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-- name: "\U0001F1E9\U0001F1EA DE 2"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
+  server: 15.236.130.194
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 3"
   server: 3.126.176.185
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-- name: "\U0001F1EC\U0001F1EE GI 3"
+- name: "\U0001F1F8\U0001F1EA SE 4"
+  server: 16.16.117.160
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1EC\U0001F1EE GI 5"
   server: tr-full.privateip.net
   port: 443
   type: trojan
   password: d0d67bba-a71d-4e3e-8469-1d214198ad34
-- name: "\U0001F1F8\U0001F1EA SE 4"
-  server: 13.51.40.128
-  port: 22222
+- name: "\U0001F1E8\U0001F1E6 CA 6"
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
+  server: 23.227.38.11
+  port: 443
+  udp: true
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /argox-tr
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1F8\U0001F1EA SE 4"
+  - "\U0001F1EC\U0001F1EE GI 5"
+  - "\U0001F1E8\U0001F1E6 CA 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -37,8 +56,10 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1EC\U0001F1E7 GB 1"
-  - "\U0001F1E9\U0001F1EA DE 2"
-  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1E9\U0001F1EA DE 3"
   - "\U0001F1F8\U0001F1EA SE 4"
+  - "\U0001F1EC\U0001F1EE GI 5"
+  - "\U0001F1E8\U0001F1E6 CA 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
