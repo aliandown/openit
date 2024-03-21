@@ -7,17 +7,29 @@ proxies:
   sni: trojan.burgerip.co.uk
   skip-cert-verify: true
 - name: "\U0001F1EE\U0001F1EA IE 2"
-  server: 34.246.113.108
+  server: 52.213.40.128
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
+- name: "\U0001F1E8\U0001F1E6 CA 3"
+  type: trojan
+  server: 23.227.38.11
+  port: 443
+  udp: true
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /argox-tr
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -26,5 +38,6 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1E8\U0001F1E6 CA 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
