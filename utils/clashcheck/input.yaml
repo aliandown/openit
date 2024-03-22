@@ -1,27 +1,27 @@
 proxies:
-- name: "\U0001F1ED\U0001F1F0 HK 1 HTT"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 1 SSS"
   server: service.ouluyun9803.com
   port: 20003
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 2 SSS"
   server: service.ouluyun9803.com
   port: 26667
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-- name: "\U0001F1E8\U0001F1F3 CN 4 SSS"
+- name: "\U0001F1E8\U0001F1F3 CN 3 SSS"
   server: service.ouluyun9803.com
   port: 20005
   type: ss
   cipher: chacha20-ietf-poly1305
   password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+- name: "\U0001F1ED\U0001F1F0 HK 4 HTT"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 - name: "\U0001F1EC\U0001F1E7 GB 5 TJN"
   server: 18.132.154.7
   port: 22222
@@ -303,14 +303,74 @@ proxies:
   type: trojan
   password: 7d223bae-e183-4bf6-89c3-e327b15df490
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 CN 51 SSR"
+  type: ssr
+  server: vip.basicnode.host
+  port: 11845
+  password: Fhbe0z
+  cipher: chacha20-ietf
+  obfs: tls1.2_ticket_auth
+  protocol: auth_aes128_sha1
+  obfs-param: 5db9910182.microsoft.com
+  protocol-param: 10182:Ed7u0G
+- name: "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  type: ss
+  server: hk-auto-console.suya.ink
+  port: 8024
+  password: 8F0544B4-40A9-4EA5-AB45-DF155034884E
+  cipher: aes-256-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 53 SSR"
+  type: ssr
+  server: vip.basicnode.host
+  port: 11802
+  password: Fhbe0z
+  cipher: chacha20-ietf
+  obfs: tls1.2_ticket_auth
+  protocol: auth_aes128_sha1
+  obfs-param: 5db9910182.microsoft.com
+  protocol-param: 10182:Ed7u0G
+- name: "\U0001F1E8\U0001F1F3 CN 54 SSR"
+  type: ssr
+  server: vip3.niuniupremium.xyz
+  port: 11420
+  password: Fhbe0z
+  cipher: chacha20-ietf
+  obfs: tls1.2_ticket_auth
+  protocol: auth_aes128_sha1
+  obfs-param: 5db9910182.microsoft.com
+  protocol-param: 10182:Ed7u0G
+- name: "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  type: ss
+  server: j90r55t0im2kfwz6.3a-sg01.my777999.top
+  port: 37999
+  password: bea2e265-0bb1-4426-b339-cb2e6160ab3e
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  type: ss
+  server: 789rmi3z.chytenciz-jgufv-sg02.my777999.top
+  port: 37998
+  password: bea2e265-0bb1-4426-b339-cb2e6160ab3e
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  type: ss
+  server: 7879va.xikv2dvn-3g5erg0-us01.my777999.top
+  port: 33999
+  password: bea2e265-0bb1-4426-b339-cb2e6160ab3e
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 58 SSS"
+  type: ss
+  server: 4349ufu.54jvd5y6ojams-us02.my777999.top
+  port: 33998
+  password: bea2e265-0bb1-4426-b339-cb2e6160ab3e
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1ED\U0001F1F0 HK 1 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 4 HTT"
   - "\U0001F1EC\U0001F1E7 GB 5 TJN"
   - "\U0001F1F0\U0001F1F7 KR 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 TJN"
@@ -357,16 +417,24 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 48 TJN"
   - "\U0001F1E8\U0001F1F3 CN 49 TJN"
   - "\U0001F1E8\U0001F1F3 CN 50 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 51 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 53 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 54 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 58 SSS"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1ED\U0001F1F0 HK 1 HTT"
+  - "\U0001F1E8\U0001F1F3 CN 1 SSS"
   - "\U0001F1E8\U0001F1F3 CN 2 SSS"
   - "\U0001F1E8\U0001F1F3 CN 3 SSS"
-  - "\U0001F1E8\U0001F1F3 CN 4 SSS"
+  - "\U0001F1ED\U0001F1F0 HK 4 HTT"
   - "\U0001F1EC\U0001F1E7 GB 5 TJN"
   - "\U0001F1F0\U0001F1F7 KR 6 TJN"
   - "\U0001F1FA\U0001F1F8 US 7 TJN"
@@ -413,5 +481,13 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 48 TJN"
   - "\U0001F1E8\U0001F1F3 CN 49 TJN"
   - "\U0001F1E8\U0001F1F3 CN 50 TJN"
+  - "\U0001F1E8\U0001F1F3 CN 51 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 52 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 53 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 54 SSR"
+  - "\U0001F1E8\U0001F1F3 CN 55 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 56 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 57 SSS"
+  - "\U0001F1E8\U0001F1F3 CN 58 SSS"
 rules:
 - "MATCH,\U0001F310 Proxy"
