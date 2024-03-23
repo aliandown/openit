@@ -20,18 +20,19 @@ proxies:
   udp: true
   password: onBbMV6Bt9
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1EE\U0001F1EA IE 4"
+  server: 54.216.33.7
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1E8\U0001F1F3 HK 5"
   type: trojan
   server: 47.243.177.123
   port: 6666
   udp: true
   password: vnnkDB6wPC
   skip-cert-verify: true
-- name: "\U0001F1E8\U0001F1F3 HK 5"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
 - name: "\U0001F1FA\U0001F1F8 US 6"
   type: trojan
   server: 107.186.16.181
@@ -39,6 +40,11 @@ proxies:
   udp: true
   password: MBqJpk6kEP
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 7"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -46,9 +52,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EE\U0001F1EA IE 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -58,8 +65,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 HK 4"
+  - "\U0001F1EE\U0001F1EA IE 4"
   - "\U0001F1E8\U0001F1F3 HK 5"
   - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 HK 7"
 rules:
 - "MATCH,\U0001F310 Proxy"
