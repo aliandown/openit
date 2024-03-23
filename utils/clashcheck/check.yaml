@@ -13,19 +13,18 @@ proxies:
   udp: true
   password: HzXZAweqHW
   skip-cert-verify: true
-- name: "\U0001F1EE\U0001F1EA IE 3"
-  server: 54.216.33.7
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1E8\U0001F1F3 HK 4"
+- name: "\U0001F1E8\U0001F1F3 HK 3"
   type: trojan
   server: 47.243.177.123
   port: 6666
   udp: true
   password: vnnkDB6wPC
   skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 HK 4"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 - name: "\U0001F1FA\U0001F1F8 US 5"
   type: trojan
   server: 107.186.16.181
@@ -39,7 +38,7 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   url: https://www.google.com/favicon.ico
@@ -50,7 +49,7 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
+  - "\U0001F1E8\U0001F1F3 HK 3"
   - "\U0001F1E8\U0001F1F3 HK 4"
   - "\U0001F1FA\U0001F1F8 US 5"
 rules:
