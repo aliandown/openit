@@ -1,29 +1,21 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  server: 54.78.164.44
+- name: "\U0001F1E9\U0001F1EA DE 1"
+  server: 18.193.139.86
   port: 22222
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: 35.179.21.184
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E9\U0001F1EA DE 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
