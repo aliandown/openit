@@ -1,53 +1,21 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 18.199.188.175
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1E8\U0001F1F3 TW 2"
-  server: b24.ntbq.dynu.net
-  port: 3271
-  type: trojan
-  password: de521ccd-0b3b-4616-a04f-c06cc4b3b077
-  sni: b24.ntbq.dynu.net
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 51.21.86.61
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1E8\U0001F1F3 TW 4"
+- name: "\U0001F1E8\U0001F1F3 TW 1"
   server: b22.ntbq.dynu.net
   port: 19489
   type: trojan
   password: de521ccd-0b3b-4616-a04f-c06cc4b3b077
   sni: b22.ntbq.dynu.net
-- name: "\U0001F1E8\U0001F1F3 TW 5"
-  server: 36.227.7.118
-  port: 18912
-  type: trojan
-  password: 04b694b2-7022-4767-801b-6d21611f548b
-  sni: ty12t.twty.dynu.net
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E8\U0001F1F3 TW 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 TW 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
-  - "\U0001F1E8\U0001F1F3 TW 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
+  - "\U0001F1E8\U0001F1F3 TW 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
