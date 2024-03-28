@@ -1,11 +1,10 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 TW 1"
+- name: "\U0001F1E8\U0001F1F3 MO 1"
   type: trojan
-  server: b12.ntbq.dynu.net
-  port: 9755
+  server: macau.hapchung.com
+  port: 10443
   udp: true
-  password: 158141ca-528d-407d-88f2-c0ddca399b26
-  sni: b12.ntbq.dynu.net
+  password: 5eb5bdf9-4a70-4890-b2ca-8b2b79792639
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 TW 2"
@@ -18,12 +17,6 @@ proxies:
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1E8\U0001F1F3 TW 3"
-  server: b24.ntbq.dynu.net
-  port: 3271
-  type: trojan
-  password: 158141ca-528d-407d-88f2-c0ddca399b26
-  sni: b24.ntbq.dynu.net
-- name: "\U0001F1E8\U0001F1F3 TW 4"
   type: trojan
   server: b13.ntbq.dynu.net
   port: 9489
@@ -32,29 +25,36 @@ proxies:
   sni: b13.ntbq.dynu.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 MO 5"
+- name: "\U0001F1E8\U0001F1F3 TW 4"
+  server: b24.ntbq.dynu.net
+  port: 3271
   type: trojan
-  server: macau.hapchung.com
-  port: 10443
-  udp: true
-  password: 5eb5bdf9-4a70-4890-b2ca-8b2b79792639
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 6"
+  password: 158141ca-528d-407d-88f2-c0ddca399b26
+  sni: b24.ntbq.dynu.net
+- name: "\U0001F1E8\U0001F1F3 TW 5"
   server: nc12.twtc.dynu.net
   port: 14656
   type: trojan
   password: 661ee645-8e3f-42ab-9e60-a19d5e7a89eb
   sni: nc12.twtc.dynu.net
+- name: "\U0001F1E8\U0001F1F3 TW 6"
+  type: trojan
+  server: b12.ntbq.dynu.net
+  port: 9755
+  udp: true
+  password: 158141ca-528d-407d-88f2-c0ddca399b26
+  sni: b12.ntbq.dynu.net
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1E8\U0001F1F3 MO 1"
   - "\U0001F1E8\U0001F1F3 TW 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 MO 5"
+  - "\U0001F1E8\U0001F1F3 TW 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -62,11 +62,11 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 TW 1"
+  - "\U0001F1E8\U0001F1F3 MO 1"
   - "\U0001F1E8\U0001F1F3 TW 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 MO 5"
+  - "\U0001F1E8\U0001F1F3 TW 5"
   - "\U0001F1E8\U0001F1F3 TW 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
