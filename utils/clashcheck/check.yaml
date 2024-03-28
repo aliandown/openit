@@ -10,13 +10,7 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: 18.171.84.225
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1E8\U0001F1F3 TW 3"
+- name: "\U0001F1E8\U0001F1F3 TW 2"
   type: trojan
   server: b24.ntbq.dynu.net
   port: 3271
@@ -25,7 +19,7 @@ proxies:
   sni: b24.ntbq.dynu.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 4"
+- name: "\U0001F1E8\U0001F1F3 TW 3"
   type: trojan
   server: b13.ntbq.dynu.net
   port: 9489
@@ -34,7 +28,7 @@ proxies:
   sni: b13.ntbq.dynu.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 TW 5"
+- name: "\U0001F1E8\U0001F1F3 TW 4"
   type: trojan
   server: ty12t.twty.dynu.net
   port: 18912
@@ -43,21 +37,14 @@ proxies:
   sni: ty12t.twty.dynu.net
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: www.chrome-helper.cc
-  port: 21830
-  type: http
-  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E8\U0001F1F3 TW 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -65,10 +52,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1E8\U0001F1F3 TW 2"
   - "\U0001F1E8\U0001F1F3 TW 3"
   - "\U0001F1E8\U0001F1F3 TW 4"
-  - "\U0001F1E8\U0001F1F3 TW 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
 rules:
 - "MATCH,\U0001F310 Proxy"
