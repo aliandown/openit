@@ -14,9 +14,20 @@ proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 3"
   type: ss
   server: 5fa33d2.vrqfmm.xyz
+  port: 46101
+  password: d9c577328fb349fe
+  cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  type: ss
+  server: 5fa33d2.vrqfmm.xyz
   port: 42285
   password: d9c577328fb349fe
   cipher: aes-128-gcm
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: www.chrome-helper.cc
+  port: 21830
+  type: http
+  tls: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -24,6 +35,8 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -33,5 +46,7 @@ proxy-groups:
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E8\U0001F1F3 HK 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
