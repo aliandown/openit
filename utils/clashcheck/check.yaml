@@ -1,20 +1,20 @@
 proxies:
-- name: "\U0001F1F8\U0001F1EA SE 1"
-  server: 13.50.213.12
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
+- name: "\U0001F1E8\U0001F1F3 CN 1"
+  type: ss
+  server: 5fa33d2.vrqfmm.xyz
+  port: 42285
+  password: d9c577328fb349fe
+  cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 2"
   type: ss
   server: 5fa33d2.vrqfmm.xyz
-  port: 46101
+  port: 43791
   password: d9c577328fb349fe
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 3"
   type: ss
   server: 5fa33d2.vrqfmm.xyz
-  port: 42285
+  port: 46101
   password: d9c577328fb349fe
   cipher: aes-128-gcm
 - name: "\U0001F1E8\U0001F1F3 CN 4"
@@ -27,7 +27,7 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
@@ -37,7 +37,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EA SE 1"
+  - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
   - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
