@@ -1,37 +1,37 @@
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
-  type: ss
-  server: 121.43.117.216
-  port: 10001
-  password: Rad35baG
-  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 3.130.146.236
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
 - name: "\U0001F1E8\U0001F1F3 CN 2"
   type: ss
   server: 121.43.117.216
   port: 10001
   password: Rad35baG
   cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E9\U0001F1EA DE 3"
-  server: 52.58.109.136
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: ss
+  server: 121.43.117.216
+  port: 10001
+  password: Rad35baG
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E9\U0001F1EA DE 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
