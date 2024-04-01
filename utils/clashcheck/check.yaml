@@ -4,18 +4,11 @@ proxies:
   port: 21830
   type: http
   tls: true
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  type: ss
-  server: beromo.youxinye.com
-  port: 26002
-  password: c44758e2-67a4-40b2-bbc8-4ca97861ea47
-  cipher: aes-128-gcm
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -23,6 +16,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1F3 HK 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
