@@ -1,13 +1,50 @@
-proxies: []
+proxies:
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  type: trojan
+  server: 23.227.38.11
+  port: 443
+  udp: true
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /argox-tr
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 95.164.33.62
+  port: 443
+  udp: true
+  password: 0b1371aa-649d-41dc-9126-338c87936500
+  sni: sourceforge.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      host: se1.trojanvpn.de
+- name: "\U0001F1F7\U0001F1FA RU 3"
+  server: 176.32.35.167
+  port: 1007
+  type: trojan
+  password: 85bce006-4885-11ee-8792-f23c9164ca5d
+  sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F7\U0001F1FA RU 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
