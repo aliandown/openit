@@ -10,11 +10,25 @@ proxies:
   network: ws
   ws-opts:
     path: /argox-tr
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  type: trojan
+  server: 95.164.33.62
+  port: 443
+  udp: true
+  password: 0b1371aa-649d-41dc-9126-338c87936500
+  sni: sourceforge.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      host: se1.trojanvpn.de
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -22,5 +36,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
