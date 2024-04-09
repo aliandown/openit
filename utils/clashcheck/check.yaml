@@ -1,23 +1,26 @@
 proxies:
-- name: "\U0001F1F7\U0001F1FA RU 1"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
-  server: 185.236.233.111
-  port: 2053
+  server: 172.67.204.84
+  port: 443
   udp: true
-  password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  sni: cdn-21.gsmxreality.com
   skip-cert-verify: true
-  network: tcp
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 443trojan
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F7\U0001F1FA RU 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
