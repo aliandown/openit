@@ -1,10 +1,10 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 216.128.147.13
+  server: 138.197.5.103
   port: 443
   type: trojan
-  password: wkmY1R4EcP
-  sni: z-v2-003274.kailib.com
+  password: xxoo
+  sni: marzfun.ir
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
@@ -16,11 +16,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
-  server: 138.197.5.103
+  server: 216.128.147.13
   port: 443
   type: trojan
-  password: xxoo
-  sni: marzfun.ir
+  password: wkmY1R4EcP
+  sni: z-v2-003274.kailib.com
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 4"
@@ -67,17 +67,13 @@ proxies:
   sni: hinet.mjt001.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 9"
-  type: trojan
-  server: 172.67.204.84
+- name: "\U0001F1EC\U0001F1E7 GB 9"
+  server: hinet.mjt001.com
   port: 443
-  udp: true
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  sni: cdn-21.gsmxreality.com
+  type: trojan
+  password: a1956156-b1d6-468e-b22f-59765172b07d
   skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 443trojan
+  udp: true
 proxy-groups:
 - name: automatic
   type: url-test
@@ -90,7 +86,7 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1EC\U0001F1E7 GB 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -105,6 +101,6 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1EC\U0001F1E7 GB 9"
 rules:
 - "MATCH,\U0001F310 Proxy"
