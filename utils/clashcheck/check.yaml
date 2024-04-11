@@ -1,21 +1,13 @@
-proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
-  type: ss
-  server: beromo.youxinye.com
-  port: 22001
-  password: 91ee9465-8be4-4735-80de-f80023b8eaae
-  cipher: aes-128-gcm
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
