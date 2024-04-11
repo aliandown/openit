@@ -1,10 +1,10 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 138.197.5.103
-  port: 443
+  server: 159.223.207.182
+  port: 34428
   type: trojan
-  password: xxoo
-  sni: marzfun.ir
+  password: zIvR7ryOXv
+  sni: 159.223.207.182
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
@@ -23,7 +23,22 @@ proxies:
   sni: z-v2-003274.kailib.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 138.197.5.103
+  port: 443
+  type: trojan
+  password: xxoo
+  sni: marzfun.ir
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: 154.3.8.151
+  port: 30067
+  type: ss
+  cipher: aes-256-gcm
+  password: iUB0923RBA
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 6"
   type: trojan
   server: 190.93.246.247
   port: 443
@@ -36,28 +51,13 @@ proxies:
     path: 6b777a91
     headers:
       host: jobscareerforlawyers.com
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 159.223.207.182
-  port: 34428
-  type: trojan
-  password: zIvR7ryOXv
-  sni: 159.223.207.182
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 6"
+- name: "\U0001F1EB\U0001F1F7 FR 7"
   server: 45.32.148.182
   port: 443
   type: trojan
   password: wkmY1R4EcP
   sni: z-v2-002805.kailib.com
   skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: 154.3.8.151
-  port: 30067
-  type: ss
-  cipher: aes-256-gcm
-  password: iUB0923RBA
   udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 8"
   server: hinet.mjt001.com
@@ -81,10 +81,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1EB\U0001F1F7 FR 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
   url: https://www.google.com/favicon.ico
@@ -96,10 +96,10 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
-  - "\U0001F1EB\U0001F1F7 FR 6"
-  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1FA\U0001F1F3 UN 6"
+  - "\U0001F1EB\U0001F1F7 FR 7"
   - "\U0001F1EC\U0001F1E7 GB 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
 rules:
