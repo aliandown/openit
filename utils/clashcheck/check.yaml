@@ -1,10 +1,10 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 159.223.207.182
-  port: 34428
+  server: 138.197.5.103
+  port: 443
   type: trojan
-  password: zIvR7ryOXv
-  sni: 159.223.207.182
+  password: xxoo
+  sni: marzfun.ir
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 2"
@@ -15,12 +15,13 @@ proxies:
   sni: z-v2-003274.kailib.com
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 154.3.8.151
-  port: 30067
-  type: ss
-  cipher: aes-256-gcm
-  password: iUB0923RBA
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: 66.42.84.121
+  port: 443
+  type: trojan
+  password: wkmY1R4EcP
+  sni: z-v2-002797.kailib.com
+  skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 4"
   type: trojan
@@ -36,22 +37,6 @@ proxies:
     headers:
       host: jobscareerforlawyers.com
 - name: "\U0001F1FA\U0001F1F8 US 5"
-  server: 66.42.84.121
-  port: 443
-  type: trojan
-  password: wkmY1R4EcP
-  sni: z-v2-002797.kailib.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 138.197.5.103
-  port: 443
-  type: trojan
-  password: xxoo
-  sni: marzfun.ir
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 7"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -62,27 +47,35 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1EC\U0001F1E7 GB 8"
-  server: hinet.mjt001.com
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: 159.223.207.182
+  port: 34428
+  type: trojan
+  password: zIvR7ryOXv
+  sni: 159.223.207.182
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EB\U0001F1F7 FR 7"
+  server: 45.32.148.182
   port: 443
   type: trojan
-  password: a1956156-b1d6-468e-b22f-59765172b07d
-  sni: hinet.mjt001.com
+  password: wkmY1R4EcP
+  sni: z-v2-002805.kailib.com
   skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: 154.3.8.151
+  port: 30067
+  type: ss
+  cipher: aes-256-gcm
+  password: iUB0923RBA
   udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 9"
   server: hinet.mjt001.com
   port: 443
   type: trojan
   password: a1956156-b1d6-468e-b22f-59765172b07d
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EB\U0001F1F7 FR 10"
-  server: 45.32.148.182
-  port: 443
-  type: trojan
-  password: wkmY1R4EcP
-  sni: z-v2-002805.kailib.com
+  sni: hinet.mjt001.com
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -91,14 +84,13 @@ proxy-groups:
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EC\U0001F1E7 GB 8"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -107,13 +99,12 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F3 UN 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1FA\U0001F1F8 US 6"
-  - "\U0001F1FA\U0001F1F8 US 7"
-  - "\U0001F1EC\U0001F1E7 GB 8"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1EC\U0001F1E7 GB 9"
-  - "\U0001F1EB\U0001F1F7 FR 10"
 rules:
 - "MATCH,\U0001F310 Proxy"
