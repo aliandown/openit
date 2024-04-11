@@ -1,77 +1,37 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 216.128.147.13
-  port: 443
-  type: trojan
-  password: wkmY1R4EcP
-  sni: z-v2-003274.kailib.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  server: 66.42.84.121
-  port: 443
-  type: trojan
-  password: wkmY1R4EcP
-  sni: z-v2-002797.kailib.com
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: 190.93.246.247
-  port: 443
-  udp: true
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: jobscareerforlawyers.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: 6b777a91
-    headers:
-      host: jobscareerforlawyers.com
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 159.223.207.182
-  port: 34428
-  type: trojan
-  password: zIvR7ryOXv
-  sni: 159.223.207.182
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: 154.3.8.151
-  port: 30067
+- name: "\U0001F1E8\U0001F1F3 CN 1"
   type: ss
-  cipher: aes-256-gcm
-  password: iUB0923RBA
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 6"
-  server: 138.197.5.103
-  port: 443
-  type: trojan
-  password: xxoo
-  sni: marzfun.ir
-  skip-cert-verify: true
-  udp: true
+  server: shct.pkyun.xyz
+  port: 39837
+  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 2"
+  type: ss
+  server: shct.pkyun.xyz
+  port: 51706
+  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
+  cipher: chacha20-ietf-poly1305
+- name: "\U0001F1E8\U0001F1F3 CN 3"
+  type: ss
+  server: shct.pkyun.xyz
+  port: 30314
+  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E8\U0001F1F3 CN 5"
-  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
