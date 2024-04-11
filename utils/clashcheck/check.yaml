@@ -1,29 +1,15 @@
 proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 1"
   type: ss
-  server: shct.pkyun.xyz
-  port: 39837
-  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  type: ss
-  server: shct.pkyun.xyz
-  port: 51706
-  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
-  cipher: chacha20-ietf-poly1305
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  type: ss
-  server: shct.pkyun.xyz
-  port: 30314
-  password: ba89b12a-b50b-45a1-ba6b-0181f24fd68b
-  cipher: chacha20-ietf-poly1305
+  server: beromo.youxinye.com
+  port: 22001
+  password: 91ee9465-8be4-4735-80de-f80023b8eaae
+  cipher: aes-128-gcm
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -31,7 +17,5 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
