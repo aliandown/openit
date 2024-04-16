@@ -1,22 +1,21 @@
 proxies:
-- name: "\U0001F1F0\U0001F1F7 KR 1"
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 18.134.115.25
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1F0\U0001F1F7 KR 2"
   server: kr01.freeflyingcloud.xyz
   port: 24852
   type: trojan
   password: f58c266f-f110-4d41-aec6-26fba903b425
   sni: kr01.freeflyingcloud.xyz
-- name: "\U0001F1F0\U0001F1F7 KR 2"
-  server: 103.214.68.57
-  port: 10003
-  type: trojan
-  password: 6x8HcghsjS
-  sni: yes998.chickenkiller.com
-  skip-cert-verify: false
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1F0\U0001F1F7 KR 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -24,7 +23,7 @@ proxy-groups:
   type: select
   proxies:
   - automatic
-  - "\U0001F1F0\U0001F1F7 KR 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1F0\U0001F1F7 KR 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
