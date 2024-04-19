@@ -6,14 +6,20 @@ proxies:
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
   skip-cert-verify: false
-- name: "\U0001F1EC\U0001F1EE GI 2"
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  server: 18.132.72.70
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1EC\U0001F1EE GI 3"
   server: 95.164.68.116
   port: 2053
   type: trojan
   password: f37a931d-7092-48fe-b82f-a98da3040eb2
   sni: ftp.debian.org
   skip-cert-verify: true
-- name: "\U0001F1F0\U0001F1F7 KR 3"
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   server: kr02.freeflyingcloud.xyz
   port: 21702
   type: trojan
@@ -24,8 +30,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1EE GI 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -33,7 +40,8 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1EE GI 2"
-  - "\U0001F1F0\U0001F1F7 KR 3"
+  - "\U0001F1EC\U0001F1E7 GB 2"
+  - "\U0001F1EC\U0001F1EE GI 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
