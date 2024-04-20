@@ -10,27 +10,27 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  server: 18.169.21.203
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 3"
+- name: "\U0001F1EB\U0001F1F7 FR 2"
   server: 13.39.3.4
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 4"
+- name: "\U0001F1EE\U0001F1F9 IT 3"
   type: trojan
-  server: uk01.freeflyingcloud.xyz
-  port: 22252
+  server: it01.freeflyingcloud.xyz
+  port: 48102
   udp: true
-  password: 0d5b3d65-e71e-4235-bf68-ea753ad87cc2
-  sni: uk01.freeflyingcloud.xyz
+  password: ecc532e2-3f8b-4a30-b176-78951fda6542
+  sni: it01.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F8\U0001F1EA SE 4"
+  server: 13.48.254.205
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
 - name: "\U0001F1F0\U0001F1F7 KR 5"
   type: trojan
   server: kr01.freeflyingcloud.xyz
@@ -44,9 +44,9 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EE\U0001F1F9 IT 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
   - "\U0001F1F0\U0001F1F7 KR 5"
   url: https://www.google.com/favicon.ico
   interval: 300
@@ -55,9 +55,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1EB\U0001F1F7 FR 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
+  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EE\U0001F1F9 IT 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
   - "\U0001F1F0\U0001F1F7 KR 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
