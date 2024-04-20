@@ -1,5 +1,11 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1EE\U0001F1EA IE 1"
+  server: 52.48.75.250
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 2"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -10,20 +16,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1EE\U0001F1EA IE 2"
-  server: 52.31.241.93
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1EE\U0001F1EA IE 3"
-  server: 52.48.75.250
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1EB\U0001F1F7 FR 4"
+- name: "\U0001F1EB\U0001F1F7 FR 3"
   server: 52.47.42.108
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: 51.44.38.250
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
@@ -37,15 +37,7 @@ proxies:
   sni: uk01.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 6"
-  type: trojan
-  server: 23.142.200.175
-  port: 443
-  udp: true
-  password: 27876_t7d7f4e3f
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EE\U0001F1F9 IT 7"
+- name: "\U0001F1EE\U0001F1F9 IT 6"
   type: trojan
   server: it01.freeflyingcloud.xyz
   port: 48102
@@ -54,7 +46,15 @@ proxies:
   sni: it01.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E8\U0001F1ED CH 8"
+- name: "\U0001F1FA\U0001F1F3 UN 7"
+  type: trojan
+  server: 23.142.200.175
+  port: 443
+  udp: true
+  password: 27876_t7d7f4e3f
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 8"
   type: trojan
   server: kr01.freeflyingcloud.xyz
   port: 24852
@@ -66,27 +66,27 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1FA\U0001F1F3 UN 6"
-  - "\U0001F1EE\U0001F1F9 IT 7"
-  - "\U0001F1E8\U0001F1ED CH 8"
+  - "\U0001F1EE\U0001F1F9 IT 6"
+  - "\U0001F1FA\U0001F1F3 UN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EE\U0001F1EA IE 2"
-  - "\U0001F1EE\U0001F1EA IE 3"
-  - "\U0001F1EB\U0001F1F7 FR 4"
+  - "\U0001F1EE\U0001F1EA IE 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1EB\U0001F1F7 FR 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
   - "\U0001F1EC\U0001F1E7 GB 5"
-  - "\U0001F1FA\U0001F1F3 UN 6"
-  - "\U0001F1EE\U0001F1F9 IT 7"
-  - "\U0001F1E8\U0001F1ED CH 8"
+  - "\U0001F1EE\U0001F1F9 IT 6"
+  - "\U0001F1FA\U0001F1F3 UN 7"
+  - "\U0001F1F0\U0001F1F7 KR 8"
 rules:
 - "MATCH,\U0001F310 Proxy"
