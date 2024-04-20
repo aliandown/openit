@@ -10,19 +10,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1EB\U0001F1F7 FR 2"
-  server: 13.39.3.4
-  port: 22222
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 3"
+- name: "\U0001F1EC\U0001F1E7 GB 2"
   server: 18.169.21.203
   port: 22222
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 4"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
   type: trojan
   server: uk01.freeflyingcloud.xyz
   port: 22252
@@ -31,22 +25,7 @@ proxies:
   sni: uk01.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 5"
-  server: 23.142.200.175
-  port: 443
-  type: trojan
-  password: 27876_t7d7f4e3f
-  skip-cert-verify: true
-- name: "\U0001F1EC\U0001F1E7 GB 6"
-  type: trojan
-  server: it01.freeflyingcloud.xyz
-  port: 48102
-  udp: true
-  password: ecc532e2-3f8b-4a30-b176-78951fda6542
-  sni: it01.freeflyingcloud.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F0\U0001F1F7 KR 7"
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   type: trojan
   server: kr01.freeflyingcloud.xyz
   port: 24852
@@ -54,17 +33,21 @@ proxies:
   password: 904dd222-2514-4a68-9185-32f89113afd9
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1F8\U0001F1EA SE 5"
+  server: 13.48.254.205
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F8\U0001F1EA SE 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -72,11 +55,9 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1EB\U0001F1F7 FR 2"
+  - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1EC\U0001F1E7 GB 3"
-  - "\U0001F1EC\U0001F1E7 GB 4"
-  - "\U0001F1FA\U0001F1F3 UN 5"
-  - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1F0\U0001F1F7 KR 7"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1F8\U0001F1EA SE 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
