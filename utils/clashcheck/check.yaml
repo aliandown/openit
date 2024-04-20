@@ -1,20 +1,5 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: 51.44.38.250
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-- name: "\U0001F1EC\U0001F1E7 GB 2"
-  type: trojan
-  server: uk01.freeflyingcloud.xyz
-  port: 22252
-  udp: true
-  password: 0d5b3d65-e71e-4235-bf68-ea753ad87cc2
-  sni: uk01.freeflyingcloud.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
   type: trojan
   server: 172.67.204.84
   port: 443
@@ -25,7 +10,25 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 443trojan
-- name: "\U0001F1E8\U0001F1ED CH 4"
+- name: "\U0001F1EC\U0001F1E7 GB 2"
+  type: trojan
+  server: uk01.freeflyingcloud.xyz
+  port: 22252
+  udp: true
+  password: 0d5b3d65-e71e-4235-bf68-ea753ad87cc2
+  sni: uk01.freeflyingcloud.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1EE\U0001F1F9 IT 3"
+  type: trojan
+  server: it01.freeflyingcloud.xyz
+  port: 48102
+  udp: true
+  password: ecc532e2-3f8b-4a30-b176-78951fda6542
+  sni: it01.freeflyingcloud.xyz
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F0\U0001F1F7 KR 4"
   type: trojan
   server: kr01.freeflyingcloud.xyz
   port: 24852
@@ -33,14 +36,21 @@ proxies:
   password: 904dd222-2514-4a68-9185-32f89113afd9
   skip-cert-verify: true
   network: tcp
+- name: "\U0001F1EE\U0001F1EA IE 5"
+  server: 52.31.241.93
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1ED CH 4"
+  - "\U0001F1EE\U0001F1F9 IT 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1EE\U0001F1EA IE 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -49,7 +59,8 @@ proxy-groups:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1EC\U0001F1E7 GB 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1E8\U0001F1ED CH 4"
+  - "\U0001F1EE\U0001F1F9 IT 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1EE\U0001F1EA IE 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
