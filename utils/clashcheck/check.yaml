@@ -1,11 +1,29 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  server: 54.154.172.153
+- name: "\U0001F1E8\U0001F1E6 CA 1"
+  server: 99.79.30.204
+  port: 22222
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1EE\U0001F1EA IE 2"
+  server: 34.255.39.135
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
   sni: trojan.burgerip.co.uk
-- name: "\U0001F1EF\U0001F1F5 JP 2"
+- name: "\U0001F1EC\U0001F1E7 GB 3"
+  server: 18.171.254.190
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1E9\U0001F1EA DE 4"
+  server: 18.199.209.48
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+- name: "\U0001F1EC\U0001F1E7 GB 5"
   server: jp01.freeflyingcloud.xyz
   port: 44402
   type: trojan
@@ -15,15 +33,21 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
+  - "\U0001F1E8\U0001F1E6 CA 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1EC\U0001F1E7 GB 3"
+  - "\U0001F1E9\U0001F1EA DE 4"
+  - "\U0001F1EC\U0001F1E7 GB 5"
 rules:
 - "MATCH,\U0001F310 Proxy"
