@@ -1,6 +1,6 @@
 proxies:
-- name: "\U0001F1E9\U0001F1EA DE 1"
-  server: 3.67.232.118
+- name: "\U0001F1EC\U0001F1E7 GB 1"
+  server: 3.11.132.113
   port: 22222
   type: trojan
   password: telegram-id-privatevpns
@@ -18,21 +18,29 @@ proxies:
   password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
   sni: ftp.debian.org
   skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EA SE 4"
+  server: 13.48.243.122
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1FA\U0001F1E6 UA 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E9\U0001F1EA DE 1"
+  - "\U0001F1EC\U0001F1E7 GB 1"
   - "\U0001F1EC\U0001F1E7 GB 2"
   - "\U0001F1FA\U0001F1E6 UA 3"
+  - "\U0001F1F8\U0001F1EA SE 4"
 rules:
 - "MATCH,\U0001F310 Proxy"
