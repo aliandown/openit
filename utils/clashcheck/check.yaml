@@ -1,21 +1,13 @@
-proxies:
-- name: "\U0001F1F8\U0001F1EC SG 1"
-  server: sg01.freeflyingcloud.xyz
-  port: 35702
-  type: trojan
-  password: 0f823acc-0136-4203-8151-7fd99677f5aa
-  sni: sg01.freeflyingcloud.xyz
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1F8\U0001F1EC SG 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1F8\U0001F1EC SG 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
