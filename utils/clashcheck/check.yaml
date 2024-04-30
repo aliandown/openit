@@ -8,12 +8,13 @@ proxies:
   sni: us05.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1F8\U0001F1EC SG 2"
   type: trojan
-  server: us.blazeppn.info
-  port: 443
+  server: sg08.421421.xyz
+  port: 20230
   udp: true
-  password: xxoo
+  password: 0f408453-2589-4fc2-bf9d-22e0cef8b8d2
+  sni: 421421.xyz
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -21,7 +22,7 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F8\U0001F1EC SG 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -29,6 +30,6 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1F8\U0001F1EC SG 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
