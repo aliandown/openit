@@ -8,7 +8,16 @@ proxies:
   sni: us05.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 2"
+- name: "\U0001F1E8\U0001F1E6 CA 2"
+  type: trojan
+  server: 144.217.81.44
+  port: 443
+  udp: true
+  password: 4c4dfa50-e321-11ee-9b28-1239d0255272
+  sni: chatbuzzteambhm.chatbuzzt7150.workers.dev
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 3"
   type: trojan
   server: sg08.421421.xyz
   port: 20230
@@ -22,7 +31,8 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -30,6 +40,7 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1F8\U0001F1EC SG 2"
+  - "\U0001F1E8\U0001F1E6 CA 2"
+  - "\U0001F1F8\U0001F1EC SG 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
