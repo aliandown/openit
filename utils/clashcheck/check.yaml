@@ -1,14 +1,5 @@
 proxies:
-- name: "\U0001F1EE\U0001F1EA IE 1"
-  type: trojan
-  server: 52.208.218.51
-  port: 22222
-  udp: true
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
+- name: "\U0001F1FA\U0001F1F8 US 1"
   type: trojan
   server: us05.freeflyingcloud.xyz
   port: 30020
@@ -17,15 +8,16 @@ proxies:
   sni: us05.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 3"
+- name: "\U0001F1EE\U0001F1EA IE 2"
   type: trojan
-  server: us.blazeppn.info
-  port: 443
+  server: 52.208.218.51
+  port: 22222
   udp: true
-  password: xxoo
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 4"
+- name: "\U0001F1FA\U0001F1F3 UN 3"
   type: trojan
   server: 23.142.200.175
   port: 443
@@ -37,19 +29,17 @@ proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1EE\U0001F1EA IE 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
-  - "\U0001F1FA\U0001F1F3 UN 4"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1EE\U0001F1EA IE 2"
+  - "\U0001F1FA\U0001F1F3 UN 3"
 rules:
 - "MATCH,\U0001F310 Proxy"
