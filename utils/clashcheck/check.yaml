@@ -1,23 +1,13 @@
-proxies:
-- name: "\U0001F1E8\U0001F1F3 HK 1"
-  type: trojan
-  server: hkjs.lydurlclub.top
-  port: 443
-  udp: true
-  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
-  skip-cert-verify: true
-  network: tcp
+proxies: []
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies:
-  - "\U0001F1E8\U0001F1F3 HK 1"
+  proxies: []
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 HK 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
