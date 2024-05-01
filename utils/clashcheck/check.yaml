@@ -1,13 +1,21 @@
-proxies: []
+proxies:
+- name: "\U0001F1EF\U0001F1F5 JP 1"
+  server: hk03.trojanyyds.xyz
+  port: 443
+  type: trojan
+  password: 1640b579-cff8-46bc-a657-3860b5455712
+  sni: hk03.trojanyyds.xyz
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EF\U0001F1F5 JP 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EF\U0001F1F5 JP 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
