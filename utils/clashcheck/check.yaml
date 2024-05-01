@@ -1,44 +1,23 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 1"
+- name: "\U0001F1E8\U0001F1F3 HK 1"
   type: trojan
-  server: us05.freeflyingcloud.xyz
-  port: 30020
-  udp: true
-  password: 15f804fa-27be-4b0f-85d4-cead43a483ef
-  sni: us05.freeflyingcloud.xyz
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 2"
-  type: trojan
-  server: us.blazeppn.info
+  server: hkjs.lydurlclub.top
   port: 443
   udp: true
-  password: xxoo
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F3 UN 3"
-  type: trojan
-  server: 23.142.200.175
-  port: 443
-  udp: true
-  password: 27876_t7d7f4e3f
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
   skip-cert-verify: true
   network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1E8\U0001F1F3 HK 1"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
-  - "\U0001F1FA\U0001F1F8 US 1"
-  - "\U0001F1FA\U0001F1F8 US 2"
-  - "\U0001F1FA\U0001F1F3 UN 3"
+  - "\U0001F1E8\U0001F1F3 HK 1"
 rules:
 - "MATCH,\U0001F310 Proxy"
