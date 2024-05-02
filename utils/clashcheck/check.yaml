@@ -48,23 +48,15 @@ proxies:
   password: 466cb726-333d-44aa-924f-1f7977e44dbb
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1E9\U0001F1EA DE 7"
+- name: "\U0001F1EB\U0001F1F7 FR 7"
   type: trojan
-  server: de-full.privateip.net
+  server: fr-full.privateip.net
   port: 443
   udp: true
-  password: ea630804-4d5d-4180-a464-a360e3793dc2
+  password: c55c7930-858b-45f5-9ac3-d66b805a4569
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1EE GI 8"
-  type: trojan
-  server: de2-full.privateip.net
-  port: 443
-  udp: true
-  password: dcf0fcec-3800-4f42-9b78-1323f6a4a004
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1E6 UA 9"
+- name: "\U0001F1FA\U0001F1E6 UA 8"
   type: trojan
   server: it-full.privateip.net
   port: 443
@@ -72,15 +64,7 @@ proxies:
   password: 70eb38a6-673c-4877-bceb-dbe6369fa210
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F3\U0001F1F1 NL 10"
-  type: trojan
-  server: nl-full.privateip.net
-  port: 443
-  udp: true
-  password: d2b376a2-c9b7-42be-8f52-26c0987f2884
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1EC\U0001F1EE GI 11"
+- name: "\U0001F1EC\U0001F1EE GI 9"
   type: trojan
   server: tr-full.privateip.net
   port: 443
@@ -88,15 +72,23 @@ proxies:
   password: 4e0f0b6d-8164-4b4b-99be-1f7ad19c7600
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F3\U0001F1F1 NL 12"
+- name: "\U0001F1EC\U0001F1EE GI 10"
   type: trojan
-  server: nl2-full.privateip.net
+  server: de2-full.privateip.net
   port: 443
   udp: true
-  password: 6e28f704-29a0-4c86-b25b-dd090603c741
+  password: dcf0fcec-3800-4f42-9b78-1323f6a4a004
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 13"
+- name: "\U0001F1FA\U0001F1F8 US 11"
+  type: trojan
+  server: au-full.privateip.net
+  port: 443
+  udp: true
+  password: 97fbc8ee-e529-4aa4-80fe-90062b724667
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F8\U0001F1EC SG 12"
   type: trojan
   server: sg04.freeflyingcloud.xyz
   port: 30018
@@ -105,36 +97,12 @@ proxies:
   sni: sg04.freeflyingcloud.xyz
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EE\U0001F1F3 IN 14"
+- name: "\U0001F1EE\U0001F1F3 IN 13"
   type: trojan
   server: in-full.privateip.net
   port: 443
   udp: true
   password: 6d1e8f64-c0e3-41ff-a647-e42a5f231baa
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1F8 US 15"
-  type: trojan
-  server: au-full.privateip.net
-  port: 443
-  udp: true
-  password: 97fbc8ee-e529-4aa4-80fe-90062b724667
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F1\U0001F1FB LV 16"
-  type: trojan
-  server: ua-full.privateip.net
-  port: 443
-  udp: true
-  password: 6fd1efa0-b559-48ce-81f9-56d1765f5ab5
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 17"
-  type: trojan
-  server: sg-full.privateip.net
-  port: 443
-  udp: true
-  password: 9e21d1ce-7bcf-4733-bc02-f47b1bbc76c4
   skip-cert-verify: true
   network: tcp
 proxy-groups:
@@ -147,17 +115,13 @@ proxy-groups:
   - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1EC\U0001F1EE GI 8"
-  - "\U0001F1FA\U0001F1E6 UA 9"
-  - "\U0001F1F3\U0001F1F1 NL 10"
-  - "\U0001F1EC\U0001F1EE GI 11"
-  - "\U0001F1F3\U0001F1F1 NL 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1FA\U0001F1F8 US 15"
-  - "\U0001F1F1\U0001F1FB LV 16"
-  - "\U0001F1F8\U0001F1EC SG 17"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1FA\U0001F1E6 UA 8"
+  - "\U0001F1EC\U0001F1EE GI 9"
+  - "\U0001F1EC\U0001F1EE GI 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -170,16 +134,12 @@ proxy-groups:
   - "\U0001F1EC\U0001F1E7 GB 4"
   - "\U0001F1FA\U0001F1F8 US 5"
   - "\U0001F1EC\U0001F1E7 GB 6"
-  - "\U0001F1E9\U0001F1EA DE 7"
-  - "\U0001F1EC\U0001F1EE GI 8"
-  - "\U0001F1FA\U0001F1E6 UA 9"
-  - "\U0001F1F3\U0001F1F1 NL 10"
-  - "\U0001F1EC\U0001F1EE GI 11"
-  - "\U0001F1F3\U0001F1F1 NL 12"
-  - "\U0001F1F8\U0001F1EC SG 13"
-  - "\U0001F1EE\U0001F1F3 IN 14"
-  - "\U0001F1FA\U0001F1F8 US 15"
-  - "\U0001F1F1\U0001F1FB LV 16"
-  - "\U0001F1F8\U0001F1EC SG 17"
+  - "\U0001F1EB\U0001F1F7 FR 7"
+  - "\U0001F1FA\U0001F1E6 UA 8"
+  - "\U0001F1EC\U0001F1EE GI 9"
+  - "\U0001F1EC\U0001F1EE GI 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1F8\U0001F1EC SG 12"
+  - "\U0001F1EE\U0001F1F3 IN 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
