@@ -33,10 +33,10 @@ proxies:
   network: tcp
 - name: "\U0001F1F3\U0001F1F1 NL 5"
   type: trojan
-  server: nl-full.privateip.net
+  server: nl2-full.privateip.net
   port: 443
   udp: true
-  password: d2b376a2-c9b7-42be-8f52-26c0987f2884
+  password: 6e28f704-29a0-4c86-b25b-dd090603c741
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1EC\U0001F1EE GI 6"
@@ -47,15 +47,7 @@ proxies:
   password: dcf0fcec-3800-4f42-9b78-1323f6a4a004
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F3\U0001F1F1 NL 7"
-  type: trojan
-  server: nl2-full.privateip.net
-  port: 443
-  udp: true
-  password: 6e28f704-29a0-4c86-b25b-dd090603c741
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1FA\U0001F1E6 UA 8"
+- name: "\U0001F1FA\U0001F1E6 UA 7"
   type: trojan
   server: it-full.privateip.net
   port: 443
@@ -63,12 +55,20 @@ proxies:
   password: 70eb38a6-673c-4877-bceb-dbe6369fa210
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1EC\U0001F1EE GI 9"
+- name: "\U0001F1EC\U0001F1EE GI 8"
   type: trojan
   server: tr-full.privateip.net
   port: 443
   udp: true
   password: 4e0f0b6d-8164-4b4b-99be-1f7ad19c7600
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 9"
+  type: trojan
+  server: nl-full.privateip.net
+  port: 443
+  udp: true
+  password: d2b376a2-c9b7-42be-8f52-26c0987f2884
   skip-cert-verify: true
   network: tcp
 - name: "\U0001F1F1\U0001F1FB LV 10"
@@ -87,22 +87,6 @@ proxies:
   password: 15bec329-c502-48d7-bf46-8210ade5d918
   skip-cert-verify: true
   network: tcp
-- name: "\U0001F1F8\U0001F1EC SG 12"
-  type: trojan
-  server: sg-full.privateip.net
-  port: 443
-  udp: true
-  password: 9e21d1ce-7bcf-4733-bc02-f47b1bbc76c4
-  skip-cert-verify: true
-  network: tcp
-- name: "\U0001F1F7\U0001F1FA RU 13"
-  type: trojan
-  server: hk-full.privateip.net
-  port: 443
-  udp: true
-  password: 01278779-3f58-4477-8ae7-7b82033a5d2e
-  skip-cert-verify: true
-  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
@@ -113,13 +97,11 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1F3\U0001F1F1 NL 5"
   - "\U0001F1EC\U0001F1EE GI 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
-  - "\U0001F1FA\U0001F1E6 UA 8"
-  - "\U0001F1EC\U0001F1EE GI 9"
+  - "\U0001F1FA\U0001F1E6 UA 7"
+  - "\U0001F1EC\U0001F1EE GI 8"
+  - "\U0001F1F3\U0001F1F1 NL 9"
   - "\U0001F1F1\U0001F1FB LV 10"
   - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1F7\U0001F1FA RU 13"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -132,12 +114,10 @@ proxy-groups:
   - "\U0001F1EB\U0001F1F7 FR 4"
   - "\U0001F1F3\U0001F1F1 NL 5"
   - "\U0001F1EC\U0001F1EE GI 6"
-  - "\U0001F1F3\U0001F1F1 NL 7"
-  - "\U0001F1FA\U0001F1E6 UA 8"
-  - "\U0001F1EC\U0001F1EE GI 9"
+  - "\U0001F1FA\U0001F1E6 UA 7"
+  - "\U0001F1EC\U0001F1EE GI 8"
+  - "\U0001F1F3\U0001F1F1 NL 9"
   - "\U0001F1F1\U0001F1FB LV 10"
   - "\U0001F1FA\U0001F1F8 US 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1F7\U0001F1FA RU 13"
 rules:
 - "MATCH,\U0001F310 Proxy"
