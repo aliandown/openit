@@ -1,13 +1,33 @@
-proxies: []
+proxies:
+- name: "\U0001F1EC\U0001F1EE GI 1"
+  type: trojan
+  server: de2-full.privateip.net
+  port: 443
+  udp: true
+  password: dcf0fcec-3800-4f42-9b78-1323f6a4a004
+  skip-cert-verify: true
+  network: tcp
+- name: "\U0001F1F3\U0001F1F1 NL 2"
+  type: trojan
+  server: nl2-full.privateip.net
+  port: 443
+  udp: true
+  password: 6e28f704-29a0-4c86-b25b-dd090603c741
+  skip-cert-verify: true
+  network: tcp
 proxy-groups:
 - name: automatic
   type: url-test
-  proxies: []
+  proxies:
+  - "\U0001F1EC\U0001F1EE GI 1"
+  - "\U0001F1F3\U0001F1F1 NL 2"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
   type: select
   proxies:
   - automatic
+  - "\U0001F1EC\U0001F1EE GI 1"
+  - "\U0001F1F3\U0001F1F1 NL 2"
 rules:
 - "MATCH,\U0001F310 Proxy"
