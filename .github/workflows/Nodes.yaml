@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3   #git clone
-    - uses: actions/setup-node@v3 #Node.js环境
+    - uses: actions/setup-node@v4 #Node.js环境
       with:
         node-version: 16
     - name: Timezone #UTC+0 → UTC+8
